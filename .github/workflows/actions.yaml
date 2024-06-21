@@ -1,0 +1,41 @@
+name: AIR data cron setup
+    
+on:
+  schedule:
+    - cron: "0 0 1 * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: de-vri-es/setup-git-credentials@v2
+        with:
+          credentials: ${{secrets.SECRET_TOKEN}}
+      - name: checkout repo content
+        uses: actions/checkout@v3
+      - name: setup python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.8
+      - name: install requirements
+        run: |
+          pip install -r requirements.txt
+      - name: run main process
+        run: |
+          python scripts/extract.py
+      - name: set global variable
+        run: |
+          git config --global user.name 'darkhan1019'
+          git config --global user.email 'darkhan.aimagambetov@dataopian.com'
+      - name: Check for modified files
+        id: git-check
+        run: echo ::set-output name=modified::$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)
+      - name: Update changes in GitHub repository
+        if: steps.git-check.outputs.modified == 'true'
+        run: |
+          git status
+          git add .
+          git commit -m "Auto generate AIR data"
+          git pull origin main
+          git push origin HEAD:main

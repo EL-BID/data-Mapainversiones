@@ -1,0 +1,163 @@
+{
+  "bytes": 367,
+  "count_of_rows": 1,
+  "title": "Proyectos de Inversión",
+  "name": "proyectos-de-inversión",
+  "country": "DOM",
+  "hash": "bb94dae1baecf3ed77094b7e6472e50a",
+  "profile": "data-package",
+  "created": "1985-04-12T23:20:50.52Z",
+  "updated": "1985-04-12T23:20:50.52Z",
+  "contributors": [
+    {
+      "title": "SNIP",
+      "email": "snip@bloggs.com",
+      "path": "http://www.snip.com",
+      "role": "author",
+      "organization":"SNIP"
+    },
+    {
+      "title": "Datopian",
+      "email": "datopian@bloggs.com",
+      "path": "http://www.datopian.com",
+      "role": "contributor",
+      "organization":"datopian"
+    },
+    {
+      "title": "Org3",
+      "email": "org3@bloggs.com",
+      "path": "http://www.org3.com",
+      "role": "maintainer",
+      "organization":"org3"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Proyectos de Inversión1",
+      "path": "http://data.test.org/",
+      "email": "test@gmail.com"
+    },
+    {
+      "title": "Proyectos de Inversión2",
+      "path": "http://data2.test.org/",
+      "email": "test2@gmail.com"
+    },
+    {
+      "title": "Raw data location",
+      "path": "http://data2.test.org/raw_data1.csv"
+    }
+  ],
+  "resources": [
+    {
+      "bytes": 367,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "69d48a05461fbe7d61860e2ad152b007",
+      "name": "bid_base_cla_end_mip",
+      "path": "data/bid_base_cla_end_mip.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "id_end",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "cod_eje",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "cod_objgen",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "cod_objesp",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "cod_linacc",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "cod_end",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "nivel",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nivel_txt",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "end_des",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "activo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "activo_txt",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "estado",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "bandeja",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "usu_ins",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "ec_ins",
+            "type": "datetime"
+          },
+          {
+            "format": "default",
+            "name": "usu_upd",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "fec_upd",
+            "type": "datetime"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+  
+}
