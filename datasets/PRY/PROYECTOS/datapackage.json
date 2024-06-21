@@ -7,17 +7,17 @@
   "contributors": [
     {
       "title": "SNIP",
-      "email": "snip@bloggs.com",
-      "path": "http://www.snip.com",
+      "email": "",
+      "path": "",
       "role": "author",
-      "organization":"SNIP"
+      "organization":""
     }
   ],
   "sources": [
     {
       "title": "Proyectos de Inversión1",
-      "path": "http://data.test.org/",
-      "email": "test@gmail.com"
+      "path": "",
+      "email": ""
     }
   ],
   "resources": [
