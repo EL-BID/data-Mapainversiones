@@ -1,0 +1,171 @@
+{
+  "hash": "43a8633a7691afa37e7897e6927e14f1",
+  "profile": "data-package",
+  "name": "PROYECTOS",
+  "title": "Proyectos de Inversión",
+  "country": "PRY",
+  "contributors": [
+    {
+      "title": "SNIP",
+      "email": "snip@bloggs.com",
+      "path": "http://www.snip.com",
+      "role": "author",
+      "organization":"SNIP"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Proyectos de Inversión1",
+      "path": "http://data.test.org/",
+      "email": "test@gmail.com"
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f07c30bff15339bc49148e5672170045",
+      "name": "opendata-proyectos",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS/CSV/2024/06/19/OPENDATA_PROYECTOS.CSV",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS/toc_OPENDATA_PROYECTOS.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSNIP",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Estado",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdSector",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "NombreSector",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaInicioProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaFinProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "EjecutorPrimario",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CostoEstimadoProyecto",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "AvanceFinanciero",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "AvanceFisico",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "IdEntidadEjecutora",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "EntidadEjecutora",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "DuracionProyecto",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "TipoProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "InformeAvance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdDepartamentoLocalizacion",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "DepartamentoLocalizacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdMunicipioLocalizacion",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "NombreMunicipioLocalizacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCargueArchivo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FuenteDatos",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCarga",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
