@@ -2316,12 +2316,12 @@
           },
           "toc": {
             "propertyOrder": 121,
-            "title": "TOC",
+            "title": "Table of content",
             "description": "A reference to the table of content for this resource, as either a path as a string, or an array of paths as strings. of valid URIs.",
             "oneOf": [
               {
-                "title": "TOC",
-                "description": "A fully qualified URL, or a POSIX file path.",
+                "title": "Table of Content",
+                "description": "A fully qualified URL, or a POSIX table of content file.",
                 "type": "string",
                 "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                 "examples": [
@@ -2334,8 +2334,8 @@
                 "type": "array",
                 "minItems": 1,
                 "items": {
-                  "title": "Toc",
-                  "description": "A fully qualified URL, or a POSIX file path.",
+                  "title": "Table of content",
+                  "description": "A fully qualified URL, or a POSIX table of content file path.",
                   "type": "string",
                   "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                   "examples": [
