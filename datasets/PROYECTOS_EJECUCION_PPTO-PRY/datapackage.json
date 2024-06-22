@@ -1,0 +1,112 @@
+{
+  "bytes": 2492,
+  "count_of_rows": 12,
+  "hash": "c2e48418178c7291d69b8ee07978030b",
+  "profile": "data-package",
+  "name": "PROYECTOS_EJECUCION_PPTO-PRY",
+  "title": "Proyectos de Inversión - Ejecución Presupuestaria",
+  "country": "PRY",
+  "contributors": [
+    {
+      "title": "SNIP",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":""
+    }
+  ],
+  "sources": [
+    {
+      "title": "Proyectos de Inversión",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "bytes": 2492,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f55ac1070c22acd5a2c6107269b4227d",
+      "name": "opendata_proyectos_ejecucion_ppto",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/CSV/2024/06/20/OPENDATA_PROYECTOS_EJECUCION_PPTO.CSV",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSNIP",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "IdOrganismoFinanciador",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "OrganismoFinanciador",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdFuenteFinanciacion",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FuenteFinanciacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Vigencia",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Presupuestado",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Ejecutado",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "FechaCargueArchivo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FuenteDatos",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCarga",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
