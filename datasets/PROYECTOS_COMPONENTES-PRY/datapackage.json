@@ -1,0 +1,76 @@
+{
+  "bytes": 3306,
+  "count_of_rows": 14,
+  "hash": "99464d3b50f087c68ff6e79e7a0ca93f",
+  "profile": "data-package",
+  "name": "proyectos-componentes-pry",
+  "title": "Proyectos_componentes",
+  "resources": [
+    {
+      "bytes": 3306,
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "745c7380cc5a00ee4f2b09607f7d6da3",
+      "name": "opendata_proyectos_components",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/CSV/2024/06/19/OPENDATA_PROYECTOS_COMPONENTES.CSV",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/toc_OPENDATA_PROYECTOS_COMPONENTES.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSNIP",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "codigoComponente",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "descripcionComponente",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codigoActividad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "descripcionActividad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCargueArchivo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FuenteDatos",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCarga",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
