@@ -6,7 +6,8 @@
   "required": [
     "resources",
     "profile",
-    "name"
+    "name",
+    "country"
   ],
   "properties": {
     "profile": {
