@@ -1,1 +1,5 @@
-dataflows==0.3.11
+botocore==1.24.38
+dataflows==0.5.5
+boto3==1.21.38
+azure_storage==0.37.0
+python-dotenv==1.0.1

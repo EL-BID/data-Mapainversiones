@@ -1,4 +1,3 @@
-from dataflows import Flow, load, dump_to_path, add_metadata,update_resource
 from azure.storage.blob import BlobServiceClient, ContainerClient, BlobClient
 import boto3
 from botocore.exceptions import NoCredentialsError,ClientError
@@ -6,15 +5,7 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables from .env file
-load_dotenv()
-
-def package_init():
-    flow = Flow(
-        load("datasets/PRY/PROYECTOS/OPENDATA_PROYECTOS.csv", format='csv', name="opendata-proyectos"),
-        dump_to_path(out_path="datasets/PRY/PROYECTOS/")
-    )
-    flow.process()   
-               
+load_dotenv()               
                      
 def copy_azure_to_r2(container_name, blob_name, blob_content):
     try:

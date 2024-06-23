@@ -1,8 +1,8 @@
 {
   "hash": "43a8633a7691afa37e7897e6927e14f1",
   "profile": "data-package",
-  "name": "proyectos-pry",
-  "title": "Proyectos",
+  "name": "proyectos-de-inversión-pry",
+  "title": "Proyectos de Inversión",
   "country": "PRY",
   "contributors": [
     {
@@ -144,6 +144,155 @@
           {
             "format": "default",
             "name": "NombreMunicipioLocalizacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCargueArchivo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FuenteDatos",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCarga",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f55ac1070c22acd5a2c6107269b4227d",
+      "name": "opendata-proyectos-ejecucion-ppto",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/CSV/2024/06/20/OPENDATA_PROYECTOS_EJECUCION_PPTO.CSV",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSNIP",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "IdOrganismoFinanciador",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "OrganismoFinanciador",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdFuenteFinanciacion",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "FuenteFinanciacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Vigencia",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Presupuestado",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Ejecutado",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "FechaCargueArchivo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FuenteDatos",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "FechaCarga",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "745c7380cc5a00ee4f2b09607f7d6da3",
+      "name": "opendata-proyectos-components",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/CSV/2024/06/19/OPENDATA_PROYECTOS_COMPONENTES.CSV",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/toc_OPENDATA_PROYECTOS_COMPONENTES.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSNIP",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "codigoComponente",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "descripcionComponente",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codigoActividad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "descripcionActividad",
             "type": "string"
           },
           {

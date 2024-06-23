@@ -1,3 +1,4 @@
+from dataflows import Flow, load, dump_to_path, add_metadata,update_resource
 import boto3
 from botocore.exceptions import NoCredentialsError,ClientError
 
@@ -7,6 +8,14 @@ from dotenv import load_dotenv
 
 # Load environment variables from .env file
 load_dotenv()
+
+
+def package_init():
+    flow = Flow(
+        load("datasets/PROYECTOS_EJECUCION_PPTO-PRY/OPENDATA_PROYECTOS_EJECUCION_PPTO.CSV", format='csv', name="opendata_proyectos_ejecucion_ppto"),
+        dump_to_path(out_path="datasets/PROYECTOS_EJECUCION_PPTO-PRY/")
+    )
+    flow.process()  
 
 def add_to_toc(blob_name, toc_file):
     '''
@@ -52,6 +61,7 @@ def toc_file_init(prefix):
             for obj in objects:
                 blob_name = obj['Key']
                 toc_file = "toc_"+obj['Key'].split('/')[-1]
+                print(toc_file)
                 add_to_toc(blob_name, toc_file)
                 #print(f"Found object: {obj['Key']} (Size: {obj['Size']} bytes)")
     except NoCredentialsError:
@@ -59,7 +69,7 @@ def toc_file_init(prefix):
     except Exception as e:
         print(f"Failed to list objects in R2 bucket: {e}")
 
-#specific_prefix = "opendata/PRY/MAPAINVDB/PROYECTOS/CSV/"  # Replace with the desired prefix
+specific_prefix = "opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/CSV/"  # Replace with the desired prefix
 #toc_file_init(specific_prefix)
 
 def upload_file_to_r2(file_path, key):
@@ -86,7 +96,7 @@ def upload_file_to_r2(file_path, key):
         print(f"Failed to upload {file_path}: {e}")
         
         
-#local_csv_path = "toc_OPENDATA_PROYECTOS.csv"
-#pload_key = "opendata/PRY/MAPAINVDB/PROYECTOS/toc_OPENDATA_PROYECTOS.csv"
+local_csv_path = "toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv"
+upload_key = "opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv"
 upload_file_to_r2(local_csv_path, upload_key)
         
