@@ -1,0 +1,229 @@
+{
+  "hash": "7d1af14084147c32ef3b53e2c9418d0e",
+  "profile": "data-package",
+  "name": "presupuesto-pry",
+  "title": "Presupuesto",
+  "country": "PRY",
+  "contributors": [
+    {
+      "title": "Hacienda",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":""
+    }
+  ],
+  "sources": [
+    {
+      "title": "Presupuesto",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f67eeb11103ffce279cff0a3359dc80c",
+      "name": "presupuesto",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_PRESUPUESTO/CSV/2024/06/01/PresupuestoPND_MH.csv",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_PRESUPUESTO/toc_PresupuestoPND_MH.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "AnioPresupuesto",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "codNivelEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sectores",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "ClasePrograma",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombrePrograma",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdNegocioProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreProyectoActividad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "PryClasificacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreVersion",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "descripcionGrupo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreObjetoGasto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "PresupuestoVigente",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "PresupuestoDisponible",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "PresupuestoAvance",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "8bab2e8185628424a1b3dd4bf5fe7061",
+      "name": "presupuesto-indicadores",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_INDICADORES/CSV/2024/06/01/IndicadoresPND_MH.csv",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_INDICADORES/toc_IndicadoresPND_MH.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "AnioPresupuesto",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "CodigoIndicador",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "NombreIndicador",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "DescripcionIndicador",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IndicadorFrecuencia",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "AñoBasePresupuesto",
+            "type": "integer"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Avance",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Meta",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "UnidadMedidaTotal",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "MetodoCalculo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "DescripcionPoblacion",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "CodigoNivelEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdNegocioProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "NombreProyectoActividad",
+            "type": "string"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
