@@ -1,13 +1,11 @@
 {
-  "bytes": 3306,
-  "count_of_rows": 14,
+  "count_of_rows": 20872,
   "hash": "99464d3b50f087c68ff6e79e7a0ca93f",
   "profile": "data-package",
   "name": "proyectos-componentes-pry",
-  "title": "Proyectos_componentes",
+  "title": "Proyectos componentes",
   "resources": [
     {
-      "bytes": 3306,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
