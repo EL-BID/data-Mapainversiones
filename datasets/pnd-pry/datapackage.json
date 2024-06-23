@@ -1,0 +1,255 @@
+{
+  "hash": "b26be3a209ef733334dface2dbd995ca",
+  "profile": "data-package",
+  "name": "pnd-pry",
+  "title": "PND",
+  "country": "PRY",
+  "contributors": [
+    {
+      "title": "Secretaría Técnica de Planificación",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":""
+    }
+  ],
+  "sources": [
+    {
+      "title": "PND",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "2bfe495194d4f8abb97d81046f4b4ce7",
+      "name": "presupuesto-por-entidad",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_PRESUPUESTO/CSV/2024/06/01/PresupuestoPND_STP.csv",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_PRESUPUESTO/toc_PresupuestoPND_STP.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "codEjeEstrategico",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreEjeEstrategico",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codObjetivoEstrategico",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreObjetivoEstrategico",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codObjetivoEspecifico",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreObjetivoEspecifico",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codODS",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreODS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "descripcionODS",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codNivelEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "entidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "siglaEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "IdNegocioProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "nombreProyecto",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "aportePresupuestalAlObjetivo",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "AnioPresupuesto",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "version",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "fuente",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "fechaActualizacion",
+            "type": "date"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "7d107155989801e7e521b1c6cfff5809",
+      "name": "indicadores",
+      "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_INDICADORES/CSV/2024/06/01/IndicadoresPND_STP.csv",
+      "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_INDICADORES/toc_IndicadoresPND_STP.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "codEjeEstrategico",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreEjeEstrategico",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codObjetivoEstrategico",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreObjetivoEstrategico",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codObjetivoEspecifico",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "nombreObjetivoEspecifico",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "indicador",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Unidad/Escala",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "añoBaseIndicador",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Meta 2023",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Meta 2030",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "avance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "codNivelEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "nombreEntidad",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "entidadReporta",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "fuente",
+            "type": "string"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "fechaActualizacion",
+            "type": "date"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
