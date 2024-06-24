@@ -12,11 +12,11 @@ load_dotenv()
 
 def package_init():
     flow = Flow(
-        load("datasets/PROYECTOS_EJECUCION_PPTO-PRY/OPENDATA_PROYECTOS_EJECUCION_PPTO.CSV", format='csv', name="opendata_proyectos_ejecucion_ppto"),
-        dump_to_path(out_path="datasets/PROYECTOS_EJECUCION_PPTO-PRY/")
+        load("datasets/ppto-dom/presupuesto-relacionado-a-proyectos-de-inversion.csv", format='csv', name="presupuesto-relacionado-a-proyectos-de-inversion"),
+        dump_to_path(out_path="datasets/test/")
     )
     flow.process()  
-
+#package_init()
 def add_to_toc(blob_name, toc_file):
     '''
     blob sample: opendata/PRY/MAPAINVDB/PROYECTOS/CSV/2024/06/10/OPENDATA_PROYECTOS.CSV
@@ -25,8 +25,12 @@ def add_to_toc(blob_name, toc_file):
     '''
     domain="https://air.portaljs.com/"
     blob_parts = blob_name.split('/')
-    date = '-'.join(blob_parts[5:8])
-    uri = domain+blob_name
+    if blob_parts[1] != 'DOM':
+        date = '-'.join(blob_parts[6:9])
+        uri = domain+blob_name
+    else:
+        date = '-'.join(blob_parts[6:9])
+        uri = domain+blob_name
     file_exists = os.path.isfile(toc_file)
     with open(toc_file, mode='a', newline='') as file:
         fieldnames = ['date', 'uri']
@@ -69,7 +73,7 @@ def toc_file_init(prefix):
     except Exception as e:
         print(f"Failed to list objects in R2 bucket: {e}")
 
-specific_prefix = "opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/CSV/"  # Replace with the desired prefix
+#specific_prefix = "opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/CSV/"  # Replace with the desired prefix
 #toc_file_init(specific_prefix)
 
 def upload_file_to_r2(file_path, key):
@@ -96,7 +100,7 @@ def upload_file_to_r2(file_path, key):
         print(f"Failed to upload {file_path}: {e}")
         
         
-local_csv_path = "toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv"
-upload_key = "opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv"
-upload_file_to_r2(local_csv_path, upload_key)
+#local_csv_path = "toc_DatosAbiertosPresupuestoXProyInv.csv"
+#upload_key = "opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/toc_DatosAbiertosPresupuestoXProyInv.csv"
+#upload_file_to_r2(local_csv_path, upload_key)
         
