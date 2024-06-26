@@ -1,0 +1,1377 @@
+{
+  "hash": "f335011dc08c87102afb6619a69b6db4",
+  "profile": "data-package",
+  "name": "emergency-processes-and-contracts-and-budget-dom",
+  "title": "Information on Emergency Processes and Contracts and Budget",
+  "description": "Information on Emergency Processes and Contracts and Budget",
+  "country": "DOM",
+  "contributors": [
+    {
+      "title": "DGCP - General Directorate of Public Procurement of the Dominican Republic",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"DGCP"
+    },
+    {
+      "title": "Ministry of Finance of the Dominican Republic",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"Ministry of Finance of the Dominican Republic"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lluvias 2023 ( Procesos y Contratos ) DECRETO 585-23",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Huracán Fiona  ( Procesos y Contratos ) DECRETO 537-22",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Presupuesto General de Emergencias - Lluvias 2023 (DECRETO 585-23) y Huracán Fiona (DECRETO 537-22)",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "7a922dcdd0ae93baa4b26b9fe466ffa3",
+      "name": "procurement-process",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRAS/CSV/2024/06/24/emergencias_procesos.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRAS/toc_emergencias_procesos.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Id",
+            "type": "integer",
+            "description": "Internal record ID"
+          },
+          {
+            "format": "default",
+            "name": "ID_PUBLICACION",
+            "type": "string",
+            "description": "Post ID"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CODIGO_UNIDAD_COMPRA",
+            "type": "number",
+            "description": "Purchase Unit Code"
+          },
+          {
+            "format": "default",
+            "name": "UNIDAD_COMPRA",
+            "type": "string",
+            "description": "Purchasing Unit Name"
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_PROCESO",
+            "type": "string",
+            "description": "Purchase process code"
+          },
+          {
+            "format": "default",
+            "name": "MODALIDAD",
+            "type": "string",
+            "description": "Modality of the purchasing process"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_EXCEPCION",
+            "type": "string",
+            "description": "Type of Exception (In this case they are all of the "emergency" type)"
+          },
+          {
+            "format": "default",
+            "name": "CARATULA",
+            "type": "string",
+            "description": "Cover of the purchasing process"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION",
+            "type": "string",
+            "description": "Description of the purchasing process"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_PROCESO",
+            "type": "string",
+            "description": "Purchase process status"
+          },
+          {
+            "format": "default",
+            "name": "FASE_PROCESO",
+            "type": "string",
+            "description": "Purchase process phase"
+          },
+          {
+            "format": "default",
+            "name": "MONEDA",
+            "type": "string",
+            "description": "Checkout Currency"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "MONTO_ESTIMADO",
+            "type": "number",
+            "description": "Purchase process amount"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_PUBLICACION",
+            "type": "string",
+            "description": "Publication date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ENMIENDA",
+            "type": "string",
+            "description": "Amendment Date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_FIN_RECEPCION_OFERTAS",
+            "type": "string",
+            "description": "End Date of Reception of Offers"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_APERTURA_OFERTAS",
+            "type": "string",
+            "description": "Bid Opening Date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ESTIMADA_ADJUDICACION",
+            "type": "string",
+            "description": "Estimated Award Date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_SUSCRIPCION",
+            "type": "string",
+            "description": "Subscription Date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_HABILITACION_OFERENTE",
+            "type": "string",
+            "description": "Bidder Qualification Date"
+          },
+          {
+            "format": "default",
+            "name": "DIRIGIDO_MIPYMES",
+            "type": "string",
+            "description": "Aimed at Micro, Small and Medium Enterprises (YES / NO)"
+          },
+          {
+            "format": "default",
+            "name": "DIRIGIDO_MIPYMES_MUJERES",
+            "type": "string",
+            "description": "Aimed at Micro, Small and Medium Enterprises for women (YES / NO)"
+          },
+          {
+            "format": "default",
+            "name": "PROCESO_LOTIFICADO",
+            "type": "string",
+            "description": "Batch process (YES / NO)"
+          },
+          {
+            "format": "default",
+            "name": "ADQUISICION_PLANEADA",
+            "type": "string",
+            "description": "Planned acquisition (YES / NO)"
+          },
+          {
+            "format": "default",
+            "name": "JUSTIFICACION_NO_PACC",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "OBJETO_PROCESO",
+            "type": "string",
+            "description": "Purpose of the process"
+          },
+          {
+            "format": "default",
+            "name": "SUBOBJETO_PROCESO",
+            "type": "string",
+            "description": "SubObject of the process"
+          },
+          {
+            "format": "default",
+            "name": "DECRETO_PRESIDENCIAL",
+            "type": "string",
+            "description": "Presidential Decree (YES / NO)"
+          },
+          {
+            "format": "default",
+            "name": "RESOLUCION_MAXIMA_AUTORIDAD",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ORGANISMO_FINANCIERO_EXTERNO",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "COMPRA_VERDE",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "COMPRA_CONJUNTA",
+            "type": "string",
+            "description": "",
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ULTIMA_MODIFICACION",
+            "type": "string",
+            "description": "Last Modification Date"
+          },
+          {
+            "format": "default",
+            "name": "URL",
+            "type": "string",
+            "description": "Process URL"
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_MODALIDAD",
+            "type": "string",
+            "description": "Modality Code"
+          },
+          {
+            "format": "default",
+            "name": "CancelComment",
+            "type": "string",
+            "description": "Cancellation comment"
+          },
+          {
+            "format": "default",
+            "name": "DECRETO",
+            "type": "string",
+            "description": "Decree Code"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ACTUALIZACION",
+            "type": "string",
+            "description": "Update date"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "d6fe6d61f4002a489dc32ab92345f507",
+      "name": "procurement-process-item-level",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRA_ARTICULOS/CSV/2024/06/25/emergencias_procesos_articulos.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRA_ARTICULOS/toc_emergencias_procesos_articulos.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CODIGO_PROCESO",
+            "type": "string",
+            "description": "Hiring process identifier code"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_PROCESO",
+            "type": "string",
+            "description": "State of the process"
+          },
+          {
+            "format": "default",
+            "name": "ID_ARTICULO",
+            "type": "integer",
+            "description": "Item identifier in the item catalog"
+          },
+          {
+            "format": "default",
+            "name": "SUBCLASE_UNSPSC",
+            "type": "integer",
+            "description": "Subclass identifier in the UNSPSC catalog"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION_ARTICULO",
+            "type": "string",
+            "description": "Description of the article"
+          },
+          {
+            "format": "default",
+            "name": "CUENTA_PRESUPUESTARIA",
+            "type": "string",
+            "description": "budget account code"
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_UNIDAD_MEDIDA",
+            "type": "string",
+            "description": "Abbreviation of the item's unit of measure"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION_UNIDAD_MEDIDA",
+            "type": "string",
+            "description": "Description of the item's unit of measure"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION_USUARIO",
+            "type": "string",
+            "description": "Product description"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CANTIDAD",
+            "type": "number",
+            "description": "Number of articles associated with the contracting process"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PRECIO_UNITARIO_ESTIMADO",
+            "type": "number",
+            "description": "Estimated unit price value of the item"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PRECIO_TOTAL_ESTIMADO",
+            "type": "number",
+            "description": "Estimated total price value of the item"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ACTUALIZACION",
+            "type": "string",
+            "description": "Update date"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "23b3f9beab950ad1eb6cb2c54b4b7abf",
+      "name": "contract",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS/CSV/2024/06/24/emergencias_contratos.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS/toc_emergencias_contratos.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CODIGO_UNIDAD_COMPRA",
+            "type": "number",
+            "description": "Purchasing unit identification code"
+          },
+          {
+            "format": "default",
+            "name": "UNIDAD_COMPRA",
+            "type": "string",
+            "description": "Name of the Institution or Purchasing Unit"
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_PROCESO",
+            "type": "string",
+            "description": "Hiring process identifier code"
+          },
+          {
+            "format": "default",
+            "name": "ID_ADJUDICACION",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ID_OFERTA",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ID_EVALUACION_OFERTA",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_CONTRATO",
+            "type": "string",
+            "description": "Hiring process identifier code"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "RPE",
+            "type": "number",
+            "description": "RPE number"
+          },
+          {
+            "format": "default",
+            "name": "RAZON_SOCIAL",
+            "type": "string",
+            "description": "Company name of the supplier of the items"
+          },
+          {
+            "format": "default",
+            "name": "OBJETO_CONTRATO",
+            "type": "string",
+            "description": "Contracting classification (Ex: Works, Goods, Services)"
+          },
+          {
+            "format": "default",
+            "name": "CARATULA",
+            "type": "string",
+            "description": "Description of the purpose of the contract"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_ADJUDICACION",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_CONTRATO",
+            "type": "string",
+            "description": "Contract Status Description"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ADJUDICACION",
+            "type": "string",
+            "description": "Contract award date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_CONFIRMACION_ADJUDICACION",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_APROBACION",
+            "type": "string",
+            "description": "Contract approval date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_NOTIFICACION_PROVEEDOR",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_FIRMA_CONTRATO",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_INICIO_CONTRATO",
+            "type": "string",
+            "description": "Contract start date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_FIN_CONTRATO",
+            "type": "string",
+            "description": "Contract End Date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_INICIO_ENTREGA",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_FIN_ENTREGA",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "MONEDA",
+            "type": "string",
+            "description": "Currency symbol in which the contract is concluded (Ex: DOP, USD)"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VALOR_CONTRATADO",
+            "type": "number",
+            "description": "Contracted value"
+          },
+          {
+            "format": "default",
+            "name": "METODO_PAGO",
+            "type": "string",
+            "description": "Description of the contract payment method"
+          },
+          {
+            "format": "default",
+            "name": "PLAZO_PAGO_FACTURA",
+            "type": "string",
+            "description": "Billing payment term description"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ULTIMA_MODIFICACION",
+            "type": "string",
+            "description": "Date of last modification of contract information"
+          },
+          {
+            "format": "default",
+            "name": "URL_CONTRATO",
+            "type": "string",
+            "description": "Contract URL on the public procurement page"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_PROCESO",
+            "type": "string",
+            "description": "Description of the status of the hiring process"
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_MODALIDAD",
+            "type": "string",
+            "description": "Coding of the contracting modality"
+          },
+          {
+            "format": "default",
+            "name": "MODALIDAD",
+            "type": "string",
+            "description": "Description of the contracting modality (Example: Exception Processes)"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_EXCEPCION",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "URL",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "RAZON_SOCIAL_RPE",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "NUMERO_DOCUMENTO",
+            "type": "integer",
+            "description": "Supplier identification document number"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_DOCUMENTO",
+            "type": "string",
+            "description": "Supplier ID type"
+          },
+          {
+            "format": "default",
+            "name": "GENERO",
+            "type": "string",
+            "description": "Provider gender identity"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_PERSONA",
+            "type": "string",
+            "description": "Type of person (Example: Natural or Legal)"
+          },
+          {
+            "format": "default",
+            "name": "FORMA_JURIDICA",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ES_MIPYME",
+            "type": "string",
+            "description": "Identifier if it is an MSME (Yes or No)"
+          },
+          {
+            "format": "default",
+            "name": "CERTIFICACION_MICM",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "CLASIFICACION_EMPRESARIAL",
+            "type": "string",
+            "description": "Level 1 Business Classification"
+          },
+          {
+            "format": "default",
+            "name": "CLASIFICACION_EMPRESARIAL_2",
+            "type": "string",
+            "description": "Level 2 Business Classification"
+          },
+          {
+            "format": "default",
+            "name": "MUNICIPIO",
+            "type": "string",
+            "description": "Municipality name"
+          },
+          {
+            "format": "default",
+            "name": "PROVINCIA",
+            "type": "string",
+            "description": "Province name"
+          },
+          {
+            "format": "default",
+            "name": "REGION",
+            "type": "string",
+            "description": "Region name"
+          },
+          {
+            "format": "default",
+            "name": "MACROREGION",
+            "type": "string",
+            "description": "Name of the Macroregion"
+          },
+          {
+            "format": "default",
+            "name": "PAIS",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "CLASIFICACION_RPE",
+            "type": "string",
+            "description": "MICM classification description"
+          },
+          {
+            "format": "default",
+            "name": "DETALLE_EXCEPCION",
+            "type": "string",
+            "description": "Exception Detail Description"
+          },
+          {
+            "falseValues": [
+              "False"
+            ],
+            "format": "default",
+            "name": "CONTRATO_MIPYME",
+            "trueValues": [
+              "True"
+            ],
+            "type": "boolean",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ACTUALIZACION",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "fcc35caf310198f267041a6e74c4ef69",
+      "name": "contract-item-level",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS_ARTICULOS/CSV/2024/06/24/emergencias_contratos_artiuclos.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS_ARTICULOS/toc_emergencias_contratos_artiuclos.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CODIGO_PROCESO",
+            "type": "string",
+            "description": "Hiring process identifier code"
+          },
+          {
+            "format": "default",
+            "name": "CODIGO_CONTRATO",
+            "type": "string",
+            "description": "Contract identifier code"
+          },
+          {
+            "format": "default",
+            "name": "MODALIDAD",
+            "type": "string",
+            "description": "Description of the contracting modality (Example: Exception Processes)"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_PROCESO",
+            "type": "string",
+            "description": "Description of the status of the hiring process"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_CONTRATO",
+            "type": "string",
+            "description": "Contract Status Description"
+          },
+          {
+            "format": "default",
+            "name": "RPE",
+            "type": "integer",
+            "description": "RPE"
+          },
+          {
+            "format": "default",
+            "name": "RAZON_SOCIAL",
+            "type": "string",
+            "description": "Company name of the supplier of the items"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_DOCUMENTO",
+            "type": "string",
+            "description": "Supplier ID type"
+          },
+          {
+            "format": "default",
+            "name": "NUMERO_DOCUMENTO",
+            "type": "integer",
+            "description": "Supplier identification document number"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_FIRMA_CONTRATO",
+            "type": "string",
+            "description": "Contract Signing Date"
+          },
+          {
+            "format": "default",
+            "name": "ID_BUSINESS_ITEM",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ID_BUSINESS_ITEM_LINE",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ID_ARTICULO",
+            "type": "integer",
+            "description": "Item identifier in the item catalog"
+          },
+          {
+            "format": "default",
+            "name": "SUBCLASE_UNSPSC",
+            "type": "integer",
+            "description": "Subclass identifier in the UNSPSC catalog"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION_SUBCLASE",
+            "type": "string",
+            "description": "Subclass description in the UNSPSC catalog"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION_ARTICULO",
+            "type": "string",
+            "description": "Description of the article"
+          },
+          {
+            "format": "default",
+            "name": "CUENTA_PRESUPUESTARIA",
+            "type": "string",
+            "description": "budget account code"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CANTIDAD",
+            "type": "number",
+            "description": "Number of items associated with the contract"
+          },
+          {
+            "format": "default",
+            "name": "ABR_UNIDAD_MEDIDA",
+            "type": "string",
+            "description": "Abbreviation of the item's unit of measure"
+          },
+          {
+            "format": "default",
+            "name": "DESCRIPCION_UNIDAD_MEDIDA",
+            "type": "string",
+            "description": "Description of the item's unit of measure"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PRECIO_UNITARIO_ESTIMADO",
+            "type": "number",
+            "description": "Estimated unit price value of the item"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PRECIO_UNITARIO",
+            "type": "number",
+            "description": "Unit price value of the item"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ITBIS",
+            "type": "number",
+            "description": "ITBIS"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "OTROS_IMPUESTOS",
+            "type": "number",
+            "description": "Other taxes defined for the item"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "DESCUENTO",
+            "type": "number",
+            "description": "Discounts associated with the item"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "MONTO_TOTAL",
+            "type": "number",
+            "description": "Corresponds to the number of items times the estimated price of the item plus the ITBIS"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ACTUALIZACION",
+            "type": "string",
+            "description": "Update date"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "6e1e6cf77d599a1358747a8af125a76d",
+      "name": "suppliers",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROVEEDORES/CSV/2024/06/25/emergencias_proveedores.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROVEEDORES/toc_emergencias_proveedores.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CODE",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ID",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "RPE",
+            "type": "integer",
+            "description": "RPE"
+          },
+          {
+            "format": "default",
+            "name": "RAZON_SOCIAL",
+            "type": "string",
+            "description": "Company name of the supplier of the items"
+          },
+          {
+            "format": "default",
+            "name": "NUMERO_DOCUMENTO",
+            "type": "integer",
+            "description": "Supplier identification document number"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_DOCUMENTO",
+            "type": "string",
+            "description": "Supplier ID type"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_RPE",
+            "type": "string",
+            "description": "Description of RPE status"
+          },
+          {
+            "format": "default",
+            "name": "GENERO",
+            "type": "string",
+            "description": "Provider gender identity"
+          },
+          {
+            "format": "default",
+            "name": "TIPO_PERSONA",
+            "type": "string",
+            "description": "Type of person (Example: Natural or Legal)"
+          },
+          {
+            "format": "default",
+            "name": "FORMA_JURIDICA",
+            "type": "string",
+            "description": "Legal form"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_CREACION",
+            "type": "string",
+            "description": "Creation date"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_REGISTRO",
+            "type": "string",
+            "description": "Supplier registration date in the supplier catalog"
+          },
+          {
+            "format": "default",
+            "name": "NUMERO_REGISTRO_MERCANTIL",
+            "type": "string",
+            "description": "Commercial Registry Number"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_REGISTRO_MERCANTIL",
+            "type": "string",
+            "description": "Commercial registration date of the supplier"
+          },
+          {
+            "format": "default",
+            "name": "CERTIFICACION_MICM",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_VENCIMIENTO_CERTIFICACION_MICM",
+            "type": "string",
+            "description": "Certification Expiration Date"
+          },
+          {
+            "format": "default",
+            "name": "CLASIFICACION_RPE",
+            "type": "string",
+            "description": "MICM classification description"
+          },
+          {
+            "format": "default",
+            "name": "PRODUCTOR_NACIONAL",
+            "type": "string",
+            "description": "Is it a national producer?"
+          },
+          {
+            "format": "default",
+            "name": "REGISTRO_INDUSTRIAL",
+            "type": "string",
+            "description": "Industrial Registration"
+          },
+          {
+            "format": "default",
+            "name": "OCUPACION",
+            "type": "string",
+            "description": "Provider Occupation Description"
+          },
+          {
+            "format": "default",
+            "name": "TELEFONO_COMERCIAL",
+            "type": "string",
+            "description": "Supplier contact telephone number"
+          },
+          {
+            "format": "default",
+            "name": "CELULAR_COMERCIAL",
+            "type": "string",
+            "description": "Business Telephone Number"
+          },
+          {
+            "format": "default",
+            "name": "CORREO_COMERCIAL",
+            "type": "string",
+            "description": "Business Email"
+          },
+          {
+            "format": "default",
+            "name": "CORREO_NOTIFICACIONES",
+            "type": "string",
+            "description": "Email for notifications"
+          },
+          {
+            "format": "default",
+            "name": "DIRECCION",
+            "type": "string",
+            "description": "Supplier address"
+          },
+          {
+            "format": "default",
+            "name": "PAIS",
+            "type": "string",
+            "description": "Name of the country of origin of the supplier"
+          },
+          {
+            "format": "default",
+            "name": "REGION",
+            "type": "string",
+            "description": "Region name"
+          },
+          {
+            "format": "default",
+            "name": "PROVINCIA",
+            "type": "string",
+            "description": "Province name"
+          },
+          {
+            "format": "default",
+            "name": "MUNICIPIO",
+            "type": "string",
+            "description": "Municipality name"
+          },
+          {
+            "format": "default",
+            "name": "DISTRITO_MUNICIPAL",
+            "type": "string",
+            "description": "Municipal District"
+          },
+          {
+            "format": "default",
+            "name": "PROVEE",
+            "type": "string",
+            "description": "Product or service provider?"
+          },
+          {
+            "format": "default",
+            "name": "CELULAR_CONTACTO",
+            "type": "string",
+            "description": "Contact Telephone Number"
+          },
+          {
+            "format": "default",
+            "name": "URL_CERTIFICACION_RPE",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "CLASIFICACION_EMPRESARIAL",
+            "type": "string",
+            "description": "Level 1 Business Classification"
+          },
+          {
+            "format": "default",
+            "name": "CLASIFICACION_EMPRESARIAL_2",
+            "type": "string",
+            "description": "Level 2 Business Classification"
+          },
+          {
+            "format": "default",
+            "name": "ESTADO_COMENTARIO",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ULTIMA_MODIFICACION",
+            "type": "string",
+            "description": "Last modified date"
+          },
+          {
+            "format": "default",
+            "name": "MACROREGION",
+            "type": "string",
+            "description": "Name of the Macroregion"
+          },
+          {
+            "format": "default",
+            "name": "FECHA_ACTUALIZACION",
+            "type": "string",
+            "description": "Update date"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "22afb008c0397a15700941a4bc6966d1",
+      "name": "budget",
+      "title": "Information on the General Emergency Budget - Rains 2023 - Decree 585-23 and Hurricane Fiona -Decree 537-22",
+      "description": "This data set provides detailed information on the overall budget and the budget associated with each emergency. With this it is possible to view the budgeted total and the executed total based on the different classifiers contained in the data set.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/CSV/2024/06/24/PresupuestoEmergencias.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/toc_PresupuestoEmergencias.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Origen",
+            "type": "string",
+            "description": "emergency name"
+          },
+          {
+            "format": "default",
+            "name": "Capitulo",
+            "type": "string",
+            "description": "chapter name (Institution)"
+          },
+          {
+            "format": "default",
+            "name": "SubCapitulo",
+            "type": "string",
+            "description": "subchapter name (Institution)"
+          },
+          {
+            "format": "default",
+            "name": "UnidadEjecutora",
+            "type": "string",
+            "description": "name of the executing executing unit (executing institution)"
+          },
+          {
+            "format": "default",
+            "name": "SubCuenta",
+            "type": "string",
+            "description": "budget subaccount name"
+          },
+          {
+            "format": "default",
+            "name": "Concepto",
+            "type": "string",
+            "description": "budget concept name"
+          },
+          {
+            "format": "default",
+            "name": "Auxiliar",
+            "type": "string",
+            "description": "name of budget assistant"
+          },
+          {
+            "format": "default",
+            "name": "Cuenta",
+            "type": "string",
+            "description": "budget account name"
+          },
+          {
+            "format": "default",
+            "name": "Seccion",
+            "type": "string",
+            "description": "budget section name"
+          },
+          {
+            "format": "default",
+            "name": "Periodo",
+            "type": "integer",
+            "description": "budget year"
+          },
+          {
+            "format": "default",
+            "name": "Programa",
+            "type": "string",
+            "description": "budget program name"
+          },
+          {
+            "format": "default",
+            "name": "Finalidad",
+            "type": "string",
+            "description": "budget purpose name"
+          },
+          {
+            "format": "default",
+            "name": "OrganismoFinanciador",
+            "type": "string",
+            "description": "name of funding body"
+          },
+          {
+            "format": "default",
+            "name": "Funcion",
+            "type": "string",
+            "description": "function or sector of the government to which the budgeted resources are directed"
+          },
+          {
+            "format": "default",
+            "name": "SubFuncion",
+            "type": "string",
+            "description": "budget subfunction name"
+          },
+          {
+            "format": "default",
+            "name": "InstitucionReceptora",
+            "type": "string",
+            "description": "name of receiving institution"
+          },
+          {
+            "format": "default",
+            "name": "Fuente",
+            "type": "string",
+            "description": "name of funding source"
+          },
+          {
+            "format": "default",
+            "name": "GrupoFuente",
+            "type": "string",
+            "description": "funding source group name"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ValorPresupuestado",
+            "type": "number",
+            "description": "current budget total value"
+          },
+          {
+            "format": "default",
+            "name": "ValorEjecutado",
+            "type": "integer",
+            "description": "total accrued value"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

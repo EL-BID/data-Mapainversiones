@@ -12,7 +12,7 @@ load_dotenv()
 
 def package_init():
     flow = Flow(
-        load("datasets/ppto-dom/presupuesto-relacionado-a-proyectos-de-inversion.csv", format='csv', name="presupuesto-relacionado-a-proyectos-de-inversion"),
+        load("datasets/emergency-processes-and-contracts-and-budget-dom/budget.csv", format='csv', name="budget"),
         dump_to_path(out_path="datasets/test/")
     )
     flow.process()  
@@ -73,7 +73,7 @@ def toc_file_init(prefix):
     except Exception as e:
         print(f"Failed to list objects in R2 bucket: {e}")
 
-#specific_prefix = "opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/CSV/"  # Replace with the desired prefix
+#specific_prefix = "opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/CSV/"  # Replace with the desired prefix
 #toc_file_init(specific_prefix)
 
 def upload_file_to_r2(file_path, key):
@@ -100,7 +100,7 @@ def upload_file_to_r2(file_path, key):
         print(f"Failed to upload {file_path}: {e}")
         
         
-#local_csv_path = "toc_DatosAbiertosPresupuestoXProyInv.csv"
-#upload_key = "opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/toc_DatosAbiertosPresupuestoXProyInv.csv"
+#local_csv_path = "toc_PresupuestoEmergencias.csv"
+#upload_key = "opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/toc_PresupuestoEmergencias.csv"
 #upload_file_to_r2(local_csv_path, upload_key)
         
