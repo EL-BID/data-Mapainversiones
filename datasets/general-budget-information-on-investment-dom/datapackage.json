@@ -1,0 +1,700 @@
+{
+  "hash": "9da3674b96abb151cc19bb955a6e4001",
+  "profile": "data-package",
+  "name": "general-budget-information-on-investment-dom",
+  "title": "Dominican Republic - General Budget Information on Investment",
+  "description": "Dominican Republic - General Budget Information on Investment",
+  "country": "DOM",
+  "contributors": [
+    {
+      "title": "Ministry of Finance of the Dominican Republic",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"Hacienda"
+    },
+    {
+      "title": "DGCP - General Directorate of Public Procurement of the Dominican Republic",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"DGCP"
+    },
+    {
+      "title": "Treasury Investment Budget Information / SNIP - National Public Investment System, Ministry of Economy, Planning
+and Development (MEPyD)",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"Treasury Investment Budget Information / SNIP"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Presupuesto de Inversion",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Procesos de Compras ( Inversion)",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Contratos de Compras ( Inversion )",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Presupuesto relacionado a proyectos de inversion",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "6276a2238281a8a0a197ecd3661ef091",
+      "name": "presupuesto-de-inversion",
+      "title": "General Budget Information on Investment",
+      "description": "This set contains information on the general budget of the nation focused on investment.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/CSV/2024/05/01/DatosAbiertosPresupuestoHacienda.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/toc_DatosAbiertosPresupuestoHacienda.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Año",
+            "type": "integer",
+            "description": "The year to which the information recorded in the database corresponds."
+          },
+          {
+            "format": "default",
+            "name": "CodigoInstitucion",
+            "type": "string",
+            "description": "The unique code that identifies an institution within the system or set of institutions."
+          },
+          {
+            "format": "default",
+            "name": "Institucion",
+            "type": "string",
+            "description": "Name or identification of the institution to which the registered information belongs."
+          },
+          {
+            "format": "default",
+            "name": "TipoGasto",
+            "type": "string",
+            "description": "Category that classifies the expense according to its nature or purpose."
+          },
+          {
+            "format": "default",
+            "name": "CodigoFuenteDeFinanciamiento",
+            "type": "integer",
+            "description": "Code that identifies the source of financing the expense."
+          },
+          {
+            "format": "default",
+            "name": "FuenteDeFinanciamiento",
+            "type": "string",
+            "description": "Description or identification of the source of financing the expense."
+          },
+          {
+            "format": "default",
+            "name": "CodigoFuenteEspecifica",
+            "type": "integer",
+            "description": "Specific code that identifies the detailed financing source."
+          },
+          {
+            "format": "default",
+            "name": "FuenteEspecifica",
+            "type": "string",
+            "description": "Detailed description or specific identification of the funding source."
+          },
+          {
+            "format": "default",
+            "name": "CodigoOrganismoFinanciador",
+            "type": "integer",
+            "description": "Code that identifies the organization that provides the financing."
+          },
+          {
+            "format": "default",
+            "name": "OrganismoFinanciador",
+            "type": "string",
+            "description": "Name or identification of the organization providing the financing."
+          },
+          {
+            "format": "default",
+            "name": "CodigoPrograma",
+            "type": "integer",
+            "description": "Code that identifies a specific program."
+          },
+          {
+            "format": "default",
+            "name": "Programa",
+            "type": "string",
+            "description": "Name or description of the program to which the expense is assigned."
+          },
+          {
+            "format": "default",
+            "name": "CodigoSubPrograma",
+            "type": "integer",
+            "description": "Code that identifies an applet within a program."
+          },
+          {
+            "format": "default",
+            "name": "SubPrograma",
+            "type": "string",
+            "description": "Name or description of the subprogram to which the expense is assigned."
+          },
+          {
+            "format": "default",
+            "name": "CodigoSnip",
+            "type": "integer",
+            "description": "Code assigned by the National Public Investment System (SNIP) to identify a project."
+          },
+          {
+            "format": "default",
+            "name": "CodigoProyecto",
+            "type": "integer",
+            "description": "Code that identifies a specific project."
+          },
+          {
+            "format": "default",
+            "name": "Proyecto",
+            "type": "string",
+            "description": "Name or description of the project to which the expense is assigned."
+          },
+          {
+            "format": "default",
+            "name": "CodigoActividadObra",
+            "type": "integer",
+            "description": "Code that identifies an activity or work within a project."
+          },
+          {
+            "format": "default",
+            "name": "ActividadObra",
+            "type": "string",
+            "description": "Name or description of the activity or work to which the expense is assigned."
+          },
+          {
+            "format": "default",
+            "name": "CodigoGrupoDeGasto",
+            "type": "string",
+            "description": "Code that classifies spending into predefined groups."
+          },
+          {
+            "format": "default",
+            "name": "Grupodegasto",
+            "type": "string",
+            "description": "Description or name of the group to which the expense belongs."
+          },
+          {
+            "format": "default",
+            "name": "CodigoFinalidad",
+            "type": "integer",
+            "description": "Code that identifies the purpose of the expense."
+          },
+          {
+            "format": "default",
+            "name": "Finalidad",
+            "type": "string",
+            "description": "Description or name of the purpose for which the expense is intended."
+          },
+          {
+            "format": "default",
+            "name": "CodigoObjetoDeGasto",
+            "type": "string",
+            "description": "Code that identifies the specific object for which the expense is intended."
+          },
+          {
+            "format": "default",
+            "name": "ObjetoDeGasto",
+            "type": "string",
+            "description": "Description or name of the object for which the expense is intended."
+          },
+          {
+            "format": "default",
+            "name": "Sector",
+            "type": "string",
+            "description": "Sector to which the activity or work associated with the expense belongs."
+          },
+          {
+            "format": "default",
+            "name": "CodigoSubFuncion",
+            "type": "string",
+            "description": "Code that identifies a subfunction within a function."
+          },
+          {
+            "format": "default",
+            "name": "SubFuncion",
+            "type": "string",
+            "description": "Description or name of the subfunction associated with the expense."
+          },
+          {
+            "format": "default",
+            "name": "ValorAprobado",
+            "type": "integer",
+            "description": "Amount or value approved for the expense in the budget item."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ValorVigente",
+            "type": "number",
+            "description": "Amount or value currently in force for the expense in the budget item."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ValorEjecutado",
+            "type": "number",
+            "description": "Amount or value executed so far for the expense in the budget item."
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuente",
+            "type": "string",
+            "description": "Date the information in the data source was updated"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "cffe9abe541a23ab7c326aa39bebd83c",
+      "name": "procesos-de-compras",
+      "title":"Information on Processes related to the General Investment Budget and public investment projects",
+      "description":"Information on Processes related to the General Investment Budget and public investment projects",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/CSV/2024/05/01/DatosAbiertosProcesosXProyectosInv.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/toc_DatosAbiertosProcesosXProyectosInv.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSnip",
+            "type": "integer",
+            "description":"Code assigned by the National Public Investment System (SNIP) to identify a specific project."
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string",
+            "description":"Name or title of the project to which the contract refers."
+          },
+          {
+            "format": "default",
+            "name": "CodigoProceso",
+            "type": "string",
+            "description":"Code that identifies a specific process associated with the contract."
+          },
+          {
+            "format": "default",
+            "name": "DescripcionProceso",
+            "type": "string",
+            "description":"Detailed description of the contracting process, including its terms, conditions and scope."
+          },
+          {
+            "format": "default",
+            "name": "Caratula",
+            "type": "string",
+            "description":"Document that contains summary information about the contracting process, including relevant details such as the type of contract, the parties involved, etc."
+          },
+          {
+            "format": "default",
+            "name": "EstadoProceso",
+            "type": "string",
+            "description":"Current status of the contracting process, for example: pending, in progress, awarded, canceled, etc."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "MontoEstimado",
+            "type": "number",
+            "description":"Estimated amount or value for the contracting process."
+          },
+          {
+            "format": "default",
+            "name": "Modalidad",
+            "type": "string",
+            "description":"Modality under which the contracting process is carried out, for example: public bidding, price competition, direct contracting, etc."
+          },
+          {
+            "format": "default",
+            "name": "UrlProceso",
+            "type": "string",
+            "description":"URL or link that directs to the location of the online contracting process or its corresponding documentation"
+          },
+          {
+            "format": "default",
+            "name": "Fuente",
+            "type": "string",
+            "description":"Source from which the information about the hiring process was obtained."
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuenteMH",
+            "type": "string",
+            "description":"Date on which the information on the contracting process was updated according to the data source of the Ministry of Finance"
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuenteDGCP",
+            "type": "string",
+            "description":"Date on which the information on the contracting process was updated according to the data source of the Public Procurement System (DGCP)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "a2716d51fade086805aff85d62a010b7",
+      "name": "contratos-de-compras",
+      "title":"Information on Contracts related to the General Investment Budget and public investment projects",
+      "description":"This data set provides information on contracts that have been related to the investment-focused budget and public investment projects through the committed expenditure forms.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/CSV/2024/05/01/DatosAbiertosContratosXProyectosInv.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/toc_DatosAbiertosContratosXProyectosInv.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "CodigoSnip",
+            "type": "integer",
+            "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project."
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string",
+            "description": "Name or title of the project to which the contract refers."
+          },
+          {
+            "format": "default",
+            "name": "CodigoProceso",
+            "type": "string",
+            "description": "Code that identifies a specific process associated with the contract."
+          },
+          {
+            "format": "default",
+            "name": "CodigoContrato",
+            "type": "string",
+            "description": "Unique code that identifies the contract within the system or set of contracts."
+          },
+          {
+            "format": "default",
+            "name": "DescripcionContrato",
+            "type": "string",
+            "description": "Detailed description of the contract, including relevant terms and conditions."
+          },
+          {
+            "format": "default",
+            "name": "EstadoContrato",
+            "type": "string",
+            "description": "Current status of the contract, for example: pending, in progress, completed, etc."
+          },
+          {
+            "format": "default",
+            "name": "MonedaContrato",
+            "type": "string",
+            "description": "Type of currency used to express contract values."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ValorContrato",
+            "type": "number",
+            "description": "Amount or total value of the contract."
+          },
+          {
+            "format": "default",
+            "name": "CodigoProveedor",
+            "type": "integer",
+            "description": "Unique code that identifies the supplier associated with the contract."
+          },
+          {
+            "format": "default",
+            "name": "Proveedor",
+            "type": "string",
+            "description": "Name or identification of the supplier with whom the contract was established."
+          },
+          {
+            "format": "default",
+            "name": "UrlContrato",
+            "type": "string",
+            "description": "URL or link that directs to the location of the online contract or its corresponding documentation."
+          },
+          {
+            "format": "default",
+            "name": "Fuente",
+            "type": "string",
+            "description": "Source from which the information about the contract was obtained."
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuenteMH",
+            "type": "string",
+            "description": "Date on which the information about the contract was updated according to the data source of the Ministry of Finance."
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuenteDGCP",
+            "type": "string",
+            "description": "Date on which information about the contract was updated according to the data source of the Public Procurement System (DGCP)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "4002763dc7fac17b5f708e909ee2e6bb",
+      "name": "presupuesto-relacionado-a-proyectos-de-inversion",
+      "title":"Information on the General Budget on Investment and Related Public Investment Projects",
+      "description":"This data set provides information on the general budget of the Dominican Republic focused on Investment and relates public investment projects.",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/CSV/2024/05/01/DatosAbiertosPresupuestoXProyInv.csv",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/toc_DatosAbiertosPresupuestoXProyInv.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "AnioPresupuesto",
+            "type": "integer",
+            "description": "Year to which the budget or recorded budget information corresponds."
+          },
+          {
+            "format": "default",
+            "name": "CodigoInstitucion",
+            "type": "string",
+            "description": "Unique code that identifies an institution within the system or set of institutions."
+          },
+          {
+            "format": "default",
+            "name": "Institucion",
+            "type": "string",
+            "description": "Name or identification of the institution to which the recorded budget information belongs."
+          },
+          {
+            "format": "default",
+            "name": "CodigoFuente_de_Financiamiento",
+            "type": "integer",
+            "description": "Code that identifies the source of financing for the project."
+          },
+          {
+            "format": "default",
+            "name": "Fuente_de_Financiamiento",
+            "type": "string",
+            "description": "Description or identification of the source of financing for the project."
+          },
+          {
+            "format": "default",
+            "name": "CodigoFuenteEspecifica",
+            "type": "integer",
+            "description": "Specific code that identifies the detailed financing source."
+          },
+          {
+            "format": "default",
+            "name": "FuenteEspecifica",
+            "type": "string",
+            "description": "Detailed description or specific identification of the funding source."
+          },
+          {
+            "format": "default",
+            "name": "CodigoOrganismoFinanciador",
+            "type": "integer",
+            "description": "Code that identifies the organization that provides financing for the project."
+          },
+          {
+            "format": "default",
+            "name": "OrganismoFinanciador",
+            "type": "string",
+            "description": "Name or identification of the agency providing financing for the project."
+          },
+          {
+            "format": "default",
+            "name": "CodigoFinalidad",
+            "type": "integer",
+            "description": "Code that identifies the purpose of the project."
+          },
+          {
+            "format": "default",
+            "name": "Finalidad",
+            "type": "string",
+            "description": "Description or name of the purpose for which the project is intended."
+          },
+          {
+            "format": "default",
+            "name": "IdSector",
+            "type": "integer",
+            "description": "Unique identification of the sector to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "NombreSector",
+            "type": "string",
+            "description": "Name or description of the sector to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "CodigoSubFuncion",
+            "type": "string",
+            "description": "Code that identifies a subfunction within a function."
+          },
+          {
+            "format": "default",
+            "name": "SubFuncion",
+            "type": "string",
+            "description": "Description or name of the subfunction associated with the project."
+          },
+          {
+            "format": "default",
+            "name": "CodigoSnip",
+            "type": "integer",
+            "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project."
+          },
+          {
+            "format": "default",
+            "name": "nombreproyecto",
+            "type": "string",
+            "description": "Name or title of the project."
+          },
+          {
+            "format": "default",
+            "name": "objetivogeneral",
+            "type": "string",
+            "description": "General description of the project objective."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "avancefinanciero",
+            "type": "number",
+            "description": "Status or financial progress of the project."
+          },
+          {
+            "format": "default",
+            "name": "IdEstado",
+            "type": "integer",
+            "description": "Unique identification of the current status of the project."
+          },
+          {
+            "format": "default",
+            "name": "NombreEstado",
+            "type": "string",
+            "description": "Name or description of the current status of the project."
+          },
+          {
+            "format": "default",
+            "name": "IdProyecto",
+            "type": "integer",
+            "description": "Unique project identification."
+          },
+          {
+            "format": "default",
+            "name": "ValorProyecto",
+            "type": "integer",
+            "description": "Total amount or value of the project."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ValorFinanciado",
+            "type": "number",
+            "description": "Amount or value financed for the project."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ValorEjecutado",
+            "type": "number",
+            "description": "Amount or value executed so far for the project."
+          },
+          {
+            "format": "default",
+            "name": "URLProyecto",
+            "type": "string",
+            "description": "URL or link that directs to the online project location or its corresponding documentation."
+          },
+          {
+            "format": "default",
+            "name": "Fuente",
+            "type": "string",
+            "description": "Source from which information about the project was obtained."
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuenteMH",
+            "type": "string",
+            "description": "Date on which information about the project was updated according to the data source of the Ministry of Finance."
+          },
+          {
+            "format": "default",
+            "name": "FechaActualizacionFuenteMEPyD",
+            "type": "string",
+            "description": "Date on which information about the project was updated according to the data source of the Ministry of Economy, Planning and Development."
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

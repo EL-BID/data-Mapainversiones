@@ -1,0 +1,226 @@
+{
+  "hash": "b7a07ba080950725cd2fa308b3fc6bf5",
+  "profile": "data-package",
+  "name": "investment-projects-dom",
+  "title": "Dominican Republic Investment Projects",
+  "description": "This data set provides a detailed overview of investment projects in the Dominican Republic. Includes relevant information about each project, such as its value, current status, regional classifications, among others. These data have been compiled with the purpose of offering a comprehensive vision of the development of investment in the country and facilitating analysis and decision-making in public and private policies.",
+  "country": "DOM",
+  "contributors": [
+    {
+      "title": "SNIP - National Public Investment System, Ministry of Economy, Planning
+and Development (MEPyD)",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"Planning
+and Development (MEPyD)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SNIP - National Public Investment System, Ministry of Economy, Planning
+and Development (MEPyD)",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "title": "Dominican Republic Investment Projects",
+      "desciption": "This data set provides a detailed overview of investment projects in the Dominican Republic. Includes relevant information about each project, such as its value, current status, regional classifications, among others. These data have been compiled with the purpose of offering a comprehensive vision of the development of investment in the country and facilitating analysis and decision-making in public and private policies.",
+      "hash": "54755420f612237c5345b7870571948c",
+      "name": "proyectos",
+      "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/06/19/PROYECTOS.CSV",
+      "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PROYECTOS/toc_PROYECTOS.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "IdProyecto",
+            "type": "integer",
+            "description": "Project identification code within MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "codigosnip",
+            "type": "integer",
+            "description": "Project identifier code in the government institution"
+          },
+          {
+            "format": "default",
+            "name": "AnioInicioProyecto",
+            "type": "integer",
+            "description": "Project start year"
+          },
+          {
+            "format": "default",
+            "name": "AnioFinProyecto",
+            "type": "integer",
+            "description": "Final year of the project"
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string",
+            "description": "Project name"
+          },
+          {
+            "format": "default",
+            "name": "DuracionEstimadaProyecto",
+            "type": "integer",
+            "description": "Project duration in years"
+          },
+          {
+            "format": "default",
+            "name": "EtapaActual",
+            "type": "string",
+            "description": "Current stage of the project"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CostoEstimadoProyecto",
+            "type": "number",
+            "description": "Estimated cost of the project in RD$"
+          },
+          {
+            "format": "default",
+            "name": "tipoproyecto",
+            "type": "string",
+            "description": "Type of project scope. For example, National or Departmental"
+          },
+          {
+            "format": "default",
+            "name": "Sector",
+            "type": "string",
+            "description": "Name of the sector to which the investment project belongs. Ex. Education, Health, Transportation"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "avancefinanciero",
+            "type": "number",
+            "description": "Percentage of financial progress of the project"
+          },
+          {
+            "format": "default",
+            "name": "nombreproducto",
+            "type": "string",
+            "description": "Name of the product associated with the project"
+          },
+          {
+            "format": "default",
+            "name": "meta",
+            "type": "integer",
+            "description": "Product goal associated with the project"
+          },
+          {
+            "format": "default",
+            "name": "ejecutado",
+            "type": "integer",
+            "description": "Executed value of the product associated with the project"
+          },
+          {
+            "format": "default",
+            "name": "UnidaddelProducto",
+            "type": "string",
+            "description": "Unit of measurement of the product associated with the project"
+          },
+          {
+            "format": "default",
+            "name": "nombrefase",
+            "type": "string",
+            "description": "Name of the phase in which the project is located (Ex: Pre-investment, Investment)"
+          },
+          {
+            "format": "default",
+            "name": "entidadejecutora",
+            "type": "string",
+            "description": "Primary project executor"
+          },
+          {
+            "format": "default",
+            "name": "fuentefinanciacion",
+            "type": "string",
+            "description": "Name of the project financing source"
+          },
+          {
+            "format": "default",
+            "name": "organismofinanciador",
+            "type": "string",
+            "description": "Name of the project financing organization"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "valorprogramado",
+            "type": "number",
+            "description": "Current value of the financing source associated with the project"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "valorejecutado",
+            "type": "number",
+            "description": "Executed value of the financing source associated with the project"
+          },
+          {
+            "format": "default",
+            "name": "AnioEjecucionPptal",
+            "type": "integer",
+            "description": "Budget execution year"
+          },
+          {
+            "format": "default",
+            "name": "nombreregion",
+            "type": "string",
+            "description": "Name of the region where the project is located"
+          },
+          {
+            "format": "default",
+            "name": "nombreprovincia",
+            "type": "string",
+            "description": "Name of the province where the project is located"
+          },
+          {
+            "format": "default",
+            "name": "nombremunicipio",
+            "type": "string",
+            "description": "Name of the municipality where the project is located"
+          },
+          {
+            "format": "default",
+            "name": "fechacarguearchivo",
+            "type": "string",
+            "description": "Date of last upload of project information in MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "fuentedatos",
+            "type": "string",
+            "description": "Project data source"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
