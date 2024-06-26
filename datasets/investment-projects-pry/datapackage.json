@@ -1,21 +1,22 @@
 {
   "hash": "43a8633a7691afa37e7897e6927e14f1",
   "profile": "data-package",
-  "name": "proyectos-de-inversión-pry",
-  "title": "Proyectos de Inversión",
+  "name": "investment-projects-pry",
+  "title": "Paraguay Investment Projects",
+  "description":"Paraguay Investment Projects",
   "country": "PRY",
   "contributors": [
     {
-      "title": "SNIP",
+      "title": "SNIP Project Bank - National Public Investment System Paraguay - General Directorate of Public Investment",
       "email": "",
       "path": "",
       "role": "author",
-      "organization":""
+      "organization":"SNIP"
     }
   ],
   "sources": [
     {
-      "title": "Proyectos de Inversión",
+      "title": "Paraguay Investment Projects",
       "path": "",
       "email": ""
     }
@@ -34,7 +35,9 @@
       "encoding": "utf-8",
       "format": "csv",
       "hash": "f07c30bff15339bc49148e5672170045",
-      "name": "opendata-proyectos",
+      "name": "paraguay-investment-projects",
+      "title": "Paraguay Investment Projects",
+      "description": "This data set provides general information on public investment projects in Paraguay. It includes relevant information about each project, such as its value, current status, regional classifications, among others.",
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS/CSV/2024/06/19/OPENDATA_PROYECTOS.CSV",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS/toc_OPENDATA_PROYECTOS.csv",
       "profile": "tabular-data-resource",
@@ -43,123 +46,146 @@
           {
             "format": "default",
             "name": "CodigoSNIP",
-            "type": "integer"
+            "type": "integer",
+            "description":"Unique Project Identifier in the SNIP system"
           },
           {
             "format": "default",
             "name": "Estado",
-            "type": "string"
+            "type": "string",
+            "description":"Project status"
           },
           {
             "format": "default",
             "name": "IdSector",
-            "type": "integer"
+            "type": "integer",
+            "description":"Sector Identifier"
           },
           {
             "format": "default",
             "name": "NombreSector",
-            "type": "string"
+            "type": "string",
+            "description":"Denomination of the type of sector according to the scope of Economic Activity"
           },
           {
             "format": "default",
             "name": "FechaInicioProyecto",
-            "type": "string"
+            "type": "string",
+            "description":"Estimated Project Start Date"
           },
           {
             "format": "default",
             "name": "FechaFinProyecto",
-            "type": "string"
+            "type": "string",
+            "description":"Estimated Project Completion Date"
           },
           {
             "format": "default",
             "name": "EjecutorPrimario",
-            "type": "string"
+            "type": "string",
+            "description":"Primary Executing Entity"
           },
           {
             "format": "default",
             "name": "NombreProyecto",
-            "type": "string"
+            "type": "string",
+            "description":"Project Name"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "CostoEstimadoProyecto",
-            "type": "number"
+            "type": "number",
+            "description":"Estimated Project Cost"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "AvanceFinanciero",
-            "type": "number"
+            "type": "number",
+            "description":"Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "AvanceFisico",
-            "type": "number"
+            "type": "number",
+            "description":"Progress or Physical Allocation (in percentage) to measure Project compliance"
           },
           {
             "format": "default",
             "name": "IdEntidadEjecutora",
-            "type": "integer"
+            "type": "integer",
+            "description":"Structural organization based on the formation, grouping and cataloging of State Agencies and Entities in the PGN"
           },
           {
             "format": "default",
             "name": "EntidadEjecutora",
-            "type": "string"
+            "type": "string",
+            "description":"Name of the Entity"
           },
           {
             "format": "default",
             "name": "DuracionProyecto",
-            "type": "integer"
+            "type": "integer",
+            "description":"Duration (in years) of the project"
           },
           {
             "format": "default",
             "name": "TipoProyecto",
-            "type": "string"
+            "type": "string",
+            "description":"Project Type"
           },
           {
             "format": "default",
             "name": "InformeAvance",
-            "type": "string"
+            "type": "string",
+            "description":"Project Progress Description"
           },
           {
             "format": "default",
             "name": "IdDepartamentoLocalizacion",
-            "type": "integer"
+            "type": "integer",
+            "description":"Systemic ordering"
           },
           {
             "format": "default",
             "name": "DepartamentoLocalizacion",
-            "type": "string"
+            "type": "string",
+            "description":"Location Name"
           },
           {
             "format": "default",
             "name": "IdMunicipioLocalizacion",
-            "type": "integer"
+            "type": "integer",
+            "description":"Systemic ordering"
           },
           {
             "format": "default",
             "name": "NombreMunicipioLocalizacion",
-            "type": "string"
+            "type": "string",
+            "description":"Municipality Name"
           },
           {
             "format": "default",
             "name": "FechaCargueArchivo",
-            "type": "string"
+            "type": "string",
+            "description":"Date of last upload of project information in MapaInversiones"
           },
           {
             "format": "default",
             "name": "FuenteDatos",
-            "type": "string"
+            "type": "string",
+            "description":"Project information source for MapaInversiones"
           },
           {
             "format": "default",
             "name": "FechaCarga",
-            "type": "string"
+            "type": "string",
+            "description":""
           }
         ],
         "missingValues": [
@@ -180,7 +206,9 @@
       "encoding": "utf-8",
       "format": "csv",
       "hash": "f55ac1070c22acd5a2c6107269b4227d",
-      "name": "opendata-proyectos-ejecucion-ppto",
+      "name": "investment-projects-budget-execution",
+      "title": "Investment Projects Budget Execution of Paraguay",
+      "description": "This data set provides information on budget execution by financing agency of public investment projects.",
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/CSV/2024/06/20/OPENDATA_PROYECTOS_EJECUCION_PPTO.CSV",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv",
       "profile": "tabular-data-resource",
@@ -189,61 +217,72 @@
           {
             "format": "default",
             "name": "CodigoSNIP",
-            "type": "integer"
+            "type": "integer",
+            "description":"Unique Project Identifier"
           },
           {
             "format": "default",
             "name": "IdOrganismoFinanciador",
-            "type": "integer"
+            "type": "integer",
+            "description":"Systemic Ordering"
           },
           {
             "format": "default",
             "name": "OrganismoFinanciador",
-            "type": "string"
+            "type": "string",
+            "description":"Detail of the origin of the income concurrent with the classification of the financing source"
           },
           {
             "format": "default",
             "name": "IdFuenteFinanciacion",
-            "type": "integer"
+            "type": "integer",
+            "description":"Arrangement of resources based on the origin of income, there are three classifications: 10 20 30"
           },
           {
             "format": "default",
             "name": "FuenteFinanciacion",
-            "type": "string"
+            "type": "string",
+            "description":"Arrangement of resources based on the origin of income, there are three classifications: 10 Treasury Resources, 20 Public Credit Resources and 30 Institutional Resources"
           },
           {
             "format": "default",
             "name": "Vigencia",
-            "type": "integer"
+            "type": "integer",
+            "description":"Validity period"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "Presupuestado",
-            "type": "number"
+            "type": "number",
+            "description":"Current budget"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "Ejecutado",
-            "type": "number"
+            "type": "number",
+            "description":"Financial progress as assigned"
           },
           {
             "format": "default",
             "name": "FechaCargueArchivo",
-            "type": "string"
+            "type": "string",
+            "description":"File Upload Date"
           },
           {
             "format": "default",
             "name": "FuenteDatos",
-            "type": "string"
+            "type": "string",
+            "description":"Data source"
           },
           {
             "format": "default",
             "name": "FechaCarga",
-            "type": "string"
+            "type": "string",
+            "description":""
           }
         ],
         "missingValues": [
@@ -264,7 +303,9 @@
       "encoding": "utf-8",
       "format": "csv",
       "hash": "745c7380cc5a00ee4f2b09607f7d6da3",
-      "name": "opendata-proyectos-components",
+      "name": "investment-projects-components",
+      "title": "Investment Projects Components of Paraguay",
+      "description": "This data set provides contains information on the components and activities of the public investment project",
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/CSV/2024/06/19/OPENDATA_PROYECTOS_COMPONENTES.CSV",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/toc_OPENDATA_PROYECTOS_COMPONENTES.csv",
       "profile": "tabular-data-resource",
@@ -273,42 +314,50 @@
           {
             "format": "default",
             "name": "CodigoSNIP",
-            "type": "integer"
+            "type": "integer",
+            "description": "Unique Project Identifier in the SNIP"
           },
           {
             "format": "default",
             "name": "codigoComponente",
-            "type": "string"
+            "type": "string",
+            "description": "Systemic ordering"
           },
           {
             "format": "default",
             "name": "descripcionComponente",
-            "type": "string"
+            "type": "string",
+            "description": "Component Name"
           },
           {
             "format": "default",
             "name": "codigoActividad",
-            "type": "string"
+            "type": "string",
+            "description": "Activity Identifier Code"
           },
           {
             "format": "default",
             "name": "descripcionActividad",
-            "type": "string"
+            "type": "string",
+            "description": "Name of the Activity"
           },
           {
             "format": "default",
             "name": "FechaCargueArchivo",
-            "type": "string"
+            "type": "string",
+            "description": "File Upload Date"
           },
           {
             "format": "default",
             "name": "FuenteDatos",
-            "type": "string"
+            "type": "string",
+            "description": ""
           },
           {
             "format": "default",
             "name": "FechaCarga",
-            "type": "string"
+            "type": "string",
+            "description": "Data source"
           }
         ],
         "missingValues": [

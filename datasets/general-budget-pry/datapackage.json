@@ -1,21 +1,27 @@
 {
   "hash": "7d1af14084147c32ef3b53e2c9418d0e",
   "profile": "data-package",
-  "name": "presupuesto-pry",
-  "title": "Presupuesto",
+  "name": "general-budget-pry",
+  "title": "General Budget of the Nation of Paraguay",
+  "description": "General Budget of the Nation of Paraguay",
   "country": "PRY",
   "contributors": [
     {
-      "title": "Hacienda",
+      "title": "Ministry of Finance of Paraguay",
       "email": "",
       "path": "",
       "role": "author",
-      "organization":""
+      "organization":"Ministry of Finance of Paraguay"
     }
   ],
   "sources": [
     {
       "title": "Presupuesto",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Presupuesto - Indicadores",
       "path": "",
       "email": ""
     }
@@ -34,7 +40,9 @@
       "encoding": "utf-8",
       "format": "csv",
       "hash": "f67eeb11103ffce279cff0a3359dc80c",
-      "name": "presupuesto",
+      "name": "general-budget",
+      "title": "General Budget of the Nation of Paraguay",
+      "description": "Contains budget information for entities and projects in Paraguay",
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_PRESUPUESTO/CSV/2024/06/01/PresupuestoPND_MH.csv",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_PRESUPUESTO/toc_PresupuestoPND_MH.csv",
       "profile": "tabular-data-resource",
@@ -43,77 +51,92 @@
           {
             "format": "default",
             "name": "AnioPresupuesto",
-            "type": "integer"
+            "type": "integer",
+            "description": "Budget year"
           },
           {
             "format": "default",
             "name": "codNivelEntidad",
-            "type": "string"
+            "type": "string",
+            "description": "Level and entity code"
           },
           {
             "format": "default",
             "name": "NombreEntidad",
-            "type": "string"
+            "type": "string",
+            "description": "Entity name"
           },
           {
             "format": "default",
             "name": "sectores",
-            "type": "string"
+            "type": "string",
+            "description": "Sector to which the entity/project belongs"
           },
           {
             "format": "default",
             "name": "ClasePrograma",
-            "type": "string"
+            "type": "string",
+            "description": "Program class"
           },
           {
             "format": "default",
             "name": "NombrePrograma",
-            "type": "string"
+            "type": "string",
+            "description": "Program name"
           },
           {
             "format": "default",
             "name": "IdNegocioProyecto",
-            "type": "string"
+            "type": "string",
+            "description": "Sequence of codes that identify the bill"
           },
           {
             "format": "default",
             "name": "NombreProyectoActividad",
-            "type": "string"
+            "type": "string",
+            "description": "Project or activity name"
           },
           {
             "format": "default",
             "name": "PryClasificacion",
-            "type": "string"
+            "type": "string",
+            "description": "Type of Activity / Project"
           },
           {
             "format": "default",
             "name": "NombreVersion",
-            "type": "integer"
+            "type": "integer",
+            "description": "Version Name"
           },
           {
             "format": "default",
             "name": "descripcionGrupo",
-            "type": "string"
+            "type": "string",
+            "description": "Expense Object Group Description"
           },
           {
             "format": "default",
             "name": "NombreObjetoGasto",
-            "type": "string"
+            "type": "string",
+            "description": "Expense Object Name"
           },
           {
             "format": "default",
             "name": "PresupuestoVigente",
-            "type": "integer"
+            "type": "integer",
+            "description": "Budget assigned to the project/activity"
           },
           {
             "format": "default",
             "name": "PresupuestoDisponible",
-            "type": "integer"
+            "type": "integer",
+            "description": "Approved/Initial Budget + modifications made to the project/activity"
           },
           {
             "format": "default",
             "name": "PresupuestoAvance",
-            "type": "integer"
+            "type": "integer",
+            "description": "Executed budget of the project/activity"
           }
         ],
         "missingValues": [
@@ -134,7 +157,9 @@
       "encoding": "utf-8",
       "format": "csv",
       "hash": "8bab2e8185628424a1b3dd4bf5fe7061",
-      "name": "presupuesto-indicadores",
+      "name": "general-budget-indicators",
+      "title": "Indicators associated with the General Budget of the Nation of Paraguay",
+      "description": "Contains information on the indicators of the National General Budget",
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_INDICADORES/CSV/2024/06/01/IndicadoresPND_MH.csv",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_INDICADORES/toc_IndicadoresPND_MH.csv",
       "profile": "tabular-data-resource",
@@ -143,81 +168,96 @@
           {
             "format": "default",
             "name": "AnioPresupuesto",
-            "type": "integer"
+            "type": "integer",
+            "description": "Budget year"
           },
           {
             "format": "default",
             "name": "CodigoIndicador",
-            "type": "integer"
+            "type": "integer",
+            "description": "Indicator code"
           },
           {
             "format": "default",
             "name": "NombreIndicador",
-            "type": "string"
+            "type": "string",
+            "description": "Indicator name"
           },
           {
             "format": "default",
             "name": "DescripcionIndicador",
-            "type": "string"
+            "type": "string",
+            "description": "Indicator Description"
           },
           {
             "format": "default",
             "name": "IndicadorFrecuencia",
-            "type": "string"
+            "type": "string",
+            "description": "Time interval with which the indicator is measured/updated"
           },
           {
             "format": "default",
             "name": "AñoBasePresupuesto",
-            "type": "integer"
+            "type": "integer",
+            "description": "Base year of the indicator"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "Avance",
-            "type": "number"
+            "type": "number",
+            "description": "Indicator advance"
           },
           {
             "decimalChar": ".",
             "format": "default",
             "groupChar": "",
             "name": "Meta",
-            "type": "number"
+            "type": "number",
+            "description": "Indicator goal"
           },
           {
             "format": "default",
             "name": "UnidadMedidaTotal",
-            "type": "string"
+            "type": "string",
+            "description": "Unit of measure for the indicator"
           },
           {
             "format": "default",
             "name": "MetodoCalculo",
-            "type": "string"
+            "type": "string",
+            "description": "Method to calculate the indicator in its unit of measurement"
           },
           {
             "format": "default",
             "name": "DescripcionPoblacion",
-            "type": "string"
+            "type": "string",
+            "description": "Description of the population that measures the indicator"
           },
           {
             "format": "default",
             "name": "CodigoNivelEntidad",
-            "type": "string"
+            "type": "string",
+            "description": "Level and entity code that contributes to the indicator and objectives of the PND 2030"
           },
           {
             "format": "default",
             "name": "NombreEntidad",
-            "type": "string"
+            "type": "string",
+            "description": "Name of the entity that contributes to the indicator and objectives of the PND 2030"
           },
           {
             "format": "default",
             "name": "IdNegocioProyecto",
-            "type": "string"
+            "type": "string",
+            "description": "Sequence of codes that identify the bill"
           },
           {
             "format": "default",
             "name": "NombreProyectoActividad",
-            "type": "string"
+            "type": "string",
+            "description": "Name of the bill"
           }
         ],
         "missingValues": [
