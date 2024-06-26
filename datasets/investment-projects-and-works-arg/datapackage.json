@@ -1,0 +1,467 @@
+{
+  "hash": "855f5cbcd0fd457958d3787c3e1b0129",
+  "profile": "data-package",
+  "name": "investment-projects-and-works-arg",
+  "title": "Investment Projects of the Argentine Republic",
+  "description": "Contains information on the Investment works projects and Works of the Argentine Republic",
+  "country": "ARG",
+  "contributors": [
+    {
+      "title": "Secretary of Public Works of the Ministry of Economy of the Argentine Republic",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":""
+    }
+  ],
+  "sources": [
+    {
+      "title": "OBRAS",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "PROYECTO DE OBRAS",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "DATOS ESPACIALES",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "a8a015b59eb6458d2b3ec5fa8c99c7d6",
+      "name": "spatial-data-works",
+      "title": "Spatial data - Works of the Argentine Republic",
+      "description": "It contains the spatial information of the Works of the Argentine Republic",
+      "path": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/OBRAS/CSV/2024/06/19/dataset_mop.csv",
+      "toc": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/OBRAS/toc_dataset_mop.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "idproyecto",
+            "type": "integer",
+            "description": "Unique identifier of the work"
+          },
+          {
+            "format": "default",
+            "name": "numeroobra",
+            "type": "string",
+            "description": "Work number"
+          },
+          {
+            "format": "default",
+            "name": "codigobapin",
+            "type": "integer",
+            "description": "BAPIN code (https://www.argentina.gob.ar/dnip/bapin) of the project to which the work refers"
+          },
+          {
+            "format": "default",
+            "name": "fechainicioanio",
+            "type": "integer",
+            "description": "Year of start of work"
+          },
+          {
+            "format": "default",
+            "name": "fechafinanio",
+            "type": "integer",
+            "description": "Year of completion of the work"
+          },
+          {
+            "format": "default",
+            "name": "nombreobra",
+            "type": "string",
+            "description": "Name of the work"
+          },
+          {
+            "format": "default",
+            "name": "descripicionfisica",
+            "type": "string",
+            "description": "Physical description of the work"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "montototal",
+            "type": "number",
+            "description": "Total amount of the work"
+          },
+          {
+            "format": "default",
+            "name": "sectornombre",
+            "type": "string",
+            "description": "Sector in charge of the work"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "avancefinanciero",
+            "type": "number",
+            "description": "Percentage of financial progress of the work"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "avancefisico",
+            "type": "number",
+            "description": "Percentage of physical progress of the work"
+          },
+          {
+            "format": "default",
+            "name": "entidadejecutoranombre",
+            "type": "string",
+            "description": "Name of the executing entity"
+          },
+          {
+            "format": "default",
+            "name": "duracionobrasdias",
+            "type": "integer",
+            "description": "Duration in days of the work"
+          },
+          {
+            "format": "default",
+            "name": "objetivogeneral",
+            "type": "string",
+            "description": "General objective of the work"
+          },
+          {
+            "format": "default",
+            "name": "tipoproyecto",
+            "type": "string",
+            "description": "Type of project of the work"
+          },
+          {
+            "format": "default",
+            "name": "nombredepto",
+            "type": "string",
+            "description": "Department Name (first 5 digits BAHRA code) "
+          },
+          {
+            "format": "default",
+            "name": "nombreprovincia",
+            "type": "string",
+            "description": "Name of the Province (first 2 digits BAHRA code) "
+          },
+          {
+            "format": "default",
+            "name": "codigo_bahra",
+            "type": "string",
+            "description": "Code of the Base of Human Settlements of the Argentine Republic (BAHRA) http://www.bahra.gob.ar"
+          },
+          {
+            "format": "default",
+            "name": "etapaobra",
+            "type": "string",
+            "description": "cover in which the work is found"
+          },
+          {
+            "format": "default",
+            "name": "tipomoneda",
+            "type": "string",
+            "description": "Type of currency in which the total amount of the work is represented"
+          },
+          {
+            "format": "default",
+            "name": "url_perfil_obra",
+            "type": "string",
+            "description": "https address associated with the profile of the work on the platform"
+          },
+          {
+            "format": "default",
+            "name": "programa_infraestructura",
+            "type": "string",
+            "description": "Label Care Infrastructure Program"
+          },
+          {
+            "format": "default",
+            "name": "organismo_financiador_1",
+            "type": "string",
+            "description": "Funding organization of project 1"
+          },
+          {
+            "format": "default",
+            "name": "organismo_financiador_2",
+            "type": "string",
+            "description": "Funding organization of project 2"
+          },
+          {
+            "format": "default",
+            "name": "organismo_financiador_prestamo",
+            "type": "string",
+            "description": "Operation number associated with the financing organization"
+          },
+          {
+            "format": "default",
+            "name": "contraparte_key",
+            "type": "string",
+            "description": "Counterparty type"
+          },
+          {
+            "format": "default",
+            "name": "contraparte_val",
+            "type": "string",
+            "description": "Counterparty name"
+          },
+          {
+            "format": "default",
+            "name": "contraparte_cuit",
+            "type": "string",
+            "description": "CUIT of the counterparty (Unique Tax Identification Code)"
+          },
+          {
+            "format": "default",
+            "name": "contraparte_modalidad",
+            "type": "string",
+            "description": "Contracting modality of the counterpart"
+          },
+          {
+            "format": "default",
+            "name": "tag_accionclimatica",
+            "type": "string",
+            "description": "Marking. Related climate action."
+          },
+          {
+            "format": "default",
+            "name": "tag_ods_incidencia",
+            "type": "string",
+            "description": "Marking. Related SDG (Sustainable Development Goals)"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "72025d5d85b8572f66718a1e02750238",
+      "name": "investment-projects",
+      "title": "Investment Projects of the Argentine Republic",
+      "description": "Contains information on the Investment works projects of the Argentine Republic",
+      "path": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/06/19/dataset_proyectosmop.csv",
+      "toc": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/PROYECTOS/toc_dataset_proyectosmop.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "IdProyecto",
+            "type": "integer",
+            "description": "Project identifier code in MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "CodigoBapin",
+            "type": "integer",
+            "description": "Project identifier code within the project bank"
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string",
+            "description": "Project name"
+          },
+          {
+            "format": "default",
+            "name": "Sector",
+            "type": "string",
+            "description": "Name of the sector to which the investment project belongs. Ex. Architecture"
+          },
+          {
+            "format": "default",
+            "name": "Subsector",
+            "type": "string",
+            "description": "Name of the Subsector to which the investment project belongs."
+          },
+          {
+            "format": "default",
+            "name": "Tipo",
+            "type": "string",
+            "description": "Project type description"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "CostoEstimado",
+            "type": "number",
+            "description": "Estimated cost of the project in Argentine pesos"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "FechaEstimacion",
+            "type": "date",
+            "description": "Project cost estimate date"
+          },
+          {
+            "format": "default",
+            "name": "Responsable",
+            "type": "string",
+            "description": "Entity responsible for the project"
+          },
+          {
+            "format": "default",
+            "name": "Plan",
+            "type": "string",
+            "description": "name of the plan to which the project makes its contribution. Ex: Plan Argentina Ago"
+          },
+          {
+            "format": "default",
+            "name": "Objetivo",
+            "type": "string",
+            "description": "Objective of the project"
+          },
+          {
+            "format": "default",
+            "name": "Descripcion",
+            "type": "string",
+            "description": "Project description"
+          },
+          {
+            "format": "default",
+            "name": "NombreProvincia",
+            "type": "string",
+            "description": "Name of the province where the project is located"
+          },
+          {
+            "format": "default",
+            "name": "NombreDepartamento",
+            "type": "string",
+            "description": "Name of the department where the project is located"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "FechaCargueArchivo",
+            "type": "date",
+            "description": "Date of last upload of project information in MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "FuenteDatos",
+            "type": "string",
+            "description": "Project information source for MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "url_perfil_obra",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "87fdf6e2350744844a5b291810ad71f5",
+      "name": "DATOS_ESPACIALES",
+      "title": "Works of the Argentine Republic",
+      "description": "Contains information on the Investment works projects of the Argentine Republic",
+      "path": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/DATOS_ESPACIALES/CSV/2024/06/25/dataset_geojson.csv",
+      "toc": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/DATOS_ESPACIALES/toc_dataset_geojson.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "IdVisorMapas",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "IdProyecto",
+            "type": "integer",
+            "description": "Project identifier code in MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "CodigoBPIN",
+            "type": "integer",
+            "description": "Project identifier code within the project bank"
+          },
+          {
+            "format": "default",
+            "name": "JSON",
+            "type": "geojson",
+            "description": "GeoJSON Feature Collection including all types of valid geometries"
+          },
+          {
+            "format": "default",
+            "name": "Descripcion",
+            "type": "string",
+            "description": "Description associated with the geometry and the project in MapaInversiones"
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "Fecha",
+            "type": "date",
+            "description": "Name of the Subsector to which the investment project belongs."
+          },
+          {
+            "format": "default",
+            "name": "FechaUltimaModificacion",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "ConsecutivoCarga",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "Modificadopor",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
