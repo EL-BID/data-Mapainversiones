@@ -102,7 +102,7 @@
             "format": "default",
             "name": "TIPO_EXCEPCION",
             "type": "string",
-            "description": "Type of Exception (In this case they are all of the "emergency" type)"
+            "description": "Type of Exception (In this case they are all of the \"emergency\" type)"
           },
           {
             "format": "default",
@@ -254,7 +254,7 @@
             "format": "default",
             "name": "COMPRA_CONJUNTA",
             "type": "string",
-            "description": "",
+            "description": ""
           },
           {
             "format": "default",
