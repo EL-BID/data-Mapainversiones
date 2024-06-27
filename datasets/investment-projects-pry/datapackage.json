@@ -185,7 +185,7 @@
             "format": "default",
             "name": "FechaCarga",
             "type": "string",
-            "description":""
+            "description":"Datalake Upload Date - This field is optional, some datasets may not have it"
           }
         ],
         "missingValues": [
@@ -282,7 +282,7 @@
             "format": "default",
             "name": "FechaCarga",
             "type": "string",
-            "description":""
+            "description":"Datalake Upload Date - This field is optional, some datasets may not have it"
           }
         ],
         "missingValues": [
