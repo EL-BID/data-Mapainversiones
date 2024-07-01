@@ -1,0 +1,201 @@
+{
+  "hash": "629f5355994cdd2f39451e3d38ad9dbf",
+  "profile": "data-package",
+  "name": "investment-projects-jam",
+  "title": "Public Investment Projects of the Government of Jamaica",
+  "description": "Contains information on investment projects of the Government of Jamaica.",
+  "country": "JAM",
+  "contributors": [
+    {
+      "title": "Project Bank - Ministry of Finance & the Public Service Jamaica",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"Project Bank - Ministry of Finance & the Public Service Jamaica"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project Bank - Ministry of Finance & the Public Service Jamaica",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f4cac6a4bf01e05028e11e0fd35243c7",
+      "name": "investment-projects",
+      "title": "Public Investment Projects of the Government of Jamaica",
+      "description": "Contains information on investment projects of the Government of Jamaica.",
+      "path": "https://air.portaljs.com/opendata/JAM/MAPAINVDB/PROYECTOS/CSV/2024/06/27/InvestmentMapProjectsOpenData.csv",
+      "toc": "https://air.portaljs.com/opendata/JAM/MAPAINVDB/PROYECTOS/toc_InvestmentMapProjectsOpenData.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "IdProject",
+            "type": "integer",
+            "description": "Unique identifier of the project in MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "CodeProject",
+            "type": "integer",
+            "description": "Unique Project Identifier in the Jamaican public investment system"
+          },
+          {
+            "format": "default",
+            "name": "StatusProject",
+            "type": "string",
+            "description": "Project status"
+          },
+          {
+            "format": "default",
+            "name": "IdSector",
+            "type": "integer",
+            "description": "Sector Identifier"
+          },
+          {
+            "format": "default",
+            "name": "Sector",
+            "type": "string",
+            "description": "Secotres associated according to the scope of Economic Activity"
+          },
+          {
+            "format": "default",
+            "name": "StartDate",
+            "type": "string",
+            "description": "Estimated Project Start Date"
+          },
+          {
+            "format": "default",
+            "name": "FinishDate",
+            "type": "string",
+            "description": "Estimated Project Completion Date"
+          },
+          {
+            "format": "default",
+            "name": "ExtensionDate",
+            "type": "string",
+            "description": "Project Extension Date (This date applies when extensions are requested at the end of the project"
+          },
+          {
+            "format": "default",
+            "name": "ProjectName",
+            "type": "string",
+            "description": "Project's name "
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "ProjectEstimateCost",
+            "type": "number",
+            "description": "Estimated Project Cost in Jamaican dollars in thousands"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "FinancialPogress",
+            "type": "number",
+            "description": "Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project in economic progress"
+          },
+          {
+            "format": "default",
+            "name": "ProjectOverview",
+            "type": "string",
+            "description": "General Summary of the Project, Explains in general terms the characteristics of the project"
+          },
+          {
+            "format": "default",
+            "name": "GeneralObjective",
+            "type": "string",
+            "description": "General objective of the Project. Explain the general scope of the project"
+          },
+          {
+            "format": "default",
+            "name": "SpecificObjectives",
+            "type": "string",
+            "description": "Specific objectives of the Project. List the specific objectives and specific scope of the project"
+          },
+          {
+            "format": "default",
+            "name": "IdExecutingAgency",
+            "type": "integer",
+            "description": "Code and identifier of the Project Executing Entity"
+          },
+          {
+            "format": "default",
+            "name": "ExecutingAgency",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "IdFundingAgency",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "FundingAgency",
+            "type": "string",
+            "description": "Agency or Entity in charge of financing the project. When there are several entities or agencies, it will be established as multiple agencies."
+          },
+          {
+            "format": "default",
+            "name": "IdCounty",
+            "type": "integer",
+            "description": "Identifier of the administrative territorial county division for Jamaica"
+          },
+          {
+            "format": "default",
+            "name": "County",
+            "type": "string",
+            "description": "Name of county administrative territorial division for Jamaica"
+          },
+          {
+            "format": "default",
+            "name": "IdParish",
+            "type": "integer",
+            "description": "Parish identifier of the administrative territorial sub-division for Jamaica"
+          },
+          {
+            "format": "default",
+            "name": "Parish",
+            "type": "string",
+            "description": "Name of the Parish of the administrative territorial sub-division for Jamaica"
+          },
+          {
+            "format": "default",
+            "name": "UpdateDateData",
+            "type": "string",
+            "description": "Registry Update Date in MapaInversiones"
+          },
+          {
+            "format": "default",
+            "name": "DataSource",
+            "type": "string",
+            "description": "Source of information"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
