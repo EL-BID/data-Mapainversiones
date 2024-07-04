@@ -1,0 +1,295 @@
+{
+  "hash": "43a8633a7691afa37e7897e6927e14f1",
+  "profile": "data-package",
+  "name": "investment-projects-pan",
+  "title": "Investment projects",
+  "description":"Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+  "country": "PAN",
+  "contributors": [
+    {
+      "title": "Ministry of Economy and Finance of Panama (MEF)",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"MEF"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ministry of Economy and Finance of Panama",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "0240101b8b093c4461d960ae18012959",
+      "name": "investment-projects",
+      "title": "Investment projects",
+      "description": "Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+      "path": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/07/03/proyectos.csv",
+      "toc": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PROYECTOS/toc_proyectos.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "IdProyecto",
+            "type": "integer",
+            "description": "Unique project identifier."
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string",
+            "description": "Full name of the project."
+          },
+          {
+            "format": "default",
+            "name": "FechaInicioProyecto",
+            "type": "string",
+            "description": "Date the project started."
+          },
+          {
+            "format": "default",
+            "name": "FechaFinProyecto",
+            "type": "string",
+            "description": "Expected project completion date."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "valorinicialestimado",
+            "type": "number",
+            "description": "Estimated initial value of the project."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "presupuestovigente2023",
+            "type": "number",
+            "description": "Total project value budgeted in 2023."
+          },
+          {
+            "format": "default",
+            "name": "ObjetivoGeneral",
+            "type": "string",
+            "description": "General objective of the project."
+          },
+          {
+            "format": "default",
+            "name": "IdSector",
+            "type": "integer",
+            "description": "Identifier of the sector to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "FechaUltimaModificacion",
+            "type": "string",
+            "description": "Date of the last modification of the project."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "PorcentajeAvanceFinanciero",
+            "type": "number",
+            "description": "Percentage of financial progress of the project."
+          },
+          {
+            "format": "default",
+            "name": "IDMoneda",
+            "type": "integer",
+            "description": "Identifier of the currency used in the project."
+          },
+          {
+            "format": "default",
+            "name": "Moneda",
+            "type": "string",
+            "description": "Name of the currency used in the project."
+          },
+          {
+            "format": "default",
+            "name": "IdSubSector",
+            "type": "integer",
+            "description": "Identifier of the subsector to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "Descripcion",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "nombresubsector",
+            "type": "integer",
+            "description": "Description of the subsector to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "nombresector",
+            "type": "string",
+            "description": "Subsector identifier in one digit."
+          },
+          {
+            "format": "default",
+            "name": "idejecutor",
+            "type": "integer",
+            "description": "Name of the sector to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "nombreejecutor",
+            "type": "string",
+            "description": "Identifier of the project executor."
+          },
+          {
+            "format": "default",
+            "name": "idareaejecutor",
+            "type": "integer",
+            "description": "Identifier of the area of ​​the project executor."
+          },
+          {
+            "format": "default",
+            "name": "nombreareaejecutor",
+            "type": "string",
+            "description": "Name of the project executor area."
+          },
+          {
+            "format": "default",
+            "name": "codigoetapa",
+            "type": "integer",
+            "description": "Code of the stage the project is in."
+          },
+          {
+            "format": "default",
+            "name": "nombreetapa",
+            "type": "string",
+            "description": "Name of the stage the project is in."
+          },
+          {
+            "format": "default",
+            "name": "codigofase",
+            "type": "integer",
+            "description": "Code of the phase the project is in."
+          },
+          {
+            "format": "default",
+            "name": "nombrefase",
+            "type": "string",
+            "description": "Name of the phase the project is in."
+          },
+          {
+            "format": "default",
+            "name": "programa",
+            "type": "integer",
+            "description": "Identifier of the program to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "descripcion_programas",
+            "type": "string",
+            "description": "Name of the program to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "subprograma",
+            "type": "integer",
+            "description": "Identifier of the subprogram to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "descripcion_subprogramas",
+            "type": "string",
+            "description": "Name of the applet to which the project belongs."
+          },
+          {
+            "format": "default",
+            "name": "actividad",
+            "type": "integer",
+            "description": "Identifier of the activity related to the project."
+          },
+          {
+            "format": "default",
+            "name": "descripcion_actividad",
+            "type": "string",
+            "description": "Name of the activity related to the project."
+          },
+          {
+            "format": "default",
+            "name": "cod_reg",
+            "type": "integer",
+            "description": "Concatenated code of territorial registration of the project."
+          },
+          {
+            "format": "default",
+            "name": "provincia",
+            "type": "integer",
+            "description": "Identifier of the province where the project is executed."
+          },
+          {
+            "format": "default",
+            "name": "distritos",
+            "type": "integer",
+            "description": "Identifier of the district where the project is executed."
+          },
+          {
+            "format": "default",
+            "name": "corregimientos",
+            "type": "integer",
+            "description": "Identifier of the township where the project is executed."
+          },
+          {
+            "format": "default",
+            "name": "descripcion_provincia",
+            "type": "string",
+            "description": "Name of the province where the project is being executed."
+          },
+          {
+            "format": "default",
+            "name": "descripcion_distritos",
+            "type": "string",
+            "description": "Name of the district where the project is being executed."
+          },
+          {
+            "format": "default",
+            "name": "descripcion_corregimiento",
+            "type": "string",
+            "description": "Name of the township where the project is being executed."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Codigo_sinip",
+            "type": "number",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "partida_presupuestaria",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}
