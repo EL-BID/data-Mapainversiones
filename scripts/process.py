@@ -12,7 +12,7 @@ load_dotenv()
 
 def package_init():
     flow = Flow(
-        load("datasets/emergency-processes-and-contracts-and-budget-dom/budget.csv", format='csv', name="budget"),
+        load("datasets/investment-projects-hnd/thematic-budgets.csv", format='csv', name="thematic-budgets"),
         dump_to_path(out_path="datasets/test/")
     )
     flow.process()  
@@ -25,11 +25,12 @@ def add_to_toc(blob_name, toc_file):
     '''
     domain="https://air.portaljs.com/"
     blob_parts = blob_name.split('/')
-    if blob_parts[1] != 'DOM':
+    print(blob_parts)
+    if blob_parts[1] not in ('DOM', 'JAM'):
         date = '-'.join(blob_parts[6:9])
         uri = domain+blob_name
     else:
-        date = '-'.join(blob_parts[6:9])
+        date = '-'.join(blob_parts[5:8])
         uri = domain+blob_name
     file_exists = os.path.isfile(toc_file)
     with open(toc_file, mode='a', newline='') as file:
@@ -73,7 +74,7 @@ def toc_file_init(prefix):
     except Exception as e:
         print(f"Failed to list objects in R2 bucket: {e}")
 
-#specific_prefix = "opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/CSV/"  # Replace with the desired prefix
+#specific_prefix = "opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERO/CSV/"  # Replace with the desired prefix
 #toc_file_init(specific_prefix)
 
 def upload_file_to_r2(file_path, key):
@@ -100,7 +101,7 @@ def upload_file_to_r2(file_path, key):
         print(f"Failed to upload {file_path}: {e}")
         
         
-#local_csv_path = "toc_PresupuestoEmergencias.csv"
-#upload_key = "opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/toc_PresupuestoEmergencias.csv"
-#upload_file_to_r2(local_csv_path, upload_key)
+local_csv_path = "toc_presupuesto_genero.csv"
+upload_key = "opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERO/toc_presupuesto_genero.csv"
+upload_file_to_r2(local_csv_path, upload_key)
         

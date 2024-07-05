@@ -1,0 +1,509 @@
+{
+  "hash": "1953f35e843ff49b05d26683bc4f2911",
+  "profile": "data-package",
+  "name": "public-investment-hnd",
+  "title": "Public investment",
+  "description":"Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+  "country": "HND",
+  "contributors": [
+    {
+      "title": "Secretary of Finance of Honduras (SEFIN)",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"SEFIN"
+    },
+    {
+      "title": "Secretary of Finance of Honduras (SEFIN) / Regulatory Office of Contracting and Acquisitions of the State of Honduras (ONCAE)",
+      "email": "",
+      "path": "",
+      "role": "author",
+      "organization":"SEFIN/ONCAE"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Secretary of Finance of Honduras (SEFIN)",
+      "path": "",
+      "email": ""
+    },
+    {
+      "title": "Secretary of Finance of Honduras (SEFIN) / Regulatory Office of Contracting and Acquisitions of the State of Honduras (ONCAE)",
+      "path": "",
+      "email": ""
+    }
+  ],
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "4e94605da4e2690c6dcdd187506903ba",
+      "name": "investment-projects",
+      "title": "Investment projects",
+      "description": "Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+      "path": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/07/03/proyectos.csv",
+      "toc": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PROYECTOS/toc_proyectos.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "IdProyecto",
+            "type": "integer",
+            "description": "Project identifier code within MapaInversiones."
+          },
+          {
+            "format": "default",
+            "name": "NombreProyecto",
+            "type": "string",
+            "description": "Full name of the investment project in the public investment system (SNIP)."
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "FechaInicioProyecto",
+            "type": "date",
+            "description": "Project start date."
+          },
+          {
+            "format": "%Y-%m-%d",
+            "name": "FechaFinProyecto",
+            "type": "date",
+            "description": "Project end date."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "costo_estimado_lempiras",
+            "type": "number",
+            "description": "Estimated cost of the project in lempiras."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "costo_estimado_usd",
+            "type": "number",
+            "description": "Estimated cost of the project in USD."
+          },
+          {
+            "format": "default",
+            "name": "NombreSector",
+            "type": "string",
+            "description": "Name of the sector to which the investment project belongs. Eg. Education, Health, Transportation."
+          },
+          {
+            "format": "default",
+            "name": "EntidadEjecutora",
+            "type": "string",
+            "description": "Corresponds to the primary executor of the project."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "DuracionProyecto",
+            "type": "number",
+            "description": "Duration in years of the project."
+          },
+          {
+            "format": "default",
+            "name": "TipoProyecto",
+            "type": "string",
+            "description": "Type of project scope. E.g. National, Departmental or Municipal."
+          },
+          {
+            "format": "default",
+            "name": "CodigoSNIP",
+            "type": "integer",
+            "description": "Project identifier code within the project bank is the unique identifier of the investment project in (SNIP System)."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "NumeroBeneficiariosHombres",
+            "type": "number",
+            "description": "Number of male beneficiaries of the project"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "NumeroBeneficiariosMujeres",
+            "type": "number",
+            "description": "Number of female beneficiaries of the project."
+          },
+          {
+            "format": "default",
+            "name": "NombreDepartamento",
+            "type": "string",
+            "description": "Name of the department where the project is located."
+          },
+          {
+            "format": "default",
+            "name": "NombreMunicipio",
+            "type": "string",
+            "description": "Name of the municipality where the project is located."
+          },
+          {
+            "format": "default",
+            "name": "nombreestado",
+            "type": "string",
+            "description": "Current stage the project is in. Execution, Programming."
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "8e162869f2b5921d28e09cde859d62b1",
+      "name": "general-budget",
+      "title": "General Budget of the Republic",
+      "description": "It is the expression of the annual operating plan in terms of income, expenses and financing under a budget methodology that facilitates the analysis, discussion, approval and public knowledge of the financial management of State entities.",
+      "path": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERAL/CSV/2024/07/03/presupuesto_general.csv",
+      "toc": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERAL/toc_presupuesto_general.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Gestion",
+            "type": "integer",
+            "description": "Year in which the budget operation is being carried out."
+          },
+          {
+            "format": "default",
+            "name": "Mes",
+            "type": "integer",
+            "description": "Month in which the budget operation is being carried out."
+          },
+          {
+            "format": "default",
+            "name": "Nivel_de_Administracion",
+            "type": "string",
+            "description": "It is the level of administration, which can be CENTRAL ADMINISTRATION OR DECENTRALIZED INSTITUTIONS"
+          },
+          {
+            "format": "default",
+            "name": "Institucion",
+            "type": "string",
+            "description": "Higher level grouping that contains the accounting group or the executing Institution."
+          },
+          {
+            "format": "default",
+            "name": "Gerencia Administrativa",
+            "type": "string",
+            "description": "Area responsible for administration within the institution."
+          },
+          {
+            "format": "default",
+            "name": "Unidad Ejecutora",
+            "type": "string",
+            "description": "Entity in charge of the execution of projects and activities."
+          },
+          {
+            "format": "default",
+            "name": "Programa",
+            "type": "string",
+            "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories."
+          },
+          {
+            "format": "default",
+            "name": "Subprograma",
+            "type": "string",
+            "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program."
+          },
+          {
+            "format": "default",
+            "name": "Proyecto",
+            "type": "string",
+            "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent."
+          },
+          {
+            "format": "default",
+            "name": "Actividad u Obra",
+            "type": "string",
+            "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located."
+          },
+          {
+            "format": "default",
+            "name": "Organismo",
+            "type": "string",
+            "description": "Entity or body that participates in the execution of the budget."
+          },
+          {
+            "format": "default",
+            "name": "Fuente de Financiamiento",
+            "type": "string",
+            "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs."
+          },
+          {
+            "format": "default",
+            "name": "BIP",
+            "type": "string",
+            "description": "Project identification number within the budget."
+          },
+          {
+            "format": "default",
+            "name": "Finalidad",
+            "type": "string",
+            "description": "Main objective of the expense or investment made."
+          },
+          {
+            "format": "default",
+            "name": "Funcion",
+            "type": "string",
+            "description": "Area of ​​performance or responsibility within the public administration."
+          },
+          {
+            "format": "default",
+            "name": "Grupo de Objeto",
+            "type": "string",
+            "description": "Grouper of expense objects (Expense_Object)."
+          },
+          {
+            "format": "default",
+            "name": "Objeto del Gasto",
+            "type": "string",
+            "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management."
+          },
+          {
+            "format": "default",
+            "name": "Beneficiario de Transferencia",
+            "type": "string",
+            "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents."
+          },
+          {
+            "format": "default",
+            "name": "Aprobado Ministro",
+            "type": "string",
+            "description": "Approved minister, it is the first step of approval."
+          },
+          {
+            "format": "default",
+            "name": "Aprobado",
+            "type": "string",
+            "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis."
+          },
+          {
+            "format": "default",
+            "name": "Vigente",
+            "type": "string",
+            "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period."
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "EjecuciÃ³n al mes",
+            "type": "number",
+            "description": "Refers to the Monthly Accrued/Executed."
+          },
+          {
+            "format": "default",
+            "name": "EjecuciÃ³n Acumulada",
+            "type": "string",
+            "description": "Refers to Accrual/Executed: It is the accounting basis by which transactions and other events are recognized when they occur and not when they are collected or paid in cash or its equivalent. Its registration reflects the moment in which the economic value is created, transformed, exchanged, transferred or extinguished. The moment of “accrual” of income will be recognized as occurring when, in accordance with current legislation, the right to collection in favor of the State and, correlatively, a payment obligation borne by a natural or legal person arises. duly individualized and for a certain amount. Likewise, the moment of “accrual” of expenses will be recognized when the conforming receipt of the goods and services duly contracted or the legal and/or administrative requirements established by the current regulations for expenses without consideration occur; implies the definitive impact of the budget allocation and may generate an immediate or deferred payment obligation."
+          },
+          {
+            "format": "default",
+            "name": "Disponible",
+            "type": "string",
+            "description": "It is the result of the Budgeted in the Current column minus the Executed_Accumulated column."
+          },
+          {
+            "format": "default",
+            "name": "% de Ejecucion",
+            "type": "string",
+            "description": "It is the Cumulative Executed Percentage"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "3238e94113c245398ff27747ee9acde1",
+      "name": "thematic-budgets",
+      "title": "Thematic Budgets (Gender Perspective)",
+      "description": "The Budget with a Gender Perspective (PPG), a public policy tool that allows identifying the State investment that is allocated through the General Budget of the Republic to reduce and eliminate gaps between men and women, promoting greater autonomy in the economic sphere. , physical, decision-making and the interrelation of these.",
+      "path": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERO/CSV/2024/07/03/presupuesto_genero.csv",
+      "toc": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERO/toc_presupuesto_genero.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Gestión",
+            "type": "integer",
+            "description": "Year in which the budget operation is being carried out."
+          },
+          {
+            "format": "default",
+            "name": "mes",
+            "type": "integer",
+            "description": "Month in which the budget operation is being carried out."
+          },
+          {
+            "format": "default",
+            "name": "Area",
+            "type": "integer",
+            "description": "General category that groups related activities or topics, in this case focused on gender marking."
+          },
+          {
+            "format": "default",
+            "name": "Sub-Area",
+            "type": "string",
+            "description": "Subcategory within an area that specifies a particular focus or additional detail related to the main area."
+          },
+          {
+            "format": "default",
+            "name": "Nivel_de_Administración",
+            "type": "string",
+            "description": "Area responsible for administration within the institution."
+          },
+          {
+            "format": "default",
+            "name": "Institución",
+            "type": "string",
+            "description": "Entity in charge of the execution of projects and activities."
+          },
+          {
+            "format": "default",
+            "name": "Gerencia_Administrativa",
+            "type": "string",
+            "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories."
+          },
+          {
+            "format": "default",
+            "name": "Unidad_Ejecutora",
+            "type": "string",
+            "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program."
+          },
+          {
+            "format": "default",
+            "name": "Programa",
+            "type": "string",
+            "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent."
+          },
+          {
+            "format": "default",
+            "name": "Subprograma",
+            "type": "string",
+            "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located."
+          },
+          {
+            "format": "default",
+            "name": "Proyecto_",
+            "type": "string",
+            "description": "Entity or body that participates in the execution of the budget."
+          },
+          {
+            "format": "default",
+            "name": "Actividad_u_Obra",
+            "type": "string",
+            "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs."
+          },
+          {
+            "format": "default",
+            "name": "Organismo",
+            "type": "integer",
+            "description": "Project identification number within the budget."
+          },
+          {
+            "format": "default",
+            "name": "Fuente_de_Financiamiento",
+            "type": "integer",
+            "description": "Main objective of the expense or investment made."
+          },
+          {
+            "format": "default",
+            "name": "BIP",
+            "type": "integer",
+            "description": "Area of ​​performance or responsibility within the public administration."
+          },
+          {
+            "format": "default",
+            "name": "Finalidad",
+            "type": "string",
+            "description": "Grouper of expense objects (Expense_Object)."
+          },
+          {
+            "format": "default",
+            "name": "Función",
+            "type": "string",
+            "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management."
+          },
+          {
+            "format": "default",
+            "name": "Grupo_de_Objeto",
+            "type": "string",
+            "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents."
+          },
+          {
+            "format": "default",
+            "name": "Objeto_del_Gasto",
+            "type": "string",
+            "description": "Approved minister, it is the first step of approval."
+          },
+          {
+            "format": "default",
+            "name": "Beneficiario_de_Transferencia",
+            "type": "integer",
+            "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis."
+          },
+          {
+            "format": "default",
+            "name": "Aprobado_Ministro",
+            "type": "integer",
+            "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period."
+          },
+          {
+            "format": "default",
+            "name": "Aprobado",
+            "type": "integer",
+            "description": "Refers to the Monthly Accrued/Executed."
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ]
+}

@@ -30,28 +30,6 @@ r2_client = boto3.client('s3', endpoint_url=r2_endpoint_url,
                          aws_access_key_id=r2_access_key_id,
                          aws_secret_access_key=r2_secret_access_key,
                          region_name=r2_location)            
-                     
-def copy_azure_to_r2(container_name, blob_name, blob_content):
-    try:
-        # Prepend the Azure container name to the blob name
-        r2_blob_name = f"{container_name}/{blob_name}"
-        
-        # Check if the object already exists in the R2 bucket
-        try:
-            r2_client.head_object(Bucket=r2_bucket_name, Key=r2_blob_name)
-            print(f"Skipping {r2_blob_name}: already exists in R2 bucket.")
-        except ClientError as e:
-            if e.response['Error']['Code'] == '404':
-                # Object does not exist, proceed with upload
-                r2_client.put_object(Bucket=r2_bucket_name, Key=r2_blob_name, Body=blob_content)
-                print(f"Successfully copied {r2_blob_name} to R2 in {r2_location}.")
-            else:
-                # Handle other potential errors
-                print(f"Error checking if {r2_blob_name} exists: {e}")
-    except NoCredentialsError:
-        print("Credentials not available.")
-    except Exception as e:
-        print(f"Failed to copy {blob_name}: {e}")
 
 
 def increment_load():
@@ -64,7 +42,7 @@ def increment_load():
             # Check if the object already exists in the R2 bucket
             try:
                 r2_client.head_object(Bucket=r2_bucket_name, Key=r2_blob_name)
-                print(f"Skipping {r2_blob_name}: already exists in R2 bucket.")
+                #print(f"Skipping {r2_blob_name}: already exists in R2 bucket.")
             except ClientError as e:
                 if e.response['Error']['Code'] == '404':
                     # Object does not exist, proceed with upload 
