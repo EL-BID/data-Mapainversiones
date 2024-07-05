@@ -2357,7 +2357,25 @@
               "{\n  \"path\": [\n    \"http://example.com/file.csv\",\n    \"http://example.com/file2.csv\"\n  ]\n}\n",
               "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
             ]
-          }
+          },
+          "description_translations": {
+            "propertyOrder": 122,
+            "title": "Description translations",
+            "description": "Description translations",
+            "type": "array",
+            "examples": [
+            "{\n  \"description_translations\": {\n   \"es\": \"my-data\",\n     \"de\": \"my-data\",\n"
+            ]
+          },
+          "title_translations": {
+            "propertyOrder": 123,
+            "title": "Title translations",
+            "description": "Title translations",
+            "type": "array",
+            "examples": [
+            "{\n  \"title_translations\": {\n   \"es\": \"my-data\",\n     \"de\": \"my-data\",\n"
+            ]
+          }    
         }
       },
       "examples": [
@@ -2423,6 +2441,26 @@
       "format": "default",
       "examples": [
         "{\n  \"country\": \"DOM\"\n}\n"
+      ]
+    },
+    "description_translations": {
+      "propertyOrder": 220,
+      "title": "Description translations",
+      "description": "Description translations",
+      "type": "array",
+      "format": "default",
+      "examples": [
+        "{\n  \"description_translations\": {\n   \"es\": \"my-data\",\n     \"de\": \"my-data\",\n"
+      ]
+    },
+    "title_translations": {
+      "propertyOrder": 230,
+      "title": "Title translations",
+      "description": "Title translations",
+      "type": "array",
+      "format": "default",
+      "examples": [
+        "{\n  \"title_translations\": {\n   \"es\": \"my-data\",\n     \"de\": \"my-data\",\n"
       ]
     }
   }

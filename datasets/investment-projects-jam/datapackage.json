@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "investment-projects-jam",
   "title": "Public Investment Projects of the Government of Jamaica",
+  "title_translations": {
+      "es": "Proyectos de Inversión Publica del Gobierno de Jamaica"
+  },
   "description": "Contains information on investment projects of the Government of Jamaica.",
+  "description_translations": {
+      "es": "Contiene informacion de los proyectos de inversion del Gobierno de Jamaica"
+  },
   "country": "JAM",
   "contributors": [
     {
@@ -37,7 +43,13 @@
       "hash": "f4cac6a4bf01e05028e11e0fd35243c7",
       "name": "investment-projects",
       "title": "Public Investment Projects of the Government of Jamaica",
+      "title_translations": {
+          "es": "Proyectos de Inversión Publica del Gobierno de Jamaica"
+      },
       "description": "Contains information on investment projects of the Government of Jamaica.",
+      "description_translations": {
+          "es": "Contiene informacion de los proyectos de inversion del Gobierno de Jamaica"
+      },
       "path": "https://air.portaljs.com/opendata/JAM/MAPAINVDB/PROYECTOS/CSV/2024/06/27/InvestmentMapProjectsOpenData.csv",
       "toc": "https://air.portaljs.com/opendata/JAM/MAPAINVDB/PROYECTOS/toc_InvestmentMapProjectsOpenData.csv",
       "profile": "tabular-data-resource",
