@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Investment Map Repository Data Syntentic Dataset",
+    "title_translations": {
+      "es": "Inversiones Repositorio Dataset de Data sintetica"
+    },
+    "description": "Synthetic data set with information on projects and their characteristics for the investment map repository",
+    "description_translations": {
+      "es": "Conjunto de datos sinteticos con informacion de proyectos y sus caracteristicas para el repositorio de mapa inversiones"
+    },
+    "url": "https://github.com/EL-BID/RepositorioMapaInversiones/blob/main/DeploymentDbModel/IM_Repository_Synthetic_Data_Database.sql",
+    "country": "COL"
+  }
+]
