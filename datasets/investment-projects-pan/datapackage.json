@@ -290,6 +290,269 @@
           ""
         ]
       }
+    },
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "1eb87dd102360eb09dd5312f8228f44b",
+      "name": "presupuesto",
+      "title": "General State Budget",
+      "description": "The General State Budget is a forecast of the State's expenses and income for a financial year. This forecast of expenses and income will be included in a document that will be processed as law in the National Assembly of Deputies.",
+      "path": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PRESUPUESTO/CSV/2024/07/03/presupuesto.csv",
+      "toc": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PRESUPUESTO/toc_presupuesto.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Periodo",
+            "type": "integer",
+            "description": "annual period"
+          },
+          {
+            "format": "default",
+            "name": "Mes",
+            "type": "integer",
+            "description": "monthly period"
+          },
+          {
+            "format": "default",
+            "name": "CodigoNivel_de_Administracion",
+            "type": "integer",
+            "description": "admin level code"
+          },
+          {
+            "format": "default",
+            "name": "Nivel_de_Administracion",
+            "type": "string",
+            "description": "management level"
+          },
+          {
+            "format": "default",
+            "name": "CodigoInstitucion",
+            "type": "integer",
+            "description": "institution code"
+          },
+          {
+            "format": "default",
+            "name": "Institucion",
+            "type": "string",
+            "description": "institution name"
+          },
+          {
+            "format": "default",
+            "name": "codigoue",
+            "type": "integer",
+            "description": "executing unit code"
+          },
+          {
+            "format": "default",
+            "name": "ue",
+            "type": "string",
+            "description": "executing unit name"
+          },
+          {
+            "format": "default",
+            "name": "codigoga",
+            "type": "integer",
+            "description": "group code"
+          },
+          {
+            "format": "default",
+            "name": "ga",
+            "type": "string",
+            "description": "group name"
+          },
+          {
+            "format": "default",
+            "name": "TipoGerencia",
+            "type": "string",
+            "description": "type of management"
+          },
+          {
+            "format": "default",
+            "name": "CodigoFuente_de_Financiamiento",
+            "type": "integer",
+            "description": "funding source code"
+          },
+          {
+            "format": "default",
+            "name": "Fuente_de_Financiamiento",
+            "type": "string",
+            "description": "Funding Source"
+          },
+          {
+            "format": "default",
+            "name": "CodigoPrograma",
+            "type": "integer",
+            "description": "program code"
+          },
+          {
+            "format": "default",
+            "name": "Programa",
+            "type": "string",
+            "description": "program name"
+          },
+          {
+            "format": "default",
+            "name": "CodigoSub_Programa",
+            "type": "integer",
+            "description": "sub program code"
+          },
+          {
+            "format": "default",
+            "name": "Sub_Programa",
+            "type": "string",
+            "description": "sub program name"
+          },
+          {
+            "format": "default",
+            "name": "CodigoProyecto",
+            "type": "string",
+            "description": "project code"
+          },
+          {
+            "format": "default",
+            "name": "Proyecto",
+            "type": "string",
+            "description": "Project name"
+          },
+          {
+            "format": "default",
+            "name": "CodigoActividadObra",
+            "type": "integer",
+            "description": "activity code"
+          },
+          {
+            "format": "default",
+            "name": "ActividadObra",
+            "type": "string",
+            "description": "activity name"
+          },
+          {
+            "format": "default",
+            "name": "CodigoObjeto_de_gasto",
+            "type": "integer",
+            "description": "expense object code"
+          },
+          {
+            "format": "default",
+            "name": "Objeto_de_gasto",
+            "type": "string",
+            "description": "expense object name"
+          },
+          {
+            "format": "default",
+            "name": "CodigoGrupo_de_gasto",
+            "type": "integer",
+            "description": "expense group code"
+          },
+          {
+            "format": "default",
+            "name": "Grupo_de_gasto",
+            "type": "string",
+            "description": "expense group name"
+          },
+          {
+            "format": "default",
+            "name": "CodigoBeneficiario_de_Transferencia",
+            "type": "string",
+            "description": "beneficiary code"
+          },
+          {
+            "format": "default",
+            "name": "Beneficiario_de_Transferencia",
+            "type": "string",
+            "description": "name of beneficiary"
+          },
+          {
+            "format": "default",
+            "name": "Aprobado",
+            "type": "integer",
+            "description": "value approved amount"
+          },
+          {
+            "format": "default",
+            "name": "Vigente",
+            "type": "integer",
+            "description": "value current amount"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Ejecucion_del_mes",
+            "type": "number",
+            "description": "execution value"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Ejecutado_Acumulado_al_mes",
+            "type": "number",
+            "description": "cumulative execution value"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Disponible",
+            "type": "number",
+            "description": "available value"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "%_de_Ejecucion",
+            "type": "number",
+            "description": "percentage of progress in execution"
+          },
+          {
+            "format": "default",
+            "name": "sectorial",
+            "type": "string",
+            "description": "sector name"
+          },
+          {
+            "format": "default",
+            "name": "sector",
+            "type": "string",
+            "description": "infrastructure name"
+          },
+          {
+            "format": "default",
+            "name": "grupo_fuente_finan",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "format": "default",
+            "name": "desc_grupo_fuente_finan",
+            "type": "string",
+            "description": "Grupo de Financiamiento Público"
+          },
+          {
+            "format": "default",
+            "name": "Copy of ga",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
     }
   ]
 }
