@@ -61,43 +61,64 @@
             "format": "default",
             "name": "IdProyecto",
             "type": "integer",
-            "description": "Project identification code within MapaInversiones"
+            "description": "Project identification code within MapaInversiones",
+            "description_translations": {
+                "es": "Código identificador del proyecto dentro de MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "codigosnip",
             "type": "integer",
-            "description": "Project identifier code in the government institution"
+            "description": "Project identifier code in the government institution",
+            "description_translations": {
+                "es": "Código identificador del proyecto dentro del banco de proyectos es el identificador único del proyecto de Inversión en ( Sistema SNIP )"
+            }
           },
           {
             "format": "default",
             "name": "AnioInicioProyecto",
             "type": "integer",
-            "description": "Project start year"
+            "description": "Project start year",
+            "description_translations": {
+                "es": "Año de inicio del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "AnioFinProyecto",
             "type": "integer",
-            "description": "Final year of the project"
+            "description": "Final year of the project",
+            "description_translations": {
+                "es": "Año Final del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description": "Project name"
+            "description": "Project name",
+            "description_translations": {
+                "es": "Nombre completo del proyecto de inversión en el sistema de inversión pública (SNIP)"
+            }
           },
           {
             "format": "default",
             "name": "DuracionEstimadaProyecto",
             "type": "integer",
-            "description": "Project duration in years"
+            "description": "Project duration in years",
+            "description_translations": {
+                "es": "Duración en años del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "EtapaActual",
             "type": "string",
-            "description": "Current stage of the project"
+            "description": "Current stage of the project",
+            "description_translations": {
+                "es": "Etapa actual en la que se encuentra el proyecto. Ej. Ejecución, Programación"
+            }
           },
           {
             "decimalChar": ".",
@@ -105,19 +126,28 @@
             "groupChar": "",
             "name": "CostoEstimadoProyecto",
             "type": "number",
-            "description": "Estimated cost of the project in RD$"
+            "description": "Estimated cost of the project in RD$",
+            "description_translations": {
+                "es": "Costo estimado del proyecto en $RD"
+            }
           },
           {
             "format": "default",
             "name": "tipoproyecto",
             "type": "string",
-            "description": "Type of project scope. For example, National or Departmental"
+            "description": "Type of project scope. For example, National or Departmental",
+            "description_translations": {
+                "es": "Tipo de alcance del proyecto. Ej. Nacional, Departamental o Municipal"
+            }
           },
           {
             "format": "default",
             "name": "Sector",
             "type": "string",
-            "description": "Name of the sector to which the investment project belongs. Ex. Education, Health, Transportation"
+            "description": "Name of the sector to which the investment project belongs. Ex. Education, Health, Transportation",
+            "description_translations": {
+                "es": "Nombre del sector al que pertenece el proyecto de inversión. Ej. Educación, Salud, Transporte, Los sectores en republica dominicana son equivalentes a las funciones "
+            }
           },
           {
             "decimalChar": ".",
@@ -125,55 +155,82 @@
             "groupChar": "",
             "name": "avancefinanciero",
             "type": "number",
-            "description": "Percentage of financial progress of the project"
+            "description": "Percentage of financial progress of the project",
+            "description_translations": {
+                "es": "Porcentaje de avance financiero del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "nombreproducto",
             "type": "string",
-            "description": "Name of the product associated with the project"
+            "description": "Name of the product associated with the project",
+            "description_translations": {
+                "es": "Nombre del producto asociado al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "meta",
             "type": "integer",
-            "description": "Product goal associated with the project"
+            "description": "Product goal associated with the project",
+            "description_translations": {
+                "es": "Meta del producto asociado al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "ejecutado",
             "type": "integer",
-            "description": "Executed value of the product associated with the project"
+            "description": "Executed value of the product associated with the project",
+            "description_translations": {
+                "es": "Valor ejecutado del producto asociado al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "UnidaddelProducto",
             "type": "string",
-            "description": "Unit of measurement of the product associated with the project"
+            "description": "Unit of measurement of the product associated with the project",
+            "description_translations": {
+                "es": "Unidad de medida del producto asociado al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "nombrefase",
             "type": "string",
-            "description": "Name of the phase in which the project is located (Ex: Pre-investment, Investment)"
+            "description": "Name of the phase in which the project is located (Ex: Pre-investment, Investment)",
+            "description_translations": {
+                "es": "Nombre de la fase en la que se encuentra en proyecto (Ej: Preinversión, Inversión)"
+            }
           },
           {
             "format": "default",
             "name": "entidadejecutora",
             "type": "string",
-            "description": "Primary project executor"
+            "description": "Primary project executor",
+            "description_translations": {
+                "es": "Corresponde al ejecutor primario del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "fuentefinanciacion",
             "type": "string",
-            "description": "Name of the project financing source"
+            "description": "Name of the project financing source",
+            "description_translations": {
+                "es": "Nombre de la fuente de financiamiento del proyecto "
+            }
           },
           {
             "format": "default",
             "name": "organismofinanciador",
             "type": "string",
-            "description": "Name of the project financing organization"
+            "description": "Name of the project financing organization",
+            "description_translations": {
+                "es": "Nombre del organismo financiador del proyecto"
+            }
           },
           {
             "decimalChar": ".",
@@ -181,7 +238,10 @@
             "groupChar": "",
             "name": "valorprogramado",
             "type": "number",
-            "description": "Current value of the financing source associated with the project"
+            "description": "Current value of the financing source associated with the project",
+            "description_translations": {
+                "es": "Valor programado de la fuente de financiamiento asociada al proyecto"
+            }
           },
           {
             "decimalChar": ".",
@@ -189,43 +249,64 @@
             "groupChar": "",
             "name": "valorejecutado",
             "type": "number",
-            "description": "Executed value of the financing source associated with the project"
+            "description": "Executed value of the financing source associated with the project",
+            "description_translations": {
+                "es": "Valor ejecutado de la fuente de financiamiento asociada al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "AnioEjecucionPptal",
             "type": "integer",
-            "description": "Budget execution year"
+            "description": "Budget execution year",
+            "description_translations": {
+                "es": "Año de ejecución del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "nombreregion",
             "type": "string",
-            "description": "Name of the region where the project is located"
+            "description": "Name of the region where the project is located",
+            "description_translations": {
+                "es": "Nombre de la región en donde se encuentra localizado el proyecto"
+            }
           },
           {
             "format": "default",
             "name": "nombreprovincia",
             "type": "string",
-            "description": "Name of the province where the project is located"
+            "description": "Name of the province where the project is located",
+            "description_translations": {
+                "es": "Nombre de la provincia en donde se encuentra localizado el proyecto"
+            }
           },
           {
             "format": "default",
             "name": "nombremunicipio",
             "type": "string",
-            "description": "Name of the municipality where the project is located"
+            "description": "Name of the municipality where the project is located",
+            "description_translations": {
+                "es": "Nombre del municipio en donde se encuentra localizado el proyecto"
+            }
           },
           {
             "format": "default",
             "name": "fechacarguearchivo",
             "type": "string",
-            "description": "Date of last upload of project information in MapaInversiones"
+            "description": "Date of last upload of project information in MapaInversiones",
+            "description_translations": {
+                "es": "Fecha de ultimo cargue de información del proyecto en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "fuentedatos",
             "type": "string",
-            "description": "Project data source"
+            "description": "Project data source",
+            "description_translations": {
+                "es": "Fuente de información de proyectos para MapaInversiones"
+            }
           }
         ],
         "missingValues": [
