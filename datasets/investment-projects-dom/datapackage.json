@@ -52,6 +52,8 @@
       "name": "investment-projects",
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/06/19/PROYECTOS.CSV",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PROYECTOS/toc_PROYECTOS.csv",
+      "source_path": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/",
+      "source_path_description": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?usp=drive_link  Sheet=raw tables (SNIP)",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [

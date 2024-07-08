@@ -2326,8 +2326,8 @@
                 "type": "string",
                 "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                 "examples": [
-                  "{\n  \"path\": \"file.csv\"\n}\n",
-                  "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
+                  "{\n  \"toc\": \"file.csv\"\n}\n",
+                  "{\n  \"toc\": \"http://example.com/file.csv\"\n}\n"
                 ],
                 "context": "Implementations need to negotiate the type of path provided, and dereference the data accordingly."
               },
@@ -2340,8 +2340,8 @@
                   "type": "string",
                   "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                   "examples": [
-                    "{\n  \"path\": \"file.csv\"\n}\n",
-                    "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
+                    "{\n  \"toc\": \"file.csv\"\n}\n",
+                    "{\n  \"toc\": \"http://example.com/file.csv\"\n}\n"
                   ],
                   "context": "Implementations need to negotiate the type of path provided, and dereference the data accordingly."
                 },
@@ -2353,9 +2353,9 @@
             ],
             "context": "The dereferenced value of each referenced data source in `path` `MUST` be commensurate with a native, dereferenced representation of the data the resource describes. For example, in a *Tabular* Data Resource, this means that the dereferenced value of `path` `MUST` be an array.",
             "examples": [
-              "{\n  \"path\": [\n    \"file.csv\",\n    \"file2.csv\"\n  ]\n}\n",
-              "{\n  \"path\": [\n    \"http://example.com/file.csv\",\n    \"http://example.com/file2.csv\"\n  ]\n}\n",
-              "{\n  \"path\": \"http://example.com/file.csv\"\n}\n"
+              "{\n  \"toc\": [\n    \"file.csv\",\n    \"file2.csv\"\n  ]\n}\n",
+              "{\n  \"toc\": [\n    \"http://example.com/file.csv\",\n    \"http://example.com/file2.csv\"\n  ]\n}\n",
+              "{\n  \"toc\": \"http://example.com/file.csv\"\n}\n"
             ]
           },
           "description_translations": {
@@ -2375,7 +2375,59 @@
             "examples": [
             "{\n  \"title_translations\": {\n   \"es\": \"my-data\",\n     \"de\": \"my-data\",\n"
             ]
-          }    
+          },
+          "source_path": {
+            "propertyOrder": 124,
+            "title": "Raw data path",
+            "description": "A reference to the raw data, as either a path as a string, or an array of paths as strings. of valid URIs.",
+            "oneOf": [
+              {
+                "title": "Raw data path",
+                "description": "A fully qualified URL, or a POSIX to raw data path.",
+                "type": "string",
+                "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+                "examples": [
+                  "{\n  \"source_path\": \"sourceraw\"\n}\n",
+                  "{\n  \"source_path\": \"http://example.com/sourceraw\"\n}\n"
+                ],
+                "context": "Implementations need to negotiate the type of path provided, and dereference the data accordingly."
+              },
+              {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "title": "Raw data path",
+                  "description": "A fully qualified URL, or a POSIX to raw data path.",
+                  "type": "string",
+                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
+                  "examples": [
+                    "{\n  \"source_path\": \"sourceraw\"\n}\n",
+                    "{\n  \"source_path\": \"http://example.com/sourceraw\"\n}\n"
+                  ],
+                  "context": "Implementations need to negotiate the type of path provided, and dereference the data accordingly."
+                },
+                "examples": [
+                  "[ \"sourceraw\" ]\n",
+                  "[ \"http://example.com/sourceraw\" ]\n"
+                ]
+              }
+            ],
+            "context": "The dereferenced value of each referenced data source in `path` `MUST` be commensurate with a native, dereferenced representation of the data the resource describes. For example, in a *Tabular* Data Resource, this means that the dereferenced value of `path` `MUST` be an array.",
+            "examples": [
+              "{\n  \"source_path\": [\n    \"sourceraw\",\n    \"file2.csv\"\n  ]\n}\n",
+              "{\n  \"source_path\": [\n    \"http://example.com/sourceraw\",\n    \"http://example.com/sourceraw\"\n  ]\n}\n",
+              "{\n  \"source_path\": \"http://example.com/sourceraw\"\n}\n"
+            ]
+          },
+          "source_path_description": {
+            "title": "Raw data description",
+            "description": "Text information for source data.",
+            "type": "string",
+            "examples": [
+              "{\n  \"source_path_description\": \"This datasets are used in list A\"\n}\n"
+            ],
+            "propertyOrder": 125
+          }
         }
       },
       "examples": [
