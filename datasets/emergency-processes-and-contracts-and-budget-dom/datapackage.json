@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "emergency-processes-and-contracts-and-budget-dom",
   "title": "Information on Emergency Processes and Contracts and Budget",
+  "title_translations": {
+      "es": "Información sobre Procesos de Emergencia y Contratos y Presupuesto"
+  },
   "description": "Information on Emergency Processes and Contracts and Budget",
+  "description_translations": {
+      "es": "Información sobre Procesos de Emergencia y Contratos y Presupuesto"
+  },
   "country": "DOM",
   "contributors": [
     {
@@ -54,7 +60,13 @@
       "hash": "7a922dcdd0ae93baa4b26b9fe466ffa3",
       "name": "procurement-process",
       "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "title_translations": {
+          "es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22"
+      },
       "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "description_translations": {
+          "es": "Este conjunto de datos proporciona información detallada sobre el presupuesto general y el presupuesto asociado a cada emergencia. Con esto es posible visualizar el total presupuestado y el total ejecutado en base a los distintos clasificadores que contiene el conjunto de datos."
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRAS/CSV/2024/06/24/emergencias_procesos.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRAS/toc_emergencias_procesos.csv",
       "profile": "tabular-data-resource",
@@ -312,8 +324,14 @@
       "format": "csv",
       "hash": "d6fe6d61f4002a489dc32ab92345f507",
       "name": "procurement-process-item-level",
-      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - item level",
+      "title_translations": {
+          "es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - nivel de objeto"
+      },
       "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "description_translations": {
+          "es": "Estos conjuntos de datos contienen el detalle de procesos de compras y contratos realizados para las emergencias Lluvias 2023 y Huracán Fiona. En ambos casos, la información se presenta a nivel general de cada proceso como tambien a nivel de los articulos que componen cada uno de estos, lo mismo ocurreo con los contratos. El dataset de Proveedores permite tener un mayor detalle de cada proveedor y se relaciona con el dataset de los contratos a través del RPE"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRA_ARTICULOS/CSV/2024/06/25/emergencias_procesos_articulos.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROCESOS_DE_COMPRA_ARTICULOS/toc_emergencias_procesos_articulos.csv",
       "profile": "tabular-data-resource",
@@ -423,8 +441,14 @@
       "format": "csv",
       "hash": "23b3f9beab950ad1eb6cb2c54b4b7abf",
       "name": "contract",
-      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - Contracts",
+      "title_translations": {
+          "es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - Contratos"
+      },
       "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "description_translations": {
+          "es": "Estos conjuntos de datos contienen el detalle de procesos de compras y contratos realizados para las emergencias Lluvias 2023 y Huracán Fiona. En ambos casos, la información se presenta a nivel general de cada proceso como tambien a nivel de los articulos que componen cada uno de estos, lo mismo ocurreo con los contratos. El dataset de Proveedores permite tener un mayor detalle de cada proveedor y se relaciona con el dataset de los contratos a través del RPE"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS/CSV/2024/06/24/emergencias_contratos.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS/toc_emergencias_contratos.csv",
       "profile": "tabular-data-resource",
@@ -774,8 +798,14 @@
       "format": "csv",
       "hash": "fcc35caf310198f267041a6e74c4ef69",
       "name": "contract-item-level",
-      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - Contracts item level",
+      "title_translations": {
+          "es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - Nivel de elemento de contratos"
+      },
       "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "description_translations": {
+          "es": "Estos conjuntos de datos contienen el detalle de procesos de compras y contratos realizados para las emergencias Lluvias 2023 y Huracán Fiona. En ambos casos, la información se presenta a nivel general de cada proceso como tambien a nivel de los articulos que componen cada uno de estos, lo mismo ocurreo con los contratos. El dataset de Proveedores permite tener un mayor detalle de cada proveedor y se relaciona con el dataset de los contratos a través del RPE"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS_ARTICULOS/CSV/2024/06/24/emergencias_contratos_artiuclos.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_CONTRATOS_DE_COMPRAS_ARTICULOS/toc_emergencias_contratos_artiuclos.csv",
       "profile": "tabular-data-resource",
@@ -977,8 +1007,14 @@
       "format": "csv",
       "hash": "6e1e6cf77d599a1358747a8af125a76d",
       "name": "suppliers",
-      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - Suppliers",
+      "title_translations": {
+          "es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - Proveedoras"
+      },
       "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+      "description_translations": {
+          "es": "Contiene informacion de los proyectos de inversion del Gobierno de Jamaica"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROVEEDORES/CSV/2024/06/25/emergencias_proveedores.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PROVEEDORES/toc_emergencias_proveedores.csv",
       "profile": "tabular-data-resource",
@@ -1238,8 +1274,14 @@
       "format": "csv",
       "hash": "22afb008c0397a15700941a4bc6966d1",
       "name": "budget",
-      "title": "Information on the General Emergency Budget - Rains 2023 - Decree 585-23 and Hurricane Fiona -Decree 537-22",
+      "title": "Information on the General Emergency Budget - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+      "title_translations": {
+          "es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22"
+      },
       "description": "This data set provides detailed information on the overall budget and the budget associated with each emergency. With this it is possible to view the budgeted total and the executed total based on the different classifiers contained in the data set.",
+      "description_translations": {
+          "es": "Este conjunto de datos proporciona información detallada sobre el presupuesto general y el presupuesto asociado a cada emergencia. Con esto es posible visualizar el total presupuestado y el total ejecutado en base a los distintos clasificadores que contiene el conjunto de datos."
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/CSV/2024/06/24/PresupuestoEmergencias.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/EMERGENCIAS_PRESUPUESTO/toc_PresupuestoEmergencias.csv",
       "profile": "tabular-data-resource",

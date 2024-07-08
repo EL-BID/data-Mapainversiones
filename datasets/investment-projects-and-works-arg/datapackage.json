@@ -2,8 +2,14 @@
   "hash": "855f5cbcd0fd457958d3787c3e1b0129",
   "profile": "data-package",
   "name": "investment-projects-and-works-arg",
-  "title": "Investment Projects of the Argentine Republic",
-  "description": "Contains information on the Investment works projects and Works of the Argentine Republic",
+  "title": "Investment Projects and Works of the Argentine Republic",
+  "title_translations": {
+      "es": "Proyectos y Obras de Inversión de la República Argentina"
+  },
+  "description": "Investment Projects and Works of the Argentine Republic",
+  "description_translations": {
+      "es": "Proyectos y Obras de Inversión de la República Argentina"
+  },
   "country": "ARG",
   "contributors": [
     {
@@ -47,7 +53,13 @@
       "hash": "a8a015b59eb6458d2b3ec5fa8c99c7d6",
       "name": "spatial-data-works",
       "title": "Spatial data - Works of the Argentine Republic",
+      "title_translations": {
+          "es": "Datos espaciales - Obras de la República Argentina"
+      },
       "description": "It contains the spatial information of the Works of the Argentine Republic",
+      "description_translations": {
+          "es": "Contiene la información espacial de las Obras de la República Argentina"
+      },
       "path": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/OBRAS/CSV/2024/06/19/dataset_mop.csv",
       "toc": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/OBRAS/toc_dataset_mop.csv",
       "profile": "tabular-data-resource",
@@ -266,7 +278,13 @@
       "hash": "72025d5d85b8572f66718a1e02750238",
       "name": "investment-projects",
       "title": "Investment Projects of the Argentine Republic",
+      "title_translations": {
+          "es": "Proyectos de Inversión de la República Argentina"
+      },
       "description": "Contains information on the Investment works projects of the Argentine Republic",
+      "description_translations": {
+          "es": "Contiene información de los proyectos de obras de Inversión de La República Argentina,"
+      },
       "path": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/06/19/dataset_proyectosmop.csv",
       "toc": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/PROYECTOS/toc_dataset_proyectosmop.csv",
       "profile": "tabular-data-resource",
@@ -397,7 +415,13 @@
       "hash": "87fdf6e2350744844a5b291810ad71f5",
       "name": "DATOS_ESPACIALES",
       "title": "Works of the Argentine Republic",
+      "title_translations": {
+          "es": "Obras de la República Argentina"
+      },
       "description": "Contains information on the Investment works projects of the Argentine Republic",
+      "description_translations": {
+          "es": "Contiene información de las Obras de la República Argentina"
+      },
       "path": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/DATOS_ESPACIALES/CSV/2024/06/25/dataset_geojson.csv",
       "toc": "https://air.portaljs.com/opendata/ARG/MAPAINVDB/OPENDATA/DATOS_ESPACIALES/toc_dataset_geojson.csv",
       "profile": "tabular-data-resource",

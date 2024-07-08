@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "investment-projects-pry",
   "title": "Paraguay Investment Projects",
+  "title_translations": {
+      "es": "Proyectos de Inversión de Paraguay"
+  },
   "description":"Paraguay Investment Projects",
+  "description_translations": {
+      "es": "Proyectos de Inversión de Paraguay"
+  },
   "country": "PRY",
   "contributors": [
     {
@@ -37,7 +43,13 @@
       "hash": "f07c30bff15339bc49148e5672170045",
       "name": "paraguay-investment-projects",
       "title": "Paraguay Investment Projects",
+      "title_translations": {
+          "es": "Proyectos de Inversión de Paraguay"
+      },
       "description": "This data set provides general information on public investment projects in Paraguay. It includes relevant information about each project, such as its value, current status, regional classifications, among others.",
+      "description_translations": {
+          "es": "Este conjunto de datos proporciona informacion general de los proyectos de inversión pública en Paraguay Incluye información relevante sobre cada proyecto, como su valor, estado actual, clasificaciones regionales entre otros."
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS/CSV/2024/06/19/OPENDATA_PROYECTOS.CSV",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS/toc_OPENDATA_PROYECTOS.csv",
       "profile": "tabular-data-resource",
@@ -208,7 +220,13 @@
       "hash": "f55ac1070c22acd5a2c6107269b4227d",
       "name": "investment-projects-budget-execution",
       "title": "Investment Projects Budget Execution of Paraguay",
+      "title_translations": {
+          "es": "Proyectos de Inversión Ejecucion Presupuestaria de Paraguay"
+      },
       "description": "This data set provides information on budget execution by financing agency of public investment projects.",
+      "description_translations": {
+          "es": "Este conjunto de datos proporciona contiene informacion de la ejecución presupuestaria por organismo financiador de los proyectos de inversión pública"
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/CSV/2024/06/20/OPENDATA_PROYECTOS_EJECUCION_PPTO.CSV",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_EJECUCION_PPTO/toc_OPENDATA_PROYECTOS_EJECUCION_PPTO.csv",
       "profile": "tabular-data-resource",
@@ -305,7 +323,13 @@
       "hash": "745c7380cc5a00ee4f2b09607f7d6da3",
       "name": "investment-projects-components",
       "title": "Investment Projects Components of Paraguay",
+      "title_translations": {
+          "es": "Proyectos de Inversión Componentes de Paraguay"
+      },
       "description": "This data set provides contains information on the components and activities of the public investment project",
+      "description_translations": {
+          "es": "Este conjunto de datos proporciona contiene información de los componentes y actividades del proyecto de inversión pública"
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/CSV/2024/06/19/OPENDATA_PROYECTOS_COMPONENTES.CSV",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PROYECTOS_COMPONENTES/toc_OPENDATA_PROYECTOS_COMPONENTES.csv",
       "profile": "tabular-data-resource",

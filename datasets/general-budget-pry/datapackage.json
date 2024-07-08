@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "general-budget-pry",
   "title": "General Budget of the Nation of Paraguay",
+  "title_translations": {
+      "es": "Presupuesto General de la Nación del Paraguay"
+  },
   "description": "General Budget of the Nation of Paraguay",
+  "description_translations": {
+      "es": "Presupuesto General de la Nación del Paraguay"
+  },
   "country": "PRY",
   "contributors": [
     {
@@ -42,7 +48,13 @@
       "hash": "f67eeb11103ffce279cff0a3359dc80c",
       "name": "general-budget",
       "title": "General Budget of the Nation of Paraguay",
+      "title_translations": {
+          "es": "Presupuesto General de la  Nacion de Paraguay"
+      },
       "description": "Contains budget information for entities and projects in Paraguay",
+      "description_translations": {
+          "es": "Contiene información del presupuesto de las entidades y proyectos de Paraguay"
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_PRESUPUESTO/CSV/2024/06/01/PresupuestoPND_MH.csv",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_PRESUPUESTO/toc_PresupuestoPND_MH.csv",
       "profile": "tabular-data-resource",
@@ -159,7 +171,13 @@
       "hash": "8bab2e8185628424a1b3dd4bf5fe7061",
       "name": "general-budget-indicators",
       "title": "Indicators associated with the General Budget of the Nation of Paraguay",
+      "title_translations": {
+          "es": "Indicadores asociados al Presupuesto General de la Nacion de Paraguay"
+      },
       "description": "Contains information on the indicators of the National General Budget",
+      "description_translations": {
+          "es": "Contiene información de los indicadores del Presupuesto general de la Nacional"
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_INDICADORES/CSV/2024/06/01/IndicadoresPND_MH.csv",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_MH_INDICADORES/toc_IndicadoresPND_MH.csv",
       "profile": "tabular-data-resource",

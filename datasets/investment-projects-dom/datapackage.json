@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "investment-projects-dom",
   "title": "Dominican Republic Investment Projects",
+  "title_translations": {
+      "es": "Proyectos de Inversión de República Dominicana"
+  },
   "description": "This data set provides a detailed overview of investment projects in the Dominican Republic. Includes relevant information about each project, such as its value, current status, regional classifications, among others. These data have been compiled with the purpose of offering a comprehensive vision of the development of investment in the country and facilitating analysis and decision-making in public and private policies.",
+  "description_translations": {
+      "es": "Este conjunto de datos proporciona un detallado panorama de los proyectos de inversión en la República Dominicana. Incluye información relevante sobre cada proyecto, como su valor, estado actual, clasificaciones regionales entre otros. Estos datos han sido recopilados con el propósito de ofrecer una visión integral del desarrollo de la inversión en el país y facilitar el análisis y la toma de decisiones en políticas públicas y privadas."
+  },
   "country": "DOM",
   "contributors": [
     {
@@ -35,9 +41,15 @@
       "encoding": "utf-8",
       "format": "csv",
       "title": "Dominican Republic Investment Projects",
+      "title_translations": {
+          "es": "Proyectos de Inversión de República Dominicana"
+      },
       "description": "This data set provides a detailed overview of investment projects in the Dominican Republic. Includes relevant information about each project, such as its value, current status, regional classifications, among others. These data have been compiled with the purpose of offering a comprehensive vision of the development of investment in the country and facilitating analysis and decision-making in public and private policies.",
+      "description_translations": {
+          "es": "Este conjunto de datos proporciona un detallado panorama de los proyectos de inversión en la República Dominicana. Incluye información relevante sobre cada proyecto, como su valor, estado actual, clasificaciones regionales entre otros. Estos datos han sido recopilados con el propósito de ofrecer una visión integral del desarrollo de la inversión en el país y facilitar el análisis y la toma de decisiones en políticas públicas y privadas."
+      },
       "hash": "54755420f612237c5345b7870571948c",
-      "name": "proyectos",
+      "name": "investment-projects",
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/06/19/PROYECTOS.CSV",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PROYECTOS/toc_PROYECTOS.csv",
       "profile": "tabular-data-resource",

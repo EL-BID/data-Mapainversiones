@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "investment-projects-pan",
   "title": "Investment projects",
-  "description":"Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+  "title_translations": {
+      "es": "Proyectos de inversión"
+  },
+  "description":"Investment projects",
+  "description_translations": {
+      "es": "Proyectos de inversión"
+  },
   "country": "PAN",
   "contributors": [
     {
@@ -37,7 +43,13 @@
       "hash": "0240101b8b093c4461d960ae18012959",
       "name": "investment-projects",
       "title": "Investment projects",
+      "title_translations": {
+          "es": "Proyectos de inversión"
+      },
       "description": "Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+      "description_translations": {
+          "es": "Proyectos de inversión pública, entendiendo la misma como la utilización de los impuestos por parte del gobierno, para invertirlo con el objetivo de beneficiar a la población mediante obras de infraestructura, servicios, desarrollo de proyectos productivos, incentivo en la creación y desarrollo de empresas, promoción de las actividades comerciales, generación de empleo, protección de derechos fundamentales (salud, educación, protección social, etc.), y mejoramiento de la calidad de vida."
+      },
       "path": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/07/03/proyectos.csv",
       "toc": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PROYECTOS/toc_proyectos.csv",
       "profile": "tabular-data-resource",
@@ -306,7 +318,13 @@
       "hash": "1eb87dd102360eb09dd5312f8228f44b",
       "name": "presupuesto",
       "title": "General State Budget",
+      "title_translations": {
+          "es": "Presupuesto General del Estado"
+      },
       "description": "The General State Budget is a forecast of the State's expenses and income for a financial year. This forecast of expenses and income will be included in a document that will be processed as law in the National Assembly of Deputies.",
+      "description_translations": {
+          "es": "El Presupuesto General del Estado es una previsión de los gastos e ingresos del Estado para un ejercicio económico. Esta previsión de gastos e ingresos quedará recogida en un documento que se tramitará como ley en la Asamblea Nacional de Diputados."
+      },
       "path": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PRESUPUESTO/CSV/2024/07/03/presupuesto.csv",
       "toc": "https://air.portaljs.com/opendata/PAN/MAPAINVDB/OPENDATA/PRESUPUESTO/toc_presupuesto.csv",
       "profile": "tabular-data-resource",

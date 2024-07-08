@@ -1,9 +1,15 @@
 {
   "hash": "1953f35e843ff49b05d26683bc4f2911",
   "profile": "data-package",
-  "name": "public-investment-hnd",
-  "title": "Public investment",
-  "description":"Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+  "name": "investment-projects-hnd",
+  "title": "Investment projects",
+  "title_translations": {
+      "es": "Proyectos de inversión"
+  },
+  "description":"Investment projects",
+  "description_translations": {
+      "es": "Proyectos de inversión"
+  },
   "country": "HND",
   "contributors": [
     {
@@ -47,9 +53,15 @@
       "encoding": "utf-8",
       "format": "csv",
       "hash": "4e94605da4e2690c6dcdd187506903ba",
-      "name": "investment-projects",
-      "title": "Investment projects",
+      "name": "public-investment",
+      "title": "Public investment",
+      "title_translations": {
+          "es": "Inversión Pública"
+      },
       "description": "Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+      "description_translations": {
+          "es": "Proyectos de inversión pública, entendiendo la misma como la utilización de los impuestos por parte del gobierno, para invertirlo con el objetivo de beneficiar a la población mediante obras de infraestructura, servicios, desarrollo de proyectos productivos, incentivo en la creación y desarrollo de empresas, promoción de las actividades comerciales, generación de empleo, protección de derechos fundamentales (salud, educación, protección social, etc.), y mejoramiento de la calidad de vida."
+      },
       "path": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PROYECTOS/CSV/2024/07/03/proyectos.csv",
       "toc": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PROYECTOS/toc_proyectos.csv",
       "profile": "tabular-data-resource",
@@ -182,7 +194,13 @@
       "hash": "8e162869f2b5921d28e09cde859d62b1",
       "name": "general-budget",
       "title": "General Budget of the Republic",
+      "title_translations": {
+          "es": "Presupuesto General de la República"
+      },
       "description": "It is the expression of the annual operating plan in terms of income, expenses and financing under a budget methodology that facilitates the analysis, discussion, approval and public knowledge of the financial management of State entities.",
+      "description_translations": {
+          "es": "Es la expresión del plan operativo anual en términos de ingresos, gastos y financiamiento bajo una metodología presupuestaria que facilita el análisis, la discusión, la aprobación y el conocimiento público de la gestión financiera de las entidades del Estado"
+      },
       "path": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERAL/CSV/2024/07/03/presupuesto_general.csv",
       "toc": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERAL/toc_presupuesto_general.csv",
       "profile": "tabular-data-resource",
@@ -361,7 +379,13 @@
       "hash": "3238e94113c245398ff27747ee9acde1",
       "name": "thematic-budgets",
       "title": "Thematic Budgets (Gender Perspective)",
+      "title_translations": {
+          "es": "Presupuestos Temáticos (Perspectiva de Género)"
+      },
       "description": "The Budget with a Gender Perspective (PPG), a public policy tool that allows identifying the State investment that is allocated through the General Budget of the Republic to reduce and eliminate gaps between men and women, promoting greater autonomy in the economic sphere. , physical, decision-making and the interrelation of these.",
+      "description_translations": {
+          "es": "El Presupuesto con Perspectiva de Género (PPG) una herramienta de política pública que permite identificar la inversión del Estado que se destina a través del Presupuesto General de la República para disminuir y eliminar las brechas entre hombres y mujeres promoviendo una mayor autonomía en el ámbito económico, físico, de toma de decisiones y la interrelación de estas."
+      },
       "path": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERO/CSV/2024/07/03/presupuesto_genero.csv",
       "toc": "https://air.portaljs.com/opendata/HND/MAPAINVDB/OPENDATA/PRESUPUESTO_GENERO/toc_presupuesto_genero.csv",
       "profile": "tabular-data-resource",

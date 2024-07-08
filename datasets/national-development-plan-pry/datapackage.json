@@ -3,7 +3,13 @@
   "profile": "data-package",
   "name": "national-development-plan-pry",
   "title": "National Development Plan of Paraguay",
+  "title_translations": {
+      "es": "Plan Nacional de Desarrollo de Paraguay"
+  },
   "description":"National Development Plan of Paraguay",
+  "description_translations": {
+      "es": "Plan Nacional de Desarrollo de Paraguay"
+  },
   "country": "PRY",
   "contributors": [
     {
@@ -42,7 +48,13 @@
       "hash": "2bfe495194d4f8abb97d81046f4b4ce7",
       "name": "budget-by-entity",
       "title":"Budget by Entity associated with the National Development Plan of Paraguay",
+      "title_translations": {
+          "es": "Presupuesto por Entidad asociado al Plan Nacional de Desarrollo de Paraguay"
+      },
       "description":"Contains information on the budget of the entities and projects that contribute to the PND (National Development Plan 2030 of Paraguay)",
+      "description_translations": {
+          "es": "Contiene información del presupuesto de las entidades y proyectos que aportan al PND (Plan Nacional de Desarrollo 2030 de Paraguay)"
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_PRESUPUESTO/CSV/2024/06/01/PresupuestoPND_STP.csv",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_PRESUPUESTO/toc_PresupuestoPND_STP.csv",
       "profile": "tabular-data-resource",
@@ -183,7 +195,13 @@
       "hash": "7d107155989801e7e521b1c6cfff5809",
       "name": "indicators",
       "title": "Indicators associated with the National Development Plan of Paraguay",
+      "title_translations": {
+          "es": "Indicadores asociados al Plan Nacional de Desarrollo de Paraguay"
+      },
       "description":"Contains information on the indicators of the National Development Plan 2030 of Paraguay",
+      "description_translations": {
+          "es": "Contiene información de los indicadores del Plan Nacional de Desarrollo 2030 de Paraguay"
+      },
       "path": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_INDICADORES/CSV/2024/06/01/IndicadoresPND_STP.csv",
       "toc": "https://air.portaljs.com/opendata/PRY/MAPAINVDB/PND_STP_INDICADORES/toc_IndicadoresPND_STP.csv",
       "profile": "tabular-data-resource",

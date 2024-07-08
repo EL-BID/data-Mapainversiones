@@ -2,8 +2,14 @@
   "hash": "9da3674b96abb151cc19bb955a6e4001",
   "profile": "data-package",
   "name": "general-budget-information-on-investment-dom",
-  "title": "Dominican Republic - General Budget Information on Investment",
-  "description": "Dominican Republic - General Budget Information on Investment",
+  "title": "General Budget Information on Investment",
+  "title_translations": {
+      "es": "Información Presupuestaria General de Inversión"
+  },
+  "description": "General Budget Information on Investment",
+  "description_translations": {
+      "es": "Información Presupuestaria General de Inversión"
+  },
   "country": "DOM",
   "contributors": [
     {
@@ -66,7 +72,13 @@
       "hash": "6276a2238281a8a0a197ecd3661ef091",
       "name": "presupuesto-de-inversion",
       "title": "General Budget Information on Investment",
+      "title_translations": {
+          "es": "Información del Presupuesto General en Inversión"
+      },
       "description": "This set contains information on the general budget of the nation focused on investment.",
+      "description_translations": {
+          "es": "Este conjunto contiene la informacion del presupuesto general de la nacion enfocado en inversion"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/CSV/2024/05/01/DatosAbiertosPresupuestoHacienda.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/toc_DatosAbiertosPresupuestoHacienda.csv",
       "profile": "tabular-data-resource",
@@ -289,7 +301,13 @@
       "hash": "cffe9abe541a23ab7c326aa39bebd83c",
       "name": "procesos-de-compras",
       "title":"Information on Processes related to the General Investment Budget and public investment projects",
+      "title_translations": {
+          "es": "Información de Procesos relacionados al Presupuesto General en Inversion y los proyectos de inversión pública"
+      },
       "description":"Information on Processes related to the General Investment Budget and public investment projects",
+      "description_translations": {
+          "es": "Este  conjunto de datos proporciona informacion de los Procesos que han sido relacionados con el presupuesto enfocado a inversison y los proyectos de inversion pública a traves de los formularios de gastos preventivos"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/CSV/2024/05/01/DatosAbiertosProcesosXProyectosInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/toc_DatosAbiertosProcesosXProyectosInv.csv",
       "profile": "tabular-data-resource",
@@ -390,7 +408,13 @@
       "hash": "a2716d51fade086805aff85d62a010b7",
       "name": "contratos-de-compras",
       "title":"Information on Contracts related to the General Investment Budget and public investment projects",
+      "title_translations": {
+          "es": "Información de Contratos relacionados al Presupuesto General en Inversion y los proyectos de inversión pública"
+      },
       "description":"This data set provides information on contracts that have been related to the investment-focused budget and public investment projects through the committed expenditure forms.",
+      "description_translations": {
+          "es": "Este  conjunto de datos proporciona informacion de los contratos que han sido relacionados con el presupuesto enfocado a inversison y los proyectos de inversion pública a traves de los formularios de gastos comprometidos"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/CSV/2024/05/01/DatosAbiertosContratosXProyectosInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/toc_DatosAbiertosContratosXProyectosInv.csv",
       "profile": "tabular-data-resource",
@@ -503,7 +527,13 @@
       "hash": "4002763dc7fac17b5f708e909ee2e6bb",
       "name": "presupuesto-relacionado-a-proyectos-de-inversion",
       "title":"Information on the General Budget on Investment and Related Public Investment Projects",
+      "title_translations": {
+          "es": "Información del Presupuesto General en Inversión y Los Proyectos de Inversión Pública relacionados "
+      },
       "description":"This data set provides information on the general budget of the Dominican Republic focused on Investment and relates public investment projects.",
+      "description_translations": {
+          "es": "Este  conjunto de datos proporciona informacion del presupuesto general de republica dominicana enfocado en Inversion y relaciona los proyectos de inversion publica"
+      },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/CSV/2024/05/01/DatosAbiertosPresupuestoXProyInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/toc_DatosAbiertosPresupuestoXProyInv.csv",
       "profile": "tabular-data-resource",
