@@ -69,43 +69,64 @@
             "format": "default",
             "name": "idproyecto",
             "type": "integer",
-            "description": "Unique identifier of the work"
+            "description": "Unique identifier of the work",
+            "description_translations": {
+              "es": "Identificador único de la obra"
+            }
           },
           {
             "format": "default",
             "name": "numeroobra",
             "type": "string",
-            "description": "Work number"
+            "description": "Work number",
+            "description_translations": {
+              "es": "Número de la obra"
+            }
           },
           {
             "format": "default",
             "name": "codigobapin",
             "type": "integer",
-            "description": "BAPIN code (https://www.argentina.gob.ar/dnip/bapin) of the project to which the work refers"
+            "description": "BAPIN code (https://www.argentina.gob.ar/dnip/bapin) of the project to which the work refers",
+            "description_translations": {
+              "es": "Código BAPIN (https://www.argentina.gob.ar/dnip/bapin) del proyecto al cual hace referencia la obra"
+            }
           },
           {
             "format": "default",
             "name": "fechainicioanio",
             "type": "integer",
-            "description": "Year of start of work"
+            "description": "Year of start of work",
+            "description_translations": {
+              "es": "Año de inicio de la obra"
+            }
           },
           {
             "format": "default",
             "name": "fechafinanio",
             "type": "integer",
-            "description": "Year of completion of the work"
+            "description": "Year of completion of the work",
+            "description_translations": {
+              "es": "Año de fin de la obra"
+            }
           },
           {
             "format": "default",
             "name": "nombreobra",
             "type": "string",
-            "description": "Name of the work"
+            "description": "Name of the work",
+            "description_translations": {
+              "es": "Nombre de la obra"
+            }
           },
           {
             "format": "default",
             "name": "descripicionfisica",
             "type": "string",
-            "description": "Physical description of the work"
+            "description": "Physical description of the work",
+            "description_translations": {
+              "es": "Descripción física de la obra"
+            }
           },
           {
             "decimalChar": ".",
@@ -113,13 +134,19 @@
             "groupChar": "",
             "name": "montototal",
             "type": "number",
-            "description": "Total amount of the work"
+            "description": "Total amount of the work",
+            "description_translations": {
+              "es": "Monto total de la obra"
+            }
           },
           {
             "format": "default",
             "name": "sectornombre",
             "type": "string",
-            "description": "Sector in charge of the work"
+            "description": "Sector in charge of the work",
+            "description_translations": {
+              "es": "Sector encargado de la obra"
+            }
           },
           {
             "decimalChar": ".",
@@ -127,7 +154,10 @@
             "groupChar": "",
             "name": "avancefinanciero",
             "type": "number",
-            "description": "Percentage of financial progress of the work"
+            "description": "Percentage of financial progress of the work",
+            "description_translations": {
+              "es": "Porcentaje de avance financiero de la obra"
+            }
           },
           {
             "decimalChar": ".",
@@ -135,127 +165,190 @@
             "groupChar": "",
             "name": "avancefisico",
             "type": "number",
-            "description": "Percentage of physical progress of the work"
+            "description": "Percentage of physical progress of the work",
+            "description_translations": {
+              "es": "Porcentaje de avance físico de la obra"
+            }
           },
           {
             "format": "default",
             "name": "entidadejecutoranombre",
             "type": "string",
-            "description": "Name of the executing entity"
+            "description": "Name of the executing entity",
+            "description_translations": {
+              "es": "Nombre de la entidad ejecutora"
+            }
           },
           {
             "format": "default",
             "name": "duracionobrasdias",
             "type": "integer",
-            "description": "Duration in days of the work"
+            "description": "Duration in days of the work",
+            "description_translations": {
+              "es": "Duración en días de la obra"
+            }
           },
           {
             "format": "default",
             "name": "objetivogeneral",
             "type": "string",
-            "description": "General objective of the work"
+            "description": "General objective of the work",
+            "description_translations": {
+              "es": "Objetivo general de la obra"
+            }
           },
           {
             "format": "default",
             "name": "tipoproyecto",
             "type": "string",
-            "description": "Type of project of the work"
+            "description": "Type of project of the work",
+            "description_translations": {
+              "es": "Tipo de proyecto de la obra"
+            }
           },
           {
             "format": "default",
             "name": "nombredepto",
             "type": "string",
-            "description": "Department Name (first 5 digits BAHRA code) "
+            "description": "Department Name (first 5 digits BAHRA code) ",
+            "description_translations": {
+              "es": "Nombre del Departamento (primeros 5 digitos codigo BAHRA) "
+            }
           },
           {
             "format": "default",
             "name": "nombreprovincia",
             "type": "string",
-            "description": "Name of the Province (first 2 digits BAHRA code) "
+            "description": "Name of the Province (first 2 digits BAHRA code) ",
+            "description_translations": {
+              "es": "Nombre de la Provincia (primeros 2 digitos codigo BAHRA) "
+            }
           },
           {
             "format": "default",
             "name": "codigo_bahra",
             "type": "string",
-            "description": "Code of the Base of Human Settlements of the Argentine Republic (BAHRA) http://www.bahra.gob.ar"
+            "description": "Code of the Base of Human Settlements of the Argentine Republic (BAHRA) http://www.bahra.gob.ar",
+            "description_translations": {
+              "es": "Codigo de la Base de Asentamientos Humanos de la República Argentina (BAHRA) http://www.bahra.gob.ar"
+            }
           },
           {
             "format": "default",
             "name": "etapaobra",
             "type": "string",
-            "description": "cover in which the work is found"
+            "description": "cover in which the work is found",
+            "description_translations": {
+              "es": "tapa en que se encuentra la obra"
+            }
           },
           {
             "format": "default",
             "name": "tipomoneda",
             "type": "string",
-            "description": "Type of currency in which the total amount of the work is represented"
+            "description": "Type of currency in which the total amount of the work is represented",
+            "description_translations": {
+              "es": "Tipo de moneda en la que se representa el monto total de la obra"
+            }
           },
           {
             "format": "default",
             "name": "url_perfil_obra",
             "type": "string",
-            "description": "https address associated with the profile of the work on the platform"
+            "description": "https address associated with the profile of the work on the platform",
+            "description_translations": {
+              "es": "Direccion https asociada al perfil de la obra en la plataforma"
+            }
           },
           {
             "format": "default",
             "name": "programa_infraestructura",
             "type": "string",
-            "description": "Label Care Infrastructure Program"
+            "description": "Label Care Infrastructure Program",
+            "description_translations": {
+              "es": "Etiqueta Programa Infraestructura del Cuidado"
+            }
           },
           {
             "format": "default",
             "name": "organismo_financiador_1",
             "type": "string",
-            "description": "Funding organization of project 1"
+            "description": "Funding organization of project 1",
+            "description_translations": {
+              "es": "Organismo financiador del proyecto 1"
+            }
           },
           {
             "format": "default",
             "name": "organismo_financiador_2",
             "type": "string",
-            "description": "Funding organization of project 2"
+            "description": "Funding organization of project 2",
+            "description_translations": {
+              "es": "Organismo financiador del proyecto 2"
+            }
           },
           {
             "format": "default",
             "name": "organismo_financiador_prestamo",
             "type": "string",
-            "description": "Operation number associated with the financing organization"
+            "description": "Operation number associated with the financing organization",
+            "description_translations": {
+              "es": "Numero de operación asociado al organismo financiador"
+            }
           },
           {
             "format": "default",
             "name": "contraparte_key",
             "type": "string",
-            "description": "Counterparty type"
+            "description": "Counterparty type",
+            "description_translations": {
+              "es": "Tipo de contraparte"
+            }
           },
           {
             "format": "default",
             "name": "contraparte_val",
             "type": "string",
-            "description": "Counterparty name"
+            "description": "Counterparty name",
+            "description_translations": {
+              "es": "Nombre de la contraparte"
+            }
           },
           {
             "format": "default",
             "name": "contraparte_cuit",
             "type": "string",
-            "description": "CUIT of the counterparty (Unique Tax Identification Code)"
+            "description": "CUIT of the counterparty (Unique Tax Identification Code)",
+            "description_translations": {
+              "es": "CUIT de la contraparte (Clave Única de Identificación Tributaria)"
+            }
           },
           {
             "format": "default",
             "name": "contraparte_modalidad",
             "type": "string",
-            "description": "Contracting modality of the counterpart"
+            "description": "Contracting modality of the counterpart",
+            "description_translations": {
+              "es": "Modalidad de contratación de la contraparte"
+            }
           },
           {
             "format": "default",
             "name": "tag_accionclimatica",
             "type": "string",
-            "description": "Marking. Related climate action."
+            "description": "Marking. Related climate action.",
+            "description_translations": {
+              "es": "Marcaje. Acción climática relacionada."
+            }
           },
           {
             "format": "default",
             "name": "tag_ods_incidencia",
             "type": "string",
-            "description": "Marking. Related SDG (Sustainable Development Goals)"
+            "description": "Marking. Related SDG (Sustainable Development Goals)",
+            "description_translations": {
+              "es": "Marcaje. ODS relacionado (objetivos de Desarrollo Sostenible)"
+            }
           }
         ],
         "missingValues": [
@@ -294,37 +387,55 @@
             "format": "default",
             "name": "IdProyecto",
             "type": "integer",
-            "description": "Project identifier code in MapaInversiones"
+            "description": "Project identifier code in MapaInversiones",
+            "description_translations": {
+              "es": "Código identificador del proyecto en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "CodigoBapin",
             "type": "integer",
-            "description": "Project identifier code within the project bank"
+            "description": "Project identifier code within the project bank",
+            "description_translations": {
+              "es": "Código identificador del proyecto dentro del banco de proyectos"
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description": "Project name"
+            "description": "Project name",
+            "description_translations": {
+              "es": "Nombre de proyecto"
+            }
           },
           {
             "format": "default",
             "name": "Sector",
             "type": "string",
-            "description": "Name of the sector to which the investment project belongs. Ex. Architecture"
+            "description": "Name of the sector to which the investment project belongs. Ex. Architecture",
+            "description_translations": {
+              "es": "Nombre del sector al que pertenece el proyecto de inversión. Ej. Arquitectura"
+            }
           },
           {
             "format": "default",
             "name": "Subsector",
             "type": "string",
-            "description": "Name of the Subsector to which the investment project belongs."
+            "description": "Name of the Subsector to which the investment project belongs.",
+            "description_translations": {
+              "es": "Nombre del Subsector al que pertenece el proyecto de inversión."
+            }
           },
           {
             "format": "default",
             "name": "Tipo",
             "type": "string",
-            "description": "Project type description"
+            "description": "Project type description",
+            "description_translations": {
+              "es": "Descripción del tipo de proyecto"
+            }
           },
           {
             "decimalChar": ".",
@@ -332,67 +443,100 @@
             "groupChar": "",
             "name": "CostoEstimado",
             "type": "number",
-            "description": "Estimated cost of the project in Argentine pesos"
+            "description": "Estimated cost of the project in Argentine pesos",
+            "description_translations": {
+              "es": "Costo estimado del proyecto en pesos argentinos"
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "FechaEstimacion",
             "type": "date",
-            "description": "Project cost estimate date"
+            "description": "Project cost estimate date",
+            "description_translations": {
+              "es": "Fecha de estimación del costo del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "Responsable",
             "type": "string",
-            "description": "Entity responsible for the project"
+            "description": "Entity responsible for the project",
+            "description_translations": {
+              "es": "Entidad responsable del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "Plan",
             "type": "string",
-            "description": "name of the plan to which the project makes its contribution. Ex: Plan Argentina Ago"
+            "description": "name of the plan to which the project makes its contribution. Ex: Plan Argentina Ago",
+            "description_translations": {
+              "es": "ombre del plan al cual el proyecto hace su aporte. Ej: Plan Argentina Hace"
+            }
           },
           {
             "format": "default",
             "name": "Objetivo",
             "type": "string",
-            "description": "Objective of the project"
+            "description": "Objective of the project",
+            "description_translations": {
+              "es": "Objetivo del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "Descripcion",
             "type": "string",
-            "description": "Project description"
+            "description": "Project description",
+            "description_translations": {
+              "es": "Descripción del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "NombreProvincia",
             "type": "string",
-            "description": "Name of the province where the project is located"
+            "description": "Name of the province where the project is located",
+            "description_translations": {
+              "es": "Nombre de la provincia en donde se encuentra localizado el proyecto"
+            }
           },
           {
             "format": "default",
             "name": "NombreDepartamento",
             "type": "string",
-            "description": "Name of the department where the project is located"
+            "description": "Name of the department where the project is located",
+            "description_translations": {
+              "es": "Nombre del departamento en donde se encuentra localizado el proyecto"
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "FechaCargueArchivo",
             "type": "date",
-            "description": "Date of last upload of project information in MapaInversiones"
+            "description": "Date of last upload of project information in MapaInversiones",
+            "description_translations": {
+              "es": "Fecha de ultimo cargue de información del proyecto en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "FuenteDatos",
             "type": "string",
-            "description": "Project information source for MapaInversiones"
+            "description": "Project information source for MapaInversiones",
+            "description_translations": {
+              "es": "Fuente de información de proyectos para MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "url_perfil_obra",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           }
         ],
         "missingValues": [
@@ -431,55 +575,82 @@
             "format": "default",
             "name": "IdVisorMapas",
             "type": "integer",
-            "description": ""
+            "description": "Unique identifier code of the geometries associated with the project",
+            "description_translations": {
+              "es": "Codigo identificador único de las geometrías asociadas al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "IdProyecto",
             "type": "integer",
-            "description": "Project identifier code in MapaInversiones"
+            "description": "Project identifier code in MapaInversiones",
+            "description_translations": {
+              "es": "Código identificador del proyecto en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "CodigoBPIN",
             "type": "integer",
-            "description": "Project identifier code within the project bank"
+            "description": "Project identifier code within the project bank",
+            "description_translations": {
+              "es": "Código identificador del proyecto dentro del banco de proyectos"
+            }
           },
           {
             "format": "default",
             "name": "JSON",
             "type": "geojson",
-            "description": "GeoJSON Feature Collection including all types of valid geometries"
+            "description": "GeoJSON Feature Collection including all types of valid geometries",
+            "description_translations": {
+              "es": "GeoJSON Feature Collection que incluye todo tipo de geometrías válidas"
+            }
           },
           {
             "format": "default",
             "name": "Descripcion",
             "type": "string",
-            "description": "Description associated with the geometry and the project in MapaInversiones"
+            "description": "Description associated with the geometry and the project in MapaInversiones",
+            "description_translations": {
+              "es": "Descripción asociada a la geometría y el proyecto en mapainversiones"
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "Fecha",
             "type": "date",
-            "description": "Name of the Subsector to which the investment project belongs."
+            "description": "Name of the Subsector to which the investment project belongs.",
+            "description_translations": {
+              "es": "Nombre del Subsector al que pertenece el proyecto de inversión."
+            }
           },
           {
             "format": "default",
             "name": "FechaUltimaModificacion",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ConsecutivoCarga",
             "type": "integer",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "Modificadopor",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           }
         ],
         "missingValues": [

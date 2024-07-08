@@ -88,175 +88,262 @@
             "format": "default",
             "name": "Año",
             "type": "integer",
-            "description": "The year to which the information recorded in the database corresponds."
+            "description": "The year to which the information recorded in the database corresponds.",
+            "description_translations": {
+              "es": "El año al que corresponde la información registrada en la base de datos."
+            }
           },
           {
             "format": "default",
             "name": "CodigoInstitucion",
             "type": "string",
-            "description": "The unique code that identifies an institution within the system or set of institutions."
+            "description": "The unique code that identifies an institution within the system or set of institutions.",
+            "description_translations": {
+              "es": "El código único que identifica a una institución dentro del sistema o conjunto de instituciones."
+            }
           },
           {
             "format": "default",
             "name": "Institucion",
             "type": "string",
-            "description": "Name or identification of the institution to which the registered information belongs."
+            "description": "Name or identification of the institution to which the registered information belongs.",
+            "description_translations": {
+              "es": "Nombre o identificación de la institución a la que pertenece la información registrada."
+            }
           },
           {
             "format": "default",
             "name": "TipoGasto",
             "type": "string",
-            "description": "Category that classifies the expense according to its nature or purpose."
+            "description": "Category that classifies the expense according to its nature or purpose.",
+            "description_translations": {
+              "es": "Categoría que clasifica el gasto según su naturaleza o propósito."
+            }
           },
           {
             "format": "default",
             "name": "CodigoFuenteDeFinanciamiento",
             "type": "integer",
-            "description": "Code that identifies the source of financing the expense."
+            "description": "Code that identifies the source of financing the expense.",
+            "description_translations": {
+              "es": "Código que identifica la fuente de financiamiento del gasto."
+            }
           },
           {
             "format": "default",
             "name": "FuenteDeFinanciamiento",
             "type": "string",
-            "description": "Description or identification of the source of financing the expense."
+            "description": "Description or identification of the source of financing the expense.",
+            "description_translations": {
+              "es": "Descripción o identificación de la fuente de financiamiento del gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoFuenteEspecifica",
             "type": "integer",
-            "description": "Specific code that identifies the detailed financing source."
+            "description": "Specific code that identifies the detailed financing source.",
+            "description_translations": {
+              "es": "Código específico que identifica la fuente de financiamiento detallada."
+            }
           },
           {
             "format": "default",
             "name": "FuenteEspecifica",
             "type": "string",
-            "description": "Detailed description or specific identification of the funding source."
+            "description": "Detailed description or specific identification of the funding source.",
+            "description_translations": {
+              "es": "Descripción detallada o identificación específica de la fuente de financiamiento."
+            }
           },
           {
             "format": "default",
             "name": "CodigoOrganismoFinanciador",
             "type": "integer",
-            "description": "Code that identifies the organization that provides the financing."
+            "description": "Code that identifies the organization that provides the financing.",
+            "description_translations": {
+              "es": "Código que identifica al organismo que proporciona el financiamiento."
+            }
           },
           {
             "format": "default",
             "name": "OrganismoFinanciador",
             "type": "string",
-            "description": "Name or identification of the organization providing the financing."
+            "description": "Name or identification of the organization providing the financing.",
+            "description_translations": {
+              "es": "Nombre o identificación del organismo que proporciona el financiamiento."
+            }
           },
           {
             "format": "default",
             "name": "CodigoPrograma",
             "type": "integer",
-            "description": "Code that identifies a specific program."
+            "description": "Code that identifies a specific program.",
+            "description_translations": {
+              "es": "Código que identifica un programa específico."
+            }
           },
           {
             "format": "default",
             "name": "Programa",
             "type": "string",
-            "description": "Name or description of the program to which the expense is assigned."
+            "description": "Name or description of the program to which the expense is assigned.",
+            "description_translations": {
+              "es": "Nombre o descripción del programa al que se asigna el gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoSubPrograma",
             "type": "integer",
-            "description": "Code that identifies an applet within a program."
+            "description": "Code that identifies an applet within a program.",
+            "description_translations": {
+              "es": "Código que identifica un subprograma dentro de un programa."
+            }
           },
           {
             "format": "default",
             "name": "SubPrograma",
             "type": "string",
-            "description": "Name or description of the subprogram to which the expense is assigned."
+            "description": "Name or description of the subprogram to which the expense is assigned.",
+            "description_translations": {
+              "es": "Nombre o descripción del subprograma al que se asigna el gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoSnip",
             "type": "integer",
-            "description": "Code assigned by the National Public Investment System (SNIP) to identify a project."
+            "description": "Code assigned by the National Public Investment System (SNIP) to identify a project.",
+            "description_translations": {
+              "es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoProyecto",
             "type": "integer",
-            "description": "Code that identifies a specific project."
+            "description": "Code that identifies a specific project.",
+            "description_translations": {
+              "es": "Código que identifica un proyecto específico."
+            }
           },
           {
             "format": "default",
             "name": "Proyecto",
             "type": "string",
-            "description": "Name or description of the project to which the expense is assigned."
+            "description": "Name or description of the project to which the expense is assigned.",
+            "description_translations": {
+              "es": "Nombre o descripción del proyecto al que se asigna el gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoActividadObra",
             "type": "integer",
-            "description": "Code that identifies an activity or work within a project."
+            "description": "Code that identifies an activity or work within a project.",
+            "description_translations": {
+              "es": "Código que identifica una actividad u obra dentro de un proyecto."
+            }
           },
           {
             "format": "default",
             "name": "ActividadObra",
             "type": "string",
-            "description": "Name or description of the activity or work to which the expense is assigned."
+            "description": "Name or description of the activity or work to which the expense is assigned.",
+            "description_translations": {
+              "es": "Nombre o descripción de la actividad u obra al que se asigna el gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoGrupoDeGasto",
             "type": "string",
-            "description": "Code that classifies spending into predefined groups."
+            "description": "Code that classifies spending into predefined groups.",
+            "description_translations": {
+              "es": "Código que clasifica el gasto en grupos predefinidos."
+            }
           },
           {
             "format": "default",
             "name": "Grupodegasto",
             "type": "string",
-            "description": "Description or name of the group to which the expense belongs."
+            "description": "Description or name of the group to which the expense belongs.",
+            "description_translations": {
+              "es": "Descripción o nombre del grupo al que pertenece el gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoFinalidad",
             "type": "integer",
-            "description": "Code that identifies the purpose of the expense."
+            "description": "Code that identifies the purpose of the expense.",
+            "description_translations": {
+              "es": "Código que identifica la finalidad del gasto."
+            }
           },
           {
             "format": "default",
             "name": "Finalidad",
             "type": "string",
-            "description": "Description or name of the purpose for which the expense is intended."
+            "description": "Description or name of the purpose for which the expense is intended.",
+            "description_translations": {
+              "es": "Descripción o nombre de la finalidad a la que se destina el gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoObjetoDeGasto",
             "type": "string",
-            "description": "Code that identifies the specific object for which the expense is intended."
+            "description": "Code that identifies the specific object for which the expense is intended.",
+            "description_translations": {
+              "es": "Código que identifica el objeto específico para el cual se destina el gasto."
+            }
           },
           {
             "format": "default",
             "name": "ObjetoDeGasto",
             "type": "string",
-            "description": "Description or name of the object for which the expense is intended."
+            "description": "Description or name of the object for which the expense is intended.",
+            "description_translations": {
+              "es": "Descripción o nombre del objeto para el cual se destina el gasto."
+            }
           },
           {
             "format": "default",
             "name": "Sector",
             "type": "string",
-            "description": "Sector to which the activity or work associated with the expense belongs."
+            "description": "Sector to which the activity or work associated with the expense belongs.",
+            "description_translations": {
+              "es": "Sector al que pertenece la actividad u obra asociada al gasto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoSubFuncion",
             "type": "string",
-            "description": "Code that identifies a subfunction within a function."
+            "description": "Code that identifies a subfunction within a function.",
+            "description_translations": {
+              "es": "Código que identifica una subfunción dentro de una función. "
+            }
           },
           {
             "format": "default",
             "name": "SubFuncion",
             "type": "string",
-            "description": "Description or name of the subfunction associated with the expense."
+            "description": "Description or name of the subfunction associated with the expense.",
+            "description_translations": {
+              "es": "Descripción o nombre de la subfunción asociada al gasto."
+            }
           },
           {
             "format": "default",
             "name": "ValorAprobado",
             "type": "integer",
-            "description": "Amount or value approved for the expense in the budget item."
+            "description": "Amount or value approved for the expense in the budget item.",
+            "description_translations": {
+              "es": "Monto o valor aprobado para el gasto en la partida presupuestaria."
+            }
           },
           {
             "decimalChar": ".",
@@ -264,7 +351,10 @@
             "groupChar": "",
             "name": "ValorVigente",
             "type": "number",
-            "description": "Amount or value currently in force for the expense in the budget item."
+            "description": "Amount or value currently in force for the expense in the budget item.",
+            "description_translations": {
+              "es": "Monto o valor actualmente vigente para el gasto en la partida presupuestaria."
+            }
           },
           {
             "decimalChar": ".",
@@ -272,13 +362,19 @@
             "groupChar": "",
             "name": "ValorEjecutado",
             "type": "number",
-            "description": "Amount or value executed so far for the expense in the budget item."
+            "description": "Amount or value executed so far for the expense in the budget item.",
+            "description_translations": {
+              "es": "Monto o valor ejecutado hasta el momento para el gasto en la partida presupuestaria."
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuente",
             "type": "string",
-            "description": "Date the information in the data source was updated"
+            "description": "Date the information in the data source was updated",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información en la fuente de datos"
+            }
           }
         ],
         "missingValues": [
@@ -317,37 +413,55 @@
             "format": "default",
             "name": "CodigoSnip",
             "type": "integer",
-            "description":"Code assigned by the National Public Investment System (SNIP) to identify a specific project."
+            "description":"Code assigned by the National Public Investment System (SNIP) to identify a specific project.",
+            "description_translations": {
+              "es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto específico."
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description":"Name or title of the project to which the contract refers."
+            "description":"Name or title of the project to which the contract refers.",
+            "description_translations": {
+              "es": "Nombre o título del proyecto asociado al proceso de compra."
+            }
           },
           {
             "format": "default",
             "name": "CodigoProceso",
             "type": "string",
-            "description":"Code that identifies a specific process associated with the contract."
+            "description":"Code that identifies a specific process associated with the contract.",
+            "description_translations": {
+              "es": "Código que identifica un proceso específico asociado al contrato."
+            }
           },
           {
             "format": "default",
             "name": "DescripcionProceso",
             "type": "string",
-            "description":"Detailed description of the contracting process, including its terms, conditions and scope."
+            "description":"Detailed description of the contracting process, including its terms, conditions and scope.",
+            "description_translations": {
+              "es": "Descripción detallada del proceso de contratación, incluyendo los términos, condiciones y alcances del mismo."
+            }
           },
           {
             "format": "default",
             "name": "Caratula",
             "type": "string",
-            "description":"Document that contains summary information about the contracting process, including relevant details such as the type of contract, the parties involved, etc."
+            "description":"Document that contains summary information about the contracting process, including relevant details such as the type of contract, the parties involved, etc.",
+            "description_translations": {
+              "es": "Documento que contiene información resumida sobre el proceso de contratación, incluyendo detalles relevantes como el tipo de proceso, las partes involucradas, etc."
+            }
           },
           {
             "format": "default",
             "name": "EstadoProceso",
             "type": "string",
-            "description":"Current status of the contracting process, for example: pending, in progress, awarded, canceled, etc."
+            "description":"Current status of the contracting process, for example: pending, in progress, awarded, canceled, etc.",
+            "description_translations": {
+              "es": "Estado actual del proceso de contratación, por ejemplo: pendiente, en curso, adjudicado, cancelado, etc."
+            }
           },
           {
             "decimalChar": ".",
@@ -355,37 +469,55 @@
             "groupChar": "",
             "name": "MontoEstimado",
             "type": "number",
-            "description":"Estimated amount or value for the contracting process."
+            "description":"Estimated amount or value for the contracting process.",
+            "description_translations": {
+              "es": "Monto o valor estimado para el proceso de contratación."
+            }
           },
           {
             "format": "default",
             "name": "Modalidad",
             "type": "string",
-            "description":"Modality under which the contracting process is carried out, for example: public bidding, price competition, direct contracting, etc."
+            "description":"Modality under which the contracting process is carried out, for example: public bidding, price competition, direct contracting, etc.",
+            "description_translations": {
+              "es": "Modalidad bajo la cual se realiza el proceso de contratación, por ejemplo: licitación pública, concurso de precios, contratación directa, etc."
+            }
           },
           {
             "format": "default",
             "name": "UrlProceso",
             "type": "string",
-            "description":"URL or link that directs to the location of the online contracting process or its corresponding documentation"
+            "description":"URL or link that directs to the location of the online contracting process or its corresponding documentation",
+            "description_translations": {
+              "es": "URL o enlace que dirige a la ubicación del proceso de contratación en línea o a su documentación correspondiente"
+            }
           },
           {
             "format": "default",
             "name": "Fuente",
             "type": "string",
-            "description":"Source from which the information about the hiring process was obtained."
+            "description":"Source from which the information about the hiring process was obtained.",
+            "description_translations": {
+              "es": "Fuente de donde se obtuvo la información sobre el proceso de contratación."
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuenteMH",
             "type": "string",
-            "description":"Date on which the information on the contracting process was updated according to the data source of the Ministry of Finance"
+            "description":"Date on which the information on the contracting process was updated according to the data source of the Ministry of Finance",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información sobre el proceso de contratación según la fuente de datos de Ministerio de Hacienda"
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuenteDGCP",
             "type": "string",
-            "description":"Date on which the information on the contracting process was updated according to the data source of the Public Procurement System (DGCP)"
+            "description":"Date on which the information on the contracting process was updated according to the data source of the Public Procurement System (DGCP)",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información sobre el proceso de contratación según la fuente de datos del Sistema de Contrataciones Públicas (DGCP)"
+            }
           }
         ],
         "missingValues": [
@@ -424,43 +556,64 @@
             "format": "default",
             "name": "CodigoSnip",
             "type": "integer",
-            "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project."
+            "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project.",
+            "description_translations": {
+              "es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto específico."
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description": "Name or title of the project to which the contract refers."
+            "description": "Name or title of the project to which the contract refers.",
+            "description_translations": {
+              "es": "Nombre o título del proyecto al cual está relacionado el contrato"
+            }
           },
           {
             "format": "default",
             "name": "CodigoProceso",
             "type": "string",
-            "description": "Code that identifies a specific process associated with the contract."
+            "description": "Code that identifies a specific process associated with the contract.",
+            "description_translations": {
+              "es": "Código que identifica un proceso específico asociado al contrato."
+            }
           },
           {
             "format": "default",
             "name": "CodigoContrato",
             "type": "string",
-            "description": "Unique code that identifies the contract within the system or set of contracts."
+            "description": "Unique code that identifies the contract within the system or set of contracts.",
+            "description_translations": {
+              "es": "Código único que identifica el contrato dentro del sistema o conjunto de contratos."
+            }
           },
           {
             "format": "default",
             "name": "DescripcionContrato",
             "type": "string",
-            "description": "Detailed description of the contract, including relevant terms and conditions."
+            "description": "Detailed description of the contract, including relevant terms and conditions.",
+            "description_translations": {
+              "es": "Descripción detallada del contrato, incluyendo términos y condiciones relevantes."
+            }
           },
           {
             "format": "default",
             "name": "EstadoContrato",
             "type": "string",
-            "description": "Current status of the contract, for example: pending, in progress, completed, etc."
+            "description": "Current status of the contract, for example: pending, in progress, completed, etc.",
+            "description_translations": {
+              "es": "Estado actual del contrato, por ejemplo: pendiente, en curso, finalizado, etc."
+            }
           },
           {
             "format": "default",
             "name": "MonedaContrato",
             "type": "string",
-            "description": "Type of currency used to express contract values."
+            "description": "Type of currency used to express contract values.",
+            "description_translations": {
+              "es": "Tipo de moneda utilizada para expresar los valores del contrato."
+            }
           },
           {
             "decimalChar": ".",
@@ -468,43 +621,64 @@
             "groupChar": "",
             "name": "ValorContrato",
             "type": "number",
-            "description": "Amount or total value of the contract."
+            "description": "Amount or total value of the contract.",
+            "description_translations": {
+              "es": "Monto o valor total del contrato."
+            }
           },
           {
             "format": "default",
             "name": "CodigoProveedor",
             "type": "integer",
-            "description": "Unique code that identifies the supplier associated with the contract."
+            "description": "Unique code that identifies the supplier associated with the contract.",
+            "description_translations": {
+              "es": "Código único que identifica al proveedor asociado al contrato."
+            }
           },
           {
             "format": "default",
             "name": "Proveedor",
             "type": "string",
-            "description": "Name or identification of the supplier with whom the contract was established."
+            "description": "Name or identification of the supplier with whom the contract was established.",
+            "description_translations": {
+              "es": "Nombre o identificación del proveedor con el que se estableció el contrato."
+            }
           },
           {
             "format": "default",
             "name": "UrlContrato",
             "type": "string",
-            "description": "URL or link that directs to the location of the online contract or its corresponding documentation."
+            "description": "URL or link that directs to the location of the online contract or its corresponding documentation.",
+            "description_translations": {
+              "es": "URL o enlace que dirige a la ubicación del contrato en línea o a su documentación correspondiente."
+            }
           },
           {
             "format": "default",
             "name": "Fuente",
             "type": "string",
-            "description": "Source from which the information about the contract was obtained."
+            "description": "Source from which the information about the contract was obtained.",
+            "description_translations": {
+              "es": "Fuente de donde se obtuvo la información sobre el contrato."
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuenteMH",
             "type": "string",
-            "description": "Date on which the information about the contract was updated according to the data source of the Ministry of Finance."
+            "description": "Date on which the information about the contract was updated according to the data source of the Ministry of Finance.",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información sobre el contrato según la fuente de datos de Ministerio de Hacienda."
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuenteDGCP",
             "type": "string",
-            "description": "Date on which information about the contract was updated according to the data source of the Public Procurement System (DGCP)"
+            "description": "Date on which information about the contract was updated according to the data source of the Public Procurement System (DGCP)",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información sobre el contrato según la fuente de datos del Sistema de Contrataciones Públicas (DGCP)"
+            }
           }
         ],
         "missingValues": [
@@ -543,109 +717,163 @@
             "format": "default",
             "name": "AnioPresupuesto",
             "type": "integer",
-            "description": "Year to which the budget or recorded budget information corresponds."
+            "description": "Year to which the budget or recorded budget information corresponds.",
+            "description_translations": {
+              "es": "Año al que corresponde el presupuesto o la información presupuestaria registrada."
+            }
           },
           {
             "format": "default",
             "name": "CodigoInstitucion",
             "type": "string",
-            "description": "Unique code that identifies an institution within the system or set of institutions."
+            "description": "Unique code that identifies an institution within the system or set of institutions.",
+            "description_translations": {
+              "es": "Código único que identifica a una institución dentro del sistema o conjunto de instituciones."
+            }
           },
           {
             "format": "default",
             "name": "Institucion",
             "type": "string",
-            "description": "Name or identification of the institution to which the recorded budget information belongs."
+            "description": "Name or identification of the institution to which the recorded budget information belongs.",
+            "description_translations": {
+              "es": "Nombre o identificación de la institución a la que pertenece la información presupuestaria registrada."
+            }
           },
           {
             "format": "default",
             "name": "CodigoFuente_de_Financiamiento",
             "type": "integer",
-            "description": "Code that identifies the source of financing for the project."
+            "description": "Code that identifies the source of financing for the project.",
+            "description_translations": {
+              "es": "Código que identifica la fuente de financiamiento del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "Fuente_de_Financiamiento",
             "type": "string",
-            "description": "Description or identification of the source of financing for the project."
+            "description": "Description or identification of the source of financing for the project.",
+            "description_translations": {
+              "es": "Descripción o identificación de la fuente de financiamiento del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoFuenteEspecifica",
             "type": "integer",
-            "description": "Specific code that identifies the detailed financing source."
+            "description": "Specific code that identifies the detailed financing source.",
+            "description_translations": {
+              "es": "Código específico que identifica la fuente de financiamiento detallada."
+            }
           },
           {
             "format": "default",
             "name": "FuenteEspecifica",
             "type": "string",
-            "description": "Detailed description or specific identification of the funding source."
+            "description": "Detailed description or specific identification of the funding source.",
+            "description_translations": {
+              "es": "Descripción detallada o identificación específica de la fuente de financiamiento."
+            }
           },
           {
             "format": "default",
             "name": "CodigoOrganismoFinanciador",
             "type": "integer",
-            "description": "Code that identifies the organization that provides financing for the project."
+            "description": "Code that identifies the organization that provides financing for the project.",
+            "description_translations": {
+              "es": "Código que identifica al organismo que proporciona el financiamiento del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "OrganismoFinanciador",
             "type": "string",
-            "description": "Name or identification of the agency providing financing for the project."
+            "description": "Name or identification of the agency providing financing for the project.",
+            "description_translations": {
+              "es": "Nombre o identificación del organismo que proporciona el financiamiento del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoFinalidad",
             "type": "integer",
-            "description": "Code that identifies the purpose of the project."
+            "description": "Code that identifies the purpose of the project.",
+            "description_translations": {
+              "es": "Código que identifica la finalidad del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "Finalidad",
             "type": "string",
-            "description": "Description or name of the purpose for which the project is intended."
+            "description": "Description or name of the purpose for which the project is intended.",
+            "description_translations": {
+              "es": "Descripción o nombre de la finalidad a la que se destina el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "IdSector",
             "type": "integer",
-            "description": "Unique identification of the sector to which the project belongs."
+            "description": "Unique identification of the sector to which the project belongs.",
+            "description_translations": {
+              "es": "Identificación única del sector al que pertenece el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "NombreSector",
             "type": "string",
-            "description": "Name or description of the sector to which the project belongs."
+            "description": "Name or description of the sector to which the project belongs.",
+            "description_translations": {
+              "es": "Nombre o descripción del sector al que pertenece el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoSubFuncion",
             "type": "string",
-            "description": "Code that identifies a subfunction within a function."
+            "description": "Code that identifies a subfunction within a function.",
+            "description_translations": {
+              "es": "Código que identifica una subfunción dentro de una función."
+            }
           },
           {
             "format": "default",
             "name": "SubFuncion",
             "type": "string",
-            "description": "Description or name of the subfunction associated with the project."
+            "description": "Description or name of the subfunction associated with the project.",
+            "description_translations": {
+              "es": "Descripción o nombre de la subfunción asociada al proyecto."
+            }
           },
           {
             "format": "default",
             "name": "CodigoSnip",
             "type": "integer",
-            "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project."
+            "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project.",
+            "description_translations": {
+              "es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto específico."
+            }
           },
           {
             "format": "default",
             "name": "nombreproyecto",
             "type": "string",
-            "description": "Name or title of the project."
+            "description": "Name or title of the project.",
+            "description_translations": {
+              "es": "Nombre o título del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "objetivogeneral",
             "type": "string",
-            "description": "General description of the project objective."
+            "description": "General description of the project objective.",
+            "description_translations": {
+              "es": "Descripción general del objetivo del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -653,31 +881,46 @@
             "groupChar": "",
             "name": "avancefinanciero",
             "type": "number",
-            "description": "Status or financial progress of the project."
+            "description": "Status or financial progress of the project.",
+            "description_translations": {
+              "es": "Estado o progreso financiero del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "IdEstado",
             "type": "integer",
-            "description": "Unique identification of the current status of the project."
+            "description": "Unique identification of the current status of the project.",
+            "description_translations": {
+              "es": "Identificación única del estado actual del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "NombreEstado",
             "type": "string",
-            "description": "Name or description of the current status of the project."
+            "description": "Name or description of the current status of the project.",
+            "description_translations": {
+              "es": "Nombre o descripción del estado actual del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "IdProyecto",
             "type": "integer",
-            "description": "Unique project identification."
+            "description": "Unique project identification.",
+            "description_translations": {
+              "es": "Identificación única del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "ValorProyecto",
             "type": "integer",
-            "description": "Total amount or value of the project."
+            "description": "Total amount or value of the project.",
+            "description_translations": {
+              "es": "Monto o valor total del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -685,7 +928,10 @@
             "groupChar": "",
             "name": "ValorFinanciado",
             "type": "number",
-            "description": "Amount or value financed for the project."
+            "description": "Amount or value financed for the project.",
+            "description_translations": {
+              "es": "Monto o valor financiado para el proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -693,31 +939,46 @@
             "groupChar": "",
             "name": "ValorEjecutado",
             "type": "number",
-            "description": "Amount or value executed so far for the project."
+            "description": "Amount or value executed so far for the project.",
+            "description_translations": {
+              "es": "Monto o valor ejecutado hasta el momento para el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "URLProyecto",
             "type": "string",
-            "description": "URL or link that directs to the online project location or its corresponding documentation."
+            "description": "URL or link that directs to the online project location or its corresponding documentation.",
+            "description_translations": {
+              "es": "URL o enlace que dirige a la ubicación del proyecto en línea o a su documentación correspondiente."
+            }
           },
           {
             "format": "default",
             "name": "Fuente",
             "type": "string",
-            "description": "Source from which information about the project was obtained."
+            "description": "Source from which information about the project was obtained.",
+            "description_translations": {
+              "es": "Fuente de donde se obtuvo la información sobre el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuenteMH",
             "type": "string",
-            "description": "Date on which information about the project was updated according to the data source of the Ministry of Finance."
+            "description": "Date on which information about the project was updated according to the data source of the Ministry of Finance.",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información sobre el proyecto según la fuente de datos de Ministerio de Hacienda."
+            }
           },
           {
             "format": "default",
             "name": "FechaActualizacionFuenteMEPyD",
             "type": "string",
-            "description": "Date on which information about the project was updated according to the data source of the Ministry of Economy, Planning and Development."
+            "description": "Date on which information about the project was updated according to the data source of the Ministry of Economy, Planning and Development.",
+            "description_translations": {
+              "es": "Fecha en la que se actualizó la información sobre el proyecto según la fuente de datos del Ministerio de Economía, Planificación y Desarrollo."
+            }
           }
         ],
         "missingValues": [
