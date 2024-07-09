@@ -71,25 +71,37 @@
             "format": "default",
             "name": "IdProyecto",
             "type": "integer",
-            "description": "Project identifier code within MapaInversiones."
+            "description": "Project identifier code within MapaInversiones.",
+            "description_translations": {
+              "es": "Código identificador del proyecto dentro de MapaInversiones."
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description": "Full name of the investment project in the public investment system (SNIP)."
+            "description": "Full name of the investment project in the public investment system (SNIP).",
+            "description_translations": {
+              "es": "Nombre completo del proyecto de inversión en el sistema de inversión pública (SNIP)."
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "FechaInicioProyecto",
             "type": "date",
-            "description": "Project start date."
+            "description": "Project start date.",
+            "description_translations": {
+              "es": "Fecha de inicio del proyecto."
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "FechaFinProyecto",
             "type": "date",
-            "description": "Project end date."
+            "description": "Project end date.",
+            "description_translations": {
+              "es": "Fecha final del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -97,7 +109,10 @@
             "groupChar": "",
             "name": "costo_estimado_lempiras",
             "type": "number",
-            "description": "Estimated cost of the project in lempiras."
+            "description": "Estimated cost of the project in lempiras.",
+            "description_translations": {
+              "es": "Costo estimado del proyecto en lempiras."
+            }
           },
           {
             "decimalChar": ".",
@@ -105,19 +120,28 @@
             "groupChar": "",
             "name": "costo_estimado_usd",
             "type": "number",
-            "description": "Estimated cost of the project in USD."
+            "description": "Estimated cost of the project in USD.",
+            "description_translations": {
+              "es": "Costo estimado del proyecto en USD."
+            }
           },
           {
             "format": "default",
             "name": "NombreSector",
             "type": "string",
-            "description": "Name of the sector to which the investment project belongs. Eg. Education, Health, Transportation."
+            "description": "Name of the sector to which the investment project belongs. Eg. Education, Health, Transportation.",
+            "description_translations": {
+              "es": "Nombre del sector al que pertenece el proyecto de inversión. Ej. Educación, Salud, Transporte."
+            }
           },
           {
             "format": "default",
             "name": "EntidadEjecutora",
             "type": "string",
-            "description": "Corresponds to the primary executor of the project."
+            "description": "Corresponds to the primary executor of the project.",
+            "description_translations": {
+              "es": "Corresponde al ejecutor primario del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -125,19 +149,28 @@
             "groupChar": "",
             "name": "DuracionProyecto",
             "type": "number",
-            "description": "Duration in years of the project."
+            "description": "Duration in years of the project.",
+            "description_translations": {
+              "es": "Duración en años del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "TipoProyecto",
             "type": "string",
-            "description": "Type of project scope. E.g. National, Departmental or Municipal."
+            "description": "Type of project scope. E.g. National, Departmental or Municipal.",
+            "description_translations": {
+              "es": "Tipo de alcance del proyecto. Ej. Nacional, Departamental o Municipal."
+            }
           },
           {
             "format": "default",
             "name": "CodigoSNIP",
             "type": "integer",
-            "description": "Project identifier code within the project bank is the unique identifier of the investment project in (SNIP System)."
+            "description": "Project identifier code within the project bank is the unique identifier of the investment project in (SNIP System).",
+            "description_translations": {
+              "es": "Código identificador del proyecto dentro del banco de proyectos es el identificador único del proyecto de inversión en (Sistema SNIP)."
+            }
           },
           {
             "decimalChar": ".",
@@ -145,7 +178,10 @@
             "groupChar": "",
             "name": "NumeroBeneficiariosHombres",
             "type": "number",
-            "description": "Number of male beneficiaries of the project"
+            "description": "Number of male beneficiaries of the project",
+            "description_translations": {
+              "es": "Número de beneficiarios hombres del proyecto"
+            }
           },
           {
             "decimalChar": ".",
@@ -153,25 +189,37 @@
             "groupChar": "",
             "name": "NumeroBeneficiariosMujeres",
             "type": "number",
-            "description": "Number of female beneficiaries of the project."
+            "description": "Number of female beneficiaries of the project.",
+            "description_translations": {
+              "es": "Número de beneficiarios mujeres del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "NombreDepartamento",
             "type": "string",
-            "description": "Name of the department where the project is located."
+            "description": "Name of the department where the project is located.",
+            "description_translations": {
+              "es": "Nombre del departamento donde se encuentra localizado el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "NombreMunicipio",
             "type": "string",
-            "description": "Name of the municipality where the project is located."
+            "description": "Name of the municipality where the project is located.",
+            "description_translations": {
+              "es": "Nombre del municipio donde se encuentra localizado el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "nombreestado",
             "type": "string",
-            "description": "Current stage the project is in. Execution, Programming."
+            "description": "Current stage the project is in. Execution, Programming.",
+            "description_translations": {
+              "es": "Etapa actual en la que se encuentra el proyecto. Ej. Ejecución, Programación."
+            }
           }
         ],
         "missingValues": [
@@ -210,127 +258,190 @@
             "format": "default",
             "name": "Gestion",
             "type": "integer",
-            "description": "Year in which the budget operation is being carried out."
+            "description": "Year in which the budget operation is being carried out.",
+            "description_translations": {
+              "es": "Año en el que se está realizando la operación presupuestaria."
+            }
           },
           {
             "format": "default",
             "name": "Mes",
             "type": "integer",
-            "description": "Month in which the budget operation is being carried out."
+            "description": "Month in which the budget operation is being carried out.",
+            "description_translations": {
+              "es": "Mes en el que se está realizando la operación presupuestaria."
+            }
           },
           {
             "format": "default",
             "name": "Nivel_de_Administracion",
             "type": "string",
-            "description": "It is the level of administration, which can be CENTRAL ADMINISTRATION OR DECENTRALIZED INSTITUTIONS"
+            "description": "It is the level of administration, which can be CENTRAL ADMINISTRATION OR DECENTRALIZED INSTITUTIONS",
+            "description_translations": {
+              "es": "Es el nivel de administración, pudiendo ser «ADMINISTRACION CENTRAL» O «INSTITUCIONES DESCENTRALIZADAS»"
+            }
           },
           {
             "format": "default",
             "name": "Institucion",
             "type": "string",
-            "description": "Higher level grouping that contains the accounting group or the executing Institution."
+            "description": "Higher level grouping that contains the accounting group or the executing Institution.",
+            "description_translations": {
+              "es": "Agrupación de nivel superior que contiene el grupo contable o la Institución ejecutora."
+            }
           },
           {
             "format": "default",
             "name": "Gerencia Administrativa",
             "type": "string",
-            "description": "Area responsible for administration within the institution."
+            "description": "Area responsible for administration within the institution.",
+            "description_translations": {
+              "es": "Área responsable de la administración dentro de la institución."
+            }
           },
           {
             "format": "default",
             "name": "Unidad Ejecutora",
             "type": "string",
-            "description": "Entity in charge of the execution of projects and activities."
+            "description": "Entity in charge of the execution of projects and activities.",
+            "description_translations": {
+              "es": "Entidad encargada de la ejecución de proyectos y actividades."
+            }
           },
           {
             "format": "default",
             "name": "Programa",
             "type": "string",
-            "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories."
+            "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories.",
+            "description_translations": {
+              "es": "Es la categoría programática de mayor nivel, produce bienes y servicios finales que la institución entrega a la población. Un Programa contiene los subprogramas, las actividades, los proyectos y las obras, que son las categorías de menor nivel."
+            }
           },
           {
             "format": "default",
             "name": "Subprograma",
             "type": "string",
-            "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program."
+            "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program.",
+            "description_translations": {
+              "es": "En un Sub-programa se realizan productos finales parciales, y en un programa deben existir 2 o más subprogramas y sus productos deben sumarse para tener los productos finales del programa."
+            }
           },
           {
             "format": "default",
             "name": "Proyecto",
             "type": "string",
-            "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent."
+            "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent.",
+            "description_translations": {
+              "es": "Generalmente los proyectos generan una inversión o un bien y satisfacen una necesidad de la población al finalizar su elaboración. Un proyecto tiene un tiempo de finalización al contrario de un programa que puede ser permanente."
+            }
           },
           {
             "format": "default",
             "name": "Actividad u Obra",
             "type": "string",
-            "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located."
+            "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located.",
+            "description_translations": {
+              "es": "Es donde se realizan las labores, acciones con las cuales se generaran los productos finales; en esta categoría de menor nivel, es donde se ubican los insumos como los recursos financieros, recursos humanos y materiales."
+            }
           },
           {
             "format": "default",
             "name": "Organismo",
             "type": "string",
-            "description": "Entity or body that participates in the execution of the budget."
+            "description": "Entity or body that participates in the execution of the budget.",
+            "description_translations": {
+              "es": "Entidad u organismo que participa en la ejecución del presupuesto."
+            }
           },
           {
             "format": "default",
             "name": "Fuente de Financiamiento",
             "type": "string",
-            "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs."
+            "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs.",
+            "description_translations": {
+              "es": "Esta clasificación del gasto consiste en presentar los gastos según los tipos genéricos de recursos empleados para su financiamiento. Este tipo de clasificación permite al gobierno identificar la fuente de origen de los ingresos, así como la orientación de los mismos hacia la atención de las necesidades públicas."
+            }
           },
           {
             "format": "default",
             "name": "BIP",
             "type": "string",
-            "description": "Project identification number within the budget."
+            "description": "Project identification number within the budget.",
+            "description_translations": {
+              "es": "Número de identificación del proyecto dentro del presupuesto."
+            }
           },
           {
             "format": "default",
             "name": "Finalidad",
             "type": "string",
-            "description": "Main objective of the expense or investment made."
+            "description": "Main objective of the expense or investment made.",
+            "description_translations": {
+              "es": "Objetivo principal del gasto o inversión realizada."
+            }
           },
           {
             "format": "default",
             "name": "Funcion",
             "type": "string",
-            "description": "Area of ​​performance or responsibility within the public administration."
+            "description": "Area of ​​performance or responsibility within the public administration.",
+            "description_translations": {
+              "es": "Área de desempeño o responsabilidad dentro de la administración pública."
+            }
           },
           {
             "format": "default",
             "name": "Grupo de Objeto",
             "type": "string",
-            "description": "Grouper of expense objects (Expense_Object)."
+            "description": "Grouper of expense objects (Expense_Object).",
+            "description_translations": {
+              "es": "Agrupador de objetos de gasto (Objeto_de_Gasto)."
+            }
           },
           {
             "format": "default",
             "name": "Objeto del Gasto",
             "type": "string",
-            "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management."
+            "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management.",
+            "description_translations": {
+              "es": "Este clasificador comprende a la ordenación sistemática y homogénea de los bienes, servicios y las transferencias que el Sector Público aplica en el desarrollo de su gestión."
+            }
           },
           {
             "format": "default",
             "name": "Beneficiario de Transferencia",
             "type": "string",
-            "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents."
+            "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents.",
+            "description_translations": {
+              "es": "Es la clasificación que identifica a los beneficiarios de la operación. Se registra únicamente en las erogaciones o transferencias sin contraprestación que realizan los entes públicos destinadas a financiar la formación bruta de capital o gastos corrientes por parte de los diferentes agentes económicos públicos, privados o externos."
+            }
           },
           {
             "format": "default",
             "name": "Aprobado Ministro",
             "type": "string",
-            "description": "Approved minister, it is the first step of approval."
+            "description": "Approved minister, it is the first step of approval.",
+            "description_translations": {
+              "es": "Aprobado ministro, es el primer paso de aprobación."
+            }
           },
           {
             "format": "default",
             "name": "Aprobado",
             "type": "string",
-            "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis."
+            "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis.",
+            "description_translations": {
+              "es": "Es el presupuesto aprobado por el Congreso Nacional anualmente, el cual presentará información sobre las transacciones netas que realizará dicho Sector Público con el resto de la economía y contendrá, como mínimo la consolidación de los ingresos, gastos y financiamiento, los resultados económicos y financieros previstos y su presentación en agregados institucionales útiles para el análisis económico."
+            }
           },
           {
             "format": "default",
             "name": "Vigente",
             "type": "string",
-            "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period."
+            "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period.",
+            "description_translations": {
+              "es": "Comprende las modificaciones presupuestarias (ampliación, disminución y traslados) de la estimación de los recursos y de los créditos presupuestarios autorizados por el Poder Legislativo en el Presupuesto General de Ingresos y Egresos de la República, una vez iniciada la ejecución del mismo para un período fiscal"
+            }
           },
           {
             "decimalChar": ".",
@@ -338,25 +449,37 @@
             "groupChar": "",
             "name": "EjecuciÃ³n al mes",
             "type": "number",
-            "description": "Refers to the Monthly Accrued/Executed."
+            "description": "Refers to the Monthly Accrued/Executed.",
+            "description_translations": {
+              "es": "Refiere al Devengado/Ejecutado Mensual."
+            }
           },
           {
             "format": "default",
             "name": "EjecuciÃ³n Acumulada",
             "type": "string",
-            "description": "Refers to Accrual/Executed: It is the accounting basis by which transactions and other events are recognized when they occur and not when they are collected or paid in cash or its equivalent. Its registration reflects the moment in which the economic value is created, transformed, exchanged, transferred or extinguished. The moment of “accrual” of income will be recognized as occurring when, in accordance with current legislation, the right to collection in favor of the State and, correlatively, a payment obligation borne by a natural or legal person arises. duly individualized and for a certain amount. Likewise, the moment of “accrual” of expenses will be recognized when the conforming receipt of the goods and services duly contracted or the legal and/or administrative requirements established by the current regulations for expenses without consideration occur; implies the definitive impact of the budget allocation and may generate an immediate or deferred payment obligation."
+            "description": "Refers to Accrual/Executed: It is the accounting basis by which transactions and other events are recognized when they occur and not when they are collected or paid in cash or its equivalent. Its registration reflects the moment in which the economic value is created, transformed, exchanged, transferred or extinguished. The moment of “accrual” of income will be recognized as occurring when, in accordance with current legislation, the right to collection in favor of the State and, correlatively, a payment obligation borne by a natural or legal person arises. duly individualized and for a certain amount. Likewise, the moment of “accrual” of expenses will be recognized when the conforming receipt of the goods and services duly contracted or the legal and/or administrative requirements established by the current regulations for expenses without consideration occur; implies the definitive impact of the budget allocation and may generate an immediate or deferred payment obligation.",
+            "description_translations": {
+              "es": "Refiere al Devengado/Ejecutado: Es la base contable por la cual las transacciones y otros hechos son reconocidos cuando ocurren y no cuando se efectúa su cobro o su pago en efectivo o su equivalente. Su registro, refleja el momento en que el valor económico se crea, transforma, intercambia, transfiere o extingue. Se reconocerá como momento del “devengado” de los ingresos el que ocurre cuando, de acuerdo con la legislación vigente, se origina jurídicamente el derecho de cobro a favor del Estado y, correlativamente, una obligación de pago a cargo de una persona natural o jurídica debidamente individualizada y por un monto cierto. Asimismo, se reconocerá como momento del “devengado” de los gastos cuando ocurre la recepción de conformidad de los bienes y servicios oportunamente contratados o cumplidos los requisitos legales y/o administrativos establecidos por las normas vigentes para gastos sin contraprestación; implica la afectación definitiva de la asignación presupuestaria y puede generar una obligación de pago en forma inmediata o diferida."
+            }
           },
           {
             "format": "default",
             "name": "Disponible",
             "type": "string",
-            "description": "It is the result of the Budgeted in the Current column minus the Executed_Accumulated column."
+            "description": "It is the result of the Budgeted in the Current column minus the Executed_Accumulated column.",
+            "description_translations": {
+              "es": "Es el resultado de lo Presupuestado en la columna Vigente menos la columna Ejecutado_Acumulado."
+            }
           },
           {
             "format": "default",
             "name": "% de Ejecucion",
             "type": "string",
-            "description": "It is the Cumulative Executed Percentage"
+            "description": "It is the Cumulative Executed Percentage",
+            "description_translations": {
+              "es": "Es el Porcentaje Ejecutado Acumulado"
+            }
           }
         ],
         "missingValues": [
@@ -395,133 +518,199 @@
             "format": "default",
             "name": "Gestión",
             "type": "integer",
-            "description": "Year in which the budget operation is being carried out."
+            "description": "Year in which the budget operation is being carried out.",
+            "description_translations": {
+              "es": "Año en el que se está realizando la operación presupuestaria."
+            }
           },
           {
             "format": "default",
             "name": "mes",
             "type": "integer",
-            "description": "Month in which the budget operation is being carried out."
+            "description": "Month in which the budget operation is being carried out.",
+            "description_translations": {
+              "es": "Mes en el que se está realizando la operación presupuestaria."
+            }
           },
           {
             "format": "default",
             "name": "Area",
             "type": "integer",
-            "description": "General category that groups related activities or topics, in this case focused on gender marking."
+            "description": "General category that groups related activities or topics, in this case focused on gender marking.",
+            "description_translations": {
+              "es": "Categoría general que agrupa actividades o temas relacionados, en este caso enfocados en el marcaje de género."
+            }
           },
           {
             "format": "default",
             "name": "Sub-Area",
             "type": "string",
-            "description": "Subcategory within an area that specifies a particular focus or additional detail related to the main area."
+            "description": "Subcategory within an area that specifies a particular focus or additional detail related to the main area.",
+            "description_translations": {
+              "es": "Subcategoría dentro de un área que especifica un enfoque particular o detalle adicional relacionado con el área principal."
+            }
           },
           {
             "format": "default",
             "name": "Nivel_de_Administración",
             "type": "string",
-            "description": "Area responsible for administration within the institution."
+            "description": "Area responsible for administration within the institution.",
+            "description_translations": {
+              "es": "Es el nivel de administración, pudiendo ser «ADMINISTRACION CENTRAL» O «INSTITUCIONES DESCENTRALIZADAS»"
+            }
           },
           {
             "format": "default",
             "name": "Institución",
             "type": "string",
-            "description": "Entity in charge of the execution of projects and activities."
+            "description": "Entity in charge of the execution of projects and activities.",
+            "description_translations": {
+              "es": "Agrupación de nivel superior que contiene el grupo contable o la Institución ejecutora."
+            }
           },
           {
             "format": "default",
             "name": "Gerencia_Administrativa",
             "type": "string",
-            "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories."
+            "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories.",
+            "description_translations": {
+              "es": "Área responsable de la administración dentro de la institución."
+            }
           },
           {
             "format": "default",
             "name": "Unidad_Ejecutora",
             "type": "string",
-            "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program."
+            "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program.",
+            "description_translations": {
+              "es": "Entidad encargada de la ejecución de proyectos y actividades."
+            }
           },
           {
             "format": "default",
             "name": "Programa",
             "type": "string",
-            "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent."
+            "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent.",
+            "description_translations": {
+              "es": "Es la categoría programática de mayor nivel, produce bienes y servicios finales que la institución entrega a la población. Un Programa contiene los subprogramas, las actividades, los proyectos y las obras, que son las categorías de menor nivel."
+            }
           },
           {
             "format": "default",
             "name": "Subprograma",
             "type": "string",
-            "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located."
+            "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located.",
+            "description_translations": {
+              "es": "En un Sub-programa se realizan productos finales parciales, y en un programa deben existir 2 o más subprogramas y sus productos deben sumarse para tener los productos finales del programa."
+            }
           },
           {
             "format": "default",
             "name": "Proyecto_",
             "type": "string",
-            "description": "Entity or body that participates in the execution of the budget."
+            "description": "Entity or body that participates in the execution of the budget.",
+            "description_translations": {
+              "es": "Generalmente los proyectos generan una inversión o un bien y satisfacen una necesidad de la población al finalizar su elaboración. Un proyecto tiene un tiempo de finalización al contrario de un programa que puede ser permanente."
+            }
           },
           {
             "format": "default",
             "name": "Actividad_u_Obra",
             "type": "string",
-            "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs."
+            "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs.",
+            "description_translations": {
+              "es": "Es donde se realizan las labores, acciones con las cuales se generaran los productos finales; en esta categoría de menor nivel, es donde se ubican los insumos como los recursos financieros, recursos humanos y materiales."
+            }
           },
           {
             "format": "default",
             "name": "Organismo",
             "type": "integer",
-            "description": "Project identification number within the budget."
+            "description": "Project identification number within the budget.",
+            "description_translations": {
+              "es": "Entidad u organismo que participa en la ejecución del presupuesto."
+            }
           },
           {
             "format": "default",
             "name": "Fuente_de_Financiamiento",
             "type": "integer",
-            "description": "Main objective of the expense or investment made."
+            "description": "Main objective of the expense or investment made.",
+            "description_translations": {
+              "es": "Esta clasificación del gasto consiste en presentar los gastos según los tipos genéricos de recursos empleados para su financiamiento. Este tipo de clasificación permite al gobierno identificar la fuente de origen de los ingresos, así como la orientación de los mismos hacia la atención de las necesidades públicas."
+            }
           },
           {
             "format": "default",
             "name": "BIP",
             "type": "integer",
-            "description": "Area of ​​performance or responsibility within the public administration."
+            "description": "Area of ​​performance or responsibility within the public administration.",
+            "description_translations": {
+              "es": "Número de identificación del proyecto dentro del presupuesto."
+            }
           },
           {
             "format": "default",
             "name": "Finalidad",
             "type": "string",
-            "description": "Grouper of expense objects (Expense_Object)."
+            "description": "Grouper of expense objects (Expense_Object).",
+            "description_translations": {
+              "es": "Objetivo principal del gasto o inversión realizada."
+            }
           },
           {
             "format": "default",
             "name": "Función",
             "type": "string",
-            "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management."
+            "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management.",
+            "description_translations": {
+              "es": "Área de desempeño o responsabilidad dentro de la administración pública."
+            }
           },
           {
             "format": "default",
             "name": "Grupo_de_Objeto",
             "type": "string",
-            "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents."
+            "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents.",
+            "description_translations": {
+              "es": "Agrupador de objetos de gasto (Objeto_de_Gasto)."
+            }
           },
           {
             "format": "default",
             "name": "Objeto_del_Gasto",
             "type": "string",
-            "description": "Approved minister, it is the first step of approval."
+            "description": "Approved minister, it is the first step of approval.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "Beneficiario_de_Transferencia",
             "type": "integer",
-            "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis."
+            "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "Aprobado_Ministro",
             "type": "integer",
-            "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period."
+            "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "Aprobado",
             "type": "integer",
-            "description": "Refers to the Monthly Accrued/Executed."
+            "description": "Refers to the Monthly Accrued/Executed.",
+            "description_translations": {
+              "es": ""
+            }
           }
         ],
         "missingValues": [

@@ -59,55 +59,82 @@
             "format": "default",
             "name": "IdProject",
             "type": "integer",
-            "description": "Unique identifier of the project in MapaInversiones"
+            "description": "Unique identifier of the project in MapaInversiones",
+            "description_translations": {
+              "es": "Identificador unico del proyecto en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "CodeProject",
             "type": "integer",
-            "description": "Unique Project Identifier in the Jamaican public investment system"
+            "description": "Unique Project Identifier in the Jamaican public investment system",
+            "description_translations": {
+              "es": "Identificador Único del Proyecto en el sistema de Inversion publica de Jamaica"
+            }
           },
           {
             "format": "default",
             "name": "StatusProject",
             "type": "string",
-            "description": "Project status"
+            "description": "Project status",
+            "description_translations": {
+              "es": "Estado del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "IdSector",
             "type": "integer",
-            "description": "Sector Identifier"
+            "description": "Sector Identifier",
+            "description_translations": {
+              "es": "Identificador del Sector"
+            }
           },
           {
             "format": "default",
             "name": "Sector",
             "type": "string",
-            "description": "Secotres associated according to the scope of Economic Activity"
+            "description": "Secotres associated according to the scope of Economic Activity",
+            "description_translations": {
+              "es": "Secotres asociado de acuerdo al ámbito de Actividad Económica"
+            }
           },
           {
             "format": "default",
             "name": "StartDate",
             "type": "string",
-            "description": "Estimated Project Start Date"
+            "description": "Estimated Project Start Date",
+            "description_translations": {
+              "es": "Fecha estimada de Inicio del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "FinishDate",
             "type": "string",
-            "description": "Estimated Project Completion Date"
+            "description": "Estimated Project Completion Date",
+            "description_translations": {
+              "es": "Fecha estimada de Finalización del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "ExtensionDate",
             "type": "string",
-            "description": "Project Extension Date (This date applies when extensions are requested at the end of the project"
+            "description": "Project Extension Date (This date applies when extensions are requested at the end of the project",
+            "description_translations": {
+              "es": "Fecha Extension del Proyecto (Esta fecha aplica cuando se solicitan extensiones en la finalizacion del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "ProjectName",
             "type": "string",
-            "description": "Project's name "
+            "description": "Project's name ",
+            "description_translations": {
+              "es": "Nombre del Proyecto "
+            }
           },
           {
             "decimalChar": ".",
@@ -115,7 +142,10 @@
             "groupChar": "",
             "name": "ProjectEstimateCost",
             "type": "number",
-            "description": "Estimated Project Cost in Jamaican dollars in thousands"
+            "description": "Estimated Project Cost in Jamaican dollars in thousands",
+            "description_translations": {
+              "es": "Costo Estimado del Proyecto en dolares de jamaica in thousands"
+            }
           },
           {
             "decimalChar": ".",
@@ -123,85 +153,127 @@
             "groupChar": "",
             "name": "FinancialPogress",
             "type": "number",
-            "description": "Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project in economic progress"
+            "description": "Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project in economic progress",
+            "description_translations": {
+              "es": "Avance o Asignación Financiera (en porcentaje) para medir el cumplimiento del Proyecto en avance economico"
+            }
           },
           {
             "format": "default",
             "name": "ProjectOverview",
             "type": "string",
-            "description": "General Summary of the Project, Explains in general terms the characteristics of the project"
+            "description": "General Summary of the Project, Explains in general terms the characteristics of the project",
+            "description_translations": {
+              "es": "General Resumen del Proyecto, Explica de forma general las caracteristicas del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "GeneralObjective",
             "type": "string",
-            "description": "General objective of the Project. Explain the general scope of the project"
+            "description": "General objective of the Project. Explain the general scope of the project",
+            "description_translations": {
+              "es": "Objetivo general del Proyecto. Explica el alcance general del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "SpecificObjectives",
             "type": "string",
-            "description": "Specific objectives of the Project. List the specific objectives and specific scope of the project"
+            "description": "Specific objectives of the Project. List the specific objectives and specific scope of the project",
+            "description_translations": {
+              "es": "Objetivos especificos del Proyecto. Lista los objetivos especificos y alcances especifico del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "IdExecutingAgency",
             "type": "integer",
-            "description": "Code and identifier of the Project Executing Entity"
+            "description": "Code and identifier of the Project Executing Entity",
+            "description_translations": {
+              "es": "Codigo e identificador de la Entidad Ejecutora del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "ExecutingAgency",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": "Entidad o Agencia encargada de la ejecucion del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "IdFundingAgency",
             "type": "integer",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": "Codigo e Identificador de la Agencia o Entidad encargada de la financiacion del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "FundingAgency",
             "type": "string",
-            "description": "Agency or Entity in charge of financing the project. When there are several entities or agencies, it will be established as multiple agencies."
+            "description": "Agency or Entity in charge of financing the project. When there are several entities or agencies, it will be established as multiple agencies.",
+            "description_translations": {
+              "es": "Agencia o Entidad encargada de la financiacion del proyecto. Cuando son varias las entidades o agencias se establecera como multiples agencias "
+            }
           },
           {
             "format": "default",
             "name": "IdCounty",
             "type": "integer",
-            "description": "Identifier of the administrative territorial county division for Jamaica"
+            "description": "Identifier of the administrative territorial county division for Jamaica",
+            "description_translations": {
+              "es": "Identificador del county division territorial administrativa para jamaica"
+            }
           },
           {
             "format": "default",
             "name": "County",
             "type": "string",
-            "description": "Name of county administrative territorial division for Jamaica"
+            "description": "Name of county administrative territorial division for Jamaica",
+            "description_translations": {
+              "es": "Nombre de county division territorial administrativa para jamaica"
+            }
           },
           {
             "format": "default",
             "name": "IdParish",
             "type": "integer",
-            "description": "Parish identifier of the administrative territorial sub-division for Jamaica"
+            "description": "Parish identifier of the administrative territorial sub-division for Jamaica",
+            "description_translations": {
+              "es": "Identificador del Parish de la sub- division territorial administrativa para jamaica"
+            }
           },
           {
             "format": "default",
             "name": "Parish",
             "type": "string",
-            "description": "Name of the Parish of the administrative territorial sub-division for Jamaica"
+            "description": "Name of the Parish of the administrative territorial sub-division for Jamaica",
+            "description_translations": {
+              "es": "Nombre del Parish de la sub-division territorial administrativa para jamaica"
+            }
           },
           {
             "format": "default",
             "name": "UpdateDateData",
             "type": "string",
-            "description": "Registry Update Date in MapaInversiones"
+            "description": "Registry Update Date in MapaInversiones",
+            "description_translations": {
+              "es": "Fecha de Actualizacion del Registro en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "DataSource",
             "type": "string",
-            "description": "Source of information"
+            "description": "Source of information",
+            "description_translations": {
+              "es": "Fuente de la Informacion "
+            }
           }
         ],
         "missingValues": [

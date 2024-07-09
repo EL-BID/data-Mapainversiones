@@ -76,13 +76,19 @@
             "format": "default",
             "name": "Id",
             "type": "integer",
-            "description": "Internal record ID"
+            "description": "Internal record ID",
+            "description_translations": {
+              "es": "ID interno del registro"
+            }
           },
           {
             "format": "default",
             "name": "ID_PUBLICACION",
             "type": "string",
-            "description": "Post ID"
+            "description": "Post ID",
+            "description_translations": {
+              "es": "ID de publicacion"
+            }
           },
           {
             "decimalChar": ".",
@@ -90,61 +96,91 @@
             "groupChar": "",
             "name": "CODIGO_UNIDAD_COMPRA",
             "type": "number",
-            "description": "Purchase Unit Code"
+            "description": "Purchase Unit Code",
+            "description_translations": {
+              "es": "Codigo de la Unidad de Compra"
+            }
           },
           {
             "format": "default",
             "name": "UNIDAD_COMPRA",
             "type": "string",
-            "description": "Purchasing Unit Name"
+            "description": "Purchasing Unit Name",
+            "description_translations": {
+              "es": "Nombre de la Unidad de Compra"
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_PROCESO",
             "type": "string",
-            "description": "Purchase process code"
+            "description": "Purchase process code",
+            "description_translations": {
+              "es": "Codigo del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "MODALIDAD",
             "type": "string",
-            "description": "Modality of the purchasing process"
+            "description": "Modality of the purchasing process",
+            "description_translations": {
+              "es": "Modalidad del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_EXCEPCION",
             "type": "string",
-            "description": "Type of Exception (In this case they are all of the \"emergency\" type)"
+            "description": "Type of Exception (In this case they are all of the \"emergency\" type)",
+            "description_translations": {
+              "es": "Tipo de Excepcion ( En este caso todos son de tipo \"emergencia\")"
+            }
           },
           {
             "format": "default",
             "name": "CARATULA",
             "type": "string",
-            "description": "Cover of the purchasing process"
+            "description": "Cover of the purchasing process",
+            "description_translations": {
+              "es": "Carátula del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION",
             "type": "string",
-            "description": "Description of the purchasing process"
+            "description": "Description of the purchasing process",
+            "description_translations": {
+              "es": "Descripción del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_PROCESO",
             "type": "string",
-            "description": "Purchase process status"
+            "description": "Purchase process status",
+            "description_translations": {
+              "es": "Estado del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "FASE_PROCESO",
             "type": "string",
-            "description": "Purchase process phase"
+            "description": "Purchase process phase",
+            "description_translations": {
+              "es": "Fase del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "MONEDA",
             "type": "string",
-            "description": "Checkout Currency"
+            "description": "Checkout Currency",
+            "description_translations": {
+              "es": "Moneda del proceso de compra"
+            }
           },
           {
             "decimalChar": ".",
@@ -152,157 +188,235 @@
             "groupChar": "",
             "name": "MONTO_ESTIMADO",
             "type": "number",
-            "description": "Purchase process amount"
+            "description": "Purchase process amount",
+            "description_translations": {
+              "es": "Monto del proceso de compra"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_PUBLICACION",
             "type": "string",
-            "description": "Publication date"
+            "description": "Publication date",
+            "description_translations": {
+              "es": "Fecha de Publicación"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ENMIENDA",
             "type": "string",
-            "description": "Amendment Date"
+            "description": "Amendment Date",
+            "description_translations": {
+              "es": "Fecha de Enmienda"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_FIN_RECEPCION_OFERTAS",
             "type": "string",
-            "description": "End Date of Reception of Offers"
+            "description": "End Date of Reception of Offers",
+            "description_translations": {
+              "es": "Fecha de Fin de Recepcion de Ofertas"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_APERTURA_OFERTAS",
             "type": "string",
-            "description": "Bid Opening Date"
+            "description": "Bid Opening Date",
+            "description_translations": {
+              "es": "Fecha de Apertura de Ofertas"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ESTIMADA_ADJUDICACION",
             "type": "string",
-            "description": "Estimated Award Date"
+            "description": "Estimated Award Date",
+            "description_translations": {
+              "es": "Fecha estimada de Adjudicación"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_SUSCRIPCION",
             "type": "string",
-            "description": "Subscription Date"
+            "description": "Subscription Date",
+            "description_translations": {
+              "es": "Fecha de Suscripción"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_HABILITACION_OFERENTE",
             "type": "string",
-            "description": "Bidder Qualification Date"
+            "description": "Bidder Qualification Date",
+            "description_translations": {
+              "es": "Fecha de Habilitación del Oferente"
+            }
           },
           {
             "format": "default",
             "name": "DIRIGIDO_MIPYMES",
             "type": "string",
-            "description": "Aimed at Micro, Small and Medium Enterprises (YES / NO)"
+            "description": "Aimed at Micro, Small and Medium Enterprises (YES / NO)",
+            "description_translations": {
+              "es": "Dirigido a Micro, Pequeña y Medianas Empresas (SI / NO)"
+            }
           },
           {
             "format": "default",
             "name": "DIRIGIDO_MIPYMES_MUJERES",
             "type": "string",
-            "description": "Aimed at Micro, Small and Medium Enterprises for women (YES / NO)"
+            "description": "Aimed at Micro, Small and Medium Enterprises for women (YES / NO)",
+            "description_translations": {
+              "es": "Dirigido a Micro, Pequeña y Medianas Empresas para mujeres (SI / NO)"
+            }
           },
           {
             "format": "default",
             "name": "PROCESO_LOTIFICADO",
             "type": "string",
-            "description": "Batch process (YES / NO)"
+            "description": "Batch process (YES / NO)",
+            "description_translations": {
+              "es": "Proceso lotificado (SI / NO)"
+            }
           },
           {
             "format": "default",
             "name": "ADQUISICION_PLANEADA",
             "type": "string",
-            "description": "Planned acquisition (YES / NO)"
+            "description": "Planned acquisition (YES / NO)",
+            "description_translations": {
+              "es": "Adquisición planeada (SI / NO)"
+            }
           },
           {
             "format": "default",
             "name": "JUSTIFICACION_NO_PACC",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "OBJETO_PROCESO",
             "type": "string",
-            "description": "Purpose of the process"
+            "description": "Purpose of the process",
+            "description_translations": {
+              "es": "Objeto del proceso"
+            }
           },
           {
             "format": "default",
             "name": "SUBOBJETO_PROCESO",
             "type": "string",
-            "description": "SubObject of the process"
+            "description": "SubObject of the process",
+            "description_translations": {
+              "es": "SubObjeto del proceso"
+            }
           },
           {
             "format": "default",
             "name": "DECRETO_PRESIDENCIAL",
             "type": "string",
-            "description": "Presidential Decree (YES / NO)"
+            "description": "Presidential Decree (YES / NO)",
+            "description_translations": {
+              "es": "Decreto Presidencial (SI / NO)"
+            }
           },
           {
             "format": "default",
             "name": "RESOLUCION_MAXIMA_AUTORIDAD",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ORGANISMO_FINANCIERO_EXTERNO",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "COMPRA_VERDE",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "COMPRA_CONJUNTA",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ULTIMA_MODIFICACION",
             "type": "string",
-            "description": "Last Modification Date"
+            "description": "Last Modification Date",
+            "description_translations": {
+              "es": "Fecha de Ultima Modificación"
+            }
           },
           {
             "format": "default",
             "name": "URL",
             "type": "string",
-            "description": "Process URL"
+            "description": "Process URL",
+            "description_translations": {
+              "es": "URL del proceso"
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_MODALIDAD",
             "type": "string",
-            "description": "Modality Code"
+            "description": "Modality Code",
+            "description_translations": {
+              "es": "Codigo de la Modalidad"
+            }
           },
           {
             "format": "default",
             "name": "CancelComment",
             "type": "string",
-            "description": "Cancellation comment"
+            "description": "Cancellation comment",
+            "description_translations": {
+              "es": "Comentario de cancelacion"
+            }
           },
           {
             "format": "default",
             "name": "DECRETO",
             "type": "string",
-            "description": "Decree Code"
+            "description": "Decree Code",
+            "description_translations": {
+              "es": "Codigo del Decreto"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ACTUALIZACION",
             "type": "string",
-            "description": "Update date"
+            "description": "Update date",
+            "description_translations": {
+              "es": "Fecha de Actualización"
+            }
           }
         ],
         "missingValues": [
@@ -341,55 +455,82 @@
             "format": "default",
             "name": "CODIGO_PROCESO",
             "type": "string",
-            "description": "Hiring process identifier code"
+            "description": "Hiring process identifier code",
+            "description_translations": {
+              "es": "Código identificador del proceso de contratación"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_PROCESO",
             "type": "string",
-            "description": "State of the process"
+            "description": "State of the process",
+            "description_translations": {
+              "es": "Estado del Proceso"
+            }
           },
           {
             "format": "default",
             "name": "ID_ARTICULO",
             "type": "integer",
-            "description": "Item identifier in the item catalog"
+            "description": "Item identifier in the item catalog",
+            "description_translations": {
+              "es": "Identificador del articulo en el catalogo de articulos"
+            }
           },
           {
             "format": "default",
             "name": "SUBCLASE_UNSPSC",
             "type": "integer",
-            "description": "Subclass identifier in the UNSPSC catalog"
+            "description": "Subclass identifier in the UNSPSC catalog",
+            "description_translations": {
+              "es": "Identificador de la subclase en el catálogo de la UNSPSC"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION_ARTICULO",
             "type": "string",
-            "description": "Description of the article"
+            "description": "Description of the article",
+            "description_translations": {
+              "es": "Descripción del articulo"
+            }
           },
           {
             "format": "default",
             "name": "CUENTA_PRESUPUESTARIA",
             "type": "string",
-            "description": "budget account code"
+            "description": "budget account code",
+            "description_translations": {
+              "es": "Código de cuenta presupuestaria"
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_UNIDAD_MEDIDA",
             "type": "string",
-            "description": "Abbreviation of the item's unit of measure"
+            "description": "Abbreviation of the item's unit of measure",
+            "description_translations": {
+              "es": "Abreviatura de la unidad de medida del articulo"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION_UNIDAD_MEDIDA",
             "type": "string",
-            "description": "Description of the item's unit of measure"
+            "description": "Description of the item's unit of measure",
+            "description_translations": {
+              "es": "Descripción de la unidad de medida del articulo"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION_USUARIO",
             "type": "string",
-            "description": "Product description"
+            "description": "Product description",
+            "description_translations": {
+              "es": "Descripcion del producto"
+            }
           },
           {
             "decimalChar": ".",
@@ -397,7 +538,10 @@
             "groupChar": "",
             "name": "CANTIDAD",
             "type": "number",
-            "description": "Number of articles associated with the contracting process"
+            "description": "Number of articles associated with the contracting process",
+            "description_translations": {
+              "es": "Cantidad de articulos asociados al proceso de contratación"
+            }
           },
           {
             "decimalChar": ".",
@@ -405,7 +549,10 @@
             "groupChar": "",
             "name": "PRECIO_UNITARIO_ESTIMADO",
             "type": "number",
-            "description": "Estimated unit price value of the item"
+            "description": "Estimated unit price value of the item",
+            "description_translations": {
+              "es": "Valor de precio unitario estimado del articulo"
+            }
           },
           {
             "decimalChar": ".",
@@ -413,13 +560,19 @@
             "groupChar": "",
             "name": "PRECIO_TOTAL_ESTIMADO",
             "type": "number",
-            "description": "Estimated total price value of the item"
+            "description": "Estimated total price value of the item",
+            "description_translations": {
+              "es": "Valor de precio total estimado del articulo"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ACTUALIZACION",
             "type": "string",
-            "description": "Update date"
+            "description": "Update date",
+            "description_translations": {
+              "es": "Fecha de Actualización"
+            }
           }
         ],
         "missingValues": [
@@ -460,43 +613,64 @@
             "groupChar": "",
             "name": "CODIGO_UNIDAD_COMPRA",
             "type": "number",
-            "description": "Purchasing unit identification code"
+            "description": "Purchasing unit identification code",
+            "description_translations": {
+              "es": "Código identificador de la unidad de compra"
+            }
           },
           {
             "format": "default",
             "name": "UNIDAD_COMPRA",
             "type": "string",
-            "description": "Name of the Institution or Purchasing Unit"
+            "description": "Name of the Institution or Purchasing Unit",
+            "description_translations": {
+              "es": "Nombre de la Institución o Unidad de compra"
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_PROCESO",
             "type": "string",
-            "description": "Hiring process identifier code"
+            "description": "Hiring process identifier code",
+            "description_translations": {
+              "es": "Código identificador del proceso de contratación"
+            }
           },
           {
             "format": "default",
             "name": "ID_ADJUDICACION",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ID_OFERTA",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ID_EVALUACION_OFERTA",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_CONTRATO",
             "type": "string",
-            "description": "Hiring process identifier code"
+            "description": "Contract identifier code",
+            "description_translations": {
+              "es": "Código identificador del contrato"
+            }
           },
           {
             "decimalChar": ".",
@@ -504,97 +678,145 @@
             "groupChar": "",
             "name": "RPE",
             "type": "number",
-            "description": "RPE number"
+            "description": "RPE number",
+            "description_translations": {
+              "es": "Número de RPE"
+            }
           },
           {
             "format": "default",
             "name": "RAZON_SOCIAL",
             "type": "string",
-            "description": "Company name of the supplier of the items"
+            "description": "Company name of the supplier of the items",
+            "description_translations": {
+              "es": "Razón social del proveedor de los articulos"
+            }
           },
           {
             "format": "default",
             "name": "OBJETO_CONTRATO",
             "type": "string",
-            "description": "Contracting classification (Ex: Works, Goods, Services)"
+            "description": "Contracting classification (Ex: Works, Goods, Services)",
+            "description_translations": {
+              "es": "Clasificación de la contratación (Ej: Obras, Bienes, Servicios)"
+            }
           },
           {
             "format": "default",
             "name": "CARATULA",
             "type": "string",
-            "description": "Description of the purpose of the contract"
+            "description": "Description of the purpose of the contract",
+            "description_translations": {
+              "es": "Descripción del objeto de la contratación"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_ADJUDICACION",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_CONTRATO",
             "type": "string",
-            "description": "Contract Status Description"
+            "description": "Contract Status Description",
+            "description_translations": {
+              "es": "Descripción del estado del contrato"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ADJUDICACION",
             "type": "string",
-            "description": "Contract award date"
+            "description": "Contract award date",
+            "description_translations": {
+              "es": "Fecha de adjudicación del contrato"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_CONFIRMACION_ADJUDICACION",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_APROBACION",
             "type": "string",
-            "description": "Contract approval date"
+            "description": "Contract approval date",
+            "description_translations": {
+              "es": "Fecha de aprobación del contrato"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_NOTIFICACION_PROVEEDOR",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_FIRMA_CONTRATO",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_INICIO_CONTRATO",
             "type": "string",
-            "description": "Contract start date"
+            "description": "Contract start date",
+            "description_translations": {
+              "es": "Fecha de inicio del contrato"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_FIN_CONTRATO",
             "type": "string",
-            "description": "Contract End Date"
+            "description": "Contract End Date",
+            "description_translations": {
+              "es": "Fecha de finalización del contrato"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_INICIO_ENTREGA",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_FIN_ENTREGA",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "MONEDA",
             "type": "string",
-            "description": "Currency symbol in which the contract is concluded (Ex: DOP, USD)"
+            "description": "Currency symbol in which the contract is concluded (Ex: DOP, USD)",
+            "description_translations": {
+              "es": "Simbolo de moneda en la que se celabra el contrato (Ej: DOP, USD)"
+            }
           },
           {
             "decimalChar": ".",
@@ -602,163 +824,244 @@
             "groupChar": "",
             "name": "VALOR_CONTRATADO",
             "type": "number",
-            "description": "Contracted value"
+            "description": "Contracted value",
+            "description_translations": {
+              "es": "Valor contratado"
+            }
           },
           {
             "format": "default",
             "name": "METODO_PAGO",
             "type": "string",
-            "description": "Description of the contract payment method"
+            "description": "Description of the contract payment method",
+            "description_translations": {
+              "es": "Descripción del método de pago del contrato"
+            }
           },
           {
             "format": "default",
             "name": "PLAZO_PAGO_FACTURA",
             "type": "string",
-            "description": "Billing payment term description"
+            "description": "Billing payment term description",
+            "description_translations": {
+              "es": "Descripción del plazo de pago de la facturación"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ULTIMA_MODIFICACION",
             "type": "string",
-            "description": "Date of last modification of contract information"
+            "description": "Date of last modification of contract information",
+            "description_translations": {
+              "es": "Fecha de la ultima modificación de la información del contrato"
+            }
           },
           {
             "format": "default",
             "name": "URL_CONTRATO",
             "type": "string",
-            "description": "Contract URL on the public procurement page"
+            "description": "Contract URL on the public procurement page",
+            "description_translations": {
+              "es": "URL del contrato en la página de contratación pública"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_PROCESO",
             "type": "string",
-            "description": "Description of the status of the hiring process"
+            "description": "Description of the status of the hiring process",
+            "description_translations": {
+              "es": "Descripción del estado del proceso de contratación"
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_MODALIDAD",
             "type": "string",
-            "description": "Coding of the contracting modality"
+            "description": "Coding of the contracting modality",
+            "description_translations": {
+              "es": "Códificación de la modalidad de contratación"
+            }
           },
           {
             "format": "default",
             "name": "MODALIDAD",
             "type": "string",
-            "description": "Description of the contracting modality (Example: Exception Processes)"
+            "description": "Description of the contracting modality (Example: Exception Processes)",
+            "description_translations": {
+              "es": "Descripción de la modalidad de contratación (Ejemplo: Procesos de Excepción)"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_EXCEPCION",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "URL",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "RAZON_SOCIAL_RPE",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "NUMERO_DOCUMENTO",
             "type": "integer",
-            "description": "Supplier identification document number"
+            "description": "Supplier identification document number",
+            "description_translations": {
+              "es": "Número de documento de identificación del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_DOCUMENTO",
             "type": "string",
-            "description": "Supplier ID type"
+            "description": "Supplier ID type",
+            "description_translations": {
+              "es": "Tipo de documento de identidad del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "GENERO",
             "type": "string",
-            "description": "Provider gender identity"
+            "description": "Provider gender identity",
+            "description_translations": {
+              "es": "Identidad de género del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_PERSONA",
             "type": "string",
-            "description": "Type of person (Example: Natural or Legal)"
+            "description": "Type of person (Example: Natural or Legal)",
+            "description_translations": {
+              "es": "Tipo de persona (Ejemplo: Natural o Jurídica)"
+            }
           },
           {
             "format": "default",
             "name": "FORMA_JURIDICA",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ES_MIPYME",
             "type": "string",
-            "description": "Identifier if it is an MSME (Yes or No)"
+            "description": "Identifier if it is an MSME (Yes or No)",
+            "description_translations": {
+              "es": "Identificador si es MIPYME (Si o No)"
+            }
           },
           {
             "format": "default",
             "name": "CERTIFICACION_MICM",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "CLASIFICACION_EMPRESARIAL",
             "type": "string",
-            "description": "Level 1 Business Classification"
+            "description": "Level 1 Business Classification",
+            "description_translations": {
+              "es": "Clasificación empresarial de nivel 1"
+            }
           },
           {
             "format": "default",
             "name": "CLASIFICACION_EMPRESARIAL_2",
             "type": "string",
-            "description": "Level 2 Business Classification"
+            "description": "Level 2 Business Classification",
+            "description_translations": {
+              "es": "Clasificación empresarial de nivel 2"
+            }
           },
           {
             "format": "default",
             "name": "MUNICIPIO",
             "type": "string",
-            "description": "Municipality name"
+            "description": "Municipality name",
+            "description_translations": {
+              "es": "Nombre del municipio"
+            }
           },
           {
             "format": "default",
             "name": "PROVINCIA",
             "type": "string",
-            "description": "Province name"
+            "description": "Province name",
+            "description_translations": {
+              "es": "Nombre de la provincia"
+            }
           },
           {
             "format": "default",
             "name": "REGION",
             "type": "string",
-            "description": "Region name"
+            "description": "Region name",
+            "description_translations": {
+              "es": "Nombre de la región"
+            }
           },
           {
             "format": "default",
             "name": "MACROREGION",
             "type": "string",
-            "description": "Name of the Macroregion"
+            "description": "Name of the Macroregion",
+            "description_translations": {
+              "es": "Nombre de la Macroregión"
+            }
           },
           {
             "format": "default",
             "name": "PAIS",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "CLASIFICACION_RPE",
             "type": "string",
-            "description": "MICM classification description"
+            "description": "MICM classification description",
+            "description_translations": {
+              "es": "Descripción de clasificación MICM"
+            }
           },
           {
             "format": "default",
             "name": "DETALLE_EXCEPCION",
             "type": "string",
-            "description": "Exception Detail Description"
+            "description": "Exception Detail Description",
+            "description_translations": {
+              "es": "Descripción del detalle de la excepción"
+            }
           },
           {
             "falseValues": [
@@ -770,13 +1073,19 @@
               "True"
             ],
             "type": "boolean",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ACTUALIZACION",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           }
         ],
         "missingValues": [
@@ -815,103 +1124,154 @@
             "format": "default",
             "name": "CODIGO_PROCESO",
             "type": "string",
-            "description": "Hiring process identifier code"
+            "description": "Hiring process identifier code",
+            "description_translations": {
+              "es": "Código identificador del proceso de contratación"
+            }
           },
           {
             "format": "default",
             "name": "CODIGO_CONTRATO",
             "type": "string",
-            "description": "Contract identifier code"
+            "description": "Contract identifier code",
+            "description_translations": {
+              "es": "Código identificador del contrato"
+            }
           },
           {
             "format": "default",
             "name": "MODALIDAD",
             "type": "string",
-            "description": "Description of the contracting modality (Example: Exception Processes)"
+            "description": "Description of the contracting modality (Example: Exception Processes)",
+            "description_translations": {
+              "es": "Descripción de la modalidad de contratación (Ejemplo: Procesos de Excepción)"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_PROCESO",
             "type": "string",
-            "description": "Description of the status of the hiring process"
+            "description": "Description of the status of the hiring process",
+            "description_translations": {
+              "es": "Descripción del estado del proceso de contratación"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_CONTRATO",
             "type": "string",
-            "description": "Contract Status Description"
+            "description": "Contract Status Description",
+            "description_translations": {
+              "es": "Descripción del estado del contrato"
+            }
           },
           {
             "format": "default",
             "name": "RPE",
             "type": "integer",
-            "description": "RPE"
+            "description": "RPE",
+            "description_translations": {
+              "es": "RPE"
+            }
           },
           {
             "format": "default",
             "name": "RAZON_SOCIAL",
             "type": "string",
-            "description": "Company name of the supplier of the items"
+            "description": "Company name of the supplier of the items",
+            "description_translations": {
+              "es": "Razón social del proveedor de los articulos"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_DOCUMENTO",
             "type": "string",
-            "description": "Supplier ID type"
+            "description": "Supplier ID type",
+            "description_translations": {
+              "es": "Tipo de documento de identidad del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "NUMERO_DOCUMENTO",
             "type": "integer",
-            "description": "Supplier identification document number"
+            "description": "Supplier identification document number",
+            "description_translations": {
+              "es": "Número de documento de identificación del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_FIRMA_CONTRATO",
             "type": "string",
-            "description": "Contract Signing Date"
+            "description": "Contract Signing Date",
+            "description_translations": {
+              "es": "Fecha de Firma del Contrato"
+            }
           },
           {
             "format": "default",
             "name": "ID_BUSINESS_ITEM",
             "type": "integer",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ID_BUSINESS_ITEM_LINE",
             "type": "integer",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ID_ARTICULO",
             "type": "integer",
-            "description": "Item identifier in the item catalog"
+            "description": "Item identifier in the item catalog",
+            "description_translations": {
+              "es": "Identificador del articulo en el catalogo de articulos"
+            }
           },
           {
             "format": "default",
             "name": "SUBCLASE_UNSPSC",
             "type": "integer",
-            "description": "Subclass identifier in the UNSPSC catalog"
+            "description": "Subclass identifier in the UNSPSC catalog",
+            "description_translations": {
+              "es": "Identificador de la subclase en el catálogo de la UNSPSC"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION_SUBCLASE",
             "type": "string",
-            "description": "Subclass description in the UNSPSC catalog"
+            "description": "Subclass description in the UNSPSC catalog",
+            "description_translations": {
+              "es": "Descripción de la subclase en el catálogo de la UNSPSC"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION_ARTICULO",
             "type": "string",
-            "description": "Description of the article"
+            "description": "Description of the article",
+            "description_translations": {
+              "es": "Descripción del articulo"
+            }
           },
           {
             "format": "default",
             "name": "CUENTA_PRESUPUESTARIA",
             "type": "string",
-            "description": "budget account code"
+            "description": "budget account code",
+            "description_translations": {
+              "es": "Código de cuenta presupuestaria"
+            }
           },
           {
             "decimalChar": ".",
@@ -919,19 +1279,28 @@
             "groupChar": "",
             "name": "CANTIDAD",
             "type": "number",
-            "description": "Number of items associated with the contract"
+            "description": "Number of items associated with the contract",
+            "description_translations": {
+              "es": "Cantidad de articulos asociados al contrato"
+            }
           },
           {
             "format": "default",
             "name": "ABR_UNIDAD_MEDIDA",
             "type": "string",
-            "description": "Abbreviation of the item's unit of measure"
+            "description": "Abbreviation of the item's unit of measure",
+            "description_translations": {
+              "es": "Abreviatura de la unidad de medida del articulo"
+            }
           },
           {
             "format": "default",
             "name": "DESCRIPCION_UNIDAD_MEDIDA",
             "type": "string",
-            "description": "Description of the item's unit of measure"
+            "description": "Description of the item's unit of measure",
+            "description_translations": {
+              "es": "Descripción de la unidad de medida del articulo"
+            }
           },
           {
             "decimalChar": ".",
@@ -939,7 +1308,10 @@
             "groupChar": "",
             "name": "PRECIO_UNITARIO_ESTIMADO",
             "type": "number",
-            "description": "Estimated unit price value of the item"
+            "description": "Estimated unit price value of the item",
+            "description_translations": {
+              "es": "Valor de precio unitario estimado del articulo"
+            }
           },
           {
             "decimalChar": ".",
@@ -947,7 +1319,10 @@
             "groupChar": "",
             "name": "PRECIO_UNITARIO",
             "type": "number",
-            "description": "Unit price value of the item"
+            "description": "Unit price value of the item",
+            "description_translations": {
+              "es": "Valor de precio unitario del articulo"
+            }
           },
           {
             "decimalChar": ".",
@@ -955,7 +1330,10 @@
             "groupChar": "",
             "name": "ITBIS",
             "type": "number",
-            "description": "ITBIS"
+            "description": "ITBIS",
+            "description_translations": {
+              "es": "ITBIS"
+            }
           },
           {
             "decimalChar": ".",
@@ -963,7 +1341,10 @@
             "groupChar": "",
             "name": "OTROS_IMPUESTOS",
             "type": "number",
-            "description": "Other taxes defined for the item"
+            "description": "Other taxes defined for the item",
+            "description_translations": {
+              "es": "Otros impuestos definidos para el articulo"
+            }
           },
           {
             "decimalChar": ".",
@@ -971,7 +1352,10 @@
             "groupChar": "",
             "name": "DESCUENTO",
             "type": "number",
-            "description": "Discounts associated with the item"
+            "description": "Discounts associated with the item",
+            "description_translations": {
+              "es": "Descuentos asociados al articulo"
+            }
           },
           {
             "decimalChar": ".",
@@ -979,13 +1363,19 @@
             "groupChar": "",
             "name": "MONTO_TOTAL",
             "type": "number",
-            "description": "Corresponds to the number of items times the estimated price of the item plus the ITBIS"
+            "description": "Corresponds to the number of items times the estimated price of the item plus the ITBIS",
+            "description_translations": {
+              "es": "Corresponde a la cantidad de articulos por el precio estimado del articulo mas el ITBIS"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ACTUALIZACION",
             "type": "string",
-            "description": "Update date"
+            "description": "Update date",
+            "description_translations": {
+              "es": "Fecha de Actualización"
+            }
           }
         ],
         "missingValues": [
@@ -1024,235 +1414,352 @@
             "format": "default",
             "name": "CODE",
             "type": "integer",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "ID",
             "type": "integer",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "RPE",
             "type": "integer",
-            "description": "RPE"
+            "description": "RPE",
+            "description_translations": {
+              "es": "RPE"
+            }
           },
           {
             "format": "default",
             "name": "RAZON_SOCIAL",
             "type": "string",
-            "description": "Company name of the supplier of the items"
+            "description": "Company name of the supplier of the items",
+            "description_translations": {
+              "es": "Razón social del proveedor de los articulos"
+            }
           },
           {
             "format": "default",
             "name": "NUMERO_DOCUMENTO",
             "type": "integer",
-            "description": "Supplier identification document number"
+            "description": "Supplier identification document number",
+            "description_translations": {
+              "es": "Número de documento de identificación del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_DOCUMENTO",
             "type": "string",
-            "description": "Supplier ID type"
+            "description": "Supplier ID type",
+            "description_translations": {
+              "es": "Tipo de documento de identidad del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_RPE",
             "type": "string",
-            "description": "Description of RPE status"
+            "description": "Description of RPE status",
+            "description_translations": {
+              "es": "Descripción del estado del RPE"
+            }
           },
           {
             "format": "default",
             "name": "GENERO",
             "type": "string",
-            "description": "Provider gender identity"
+            "description": "Provider gender identity",
+            "description_translations": {
+              "es": "Identidad de género del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "TIPO_PERSONA",
             "type": "string",
-            "description": "Type of person (Example: Natural or Legal)"
+            "description": "Type of person (Example: Natural or Legal)",
+            "description_translations": {
+              "es": "Tipo de persona (Ejempo: Natural o Jurídica)"
+            }
           },
           {
             "format": "default",
             "name": "FORMA_JURIDICA",
             "type": "string",
-            "description": "Legal form"
+            "description": "Legal form",
+            "description_translations": {
+              "es": "Forma Juridica"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_CREACION",
             "type": "string",
-            "description": "Creation date"
+            "description": "Creation date",
+            "description_translations": {
+              "es": "Fecha de Creación"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_REGISTRO",
             "type": "string",
-            "description": "Supplier registration date in the supplier catalog"
+            "description": "Supplier registration date in the supplier catalog",
+            "description_translations": {
+              "es": "Fecha de registro del proveedor en el catálogo de proveedores"
+            }
           },
           {
             "format": "default",
             "name": "NUMERO_REGISTRO_MERCANTIL",
             "type": "string",
-            "description": "Commercial Registry Number"
+            "description": "Commercial Registry Number",
+            "description_translations": {
+              "es": "Numero de Registro Mercantil"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_REGISTRO_MERCANTIL",
             "type": "string",
-            "description": "Commercial registration date of the supplier"
+            "description": "Commercial registration date of the supplier",
+            "description_translations": {
+              "es": "Fecha de registro mercantil del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "CERTIFICACION_MICM",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_VENCIMIENTO_CERTIFICACION_MICM",
             "type": "string",
-            "description": "Certification Expiration Date"
+            "description": "Certification Expiration Date",
+            "description_translations": {
+              "es": "Fecha de Vencimiento de la certificación"
+            }
           },
           {
             "format": "default",
             "name": "CLASIFICACION_RPE",
             "type": "string",
-            "description": "MICM classification description"
+            "description": "MICM classification description",
+            "description_translations": {
+              "es": "Descripción de clasificación MICM"
+            }
           },
           {
             "format": "default",
             "name": "PRODUCTOR_NACIONAL",
             "type": "string",
-            "description": "Is it a national producer?"
+            "description": "Is it a national producer?",
+            "description_translations": {
+              "es": "Es productor Nacional?"
+            }
           },
           {
             "format": "default",
             "name": "REGISTRO_INDUSTRIAL",
             "type": "string",
-            "description": "Industrial Registration"
+            "description": "Industrial Registration",
+            "description_translations": {
+              "es": "Registro Industrial"
+            }
           },
           {
             "format": "default",
             "name": "OCUPACION",
             "type": "string",
-            "description": "Provider Occupation Description"
+            "description": "Provider Occupation Description",
+            "description_translations": {
+              "es": "Descripción de la ocupación del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "TELEFONO_COMERCIAL",
             "type": "string",
-            "description": "Supplier contact telephone number"
+            "description": "Supplier contact telephone number",
+            "description_translations": {
+              "es": "Número telefónico de contacto del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "CELULAR_COMERCIAL",
             "type": "string",
-            "description": "Business Telephone Number"
+            "description": "Business Telephone Number",
+            "description_translations": {
+              "es": "Numero de Teléfono comercial"
+            }
           },
           {
             "format": "default",
             "name": "CORREO_COMERCIAL",
             "type": "string",
-            "description": "Business Email"
+            "description": "Business Email",
+            "description_translations": {
+              "es": "Correo electrónico comercial"
+            }
           },
           {
             "format": "default",
             "name": "CORREO_NOTIFICACIONES",
             "type": "string",
-            "description": "Email for notifications"
+            "description": "Email for notifications",
+            "description_translations": {
+              "es": "Correo electrónico para notificaciones"
+            }
           },
           {
             "format": "default",
             "name": "DIRECCION",
             "type": "string",
-            "description": "Supplier address"
+            "description": "Supplier address",
+            "description_translations": {
+              "es": "Dirección del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "PAIS",
             "type": "string",
-            "description": "Name of the country of origin of the supplier"
+            "description": "Name of the country of origin of the supplier",
+            "description_translations": {
+              "es": "Nombre del Pais de origen del proveedor"
+            }
           },
           {
             "format": "default",
             "name": "REGION",
             "type": "string",
-            "description": "Region name"
+            "description": "Region name",
+            "description_translations": {
+              "es": "Nombre de la región"
+            }
           },
           {
             "format": "default",
             "name": "PROVINCIA",
             "type": "string",
-            "description": "Province name"
+            "description": "Province name",
+            "description_translations": {
+              "es": "Nombre de la provincia"
+            }
           },
           {
             "format": "default",
             "name": "MUNICIPIO",
             "type": "string",
-            "description": "Municipality name"
+            "description": "Municipality name",
+            "description_translations": {
+              "es": "Nombre del municipio"
+            }
           },
           {
             "format": "default",
             "name": "DISTRITO_MUNICIPAL",
             "type": "string",
-            "description": "Municipal District"
+            "description": "Municipal District",
+            "description_translations": {
+              "es": "Distrito Municipal"
+            }
           },
           {
             "format": "default",
             "name": "PROVEE",
             "type": "string",
-            "description": "Product or service provider?"
+            "description": "Product or service provider?",
+            "description_translations": {
+              "es": "Proveedor de productos o servicios?"
+            }
           },
           {
             "format": "default",
             "name": "CELULAR_CONTACTO",
             "type": "string",
-            "description": "Contact Telephone Number"
+            "description": "Contact Telephone Number",
+            "description_translations": {
+              "es": "Número de Teléfono de contacto"
+            }
           },
           {
             "format": "default",
             "name": "URL_CERTIFICACION_RPE",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "CLASIFICACION_EMPRESARIAL",
             "type": "string",
-            "description": "Level 1 Business Classification"
+            "description": "Level 1 Business Classification",
+            "description_translations": {
+              "es": "Clasificación empresarial de nivel 1"
+            }
           },
           {
             "format": "default",
             "name": "CLASIFICACION_EMPRESARIAL_2",
             "type": "string",
-            "description": "Level 2 Business Classification"
+            "description": "Level 2 Business Classification",
+            "description_translations": {
+              "es": "Clasificación empresarial de nivel 2"
+            }
           },
           {
             "format": "default",
             "name": "ESTADO_COMENTARIO",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ULTIMA_MODIFICACION",
             "type": "string",
-            "description": "Last modified date"
+            "description": "Last modified date",
+            "description_translations": {
+              "es": "Fecha de última modificación"
+            }
           },
           {
             "format": "default",
             "name": "MACROREGION",
             "type": "string",
-            "description": "Name of the Macroregion"
+            "description": "Name of the Macroregion",
+            "description_translations": {
+              "es": "Nombre de la Macroregión"
+            }
           },
           {
             "format": "default",
             "name": "FECHA_ACTUALIZACION",
             "type": "string",
-            "description": "Update date"
+            "description": "Update date",
+            "description_translations": {
+              "es": "Fecha de Actualización"
+            }
           }
         ],
         "missingValues": [
@@ -1291,109 +1798,163 @@
             "format": "default",
             "name": "Origen",
             "type": "string",
-            "description": "emergency name"
+            "description": "emergency name",
+            "description_translations": {
+              "es": "nombre de la emergencia"
+            }
           },
           {
             "format": "default",
             "name": "Capitulo",
             "type": "string",
-            "description": "chapter name (Institution)"
+            "description": "chapter name (Institution)",
+            "description_translations": {
+              "es": "nombre del capítulo (Institución)"
+            }
           },
           {
             "format": "default",
             "name": "SubCapitulo",
             "type": "string",
-            "description": "subchapter name (Institution)"
+            "description": "subchapter name (Institution)",
+            "description_translations": {
+              "es": "nombre del subcapítulo (Institución)"
+            }
           },
           {
             "format": "default",
             "name": "UnidadEjecutora",
             "type": "string",
-            "description": "name of the executing executing unit (executing institution)"
+            "description": "name of the executing executing unit (executing institution)",
+            "description_translations": {
+              "es": "nombre de la unidad ejecutora ejecutora (Institución ejecutora)"
+            }
           },
           {
             "format": "default",
             "name": "SubCuenta",
             "type": "string",
-            "description": "budget subaccount name"
+            "description": "budget subaccount name",
+            "description_translations": {
+              "es": "nombre de la subcuenta presupuestaria"
+            }
           },
           {
             "format": "default",
             "name": "Concepto",
             "type": "string",
-            "description": "budget concept name"
+            "description": "budget concept name",
+            "description_translations": {
+              "es": "nombre del concepto presupuestario"
+            }
           },
           {
             "format": "default",
             "name": "Auxiliar",
             "type": "string",
-            "description": "name of budget assistant"
+            "description": "name of budget assistant",
+            "description_translations": {
+              "es": "nombre del auxiliar presupuestario"
+            }
           },
           {
             "format": "default",
             "name": "Cuenta",
             "type": "string",
-            "description": "budget account name"
+            "description": "budget account name",
+            "description_translations": {
+              "es": "nombre de la cuenta presupuestaria"
+            }
           },
           {
             "format": "default",
             "name": "Seccion",
             "type": "string",
-            "description": "budget section name"
+            "description": "budget section name",
+            "description_translations": {
+              "es": "nombre de la seccion presupuestaria"
+            }
           },
           {
             "format": "default",
             "name": "Periodo",
             "type": "integer",
-            "description": "budget year"
+            "description": "budget year",
+            "description_translations": {
+              "es": "año de presupuesto"
+            }
           },
           {
             "format": "default",
             "name": "Programa",
             "type": "string",
-            "description": "budget program name"
+            "description": "budget program name",
+            "description_translations": {
+              "es": "nombre del programa presupuestario"
+            }
           },
           {
             "format": "default",
             "name": "Finalidad",
             "type": "string",
-            "description": "budget purpose name"
+            "description": "budget purpose name",
+            "description_translations": {
+              "es": "nombre de la finalidad presupuestaria"
+            }
           },
           {
             "format": "default",
             "name": "OrganismoFinanciador",
             "type": "string",
-            "description": "name of funding body"
+            "description": "name of funding body",
+            "description_translations": {
+              "es": "nombre del organismo financiador"
+            }
           },
           {
             "format": "default",
             "name": "Funcion",
             "type": "string",
-            "description": "function or sector of the government to which the budgeted resources are directed"
+            "description": "function or sector of the government to which the budgeted resources are directed",
+            "description_translations": {
+              "es": "función o sector del gobierno al que van dirigidos los recursos presupuestados"
+            }
           },
           {
             "format": "default",
             "name": "SubFuncion",
             "type": "string",
-            "description": "budget subfunction name"
+            "description": "budget subfunction name",
+            "description_translations": {
+              "es": "nombre de la subfunción presupuestaria"
+            }
           },
           {
             "format": "default",
             "name": "InstitucionReceptora",
             "type": "string",
-            "description": "name of receiving institution"
+            "description": "name of receiving institution",
+            "description_translations": {
+              "es": "nombre de la institución receptora"
+            }
           },
           {
             "format": "default",
             "name": "Fuente",
             "type": "string",
-            "description": "name of funding source"
+            "description": "name of funding source",
+            "description_translations": {
+              "es": "nombre de la fuente de financiamiento"
+            }
           },
           {
             "format": "default",
             "name": "GrupoFuente",
             "type": "string",
-            "description": "funding source group name"
+            "description": "funding source group name",
+            "description_translations": {
+              "es": "nombre del grupo de fuente de financiamiento"
+            }
           },
           {
             "decimalChar": ".",
@@ -1401,13 +1962,19 @@
             "groupChar": "",
             "name": "ValorPresupuestado",
             "type": "number",
-            "description": "current budget total value"
+            "description": "current budget total value",
+            "description_translations": {
+              "es": "valor total presupuesto vigente"
+            }
           },
           {
             "format": "default",
             "name": "ValorEjecutado",
             "type": "integer",
-            "description": "total accrued value"
+            "description": "total accrued value",
+            "description_translations": {
+              "es": "valor total devengado"
+            }
           }
         ],
         "missingValues": [

@@ -59,49 +59,73 @@
             "format": "default",
             "name": "CodigoSNIP",
             "type": "integer",
-            "description":"Unique Project Identifier in the SNIP system"
+            "description":"Unique Project Identifier in the SNIP system",
+            "description_translations": {
+              "es": "Identificador Único del Proyecto en el sistema SNIP (Banco de Proyectos)"
+            }
           },
           {
             "format": "default",
             "name": "Estado",
             "type": "string",
-            "description":"Project status"
+            "description":"Project status",
+            "description_translations": {
+              "es": "Estado del Proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "IdSector",
             "type": "integer",
-            "description":"Sector Identifier"
+            "description":"Sector Identifier",
+            "description_translations": {
+              "es": "Identificador del Sector asociado al proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "NombreSector",
             "type": "string",
-            "description":"Denomination of the type of sector according to the scope of Economic Activity"
+            "description":"Denomination of the type of sector according to the scope of Economic Activity",
+            "description_translations": {
+              "es": "Denominación del tipo de sector de acuerdo al ámbito de Actividad Económica"
+            }
           },
           {
             "format": "default",
             "name": "FechaInicioProyecto",
             "type": "string",
-            "description":"Estimated Project Start Date"
+            "description":"Estimated Project Start Date",
+            "description_translations": {
+              "es": "Fecha estimada de Inicio del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "FechaFinProyecto",
             "type": "string",
-            "description":"Estimated Project Completion Date"
+            "description":"Estimated Project Completion Date",
+            "description_translations": {
+              "es": "Fecha estimada de Finalización del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "EjecutorPrimario",
             "type": "string",
-            "description":"Primary Executing Entity"
+            "description":"Primary Executing Entity",
+            "description_translations": {
+              "es": "Entidad Ejecutora primaria del proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description":"Project Name"
+            "description":"Project Name",
+            "description_translations": {
+              "es": "Nombre completo del proyecto de inversión en donde se mencionan algunas caracteristicas del mismo"
+            }
           },
           {
             "decimalChar": ".",
@@ -109,7 +133,10 @@
             "groupChar": "",
             "name": "CostoEstimadoProyecto",
             "type": "number",
-            "description":"Estimated Project Cost"
+            "description":"Estimated Project Cost",
+            "description_translations": {
+              "es": "Costo Estimado del Proyecto de inversión"
+            }
           },
           {
             "decimalChar": ".",
@@ -117,7 +144,10 @@
             "groupChar": "",
             "name": "AvanceFinanciero",
             "type": "number",
-            "description":"Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project"
+            "description":"Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project",
+            "description_translations": {
+              "es": "Avance o Asignación Financiera (en porcentaje) para medir el cumplimiento del Proyecto"
+            }
           },
           {
             "decimalChar": ".",
@@ -125,79 +155,118 @@
             "groupChar": "",
             "name": "AvanceFisico",
             "type": "number",
-            "description":"Progress or Physical Allocation (in percentage) to measure Project compliance"
+            "description":"Progress or Physical Allocation (in percentage) to measure Project compliance",
+            "description_translations": {
+              "es": "Avance o Asignación Física (en porcentaje) para medir el cumplimiento del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "IdEntidadEjecutora",
             "type": "integer",
-            "description":"Structural organization based on the formation, grouping and cataloging of State Agencies and Entities in the PGN"
+            "description":"Structural organization based on the formation, grouping and cataloging of State Agencies and Entities in the PGN",
+            "description_translations": {
+              "es": "Ordenamiento estructural basado en la conformación, agrupación y catalogación de los Organismos y Entidades del Estado en el PGN"
+            }
           },
           {
             "format": "default",
             "name": "EntidadEjecutora",
             "type": "string",
-            "description":"Name of the Entity"
+            "description":"Name of the Entity",
+            "description_translations": {
+              "es": "Denominación de la Entidad ejecutora del proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "DuracionProyecto",
             "type": "integer",
-            "description":"Duration (in years) of the project"
+            "description":"Duration (in years) of the project",
+            "description_translations": {
+              "es": "Duracion (en años) del proyecto"
+            }
           },
           {
             "format": "default",
             "name": "TipoProyecto",
             "type": "string",
-            "description":"Project Type"
+            "description":"Project Type",
+            "description_translations": {
+              "es": "Tipo de Proyecto asignado al proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "InformeAvance",
             "type": "string",
-            "description":"Project Progress Description"
+            "description":"Project Progress Description",
+            "description_translations": {
+              "es": "Descripción del Avance del Proyecto"
+            }
           },
           {
             "format": "default",
             "name": "IdDepartamentoLocalizacion",
             "type": "integer",
-            "description":"Systemic ordering"
+            "description":"Identifier code of the department associated with the investment project - Regional Data",
+            "description_translations": {
+              "es": "Codigo identificador del departamento asociado al proyecto de inversion - Dato Regional"
+            }
           },
           {
             "format": "default",
             "name": "DepartamentoLocalizacion",
             "type": "string",
-            "description":"Location Name"
+            "description":"Description of the department associated with the investment project - Regional Data",
+            "description_translations": {
+              "es": "Descripción del departamento asociado al proyecto de inversion - Dato Regional"
+            }
           },
           {
             "format": "default",
             "name": "IdMunicipioLocalizacion",
             "type": "integer",
-            "description":"Systemic ordering"
+            "description":"Identifier code of the municipality associated with the investment project - Regional Data",
+            "description_translations": {
+              "es": "Codigo identificador del municipio asociado al proyecto de inversion - Dato Regional"
+            }
           },
           {
             "format": "default",
             "name": "NombreMunicipioLocalizacion",
             "type": "string",
-            "description":"Municipality Name"
+            "description":"Description of the municipality associated with the investment project - Regional Data",
+            "description_translations": {
+              "es": "Descripción del municipio asociado al proyecto de inversion - Dato Regional"
+            }
           },
           {
             "format": "default",
             "name": "FechaCargueArchivo",
             "type": "string",
-            "description":"Date of last upload of project information in MapaInversiones"
+            "description":"Date of last upload of project information in MapaInversiones",
+            "description_translations": {
+              "es": "Fecha de ultimo cargue de información del proyecto en MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "FuenteDatos",
             "type": "string",
-            "description":"Project information source for MapaInversiones"
+            "description":"Project information source for MapaInversiones",
+            "description_translations": {
+              "es": "Fuente de información de proyectos para MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "FechaCarga",
             "type": "string",
-            "description":"Datalake Upload Date - This field is optional, some datasets may not have it"
+            "description":"Datalake Upload Date - This field is optional, some datasets may not have it",
+            "description_translations": {
+              "es": "Fecha de Carga en el Datalake - Este campo opcional, algunos dataset quizas no lo tengan"
+            }
           }
         ],
         "missingValues": [
@@ -236,37 +305,55 @@
             "format": "default",
             "name": "CodigoSNIP",
             "type": "integer",
-            "description":"Unique Project Identifier"
+            "description":"Unique Project Identifier in the SNIP system (Project Bank)",
+            "description_translations": {
+              "es": "Identificador Único del Proyecto en el sistema SNIP (Banco de Proyectos)"
+            }
           },
           {
             "format": "default",
             "name": "IdOrganismoFinanciador",
             "type": "integer",
-            "description":"Systemic Ordering"
+            "description":"Identifier code of the Financing Agency associated with the investment project",
+            "description_translations": {
+              "es": "Código identificador del Organismo Financiador asociado al proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "OrganismoFinanciador",
             "type": "string",
-            "description":"Detail of the origin of the income concurrent with the classification of the financing source"
+            "description":"Description of the Financing Organization associated with the investment project",
+            "description_translations": {
+              "es": "Descripción del Organismo Financiador asociado al proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "IdFuenteFinanciacion",
             "type": "integer",
-            "description":"Arrangement of resources based on the origin of income, there are three classifications: 10 20 30"
+            "description":"Identifier code of the Financing Source associated with the project",
+            "description_translations": {
+              "es": "Código identificador de la Fuente de Financiación asociada al proyecto"
+            }
           },
           {
             "format": "default",
             "name": "FuenteFinanciacion",
             "type": "string",
-            "description":"Arrangement of resources based on the origin of income, there are three classifications: 10 Treasury Resources, 20 Public Credit Resources and 30 Institutional Resources"
+            "description":"Description of the Financing Source associated with the project Ex: Treasury Resources, Public Credit Resources and Institutional Resources",
+            "description_translations": {
+              "es": "Descripción de la Fuente de Financiación asociada al proyecto Ej: Recursos del Tesoro, Recursos del Crédito Público y Recursos Institucionales"
+            }
           },
           {
             "format": "default",
             "name": "Vigencia",
             "type": "integer",
-            "description":"Validity period"
+            "description":"Validity year of the budgeted amount for the associated project",
+            "description_translations": {
+              "es": "Año de Vigencia del importe presupuestado para el proyecto asociado"
+            }
           },
           {
             "decimalChar": ".",
@@ -274,7 +361,10 @@
             "groupChar": "",
             "name": "Presupuestado",
             "type": "number",
-            "description":"Current budget"
+            "description":"Current budget amount associated with the investment project",
+            "description_translations": {
+              "es": "Importe del presupuesto vigente asociado al proyecto de inversión"
+            }
           },
           {
             "decimalChar": ".",
@@ -282,25 +372,37 @@
             "groupChar": "",
             "name": "Ejecutado",
             "type": "number",
-            "description":"Financial progress as assigned"
+            "description":"Amount of the executed budget associated with the investment project",
+            "description_translations": {
+              "es": "Importe del presupuesto ejecutado asociado al proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "FechaCargueArchivo",
             "type": "string",
-            "description":"File Upload Date"
+            "description":"File Upload Date",
+            "description_translations": {
+              "es": "Fecha de Carga del archivo"
+            }
           },
           {
             "format": "default",
             "name": "FuenteDatos",
             "type": "string",
-            "description":"Data source"
+            "description":"Government institution from which the data is obtained",
+            "description_translations": {
+              "es": "Institución del gobierno desde donde se obtienen los datos"
+            }
           },
           {
             "format": "default",
             "name": "FechaCarga",
             "type": "string",
-            "description":"Datalake Upload Date - This field is optional, some datasets may not have it"
+            "description":"Datalake Upload Date - This field is optional, some datasets may not have it",
+            "description_translations": {
+              "es": "Fecha de Carga en el Datalake - Este campo es opcional, algunos dataset quizas no lo tengan"
+            }
           }
         ],
         "missingValues": [
@@ -339,49 +441,73 @@
             "format": "default",
             "name": "CodigoSNIP",
             "type": "integer",
-            "description": "Unique Project Identifier in the SNIP"
+            "description": "Unique Project Identifier in the SNIP system (Project Bank)",
+            "description_translations": {
+              "es": "Identificador Único del Proyecto en el sistema SNIP (Banco de Proyectos)"
+            }
           },
           {
             "format": "default",
             "name": "codigoComponente",
             "type": "string",
-            "description": "Systemic ordering"
+            "description": "Identifier code of the component associated with the investment project.",
+            "description_translations": {
+              "es": "Codigo identificador del componente asociado al proyecto de inversión."
+            }
           },
           {
             "format": "default",
             "name": "descripcionComponente",
             "type": "string",
-            "description": "Component Name"
+            "description": "Description of the component associated with the investment project",
+            "description_translations": {
+              "es": "Descripción del componente asociado al proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "codigoActividad",
             "type": "string",
-            "description": "Activity Identifier Code"
+            "description": "Identification code of the activity related to the component and investment project",
+            "description_translations": {
+              "es": "Código identificador de la actividad relacionada al componente y proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "descripcionActividad",
             "type": "string",
-            "description": "Name of the Activity"
+            "description": "Description of the activity related to the component and investment project",
+            "description_translations": {
+              "es": "Descripción de la actividad relacionada al componente y proyecto de inversión"
+            }
           },
           {
             "format": "default",
             "name": "FechaCargueArchivo",
             "type": "string",
-            "description": "File Upload Date"
+            "description": "File Upload Date",
+            "description_translations": {
+              "es": "Fecha de Carga del archivo"
+            }
           },
           {
             "format": "default",
             "name": "FuenteDatos",
             "type": "string",
-            "description": ""
+            "description": "Project information source for MapaInversiones",
+            "description_translations": {
+              "es": "Fuente de información de proyectos para MapaInversiones"
+            }
           },
           {
             "format": "default",
             "name": "FechaCarga",
             "type": "string",
-            "description": "Data source"
+            "description": "Datalake Upload Date - This field is optional, some datasets may not have it",
+            "description_translations": {
+              "es": "Fecha de Carga en el Datalake - Este campo opcional, algunos dataset quizas no lo tengan"
+            }
           }
         ],
         "missingValues": [

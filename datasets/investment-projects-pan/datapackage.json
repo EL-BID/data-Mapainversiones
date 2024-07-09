@@ -59,25 +59,37 @@
             "format": "default",
             "name": "IdProyecto",
             "type": "integer",
-            "description": "Unique project identifier."
+            "description": "Unique project identifier.",
+            "description_translations": {
+              "es": "Identificador único del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "NombreProyecto",
             "type": "string",
-            "description": "Full name of the project."
+            "description": "Full name of the project.",
+            "description_translations": {
+              "es": "Nombre completo del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "FechaInicioProyecto",
             "type": "string",
-            "description": "Date the project started."
+            "description": "Date the project started.",
+            "description_translations": {
+              "es": "Fecha en que se inició el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "FechaFinProyecto",
             "type": "string",
-            "description": "Expected project completion date."
+            "description": "Expected project completion date.",
+            "description_translations": {
+              "es": "Fecha prevista de finalización del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -85,7 +97,10 @@
             "groupChar": "",
             "name": "valorinicialestimado",
             "type": "number",
-            "description": "Estimated initial value of the project."
+            "description": "Estimated initial value of the project.",
+            "description_translations": {
+              "es": "Valor inicial estimado del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -93,25 +108,37 @@
             "groupChar": "",
             "name": "presupuestovigente2023",
             "type": "number",
-            "description": "Total project value budgeted in 2023."
+            "description": "Total project value budgeted in 2023.",
+            "description_translations": {
+              "es": "Valor total del proyecto presupuestado en 2023."
+            }
           },
           {
             "format": "default",
             "name": "ObjetivoGeneral",
             "type": "string",
-            "description": "General objective of the project."
+            "description": "General objective of the project.",
+            "description_translations": {
+              "es": "Objetivo general del proyecto."
+            }
           },
           {
             "format": "default",
             "name": "IdSector",
             "type": "integer",
-            "description": "Identifier of the sector to which the project belongs."
+            "description": "Identifier of the sector to which the project belongs.",
+            "description_translations": {
+              "es": "Identificador del sector al que pertenece el proyecto."
+            }
           },
           {
             "format": "default",
             "name": "FechaUltimaModificacion",
             "type": "string",
-            "description": "Date of the last modification of the project."
+            "description": "Date of the last modification of the project.",
+            "description_translations": {
+              "es": "Fecha de la última modificación del proyecto."
+            }
           },
           {
             "decimalChar": ".",
@@ -119,25 +146,37 @@
             "groupChar": "",
             "name": "PorcentajeAvanceFinanciero",
             "type": "number",
-            "description": "Percentage of financial progress of the project."
+            "description": "Percentage of financial progress of the project.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "IDMoneda",
             "type": "integer",
-            "description": "Identifier of the currency used in the project."
+            "description": "Identifier of the currency used in the project.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "Moneda",
             "type": "string",
-            "description": "Name of the currency used in the project."
+            "description": "Name of the currency used in the project.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "IdSubSector",
             "type": "integer",
-            "description": "Identifier of the subsector to which the project belongs."
+            "description": "Identifier of the subsector to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
@@ -149,139 +188,208 @@
             "format": "default",
             "name": "nombresubsector",
             "type": "integer",
-            "description": "Description of the subsector to which the project belongs."
+            "description": "Description of the subsector to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "nombresector",
             "type": "string",
-            "description": "Subsector identifier in one digit."
+            "description": "Subsector identifier in one digit.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "idejecutor",
             "type": "integer",
-            "description": "Name of the sector to which the project belongs."
+            "description": "Name of the sector to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "nombreejecutor",
             "type": "string",
-            "description": "Identifier of the project executor."
+            "description": "Identifier of the project executor.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "idareaejecutor",
             "type": "integer",
-            "description": "Identifier of the area of ​​the project executor."
+            "description": "Identifier of the area of ​​the project executor.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "nombreareaejecutor",
             "type": "string",
-            "description": "Name of the project executor area."
+            "description": "Name of the project executor area.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "codigoetapa",
             "type": "integer",
-            "description": "Code of the stage the project is in."
+            "description": "Code of the stage the project is in.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "nombreetapa",
             "type": "string",
-            "description": "Name of the stage the project is in."
+            "description": "Name of the stage the project is in.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "codigofase",
             "type": "integer",
-            "description": "Code of the phase the project is in."
+            "description": "Code of the phase the project is in.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "nombrefase",
             "type": "string",
-            "description": "Name of the phase the project is in."
+            "description": "Name of the phase the project is in.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "programa",
             "type": "integer",
-            "description": "Identifier of the program to which the project belongs."
+            "description": "Identifier of the program to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "descripcion_programas",
             "type": "string",
-            "description": "Name of the program to which the project belongs."
+            "description": "Name of the program to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "subprograma",
             "type": "integer",
-            "description": "Identifier of the subprogram to which the project belongs."
+            "description": "Identifier of the subprogram to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "descripcion_subprogramas",
             "type": "string",
-            "description": "Name of the applet to which the project belongs."
+            "description": "Name of the applet to which the project belongs.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "actividad",
             "type": "integer",
-            "description": "Identifier of the activity related to the project."
+            "description": "Identifier of the activity related to the project.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "descripcion_actividad",
             "type": "string",
-            "description": "Name of the activity related to the project."
+            "description": "Name of the activity related to the project.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "cod_reg",
             "type": "integer",
-            "description": "Concatenated code of territorial registration of the project."
+            "description": "Concatenated code of territorial registration of the project.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "provincia",
             "type": "integer",
-            "description": "Identifier of the province where the project is executed."
+            "description": "Identifier of the province where the project is executed.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "distritos",
             "type": "integer",
-            "description": "Identifier of the district where the project is executed."
+            "description": "Identifier of the district where the project is executed.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "corregimientos",
             "type": "integer",
-            "description": "Identifier of the township where the project is executed."
+            "description": "Identifier of the township where the project is executed.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "descripcion_provincia",
             "type": "string",
-            "description": "Name of the province where the project is being executed."
+            "description": "Name of the province where the project is being executed.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "descripcion_distritos",
             "type": "string",
-            "description": "Name of the district where the project is being executed."
+            "description": "Name of the district where the project is being executed.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "descripcion_corregimiento",
             "type": "string",
-            "description": "Name of the township where the project is being executed."
+            "description": "Name of the township where the project is being executed.",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "decimalChar": ".",
@@ -289,13 +397,19 @@
             "groupChar": "",
             "name": "Codigo_sinip",
             "type": "number",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           },
           {
             "format": "default",
             "name": "partida_presupuestaria",
             "type": "string",
-            "description": ""
+            "description": "",
+            "description_translations": {
+              "es": ""
+            }
           }
         ],
         "missingValues": [

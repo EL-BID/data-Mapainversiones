@@ -64,115 +64,172 @@
             "format": "default",
             "name": "codEjeEstrategico",
             "type": "integer",
-            "description": "PND 2030 strategic axis code"
+            "description": "Code of the strategic axis of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Codigo del eje estrategico del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreEjeEstrategico",
             "type": "string",
-            "description": "Name of the strategic axis of the PND 2030"
+            "description": "Name of the strategic axis of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Nombre del eje estrategico del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "codObjetivoEstrategico",
             "type": "integer",
-            "description": "Code of the strategic objective corresponding to the axis of the PND 2030"
+            "description": "Code of the strategic objective corresponding to the axis of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Codigo del Objetivo estrategico correspondiente al eje del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreObjetivoEstrategico",
             "type": "string",
-            "description": "Name of the strategic objective corresponding to the axis of the PND 2030"
+            "description": "Name of the strategic objective corresponding to the axis of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Nombre del objetivo estrategico correspondiente al eje del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "codObjetivoEspecifico",
             "type": "integer",
-            "description": "Specific Objective code corresponding to each strategic objective of the PND 2030"
+            "description": "Specific Objective Code corresponding to each strategic objective of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Codigo del Objetivo especifico correspondiente a cada objetivo estrategico del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreObjetivoEspecifico",
             "type": "string",
-            "description": "Name of the specific objective corresponding to each strategic objective of the PND 2030"
+            "description": "Name of the specific objective corresponding to each strategic objective of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Nombre del objetivo especifico correspondiente a cada objetivo estratefico del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "codODS",
             "type": "integer",
-            "description": "Linked sustainable development goal code"
+            "description": "Linked Sustainable Development Goal (SDG) code",
+            "description_translations": {
+              "es": "Codigo del Objetivo de Desarrollo Sostenible (ODS) vinculado"
+            }
           },
           {
             "format": "default",
             "name": "nombreODS",
             "type": "string",
-            "description": "name of the SDG goal"
+            "description": "name of the objective Sustainable Development Goals",
+            "description_translations": {
+              "es": "nombre del objetivo Objetivos de Desarrollo Sostenible"
+            }
           },
           {
             "format": "default",
             "name": "descripcionODS",
             "type": "string",
-            "description": "description of the SDG"
+            "description": "Description of Sustainable Development Goal (SDG)",
+            "description_translations": {
+              "es": "Descripcion de Objetivo de Desarrollo Sostenible (ODS)"
+            }
           },
           {
             "format": "default",
             "name": "codNivelEntidad",
             "type": "string",
-            "description": "Level and entity code that contributes to the indicator and objectives of the PND 2030"
+            "description": "Level and entity code that contributes to the indicator and objectives of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Codigo de nivel y entidad que aporta al indicador y objetivos del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "entidad",
             "type": "string",
-            "description": "Name of the entity that contributes to the indicator and objectives of the PND 2030"
+            "description": "Name of the entity that contributes to the indicator and objectives of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Nombre de la entidad que aporta al indicador y objetivos del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "siglaEntidad",
             "type": "string",
-            "description": "Abbreviated acronym of the name of the entity"
+            "description": "Abbreviated acronym of the name of the entity",
+            "description_translations": {
+              "es": "Sigla abreviada del nombre de la entidad"
+            }
           },
           {
             "format": "default",
             "name": "IdNegocioProyecto",
             "type": "string",
-            "description": "Project/Activity identifier code"
+            "description": "Project/Activity identifier code",
+            "description_translations": {
+              "es": "Código identificador del Proyecto/Actividad"
+            }
           },
           {
             "format": "default",
             "name": "nombreProyecto",
             "type": "string",
-            "description": "Project/Activity Name"
+            "description": "Name of the Project/Activity associated with the National Development Plan",
+            "description_translations": {
+              "es": "Nombre del Proyecto/Actividad asociada al Plan Nacional de Desarrollo"
+            }
           },
           {
             "format": "default",
             "name": "aportePresupuestalAlObjetivo",
             "type": "string",
-            "description": "Budget that the entity contributes to the specific objective of the PND 2030"
+            "description": "Budget that the entity contributes to the specific objective of the National Development Plan 2030",
+            "description_translations": {
+              "es": "Presupuesto que aporta la entidad al objetivo especifico del Plan Nacional de Desarrollo 2030"
+            }
           },
           {
             "format": "default",
             "name": "AnioPresupuesto",
             "type": "integer",
-            "description": "Budget year"
+            "description": "Budget year",
+            "description_translations": {
+              "es": "Año del presupuesto"
+            }
           },
           {
             "format": "default",
             "name": "version",
             "type": "integer",
-            "description": "Version of the bill"
+            "description": "Version of the bill",
+            "description_translations": {
+              "es": "Versión del proyecto de ley"
+            }
           },
           {
             "format": "default",
             "name": "fuente",
             "type": "string",
-            "description": "PND budget information information source"
+            "description": "source of information for budget information National Development Plan",
+            "description_translations": {
+              "es": "fuente de información de información de presupuesto Plan Nacional de Desarrollo"
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "fechaActualizacion",
             "type": "date",
-            "description": "date of last data update"
+            "description": "date of last data update",
+            "description_translations": {
+              "es": "fecha de ultima actualización de datos"
+            }
           }
         ],
         "missingValues": [
@@ -211,103 +268,154 @@
             "format": "default",
             "name": "codEjeEstrategico",
             "type": "integer",
-            "description": "PND 2030 strategic axis code"
+            "description": "Code of the strategic axis of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Codigo del eje estrategico del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreEjeEstrategico",
             "type": "string",
-            "description": "Name of the strategic axis of the PND 2030"
+            "description": "Name of the strategic axis of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Nombre del eje estrategico del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "codObjetivoEstrategico",
             "type": "integer",
-            "description": "Code of the strategic objective corresponding to the axis of the PND 2030"
+            "description": "Code of the strategic objective corresponding to the axis of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Codigo del Objetivo estrategico correspondiente al eje del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreObjetivoEstrategico",
             "type": "string",
-            "description": "Name of the strategic objective corresponding to the axis of the PND 2030"
+            "description": "Name of the strategic objective corresponding to the axis of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Nombre del objetivo estrategico correspondiente al eje del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "codObjetivoEspecifico",
             "type": "integer",
-            "description": "Specific Objective code corresponding to each strategic objective of the PND 2030"
+            "description": "Specific Objective code corresponding to each strategic objective of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Codigo del Objetivo especifico correspondiente a cada objetivo estrategico del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreObjetivoEspecifico",
             "type": "string",
-            "description": "Name of the specific objective corresponding to each strategic objective of the PND 2030"
+            "description": "Name of the specific objective corresponding to each strategic objective of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Nombre del objetivo especifico correspondiente a cada objetivo estratefico del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "indicador",
             "type": "string",
-            "description": "Indicator Name"
+            "description": "Indicator Name",
+            "description_translations": {
+              "es": "Nombre del Indicador"
+            }
           },
           {
             "format": "default",
             "name": "Unidad/Escala",
             "type": "string",
-            "description": "Unit or scale in which the indicator is measured"
+            "description": "Unit or scale in which the indicator is measured",
+            "description_translations": {
+              "es": "Unidad o escala en la que se mide el indicador"
+            }
           },
           {
             "format": "default",
             "name": "añoBaseIndicador",
             "type": "integer",
-            "description": "Year in which the indicator was included"
+            "description": "Year in which the indicator was included",
+            "description_translations": {
+              "es": "Año en el que se incluyó el indicador"
+            }
           },
           {
             "format": "default",
             "name": "Meta 2023",
             "type": "integer",
-            "description": "Intermediate goal of the indicator"
+            "description": "Intermediate goal of the indicator",
+            "description_translations": {
+              "es": "Meta intermedia del indicador"
+            }
           },
           {
             "format": "default",
             "name": "Meta 2030",
             "type": "integer",
-            "description": "Final goal of the indicator"
+            "description": "Final goal of the indicator",
+            "description_translations": {
+              "es": "Meta final del indicador"
+            }
           },
           {
             "format": "default",
             "name": "avance",
             "type": "string",
-            "description": "current progress of the indicator"
+            "description": "current progress of the indicator",
+            "description_translations": {
+              "es": "avance actual del indicador"
+            }
           },
           {
             "format": "default",
             "name": "codNivelEntidad",
             "type": "string",
-            "description": "Level and entity code that contributes to the indicator and objectives of the PND 2030"
+            "description": "Level and entity code that contributes to the indicator and objectives of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Codigo de nivel y entidad que aporta al indicador y objetivos del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "nombreEntidad",
             "type": "string",
-            "description": "Name of the entity that contributes to the indicator and objectives of the PND 2030"
+            "description": "Name of the entity that contributes to the indicator and objectives of the National Development Plan (PND) 2030",
+            "description_translations": {
+              "es": "Nombre de la entidad que aporta al indicador y objetivos del Plan Nacional de Desarrollo (PND) 2030"
+            }
           },
           {
             "format": "default",
             "name": "entidadReporta",
             "type": "string",
-            "description": "Name of the entity that reports information"
+            "description": "Name of the entity that reports information",
+            "description_translations": {
+              "es": "Nombre de la entidad que reporta información"
+            }
           },
           {
             "format": "default",
             "name": "fuente",
             "type": "string",
-            "description": "Source of information"
+            "description": "Source of information",
+            "description_translations": {
+              "es": "Fuente de información"
+            }
           },
           {
             "format": "%Y-%m-%d",
             "name": "fechaActualizacion",
             "type": "date",
-            "description": "Date of the last update of indicator information"
+            "description": "Date of the last update of indicator information",
+            "description_translations": {
+              "es": "Fecha de la ultima actualización de informacion de indicadores"
+            }
           }
         ],
         "missingValues": [

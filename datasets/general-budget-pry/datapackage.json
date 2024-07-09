@@ -64,91 +64,136 @@
             "format": "default",
             "name": "AnioPresupuesto",
             "type": "integer",
-            "description": "Budget year"
+            "description": "Year to which the budget line is assigned. The budget line is the structure that the government manages within the General State Budget in a plan that the government carries out with the purpose of defining the resources that it will need, with the objective of providing citizens with the services they need. This is composed of several components and/or classifications Entity, Program, Function, Expenditure Object, among others.",
+            "description_translations": {
+              "es": "Año al cual está asignada la linea presupuestal. La linea presupuestal es la estructura que maneja el gobierno dentro del  Presupuesto General del Estado en un plan que realiza el gobierno con la finalidad de definir los recursos que va a necesitar, con el objetivo de proveer a la ciudadanía los servicios que necesita. Esta esta compuesta de varios componentes y/o clasificaciones Entidad, Programa, Funcion, Objeto de gasto, entre otras"
+            }
           },
           {
             "format": "default",
             "name": "codNivelEntidad",
             "type": "string",
-            "description": "Level and entity code"
+            "description": "Code and level of the entity associated with the budget",
+            "description_translations": {
+              "es": "Código y nivel de la entidad asociada al presupuesto"
+            }
           },
           {
             "format": "default",
             "name": "NombreEntidad",
             "type": "string",
-            "description": "Entity name"
+            "description": "Name of the entity to which the budget is assigned",
+            "description_translations": {
+              "es": "Nombre de la entidad a la cual está asignada el presupuesto"
+            }
           },
           {
             "format": "default",
             "name": "sectores",
             "type": "string",
-            "description": "Sector to which the entity/project belongs"
+            "description": "Sector to which the entity/project belongs",
+            "description_translations": {
+              "es": "Sector al cual pertenece la entidad/proyecto"
+            }
           },
           {
             "format": "default",
             "name": "ClasePrograma",
             "type": "string",
-            "description": "Program class"
+            "description": "Program class",
+            "description_translations": {
+              "es": "Clasificación del programa según su propósito. Ej: Central, Sustantivos, No Asignable"
+            }
           },
           {
             "format": "default",
             "name": "NombrePrograma",
             "type": "string",
-            "description": "Program name"
+            "description": "Name of the program to which the budget line is assigned",
+            "description_translations": {
+              "es": "Nombre del programa al cual está asignada la linea del presupuesto"
+            }
           },
           {
             "format": "default",
             "name": "IdNegocioProyecto",
             "type": "string",
-            "description": "Sequence of codes that identify the bill"
+            "description": "Sequence of codes that identify the bill",
+            "description_translations": {
+              "es": "Secuencia de códigos que identifican el proyecto de ley"
+            }
           },
           {
             "format": "default",
             "name": "NombreProyectoActividad",
             "type": "string",
-            "description": "Project or activity name"
+            "description": "Name of the Project or activity associated with the program and budget line",
+            "description_translations": {
+              "es": "Nombre del Proyecto o activdad asociado al programa y linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "PryClasificacion",
             "type": "string",
-            "description": "Type of Activity / Project"
+            "description": "Classification of the project or activity associated with the program",
+            "description_translations": {
+              "es": "Clasificación del proyecto o actividad asociado al programa"
+            }
           },
           {
             "format": "default",
             "name": "NombreVersion",
             "type": "integer",
-            "description": "Version Name"
+            "description": "Name of the version associated with the budget line",
+            "description_translations": {
+              "es": "Nombre de la versión asociada a la linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "descripcionGrupo",
             "type": "string",
-            "description": "Expense Object Group Description"
+            "description": "Description of the expense object grouper",
+            "description_translations": {
+              "es": "Descripción del agrupador de objetos de gasto"
+            }
           },
           {
             "format": "default",
             "name": "NombreObjetoGasto",
             "type": "string",
-            "description": "Expense Object Name"
+            "description": "Description of the expense object associated with the group and the budget line",
+            "description_translations": {
+              "es": "Descripción del objeto de gasto asociado al grupo y a la linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "PresupuestoVigente",
             "type": "integer",
-            "description": "Budget assigned to the project/activity"
+            "description": "Budget assigned to the project/activity",
+            "description_translations": {
+              "es": "Importe del presupuesto asignado al proyecto o actividad"
+            }
           },
           {
             "format": "default",
             "name": "PresupuestoDisponible",
             "type": "integer",
-            "description": "Approved/Initial Budget + modifications made to the project/activity"
+            "description": "Approved/Initial Budget + modifications made to the project/activity",
+            "description_translations": {
+              "es": "Importe del Presupuesto Aprobado/Inicial + modificaciones realizadas al proyecto/actividad"
+            }
           },
           {
             "format": "default",
             "name": "PresupuestoAvance",
             "type": "integer",
-            "description": "Executed budget of the project/activity"
+            "description": "Executed budget of the project/activity",
+            "description_translations": {
+              "es": "Importe del Presupuesto ejecutado del proyecto/actividad"
+            }
           }
         ],
         "missingValues": [
@@ -187,37 +232,55 @@
             "format": "default",
             "name": "AnioPresupuesto",
             "type": "integer",
-            "description": "Budget year"
+            "description": "Year of allocation of the budget line. The budget line is the structure that the government manages within the General State Budget in a plan that the government carries out with the purpose of defining the resources that it will need, with the objective of providing citizens with the services they need. ",
+            "description_translations": {
+              "es": "Año de asignación de la linea presupuestal. La linea presupuestal es la estructura que maneja el gobierno dentro del  Presupuesto General del Estado en un plan que realiza el gobierno con la finalidad de definir los recursos que va a necesitar, con el objetivo de proveer a la ciudadanía los servicios que necesita. "
+            }
           },
           {
             "format": "default",
             "name": "CodigoIndicador",
             "type": "integer",
-            "description": "Indicator code"
+            "description": "Identifier code of the indicator associated with the budget line",
+            "description_translations": {
+              "es": "Codigo identificador del indicador asociado a la linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "NombreIndicador",
             "type": "string",
-            "description": "Indicator name"
+            "description": "Name of the indicator associated with the budget line",
+            "description_translations": {
+              "es": "Nombre del indicador asociado a la linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "DescripcionIndicador",
             "type": "string",
-            "description": "Indicator Description"
+            "description": "Complete description of the indicator associated with the budget line",
+            "description_translations": {
+              "es": "Descripción completa del indicador asociado a la linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "IndicadorFrecuencia",
             "type": "string",
-            "description": "Time interval with which the indicator is measured/updated"
+            "description": "Time interval with which the indicator is measured/updated",
+            "description_translations": {
+              "es": "Intervalo de tiempo con el que se mide/actualiza el indicador"
+            }
           },
           {
             "format": "default",
             "name": "AñoBasePresupuesto",
             "type": "integer",
-            "description": "Base year of the indicator"
+            "description": "Base year of the indicator associated with the budget line",
+            "description_translations": {
+              "es": "Año base del indicador asociado a la linea presupuestal"
+            }
           },
           {
             "decimalChar": ".",
@@ -225,7 +288,10 @@
             "groupChar": "",
             "name": "Avance",
             "type": "number",
-            "description": "Indicator advance"
+            "description": "Advance of the indicator associated with the budget line",
+            "description_translations": {
+              "es": "Avance del indicador asociado a la linea presupuestal"
+            }
           },
           {
             "decimalChar": ".",
@@ -233,49 +299,73 @@
             "groupChar": "",
             "name": "Meta",
             "type": "number",
-            "description": "Indicator goal"
+            "description": "Goal of the indicator associated with the budget line",
+            "description_translations": {
+              "es": "Meta del indicador asociado a la linea presupuestal"
+            }
           },
           {
             "format": "default",
             "name": "UnidadMedidaTotal",
             "type": "string",
-            "description": "Unit of measure for the indicator"
+            "description": "Unit of measure for the indicator",
+            "description_translations": {
+              "es": "Unidad de medida para el indicador"
+            }
           },
           {
             "format": "default",
             "name": "MetodoCalculo",
             "type": "string",
-            "description": "Method to calculate the indicator in its unit of measurement"
+            "description": "Method to calculate the indicator in its unit of measurement",
+            "description_translations": {
+              "es": "Metodo para calcular el indicador en su unidad de medida"
+            }
           },
           {
             "format": "default",
             "name": "DescripcionPoblacion",
             "type": "string",
-            "description": "Description of the population that measures the indicator"
+            "description": "Description of the population that measures the indicator",
+            "description_translations": {
+              "es": "Descripción de la población que mide el indicador"
+            }
           },
           {
             "format": "default",
             "name": "CodigoNivelEntidad",
             "type": "string",
-            "description": "Level and entity code that contributes to the indicator and objectives of the PND 2030"
+            "description": "Level and entity code that contributes to the indicator and objectives of the PND 2030",
+            "description_translations": {
+              "es": "Codigo de nivel y entidad que aporta al indicador y objetivos del PND 2030"
+            }
           },
           {
             "format": "default",
             "name": "NombreEntidad",
             "type": "string",
-            "description": "Name of the entity that contributes to the indicator and objectives of the PND 2030"
+            "description": "Name of the entity that contributes to the indicator and objectives of the PND 2030",
+            "description_translations": {
+              "es": "Nombre de la entidad que aporta al indicador y objetivos del PND 2030"
+            }
           },
           {
             "format": "default",
             "name": "IdNegocioProyecto",
             "type": "string",
-            "description": "Sequence of codes that identify the bill"
+            "description": "Sequence of codes that identify the bill",
+            "description_translations": {
+              "es": "Secuencia de códigos que identifican el proyecto de ley"
+            }
           },
           {
             "format": "default",
             "name": "NombreProyectoActividad",
             "type": "string",
-            "description": "Name of the bill"
+            "description": "Name of the bill",
+            "description_translations": {
+              "es": "Nombre del proyecto de ley"
+            }
           }
         ],
         "missingValues": [
