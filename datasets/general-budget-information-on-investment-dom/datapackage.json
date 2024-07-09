@@ -81,6 +81,8 @@
       },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/CSV/2024/05/01/DatosAbiertosPresupuestoHacienda.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/toc_DatosAbiertosPresupuestoHacienda.csv",
+      "source_path": "This dataset is a combination of some datasets from this section - Este dataset es una combinación de algunos datsasets de esta sección.",
+      "source_path_description": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?usp=sharing Sheet = raw data metabase (Ministry of Finance).",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -406,6 +408,8 @@
       },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/CSV/2024/05/01/DatosAbiertosProcesosXProyectosInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/toc_DatosAbiertosProcesosXProyectosInv.csv",
+      "source_path": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/PROCESOS_DE_COMPRA",
+      "source_path_description": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?usp=sharing Sheet = raw data metabase (Ministry of Finance)",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -549,6 +553,8 @@
       },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/CSV/2024/05/01/DatosAbiertosContratosXProyectosInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/toc_DatosAbiertosContratosXProyectosInv.csv",
+      "source_path": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/CONTRATOS_DE_COMPRA",
+      "source_path_description": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?usp=sharing Sheet = raw data metabase (Ministry of Finance)",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
@@ -710,6 +716,8 @@
       },
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/CSV/2024/05/01/DatosAbiertosPresupuestoXProyInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_X_PROYECTO_INVERSION/toc_DatosAbiertosPresupuestoXProyInv.csv",
+      "source_path": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/",
+      "source_path_description": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?usp=sharing Sheet = raw data metabase (Ministry of Finance)",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [

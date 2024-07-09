@@ -2393,7 +2393,6 @@
                 "title": "Raw data path",
                 "description": "A fully qualified URL, or a POSIX to raw data path.",
                 "type": "string",
-                "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                 "examples": [
                   "{\n  \"source_path\": \"sourceraw\"\n}\n",
                   "{\n  \"source_path\": \"http://example.com/sourceraw\"\n}\n"
@@ -2407,7 +2406,6 @@
                   "title": "Raw data path",
                   "description": "A fully qualified URL, or a POSIX to raw data path.",
                   "type": "string",
-                  "pattern": "^(?=^[^./~])(^((?!\\.{2}).)*$).*$",
                   "examples": [
                     "{\n  \"source_path\": \"sourceraw\"\n}\n",
                     "{\n  \"source_path\": \"http://example.com/sourceraw\"\n}\n"
