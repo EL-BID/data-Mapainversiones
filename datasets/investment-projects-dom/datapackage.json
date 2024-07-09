@@ -55,49 +55,41 @@
       "sources": [
         {
           "name": "BID_BASE_CIA_END_MIP",
-          "name_url": "'raw tables (SNIP)'!B15:J15",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_CIA_END_MIP/CSV/2024/05/24/BID_Base_Cla_end_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136599"
         },
         {
           "name": "BID_BASE_CLA_INSTITUCIONES_SNIP_MIP",
-          "name_url": "'raw tables (SNIP)'!B40:J40",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_CLA_INSTITUCIONES_SNIP_MIP/CSV/2024/05/24/BID_Base_Cla_Instituciones_snip_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136600"
         },
         {
           "name": "BID_BASE_CRONOGRAMAS_PROYECTO_FISICO_MIP",
-          "name_url": "'raw tables (SNIP)'!B65:J65",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_CRONOGRAMAS_PROYECTO_FISICO_MIP/CSV/2024/05/24/BID_Base_cronogramas_proyecto_fisico_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136601"
         },
         {
           "name": "BID_BASE_FASES_MIP",
-          "name_url": "'raw tables (SNIP)'!B107:J107",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_FASES_MIP/CSV/2024/05/24/BID_Base_Fases_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136602"
         },
         {
           "name": "BID_BASE_FICHAS_PROYECTOS_MIP",
-          "name_url": "'raw tables (SNIP)'!B138:J138",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_FICHAS_PROYECTOS_MIP/CSV/2024/05/24/BID_Base_Fichas_Proyectos_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136603"
         },
         {
           "name": "BID_BASE_PRESUPUESTO_MIP",
-          "name_url": "'raw tables (SNIP)'!B213:J213",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_PRESUPUESTO_MIP/CSV/2024/05/24/BID_Base_presupuesto_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136604"
         },
         {
           "name": "BID_BASE_PROEJE_FISICA_MIP",
-          "name_url": "'raw tables (SNIP)'!B273:J273",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_PROEJE_FISICA_MIP/CSV/2024/05/24/BID_Base_proeje_fisica_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136605"
         },
         {
           "name": "BID_BASE_UBICACIONES_GEOGRAFICAS_MIP",
-          "name_url": "'raw tables (SNIP)'!B334:J334",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_UBICACIONES_GEOGRAFICAS_MIP/CSV/2024/05/24/BID_Base_ubicaciones_geograficas_mip.csv",
           "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136606"
         }

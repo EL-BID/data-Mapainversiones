@@ -82,6 +82,13 @@
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/CSV/2024/05/01/DatosAbiertosPresupuestoHacienda.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_INVERSION_HACIENDA/toc_DatosAbiertosPresupuestoHacienda.csv",
       "profile": "tabular-data-resource",
+      "sources": [
+        {
+          "name": "PARTIDAS_DE_GASTO",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/PARTIDAS_DE_GASTO/CSV/2024/05/01/mh_partidas_de_gasto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=2117212777#rangeid=558022531"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -407,6 +414,13 @@
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/CSV/2024/05/01/DatosAbiertosProcesosXProyectosInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_PROCESOS/toc_DatosAbiertosProcesosXProyectosInv.csv",
       "profile": "tabular-data-resource",
+      "sources": [
+        {
+          "name": "PROCESOS_DE_COMPRA",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/PROCESOS_DE_COMPRA/CSV/2024/05/01/mh_procesos.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=2117212777#rangeid=558022532"
+        }
+      ],
       "schema": {
         "fields": [
           {
@@ -550,6 +564,13 @@
       "path": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/CSV/2024/05/01/DatosAbiertosContratosXProyectosInv.csv",
       "toc": "https://air.portaljs.com/opendata/DOM/MAPAINVDB/OPENDATA/PPTO_CONTRATOS/toc_DatosAbiertosContratosXProyectosInv.csv",
       "profile": "tabular-data-resource",
+      "sources": [
+        {
+          "name": "CONTRATOS_DE_COMPRA",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/CONTRATOS_DE_COMPRA/CSV/2024/05/01/mh_contratos.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=2117212777#rangeid=558022533"
+        }
+      ],
       "schema": {
         "fields": [
           {

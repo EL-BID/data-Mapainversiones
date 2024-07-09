@@ -2091,14 +2091,6 @@
                     "{\n  \"email\": \"example@example.com\"\n}\n"
                   ]
                 },
-                "name_url": {
-                  "title": "Url for name",
-                  "description": "A human-readable name_url.",
-                  "type": "string",
-                  "examples": [
-                    "{\n  \"name_url\": \"My Package name_url\"\n}\n"
-                  ]
-                },
                 "url": {
                   "title": "url",
                   "description": "A fully qualified URL, or a POSIX file path.",
