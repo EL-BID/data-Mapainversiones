@@ -26,8 +26,8 @@ python scripts/increment_load.py
 
 To create `toc` and `datapackage.json`, please use help functions in `process.py`
 
-
-## Package descriptor sample
+## Metadata
+### Package descriptor sample
 
 
 ```json
@@ -58,7 +58,7 @@ To create `toc` and `datapackage.json`, please use help functions in `process.py
 
 ```
 
-## Resource descriptor with tableschema sample
+### Resource descriptor with tableschema sample
 
 ```json
 {
