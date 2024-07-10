@@ -52,6 +52,88 @@
       },
       "path": "https://air.portaljs.com/opendata/JAM/MAPAINVDB/PROYECTOS/CSV/2024/06/27/InvestmentMapProjectsOpenData.csv",
       "toc": "https://air.portaljs.com/opendata/JAM/MAPAINVDB/PROYECTOS/toc_InvestmentMapProjectsOpenData.csv",
+      "sources": [
+        {
+          "name": "ProyectoXLocalizacion.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/ProyectoXLocalizacion/2024/07/09/ProyectoXLocalizacion.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868290"
+        },
+        {
+          "name": "vwActividades.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwActividades/2024/07/09/vwActividades.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868291"
+        },
+        {
+          "name": "vwActorXProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwActorXProyecto/2024/07/09/vwActorXProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868292"
+        },
+        {
+          "name": "vwBudget.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwBudget/2024/07/09/vwBudget.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868293"
+        },
+        {
+          "name": "vwBudgetAllocationProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwBudgetAllocationProyecto/2024/07/09/vwBudgetAllocationProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868294"
+        },
+        {
+          "name": "vwEsquemaFinanciacionProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwEsquemaFinanciacionProyecto/2024/07/09/vwEsquemaFinanciacionProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868295"
+        },
+        {
+          "name": "vwFechaBudgetProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwFechaBudgetProyecto/2024/07/09/vwFechaBudgetProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868296"
+        },
+        {
+          "name": "vwHistorialEstados.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwHistorialEstados/2024/07/09/vwHistorialEstados.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868297"
+        },
+        {
+          "name": "vwObjetivoEspecifico.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwObjetivoEspecifico/2024/07/09/vwObjetivoEspecifico.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868298"
+        },
+        {
+          "name": "vwProductos.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwProductos/2024/07/09/vwProductos.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868299"
+        },
+        {
+          "name": "vwProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwProyectos/2024/07/09/vwProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868300"
+        },
+        {
+          "name": "vwSectores.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSectores/2024/07/09/vwSectores.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868301"
+        },
+        {
+          "name": "vwSeguimientoAvanceFinanciero.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSeguimientoAvanceFinanciero/2024/07/09/vwSeguimientoAvanceFinanciero.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868302"
+        },
+        {
+          "name": "vwSeguimientoAvanceFisico.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSeguimientoAvanceFisico/2024/07/09/vwSeguimientoAvanceFisico.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868303"
+        },
+        {
+          "name": "vwSeguimientoEsquemaFinanciacionProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSeguimientoEsquemaFinanciacionProyecto/2024/07/09/vwSeguimientoEsquemaFinanciacionProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868304"
+        },
+        {
+          "name": "vwSpentProyecto.csv",
+          "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSpentProyecto/2024/07/09/vwSpentProyecto.csv",
+          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868305"
+        }        
+      ],
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
