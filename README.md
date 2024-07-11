@@ -2,7 +2,7 @@
 
 
 # data-Mapainversiones
-
+MapaInversiones es una plataforma que fomenta la transparencia del gasto, las inversiones y las contrataciones públicas en América Latina y el Caribe mediante la integración y visualización de datos públicos. Las diferentes instancias de MapaInversiones implementadas en los países generan conjuntos de datos abiertos para que los ciudadanos y organizaciones interesadas puedan realizar sus análisis propios basados en esta información. Este repositorio en https://github.com/EL-BID/data-Mapainversiones es una capacidad de la solución que permite acceder y descargar de manera agrupada los conjuntos de datos abiertos de las plataformas de los países relacionados.
 
 ## Usage
 
