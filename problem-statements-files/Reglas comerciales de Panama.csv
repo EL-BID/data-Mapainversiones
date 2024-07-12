@@ -1,0 +1,18 @@
+No,Regla de Negocio,Descripcion Detallada
+1,Debe existir un unico identificador por proyecto (Id_Proyecto),"Los proyectos en el sistema de mapainversiones deben ser unicos, en caso que no existe se debera tener uno generado que pueda establecerse como llave unica de los proyectos y ser numerico para facilitar las consultas.
+
+Actualmente el proyecto unico de inversion para la plataforma de panamá se crea con una concatenación de atributos:
+
+--idproyecto nuevo debe ser : entidad, tipo presupuest (1), progama, subprograma, actividad
+cast(ficha.codigo+ejec.tipo+ejec.programa+ejec.subprograma+ejec.actividad as int) as idproyecto"
+2,Debe existir un unico codigo para identificar el proyecto en el sistema de inversion publica (codigo snip),Los proyectos en los sistemas de inversion deben tener un codigo unico de indentificacion que pueda ser entendido por funcionarios y/o ciudadanos para hacer monitoreo del proyecto desde el buscador
+3,Los proyectos deben tener asociado un sector,Los proyectos en mapa inversiones deben tener asociado un sector por el cual se puedan realizar filtros o perfiles asociados a sectores
+4,Los proyectos deben tener asociado una entidad ejecutora y/o responsable del proyecto ,Los proyectos en mapa inversiones deben estar asociados a entidades ejecutoras y/o responsables del proyecto en panama las entidades ejecutorasy responsables del proyecto son las mismas
+5,Los proyectos deben contener una fuente de financiacion y organismo de financiacion asociado,"Los proyectos en mapa inversionens deben contar fuentes de financiacion y es importante conocer los organismos financiadores, esto para determinar de donde provieneen los recursos y como es el flujo de estos"
+6,Los nombres de los proyectos deben ser claros y no tener abreviaciones que no sean facilmente entendible por los ciudadanos,La informacion de los proyectos debe ser lo mas entendible por los ciudadanos la utilizacion de abreviaciones que puedan confundir al ciudadano deben ser revisadas y evaluadas durante el proceso de calidad de datos
+7,Los proyectos deben tener fecha inicio (año inicio) y fecha final (año final),"Los proyectos en mapa inversiones se filtran por rangos de año, para los ciudadanos es importante generar filtros dentro del mapa con esta caracteristica que permita conocer el horizonte del proyecto y la duracion del mismo"
+8,Proyectos deben tener el monto aprobado y/o vigente asociado al proyecto.,"Para los ciudadanos es importante conocer el costo asociado al proyecto, cada gobierno define cual es la variable que identifica mejor este valor "
+9,Los proyectos deben tener estados y/o etapas que identifiquen el estado del proyecto ,Los ciudadanos buscan conocer los estados y/o etapas de los proyectos para poder monitorearlos. 
+10,Los proyectos deben tener actividades asociadas,Se espera que los proyectos tengan actividades asociadas 
+11,Los proyectos deben tener un avance fisico (fisical progress) superior  0 en los diferentes estados,Si los proyectos tienen un avance fisico relacionado se espera que este sea mayor a 0 y no superior a 100% 
+12,Dentro de las lineas presupuestales de inversion del presupuesto deben existir proyectos de inversion asociados a traves del codigo snip,Cuando se realiza el presupuesto y en este se definen lineas presupuestales se define a que proyectos va asociado a traves del codigo snip
