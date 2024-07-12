@@ -1,0 +1,1882 @@
+Id,Pais,Pregunta,Question,Query,Query answer,Respuesta en texto,Text answer,,,
+1,DOM,¿Cuántos proyectos de inversión que benefician a las pequeñas y medianas empresas están activos en el Banco de Proyectos de República Dominicana y cuál es el monto asignado para cada uno?,How many investment projects that benefit small and medium-sized enterprises are active in the Dominican Republic Project Bank and what is the amount allocated for each one?,"Select sum(cantidad_proyectos) as cantidad_proyectos, sum(costoestimadoproyecto) as costoestimadoproyecto from (
+SELECT COUNT(distinct IdProyecto) AS cantidad_proyectos, cast(costoestimadoproyecto as decimal(18,2)) costoestimadoproyecto 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(etapaactual) = 'ejecución' and LOWER(nombreproyecto) LIKE '%mipymes%'
+group by costoestimadoproyecto) as result","cantidad_proyectos	costoestimadoproyecto
+1	19550000.00",Existe actualmente un proyecto de inversión que beneficia a las pequeñas y medianas empresas y el monto asignado es de RD$ 19.550.000,"There is currently an investment project benefiting small and medium-sized enterprises, with an allocated amount of RD$ 19,550,000.
+",,,
+2,DOM,¿Qué proyectos en República Dominicana están orientados a promover el emprendimiento?,What projects in the Dominican Republic are aimed at promoting entrepreneurship?,"SELECT LOWER(cast(idproyecto AS nvarchar(MAX))) AS idproyecto,
+LOWER(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto,
+LOWER(cast(sector AS nvarchar(MAX))) AS sector,
+LOWER(cast(nombremunicipio AS nvarchar(MAX))) AS nombremunicipio
+from (select distinct idproyecto, nombreproyecto, sector, nombremunicipio 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+WHERE LOWER(nombreproyecto) LIKE '%emprendimiento%') subquery","idproyecto	nombreproyecto	sector	nombremunicipio
+4356	fortalecimiento de capacidades en emprendimiento económico y social para la población vulnerable de la zona fronteriza  república domini	asuntos económicos  comerciales y laborales	 baoruco - proyecto departamental| barahona - proyecto departamental| dajabón - proyecto departamental| elías piña - proyecto departamental| independencia - proyecto departamental| monte cristi - proy","En República Dominicana, hay un proyecto orientado a promover el emprendimiento:
+
+Nombre del Proyecto: Fortalecimiento de capacidades en emprendimiento económico y social para la población vulnerable de la zona fronteriza.
+Sector: Asuntos económicos, comerciales y laborales.
+Municipio: Baoruco, Barahona, Dajabón, Elías Piña, Independencia, Monte Cristi.
+Este proyecto está enfocado en fortalecer las habilidades empresariales y sociales de la población vulnerable en la zona fronteriza.","In the Dominican Republic, there is a project aimed at promoting entrepreneurship:
+
+Project Name: Strengthening capacities in economic and social entrepreneurship for the vulnerable population in the border zone.
+Sector: Economic, commercial, and labor affairs.
+Municipality: Baoruco, Barahona, Dajabón, Elías Piña, Independencia, Monte Cristi.
+This project is focused on enhancing the entrepreneurial and social skills of the vulnerable population in the border zone.",,,
+3,DOM,¿Qué proyectos activos en la provincia de Samaná en República Dominicana están orientados a promover el turismo?,What active projects in the province of Samaná in the Dominican Republic are aimed at promoting tourism?,"""WITH proyectos_samana AS
+  (SELECT DISTINCT IdProyecto,
+                   NombreProyecto,
+                   EtapaActual,
+                   Sector,
+                   NombreProvincia
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(NombreProvincia)) LIKE '%samana%'
+     AND dbo.RemoverAcentos(LOWER(EtapaActual)) = dbo.RemoverAcentos(LOWER('ejecucion'))
+     AND dbo.RemoverAcentos(LOWER(Sector)) = dbo.RemoverAcentos(LOWER('actividades deportivas recreativas culturales y religiosas')) )
+SELECT IdProyecto,
+       NombreProyecto,
+       EtapaActual,
+       Sector,
+       NombreProvincia
+FROM proyectos_samana
+ORDER BY IdProyecto""","IdProyecto	NombreProyecto	EtapaActual	Sector	NombreProvincia
+5116	HABILITACIÓN DE INMUEBLE PARA ARCHIVO REGIONAL CIBAO NORDESTE EN SAN FRANCISCO DE MACORIS	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ
+5825	RECONSTRUCCIÓN DEL MALECÓN DEL MUNICIPIO DE SANTA BARBARA DE SAMANÁ  PROVINCIA  SAMANÁ	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ
+7706	RECONSTRUCCIÓN POLIDEPORTIVO MUNICIPIO LAS TERRENAS  PROVINCIA SAMANA.	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ
+7724	RECONSTRUCCIÓN CAMPO DE BÉISBOL LAS GALERAS  MUNICIPIO SAMANA  PROVINCIA SAMANA	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ
+7730	REMODELACIÓN CAMPO DE BÉISBOL SAMANÁ  MUNICIPIO SANTA BARBARA DE SAMANA  PROVINCIA SAMANÁ	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ
+7734	RECONSTRUCCIÓN POLIDEPORTIVO SANTA BARBARA SAMANA  PROVINCIA SAMANA.	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ
+7736	RECONSTRUCCIÓN POLIDEPORTIVO MUNICIPAL DE SANCHEZ  PROVINCIA SAMANA.	EJECUCIÓN	Actividades deportivas  recreativas  culturales y religiosas	SAMANÁ","""Has preguntado: ¿Cuáles proyectos en la provincia de Samaná en República Dominicana que estén activos, están orientados a la promoción del turismo? Actualmente, hay varios proyectos activos en la provincia de Samaná que están orientados a la promoción del turismo. Aquí tienes la lista de los proyectos:
+RECONSTRUCCIÓN DEL MALECÓN DEL MUNICIPIO DE SANTA BARBARA DE SAMANÁ, PROVINCIA SAMANÁ - Etapa: EJECUCIÓN
+RECONSTRUCCIÓN POLIDEPORTIVO MUNICIPIO LAS TERRENAS, PROVINCIA SAMANÁ - Etapa: EJECUCIÓN
+RECONSTRUCCIÓN CAMPO DE BÉISBOL LAS GALERAS, MUNICIPIO SAMANÁ, PROVINCIA SAMANÁ - Etapa: EJECUCIÓN
+REMODELACIÓN CAMPO DE BÉISBOL SAMANÁ, MUNICIPIO SANTA BARBARA DE SAMANÁ, PROVINCIA SAMANÁ - Etapa: EJECUCIÓN
+RECONSTRUCCIÓN POLIDEPORTIVO SANTA BARBARA SAMANÁ, PROVINCIA SAMANÁ - Etapa: EJECUCIÓN
+RECONSTRUCCIÓN POLIDEPORTIVO MUNICIPAL DE SÁNCHEZ, PROVINCIA SAMANÁ - Etapa: EJECUCIÓN
+Hay un total de 7 registros.""","""Have you asked: Which projects in the province of Samaná in the Dominican Republic that are active are oriented towards the promotion of tourism? Currently, there are several active projects in the province of Samaná that are oriented towards the promotion of tourism. Here you have the list of projects: RECONSTRUCTION OF THE BOARD OF THE MUNICIPALITY OF SANTA BARBARA DE SAMANÁ, SAMANÁ PROVINCE - Stage: EXECUTION OF RECONSTRUCTION OF THE LAS TERRENAS MUNICIPALITY OF SPORTS CENTER, SAMANÁ PROVINCE - Stage: EXECUTION OF RECONSTRUCTION OF THE LAS GALERAS BASEBALL FIELD, SAMANÁ MUNICIPALITY, SAMANÁ PROVINCE - Stage: EXECUTION REMODELING OF SAMANÁ BASEBALL FIELD, SANTA BARBARA DE SAMANÁ MUNICIPALITY, SAMANÁ PROVINCE - Stage: EXECUTION RECONSTRUCTION SANTA BARBARA SPORTS CENTER SAMANÁ, SAMANÁ PROVINCE - Stage: EXECUTION RECONSTRUCTION OF SÁNCHEZ MUNICIPAL SPORTS CENTER, SAMANÁ PROVINCE - Stage: EXECUTION total of 7 records.""",,,
+4,DOM,¿Cuáles son los proyectos actualmente en marcha en el Banco de Proyectos de República Dominicana al 2024 destinados a mitigar los efectos del cambio climático?,What are the projects currently underway in the Project Bank of the Dominican Republic in 2024 aimed at mitigating the effects of climate change?,"SELECT distinct IdProyecto,
+NombreProyecto, 
+LOWER(CAST(CostoEstimadoProyecto AS NVARCHAR(MAX))) AS costoestimadoproyecto, 
+AnioInicioProyecto, AnioFinProyecto 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(NombreProyecto) like '%climático%' 
+and year(GETDATE()) between AnioInicioProyecto and AnioFinProyecto","IdProyecto        NombreProyecto        costoestimadoproyecto        AnioInicioProyecto        AnioFinProyecto
+4230        MEJORAMIENTO DE OBRAS PÚBLICAS RESILIENTES PARA REDUCIR RIESGOS DE DESASTRES EN EL CONTEXTO DEL CAMBIO CLIMÁTICO  A NIVEL NACIONAL        3325000000.00        2018        2024
+4528        MEJORAMIENTO DE OBRAS PUBLICAS RESILIENTES PARA REDUCIR RIESGOS DE DESASTRES EN EL CONTEXTO DEL CAMBIO  CLIMÁTICO A NIVEL NACIONAL        1153900000.00        2020        2024","Actualmente, hay dos proyectos en marcha en el Banco de Proyectos de República Dominicana hasta 2024 destinados a mitigar los efectos del cambio climático:
+
+Proyecto ID 4230
+
+Nombre del Proyecto: MEJORAMIENTO DE OBRAS PÚBLICAS RESILIENTES PARA REDUCIR RIESGOS DE DESASTRES EN EL CONTEXTO DEL CAMBIO CLIMÁTICO A NIVEL NACIONAL
+Costo Estimado del Proyecto: RD$ 3,325,000,000.00
+Año de Inicio del Proyecto: 2018
+Año de Finalización del Proyecto: 2024
+Proyecto ID 4528
+
+Nombre del Proyecto: MEJORAMIENTO DE OBRAS PUBLICAS RESILIENTES PARA REDUCIR RIESGOS DE DESASTRES EN EL CONTEXTO DEL CAMBIO CLIMÁTICO A NIVEL NACIONAL
+Costo Estimado del Proyecto: RD$ 1,153,900,000.00
+Año de Inicio del Proyecto: 2020
+Año de Finalización del Proyecto: 2024","Currently, there are two ongoing projects in the Project Bank of the Dominican Republic up to 2024 aimed at mitigating the effects of climate change:
+
+Project ID 4230
+
+Project Name: IMPROVEMENT OF RESILIENT PUBLIC WORKS TO REDUCE DISASTER RISKS IN THE CONTEXT OF CLIMATE CHANGE AT THE NATIONAL LEVEL
+Estimated Project Cost: RD$ 3,325,000,000.00
+Project Start Year: 2018
+Project End Year: 2024
+Project ID 4528
+
+Project Name: IMPROVEMENT OF RESILIENT PUBLIC WORKS TO REDUCE DISASTER RISKS IN THE CONTEXT OF CLIMATE CHANGE AT THE NATIONAL LEVEL
+Estimated Project Cost: RD$ 1,153,900,000.00
+Project Start Year: 2020
+Project End Year: 2024",,,
+5,DOM,¿Existen proyectos de reforestación actualmente en ejecución en República Dominicana para el año 2024 y cuál es su presupuesto asignado?,"Are there reforestation projects currently being implemented in the Dominican Republic in 2024, and what is their allocated budget?",select * from Proyecto where objetivogeneral like '%reforesta%' or NombreProyecto like '%reforesta%',"ACTUALIZACIÓN DE TECNOLOGÍAS PARA COMPETITIVIDAD DEL SECTOR AGRO EXPORTADOR EN LA RD - 160960071.00
+MANEJO DE PAISAJES PRODUCTIVOS INTEGRADOS DE LAS CUENCAS DE LOS RÍOS YAQUE DEL NORTE Y YUNA - 253071084.00
+RECONSTRUCCIÓN DE PLAZA DE VENDEDORES EN EL PUEBLO LOS PESCADORES  MUNICIPIO LAS TERRENAS  PROVINCIA SAMANA - 243331263.83
+RECUPERACION DE LOS RECURSOS NATURALES EN LAS  SUB CUENCAS JAMAO Y VERAGUA - 750064088.00
+RESTAURACIÓN DE LA CUENCA  DEL RÍO OCOA Y SU  COSTA EN LA PROVINCIA SAN JOSÉ DE OCOA. - 160650600.00","Sí, existen proyectos de reforestación que se están ejecutando en la República Dominicana en 2024. Aquí tienes la información sobre uno de ellos:
+ACTUALIZACIÓN DE TECNOLOGÍAS PARA COMPETITIVIDAD DEL SECTOR AGRO EXPORTADOR EN LA RD, con un monto asignado de RD$ 160960071.00
+MANEJO DE PAISAJES PRODUCTIVOS INTEGRADOS DE LAS CUENCAS DE LOS RÍOS YAQUE DEL NORTE Y YUNA, con un monto asignado de RD$ 253071084.00
+RECONSTRUCCIÓN DE PLAZA DE VENDEDORES EN EL PUEBLO LOS PESCADORES  MUNICIPIO LAS TERRENAS  PROVINCIA SAMANA, con un monto asignado de RD$ 243331263.83
+RECUPERACION DE LOS RECURSOS NATURALES EN LAS  SUB CUENCAS JAMAO Y VERAGUA, con un monto asignado de RD$ 750064088.00
+RESTAURACIÓN DE LA CUENCA  DEL RÍO OCOA Y SU  COSTA EN LA PROVINCIA SAN JOSÉ DE OCOA., con un monto asignado de RD$ 160650600.00","Yes, there are reforestation projects being implemented in the Dominican Republic in 2024. Here is information about one of them:
+
+UPDATE OF TECHNOLOGIES FOR COMPETITIVENESS OF THE AGRO-EXPORT SECTOR IN THE DR, with an allocated amount of RD$ 160,960,071.00
+
+MANAGEMENT OF INTEGRATED PRODUCTIVE LANDSCAPES OF THE YAQUE DEL NORTE AND YUNA RIVER BASINS, with an allocated amount of RD$ 253,071,084.00
+
+RECONSTRUCTION OF THE VENDORS' PLAZA IN THE VILLAGE OF LOS PESCADORES, LAS TERRENAS MUNICIPALITY, SAMANA PROVINCE, with an allocated amount of RD$ 243,331,263.83
+
+RECOVERY OF NATURAL RESOURCES IN THE JAMAO AND VERAGUA SUB-BASINS, with an allocated amount of RD$ 750,064,088.00
+
+RESTORATION OF THE OCOA RIVER BASIN AND ITS COAST IN SAN JOSÉ DE OCOA PROVINCE, with an allocated amount of RD$ 160,650,600.00",,,
+6,DOM,¿En qué provincias de República Dominicana hay proyectos de inversión que benefician a las madres jefas de hogar al 2024 y cuál es el monto asignado?,"In which provinces of the Dominican Republic are there investment projects benefiting mothers who are heads of household in 2024, and what is the allocated amount?","select distinct IdProyecto, NombreProyecto 
+from dbo.VwDatosAbiertosProyectos_static 
+where NombreProyecto like '%mujer%'","nombreprovincia
+AZUA
+DAJABÓN
+DISTRITO NACIONAL
+ELÍAS PIÑA
+INDEPENDENCIA
+MONTE CRISTI
+PEDERNALES
+SAN JOSÉ DE OCOA
+SANTIAGO
+SANTO DOMINGO
+VALVERDE","LAs provincvias que tienen proyectos de inversión que benefician a las mujeres jefas de hogar se encuentran en AZUA,DAJABÓN,DISTRITO NACIONAL,ELÍAS PIÑA,INDEPENDENCIA,MONTE CRISTI,PEDERNALES,SAN JOSÉ DE OCOA,SANTIAGO,SANTO DOMINGO y VALVERDE","The provinces with investment projects benefiting women heads of households are located in AZUA, DAJABÓN, DISTRITO NACIONAL, ELÍAS PIÑA, INDEPENDENCIA, MONTE CRISTI, PEDERNALES, SAN JOSÉ DE OCOA, SANTIAGO, SANTO DOMINGO, and VALVERDE.",,,
+7,DOM,En Santo Domingo ¿qué proyectos activos existen que beneficien a las mujeres que quieren emprender?,"In Santo Domingo, what active projects exist that benefit women who want to undertake entrepreneurship?","select distinct IdProyecto, NombreProyecto 
+from dbo.VwDatosAbiertosProyectos_static 
+where NombreProyecto like '%mujer%emprende%'","IdProyecto	NombreProyecto
+4459	CONSTRUCCIÓN CENTRO DE CAPACITACIÓN DE MUJERES EMPRENDEDORAS Y CANCHA DE BALONCESTO  DISTRITO MUNICIPAL PALMAR DE OCOA  PROVINCIA AZU","En Santo domingo se encuentra el proyecto CONSTRUCCIÓN CENTRO DE CAPACITACIÓN DE MUJERES EMPRENDEDORAS Y CANCHA DE BALONCESTO, DISTRITO MUNICIPAL PALMAR DE OCOA, PROVINCIA AZU, que beneficia a las mujeres que quieren emprender","In Santo Domingo, there is the project ""CONSTRUCTION OF THE TRAINING CENTER FOR WOMEN ENTREPRENEURS AND BASKETBALL COURT, PALMAR DE OCOA MUNICIPAL DISTRICT, AZUA PROVINCE,"" which benefits women who want to start businesses.",,,
+8,DOM,"En los últimos 5 años, ¿qué sector económico en República Dominicana ha recibido mayor monto de inversión y qué porcentaje representa del total de la inversión pública?","In the last 5 years, which economic sector in the Dominican Republic has received the highest amount of investment, and what percentage does it represent of the total public investment?","SELECT sector, 
+SUM(CAST(costoestimadoproyecto AS FLOAT)) AS valor_total 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(etapaactual) = 'ejecución' 
+AND CAST(AnioEjecucionPptal AS INT) >= year(getdate())-5 
+GROUP BY sector 
+order by 2 desc","sector	valor_total
+Educación	9132625041008.78
+Justicia  Orden Público y Seguridad	7403576555470.07
+Protección de la biodiversidad y ordenación de desechos	4702300573540","En los últimos 5 años, el sector económico en la República Dominicana que ha recibido los mayores montos de inversión pública es el de Educación con RD$ 9.132.625.041.008,78, Justicia Orden Público y Seguridad con RD$ 7.403.576.555.470,07 y
+Protección de la biodiversidad y ordenación de desechos con RD$ 4.702.300.573.540","In the last 5 years, the economic sector in the Dominican Republic that has received the highest amounts of public investment is Education with RD$ 9,132,625,041,008.78, followed by Justice, Public Order, and Security with RD$ 7,403,576,555,470.07, and Biodiversity Protection and Waste Management with RD$ 4,702,300,573,540.",,,
+9,DOM,¿Qué variación presupuestaria anual relacionada con proyectos de inversión ha experimentado el sector salud desde el inicio de la pandemia en 2021 hasta la fecha actual?,What annual budget variation related to investment projects has the healthcare sector experienced since the beginning of the pandemic in 2021 up to the current date?,"""WITH proyectos_salud AS
+  (SELECT DISTINCT IdProyecto,
+                   CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AS AnioInicio,
+                   CAST(ltrim(rtrim(AnioFinProyecto)) AS int) AS AnioFin,
+                   ISNULL(CAST(CostoEstimadoProyecto AS float), 0) AS CostoEstimado,
+                   ISNULL(CAST(valorprogramado AS float), 0) AS ValorProgramado,
+                   ISNULL(CAST(valorejecutado AS float), 0) AS ValorEjecutado
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(Sector)) = dbo.RemoverAcentos(LOWER('salud'))
+     AND CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) >= 2021 ),
+     presupuesto_anual AS
+  (SELECT AnioInicio AS Anio,
+          SUM(CostoEstimado) AS TotalCostoEstimado,
+          SUM(ValorProgramado) AS TotalValorProgramado,
+          SUM(ValorEjecutado) AS TotalValorEjecutado
+   FROM proyectos_salud
+   GROUP BY AnioInicio)
+SELECT Anio,
+       TotalCostoEstimado,
+       TotalValorProgramado,
+       TotalValorEjecutado
+FROM presupuesto_anual
+ORDER BY Anio""","Desde el inicio de la pandemia en 2021, el presupuesto anual para proyectos de inversión en el sector salud ha variado de la siguiente manera: en 2021 fue de RD$ 5.423.316.481, en 2022 fue de RD$ 6.107.814.010, en 2023 fue de RD$ 6.616.729.900,23 y en 2024 es de RD$ 425.739.482","""Has preguntado: ¿Qué variación de presupuesto anual relacionado a proyectos de inversión ha tenido el sector salud, desde el inicio de pandemia en 2021 a la fecha actual? A continuación, se presenta la variación del presupuesto anual relacionado a proyectos de inversión en el sector salud desde el inicio de la pandemia en 2021 hasta la fecha actual:
+Año 2021:
+Total Costo Estimado: 6,858,362,567.00
+Total Valor Programado: 1,048,167,256.51
+Total Valor Ejecutado: 919,196,136.72
+Año 2022:
+Total Costo Estimado: 58,857,492,527.00
+Total Valor Programado: 1,359,732,775.93
+Total Valor Ejecutado: 1,243,630,572.82
+Año 2023:
+Total Costo Estimado: 22,019,522.57
+Total Valor Programado: 5,171,861.00
+Total Valor Ejecutado: 3,171,861.47
+Hay al menos 15 registros de un total de 3 registros.""","""Have you asked: What variation in the annual budget related to investment projects has the health sector had, from the beginning of the pandemic in 2021 to the current date? Below is the variation in the annual budget related to investment projects in the health sector from the beginning of the pandemic in 2021 to the current date: Year 2021: Total Estimated Cost: 6,858,362,567.00 Total Programmed Value: 1,048,167,256.51 Total Executed Value: 919,196,136.72 Year 2022: Total Estimated Cost: 58,857,492,527.00 Total Programmed Value: 1,359,732,775.93 Total Executed Value: 1,243,630,572.82 Year 2023: Total Estimated Cost: 22,019,522.57 Total Programmed Value: 5,171,861.00 Total Executed Value: 3,171,861.47 There are at least 15 records out of a total of 3 records.""",,,
+10,DOM,¿Cuánta inversión en infraestructura vial se ha ejecutado en 2023 y 2024 en República Dominicana?,How much investment in road infrastructure has been executed in 2023 and 2024 in the Dominican Republic?,"SELECT sum(CAST(valorejecutado AS float)) AS recursos_infraestructura_vial
+from (select distinct idproyecto,valorejecutado
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+WHERE LOWER(sector) = 'transporte'
+AND CAST(AnioEjecucionPptal AS INT) IN (2023,
+2024)) subquery","En 2023 y 2024, se han ejecutado recursos en infraestructura vial en República Dominicana por un valor total de RD$ 47.771.552.133","Respuesta incorrecta.
+
+En 2023 y 2024 se han ejecutado RD$ 47.771.552.133,44 en infraestructura vial en República Dominicana.","Wrong answer. In 2023 and 2024, RD$47,771,552,133.44 have been executed in road infrastructure in the Dominican Republic.",,,
+11,DOM,¿Qué sectores y entidades ejecutoras tuvieron el menor porcentaje de ejecución de recursos en República Dominicana en el año 2023?,Which sectors and executing entities had the lowest percentage of resource execution in the Dominican Republic in the year 2023?,"""WITH proyectos_2023 AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(Sector)) AS Sector,
+                   dbo.RemoverAcentos(LOWER(entidadejecutora)) AS EntidadEjecutora,
+                   ISNULL(CAST(avancefinanciero AS float), 0) AS AvanceFinanciero
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE 2023 BETWEEN CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AND CAST(ltrim(rtrim(AnioFinProyecto)) AS int) ),
+     menor_avance_por_sector_entidad AS
+  (SELECT Sector,
+          EntidadEjecutora,
+          MIN(AvanceFinanciero) AS MenorAvanceFinanciero
+   FROM proyectos_2023
+   GROUP BY Sector,
+            EntidadEjecutora)
+SELECT Sector,
+       EntidadEjecutora,
+       MenorAvanceFinanciero
+FROM menor_avance_por_sector_entidad
+ORDER BY MenorAvanceFinanciero ASC"""," Los sectores y entidades ejecutoras con menor porcentaje de ejecución de recursos en República Dominicana en el año 2023 son los siguientes: 
+-Actividades deportivas recreativas culturales y religiosas, la entidad comision presidencial de apoyo al desarrollo provincial con 0% de ejecución
+-Administración general, la entidad ministerio de obras publicas y comunicaciones con 0% de ejecución
+-Agropecuaria caza pesca y silvicultura, la entidad ministerio de obras publicas y comunicaciones con 0% de ejecución","""Has preguntado: ¿Cuáles son los sectores y entidades ejecutoras que han tenido menor porcentaje de ejecución de recursos en República Dominicana en el año 2023? Los sectores y entidades ejecutoras con menor porcentaje de ejecución de recursos en República Dominicana en el año 2023 son los siguientes:
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal de Galván, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal de La Ciénaga Barahona, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal de Río Limpio, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal El Llano, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal Jorgillo, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal Peralta, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Ayuntamiento Municipal Sabana Higuero, Porcentaje de Ejecución: 0.0%
+Sector: Actividades deportivas, recreativas, culturales y religiosas, Entidad Ejecutora: Comisión Presidencial de Apoyo al Desarrollo Provincial, Porcentaje de Ejecución: 0.0%
+Sector: Administración general, Entidad Ejecutora: Comisión Presidencial de Apoyo al Desarrollo Provincial, Porcentaje de Ejecución: 0.0%
+Sector: Justicia, orden público y seguridad, Entidad Ejecutora: Comisión Presidencial de Apoyo al Desarrollo Provincial, Porcentaje de Ejecución: 0.0%
+Sector: Transporte, Entidad Ejecutora: Comisión Presidencial de Apoyo al Desarrollo Provincial, Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Comisión Presidencial de Apoyo al Desarrollo Provincial, Porcentaje de Ejecución: 0.0%
+Sector: Otros servicios económicos, Entidad Ejecutora: Comité Ejecutor de Infraestructura en Zonas Turísticas (CEIZTUR), Porcentaje de Ejecución: 0.0%
+Sector: Transporte, Entidad Ejecutora: Comité Ejecutor de Infraestructura en Zonas Turísticas (CEIZTUR), Porcentaje de Ejecución: 0.0%
+Sector: Vivienda y servicios comunitarios, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de Puerto Plata, Porcentaje de Ejecución: 0.0%
+Hay al menos 15 registros de un total de 145 registros.""","""Have you asked: What are the sectors and executing entities that have had the lowest percentage of resource execution in the Dominican Republic in the year 2023? The sectors and executing entities with the lowest percentage of resource execution in the Dominican Republic in the year 2023 are the following: Sector: Housing and community services, Executing Entity: Municipal Council of Galván, Percentage of Execution: 0.0% Sector: Housing and community services, Executing Entity: Municipal Council of La Ciénaga Barahona, Percentage of Execution: 0.0% Sector: Housing and community services, Executing Entity: Municipal Council of Río Limpio, Execution Percentage: 0.0% Sector: Housing and community services, Executing Entity: El Llano Municipal Council, Execution Percentage: 0.0% Sector: Housing and community services, Executing Entity: City Council Municipal Jorgillo, Execution Percentage: 0.0% Sector: Housing and community services, Executing Entity: Peralta Municipal Council, Execution Percentage: 0.0% Sector: Housing and community services, Executing Entity: Sabana Higuero Municipal Council, Execution Percentage: 0.0% Sector: Sports, recreational, cultural and religious activities, Executing Entity: Presidential Commission to Support Provincial Development, Percentage of Execution: 0.0% Sector: General Administration, Executing Entity: Presidential Commission to Support Provincial Development, Percentage of Execution: 0.0% Sector: Justice, public order and security, Executing Entity: Presidential Commission to Support Provincial Development, Percentage of Execution: 0.0% Sector: Transportation, Executing Entity: Presidential Commission to Support Provincial Development, Percentage of Execution: 0.0% Sector: Housing and community services, Executing Entity: Presidential Commission to Support Provincial Development, Execution Percentage: 0.0% Sector: Other economic services, Executing Entity: Executing Committee for Infrastructure in Tourist Areas (CEIZTUR), Execution Percentage: 0.0% Sector: Transportation , Executing Entity: Executing Committee for Infrastructure in Tourist Areas (CEIZTUR), Execution Percentage: 0.0% Sector: Housing and community services, Executing Entity: Puerto Plata Aqueduct and Sewer Corporation, Execution Percentage: 0.0% There are at least 15 records of a total of 145 records.""",,,
+12,DOM,¿Cuántos proyectos y qué porcentaje del total de proyectos del Banco de Proyectos de República Dominicana han sido paralizados o suspendidos?,How many projects and what percentage of the total projects in the Project Bank of the Dominican Republic have been halted or suspended?,"WITH total_proyectos AS
+  (SELECT DISTINCT IdProyecto
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static),
+     proyectos_paralizados AS
+  (SELECT DISTINCT IdProyecto
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(EtapaActual)) = dbo.RemoverAcentos(LOWER('paralizado')) )
+SELECT
+  (SELECT COUNT(*)
+   FROM proyectos_paralizados) AS cantidad_proyectos_paralizados,
+
+  (SELECT COUNT(*)
+   FROM proyectos_paralizados) * 100.0 /
+  (SELECT COUNT(*)
+   FROM total_proyectos) AS porcentaje_proyectos_paralizados","En la República Dominicana, hay 400 proyectos paralizados, lo que representa el 16.5% del total de 2,424 proyectos en el banco de proyectos.","Has preguntado: ¿Qué cantidad y porcentaje de proyectos en República Dominicana del total de proyectos en el banco de proyectos, han sido paralizados o suspendidos? En República Dominicana, hay un total de 400 proyectos que han sido paralizados o suspendidos. Esto representa el 16.50% del total de proyectos en el banco de proyectos.
+Cantidad de proyectos paralizados: 400
+Porcentaje de proyectos paralizados: 16.50%
+Hay al menos 15 registros de un total de 1 registros.","Have you asked: What number and percentage of projects in the Dominican Republic of the total projects in the project bank have been paralyzed or suspended? In the Dominican Republic, there are a total of 400 projects that have been paralyzed or suspended. This represents 16.50% of the total projects in the project bank. Number of paralyzed projects: 400 Percentage of paralyzed projects: 16.50% There are at least 15 records out of a total of 1 records.",,,
+13,DOM,"En los últimos cuatro años, ¿cuántos proyectos en República Dominicana han recibido más recursos de los originalmente previstos para su ejecución?","Over the last four years, how many projects in the Dominican Republic have received more resources than originally planned for their execution?","SELECT COUNT(*) AS proyectos_con_mas_recursos 
+from (select distinct IdProyecto, AnioEjecucionPptal, valorejecutado, valorprogramado 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static) subquery 
+WHERE CAST(AnioEjecucionPptal AS INT) >= YEAR(GETDATE()) - 4 
+AND CAST(valorejecutado AS FLOAT) > CAST(valorprogramado AS FLOAT)","En los últimos cuatro años, 441 proyectos han recibido más recursos de los inicialmente programados para su ejecución en República Dominicana.","Respuesta incorrecta.
+
+Al ajustar el query y no repetir proyectos, la cantidad de proyectos es inferior","Wrong answer. By adjusting the query and not repeating projects, the number of projects is lower",,,
+14,DOM,¿Qué porcentaje de proyectos de cada sector tienen un avance financiero mayor al 100% y un avance físico menor al 100%?,What percentage of projects for each sector have financial progress greater than 100% and physical progress less than 100%?,"WITH proyectos_avance AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(Sector)) AS Sector,
+                   CAST(avancefinanciero AS float) AS avance_financiero,
+                   CAST(ejecutado AS float) / NULLIF(CAST(meta AS float), 0) * 100 AS avance_fisico
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static),
+     proyectos_filtrados AS
+  (SELECT Sector,
+          COUNT(DISTINCT IdProyecto) AS total_proyectos,
+          SUM(CASE
+                  WHEN avance_financiero > 100
+                       AND avance_fisico < 100 THEN 1
+                  ELSE 0
+              END) AS proyectos_condicion
+   FROM proyectos_avance
+   GROUP BY Sector)
+SELECT Sector,
+       (proyectos_condicion * 100.0 / total_proyectos) AS porcentaje_proyectos
+FROM proyectos_filtrados
+ORDER BY porcentaje_proyectos DESC","Has preguntado: ¿Qué porcentaje de proyectos por cada sector, tienen un avance financiero superior al 100% y un avance físico inferior al 100%? Hay al menos 15 registros de un total de 15 registros. A continuación, se muestra el porcentaje de proyectos por sector que tienen un avance financiero superior al 100% y un avance físico inferior al 100%:","Has preguntado: ¿Qué porcentaje de proyectos por cada sector, tienen un avance financiero superior al 100% y un avance físico inferior al 100%? Hay al menos 15 registros de un total de 15 registros. A continuación, se muestra el porcentaje de proyectos por sector que tienen un avance financiero superior al 100% y un avance físico inferior al 100%:",Have you asked: What percentage of projects for each sector have financial progress greater than 100% and physical progress less than 100%? There are at least 15 records out of a total of 15 records. Below is the percentage of projects by sector that have financial progress greater than 100% and physical progress less than 100%:,,,
+15,DOM,"En la provincia de Santiago Rodríguez en República Dominicana, ¿qué proyectos de inversión se ejecutan actualmente en beneficio de las personas mayores?","In the province of Santiago Rodríguez in the Dominican Republic, which investment projects are currently being implemented to benefit senior citizens?","WITH proyectos_santiago_rodriguez AS
+  (SELECT DISTINCT IdProyecto,
+                   NombreProyecto,
+                   EtapaActual,
+                   Sector,
+                   NombreProvincia
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(NombreProvincia)) LIKE '%santiago rodriguez%'
+     AND dbo.RemoverAcentos(LOWER(EtapaActual)) = dbo.RemoverAcentos(LOWER('ejecucion'))
+     AND (dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%ancianos%'
+          OR dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%tercera edad%'
+          OR dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%adultos mayores%'
+          OR dbo.RemoverAcentos(LOWER(meta)) LIKE '%ancianos%'
+          OR dbo.RemoverAcentos(LOWER(meta)) LIKE '%tercera edad%'
+          OR dbo.RemoverAcentos(LOWER(meta)) LIKE '%adultos mayores%') )
+SELECT IdProyecto,
+       NombreProyecto,
+       EtapaActual,
+       Sector,
+       NombreProvincia
+FROM proyectos_santiago_rodriguez
+ORDER BY IdProyecto","Has preguntado: ¿En la provincia de Santiago Rodríguez en República Dominicana, qué proyectos de inversión se están ejecutando actualmente y que beneficien a personas de la tercera edad? Actualmente, en la provincia de Santiago Rodríguez, se está ejecutando el siguiente proyecto de inversión que beneficia a personas de la tercera edad:
+Nombre del Proyecto: CONSTRUCCIÓN CASA HOGAR DE ANCIANOS EN SABANETA, MUNICIPIO SAN IGNACIO DE SABANETA, PROVINCIA SANTIAGO RODRIGUEZ
+Etapa Actual: EJECUCIÓN
+Sector: Protección social
+Hay un total de 1 registro.","Has preguntado: ¿En la provincia de Santiago Rodríguez en República Dominicana, qué proyectos de inversión se están ejecutando actualmente y que beneficien a personas de la tercera edad? Actualmente, en la provincia de Santiago Rodríguez, se está ejecutando el siguiente proyecto de inversión que beneficia a personas de la tercera edad:
+Nombre del Proyecto: CONSTRUCCIÓN CASA HOGAR DE ANCIANOS EN SABANETA, MUNICIPIO SAN IGNACIO DE SABANETA, PROVINCIA SANTIAGO RODRIGUEZ
+Etapa Actual: EJECUCIÓN
+Sector: Protección social
+Hay un total de 1 registro.","Have you asked: In the province of Santiago Rodríguez in the Dominican Republic, what investment projects are currently being carried out that benefit the elderly? Currently, in the province of Santiago Rodríguez, the following investment project that benefits senior citizens is being carried out: Name of the Project: CONSTRUCTION OF ELDERLY HOME IN SABANETA, SAN IGNACIO DE SABANETA MUNICIPALITY, SANTIAGO RODRIGUEZ PROVINCE Current Stage: EXECUTION Sector: Social protection There is a total of 1 record.",,,
+16,DOM,¿En qué provincias de República Dominicana se han realizado inversiones relacionadas a estadios de béisbol en el 2023?,In which provinces of the Dominican Republic have investments related to baseball stadiums been made in 2023?,"WITH proyectos_estadios_beisbol AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(NombreProyecto)) AS NombreProyecto,
+                   dbo.RemoverAcentos(LOWER(NombreProvincia)) AS NombreProvincia,
+                   CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AS AnioInicio,
+                   CAST(ltrim(rtrim(AnioFinProyecto)) AS int) AS AnioFin
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%estadio de beisbol%'
+     AND (2023 BETWEEN CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AND CAST(ltrim(rtrim(AnioFinProyecto)) AS int)) )
+SELECT NombreProvincia
+FROM proyectos_estadios_beisbol
+GROUP BY NombreProvincia
+ORDER BY NombreProvincia","NombreProvincia
+distrito nacional
+peravia
+san jose de ocoa","Has preguntado: ¿En qué provincias se ha realizado inversiones relacionadas con estadios de béisbol en República Dominicana en el 2023? Las inversiones relacionadas con estadios de béisbol en República Dominicana en el 2023 se han realizado en las siguientes provincias:
+Distrito Nacional
+Peravia
+San José de Ocoa
+Total de registros: 3","You asked: ""In which provinces have investments related to baseball stadiums been made in the Dominican Republic in 2023?"" Investments related to baseball stadiums in the Dominican Republic in 2023 have been made in the following provinces:
+
+Distrito Nacional
+Peravia
+San José de Ocoa
+Total records: 3",,,
+17,DOM,¿Cuánto financiamiento y qué monto se ha destinado para la construcción de la línea del metro en República Dominicana en los últimos 4 años?,How much funding and what amount has been allocated for the metro line construction in the Dominican Republic over the last 4 years?,"WITH proyectos_metro AS
+  (SELECT DISTINCT IdProyecto,
+                   CAST(CostoEstimadoProyecto AS float) AS CostoEstimado,
+                   CAST(valorprogramado AS float) AS ValorProgramado,
+                   CAST(valorejecutado AS float) AS ValorEjecutado,
+                   CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AS AnioInicio,
+                   CAST(ltrim(rtrim(AnioFinProyecto)) AS int) AS AnioFin
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%linea%metro%'
+     AND CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) >= YEAR(GETDATE()) - 4 )
+SELECT COUNT(DISTINCT IdProyecto) AS CantidadProyectos,
+       SUM(CostoEstimado) AS TotalCostoEstimado,
+       SUM(ValorProgramado) AS TotalValorProgramado,
+       SUM(ValorEjecutado) AS TotalValorEjecutado
+FROM proyectos_metro
+ORDER BY TotalCostoEstimado DESC","En los últimos 4 años, se han asignado recursos y valores para las obras de la línea de metro en República Dominicana de la siguiente manera:
+Cantidad de Proyectos: 3
+Total del Costo Estimado: 236,864,583,436.0
+Total del Valor Programado: 24,281,597,293.18
+Total del Valor Ejecutado: 22,131,671,918.87
+","""Has preguntado: ¿Cuántos recursos y qué valor se ha asignado para las obras de la línea de metro en República Dominicana en los últimos 4 años? En los últimos 4 años, se han asignado recursos y valores para las obras de la línea de metro en República Dominicana de la siguiente manera:
+Cantidad de Proyectos: 3
+Total del Costo Estimado: 236,864,583,436.0
+Total del Valor Programado: 24,281,597,293.18
+Total del Valor Ejecutado: 22,131,671,918.87
+Hay al menos 15 registros de un total de 1 registros.""","""Have you asked: How many resources and what value have been assigned for the works of the metro line in the Dominican Republic in the last 4 years? In the last 4 years, resources and values have been assigned for the works of the metro line in the Dominican Republic as follows: Number of Projects: 3 Total Estimated Cost: 236,864,583,436.0 Total Programmed Value: 24,281,597,293.18 Total Executed Value: 22,131,671,918.87 There are at least 15 records out of a total of 1 records.""",,,
+18,DOM,¿Cuál es la provincia que menos recursos de inversión ha recibido durante los años 2023 y 2024?,What is the province that has received the least amount of investment resources during the years 2023 and 2024?,"SELECT TOP 1 LOWER(nombreprovincia) AS provincia, 
+SUM(CAST(valorprogramado AS FLOAT)) AS total_inversion, 
+SUM(CAST(valorejecutado AS FLOAT)) AS total_ejecutado 
+from (select distinct IdProyecto, nombreprovincia, valorprogramado, valorejecutado 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE CAST(AnioEjecucionPptal AS INT) IN (2023, 
+2024)) subquery 
+GROUP BY LOWER(nombreprovincia) 
+ORDER BY total_inversion ASC","La provincia que ha recibido menor cantidad de recursos de inversión durante los años 2023 y 2024 es San José de Ocoa, con una inversión total de 18,051,500,486.71 pesos.","La respuesta no es correcta
+
+Al filtrar por año de inicio no se suman los valores programados y/o ejecutados de los años seleccionados y solo tiene en cuenta proyectos que inician en esa fecha. tampoco tiene en cuenta el distinct para no inlfar el valor de los proyectos","The answer is not correct When filtering by start year, the programmed and/or executed values of the selected years are not added and it only takes into account projects that start on that date. It also does not take into account the distinct so as not to inflate the value of the projects",,,
+29,DOM,¿En qué etapa se encuentran los proyectos que se iniciaron antes del año 2000?,¿En qué etapa se encuentran los proyectos que se iniciaron antes del año 2000?,"SELECT LOWER(CAST(etapaactual AS NVARCHAR(MAX))) AS etapa_actual FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static WHERE CAST(AnioInicioProyecto AS INT) < 2000 GROUP BY LOWER(CAST(etapaactual AS NVARCHAR(MAX)))
+
+Correcta",Los proyectos que se iniciaron antes del año 2000 se encuentran en las etapas de reevaluación y paralizado.,"Has preguntado: ¿En qué etapa se encuentran los proyectos que se iniciaron antes del año 2000? Los proyectos que se iniciaron antes del año 2000 se encuentran en las siguientes etapas:
+Proyecto con ID 1055: paralizado
+Proyecto con ID 1082: reevaluación
+Hay un total de 2 registros",Have you asked: What stage are the projects that started before the year 2000? Projects that were started before the year 2000 are in the following stages: Project with ID 1055: paralyzed Project with ID 1082: re-evaluation There are a total of 2 records,,"WITH proyectos_antes_2000 AS 
+(SELECT DISTINCT IdProyecto, 
+NombreProyecto, 
+dbo.RemoverAcentos(LOWER(EtapaActual)) AS EtapaActual, 
+CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AS AnioInicio 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) < 2000 ) 
+SELECT IdProyecto, 
+NombreProyecto, 
+EtapaActual 
+FROM proyectos_antes_2000 
+ORDER BY IdProyecto","Has preguntado: ¿En qué etapa se encuentran los proyectos que se iniciaron antes del año 2000? Los proyectos que se iniciaron antes del año 2000 se encuentran en las siguientes etapas: 
+Proyecto con ID 1055: paralizado 
+Proyecto con ID 1082: reevaluación 
+Hay un total de 2 registros."
+30,DOM,"¿Cuántos proyectos hay actualmente en ejecución en el Distrito Nacional? ¿Cuántos de ellos están siendo ejecutados por el Ministerio de Vivienda, Hábitat y Construcción?","How many projects are currently underway in the National District? How many of them are being executed by the Ministry of Housing, Habitat, and Building?","SELECT COUNT(*) AS total_proyectos_en_marcha, 
+SUM(CASE 
+WHEN LOWER(cast(entidadejecutora AS nvarchar(MAX))) = 'MINISTERIO DE LA VIVIENDA HABITAT Y EDIFICACIONES' THEN 1 
+ELSE 0 
+END) AS proyectos_por_ministerio_vivienda 
+from 
+(select distinct IdProyecto, entidadejecutora 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(cast(tipoproyecto AS nvarchar(MAX))) = 'nacional' 
+AND LOWER(cast(etapaactual AS nvarchar(MAX))) = 'ejecución') subquery","Actualmente, hay un total de 112 proyectos en marcha a nivel de distrito nacional. De estos, 0 proyectos están siendo ejecutados por el Ministerio de Vivienda, Hábitat y Edificación.
+Total de proyectos en marcha: 112",Respuesta incorrecta. Se arma mal nombre de entidad ejecutora y no hace distinct inflando el numero de proyectos,"Wrong answer. The bad name of the executing entity is created and it does not make any difference, inflating the number of projects",,,
+31,DOM,¿Cuántos proyectos son para la rehabilitación de acueductos? ¿En qué etapa se encuentran actualmente?,How many projects are for the rehabilitation of aqueducts? At what stage are they currently?,"WITH proyectos_rehabilitacion_acueductos AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(NombreProyecto)) AS NombreProyecto,
+                   dbo.RemoverAcentos(LOWER(EtapaActual)) AS EtapaActual
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%rehabilitacion%'
+     AND dbo.RemoverAcentos(LOWER(NombreProyecto)) LIKE '%acueducto%' )
+SELECT EtapaActual,
+       COUNT(IdProyecto) AS CantidadProyectos
+FROM proyectos_rehabilitacion_acueductos
+GROUP BY EtapaActual
+ORDER BY CantidadProyectos DESC","Actualmente, hay un total de 36 proyectos para la rehabilitación de acueductos. Las etapas en las que se encuentran son las siguientes:
+Reevaluación: 16 proyectos
+Ejecución: 13 proyectos
+Paralizado: 7 proyectos ","Has preguntado: ¿Cuántos proyectos son para la rehabilitación de acueductos? ¿En qué etapa se encuentran? Actualmente, hay un total de 36 proyectos para la rehabilitación de acueductos. Las etapas en las que se encuentran son las siguientes:
+Reevaluación: 16 proyectos
+Ejecución: 13 proyectos
+Paralizado: 7 proyectos","Have you asked: How many projects are for the rehabilitation of aqueducts? What stage are they in? Currently, there are a total of 36 projects for the rehabilitation of aqueducts. The stages in which they are found are as follows: Reevaluation: 16 projects Execution: 13 projects Paralyzed: 7 projects",,,
+32,DOM,¿Cuántos proyectos se encuentran actualmente en reevaluación en la provincia de La Vega? ¿Cuál es su progreso financiero? ¿Quién es el ejecutor principal?,How many projects are currently under reassessment in the province of La Vega? What is their financial progress? Who is the main executor?,"WITH proyectos_reevaluacion AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(NombreProvincia)) AS NombreProvincia,
+                   dbo.RemoverAcentos(LOWER(EtapaActual)) AS EtapaActual,
+                   CAST(avancefinanciero AS float) AS AvanceFinanciero,
+                   dbo.RemoverAcentos(LOWER(entidadejecutora)) AS EntidadEjecutora
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(NombreProvincia)) LIKE '%la vega%'
+     AND dbo.RemoverAcentos(LOWER(EtapaActual)) = dbo.RemoverAcentos(LOWER('reevaluacion')) )
+SELECT IdProyecto,
+       AvanceFinanciero,
+       EntidadEjecutora
+FROM proyectos_reevaluacion
+ORDER BY AvanceFinanciero DESC","Hay un total de 9 proyectos en estado de reevaluación en la provincia de La Vega. A continuación, se detalla el progreso financiero y el ejecutor principal de cada proyecto:
+Proyecto ID 280: Avance Financiero: 99.0%, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de La Vega
+Proyecto ID 129: Avance Financiero: 64.96%, Entidad Ejecutora: Dirección General de Cooperación Multilateral
+Proyecto ID 3136: Avance Financiero: 55.6%, Entidad Ejecutora: Ministerio de Administración Pública
+Proyecto ID 2820: Avance Financiero: 49.81%, Entidad Ejecutora: Ministerio de la Vivienda, Hábitat y Edificaciones
+Proyecto ID 259: Avance Financiero: 27.92%, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de La Vega
+Proyecto ID 2783: Avance Financiero: 24.57%, Entidad Ejecutora: Ministerio de la Vivienda, Hábitat y Edificaciones
+Proyecto ID 2459: Avance Financiero: 18.2%, Entidad Ejecutora: Gabinete de Políticas Sociales
+Proyecto ID 3126: Avance Financiero: 4.66%, Entidad Ejecutora: Gabinete de Políticas Sociales
+Proyecto ID 4809: Avance Financiero: 0.0%, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de La Vega","Has preguntado: ¿Cuántos proyectos se encuentran en estado de reevaluación en la provincia de La Vega? ¿Cuál es su progreso financiero? ¿Quién es el ejecutor principal? Hay un total de 9 proyectos en estado de reevaluación en la provincia de La Vega. A continuación, se detalla el progreso financiero y el ejecutor principal de cada proyecto:
+Proyecto ID 280: Avance Financiero: 99.0%, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de La Vega
+Proyecto ID 129: Avance Financiero: 64.96%, Entidad Ejecutora: Dirección General de Cooperación Multilateral
+Proyecto ID 3136: Avance Financiero: 55.6%, Entidad Ejecutora: Ministerio de Administración Pública
+Proyecto ID 2820: Avance Financiero: 49.81%, Entidad Ejecutora: Ministerio de la Vivienda, Hábitat y Edificaciones
+Proyecto ID 259: Avance Financiero: 27.92%, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de La Vega
+Proyecto ID 2783: Avance Financiero: 24.57%, Entidad Ejecutora: Ministerio de la Vivienda, Hábitat y Edificaciones
+Proyecto ID 2459: Avance Financiero: 18.2%, Entidad Ejecutora: Gabinete de Políticas Sociales
+Proyecto ID 3126: Avance Financiero: 4.66%, Entidad Ejecutora: Gabinete de Políticas Sociales
+Proyecto ID 4809: Avance Financiero: 0.0%, Entidad Ejecutora: Corporación del Acueducto y Alcantarillado de La Vega","Have you asked: How many projects are in a state of reevaluation in the province of La Vega? What is your financial progress? Who is the main executor? There are a total of 9 projects in a state of reevaluation in the province of La Vega. The financial progress and the main executor of each project are detailed below: Project ID 280: Financial Progress: 99.0%, Executing Entity: La Vega Aqueduct and Sewer Corporation Project ID 129: Financial Progress: 64.96%, Executing Entity: General Directorate of Multilateral Cooperation Project ID 3136: Financial Advancement: 55.6%, Executing Entity: Ministry of Public Administration Project ID 2820: Financial Advancement: 49.81%, Executing Entity: Ministry of Housing, Habitat and Buildings Project ID 259: Financial Advancement: 27.92%, Executing Entity: La Vega Aqueduct and Sewer Corporation Project ID 2783: Financial Advance: 24.57%, Executing Entity: Ministry of Housing, Habitat and Buildings Project ID 2459: Financial Advance: 18.2%, Executing Entity: Cabinet of Social Policies Project ID 3126: Financial Advancement: 4.66%, Executing Entity: Social Policies Office Project ID 4809: Financial Advancement: 0.0%, Executing Entity: La Vega Aqueduct and Sewer Corporation",,,
+33,DOM,¿Cuántos proyectos actualmente en marcha se espera que se completen el próximo año?,How many projects currently underway are expected to be completed next year?,"SELECT COUNT(*) AS proyectos_en_marcha_que_finalizan_proximo_ano 
+from (select distinct IdProyecto 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(CAST(etapaactual AS NVARCHAR(MAX))) = 'ejecución' 
+AND CAST(AnioFinProyecto AS INT) = YEAR(GETDATE()) + 1) subquery","Actualmente, hay 187 proyectos en marcha que se espera que finalicen el próximo año.",Se espera que 187 proyectos actualmente en marcha se completen el próximo año.,"""How many currently ongoing projects are expected to be completed next year?""
+
+Answer: 187",,,
+34,DOM,¿Cuántos proyectos tienen un valor programado de 19.000.000.000 o más?,"How many projects have a scheduled value of 19,000,000,000 or more?","WITH proyectos_valor_programado AS
+  (SELECT DISTINCT IdProyecto,
+                   NombreProyecto,
+                   CAST(valorprogramado AS float) AS ValorProgramado
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE CAST(ltrim(rtrim(valorprogramado)) AS float) >= 19000000000 )
+SELECT NombreProyecto,
+       SUM(ValorProgramado) AS MontoTotal
+FROM proyectos_valor_programado
+GROUP BY NombreProyecto
+ORDER BY MontoTotal DESC"," Hay 1 proyecto con un valor programado de 19.000.000.000 o más.
+CONSTRUCCIÓN PLANTA DE GENERACION TERMOELECTRICA EN PUNTA CATALINA  BANI  PROV. PERAVIA   por RD$                                                                                                          37.963.937.195",Has preguntado: ¿Cuántos proyectos tienen un valor programado de 19.000.000.000 o más? Hay 1 proyecto con un valor programado de 19.000.000.000 o más.,"Have you asked: How many projects have a programmed value of 19,000,000,000 or more? There is 1 project with a scheduled value of 19,000,000,000 or more.",,,
+36,DOM,"¿Cuántos proyectos del sector agrícola, cinegético, pesquero y forestal se encuentran actualmente paralizados en el país? ¿Quiénes son los principales ejecutores?","How many projects in the agricultural, hunting, fishing and forestry sectors are currently paralyzed in the country? Who are the main executors?","WITH proyectos_agro_paralizados AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(Sector)) AS Sector,
+                   dbo.RemoverAcentos(LOWER(EtapaActual)) AS EtapaActual,
+                   dbo.RemoverAcentos(LOWER(entidadejecutora)) AS EntidadEjecutora
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(Sector)) = dbo.RemoverAcentos(LOWER('agropecuaria caza pesca y silvicultura'))
+     AND dbo.RemoverAcentos(LOWER(EtapaActual)) = dbo.RemoverAcentos(LOWER('paralizado')) )
+SELECT EntidadEjecutora,
+       COUNT(IdProyecto) AS CantidadProyectos
+FROM proyectos_agro_paralizados
+GROUP BY EntidadEjecutora
+ORDER BY CantidadProyectos DESC"," Actualmente, hay un total de 5 proyectos del sector agrícola, cinegético, pesquero y forestal que se encuentran paralizados en el país. Los principales ejecutores de estos proyectos son:
+Ministerio de Agricultura: 4 proyectos
+Mercados Dominicanos de Abasto Agropecuario: 1 proyecto","Has preguntado: ¿Cuántos proyectos del sector agrícola, cinegético, pesquero y forestal se encuentran actualmente paralizados en el país? ¿Quiénes son los principales ejecutores? Actualmente, hay un total de 5 proyectos del sector agrícola, cinegético, pesquero y forestal que se encuentran paralizados en el país. Los principales ejecutores de estos proyectos son:
+Ministerio de Agricultura: 4 proyectos
+Mercados Dominicanos de Abasto Agropecuario: 1 proyecto
+Hay un total de 2 registros.<","Have you asked: How many projects in the agricultural, hunting, fishing and forestry sectors are currently paralyzed in the country? Who are the main executors? Currently, there are a total of 5 projects in the agricultural, hunting, fishing and forestry sectors that are paralyzed in the country. The main executors of these projects are: Ministry of Agriculture: 4 projects Dominican Agricultural Supply Markets: 1 project There are a total of 2 records.<",,,
+37,DOM,¿En qué pueblo de República Dominicana el gobierno invierte más en educación?,In which town in the Dominican Republic does the government invest the most in education?,"WITH proyectos_educacion AS
+  (SELECT DISTINCT IdProyecto,
+                   dbo.RemoverAcentos(LOWER(nombreprovincia)) AS NombreProvincia,
+                   dbo.RemoverAcentos(LOWER(nombremunicipio)) AS NombreMunicipio,
+                   CAST(CostoEstimadoProyecto AS float) AS CostoEstimado
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(Sector)) = dbo.RemoverAcentos(LOWER('educacion')) ),
+     inversion_por_localidad AS
+  (SELECT NombreProvincia,
+          NombreMunicipio,
+          SUM(CostoEstimado) AS InversionTotal
+   FROM proyectos_educacion
+   GROUP BY NombreProvincia,
+            NombreMunicipio)
+SELECT NombreProvincia,
+       NombreMunicipio,
+       InversionTotal
+FROM inversion_por_localidad
+ORDER BY InversionTotal DESC","El gobierno de República Dominicana invierte más en educación en la localidad de Santo Domingo, específicamente en el municipio de Santo Domingo Proyecto Departamental, con una inversión total de RD$ 32,130,606,495","Has preguntado: ¿En qué localidad de República Dominicana el gobierno invierte más en educación? El gobierno de República Dominicana invierte más en educación en la localidad de Santo Domingo, específicamente en el municipio de Santo Domingo Proyecto Departamental, con una inversión total de 32,130,606,495.0 pesos.
+Santo Domingo (Santo Domingo Proyecto Departamental): 32,130,606,495.0 pesos
+Distrito Nacional (Nacionales): 18,619,192,252.0 pesos
+Santiago (Santiago Proyecto Departamental): 11,533,676,229.0 pesos
+San Cristóbal (San Cristóbal Proyecto Departamental): 9,302,150,086.0 pesos
+La Vega (La Vega Proyecto Departamental): 7,304,024,141.0 pesos
+Distrito Nacional (Distrito Nacional Proyecto Departamental): 5,125,720,919.0 pesos
+Puerto Plata (Puerto Plata Proyecto Departamental): 5,088,051,681.0 pesos
+San Pedro de Macorís (San Pedro de Macorís Proyecto Departamental): 4,876,610,842.27 pesos
+La Altagracia (La Altagracia Proyecto Departamental): 4,462,435,509.0 pesos
+Monte Plata (Monte Plata Proyecto Departamental): 4,420,925,897.0 pesos
+Espaillat (Espaillat Proyecto Departamental): 4,077,601,128.0 pesos
+Duarte (Duarte Proyecto Departamental): 3,963,823,338.0 pesos
+Azua (Azua Proyecto Departamental): 3,472,035,203.0 pesos
+San Juan (San Juan Proyecto Departamental): 3,353,057,953.0 pesos
+Barahona (Barahona Proyecto Departamental): 3,302,446,410.09 pesos
+Hay al menos 15 registros de un total de 167 registros.","Have you asked: In which town in the Dominican Republic does the government invest the most in education? The government of the Dominican Republic invests more in education in the town of Santo Domingo, specifically in the municipality of Santo Domingo Departmental Project, with a total investment of 32,130,606,495.0 pesos. Santo Domingo (Santo Domingo Departmental Project): 32,130,606,495.0 pesos National District (National): 18,619,192,252.0 pesos Santiago (Santiago Departmental Project): 11,533,676,229.0 pesos San Cristóbal (San Cristóbal Departmental Project): 9,302,150,086.0 pesos Vega (La Vega Departmental Project): 7,304,024,141.0 pesos National District (National District Departmental Project): 5,125,720,919.0 pesos Puerto Plata (Puerto Plata Departmental Project): 5,088,051,681.0 pesos San Pedro de Macorís (San Pedro de Macorís Departmental Project): 4,876,610,842.27 pesos La Altagracia (La Altagracia Departmental Project): 2,435,509.0 Monte Plata pesos (Monte Plata Departmental Project): 4,420,925,897.0 pesos Espaillat (Espaillat Departmental Project): 4,077,601,128.0 pesos Duarte (Duarte Departmental Project): 3,963,823,338.0 pesos Azua (Azua Departmental Project): 3,472,035,203.0 pesos San Juan (San Juan Departmental Project): 3,353,057,953.0 Barahona pesos (Barahona Departmental Project): 3,302,446,410.09 pesos There are at least 15 records out of a total of 167 records.",,,
+39,DOM,¿En qué año comenzaron la mayoría de los proyectos actualmente en curso?,In which year did most of the currently ongoing projects begin?,"WITH proyectos_en_curso AS
+  (SELECT DISTINCT IdProyecto,
+                   CAST(ltrim(rtrim(AnioInicioProyecto)) AS int) AS AnioInicio
+   FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+   WHERE dbo.RemoverAcentos(LOWER(ltrim(rtrim(EtapaActual)))) = dbo.RemoverAcentos(LOWER('ejecucion')) ),
+     anio_mayoria_proyectos AS
+  (SELECT AnioInicio,
+          COUNT(IdProyecto) AS CantidadProyectos
+   FROM proyectos_en_curso
+   GROUP BY AnioInicio)
+SELECT TOP 1 AnioInicio
+FROM anio_mayoria_proyectos
+ORDER BY CantidadProyectos DESC",La mayoría de los proyectos actualmente en curso comenzaron en el año 2023.,"Has preguntado: ¿En qué año comenzaron la mayoría de los proyectos actualmente en curso? La mayoría de los proyectos actualmente en curso comenzaron en el año 2023.
+Hay al menos 15 registros de un total de 1 registros.",Have you asked: What year did most of the projects currently underway begin? Most of the projects currently underway started in the year 2023. There are at least 15 records out of a total of 1 records.,,,
+42,DOM,¿Qué financia el Tesoro Nacional?,What does the National Treasury finance?,"SELECT distinct lower(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto 
+FROM nuevavisionrd.dbo.vwdatosabiertosproyectos_static 
+WHERE lower(cast(organismofinanciador AS nvarchar(MAX))) = 'tesoro nacional'","El Tesoro Nacional financia varios proyectos importantes en el país. Aquí tienes algunos ejemplos destacados:
+CONSTRUCCIÓN PLANTA DE GENERACION TERMOELECTRICA EN PUNTA CATALINA, BANI, PROV. PERAVIA
+Costo Estimado: 102,963,546,922.0
+Valor Programado: 7,567,603,409.0
+Valor Ejecutado: 21,299,831,929.45
+CONSTRUCCIÓN PRESA DE MONTE GRANDE, REHABILITACION Y COMPLEMENTACION DE LA PRESA DE SABANA YEGUA, PROVINCIA AZUA. En total se financian 2262 proyectos",There are 2262 projects financed totally or parcially by the national treasure ,There are 2262 projects financed totally or partially by the national treasure,,,
+43,DOM,¿Cuál es el monto del proyecto con el menor costo estimado?,What is the amount of the project with the lowest estimated cost?,"SELECT top 1 lower(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto, cast(costoestimadoproyecto AS float) AS menor_costo_estimado 
+FROM nuevavisionrd.dbo.vwdatosabiertosproyectos_static 
+order by cast(costoestimadoproyecto AS float) asc","El monto del proyecto con el menor costo estimado es de 229,316 y el proyecto se llama construcción de aceras y contenes en la sección de higüerito  d. m. sabana higüero  municipio bánica  provincia elías piña.        ","El monto del proyecto con el menor costo estimado es de 229,316 y el proyecto se llama construcción de aceras y contenes en la sección de higüerito  d. m. sabana higüero  municipio bánica  provincia elías piña.        ","The amount of the project with the lowest estimated cost is 229,316 DOP, and the project is called ""Construction of Sidewalks and Curbs in the Higüerito Section, D.M. Sabana Higüero, Municipality of Bánica, Province of Elías Piña.""",,,
+44,DOM,¿Cuál es la diferencia entre el valor total programado de los proyectos en la fase de preinversión y su valor total ejecutado?,What is the difference between the total scheduled value of projects in the pre-investment phase and their total executed value?,"SELECT CAST(SUM(CAST(valorprogramado AS FLOAT)) AS FLOAT) - CAST(SUM(CAST(valorejecutado AS FLOAT)) AS FLOAT) AS diferencia 
+from (select distinct IdProyecto, valorprogramado, valorejecutado 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(nombrefase) = 'pre-inversión') subquery","La diferencia entre el valor total programado de los proyectos en la fase de preinversión y su valor total ejecutado es de 1,004,571,389.33.","La diferencia entre el valor total programado de los proyectos en la fase de preinversión y su valor total ejecutado es de 1,004,571,389.33.","The difference between the total scheduled value of projects in the pre-investment phase and their total executed value is 1,004,571,389.33 DOP.",,,
+45,DOM,¿Cuál es la duración media estimada de los proyectos de protección social actualmente en proceso de reevaluación?,What is the estimated average duration of social protection projects currently under reassessment?,"SELECT AVG(CAST(duracionestimadaproyecto AS FLOAT)) AS duracion_promedio 
+from (select distinct idproyecto, duracionestimadaproyecto 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(sector) = 'protección social' 
+AND LOWER(etapaactual) = 'reevaluacion') subquery", La duración promedio estimada de los proyectos de protección social que se encuentran en reevaluación es de 6.0 meses., La duración promedio estimada de los proyectos de protección social que se encuentran en reevaluación es de 6.0 meses.,The average estimated duration of social protection projects undergoing reassessment is 6.0 months.,,,
+46,DOM,"¿Cuál es el costo estimado de remodelación de oficinas públicas en el municipio de Bani, en la provincia de Peravia?","What is the estimated cost of remodeling public offices in the municipality of Bani, in the province of Peravia?","SELECT lower(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto, 
+cast(costoestimadoproyecto AS float) AS costo_estimado 
+from (select distinct nombreproyecto, costoestimadoproyecto 
+FROM nuevavisionrd.dbo.vwdatosabiertosproyectos_static 
+WHERE lower(nombremunicipio) = ' BANÍ' 
+AND lower(nombreprovincia) = 'peravia' 
+AND lower(nombreproyecto) like '%remodelación de oficinas públicas%') subquery"," El costo estimado de la remodelación de oficinas públicas en el municipio de Bani, provincia de Peravia, es de RD$ 10,710,165.00."," El costo estimado de la remodelación de oficinas públicas en el municipio de Bani, provincia de Peravia, es de RD$ 10,710,165.00.","The estimated cost of remodeling public offices in the municipality of Bani, Peravia Province, is RD$ 10,710,165.00.",,,
+47,DOM,¿Cuál es la duración estimada del proyecto de ampliación del Acueducto Oriental y qué progreso financiero ha logrado?,"What is the estimated duration of the Eastern Aqueduct expansion project, and what financial progress has it achieved?","SELECT LOWER(cast(DuracionEstimadaProyecto AS nvarchar(MAX))) AS duracion_estimada, 
+LOWER(cast(avancefinanciero AS nvarchar(MAX))) AS avance_financiero 
+from (select distinct DuracionEstimadaProyecto, avancefinanciero 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(nombreproyecto) like '%ampliacion%acueducto%oriental%') subquery","Actualmente, no hay información disponible sobre la duración estimada del proyecto de ampliación del Acueducto Oriental ni sobre los avances financieros logrados.","Actualmente, no hay información disponible sobre la duración estimada del proyecto de ampliación del Acueducto Oriental ni sobre los avances financieros logrados.","Currently, there is no available information regarding the estimated duration or financial progress achieved for the Eastern Aqueduct expansion project.",,,
+48,DOM,¿Cuál es el avance financiero del proyecto de recuperación de cobertura vegetal en cuencas hidrográficas de República Dominicana?,"What is the financial progress of the project for recovering vegetation cover in watersheds in the Dominican Republic?
+
+
+","SELECT LOWER(cast(avancefinanciero AS nvarchar(MAX))) AS avance_financiero 
+from (select distinct avancefinanciero 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(cast(nombreproyecto AS nvarchar(MAX))) like '%RECUPERACIÓN DE LA COBERTURA VEGETAL EN CUENCAS HIDROGRÁFICAS DE LA REPÚBLICA DOMINICANA%') subquery","El avance financiero del proyecto de recuperación de cobertura vegetal en cuencas hidrográficas de República Dominicana es el siguiente:
+Avance Financiero: 87.9%
+Avance Financiero: 76.29%","El avance financiero del proyecto de recuperación de cobertura vegetal en cuencas hidrográficas de República Dominicana es el siguiente:
+Avance Financiero: 87.9%
+Avance Financiero: 76.29%","The financial progress of the project for recovering vegetation cover in watershed basins of the Dominican Republic is as follows:
+Financial Progress: 87.9%
+Financial Progress: 76.29%",,,
+50,DOM,¿Cuál es el monto total ejecutado por los proyectos paralizados?,What is the total amount executed by the paralyzed projects?,"SELECT SUM(CAST(valorejecutado AS FLOAT)) AS monto_total_ejecutado 
+from 
+(select distinct idproyecto, anioejecucionpptal, valorejecutado 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(CAST(etapaactual AS NVARCHAR(MAX))) = 'paralizado') unicos","El monto total ejecutado por los proyectos paralizados es de RD$ 90,135,187,098.67","El monto total ejecutado por los proyectos paralizados es de RD$ 90,135,187,098.67","The total amount executed by the stalled projects is RD$ 90,135,187,098.67.",,,
+51,DOM,¿En qué etapa se encuentra el proyecto de actualización de la Encuesta Nacional de Hogares de Propósitos Múltiples (ENHOGAR)? ¿En qué año se espera que esté terminado el proyecto? ¿Quién es el ejecutor principal?,What stage is the project to update the National Multiple Purpose Household Survey (ENHOGAR) at? In what year is the project expected to be completed? Who is the main executor?,"SELECT LOWER(CAST(etapaactual AS NVARCHAR(MAX))) AS etapa_actual,
+CAST(AnioFinProyecto AS NVARCHAR(MAX)) AS anio_fin_proyecto,
+LOWER(CAST(entidadejecutora AS NVARCHAR(MAX))) AS ejecutor_principal
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static
+WHERE LOWER(CAST(NombreProyecto AS NVARCHAR(MAX))) = 'ACTUALIZACIÓN ENCUESTA NACIONAL DE HOGARES DE PROPÓSITOS MÚLTIPLES ( ENHOGAR)'","Actualmente, la información disponible sobre el proyecto de actualización de la Encuesta Nacional de Propósitos Múltiples de Hogares (ENHOGAR) es:
+Etapa del proyecto: reevaluacion
+Año de finalización: 2019
+Ejecutor principal:  oficina nacional de estadistica","Actualmente, la información disponible sobre el proyecto de actualización de la Encuesta Nacional de Propósitos Múltiples de Hogares (ENHOGAR) es:
+Etapa del proyecto: reevaluacion
+Año de finalización: 2019
+Ejecutor principal:  oficina nacional de estadistica","Currently, the available information on the project for updating the National Household Multiple-Purpose Survey (ENHOGAR) is as follows:
+Project Stage: Reassessment
+Year of Completion: 2019
+Main Executor: National Statistics Office",,,
+54,DOM,¿Qué ejecutor está a cargo de los proyectos con mayor presupuesto?,Which executor is in charge of the projects with the highest budget?,"SELECT top 1 lower(cast(entidadejecutora AS nvarchar(MAX))) AS entidadejecutora, 
+sum(cast(costoestimadoproyecto AS float)) AS total_presupuesto 
+from 
+(select distinct idproyecto, entidadejecutora, costoestimadoproyecto 
+FROM nuevavisionrd.dbo.vwdatosabiertosproyectos_static) subquery 
+GROUP BY cast(entidadejecutora AS nvarchar(MAX)) 
+ORDER BY total_presupuesto DESC","entidadejecutora	total_presupuesto
+ministerio de obras publicas y comunicaciones	264505102760.35","El ejecutor a cargo de los proyectos con mayor presupuesto es el ministerio de obras publicas y comunicaciones con 
+RD$ 264.505.102.760,35","The executor in charge of the projects with the highest budget is the Ministry of Public Works and Communications, with RD$ 264,505,102,760.35.",,,
+55,DOM,¿Qué ejecutor principal está a cargo del mayor número de proyectos en el país?,"Which main executor is in charge of the highest number of projects in the country?
+
+
+
+","SELECT TOP 1 LOWER(CAST(entidadejecutora AS NVARCHAR(MAX))) AS entidadejecutora, 
+COUNT(*) AS numero_proyectos 
+from 
+(select distinct IdProyecto, entidadejecutora 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static) subquery 
+GROUP BY LOWER(CAST(entidadejecutora AS NVARCHAR(MAX))) 
+ORDER BY numero_proyectos DESC","entidadejecutora	numero_proyectos
+ministerio de educacion	1006","El ejecutor principal a cargo del mayor número de proyectos en el país es el Ministerio de Educación, con un total de 1,006 proyectos","The main executor responsible for the highest number of projects in the country is the Ministry of Education, with a total of 1,006 projects.",,,
+56,DOM,¿Qué proyecto tiene mayor presupuesto y menor duración en términos de años?,Which project has the largest budget and shortest duration in terms of years?,"SELECT top 1 LOWER(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto, CAST(costoestimadoproyecto AS FLOAT) AS presupuesto, CAST(aniodif AS INT) AS duracion_anios FROM 
+(SELECT nombreproyecto, costoestimadoproyecto, (CAST(AnioFinProyecto AS INT) - CAST(AnioInicioProyecto AS INT)) AS aniodif 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static) AS subquery ORDER BY presupuesto DESC, duracion_anios ASC","El proyecto con mayor presupuesto y menor duración es:
+Nombre del Proyecto: CONSTRUCCIÓN CORREDOR DUARTE II (SOLUCIÓN AV. REPÚBLICA DE COLOMBIA) SANTO DOMINGO
+Presupuesto Estimado: 2,828,928,318.0
+Duración Estimada: 1 año","El proyecto con mayor presupuesto y menor duración es:
+Nombre del Proyecto: CONSTRUCCIÓN CORREDOR DUARTE II (SOLUCIÓN AV. REPÚBLICA DE COLOMBIA) SANTO DOMINGO
+Presupuesto Estimado: 2,828,928,318.0
+Duración Estimada: 1 año","The project with the highest budget and shortest duration is:
+
+Project Name: DUARTE CORRIDOR II CONSTRUCTION (SOLUTION FOR AV. REPÚBLICA DE COLOMBIA), SANTO DOMINGO
+Estimated Budget: 2,828,928,318.0 DOP
+Estimated Duration: 1 year",,,
+57,DOM,¿Qué proyecto tiene la mayor duración en términos de años?,Which project has the longest duration in terms of years?,"SELECT top 1 LOWER(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto, 
+MAX(CAST(AnioInicioProyecto AS INT) - CAST(AnioFinProyecto AS INT)) AS duracion_anios 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+GROUP BY LOWER(cast(nombreproyecto AS nvarchar(MAX))) 
+ORDER BY duracion_anios DESC","El proyecto con la mayor duración en términos de años es:
+Nombre del Proyecto: AMPLIACIÓN ACUEDUCTO SAN PEDRO DE MACORIS PROVINCIA SAN PEDRO DE MACORIS
+Duración Estimada: 29.0 años","El proyecto con la mayor duración en términos de años es:
+Nombre del Proyecto: AMPLIACIÓN ACUEDUCTO SAN PEDRO DE MACORIS PROVINCIA SAN PEDRO DE MACORIS
+Duración Estimada: 29.0 años","The project with the longest duration in terms of years is:
+
+Project Name: EXPANSION OF THE SAN PEDRO DE MACORIS AQUEDUCT, SAN PEDRO DE MACORIS PROVINCE
+Estimated Duration: 29.0 years",,,
+59,DOM,¿Qué proyectos financia la Unión Europea en República Dominicana?,What projects does the European Union finance in the Dominican Republic?,"SELECT distinct lower(cast(nombreproyecto AS nvarchar(MAX))) AS nombreproyecto 
+FROM nuevavisionrd.dbo.vwdatosabiertosproyectos_static 
+WHERE lower(cast(organismofinanciador AS nvarchar(MAX))) = 
+'Unión Europea'","nombreproyecto
+análisis de la trata de mujeres dominicanas en el exterior
+apoyo a la sociedad civil y autoridades locales de la republica dominicana (pascal)
+construcción  de la entrada vertiente este del municipio de duvergé.
+construcción bulevar y monumento  a la uva del municipio de neyba
+construcción cancha de baloncesto barrio santa rosa  municipio de cotui
+construcción centro de formación técnica municipal de tamboril
+construcción de 354 viviendas e infraestructuras urbanas resilientes para la comunidad barrio azul en urbanización cordero tejada  san francisco de macorís  provincia duarte
+construcción funeraria municipal de bayaguana  prov. monte plata
+construcción funeraria municipal de san lorenzo de guayubin
+fortalecimiento de la calidad para el desarrollo de mipymes  santo domingo  d.n
+fortalecimiento institucional y desarrollo de capacidades de la dirección general de presupuesto  rep. dom. (profidec)
+fortalecimiento-institucional de las entidadaes de seguridad ciudadana  mip y mp
+gestion integrada de rec.naturales y agricultura resiliente en cuencas hidrográricas  yaque del norte y ozama-isabela en r.d.
+mejoramiento de obras públicas resilientes para reducir riesgos de desastres en el contexto del cambio climático  a nivel nacional
+prevención y atención a la población de mayor riesgo al vih en la rep. dominicana
+reconstrucción del parque juan a. rosado  del municipio de  san ignacio de sabaneta
+reconstrucción del parque municipal de villa gonzalez
+rehabilitación de redes y normalización de usuarios del servicio de energia
+remodelación matadero municipal de montecristi","La Unión Europea financia varios proyectos en República Dominicana. Aquí tienes algunos de ellos:
+REHABILITACIÓN DE REDES Y NORMALIZACIÓN DE USUARIOS DEL SERVICIO DE ENERGIA - Costo Estimado: 28,793,134,338.0 DOP, Valor Programado: 54,361,264.0 DOP, Valor Ejecutado: 56,136,041.13 DOP
+GESTION INTEGRADA DE REC.NATURALES Y AGRICULTURA RESILIENTE EN CUENCAS HIDROGRÁRICAS YAQUE DEL NORTE Y OZAMA-ISABELA EN R.D. - Costo Estimado: 5,000,000,000.0 DOP, Valor Programado: 60,000,000.0 DOP, Valor Ejecutado: 0.01 DOP
+MEJORAMIENTO DE OBRAS PÚBLICAS RESILIENTES PARA REDUCIR RIESGOS DE DESASTRES EN EL CONTEXTO DEL CAMBIO CLIMÁTICO A NIVEL NACIONAL - Costo Estimado: 3,325,000,000.0 DOP, Valor Programado: 0.0 DOP, Valor Ejecutado: 0.0 DOP
+PREVENCIÓN Y ATENCIÓN A LA POBLACIÓN DE MAYOR RIESGO AL VIH EN LA REP. DOMINICANA - Costo Estimado: 1,503,969,161.0 DOP, Valor Programado: 48,809,506.0 DOP, Valor Ejecutado: 48,809,506.0 DOP
+CONSTRUCCIÓN DE 354 VIVIENDAS E INFRAESTRUCTURAS URBANAS RESILIENTES PARA LA COMUNIDAD BARRIO AZUL EN URBANIZACIÓN CORDERO TEJADA SAN FRANCISCO DE MACORÍS PROVINCIA DUARTE - Costo Estimado: 1,376,475,928.0 DOP, Valor Programado: 66,435,976.0 DOP, Valor Ejecutado: 0.0 DOP
+FORTALECIMIENTO DE LA CALIDAD PARA EL DESARROLLO DE MIPYMES SANTO DOMINGO D.N - Costo Estimado: 855,777,459.0 DOP, Valor Programado: 304,834,385.0 DOP, Valor Ejecutado: 38,388,599.43 DOP
+APOYO A LA SOCIEDAD CIVIL Y AUTORIDADES LOCALES DE LA REPUBLICA DOMINICANA (PASCAL) - Costo Estimado: 834,861,000.0 DOP, Valor Programado: 44,368,801.0 DOP, Valor Ejecutado: 32,631,774.19 DOP","The European Union funds several projects in the Dominican Republic. Here are some of them:
+
+REHABILITATION OF NETWORKS AND NORMALIZATION OF ENERGY SERVICE USERS
+
+Estimated Cost: 28,793,134,338.0 DOP
+Scheduled Value: 54,361,264.0 DOP
+Executed Value: 56,136,041.13 DOP
+INTEGRATED MANAGEMENT OF NATURAL RESOURCES AND RESILIENT AGRICULTURE IN YQUE AND OZAMA-ISABELA WATERSHEDS IN R.D.
+
+Estimated Cost: 5,000,000,000.0 DOP
+Scheduled Value: 60,000,000.0 DOP
+Executed Value: 0.01 DOP
+IMPROVEMENT OF RESILIENT PUBLIC WORKS TO REDUCE DISASTER RISKS IN THE CONTEXT OF CLIMATE CHANGE AT THE NATIONAL LEVEL
+
+Estimated Cost: 3,325,000,000.0 DOP
+Scheduled Value: 0.0 DOP
+Executed Value: 0.0 DOP
+PREVENTION AND CARE FOR THE HIGHEST RISK POPULATION TO HIV IN THE DOMINICAN REPUBLIC
+
+Estimated Cost: 1,503,969,161.0 DOP
+Scheduled Value: 48,809,506.0 DOP
+Executed Value: 48,809,506.0 DOP
+CONSTRUCTION OF 354 RESILIENT URBAN HOUSING AND INFRASTRUCTURES FOR THE BARRIO AZUL COMMUNITY IN URBANIZATION CORDERO TEJADA SAN FRANCISCO DE MACORÍS PROVINCE DUARTE
+
+Estimated Cost: 1,376,475,928.0 DOP
+Scheduled Value: 66,435,976.0 DOP
+Executed Value: 0.0 DOP
+STRENGTHENING QUALITY FOR THE DEVELOPMENT OF MSMEs IN SANTO DOMINGO D.N.
+
+Estimated Cost: 855,777,459.0 DOP
+Scheduled Value: 304,834,385.0 DOP
+Executed Value: 38,388,599.43 DOP
+SUPPORT TO CIVIL SOCIETY AND LOCAL AUTHORITIES OF THE DOMINICAN REPUBLIC (PASCAL)
+
+Estimated Cost: 834,861,000.0 DOP
+Scheduled Value: 44,368,801.0 DOP
+Executed Value: 32,631,774.19 DOP",,,
+62,DOM,¿Qué sector tiene el mayor número de proyectos paralizados?,Which sector has the highest number of paralyzed projects?,"SELECT LOWER(sector) AS sector, 
+COUNT(*) AS numero_proyectos_paralizados 
+from( select distinct IdProyecto, sector 
+FROM NuevaVisionRD.dbo.VwDatosAbiertosProyectos_static 
+WHERE LOWER(etapaactual) = 'paralizado') subquery 
+GROUP BY LOWER(sector) 
+ORDER BY numero_proyectos_paralizados DESC","El sector con el mayor número de proyectos paralizados es el de salud, con 117 proyectos. Hay al menos 15 sectores con proyectos paralizados","El sector con el mayor número de proyectos paralizados es el de salud, con 117 proyectos. Hay al menos 15 sectores con proyectos paralizados","The sector with the highest number of paralized projects is the health sector, with 117 projects. There are at least 15 sectors with stalled projects.",,,
+63,PY,"¿Cuántos proyectos de inversión que benefician a las pequeñas y medianas empresas, y por cuanto monto asignado, se encuentran activos en el banco de proyectos de Paraguay?","How many investment projects that benefit small and medium-sized businesses, and for how much amount allocated, are active in the Paraguayan project bank?","WITH proyectos_pymes AS
+(SELECT distinct CodigoSNIP,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%pequeñas%medianas%empresas%'
+       OR LOWER(nombreproyecto) LIKE '%pymes%')
+select COUNT(CodigoSNIP), 
+       sum(monto_asignado)
+from proyectos_pymes
+order by 2 desc","Existen tres proyectos en ejecución que benefician a las pequeñas y medianas empresas, y su costo estimado es de Gs.170.062.000.000","Actualmente, hay tres proyectos activos en el banco de proyectos de Paraguay que benefician a las pequeñas y medianas empresas (MIPYMES):
+
+Mejoramiento de la Productividad de las MIPYMES a Nivel Nacional
+
+Código SNIP: 312
+Monto asignado: Gs. 125,132,000,000
+Capacitación de la Productividad de las MIPYMES a nivel nacional
+
+Código SNIP: 324
+Monto asignado: Gs. 13,199,822,483
+Mejoramiento Fondo de Garantía para las Micro Pequeñas y Medianas Empresas
+
+Código SNIP: 328
+Monto asignado: Gs. 36,000,000,000","Currently, there are three active projects in Paraguay's project bank benefiting small and medium-sized enterprises (SMEs):
+
+Improvement of SME Productivity at the National Level
+SNIP Code: 312
+Allocated Amount: Gs. 125,132,000,000
+
+Training on Productivity for SMEs at the National Level
+SNIP Code: 324
+Allocated Amount: Gs. 13,199,822,483
+
+Enhancement of Guarantee Fund for Micro, Small, and Medium Enterprises (MSMEs)
+SNIP Code: 328
+Allocated Amount: Gs. 36,000,000,000",,,
+64,PY,¿Qué proyectos en Paraguay están orientados a promover emprendimientos?,What projects in Paraguay are aimed at promoting entrepreneurship?,"WITH proyectos_emprende AS
+(SELECT distinct CodigoSNIP,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%emprendimiento%')
+select COUNT(CodigoSNIP), 
+       sum(monto_asignado)
+from proyectos_emprende
+order by 2 desc",Actualmente no existen proyectos en el banco de proyectos de Paraguay que fomenten emprendimientos,Actualmente no existen proyectos en el banco de proyectos de Paraguay para promover el emprendimiento,"Currently, there are no projects in Paraguay's project bank to promote entrepreneurship.",,,
+65,PY,"¿Cuales proyectos en paraguay que estén activos, están orientados a la promoción del turismo?",Which projects in Paraguay that are active are aimed at promoting tourism?,"WITH proyectos_turismo AS
+(SELECT distinct CodigoSNIP, nombreproyecto,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%turismo%')
+select nombreproyecto, 
+       monto_asignado
+from proyectos_turismo
+order by 2 desc",El proyecto Programa Nacional de Turismo con un costo total estimado de Gs.61.236.582.636 está orientado a la promoción del turismo,El proyecto Programa Nacional de Turismo con un costo total estimado de Gs.61.236.582.636 está orientado a la promoción del turismo,"The project ""National Tourism Program"" with an estimated total cost of Gs.61,236,582,636 is aimed at promoting tourism.",,,
+66,PY,"¿Cuáles son los proyectos en el banco de proyectos de Paraguay, en ejecución en 2024 para mitigar los efectos del cambio climático?","What are the projects in Paraguay's project bank, being executed in 2024 to mitigate the effects of climate change?","WITH proyectos_clima AS
+(SELECT distinct CodigoSNIP, nombreproyecto,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%clima%')
+select nombreproyecto, 
+       monto_asignado
+from proyectos_clima
+order by 2 desc",Actualmente no existen proyectos en el banco de proyectos de Paraguay para mitigar efectos de cambio climático,Actualmente no existen proyectos en el banco de proyectos de Paraguay para mitigar efectos de cambio climático,"Currently, there are no projects in Paraguay's project bank to mitigate the effects of climate change.",,,
+67,PY,"¿Existen proyectos de reforestación, que se encontrarán ejecutandose en Paraguay en 2024, y por cuando valor?","Are there reforestation projects being carried out in Paraguay in 2024, and for what amount?","WITH proyectos_reforesta AS
+(SELECT distinct CodigoSNIP,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%reforesta%')
+select COUNT(CodigoSNIP), 
+       sum(monto_asignado)
+from proyectos_reforesta
+order by 2 desc",Actualmente no existen proyectos en el banco de proyectos de Paraguay para reforestación,Actualmente no existen proyectos en el banco de proyectos de Paraguay para reforestación,"Currently, there are no projects in Paraguay's project bank for reforestation.",,,
+68,PY,"¿En que departamentos de Paraguay y que costo estimado en el año 2024, se tienen proyectos de inversión que benefician a las mujeres cabeza de hogar?","In which departments of Paraguay and what estimated cost in the year 2024, are there investment projects that benefit female heads of household?","WITH proyectos_reforesta AS
+(SELECT distinct CodigoSNIP,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%mujer%')
+select COUNT(CodigoSNIP), 
+       sum(monto_asignado)
+from proyectos_reforesta
+order by 2 desc","Los departamentos que tienen proyectos de inversión que benefician a las mujeres cabeza  de hogar se encuentran en: 
+ASUNCION,  2 proyectos por Gs. 74.125.571.200
+CENTRAL,  2 proyectos por Gs. 74.125.571.200
+PROYECTOS NACIONALES,  1 proyecto por Gs. 17.840.862.554","En Paraguay, en el año 2024, hay proyectos de inversión que benefician a mujeres cabeza de hogar en los departamentos de Asunción y Central. Estos proyectos tienen los siguientes costos estimados:
+
+Asunción: 74,125,571,200 guaraníes
+Central: 74,125,571,200 guaraníes
+Además, hay un proyecto nacional con un costo estimado de 17,840,862,554 guaraníes que también beneficia a mujeres cabeza de hoga","In Paraguay, in 2024, there are investment projects benefiting single mothers in the departments of Asunción and Central. These projects have the following estimated costs:
+
+Asunción: 74,125,571,200 guaraníes
+Central: 74,125,571,200 guaraníes
+Additionally, there is a national project with an estimated cost of 17,840,862,554 guaraníes that also benefits single mothers.",,,
+69,PY,¿En asunción qué proyectos existen que benefician a las mujeres que quieran emprender y que se encuentren activos?,"In Asuncion, what projects exist that benefit women who want to undertake and who are active?","WITH proyectos_mujeremprende AS
+(SELECT distinct CodigoSNIP, nombreproyecto,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%mujer%'
+   and LOWER(nombreproyecto) LIKE '%emprend%'
+   and DepartamentoLocalizacion = 'ASUNCION')
+select nombreproyecto, 
+       monto_asignado
+from proyectos_mujeremprende
+order by 2 desc",Actualmente no existen proyectos en el banco de proyectos de Paraguay para mujeres emprendoras en asunción,"Actualmente, no hay proyectos activos en Asunción que beneficien específicamente a las mujeres que desean emprender.","Currently, there are no active projects in Asunción that benefit women who want to undertake.",,,
+70,PY,"¿Cuál sector en Paraguay, ha tenido en los últimos 5 años los mayores montos de inversión, y qué porcentaje representa del total de la inversión pública?","Which sector in Paraguay has had the highest amounts of investment in the last 5 years, and what percentage does it represent of total public investment?","WITH proyectos_sector AS
+(SELECT distinct CodigoSNIP, NombreSector, 
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE year(fechainicioproyecto) >= year(GETDATE())-5 ),
+proyectosTotal as 
+(select sum(monto_asignado) total from proyectos_sector)
+select NombreSector, 
+       sum(monto_asignado) Monto, sum(monto_asignado)/(select total from proyectosTotal) Porcentaje
+from proyectos_sector
+group by NombreSector
+order by 2 desc","En los últimos 5 años, el sector económico en Paraguay que ha recibido los mayores montos de inversión pública es el de Transporte con Gs. 5.750.728.884.923 y el 57.58% de la inversión","En los últimos 5 años, el sector de Transporte en Paraguay ha tenido los mayores montos de inversión, alcanzando un total de 5,750,728,884,923 guaraníes. Este monto representa aproximadamente el 57.58% del total de la inversión pública durante ese período.","In the last 5 years, the Transport sector in Paraguay has had the highest investment amounts, totaling 5,750,728,884,923 guaraníes. This amount represents approximately 57.58% of the total public investment during that period.",,,
+71,PY,¿Cuál es el departamento que ha tenido la menor cantidad de costos estimados de inversión durante los años 2023 y 2024?,Which department has had the lowest amount of estimated investment costs during the years 2023 and 2024?,"WITH proyectos_clima AS
+(SELECT distinct CodigoSNIP, DepartamentoLocalizacion,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE 2023 between year(FechaInicioProyecto) and year(FechaFinProyecto) 
+   and 2024 between year(FechaInicioProyecto) and year(FechaFinProyecto))
+select DepartamentoLocalizacion, 
+       sum(monto_asignado)
+from proyectos_clima
+group by DepartamentoLocalizacion
+order by 2 desc",EL departamento que ha tenido la menor cantidad de costos estimados de inversion durante 2023 y 2024 es ASUNCION  con Gs. 2.648.170.000,"El departamento que ha tenido la menor cantidad de costos estimados de inversión durante los años 2023 y 2024 es Asunción, con un monto de 2,648,170,000 guaraníes.
+
+
+","The department that has had the lowest estimated investment costs during the years 2023 and 2024 is Asunción, with an amount of 2,648,170,000 guaraníes.",,,
+72,PY,¿Qué ejecutor primario está a cargo del mayor número de proyectos en el país y por cuanto monto?,Which primary executor is in charge of the largest number of projects in the country and for how much?,"WITH proyectos_ejecutor AS
+(SELECT distinct CodigoSNIP, EjecutorPrimario,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv)
+select EjecutorPrimario, 
+       sum(monto_asignado)
+from proyectos_ejecutor
+group by EjecutorPrimario
+order by 2 desc","El ejecutor primario que está a cargo de el mayor número de proyectos en PAraguay es el MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES con un monto de Gs.        59.916.530.557.390
+","El ejecutor primario que está a cargo del mayor número de proyectos en el país es el Ministerio de Obras Públicas y Comunicaciones. Este ministerio tiene proyectos por un monto total de 59,916,530,557,390 guaraníes.","The primary executor in charge of the highest number of projects in the country is the Ministry of Public Works and Communications. They are managing projects totaling 59,916,530,557,390 guaraníes.",,,
+73,PY,"¿Qué variación de presupuesto anual relacionado a proyectos de inversión ha tenido el sector salud, desde el inicio de pandemia en 2021 a la fecha actual?","What variation in the annual budget related to investment projects has the health sector had, from the start of the pandemic in 2021 to the current date?",,,,,,,
+74,PY,¿Cuales son los 5 proyectos nacionales que tienen el mayor número de informes de avance?,What are the 5 national projects that have the highest number of progress reports?,"WITH proyectos_informes AS
+(SELECT distinct CodigoSNIP, NombreProyecto, InformeAvance
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE tipoproyecto = 'NACIONAL')
+select TOP 5 NombreProyecto, 
+       COUNT(InformeAvance)
+from proyectos_informes
+group by NombreProyecto
+order by 2 desc","Apoyo a la Política Pública de Desarrollo Social        11
+Ampliación y Reparación de 108 Establecimientos Educativos en Asunción y 10 Departamentos        10
+Apoyo operativo para la ejecución de proyectos del Ministerio de Educación y CIencias        10
+Capacitación a los Educadores de todos los niveles y modalidades        10
+Capacitación y Apoyo a la ampliación de la jornada escolar        10","Los 5 proyectos nacionales que tienen el mayor número de informes de avance son:
+
+Apoyo a la Política Pública de Desarrollo Social - 11 informes de avance
+Ampliación y Reparación de 108 Establecimientos Educativos en Asunción y 10 Departamentos - 10 informes de avance
+Apoyo operativo para la ejecución de proyectos del Ministerio de Educación y Ciencias - 10 informes de avance
+Capacitación a los Educadores de todos los niveles y modalidades - 10 informes de avance
+Capacitación y Apoyo a la ampliación de la jornada escolar - 10 informes de avance","The 5 national projects with the highest number of progress reports are:
+
+Support for Public Policy for Social Development - 11 progress reports
+Expansion and Repair of 108 Educational Establishments in Asunción and 10 Departments - 10 progress reports
+Operational Support for the Execution of Projects of the Ministry of Education and Sciences - 10 progress reports
+Training for Educators of all levels and modalities - 10 progress reports
+Training and Support for the Extension of the School Day - 10 progress reports",,,
+75,PY,¿Cual es el costo estimado de los proyectos por entidad ejecutora en el año 2023 en paraguay?,What is the estimated cost of projects by executing entity in 2023 in Paraguay?,"SELECT p.EntidadEjecutora, SUM(PE.Presupuestado)
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv P 
+ INNER JOIN PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosEjecuciónPresupuestaria PE
+ON PE.CodigoSNIP = P.CodigoSNIP
+WHERE pe.Vigencia = 2023
+GROUP BY p.EntidadEjecutora
+ORDER BY 2 DESC","Al consultar información de ejeución presupuestaria para proyectos de inversión, no se encontró información para el año 2023",,,,,
+76,PY,¿Cuantos proyectos están relacionados con el mejoramiento de los caminos rurales y que costo estimado tienen?,How many projects are related to the improvement of rural roads and what is their estimated cost?,"WITH proyectos_caminos AS
+(SELECT distinct CodigoSNIP,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%camino%rural%')
+select COUNT(CodigoSNIP), 
+       sum(monto_asignado)
+from proyectos_caminos
+order by 2 desc",Se encontratos 5 proyectos que están relacionados con el mejoramiento de los caminos rurales y tienen un costo estimado de Gs. 2.116.388.743.092,"Hay 5 proyectos relacionados con el mejoramiento de los caminos rurales, con un costo estimado total de 2,116,388,743,092 guaraníes.","There are 5 projects related to the improvement of rural roads, with a total estimated cost of 2,116,388,743,092 guaraníes.",,,
+77,PY,¿Cuales municipios van a ser beneficiarios por el proyecto de construcción del tren de cercanias de Ypacarai?,Which municipalities will benefit from the Ypacarai commuter train construction project?,"WITH proyectos_tren AS
+(SELECT distinct CodigoSNIP,
+       NombreMunicipioLocalizacion
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%tren%Ypacarai%')
+select NombreMunicipioLocalizacion
+from proyectos_tren","Los municipios que van a ser beneficiarios por el proyecto de construcción del tren de cercanias de Ypacarai son: AREGUA,ASUNCION,ITAUGUA,LUQUE y YPACARAI","Los municipios que serán beneficiarios por el proyecto de construcción del tren de cercanías de Ypacaraí son:
+
+Areguá
+Asunción
+Itauguá
+Luque
+Ypacaraí","The municipalities that will benefit from the Ypacaraí suburban train construction project are:
+
+Areguá
+Asunción
+Itauguá
+Luque
+Ypacaraí",,,
+78,PY,¿Cuántos proyectos son para la rehabilitación de acueductos? ¿En qué etapa se encuentran?,How many projects are there for the rehabilitation of aqueducts? What stage are they in?,"WITH proyectos_acueducto AS
+(SELECT distinct CodigoSNIP,
+       estado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%acueducto%')
+select estado, count(CodigoSNIP)
+from proyectos_acueducto
+group by estado",Actualmente hay un proyecto para rehabilitación de acueductos y se encuentra en estado Aprobado,"Hay un proyecto para la rehabilitación de acueductos, el cual se encuentra en la etapa de ""Aprobado"".
+
+
+","There is one project for the rehabilitation of aqueducts, which is in the ""Approved"" stage.
+
+
+
+",,,
+79,PY,¿Cuál es el monto del proyecto con el menor costo estimado?,What is the amount of the project with the lowest estimated cost?,"WITH proyectos_monto AS
+(SELECT distinct CodigoSNIP, nombreproyecto,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv)
+select top 1 nombreproyecto, monto_asignado
+from proyectos_monto
+order by 2 asc",El proyecto con menor costo estimado es la Pavimentado Asfáltico Presidente Franco - Cedrales - FOCEM ,"El monto del proyecto con el menor costo estimado es de 1 guaraní.
+Proyecto: Pavimentado Asfáltico Presidente Franco - Cedrales - FOCEM","The amount of the project with the lowest estimated cost is 1 guaraní.
+Project: Asphalt Pavement Presidente Franco - Cedrales - FOCEM",,,
+80,PY,¿Cuántos recursos estimados en infraestructura vial se tuvieron en 2023 y 2024 en Paraguay?,How many estimated resources in road infrastructure were there in 2023 and 2024 in Paraguay?,"WITH proyectos_infraestructura AS
+(SELECT distinct CodigoSNIP,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE 2023 between year(FechaInicioProyecto) and year(FechaFinProyecto) 
+   and 2024 between year(FechaInicioProyecto) and year(FechaFinProyecto)
+   and NombreSector in ('Transporte',
+'Agua Potable y Alcantarillado',
+'Vivienda, Urbanismo y Servicios Comunitarios',
+'Energía'))
+select sum(monto_asignado)
+from proyectos_infraestructura",En paraguay se tuvieron Gs. 13.542.717.405.712 como costos estimados en infraestructura vial para 2023-2024,"En 2023 y 2024, en Paraguay se estimaron recursos por un total de 13,542,717,405,712 guaraníes para infraestructura vial.","In 2023 and 2024, Paraguay estimated resources totaling 13,542,717,405,712 guaraníes for road infrastructure.",,,
+81,PY,¿Cuál es la duración promedio estimada de los proyectos del sector de Agua Potable y Alcantarillado por estado del proyecto?,What is the estimated average duration of projects in the Drinking Water and Sewage sector by project status?,"WITH proyectos_agua AS
+(SELECT distinct CodigoSNIP, duracionproyecto      
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE NombreSector = ('Agua Potable y Alcantarillado'))
+select avg(duracionproyecto)
+from proyectos_agua",La duración promedio de los proyectos del sector de Agua Potable y Alcantarillado es de 2.64 años en promedio,"La duración promedio estimada de los proyectos del sector de Agua Potable y Alcantarillado es de aproximadamente 2.64 años en promedio, considerando el estado del proyecto.","The estimated average duration of projects in the Water Supply and Sewerage sector is approximately 2.64 years on average, considering the project status.",,,
+82,PY,¿Cuáles son los sectores y entidades ejecutoras que tienen menor costo estimado de proyectos en Paraguay en el año 2023?,What are the sectors and executing entities that have the lowest estimated cost of projects in Paraguay in 2023?,"WITH proyectos_valor AS
+(SELECT distinct CodigoSNIP, nombresector, entidadejecutora,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE 2023 between year(FechaInicioProyecto) and year(FechaFinProyecto))
+select nombresector, 
+       entidadejecutora,
+	   sum(monto_asignado) Valor
+from proyectos_valor
+group by nombresector, entidadejecutora
+order by valor desc","Los sectores y entidades ejecutoras que tienen menor costo estimado de proyectos en Paraguay en el año 2023 son:
+Transporte y la entidad ejecutora MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES        con Gs. 13.691.683.936.262
+Energía y la entidad ejecutora ADMINISTRACIÓN NACIONAL DE ELECTRICIDAD        con Gs. 2.098.327.396.908
+Seguridad Nacional y la entidad ejecutora MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES con Gs. 945.882.000.002
+Comunicaciones y la entidad ejecutora MINISTERIO DE TECNOLOGÍAS DE LA INFORMACIÓN Y COMUNICACIÓNcon Gs. 747.370.000.000
+Salud y la entidad ejecutora MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL        con Gs. 709.550.000.000
+Agricultura y Ganadería y la entidad ejecutora MINISTERIO DE AGRICULTURA Y GANADERÍAcon Gs. 635.000.000.000","Para identificar los sectores y las entidades ejecutoras con el menor costo estimado de proyectos en Paraguay en el año 2023, basándonos en los datos proporcionados, podemos destacar lo siguiente:
+
+El sector y entidad ejecutora con el menor costo estimado de proyectos son:
+
+Sector: Seguridad Nacional
+Entidad Ejecutora: PRESIDENCIA DE LA REPÚBLICA
+Costo Estimado: ₲3,600,000,000
+
+Este es el proyecto con el menor costo estimado entre los datos proporcionados para el año 2023 en Paraguay.","To identify the sectors and executing entities with the lowest estimated project costs in Paraguay in 2023, based on the provided data, we can highlight the following:
+
+The sector and executing entity with the lowest estimated project cost are:
+
+Sector: National Security
+Executing Entity: PRESIDENCIA DE LA REPÚBLICA
+Estimated Cost: ₲3,600,000,000
+
+This is the project with the lowest estimated cost among the provided data for the year 2023 in Paraguay.",,,
+83,PY,"¿Qué porcentaje de proyectos por cada sector, tienen un avance financiero superior al 100% y un avance físico inferior al 100%?",What percentage of projects for each sector have financial progress greater than 100% and physical progress less than 100%?,"WITH proyectos_avance AS
+(SELECT nombresector, count(distinct CodigoSNIP) avance       
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE AvanceFinanciero > 100 
+   and AvanceFisico < 100
+group by nombresector),
+   proyectos_total AS
+(SELECT  nombresector, count(distinct CodigoSNIP) total
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+group by nombresector
+)
+select a.nombresector, 
+           a.avance, t.total, CAST(a.avance AS FLOAT)/CAST(t.total AS FLOAT)
+from proyectos_avance a 
+    inner join proyectos_total t on a.NombreSector = t.NombreSector
+order by 4 desc","El porcentaje de proyectos por sector que tienen un avance financiero superior al 100% y avance fisico inferior al 100% son:
+-Multisectorial 28.57%
+-Justicia 20%
+-Agricultura y Ganadería 14.28%
+-Industria, Comercio, Finanzas y Turismo 13.33%
+-Agua Potable y Alcantarillado 9.09%
+-Vivienda, Urbanismo y Servicios Comunitarios 7.14%
+-Energía 6.67%
+-Transporte 6.5%
+-Educación y Cultura 4%","Para determinar el porcentaje de proyectos por cada sector que tienen un avance financiero superior al 100% y un avance físico inferior al 100%, podemos observar los datos proporcionados:
+
+En el sector de Educación y Cultura, el 25.71% de los proyectos tienen un avance financiero superior al 100% y un avance físico inferior al 100%.
+En Industria, Comercio, Finanzas y Turismo, el 16.67% de los proyectos cumplen con estas condiciones.
+En Agricultura y Ganadería, el 12.5% de los proyectos tienen un avance financiero superior al 100% y un avance físico inferior al 100%.
+En el sector Multisectorial, el 11.90% de los proyectos cumplen con estas características.
+En Salud, Vivienda, Urbanismo y Servicios Comunitarios, y Energía, estos porcentajes son del 11.54%, 11.54% y 9.26% respectivamente.
+En Transporte, el 7.20% de los proyectos tienen un avance financiero superior al 100% y un avance físico inferior al 100%.
+En Agua Potable y Alcantarillado, el 6.45% de los proyectos cumplen con estas condiciones.
+Finalmente, en el sector de Justicia, este porcentaje es del 4.76%.
+Estos porcentajes indican la proporción de proyectos por sector que tienen un avance financiero superior al 100% y un avance físico inferior al 100%, basándose en los datos proporcionados.","To determine the percentage of projects in each sector that have a financial progress greater than 100% and a physical progress less than 100%, we can observe the provided data:
+
+In the Education and Culture sector, 25.71% of the projects have a financial progress greater than 100% and a physical progress less than 100%.
+In the Industry, Commerce, Finance, and Tourism sector, 16.67% of the projects meet these conditions.
+In Agriculture and Livestock, 12.5% of the projects have a financial progress greater than 100% and a physical progress less than 100%.
+In the Multisectoral sector, 11.90% of the projects meet these criteria.
+In Health, Housing, Urban Planning, and Community Services, and Energy, these percentages are 11.54%, 11.54%, and 9.26%, respectively.
+In Transport, 7.20% of the projects have a financial progress greater than 100% and a physical progress less than 100%.
+In Drinking Water and Sewerage, 6.45% of the projects meet these conditions.
+Finally, in the Justice sector, this percentage is 4.76%.
+These percentages indicate the proportion of projects by sector that have a financial progress greater than 100% and a physical progress less than 100%, based on the provided data.",,,
+84,PY,"¿En la provincia de asunción, que proyectos de inversión se están ejecutando actualmente y que benefician a personas de la tercera edad?","In the province of asunción, what investment projects are currently being carried out that benefit the elderly?","WITH proyectos_caminos AS
+(SELECT distinct CodigoSNIP,nombreproyecto,
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%adulto%mayor%')
+select nombreproyecto, 
+       monto_asignado
+from proyectos_caminos
+order by 2 desc",Actualmente no existen proyectos en el banco de proyectos de Paraguay para tercera edad o adulto mayor,Actualmente no existen proyectos en el banco de proyectos de Paraguay para tercera edad o adulto mayor,"Currently, there are no projects in Paraguay's project bank for the elderly or senior citizens.",,,
+85,PY,¿Qué proyectos de Paraguay están relacionados con la adecuación de la Costanera ?,What projects in Paraguay are related to the adaptation of the Costanera ?,"WITH proyectos_caminos AS
+(SELECT distinct CodigoSNIP,nombreproyecto, 
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%costanera%')
+select nombreproyecto,
+       monto_asignado
+from proyectos_caminos
+order by 2 desc","Los siguientes proyectos están relacionados con la adecuación de la Costanera:
+-Construcción de la Avenida Costanera Norte, 2ª Etapa con un monto de Gs.        527.149.687.500
+-Construcción de la Avenida Costanera, Centro Histórico y Parque Bicentenario         con un monto de Gs. 388.323.350.793
+- Construcción de Avenida Costanera, Parque y Estacionamiento con un monto de Gs.28.515.639.461","Aquí están los proyectos relacionados con la adaptación de la Costanera en Paraguay:
+
+Construcción de Avenida Costanera Norte, 2ª Etapa - ₲527,149,687,500
+Construcción de Avenida Costanera, Centro Histórico y Parque Bicentenario - ₲388,323,350,793
+Construcción de Avenida Costanera, Parque y Estacionamiento - ₲28,515,639,461
+
+Estos son los proyectos relacionados con la adaptación de la Costanera en Paraguay, junto con sus respectivos montos asignados en guaraníes.","Here are the projects related to the adaptation of the Costanera in Paraguay:
+
+Construction of Avenida Costanera Norte, 2nd Stage - ₲527,149,687,500
+Construction of Avenida Costanera, Historic Center and Bicentennial Park - ₲388,323,350,793
+Construction of Avenida Costanera, Park and Parking - ₲28,515,639,461 
+These are the projects related to the adaptation of the Costanera in Paraguay, along with their respective allocated amounts in guaraníes.",,,
+86,PY,¿Cuántos proyectos son para la rehabilitación de acueductos? ¿En qué etapa se encuentran?,How many projects are there for the rehabilitation of aqueducts? What stage are they in?,"SELECT distinct CodigoSNIP,nombreproyecto,estado, 
+       CAST(costoestimadoproyecto AS FLOAT) AS monto_asignado
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+WHERE LOWER(nombreproyecto) LIKE '%acueducto%'","Actualmente existen un proyecto para la rehabilitación de acueducto, llamado Construcción de Acueducto en estado Aprobado por un monto de Gs. 432.672.945.166","¿Cuántos proyectos son para la rehabilitación de acueductos? ¿En qué etapa se encuentran?
+
+Hay un proyecto para la construcción de un acueducto, el cual se encuentra en la etapa 'Aprobado', con un monto asignado de 432,672,945,166.","How many projects are for the rehabilitation of aqueducts? What stage are they in?
+
+There is one project for the construction of an aqueduct, which is in the 'Aprobado' (Approved) stage with an allocated amount of 432,672,945,166.",,,
+87,PY,¿Qué ejecutor principal está a cargo del mayor número de proyectos en el país?,Which main executor is in charge of the largest number of projects in the country?,"SELECT top 10 EjecutorPrimario, count(distinct CodigoSNIP) total       
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+group by EjecutorPrimario
+order by 2 desc",El ejecutor principal está a cargo del mayor número de proyectos en Paraguay es el MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES con 141 proyectos,"El Ministerio de Obras Públicas y Comunicaciones está a cargo del mayor número de proyectos en el país, con un total de 141 proyectos bajo su responsabilidad.","The Ministry of Public Works and Communications is in charge of the highest number of projects in the country, totaling 141 projects.",,,
+88,PY,¿Qué proyecto tiene mayor presupuesto y menor duración diferente a cero en términos de años?,Which project has the largest budget and shortest duration not equal to zero in terms of years?,"SELECT DISTINCT CodigoSNIP, NombreProyecto, CostoEstimadoProyecto, DuracionProyecto
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+WHERE CostoEstimadoProyecto = (
+select MAX(CostoEstimadoProyecto) 
+from [dbo].[VwDatosAbiertosProyectosInv] 
+where DuracionProyecto =(select MIN(DuracionProyecto) from [dbo].[VwDatosAbiertosProyectosInv]
+WHERE DuracionProyecto > 0 ))
+","CodigoSNIP	NombreProyecto	CostoEstimadoProyecto	DuracionProyecto
+796	Mejoramiento Tramo Pedro J Caballero - Cap. Bado - Ypejhu	1638315800000.00	1","El proyecto que tiene el mayor presupuesto y la menor duración en términos de años es el siguiente:
+
+Nombre del Proyecto: Mejoramiento Tramo Pedro J Caballero - Cap. Bado - Ypejhu
+Presupuesto Estimado del Proyecto: 1,638,315,800,000.00
+Duración del Proyecto: 1 año","The project with the highest budget and the shortest duration in terms of years is:
+
+Project Name: Improvement of Pedro J Caballero - Cap. Bado - Ypejhu Section
+Estimated Project Cost: 1,638,315,800,000.00
+Project Duration: 1 year",,,
+89,PY,¿Qué proyecto tiene la mayor duración en términos de años?,Which project has the longest duration in terms of years?,"SELECT top 1 CodigoSNIP, NombreProyecto, max(DuracionProyecto)      
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+group by CodigoSNIP, NombreProyecto
+order by 3 desc","El proyecto que tienen mayor duración en Paraguay es el Mejoramiento de la Gestión de la SSEAF, y tiene 35 años de duración","El proyecto con la mayor duración en términos de años es el siguiente:
+
+Nombre del Proyecto: Mejoramiento de la Gestión de la SSEAF
+Duración en años: 35","The project with the longest duration in terms of years is:
+
+Project Name: Improvement of SSEAF Management
+Duration in years: 35",,,
+90,PY,¿Qué proyecto tiene el costo estimado más bajo?,Which project has the lowest estimated cost?,"SELECT distinct top 1 CodigoSNIP, NombreProyecto,min(costoestimadoproyecto) costoestimadoproyecto
+FROM PISGR_PY_COVID19.dbo.VwDatosAbiertosProyectosInv
+where costoestimadoproyecto > 1000
+group by CodigoSNIP, NombreProyecto
+order by 3 asc",El proyecto que tiene el costo estimado mas bajo en Paraguay es el  Mejoramiento del SNAT para Eventos Hidrometeorol  con Gs. 10.000.000,"El proyecto con el costo estimado más bajo es el siguiente:
+
+Nombre del Proyecto: Mejoramiento del SNAT para Eventos Hidrometeorológicos
+Costo Estimado del Proyecto: 10,000,000.00","The project with the lowest estimated cost is:
+
+Project Name: Improvement of SNAT for Hydrometeorological Events
+Estimated Project Cost: 10,000,000.00",,,
+91,PY,¿Cuales son las actividades y componentes del proyecto que tiene el costo estimado más alto en Paraguay?,What are the activities and components of the project that has the highest estimated cost in Paraguay?,"SELECT 
+    distinct
+	proy.CodigoSNIP,
+	NombreProyecto,
+    proy.CostoEstimadoProyecto,
+    comp.descripcionActividad,
+    comp.descripcionComponente
+FROM  [dbo].[VwDatosAbiertosProyectosComponentes] comp inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on comp.CodigoSNIP = proy.CodigoSNIP
+where proy.CostoEstimadoProyecto in (select max(CostoEstimadoProyecto) FROM [dbo].[VwDatosAbiertosProyectosInv])","Las actividades y componentes del proyecto que tiene el costo estimado más alto en Paraguay son:
+-Ampliación y Duplicación de las Rutas 2 y 7        11444390008804.00        Fiscalización de Obras- Consultoría de 4 años (3 años contrucción y 1 año de operación)        Fiscalización
+-Ampliación y Duplicación de las Rutas 2 y 7        11444390008804.00        Fiscalización de Obras- Consultoría de 4 años (3 años contrucción y 1 año de operación)        Fiscalización. USD 11.000.000
+-Ampliación y Duplicación de las Rutas 2 y 7        11444390008804.00        Mantenimiento extraordinario        OPEX (PPD y PVT)
+-Ampliación y Duplicación de las Rutas 2 y 7        11444390008804.00        Mantenimiento extraordinario hasta el año 2046        OPEX (PPD y PVT)","
+Basado en los datos proporcionados, aquí está la respuesta a la pregunta sobre las actividades y componentes del proyecto con el costo estimado más alto:
+
+Proyecto: Ampliación y Duplicación de las Rutas 2 y 7
+
+Costo Estimado del Proyecto: 11,444,390,008,804.00
+Actividades:
+
+Fiscalización de Obras- Consultoría de 4 años (3 años construcción y 1 año de operación)
+Mantenimiento extraordinario
+Componentes:
+
+Fiscalización
+Fiscalización. USD 11.000.000
+OPEX (PPD y PVT)
+OPEX (PPD y PVT) hasta el año 2046
+Estos datos describen las actividades y componentes específicos del proyecto ""Ampliación y Duplicación de las Rutas 2 y 7"", que tiene el costo estimado más alto.","Based on the provided data, here is the answer to the question about the activities and components of the project with the highest estimated cost:
+
+Project: Expansion and Duplication of Routes 2 and 7
+
+Estimated Project Cost: 11,444,390,008,804.00
+Activities:
+
+Construction Oversight - 4-year consultancy (3 years construction and 1 year operation)
+Extraordinary maintenance
+Components:
+
+Oversight
+Oversight. USD 11,000,000
+OPEX (PPD and PVT)
+OPEX (PPD and PVT) until 2046
+These details describe the specific activities and components of the ""Expansion and Duplication of Routes 2 and 7"" project, which has the highest estimated cost.",,,
+92,PY,"¿Cuales proyectos tienen componentes de Acceso al agua potable mejorado, y que fecha de inicio y finalización tienen esos proyectos?","Which projects have Improved Access to Drinking Water components, and what start and end dates do those projects have?","SELECT 
+    distinct
+	proy.CodigoSNIP,
+	proy.NombreProyecto,
+	proy.FechaInicioProyecto,
+	proy.FechaFinProyecto
+	FROM  [dbo].[VwDatosAbiertosProyectosComponentes] comp inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on comp.CodigoSNIP = proy.CodigoSNIP
+where comp.descripcionComponente LIKE '%agua%potable%'
+order by 1","Los proyectos que tienen componentes de Acceso al agua potable mejorado son:
+-Mercosur YPORA - FOCEM con fecha de inicio 2013-01-01 00:00:00.000 y fecha final 2015-01-31 00:00:00.000
+-Construcción Sist. Agua Potable y Acc.Vial Penitenciaria MG con fecha de inicio 2022-01-01 00:00:00.000 y fecha final 2022-01-31 00:00:00.000
+-Abastecimiento de Agua Potable y Saneamiento Básico en Pequeñas Comunidades Rurales e Indígenas con fecha de inicio 2015-01-01 00:00:00.000 y fecha final 2015-01-31 00:00:00.000","respuesta sobre los proyectos que tienen componentes de Acceso al agua potable mejorado, junto con sus fechas de inicio y finalización:
+
+CodigoSNIP	NombreProyecto	FechaInicioProyecto	FechaFinProyecto
+11	Mercosur YPORA - FOCEM	2013-01-01 00:00:00.000	2015-01-31 00:00:00.000
+245	Construcción Sist. Agua Potable y Acc.Vial Penitenciaria MG	2022-01-01 00:00:00.000	2022-01-31 00:00:00.000
+50	Abastecimiento de Agua Potable y Saneamiento Básico en Pequeñas Comunidades Rurales e Indígenas	2015-01-01 00:00:00.000	2015-01-31 00:00:00.000
+Estos son los proyectos que incluyen componentes relacionados con el Acceso al agua potable mejorado, junto con sus respectivas fechas de inicio y finalización según los datos proporcionados.","Here is the response to the question about projects that have components of Improved Access to Potable Water, along with their start and end dates:
+
+CodigoSNIP	NombreProyecto	FechaInicioProyecto	FechaFinProyecto
+11	Mercosur YPORA - FOCEM	2013-01-01 00:00:00.000	2015-01-31 00:00:00.000
+245	Construcción Sist. Agua Potable y Acc.Vial Penitenciaria MG	2022-01-01 00:00:00.000	2022-01-31 00:00:00.000
+50	Abastecimiento de Agua Potable y Saneamiento Básico en Pequeñas Comunidades Rurales e Indígenas	2015-01-01 00:00:00.000	2015-01-31 00:00:00.000
+These are the projects that include components related to Improved Access to Potable Water, along with their respective start and end dates based on the provided data.",,,
+93,PY,¿Cual es el nombre y monto estimado de los proyectos que tienen actividades relacionadas con programas de ciencia y tecnología en Paraguay?,What is the name and estimated amount of the projects that have activities related to science and technology programs in Paraguay?,"SELECT 
+    distinct
+	proy.CodigoSNIP,
+	NombreProyecto,
+	proy.CostoEstimadoProyecto
+	FROM  [dbo].[VwDatosAbiertosProyectosComponentes] comp inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on comp.CodigoSNIP = proy.CodigoSNIP
+where comp.descripcionActividad LIKE '%ciencia%' OR comp.descripcionActividad  LIKE '%tecnología%'
+order by 1
+","Los proyectos que tienen actividades relacionadas con programas de ciencia y tecnología en Paraguay son:
+-Capacitación de las competencias profesionales de educadores con Gs. 175000000000.00
+-Apoyo a la Implementación del Presupuesto por Resultado con Gs. 7817327090.00
+-Programa de Apoyo a la Modernización del Banco Nacional de Fomento con Gs. 31176174132.00
+-Apoyo a la integracion economica del sector rural con Gs. 33018415535.00
+-Construcción de 4500 Soluciones Habitacionales en el Paraguay con Gs. 399216031560.00
+-Transferencia de Promoción a la Ciencia con Gs. 778615616800.00
+-Capacitación a los Educadores de todos los niveles y modalidades con Gs. 221502315681.00
+-Mejoramiento de las condiciones de aprendizaje con incorporación de Tecnología de la Información y Comunicaciones con Gs. 658739694799.00
+-Transferencia y dotación textos a estudiantes y guías a docentes con Gs. 101484358500.00
+-Promoción de Igualdad de Oportunidades para las Mujeres con Gs. 17840862554.00
+-Restauración y Manejo Sostenible de Recursos Naturales con Gs. 52082839992.00
+-Reposición Compensador Estatico de Reactivos SE SLO con Gs. 100800000000.00
+-Mejoramiento y ampliación de los servicios del Servicio Nacional de Calidad y Salud Animal con Gs. 91315246400.00
+-Censo Agrario Nacional 2018 con Gs. 88935000000.00
+-Mejoramiento Sistema de Distribución de Energía Eléctrica con Gs. 886203853894.00
+-Mejoramiento de la Consolidación de Capacidad catastrales municipales con Gs. 25010623625.00
+-Mejoramiento de Invest. Innov y Transf. de Tecnol. Agraria con Gs. 107593654200.00
+-Mejoramiento de la competitividad con las TIC en Paraguay con Gs. 747370000000.00
+-Construcción Fortalecimiento de Atención Primaria en Salud con Gs. 709550000000.00
+-Ampliación de Cobertura y Mejoramiento de Salud con Gs. 279000000620.00
+-Mejoramiento  del modelo de gestión institucional de SJP con Gs. 150692500000.00
+-Capacitación Programa de Becas para Estudios en el Exterior con Gs. 186000000000.00
+-Mejoramiento Eficiencia Energética de la Red de Alumbrado con Gs. 97215091464.00
+-Equipamiento para el Sistema Nacional de Monitoreo Forestal con Gs. 1713410000.00
+-Transferencia PROCIENCIA II con Gs. 599274000000.00","Basado en los datos proporcionados, los proyectos relevantes son:
+
+CodigoSNIP	NombreProyecto	CostoEstimadoProyecto
+252	Transferencia de Promoción a la Ciencia	778615616800.00
+394	Mejoramiento de las condiciones de aprendizaje con incorporación de Tecnología de la Información y Comunicaciones	658739694799.00
+591	Transferencia y dotación textos a estudiantes y guías a docentes	101484358500.00
+786	Mejoramiento de Invest. Innov y Transf. de Tecnol. Agraria	107593654200.00
+793	Mejoramiento de la competitividad con las TIC en Paraguay	747370000000.00
+958	Transferencia PROCIENCIA II	599274000000.00
+Estos proyectos están directamente relacionados con programas de ciencia y tecnología en Paraguay, según la información proporcionada.","SNIP Code	Project Name	Estimated Cost (in Paraguayan Guarani)
+252	Promotion Transfer to Science	778,615,616,800.00
+394	Improvement of learning conditions with incorporation of Information and Communications Technology	658,739,694,799.00
+591	Transfer and allocation of texts to students and guides to teachers	101,484,358,500.00
+786	Improvement of Investment. Innovation and Technology Transfer.	107,593,654,200.00
+793	Improving competitiveness with ICT in Paraguay	747,370,000,000.00
+958	Transfer PROCIENCIA II	599,274,000,000.00
+These projects are related to science and technology programs in Paraguay, based on the provided data.",,,
+94,PY,"¿Cuantos proyectos invierten recursos en actividades de servicios de personal, y cual es su entidad responsable?","How many projects invest resources in personnel services activities, and what is their responsible entity?","SELECT 
+    count(distinct
+	proy.CodigoSNIP) total_proyectos,
+	proy.EntidadEjecutora
+	FROM  [dbo].[VwDatosAbiertosProyectosComponentes] comp inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on comp.CodigoSNIP = proy.CodigoSNIP
+where comp.descripcionActividad LIKE '%servicios%personal%'
+GROUP BY proy.EntidadEjecutora
+order by 1","La cantidad de proyectos que invierten recursos en actividades de servicios de personal son:
+1  proyecto de la CORTE SUPREMA DE JUSTICIA
+1  proyecto del MINISTERIO DE AGRICULTURA Y GANADERÍA
+1  proyecto del MINISTERIO DE LA MUJER
+1  proyecto de la PRESIDENCIA DE LA REPÚBLICA
+3  proyectos del MINISTERIO DE URBANISMO  VIVIENDA Y HABITAT
+5  proyectos del MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES","Para responder a la pregunta con los datos proporcionados, aquí está la información sobre cuántos proyectos invierten recursos en actividades de servicios de personal y cuál es su entidad responsable:
+
+total_proyectos	EntidadEjecutora
+1	CORTE SUPREMA DE JUSTICIA
+1	MINISTERIO DE AGRICULTURA Y GANADERÍA
+1	MINISTERIO DE LA MUJER
+1	PRESIDENCIA DE LA REPÚBLICA
+3	MINISTERIO DE URBANISMO, VIVIENDA Y HABITAT
+5	MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES
+Estos son los totales de proyectos y sus respectivas entidades ejecutoras que invierten recursos en actividades de servicios de personal, según la información proporcionada.","
+total_projects	ExecutingEntity
+1	SUPREME COURT OF JUSTICE
+1	MINISTRY OF AGRICULTURE AND LIVESTOCK
+1	MINISTRY OF WOMEN
+1	PRESIDENCY OF THE REPUBLIC
+3	MINISTRY OF URBANISM, HOUSING, AND HABITAT
+5	MINISTRY OF PUBLIC WORKS AND COMMUNICATIONS
+These are the totals of projects and their respective executing entities that invest resources in personnel services activities, based on the provided information.",,,
+95,PY,¿Cual es el costo de los proyectos que tienen actividades relacionadas con Contratación de consultoría?,What is the cost of projects that have activities related to Consulting Contracting?,"SELECT 
+    distinct
+        proy.CodigoSNIP,
+        NombreProyecto
+        FROM  [dbo].[VwDatosAbiertosProyectosComponentes] comp inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on comp.CodigoSNIP = proy.CodigoSNIP
+where comp.descripcionActividad like '%Contratación%consultoría%'
+
+","El costo de los proyectos que tienen actividades relacionadas con Contratación de consultoría es:
+-Programa de Apoyo a la Modernización del Banco Nacional de Fomento con Gs.       31176174132.00
+-Mantenimiento  Mejoramiento y Rehabilitación de Caminos Rurales de la Region Oriental  con Gs.       925666587755.00
+-Mejoramiento de las condiciones de aprendizaje con incorporación de Tecnología de la Información y Comunicaciones con Gs. 658739694799.00
+-Mejoramiento del Trazado del Tramo Loma Plata - Carmelo Peralta con Gs.        2535289000000.00
+-Habilitación de la Red Pavimentada de San Pedro  Caaguazu y Canindeyú  con Gs.       411614354995.00
+-Capacitación y Evaluación de Educación Superior  con Gs. 23167811280.00
+-Construcción de la Franja Costera Sur con Gs.  18837542390.00
+-Mejoramiento de la Consolidación de Capacidad catastrales municipales con Gs.        25010623625.00
+-Mejoramiento de la Infraestructura Edilicia y de Conectividad con Gs.  71410328275.00
+-Capacitación y Mejor.Form Ejecucion de Proyectos de la DIPE con Gs. 115000000000.00
+-Mejoramiento de la Gestión de la SSEAF con Gs.  35000000000.00
+-Mejoramiento  del modelo de gestión institucional de SJP con Gs.  150692500000.00
+-Mejoramiento de la Gestión del VAF (FASE III) con Gs. 26000000000.00
+-Apoyo Presupuestario con Gs. 35549845884.00
+-Fortalecimiento de la Implementación de Política Pública de Desarrollo Social en el Paraguay con Gs. 13174359455.00","Para calcular el costo total de los proyectos que tienen actividades relacionadas con ""Contratación de consultoría"", 
+podemos sumar los valores del campo CostoEstimadoProyecto para los proyectos especificados.
+
+El resultado será el siguiente:
+
+CodigoSNIP	NombreProyecto	CostoEstimadoProyecto
+148	Programa de Apoyo a la Modernización del Banco Nacional de Fomento	31176174132.00
+36	Mantenimiento  Mejoramiento y Rehabilitación de Caminos Rurales de la Region Oriental	925666587755.00
+394	Mejoramiento de las condiciones de aprendizaje con incorporación de Tecnología de la Información y Comunicaciones	658739694799.00
+574	Mejoramiento del Trazado del Tramo Loma Plata - Carmelo Peralta	2535289000000.00
+594	Habilitación de la Red Pavimentada de San Pedro  Caaguazu y Canindeyú	411614354995.00
+644	Capacitación y Evaluación de Educación Superior	23167811280.00
+665	Construcción de la Franja Costera Sur	18837542390.00
+780	Mejoramiento de la Consolidación de Capacidad catastrales municipales	25010623625.00
+785	Mejoramiento de la Infraestructura Edilicia y de Conectividad	71410328275.00
+798	Capacitación y Mejor.Form Ejecucion de Proyectos de la DIPE	115000000000.00
+799	Mejoramiento de la Gestión de la SSEAF	35000000000.00
+866	Mejoramiento  del modelo de gestión institucional de SJP	150692500000.00
+954	Mejoramiento de la Gestión del VAF (FASE III)	26000000000.00
+96	Apoyo Presupuestario	35549845884.00
+97	Fortalecimiento de la Implementación de Política Pública de Desarrollo Social en el Paraguay	13174359455.00
+
+CostoTotalConsultoria
+521,610,107,694.00
+Este es el costo total estimado de los proyectos que tienen actividades relacionadas con ""Contratación de consultoría"", basado en los datos proporcionados.","To calculate the total cost of projects that have activities related to ""Contratación de consultoría,"" we can sum the values from the field CostoEstimadoProyecto for the specified projects.
+
+The result is as follows:
+
+SNIP Code Project Name CostoEstimadoProyecto
+148 Programa de Apoyo a la Modernización del Banco Nacional de Fomento 31,176,174,132.00
+36 Mantenimiento Mejoramiento y Rehabilitación de Caminos Rurales de la Región Oriental 925,666,587,755.00
+394 Mejoramiento de las condiciones de aprendizaje con incorporación de Tecnología de la Información y Comunicaciones 658,739,694,799.00
+574 Mejoramiento del Trazado del Tramo Loma Plata - Carmelo Peralta 2,535,289,000,000.00
+594 Habilitación de la Red Pavimentada de San Pedro Caaguazú y Canindeyú 411,614,354,995.00
+644 Capacitación y Evaluación de Educación Superior 23,167,811,280.00
+665 Construcción de la Franja Costera Sur 18,837,542,390.00
+780 Mejoramiento de la Consolidación de Capacidad catastrales municipales 25,010,623,625.00
+785 Mejoramiento de la Infraestructura Edilicia y de Conectividad 71,410,328,275.00
+798 Capacitación y Mejor.Form Ejecucion de Proyectos de la DIPE 115,000,000,000.00
+799 Mejoramiento de la Gestión de la SSEAF 35,000,000,000.00
+866 Mejoramiento del modelo de gestión institucional de SJP 150,692,500,000.00
+954 Mejoramiento de la Gestión del VAF (FASE III) 26,000,000,000.00
+96 Apoyo Presupuestario 35,549,845,884.00
+97 Fortalecimiento de la Implementación de Política Pública de Desarrollo Social en el Paraguay 13,174,359,455.00
+
+CostoTotalConsultoria
+521,610,107,694.00
+This is the estimated total cost of projects that have activities related to ""Contratación de consultoría,"" based on the provided data.",,,
+96,PY,¿Cuales proyectos de infraestructura cuentan con componentes de fiscalización de obras?,Which infrastructure projects have construction inspection components?,"SELECT 
+    distinct
+	proy.CodigoSNIP,
+	NombreProyecto
+FROM  [dbo].[VwDatosAbiertosProyectosComponentes] comp inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on comp.CodigoSNIP = proy.CodigoSNIP
+where comp.descripcionComponente like '%Fiscalización%Obras%'
+","Los proyectos de infraestructura que cuentan con componentes de fiscalización de obras son:
+-Construcción de 5800 Soluciones Habitacionales en áreas rurales
+-Construcción de Pavimentado Tipo Empedrado y Puentes
+-Construcción Instalaciones Reserva Bco San Miguel  Asuncion
+-Construcción de Avenida Costanera  Parque y Estacionamiento
+-Mantenimiento  Mejoramiento y Rehabilitación de Caminos Rurales de la Region Oriental
+-Ampliación y Reparación de 108 Establecimientos Educativos en Asunción y 10 Departamentos
+-Construcción de la Avenida Costanera Norte  2ª Etapa
+-Construcción del Distrito Eco-inclusivo de Asunción
+-Mejoramiento y revitalización urbanística del CHA
+-Construcción de la Franja Costera Sur
+-Construcción y Pavimentación asfáltica de tramos camineros
+-Mejoramiento  Gestión y Mantenimiento de la Red Vial del Paraguay
+-Ampliación y Reparación de 822 Establecimientos Educativos en Asunción y 17 Departamentos
+-Pavimentación de Corredores de Integración  Rehabilitación y Mantenimiento de la Red Vial
+-Mejoramiento del Parque Caballero  Asunción.","la respuesta a la pregunta sobre los proyectos del sector de infraestructura que cuentan con componentes de fiscalización de obras:
+
+Construcción de Pavimentado Tipo Empedrado y Puentes
+Mantenimiento Mejoramiento y Rehabilitación de Caminos Rurales de la Región Oriental
+Ampliación y Reparación de 108 Establecimientos Educativos en Asunción y 10 Departamentos
+Construcción de la Avenida Costanera Norte 2ª Etapa
+Construcción del Distrito Eco-inclusivo de Asunción
+Construcción de la Franja Costera Sur
+Construcción y Pavimentación asfáltica de tramos camineros
+Ampliación y Reparación de 822 Establecimientos Educativos en Asunción y 17 Departamentos
+Pavimentación de Corredores de Integración Rehabilitación y Mantenimiento de la Red Vial
+Mejoramiento del Parque Caballero Asunción.
+Estos son los proyectos del sector de infraestructura que incluyen componentes de fiscalización de obras según los datos proporcionados.","the answer to the question about infrastructure sector projects that have construction oversight components:
+
+Construction of Paving Type Cobblestone and Bridges
+Maintenance, Improvement, and Rehabilitation of Rural Roads in the Eastern Region
+Expansion and Repair of 108 Educational Establishments in Asunción and 10 Departments
+Construction of the Northern Costanera Avenue, 2nd Stage
+Construction of the Eco-inclusive District of Asunción
+Construction of the Southern Coastal Strip
+Construction and Asphalt Pavement of Road Sections
+Expansion and Repair of 822 Educational Establishments in Asunción and 17 Departments
+Pavement of Integration Corridors, Rehabilitation, and Maintenance of the Road Network
+Improvement of Caballero Park, Asunción
+These are the infrastructure sector projects that include construction oversight components based on the provided data.
+
+
+",,,
+97,PY,"¿Cuantos proyectos son financiados por el Banco Interamericano de desarrollo, cual es el valor presupuestado y el valor ejecutado de esos proyectos en los ultimos tres años?","How many projects are financed by the Inter-American Development Bank, what is the budgeted value and the executed value of these projects in the last three years?","SELECT 
+    COUNT(distinct proy.CodigoSNIP) AS CantidadProyectos,
+    SUM(Presupuestado) AS ValorPresupuestado,
+    SUM(Ejecutado) AS ValorEjecutado
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+WHERE OrganismoFinanciador = 'BANCO INTERAMERICANO DE DESARROLLO (BID)'
+    AND proy.FechaInicioProyecto >= DATEADD(YEAR, -3, GETDATE());","Actualmente son financiados por el Banco Interamericano de desarrollo 2 proyectos 
+su valor presupuestado es Gs. 3,083,794,507,668.00 y su valor ejecutado es Gs.        1,632,038,065,722.00","Cantidad de proyectos financiados por el Banco Interamericano de Desarrollo en los últimos tres años: 2
+
+Valor presupuestado total de esos proyectos: 3,083,794,507,668.00
+
+Valor ejecutado total de esos proyectos: 1,632,038,065,722.00
+
+Estos números representan la cantidad de proyectos financiados por el Banco Interamericano de Desarrollo, junto con el total del valor presupuestado y ejecutado de esos proyectos durante los últimos tres años.","Number of projects financed by the Inter-American Development Bank in the last three years: 2
+
+Total budgeted value of those projects: 3,083,794,507,668.00
+
+Total executed value of those projects: 1,632,038,065,722.00
+
+These numbers represent the number of projects financed by the Inter-American Development Bank, along with the total budgeted and executed values of those projects over the last three years.",,,
+98,PY,¿Qué porcentaje de proyectos por vigencia y ejecutor primario tiene mayor valor ejecutado que valor presupuesto?,What percentage of projects by term and primary executor have a greater executed value than budgeted value?,"SELECT 
+    Vigencia, 
+    EjecutorPrimario, 
+    COUNT(distinct proy.CodigoSNIP) AS TotalProyectos,
+    SUM(CASE WHEN Ejecutado > Presupuestado THEN 1 ELSE 0 END) AS ProyectosMayorEjecutado,
+    ROUND(100.0 * SUM(CASE WHEN Ejecutado > Presupuestado THEN 1 ELSE 0 END) / COUNT(*), 2) AS PorcentajeProyectosMayorEjecutado
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+GROUP BY Vigencia, EjecutorPrimario
+ORDER BY Vigencia, EjecutorPrimario;",No existen proyectos que tengan mayor valor presupuestado que valor ejecutado,"Porcentaje de proyectos por vigencia y ejecutor primario que tienen mayor valor ejecutado que valor presupuesto: 0%
+
+Esto indica que no hay proyectos donde el valor ejecutado supere al valor presupuestado en ninguna vigencia específica y para ningún ejecutor primario.","Percentage of projects by year and primary executor with higher executed value than budgeted value: 0%
+
+This indicates that there are no projects where the executed value exceeds the budgeted value for any specific year and primary executor.",,,
+99,PY,¿Cuantos proyectos por fuente de financiación han sido financiados desde 2020 a la fecha?,How many projects by funding source have been funded from 2020 to date?,"SELECT FuenteFinanciacion, COUNT(distinct proy.CodigoSNIP) AS CantidadProyectos
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+WHERE proy.FechaInicioProyecto >= '2020-01-01'
+GROUP BY FuenteFinanciacion
+ORDER BY CantidadProyectos DESC;","Por fuente de financiación se han financiado desde 2020 la siguiente cantidad de proyectos:
+-RECURSOS DEL CREDITO PUBLICO con 18 proyectos
+-RECURSOS INSTITUCIONALES con 10 proyectos
+-RECURSOS DEL TESORO con 2 proyectos","Desde 2020 hasta la fecha, los proyectos financiados por diferentes fuentes se distribuyen de la siguiente manera:
+
+RECURSOS DEL CRÉDITO PÚBLICO: 18 proyectos
+RECURSOS INSTITUCIONALES: 10 proyectos
+RECURSOS DEL TESORO: 2 proyectos
+Estos números indican la cantidad de proyectos financiados por cada fuente desde el año 2020 hasta la fecha actual.","From 2020 to date, projects funded by different sources are distributed as follows:
+
+PUBLIC CREDIT RESOURCES: 18 projects
+INSTITUTIONAL RESOURCES: 10 projects
+TREASURY RESOURCES: 2 projects
+These numbers indicate the number of projects funded by each source since the year 2020 to the present date.",,,
+100,PY,¿Cuales proyectos tienen valor ejecutado inferior al valor presupuestado y tienen avance físico al 100%?,Which projects have an executed value lower than the budgeted value and have 100% physical progress?,"SELECT top 10 proy.CodigoSNIP, NombreProyecto, proy.AvanceFisico, MAX(Vigencia) Vigencia
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+WHERE pre.Ejecutado < pre.Presupuestado and AvanceFisico >=100
+group by proy.CodigoSNIP, NombreProyecto, AvanceFisico
+having AvanceFisico > 0","Los siguientes proyectos tienen valor ejecutado inferior al valor presupuestado y tienen avance físico al 100%:
+-Construcción de Autopista Ñú Guazu Asunción - Luque 6 30KM
+-Mejoramiento de la producción y comercialización de los Pequeño y Medianos productores
+-Construcción de Pavimentación Tipo  Empedrados - Región Centro Este
+-Manejo de Pasivos Ambientales del Sistema Eléctrico de la ANDE
+-Construcción Programa de Corredores de Integracion Occidente
+-Ampliación de la  Línea de Transmisión 220 kV Acaray - Puerto Presidente Franco        
+-Ampliación Subestación Villa Aurelia y Construcción LT 220 KV PBO-VAU
+-Construcción de la Subestación Altos 220 kV en Cordillera
+-Restauración de Edificios Patrimoniales 
+-Construcción de la Subestación BMO y de la LT 220 kV PBO-BMO","Basado en los datos proporcionados, los proyectos que tienen un valor ejecutado inferior al valor presupuestado y tienen un avance físico del 100% son los siguientes:
+
+CodigoSNIP: 39
+NombreProyecto: Construcción de Autopista Ñú Guazu Asunción - Luque 6 30KM
+AvanceFisico: 100.00
+Vigencia: 2022
+
+CodigoSNIP: 442
+NombreProyecto: Mejoramiento de la producción y comercialización de los Pequeño y Medianos productores
+AvanceFisico: 100.00
+Vigencia: 2019
+
+CodigoSNIP: 726
+NombreProyecto: Construcción de Pavimentación Tipo Empedrados - Región Centro Este
+AvanceFisico: 100.00
+Vigencia: 2022
+
+CodigoSNIP: 160
+NombreProyecto: Manejo de Pasivos Ambientales del Sistema Eléctrico de la ANDE
+AvanceFisico: 100.00
+Vigencia: 2024
+
+CodigoSNIP: 1001
+NombreProyecto: Construcción Programa de Corredores de Integracion Occidente
+AvanceFisico: 100.00
+Vigencia: 2017
+
+CodigoSNIP: 224
+NombreProyecto: Ampliación de la Línea de Transmisión 220 kV Acaray - Puerto Presidente Franco
+AvanceFisico: 100.00
+Vigencia: 2021
+
+CodigoSNIP: 221
+NombreProyecto: Ampliación Subestación Villa Aurelia y Construcción LT 220 KV PBO-VAU
+AvanceFisico: 100.00
+Vigencia: 2022
+
+CodigoSNIP: 561
+NombreProyecto: Construcción de la Subestación Altos 220 kV en Cordillera
+AvanceFisico: 100.00
+Vigencia: 2023
+
+CodigoSNIP: 719
+NombreProyecto: Restauración de Edificios Patrimoniales
+AvanceFisico: 100.00
+Vigencia: 2023
+
+CodigoSNIP: 223
+NombreProyecto: Construcción de la Subestación BMO y de la LT 220 kV PBO-BMO
+AvanceFisico: 100.00
+Vigencia: 2022
+
+There are at least 10 records out of a total of 40 records.
+
+","Based on the provided data, the projects that have executed value lower than the budgeted value and have 100% physical progress are:
+
+CodigoSNIP: 39
+NombreProyecto: Construction of Ñú Guazu Highway Asunción - Luque 6 30KM
+AvanceFisico: 100.00
+Vigencia: 2022
+
+CodigoSNIP: 442
+NombreProyecto: Improvement of production and marketing of small and medium producers
+AvanceFisico: 100.00
+Vigencia: 2019
+
+CodigoSNIP: 726
+NombreProyecto: Construction of Stone Paving Type - East Central Region
+AvanceFisico: 100.00
+Vigencia: 2022
+
+CodigoSNIP: 160
+NombreProyecto: Management of Environmental Liabilities of the ANDE Electrical System
+AvanceFisico: 100.00
+Vigencia: 2024
+
+CodigoSNIP: 1001
+NombreProyecto: Construction Program of Integration Corridors West
+AvanceFisico: 100.00
+Vigencia: 2017
+
+CodigoSNIP: 224
+NombreProyecto: Expansion of the 220 kV Transmission Line Acaray - Puerto Presidente Franco
+AvanceFisico: 100.00
+Vigencia: 2021
+
+CodigoSNIP: 221
+NombreProyecto: Expansion Substation Villa Aurelia and Construction LT 220 KV PBO-VAU
+AvanceFisico: 100.00
+Vigencia: 2022
+
+CodigoSNIP: 561
+NombreProyecto: Construction of the Altos Substation 220 kV in Cordillera
+AvanceFisico: 100.00
+Vigencia: 2023
+
+CodigoSNIP: 719
+NombreProyecto: Restoration of Heritage Buildings
+AvanceFisico: 100.00
+Vigencia: 2023
+
+CodigoSNIP: 223
+NombreProyecto: Construction of Substation BMO and LT 220 kV PBO-BMO
+AvanceFisico: 100.00
+Vigencia: 2022",,,
+101,PY,¿Cuales proyectos tienen presupuestos ejecutados en cero pero con avances físicos mayores a cero?,Which projects have budgets executed at zero but with physical progress greater than zero?,"SELECT top 10 proy.CodigoSNIP, NombreProyecto, proy.AvanceFisico, MAX(Vigencia) Vigencia
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+WHERE Presupuestado = 0
+group by proy.CodigoSNIP, NombreProyecto, AvanceFisico
+having AvanceFisico > 0","Los siguientes proyectos tienen presupuestos ejecutados en cero pero con avances físicos mayores a cero:
+-Habilitación de la Red Vial Pavimentado en Cordillera  Paraguari  Caaguazú  Guaira  Caazapa
+-Construcción de Autopista Ñú Guazu Asunción - Luque 6 30KM
+-Ampliación y Reparación de 108 Establecimientos Educativos en Asunción y 10 Departamentos
+-Construcción de Pavimenatdo tipo empedrado y puentes - Región Centro - Cambio de Paquetes Estructurales 
+-Mejoramiento de gestión de infraestructura vial pavimentada
+-Modernización del Sector de Agua y de Saneamiento
+- Construcción de Pavimentación Tipo  Empedrados - Región Centro Este
+- Construcción de una red para instituciones educativas 
+-Construcción y Conservación de Caminos Vecinales
+-Construcción de Pavimentación Tipo Empedrado y Puentes- Región Norte","asado en los datos proporcionados, los proyectos que tienen presupuesto ejecutado en cero pero con avance físico mayor a cero son los siguientes:
+
+CodigoSNIP: 451
+NombreProyecto: Habilitación de la Red Vial Pavimentado en Cordillera Paraguari Caaguazú Guaira Caazapa
+AvanceFisico: 82.31
+Vigencia: 2023
+
+CodigoSNIP: 39
+NombreProyecto: Construcción de Autopista Ñú Guazu Asunción - Luque 6 30KM
+AvanceFisico: 100.00
+Vigencia: 2020
+
+CodigoSNIP: 326
+NombreProyecto: Ampliación y Reparación de 108 Establecimientos Educativos en Asunción y 10 Departamentos
+AvanceFisico: 99.87
+Vigencia: 2023
+
+CodigoSNIP: 734
+NombreProyecto: Construcción de Pavimenatdo tipo empedrado y puentes - Región Centro - Cambio de Paquetes Estructurales
+AvanceFisico: 99.70
+Vigencia: 2021
+
+CodigoSNIP: 956
+NombreProyecto: Mejoramiento de gestión de infraestructura vial pavimentada
+AvanceFisico: 38.56
+Vigencia: 2023
+
+CodigoSNIP: 28
+NombreProyecto: Modernización del Sector de Agua y de Saneamiento
+AvanceFisico: 94.26
+Vigencia: 2019
+
+CodigoSNIP: 726
+NombreProyecto: Construcción de Pavimentación Tipo Empedrados - Región Centro Este
+AvanceFisico: 100.00
+Vigencia: 2018
+
+CodigoSNIP: 856
+NombreProyecto: Construcción de una red para instituciones educativas
+AvanceFisico: 67.13
+Vigencia: 2020
+
+CodigoSNIP: 68
+NombreProyecto: Construcción y Conservación de Caminos Vecinales
+AvanceFisico: 25.27
+Vigencia: 2015
+
+CodigoSNIP: 739
+NombreProyecto: Construcción de Pavimentación Tipo Empedrado y Puentes- Región Norte
+AvanceFisico: 99.04
+Vigencia: 2019
+There are at least 10 records out of a total of 112 records.
+","Based on the provided data, the projects that have budget executed at zero but with physical progress greater than zero are as follows:
+
+CodigoSNIP: 451
+NombreProyecto: Habilitation of Paved Road Network in Cordillera Paraguari Caaguazú Guaira Caazapa
+AvanceFisico: 82.31
+Vigencia: 2023
+
+CodigoSNIP: 39
+NombreProyecto: Construction of Ñú Guazu Highway Asunción - Luque 6 30KM
+AvanceFisico: 100.00
+Vigencia: 2020
+
+CodigoSNIP: 326
+NombreProyecto: Expansion and Repair of 108 Educational Establishments in Asunción and 10 Departments
+AvanceFisico: 99.87
+Vigencia: 2023
+
+CodigoSNIP: 734
+NombreProyecto: Construction of Stone Paving and Bridges - Central Region - Structural Package Change
+AvanceFisico: 99.70
+Vigencia: 2021
+
+CodigoSNIP: 956
+NombreProyecto: Improvement of Paved Road Infrastructure Management
+AvanceFisico: 38.56
+Vigencia: 2023
+
+CodigoSNIP: 28
+NombreProyecto: Modernization of Water and Sanitation Sector
+AvanceFisico: 94.26
+Vigencia: 2019
+
+CodigoSNIP: 726
+NombreProyecto: Construction of Stone Paving - East Central Region
+AvanceFisico: 100.00
+Vigencia: 2018
+
+CodigoSNIP: 856
+NombreProyecto: Construction of a Network for Educational Institutions
+AvanceFisico: 67.13
+Vigencia: 2020
+
+CodigoSNIP: 68
+NombreProyecto: Construction and Conservation of Rural Roads
+AvanceFisico: 25.27
+Vigencia: 2015
+
+CodigoSNIP: 739
+NombreProyecto: Construction of Stone Paving and Bridges - Northern Region
+AvanceFisico: 99.04
+Vigencia: 2019
+
+There are at least 10 records out of a total of 112 records.",,,
+102,PY,"¿Cuantos proyectos son financiados por Recursos del tesoro en 2022 y 2023, y que valor ejecutado tuvieron?","How many projects are financed by Treasury Resources in 2022 and 2023, and what executed value did they have?","SELECT COUNT(distinct proy.CodigoSNIP) AS cantidad_proyectos, SUM(Ejecutado) AS valor_ejecutado
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+WHERE FuenteFinanciacion = 'RECURSOS DEL TESORO'
+  AND Vigencia IN (2022, 2023);","20 proyectos fueron financiados por Recursos del tesoro en 2022 y 2023
+",Cantidad de proyectos financiados por Recursos del Tesoro en los años 2022 y 2023: 20,Number of projects financed by Treasury Resources in 2022 and 2023: 20,,,
+103,PY,"¿Cual es el proyecto que tiene mayor duración, cual es su fecha de inicio y fin y que organismos financieros tiene?","What is the project that has the longest duration, what is its start and end date and what funding organizations does it have?","SELECT DISTINCT TOP 1 NombreProyecto, FechaInicioProyecto, FechaFinProyecto, pre.OrganismoFinanciador, DATEDIFF(day, FechaInicioProyecto, FechaFinProyecto) dias
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+ORDER BY DATEDIFF(day, FechaInicioProyecto, FechaFinProyecto) DESC;","EL proyecto que tiene mayor duración es Mejoramiento de la Gestión de la SSEAF        su fecha de inicio es 2018-01-01 00:00:00.000, y su fecha final es 2053-01-31 00:00:00.000. Es financiado por la  COMUNIDAD ECONÓMICA EUROPEA","Basado en los datos proporcionados, la respuesta a la pregunta sería la siguiente:
+
+Nombre del Proyecto: Mejoramiento de la Gestión de la SSEAF
+Fecha de Inicio del Proyecto: 1 de enero de 2018
+Fecha de Fin del Proyecto: 31 de enero de 2053
+Organismo Financiador: Comunidad Económica Europea
+Duración del Proyecto (en días): 12814","Based on the provided data, the answer to the question would be:
+
+Project Name: Improvement of SSEAF Management
+Project Start Date: January 1, 2018
+Project End Date: January 31, 2053
+Financing Organization: European Economic Community
+Project Duration (in days): 12814",,,
+104,PY,"¿En los ultimos cuatro años cuantos proyectos han recibido mas recursos, de los inicialmente programados para su ejecución en el departamento de asunción?","In the last four years, how many projects have received more resources than those initially scheduled for execution in the department of Asunción?","SELECT COUNT(*) AS cantidad_proyectos
+FROM VwDatosAbiertosProyectosEjecuciónPresupuestaria pre inner join [dbo].[VwDatosAbiertosProyectosInv] proy
+on pre.CodigoSNIP = proy.CodigoSNIP
+WHERE proy.DepartamentoLocalizacion = 'ASUNCION'
+  AND Ejecutado > Presupuestado
+  AND YEAR(Vigencia) BETWEEN (select max(Vigencia) - 4 from VwDatosAbiertosProyectosEjecuciónPresupuestaria) AND (select max(Vigencia) - 1 from VwDatosAbiertosProyectosEjecuciónPresupuestaria);","En los ultimos cuatro años no existen proyectos que hayan recibido mas recursos, de los inicialmente programados para su ejecución en el departamento de asunción","En los últimos cuatro años, no ha habido proyectos en el departamento de Asunción que hayan recibido más recursos de los inicialmente programados para su ejecución","In the last four years, there have been no projects in the department of Asunción that have received more resources than initially planned for their execution.",,,
+107,PY,¿En qué año comenzaron la mayoría de los proyectos actualmente en curso?,In what year did most of the projects currently in progress begin?,"SELECT TOP 3 YEAR(FechaInicioProyecto) año_inicio, COUNT(DISTINCT CodigoSNIP) AS cantidad_proyectos
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+WHERE estado = 'En ejecución'
+GROUP BY YEAR(FechaInicioProyecto)
+ORDER BY cantidad_proyectos DESC","La mayoria de proyectos que actualmente se encuentran en ejecución tienen el siguiente año de inicio
+-2013, 40 proyectos
+-2019, 32 proyectos
+-2017, 27 proyectos","La mayoría de los proyectos actualmente en curso comenzaron en el año 2013, con un total de 40 proyectos iniciados en ese año.","The majority of the currently ongoing projects started in 2013, with a total of 40 projects initiated in that year.",,,
+108,PY,"¿Cuántos proyectos no han cumplido la fecha prevista de finalización? ¿En qué áreas se concentran, quiénes son sus principales ejecutores y cuál es el monto total de inversión en esos proyectos?","How many projects have not met their planned completion date? What areas do they concentrate on, who are their main executors and what is the total amount of investment in these projects?","SELECT top 10 COUNT(distinct CodigoSNIP) AS cantidad_proyectos,
+       NombreSector,
+       EntidadEjecutora,
+       SUM(CostoEstimadoProyecto) AS monto_total_inversion
+from
+(select distinct CodigoSNIP, CostoEstimadoProyecto, NombreSector,
+       EntidadEjecutora
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+WHERE FechaFinProyecto < getdate()) as A
+GROUP BY NombreSector, EntidadEjecutora
+ORDER BY cantidad_proyectos DESC;","Los proyectos que no han cumplido la fecha prevista de finalización son:
+-Sector Transporte, entidad ejecutora MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES monto de Gs. 56490722363132.00
+-Sector Transporte, entidad ejecutora PRESIDENCIA DE LA REPÚBLICA monto de Gs. 12677671646924.00
+-Sector Energía, entidad ejecutora ADMINISTRACIÓN NACIONAL DE ELECTRICIDAD monto de Gs. 20378424330900.00
+-Sector Salud, entidad ejecutora MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL monto de Gs. 5853628609622.00
+-Sector Educación y Cultura, entidad ejecutora MINISTERIO DE EDUCACIÓN Y CIENCIAS monto de Gs. 1917948393481.00
+-Sector Agua Potable y Alcantarillado, entidad ejecutora MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES monto de Gs. 7507404703125.00
+-Sector Multisectorial , entidad ejecutora PRESIDENCIA DE LA REPÚBLICA monto de Gs. 2427181901775.00
+-Sector Agricultura y Ganadería, entidad ejecutora MINISTERIO DE AGRICULTURA Y GANADERÍA monto de Gs. 1886175344958.00
+-Sector Energía, entidad ejecutora PRESIDENCIA DE LA REPÚBLICA monto de Gs. 5500667113731.00
+-Sector Justicia , entidad ejecutora CORTE SUPREMA DE JUSTICIA monto de Gs. 1088522038379.00","Cantidad de proyectos que no han cumplido la fecha prevista de finalización: 518
+
+Áreas en las que se concentran y sus principales ejecutores, junto con el monto total de inversión en esos proyectos:
+
+Transporte
+
+Entidad Ejecutora: MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES
+Cantidad de proyectos: 151
+Monto total de inversión: 56,490,722,363,132.00 guaraníes
+Transporte
+
+Entidad Ejecutora: PRESIDENCIA DE LA REPÚBLICA
+Cantidad de proyectos: 95
+Monto total de inversión: 12,677,671,646,924.00 guaraníes
+Energía
+
+Entidad Ejecutora: ADMINISTRACIÓN NACIONAL DE ELECTRICIDAD
+Cantidad de proyectos: 31
+Monto total de inversión: 20,378,424,330,900.00 guaraníes
+Salud
+
+Entidad Ejecutora: MINISTERIO DE SALUD PÚBLICA Y BIENESTAR SOCIAL
+Cantidad de proyectos: 16
+Monto total de inversión: 5,853,628,609,622.00 guaraníes
+Educación y Cultura
+
+Entidad Ejecutora: MINISTERIO DE EDUCACIÓN Y CIENCIAS
+Cantidad de proyectos: 15
+Monto total de inversión: 1,917,948,393,481.00 guaraníes
+Agua Potable y Alcantarillado
+
+Entidad Ejecutora: MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES
+Cantidad de proyectos: 15
+Monto total de inversión: 7,507,404,703,125.00 guaraníes","Quantity of projects that have not met the scheduled completion date: 518
+
+Areas where they are concentrated and their main executors, along with the total investment amount in these projects:
+
+Transport
+
+Executing Entity: Ministry of Public Works and Communications
+Number of projects: 151
+Total investment amount: 56,490,722,363,132.00 guaraníes
+Transport
+
+Executing Entity: Presidency of the Republic
+Number of projects: 95
+Total investment amount: 12,677,671,646,924.00 guaraníes
+Energy
+
+Executing Entity: National Electricity Administration
+Number of projects: 31
+Total investment amount: 20,378,424,330,900.00 guaraníes
+Health
+
+Executing Entity: Ministry of Public Health and Social Welfare
+Number of projects: 16
+Total investment amount: 5,853,628,609,622.00 guaraníes
+Education and Culture
+
+Executing Entity: Ministry of Education and Sciences
+Number of projects: 15
+Total investment amount: 1,917,948,393,481.00 guaraníes
+Drinking Water and Sewerage
+
+Executing Entity: Ministry of Public Works and Communications
+Number of projects: 15
+Total investment amount: 7,507,404,703,125.00 guaraníes",,,
+109,PY,¿Cuántos proyectos del Vivienda Urbanismo y Servicios Comunitarios se encuentran actualmente en ejecución en el país? ¿Quiénes son los principales ejecutores?,How many Urban Housing and Community Services projects are currently being implemented in the country? Who are the main executors?,"SELECT COUNT(*) AS cantidad_proyectos,
+       EntidadEjecutora
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+WHERE NombreSector = 'Vivienda  Urbanismo y Servicios Comunitarios'
+      AND estado = 'En ejecución'
+GROUP BY EntidadEjecutora
+ORDER BY cantidad_proyectos DESC;","La cantidad de proyectos de Vivienda Urbanismo y Servicios Comunitarios que se encuentran actualmente en ejecución por ejecutor son:
+-MINISTERIO DE URBANISMO  VIVIENDA Y HABITAT con 4638 proyectos
+-MINISTERIO DE OBRAS PÚBLICAS Y COMUNICACIONES con 18 proyectos
+-PRESIDENCIA DE LA REPÚBLICA con 9 proyectos","Actualmente hay un total de 4665 proyectos en ejecución en el sector de Vivienda, Urbanismo y Servicios Comunitarios en el país. Las principales entidades ejecutoras son:
+
+Ministerio de Urbanismo, Vivienda y Hábitat: 4638 proyectos
+Ministerio de Obras Públicas y Comunicaciones: 18 proyectos
+Presidencia de la República: 9 proyectos
+Estos números indican la distribución de proyectos entre las principales entidades ejecutoras dentro del sector especificado.","There are a total of 4665 projects currently under execution in the sector of Housing, Urbanism, and Community Services in the country. The main executing entities are:
+
+Ministry of Urbanism, Housing, and Habitat: 4638 projects
+Ministry of Public Works and Communications: 18 projects
+Presidency of the Republic: 9 projects
+These numbers indicate the distribution of projects among the main executing entities within the specified sector.",,,
+110,PY,¿Cuáles tres proyectos tienen el mayor avance físico y el menor avance financiero?,Which three projects have the most physical progress and the least financial progress?,"SELECT distinct top 3 CodigoSNIP, NombreProyecto, AvanceFisico, AvanceFinanciero
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+where AvanceFinanciero > 0
+ORDER BY AvanceFisico DESC, AvanceFinanciero ASC","Los proyectos que tienen mayor avence físico y menor avance financiero son:
+-Construcción de Corredores de Exportación con 100% avance físico y 0.08% de avance financiero
+-Construcción de Proyecto de Itapua con 100% avance físico y 0.23% de avance financiero
+-Mejoramiento de la señalizacion horizontal y vertical este con 100% avance físico y 2.31% de avance financiero","Basado en los datos proporcionados, los tres proyectos con el mayor avance físico y el menor avance financiero son:
+
+Proyecto 576 - Construcción de Corredores de Exportación
+
+Avance físico: 100.00%
+Avance financiero: 0.08
+Proyecto 577 - Construcción de Proyecto de Itapua
+
+Avance físico: 100.00%
+Avance financiero: 0.23
+Proyecto 753 - Mejoramiento de la señalización horizontal y vertical este
+
+Avance físico: 100.00%
+Avance financiero: 2.31","Based on the provided data, the three projects with the highest physical progress and the lowest financial progress are:
+
+Project 576 - Construction of Export Corridors
+
+Physical progress: 100.00%
+Financial progress: 0.08
+Project 577 - Construction of Itapua Project
+
+Physical progress: 100.00%
+Financial progress: 0.23
+Project 753 - Improvement of East Horizontal and Vertical Signaling
+
+Physical progress: 100.00%
+Financial progress: 2.31",,,
+111,PY,¿En qué localidad de Paraguay el gobierno invierte más en educación y en salud?,In which town in Paraguay does the government invest the most in education and health?,"SELECT TOP 1 COUNT(CodigoSNIP) CodigoSNIP, SUM(CostoEstimadoProyecto) CostoEstimadoProyecto, NombreMunicipioLocalizacion, NombreSector
+FROM 
+(select DISTINCT CodigoSNIP, NombreProyecto, NombreMunicipioLocalizacion, CostoEstimadoProyecto, proy.NombreSector
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+where proy.NombreSector in ('Salud') and proy.NombreMunicipioLocalizacion !='NACIONALES'
+) AS B
+GROUP BY NombreMunicipioLocalizacion, NombreSector
+ORDER BY 2 desc
+
+SELECT TOP 1 COUNT(CodigoSNIP) CodigoSNIP, SUM(CostoEstimadoProyecto) CostoEstimadoProyecto, NombreMunicipioLocalizacion, NombreSector
+FROM 
+(select DISTINCT CodigoSNIP, NombreProyecto, NombreMunicipioLocalizacion, CostoEstimadoProyecto, proy.NombreSector
+from [dbo].[VwDatosAbiertosProyectosInv] proy
+where proy.NombreSector in ('Educación y Cultura') and proy.NombreMunicipioLocalizacion !='NACIONALES'
+) AS B
+GROUP BY NombreMunicipioLocalizacion, NombreSector
+ORDER BY 2 desc","Las localidades de Paraguay en donde el gobierno invierte mayor cantidad de recursos es MARIANO ROQUE ALONSO con Gs. 2328848524028.00 en Salud, y 
+SAN IGNACIO con Gs. 83545527680.00 en Educación y Cultura","El gobierno invierte más en educación y cultura en San Ignacio, con una asignación presupuestaria de 83,545 millomes de guaraníes. En Mariano Roque Alonso, el enfoque de la inversión es en salud, totalizando 2,328,845 millones de guaraníes. Estas asignaciones destacan las prioridades estratégicas del gobierno en cada localidad.","The government invests more in education and culture in San Ignacio, with a budget allocation of 83,545 million guaraníes. In Mariano Roque Alonso, the focus of investment is on health, totaling 2,328,845 million guaraníes. These allocations highlight the government's strategic priorities in each locality.",,,
+112,PY,¿Cual es el valor presupuestado para los proyectos financiados por la comunidad económica europea?,What is the budgeted value for projects financed by the European economic community?,"select
+  distinct CodigoSNIP, CostoEstimadoProyecto
+from
+  mapachatlakehouse.pry_opendata_proyectos_ejecucion_ppto
+where OrganismoFinanciador like '%EUROPEA%'","El valor presupuestado para los proyectos financiados por la comunidad económica europea es Gs. 2.757.598.281.152
+","Para responder a la pregunta ""¿Cuál es el valor presupuestado para los proyectos financiados por la Comunidad Económica Europea?"", la sumatoria de los valores estimados de 12 proyectos en guaraníes son 2,757, 598 millones de guaranies
+Esta suma representa el valor total presupuestado para los proyectos financiados por la Comunidad Económica Europea.","To answer the question 'What is the budgeted amount for projects funded by the European Economic Community?', the sum of the estimated values of 12 projects in guaraníes is 2,757,598 million guaraníes.
+
+This sum represents the total budgeted amount for projects funded by the European Economic Community.",,,
