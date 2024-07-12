@@ -56,42 +56,42 @@
         {
           "name": "BID_BASE_CIA_END_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_CIA_END_MIP/CSV/2024/05/24/BID_Base_Cla_end_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136599"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_CLA_INSTITUCIONES_SNIP_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_CLA_INSTITUCIONES_SNIP_MIP/CSV/2024/05/24/BID_Base_Cla_Instituciones_snip_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136600"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_CRONOGRAMAS_PROYECTO_FISICO_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_CRONOGRAMAS_PROYECTO_FISICO_MIP/CSV/2024/05/24/BID_Base_cronogramas_proyecto_fisico_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136601"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_FASES_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_FASES_MIP/CSV/2024/05/24/BID_Base_Fases_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136602"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_FICHAS_PROYECTOS_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_FICHAS_PROYECTOS_MIP/CSV/2024/05/24/BID_Base_Fichas_Proyectos_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136603"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_PRESUPUESTO_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_PRESUPUESTO_MIP/CSV/2024/05/24/BID_Base_presupuesto_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136604"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_PROEJE_FISICA_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_PROEJE_FISICA_MIP/CSV/2024/05/24/BID_Base_proeje_fisica_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136605"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         },
         {
           "name": "BID_BASE_UBICACIONES_GEOGRAFICAS_MIP",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/SNIP/BID_BASE_UBICACIONES_GEOGRAFICAS_MIP/CSV/2024/05/24/BID_Base_ubicaciones_geograficas_mip.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=287136599#gid=287136606"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog.xlsx"
         }
       ],
       "profile": "tabular-data-resource",

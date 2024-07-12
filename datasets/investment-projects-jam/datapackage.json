@@ -56,82 +56,82 @@
         {
           "name": "ProyectoXLocalizacion.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/ProyectoXLocalizacion/2024/07/09/ProyectoXLocalizacion.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868290"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwActividades.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwActividades/2024/07/09/vwActividades.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868291"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwActorXProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwActorXProyecto/2024/07/09/vwActorXProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868292"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwBudget.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwBudget/2024/07/09/vwBudget.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868293"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwBudgetAllocationProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwBudgetAllocationProyecto/2024/07/09/vwBudgetAllocationProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868294"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwEsquemaFinanciacionProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwEsquemaFinanciacionProyecto/2024/07/09/vwEsquemaFinanciacionProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868295"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwFechaBudgetProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwFechaBudgetProyecto/2024/07/09/vwFechaBudgetProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868296"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwHistorialEstados.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwHistorialEstados/2024/07/09/vwHistorialEstados.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868297"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwObjetivoEspecifico.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwObjetivoEspecifico/2024/07/09/vwObjetivoEspecifico.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868298"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwProductos.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwProductos/2024/07/09/vwProductos.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868299"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwProyectos/2024/07/09/vwProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868300"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwSectores.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSectores/2024/07/09/vwSectores.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868301"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwSeguimientoAvanceFinanciero.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSeguimientoAvanceFinanciero/2024/07/09/vwSeguimientoAvanceFinanciero.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868302"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwSeguimientoAvanceFisico.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSeguimientoAvanceFisico/2024/07/09/vwSeguimientoAvanceFisico.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868303"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwSeguimientoEsquemaFinanciacionProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSeguimientoEsquemaFinanciacionProyecto/2024/07/09/vwSeguimientoEsquemaFinanciacionProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868304"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         },
         {
           "name": "vwSpentProyecto.csv",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/JAM/MOF/vwSpentProyecto/2024/07/09/vwSpentProyecto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1ZWsP4gx3PEcOkpSz0YSjPsSkULagLpQIw07iL4cNfaI/edit?gid=1975868290#gid=1975868305"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Jamaica%20-%20Catalog.xlsx"
         }        
       ],
       "profile": "tabular-data-resource",
