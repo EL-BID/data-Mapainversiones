@@ -86,7 +86,7 @@
         {
           "name": "PARTIDAS_DE_GASTO",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/PARTIDAS_DE_GASTO/CSV/2024/05/01/mh_partidas_de_gasto.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=2117212777#rangeid=558022531"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog%20Budget.xlsx"
         }
       ],
       "schema": {
@@ -418,7 +418,7 @@
         {
           "name": "PROCESOS_DE_COMPRA",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/PROCESOS_DE_COMPRA/CSV/2024/05/01/mh_procesos.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=2117212777#rangeid=558022532"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog%20Budget.xlsx"
         }
       ],
       "schema": {
@@ -568,7 +568,7 @@
         {
           "name": "CONTRATOS_DE_COMPRA",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/DOM/HACIENDA/CONTRATOS_DE_COMPRA/CSV/2024/05/01/mh_contratos.csv",
-          "description_url": "https://docs.google.com/spreadsheets/d/1L2X8LZWSr9EseLdXPIwij-LkwwJieAxDWbdq3I1MYtM/edit?gid=2117212777#rangeid=558022533"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Dominican%20Republic%20-%20Catalog%20Budget.xlsx"
         }
       ],
       "schema": {
