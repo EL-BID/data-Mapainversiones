@@ -56,27 +56,27 @@
         {
           "name": "vw_ejecucion_inversion",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/EJECUCION_INVERSION/CSV/2024/05/12/pan_vw_ejecucion_inversion_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         },
         {
           "name": "vw_actividades",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/ACTIVIDADES/CSV/2024/05/12/pan_vw_actividades_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         },
         {
           "name": "vw_dpi_ficha_entidad",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/DPI_FICHA_ENTIDAD/CSV/2024/05/12/pan_vw_dpi_ficha_entidad_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         },
         {
           "name": "vw_proyectos",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/PROYECTOS/CSV/2024/05/12/pan_vw_proyectos_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         },
         {
           "name": "vw_sinip_territorio",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/SINIP_TERRITORIO/CSV/2024/05/12/pan_vw_sinip_territorio_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         }          
       ],
       "profile": "tabular-data-resource",
@@ -472,12 +472,12 @@
         {
           "name": "vw_partidas",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/PARTIDAS/CSV/2024/05/12/pan_vw_partidas_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         },
         {
           "name": "vw_grupofuncionalxactividad",
           "url": "https://mapainversionesanalytics.blob.core.windows.net/sourceraw/PAN/MEF/GRUPO_FUNCIONALIDAD_POR_ACTIVIDADES/CSV/2024/05/12/pan_vw_grupofuncionalxactividad_data.csv",
-          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/28f3f492839055674117f92005795a9ebd388644/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects.xlsx"
+          "description_url": "https://github.com/EL-BID/data-Mapainversiones/blob/afef1dbd806004c82282aa549982c2296c0cc1ab/metadata/rawdata_descriptions/Panama%20-%20Catalog%20Raw%20InvestmentProjects%20.xlsx"
         }      
       ],
       "profile": "tabular-data-resource",
