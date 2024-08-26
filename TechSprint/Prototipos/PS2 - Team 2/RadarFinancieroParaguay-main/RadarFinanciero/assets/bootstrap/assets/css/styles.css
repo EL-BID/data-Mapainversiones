@@ -1,0 +1,16 @@
+#banner-inversion {
+  background: url("../../assets/img/banner_background.png");
+}
+
+.container {
+  align-items: center;
+}
+
+.button-yellow {
+  width: auto;
+}
+
+body {
+  font-size: 14;
+}
+
