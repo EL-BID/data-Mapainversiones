@@ -1,0 +1,72 @@
+include head.pug
+
+mixin field(id,title,value,link)
+    if value
+        tr.field
+            td.fieldTitle #{title}:
+            td.fieldValue
+                if (link)
+                    a(href="/proveedor/"+link) #{value}
+                else
+                    | !{value}
+
++head("Sociedad.info - Partido")
+//-  Proveedor "+supplier._source.nombre_persona || supplier._source.nombre_razon_social)
+div.wrapper
+    p !{jp(item)}
+    //- h1 Proveedor #{supplier._source.nombre_persona || supplier._source.nombre_razon_social}
+
+    //- div.supplier
+
+    //-     h2 Datos de entidad:
+    //-         table
+    //-             +field("nombre_razon_social","Nombre o Razón Social", supplier._source.nombre_razon_social)
+    //-             //- Cuando es persona viene en un formato extraño de apellidos y nombres separado por comas sin espacios, entonces creé el campo nombre_persona que es más legible
+    //-             -//
+
+    //-     if (supplier._source.representantes_legales)
+    //-         hr
+    //-         h2 Representantes Legales
+    //-         each rep,i in supplier._source.representantes_legales
+    //-             h4 Representante legal #{i+1}
+    //-             table
+    //-                 +field("nit","NIT",rep.nit,rep.nit)
+
+    //-     if (representaciones.length > 0)
+    //-         h2 Empresas de este representante:
+    //-         each emp,i in representaciones
+    //-             h4 Representación legal #{i+1}
+    //-             table
+    //-                 +field("nombre_razon_social","Nombre o Razón Social",emp._source.nombre_razon_social,emp._source.nit)
+    //-                 //- Cuando es persona viene en un formato extraño de apellidos y nombres separado por comas sin espacios, entonces creé el campo nombre_persona que es más legible
+    //-                 -//
+    //-     h2 Enlaces
+    //-     p
+    //-         a(href="/buscador?type=contract&keyword="+supplier._source.nit) Buscar todos los contratos de este proveedor
+    //-     p
+    //-         a(href="https://www.guatecompras.gt/proveedores/consultaDetProvee.aspx?rqp=9&lprv="+supplier._source.gcid) Ver perfil en Guatecompras
+
+
+//- "abbreviation": "es_AR":"CAMBIA JUJUY"
+//- "colors":["Pink"],
+//- "fb_urls":[],
+//- "id":13,
+//- "ig_urls":[],
+//- "logo_urls":[],
+//- "name":"en_US":"CAMBIA JUJUY",
+//- "websites":[],
+//- "country":"AR"
+
+//- "area":
+//- "city":"SAN MIGUEL DE ALLENDE,
+//-  APASEO EL GRANDE",
+//- "country":"MX",
+//- "district_type":"REGIONAL_LEGISLATIVE",
+//- "name": "en_US":"Diputación del Distrito Local 9 GUANAJUATO",
+//- "parent_area_id":"", //chck
+//- "state":"GUA"
+
+//- MULTIPLE
+//- Candidatos
+
++footer()

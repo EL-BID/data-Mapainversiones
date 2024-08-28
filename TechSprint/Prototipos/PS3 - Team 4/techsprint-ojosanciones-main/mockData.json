@@ -1,0 +1,39 @@
+{
+    "hits": {
+        "hits": [
+            {
+                "_source": {
+                "folio": "00841117",
+                "fecha_solicitud": "2017-06-20T22:00:00.000Z",
+                "dependencia": "H. Ayuntamiento de Xalapa",
+                "estatus": "Terminada",
+                "medio": "Electrónica",
+                "tipo_solicitud": "Información pública",
+                "descripcion": "PRIMERA CRUZADA ESTATAL CONTRA LA CORRUPCION.\nJEFE DE LA UNIDAD MUNICIPAL DE ACCESO AL DERECHO DE INFORMACIÓN\nPresente\nMuy buenos días. Su servidor Filiberto Lozano Romero, en el marco de los Derechos consagrados  en los   artículos 1ª, 6º, 8º. De la Constitución General de la República, El 6ª de la Constitución del Estado de Veracruz de Ignacio de la Llave. En correlación con los artículos 1,5, 6, 9, 26, 29, 59 ,60  61 Y 62 fracción 1 de la Ley de Transparencia y Acceso a la información para el Estado de Veracruz, de Ignacio de la Llave, (normas contenidas en la Ley 875, formulo de manera respetuosa la siguiente solicitud de información. \n1.- ¿Relación de las personas físicas o morales que recibieron  los pagos erogados por la partida de gratificaciones en este año  de  esa partida 15431\n \n \n Solo  para el caso que de que no sea atendida, en los tiempos y formas establecidas por la ley, o  la respuesta dada, se haga de manera limitada, omisa o parcial,  hare uso de mi derecho del recurso de revisión, de conformidad en los artículos 62. 64 fracción I, II, 68 de la Ley de la materia   \nEn seguida, me permito distraer su atención, para que de la manera más atenta me  proporcione la siguiente información: la misma que solicito: primero que se dé respuesta mediante la plataforma del sistema informex , solo para el caso que no pueda ser entregada en la plataforma , pido que sea en mi cuenta personal de correo, unfilitoplus@hotmail.com, dato personal que le  autorizo solo  para este fin,  de existir inconveniente, la pido desde este momento cd magnético pero de no ser posible, me queda el último recurso de esta sea entregada en  copias simples,  en este caso pido desde ahora  pido me indique  su costo al momento de ponerla a mi disposición, para el caso de que no respete la máxima publicidad de la información pública ni la gratuidad de la misma,,\nDesde ahora le solicito, me anexe el recibo  del pago o la forma de envió o cobro, esto  sin perjuicio de que me indique, primero si  puedo consultarla y revisarla, utilizando los medios electrónicos  a mi alcance de esta manera  ruego, se pronuncie desde este momento sobre este pedimento y  Para que en caso de que esto no sea posible o no se entregue a mi entera satisfacción, desde ahora le comunico que  presentare mi inconformidad ante IVAI\nsolo  para el caso, de que existiera algún impedimento en lo solicitado o de una incorrecta interpretación de la Ley o ante la negativa de que  algún funcionario público  que tenga la información, se oponga a la entrega, le ruego me lo haga saber, pidiendo desde este momento, me indique nombre , su puesto, función y la excusa .por la que se me niega  el derecho humano de  la información, explicando  los motivos, por el cuales se opera con opacidad, evitando  la máxima publicidad de las obligaciones de ley  área  donde labora :\nSin otro particular aprovecho la ocasión para saludarle",
+                "otros_datos": "",
+                "archivo_adjunto": "https://serviciospnt.inai.org.mx/inai3/rest/organoGarante/administracionControlDescarga/descargarAdjuntosPorSolicitud/E3EA454E990014E7",
+                "medio_entrega": "Consulta vía Infomex - Sin costo",
+                "fecha_limite": "2017-08-07T22:00:00.000Z",
+                "respuesta": "Entrega de Información",
+                "texto_respuesta": "Esperando haberle atendido de manera adecuada en relación con su solicitud de información, quedo de usted para cualquier aclaración y/o duda al respecto.",
+                "fecha_respuesta": "2017-08-07T22:00:00.000Z",
+                "pais": "MEXICO",
+                "estado": "Veracruz",
+                "municipio": "Xalapa",
+                "codigo_postal": "91030",
+                "sector": "Ayuntamientos",
+                "dias_respuesta": 35,
+                "fecha_solicitud_anio": 2017,
+                "fecha_solicitud_mes": 6,
+                "fecha_solicitud_dia": 21,
+                "fecha_respuesta_anio": 2017,
+                "fecha_respuesta_mes": 8,
+                "fecha_respuesta_dia": 8,
+                "id_organo": 30,
+                "organo": "Veracruz",
+                "anio": 2017
+            }
+        }
+        ]
+    }
+}

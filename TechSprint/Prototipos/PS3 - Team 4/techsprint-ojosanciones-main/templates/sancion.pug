@@ -1,0 +1,182 @@
+include head.pug
+
+
+mixin field(id,title,value)
+    if value && value.length > 0
+        span.field(class=id)
+            span.fieldTitle #{title}
+            span.fieldValue
+                if (id == "nit")
+                    a(href="/proveedor/"+value) #{value}
+                else
+                    | !{cut(value,10000)}
+
+
+
+
+mixin hfield(id,title,value,highlight)
+    if (highlight && highlight[id])
+        each match in highlight[id]
+            +field(id+ " field_main highlight",title,match)
+    else
+        +field(id+ " field_main",title,value)
+
+mixin fuente_nombre(tipo)
+    case tipo 
+        when "sat-efos"
+            | Empresa fantasma 
+        when "sfp"
+            | Inhabilitada 
+        when "ofac"
+            span OFAC 
+                i.fi.fi-rr-info(title="Las condiciones de la categoría otorgada por la OFAC no reflejan la jurisprudencia en otros países.")
+
+        when "sat2"
+            | Deudora de impuestos
+        when "algo"
+            | Sancionada
+
+mixin fuente_link(tipo,rfc)
+    case tipo 
+        when "sat-efos"
+            a(href="http://omawww.sat.gob.mx/cifras_sat/Paginas/datos/vinculo.html?page=ListCompleta69B.html?rfc="+rfc).actionButton ➡️ Ver fuente SAT-EFOS
+        when "sfp"
+            a(href="https://directoriosancionados.apps.funcionpublica.gob.mx/SanFicTec/jsp/Ficha_Tecnica/SancionadosN.htm?rfc="+rfc).actionButton ➡️ Ver fuente SFP
+        when "ofac"
+            a(href="https://sanctionssearch.ofac.treas.gov/?rfc="+rfc).actionButton ➡️ Ir a fuente OFAC
+            
+        when "sat2"
+            | Deudora de impuestos (proximamente)
+        when "algo"
+            | Sancionada (proximamente)
+ 
+if (!item._source)
+    return false
+
+
++head("Ojo a las sanciones - "+item._source.nombre_razon_social)
+    div.wrapper
+        //- +buscador(filters)
+
+        +actionBar(item._source.rfc)
+
+        div.itemContents
+            div.fieldsetgroup.titulo
+                
+                h1
+                    span.resultIcon Sanciones a 
+                    span.itemName #{item._source.nombre_razon_social}
+
+
+
+            div.fieldsetgroup.encabezado 
+                div.fieldset.fielset_main
+                    +field("rfc","RFC",item._source.rfc)
+                    +field("otros_nombres","Otros nombres",(item._source.otros_nombres.length > 0 ? item._source.otros_nombres.reduce((n,m)=>n+', '+m): ""))
+                    +field("entidad_federativa","Entidad federativa",item._source.entidad_federativa)
+                    +field("fecha_nacimiento","Fecha de nacimiento",fechaFormateada(item._source.fecha_nacimiento))
+                    +field("lugar_nacimiento","Lugar de nacimiento",item._source.lugar_nacimiento)
+                    +field("genero","Género",item._source.genero)
+                    +hfield("direcciones","Direcciones",item._source.direcciones ? item._source.direcciones.reduce((n,m)=>n+'<br> '+m) : "")
+                  
+            div.sanciones
+                each tipo in ["sat-efos","ofac", "sfp", "sat2", "algo"]
+                    div.sancion
+                        h2 
+                            +fuente_nombre(tipo) 
+                        //- p #{j(item.aggs.tipo_sancion)}
+                        if (item.aggs.tipo_sancion[tipo])
+                            p SI
+                            p.semaforo.check(title="Sanción "+tipo)
+                                i.fi.fi-rr-check
+                            p.semaforoLink
+                                a(href="#"+tipo) Detalles 
+                        else
+                            case tipo
+                                when "sat2"
+                                when "algo"
+                                    p ND
+                                    p.semaforo.nd(title="No disponible (no se evaluó)")
+                                        i.fi.fi-rr-minus-small
+                                    p.semaforoLink
+                                        a(href="https://donate.stripe.com/00g6pH9nn5OpgkU3cd") Donar
+                                default
+                                    p NO
+                                    p.semaforo.cross(title="No listada (sin sanción)")
+                                        i.fi.fi-rr-cross-small
+
+            //- #{jp(item)}
+            div 
+            if item._source.sanciones
+                div
+                    h2 Detalle de sanciones
+                    p Para conocer la causa de las sanciones impuestas a las empresas, debe de consultarse la sección de información ampliada o bien referirse a las fuentes primarias de la información.
+                    each sancion in item._source.sanciones
+                        div.fieldsetgroup(id=sancion.fuente)
+                            h3 
+                                +fuente_nombre(sancion.fuente)
+                            if (sancion.fecha_publicacion_dof_definitivos)
+                                +hfield("numero_oficio_definitivos_dof","Oficio en el Diario Oficial de la Federación",sancion.numero_oficio_definitivos_dof)
+                                //- +field("fecha_publicacion_dof_definitivos","Publicación en DOF",fechaFormateada(sancion.fecha_publicacion_dof_definitivos))
+
+                                //- +field("numero_oficio_definitivos_sat","Oficio definitivo SAT",sancion.numero_oficio_definitivos_sat)
+
+                                //- +field("fecha_oficio_definitivos_sat","Fecha",fechaFormateada(sancion.fecha_oficio_definitivos_sat))
+
+
+
+                                //- +field("fecha_oficio_definitivos_dof","Fecha oficio DOF (repetido?)",fechaFormateada(sancion.fecha_oficio_definitivos_dof))
+
+                            +hfield("causa main_field","Causa de la sanción",sancion.causa)
+                            +hfield("leyes_infringidas","Leyes infringidas",sancion.leyes_infringidas)
+                            +hfield("programa","Programa",sancion.programa)
+                            +field("numero_expediente","Expediente",sancion.numero_expediente)
+                            if sancion.fuente == "ofac"
+                                +field("fecha_sancion","Información actualizada el",fechaFormateada(sancion.fecha_sancion))
+                            else 
+                                +field("fecha_sancion","Publicado en DOF",fechaFormateada(sancion.fecha_sancion))
+                            +field("fecha_notificacion","Fecha de notificacion", fechaFormateada(fechaFormateada(sancion.fecha_notificacion)))
+                            +field("fuente","Autoridad sancionadora",sancion.fuente)
+                            +field("periodo_inhabilitacion","Duración de la inhabilitación",sancion.periodo_inhabilitacion)
+                            +field("fecha_inicio","desde",fechaFormateada(sancion.fecha_inicio))
+                            +field("fecha_publicacion_sat_definitivos","Publicado originalmente por el SAT",fechaFormateada(sancion.fecha_publicacion_sat_definitivos))
+
+                            +field("fecha_fin","hasta",fechaFormateada(sancion.fecha_fin))
+
+                            +hfield("field_main observaciones","Observaciones",sancion.observaciones)
+                            //- +field("institucion_dependencia","Institucion o dependencia",sancion.institucion_dependencia)
+
+                            +field("monto_multa","monto_multa",sancion.monto_multa)
+                            //- +field("objeto_social","Objeto social",sancion.objeto_social)
+
+                            //- +field("telefono","Teléfono de la empresa",sancion.telefono)
+
+
+
+
+
+                            if (sancion.fecha_publicacion_dof_sentencia_favorable)
+                                h3 Sentencia favorable
+                                +hfield("fecha_publicacion_dof_sentencia_favorable","fecha_publicacion_dof_sentencia_favorable",fechaFormateada(sancion.fecha_publicacion_dof_sentencia_favorable))
+                                +field("numero_oficio_sentencia_favorable_sat","numero_oficio_sentencia_favorable_sat",sancion.numero_oficio_sentencia_favorable_sat)
+
+                                +field("fecha_oficio_sentencia_favorable_sat","fecha_oficio_sentencia_favorable_sat",fechaFormateada(sancion.fecha_oficio_sentencia_favorable_sat))
+
+                                +field("fecha_publicacion_sat_sentencia_favorable","fecha_publicacion_sat_sentencia_favorable",fechaFormateada(sancion.fecha_publicacion_sat_sentencia_favorable))
+
+                                +field("numero_oficio_sentencia_favorable_dof","numero_oficio_sentencia_favorable_dof",sancion.numero_oficio_sentencia_favorable_dof)
+
+                                +field("fecha_oficio_sentencia_favorable_dof","fecha_oficio_sentencia_favorable_dof",fechaFormateada(sancion.fecha_oficio_sentencia_favorable_dof))
+
+
+                            if sancion.responsable
+                                +field("responsable.cargo","Cargo del responsable por la sanción",sancion.responsable.cargo)
+                                //- +field("responsable.nombre","Persona responsable por la sanción",sancion.responsable.nombre)
+                                //- +field("responsable.email","Email",sancion.responsable.email)
+                                //- +field("responsable.telefono","Telefono",sancion.responsable.telefono)
+                            p 
+                                +fuente_link(sancion.fuente,item._source.rfc)
+
+    +footer()
+
+

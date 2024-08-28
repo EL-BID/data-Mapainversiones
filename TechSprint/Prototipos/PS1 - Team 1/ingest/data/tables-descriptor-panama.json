@@ -1,0 +1,556 @@
+{
+    "investmentProjectsPanInvestmentProjects": {
+        "title": "Investment projects",
+        "description": "Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+        "fields": [
+            {
+                "name": "IdProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique project identifier.",
+                "description_es": "Identificador único del proyecto."
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Full name of the project.",
+                "description_es": "Nombre completo del proyecto."
+            },
+            {
+                "name": "FechaInicioProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Date the project started.",
+                "description_es": "Fecha en que se inició el proyecto."
+            },
+            {
+                "name": "FechaFinProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Expected project completion date.",
+                "description_es": "Fecha prevista de finalización del proyecto."
+            },
+            {
+                "name": "valorinicialestimado",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated initial value of the project.",
+                "description_es": "Valor inicial estimado del proyecto."
+            },
+            {
+                "name": "presupuestovigente2023",
+                "type": "number",
+                "format": "default",
+                "description": "Total project value budgeted in 2023.",
+                "description_es": "Valor total del proyecto presupuestado en 2023."
+            },
+            {
+                "name": "ObjetivoGeneral",
+                "type": "string",
+                "format": "default",
+                "description": "General objective of the project.",
+                "description_es": "Objetivo general del proyecto."
+            },
+            {
+                "name": "IdSector",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the sector to which the project belongs. Options: [610, 999, 110, 120, 310, 140, 220, 420, 130, 150, 210, 410, 320, 620, 520, 510, 230, 630]",
+                "description_es": "Identificador del sector al que pertenece el proyecto. Opciones: [610, 999, 110, 120, 310, 140, 220, 420, 130, 150, 210, 410, 320, 620, 520, 510, 230, 630]"
+            },
+            {
+                "name": "FechaUltimaModificacion",
+                "type": "string",
+                "format": "default",
+                "description": "Date of the last modification of the project. Options: ['2024-01-31 13:21:45.400000000']",
+                "description_es": "Fecha de la última modificación del proyecto. Opciones: ['2024-01-31 13:21:45.400000000']"
+            },
+            {
+                "name": "PorcentajeAvanceFinanciero",
+                "type": "number",
+                "format": "default",
+                "description": "Percentage of financial progress of the project.",
+                "description_es": "Porcentaje de avance financiero del proyecto."
+            },
+            {
+                "name": "IDMoneda",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the currency used in the project. Options: [1]",
+                "description_es": "Identificador de la moneda utilizada en el proyecto. Opciones: [1]"
+            },
+            {
+                "name": "Moneda",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the currency used in the project. Options: ['USD']",
+                "description_es": "Nombre de la moneda utilizada en el proyecto. Opciones: ['USD']"
+            },
+            {
+                "name": "IdSubSector",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the subsector to which the project belongs.",
+                "description_es": "Identificador del subsector al que pertenece el proyecto."
+            },
+            {
+                "name": "Descripcion",
+                "type": "string",
+                "format": "default",
+                "description": "Descripción del subsector al que pertenece el proyecto."
+            },
+            {
+                "name": "nombresubsector",
+                "type": "integer",
+                "format": "default",
+                "description": "Description of the subsector to which the project belongs. Options: ['6', 'SIN SUBSECTOR', '1', '3', '2', '4', '5']",
+                "description_es": "Identificador del subsector en un dígito. Opciones: ['6', 'SIN SUBSECTOR', '1', '3', '2', '4', '5']"
+            },
+            {
+                "name": "nombresector",
+                "type": "string",
+                "format": "default",
+                "description": "Subsector identifier in one digit. Options: ['ADMINISTRACIÓN PUBLICA GENERAL', 'SIN SECTOR', 'EDUCACION Y CULTURA', 'SALUD', 'TRANSPORTE Y COMUNICACIONES', 'PROTECCION  Y SEGURIDAD SOCIAL', 'CONSERVACIÓN DE LA BIODIVERSIDAD', 'INDUSTRIA COMERCIO Y TURISMO', 'TRABAJO', 'VIVIENDA Y DESARROLLO COMUNAL', 'DESARROLLO AMBIENTAL', 'AGROPECUARIO', 'ENERGIA', 'ORDEN PÚBLICO Y SEGURIDAD', 'SEGUROS', 'BANCA Y FINANCIAMIENTO', 'DESARROLLO TECNOLOGICO', 'JUSTICIA']",
+                "description_es": "Nombre del sector al que pertenece el proyecto. Opciones: ['ADMINISTRACIÓN PUBLICA GENERAL', 'SIN SECTOR', 'EDUCACION Y CULTURA', 'SALUD', 'TRANSPORTE Y COMUNICACIONES', 'PROTECCION  Y SEGURIDAD SOCIAL', 'CONSERVACIÓN DE LA BIODIVERSIDAD', 'INDUSTRIA COMERCIO Y TURISMO', 'TRABAJO', 'VIVIENDA Y DESARROLLO COMUNAL', 'DESARROLLO AMBIENTAL', 'AGROPECUARIO', 'ENERGIA', 'ORDEN PÚBLICO Y SEGURIDAD', 'SEGUROS', 'BANCA Y FINANCIAMIENTO', 'DESARROLLO TECNOLOGICO', 'JUSTICIA']"
+            },
+            {
+                "name": "idejecutor",
+                "type": "integer",
+                "format": "default",
+                "description": "Name of the sector to which the project belongs.",
+                "description_es": "Identificador del ejecutor del proyecto."
+            },
+            {
+                "name": "nombreejecutor",
+                "type": "string",
+                "format": "default",
+                "description": "Identifier of the project executor.",
+                "description_es": "Nombre del ejecutor del proyecto."
+            },
+            {
+                "name": "idareaejecutor",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the area of ​​the project executor. Options: [0, 1, 2, 3]",
+                "description_es": "Identificador del área del ejecutor del proyecto. Opciones: [0, 1, 2, 3]"
+            },
+            {
+                "name": "nombreareaejecutor",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the project executor area. Options: ['GOBIERNO CENTRAL', 'INSTITUCIONES DESCENTRALIZADAS', 'EMPRESAS PUBLICAS', 'INTERMEDIARIOS FINANCIEROS']",
+                "description_es": "Nombre del área del ejecutor del proyecto. Opciones: ['GOBIERNO CENTRAL', 'INSTITUCIONES DESCENTRALIZADAS', 'EMPRESAS PUBLICAS', 'INTERMEDIARIOS FINANCIEROS']"
+            },
+            {
+                "name": "codigoetapa",
+                "type": "integer",
+                "format": "default",
+                "description": "Code of the stage the project is in. Options: [1]",
+                "description_es": "Código de la etapa en que se encuentra el proyecto. Opciones: [1]"
+            },
+            {
+                "name": "nombreetapa",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the stage the project is in. Options: ['INVERSION']",
+                "description_es": "Nombre de la etapa en que se encuentra el proyecto. Opciones: ['INVERSION']"
+            },
+            {
+                "name": "codigofase",
+                "type": "integer",
+                "format": "default",
+                "description": "Code of the phase the project is in. Options: [1, 3]",
+                "description_es": "Código de la fase en que se encuentra el proyecto. Opciones: [1, 3]"
+            },
+            {
+                "name": "nombrefase",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the phase the project is in. Options: ['Continuidad', 'Nuevo']",
+                "description_es": "Nombre de la fase en que se encuentra el proyecto. Opciones: ['Continuidad', 'Nuevo']"
+            },
+            {
+                "name": "programa",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the program to which the project belongs. Options: [1, 2, 9, 5, 4, 8, 3, 6]",
+                "description_es": "Identificador del programa al que pertenece el proyecto. Opciones: [1, 2, 9, 5, 4, 8, 3, 6]"
+            },
+            {
+                "name": "descripcion_programas",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the program to which the project belongs.",
+                "description_es": "Nombre del programa al que pertenece el proyecto."
+            },
+            {
+                "name": "subprograma",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the subprogram to which the project belongs.",
+                "description_es": "Identificador del subprograma al que pertenece el proyecto."
+            },
+            {
+                "name": "descripcion_subprogramas",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the applet to which the project belongs.",
+                "description_es": "Nombre del subprograma al que pertenece el proyecto."
+            },
+            {
+                "name": "actividad",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the activity related to the project.",
+                "description_es": "Identificador de la actividad relacionada con el proyecto."
+            },
+            {
+                "name": "descripcion_actividad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the activity related to the project.",
+                "description_es": "Nombre de la actividad relacionada con el proyecto."
+            },
+            {
+                "name": "cod_reg",
+                "type": "integer",
+                "format": "default",
+                "description": "Concatenated code of territorial registration of the project.",
+                "description_es": "Código concatenado de registro territorial del proyecto."
+            },
+            {
+                "name": "provincia",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the province where the project is executed. Options: [8, 0, 12, 7, 3, 9, 13, 2, 4, 6, 1, 5, 10, 11]",
+                "description_es": "Identifier of the province where the project is executed. Opciones: [8, 0, 12, 7, 3, 9, 13, 2, 4, 6, 1, 5, 10, 11]"
+            },
+            {
+                "name": "distritos",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the district where the project is executed.",
+                "description_es": "Identificador del distrito donde se ejecuta el proyecto."
+            },
+            {
+                "name": "corregimientos",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the township where the project is executed.",
+                "description_es": "Identificador del corregimiento donde se ejecuta el proyecto."
+            },
+            {
+                "name": "descripcion_provincia",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the province where the project is being executed. Options: ['PANAMA', 'NIVEL NACIONAL', 'COMARCA NGOBE BUGLE', 'LOS SANTOS', 'COLON', 'VERAGUAS', 'PANAMA OESTE', 'COCLE', 'CHIRIQUI', 'HERRERA', 'BOCAS DEL TORO', 'DARIEN', 'COMARCA KUNA YALA', 'COMARCA EMBERA-WOONAN']",
+                "description_es": "Nombre de la provincia donde se ejecuta el proyecto. Opciones: ['PANAMA', 'NIVEL NACIONAL', 'COMARCA NGOBE BUGLE', 'LOS SANTOS', 'COLON', 'VERAGUAS', 'PANAMA OESTE', 'COCLE', 'CHIRIQUI', 'HERRERA', 'BOCAS DEL TORO', 'DARIEN', 'COMARCA KUNA YALA', 'COMARCA EMBERA-WOONAN']"
+            },
+            {
+                "name": "descripcion_distritos",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the district where the project is being executed.",
+                "description_es": "Nombre del distrito donde se ejecuta el proyecto."
+            },
+            {
+                "name": "descripcion_corregimiento",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the township where the project is being executed.",
+                "description_es": "Nombre del corregimiento donde se ejecuta el proyecto."
+            },
+            {
+                "name": "Codigo_sinip",
+                "type": "number",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "partida_presupuestaria",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            }
+        ],
+        "title_es": "Proyectos de inversión",
+        "description_es": "Proyectos de inversión pública, entendiendo la misma como la utilización de los impuestos por parte del gobierno, para invertirlo con el objetivo de beneficiar a la población mediante obras de infraestructura, servicios, desarrollo de proyectos productivos, incentivo en la creación y desarrollo de empresas, promoción de las actividades comerciales, generación de empleo, protección de derechos fundamentales (salud, educación, protección social, etc.), y mejoramiento de la calidad de vida."
+    },
+    "investmentProjectsPanPresupuesto": {
+        "title": "General State Budget",
+        "description": "The General State Budget is a forecast of the State's expenses and income for a financial year. This forecast of expenses and income will be included in a document that will be processed as law in the National Assembly of Deputies.",
+        "fields": [
+            {
+                "name": "Periodo",
+                "type": "integer",
+                "format": "default",
+                "description": "annual period Options: [2020, 2021, 2022, 2023]",
+                "description_es": "período anual Opciones: [2020, 2021, 2022, 2023]"
+            },
+            {
+                "name": "Mes",
+                "type": "integer",
+                "format": "default",
+                "description": "monthly period Options: [12]",
+                "description_es": "período mensual Opciones: [12]"
+            },
+            {
+                "name": "CodigoNivel_de_Administracion",
+                "type": "integer",
+                "format": "default",
+                "description": "admin level code Options: [0, 1, 2, 3]",
+                "description_es": "código de nivel de administración Opciones: [0, 1, 2, 3]"
+            },
+            {
+                "name": "Nivel_de_Administracion",
+                "type": "string",
+                "format": "default",
+                "description": "management level Options: ['GOBIERNO CENTRAL', 'INSTITUCIONES DESCENTRALIZADAS', 'EMPRESAS PUBLICAS', 'INTERMEDIARIOS FINANCIEROS']",
+                "description_es": "nivel de administración Opciones: ['GOBIERNO CENTRAL', 'INSTITUCIONES DESCENTRALIZADAS', 'EMPRESAS PUBLICAS', 'INTERMEDIARIOS FINANCIEROS']"
+            },
+            {
+                "name": "CodigoInstitucion",
+                "type": "integer",
+                "format": "default",
+                "description": "institution code",
+                "description_es": "código de institución"
+            },
+            {
+                "name": "Institucion",
+                "type": "string",
+                "format": "default",
+                "description": "institution name",
+                "description_es": "nombre de institución"
+            },
+            {
+                "name": "codigoue",
+                "type": "integer",
+                "format": "default",
+                "description": "executing unit code",
+                "description_es": "código de unidad ejecutora"
+            },
+            {
+                "name": "ue",
+                "type": "string",
+                "format": "default",
+                "description": "executing unit name",
+                "description_es": "nombre de unidad ejecutora"
+            },
+            {
+                "name": "codigoga",
+                "type": "integer",
+                "format": "default",
+                "description": "group code",
+                "description_es": "código de grupo"
+            },
+            {
+                "name": "ga",
+                "type": "string",
+                "format": "default",
+                "description": "group name",
+                "description_es": "nombre de grupo"
+            },
+            {
+                "name": "TipoGerencia",
+                "type": "string",
+                "format": "default",
+                "description": "type of management Options: [None]",
+                "description_es": "tipo de gerencia Opciones: [None]"
+            },
+            {
+                "name": "CodigoFuente_de_Financiamiento",
+                "type": "integer",
+                "format": "default",
+                "description": "funding source code",
+                "description_es": "código de fuente de financiamiento"
+            },
+            {
+                "name": "Fuente_de_Financiamiento",
+                "type": "string",
+                "format": "default",
+                "description": "Funding Source",
+                "description_es": "fuente de financiamiento"
+            },
+            {
+                "name": "CodigoPrograma",
+                "type": "integer",
+                "format": "default",
+                "description": "program code Options: [1, 8, 2, 5, 3, 4, 7, 6, 9, 0]",
+                "description_es": "código de programa Opciones: [1, 8, 2, 5, 3, 4, 7, 6, 9, 0]"
+            },
+            {
+                "name": "Programa",
+                "type": "string",
+                "format": "default",
+                "description": "program name",
+                "description_es": "nombre de programa"
+            },
+            {
+                "name": "CodigoSub_Programa",
+                "type": "integer",
+                "format": "default",
+                "description": "sub program code",
+                "description_es": "código de sub programa"
+            },
+            {
+                "name": "Sub_Programa",
+                "type": "string",
+                "format": "default",
+                "description": "sub program name",
+                "description_es": "nombre de sub programa"
+            },
+            {
+                "name": "CodigoProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "project code Options: [None]",
+                "description_es": "código de proyecto Opciones: [None]"
+            },
+            {
+                "name": "Proyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Project name Options: [None]",
+                "description_es": "nombre de proyecto Opciones: [None]"
+            },
+            {
+                "name": "CodigoActividadObra",
+                "type": "integer",
+                "format": "default",
+                "description": "activity code",
+                "description_es": "código de actividad"
+            },
+            {
+                "name": "ActividadObra",
+                "type": "string",
+                "format": "default",
+                "description": "activity name",
+                "description_es": "nombre de actividad"
+            },
+            {
+                "name": "CodigoObjeto_de_gasto",
+                "type": "integer",
+                "format": "default",
+                "description": "expense object code",
+                "description_es": "código de objeto del gasto"
+            },
+            {
+                "name": "Objeto_de_gasto",
+                "type": "string",
+                "format": "default",
+                "description": "expense object name",
+                "description_es": "nombre de objeto del gasto"
+            },
+            {
+                "name": "CodigoGrupo_de_gasto",
+                "type": "integer",
+                "format": "default",
+                "description": "expense group code Options: [1, 0, 5, 3, 2, 6, 9, 7, 4, 8]",
+                "description_es": "código de grupo de gasto Opciones: [1, 0, 5, 3, 2, 6, 9, 7, 4, 8]"
+            },
+            {
+                "name": "Grupo_de_gasto",
+                "type": "string",
+                "format": "default",
+                "description": "expense group name Options: ['SERVICIOS NO PERSONALES', 'SERVICIOS PERSONALES', 'CONSTRUCCIONES POR CONTRATO', 'MAQUINARIA Y EQUIPO', 'MATERIALES Y SUMINISTROS', 'TRANSFERENCIAS CORRIENTES', 'ASIGNACIONES GLOBALES', 'TRANSFERENCIAS DE CAPITAL', 'INVERSIÓN FINANCIERA', 'SERVICIOS DE LA DEUDA']",
+                "description_es": "nombre de grupo de gasto Opciones: ['SERVICIOS NO PERSONALES', 'SERVICIOS PERSONALES', 'CONSTRUCCIONES POR CONTRATO', 'MAQUINARIA Y EQUIPO', 'MATERIALES Y SUMINISTROS', 'TRANSFERENCIAS CORRIENTES', 'ASIGNACIONES GLOBALES', 'TRANSFERENCIAS DE CAPITAL', 'INVERSIÓN FINANCIERA', 'SERVICIOS DE LA DEUDA']"
+            },
+            {
+                "name": "CodigoBeneficiario_de_Transferencia",
+                "type": "string",
+                "format": "default",
+                "description": "beneficiary code Options: [None]",
+                "description_es": "código de beneficiario Opciones: [None]"
+            },
+            {
+                "name": "Beneficiario_de_Transferencia",
+                "type": "string",
+                "format": "default",
+                "description": "name of beneficiary Options: [None]",
+                "description_es": "nombre de beneficiario Opciones: [None]"
+            },
+            {
+                "name": "Aprobado",
+                "type": "integer",
+                "format": "default",
+                "description": "value approved amount",
+                "description_es": "valor monto aprobado"
+            },
+            {
+                "name": "Vigente",
+                "type": "integer",
+                "format": "default",
+                "description": "value current amount",
+                "description_es": "valor monto vigente"
+            },
+            {
+                "name": "Ejecucion_del_mes",
+                "type": "number",
+                "format": "default",
+                "description": "execution value",
+                "description_es": "valor ejecución"
+            },
+            {
+                "name": "Ejecutado_Acumulado_al_mes",
+                "type": "number",
+                "format": "default",
+                "description": "cumulative execution value",
+                "description_es": "valor ejecución acumulada"
+            },
+            {
+                "name": "Disponible",
+                "type": "number",
+                "format": "default",
+                "description": "available value",
+                "description_es": "valor disponible"
+            },
+            {
+                "name": "%_de_Ejecucion",
+                "type": "number",
+                "format": "default",
+                "description": "percentage of progress in execution",
+                "description_es": "porcentaje de avance en ejecución"
+            },
+            {
+                "name": "sectorial",
+                "type": "string",
+                "format": "default",
+                "description": "sector name",
+                "description_es": "nombre sectorial"
+            },
+            {
+                "name": "sector",
+                "type": "string",
+                "format": "default",
+                "description": "infrastructure name Options: ['ADMINISTRACIÓN PUBLICA GENERAL', 'SIN SECTOR', 'EDUCACION Y CULTURA', 'SALUD', 'PROTECCION  Y SEGURIDAD SOCIAL', 'VIVIENDA Y DESARROLLO COMUNAL', 'CONSERVACIÓN DE LA BIODIVERSIDAD', 'ENERGIA', 'TRANSPORTE Y COMUNICACIONES', 'ORDEN PÚBLICO Y SEGURIDAD', 'JUSTICIA', 'INDUSTRIA COMERCIO Y TURISMO', 'MINERIA', 'BANCA Y FINANCIAMIENTO', 'SEGUROS', 'AGROPECUARIO', 'DESARROLLO AMBIENTAL', 'TRABAJO', 'SERVICIO DE LA DEUDA PÚBLICA', 'DESARROLLO TECNOLOGICO']",
+                "description_es": "nombre sectorial Opciones: ['ADMINISTRACIÓN PUBLICA GENERAL', 'SIN SECTOR', 'EDUCACION Y CULTURA', 'SALUD', 'PROTECCION  Y SEGURIDAD SOCIAL', 'VIVIENDA Y DESARROLLO COMUNAL', 'CONSERVACIÓN DE LA BIODIVERSIDAD', 'ENERGIA', 'TRANSPORTE Y COMUNICACIONES', 'ORDEN PÚBLICO Y SEGURIDAD', 'JUSTICIA', 'INDUSTRIA COMERCIO Y TURISMO', 'MINERIA', 'BANCA Y FINANCIAMIENTO', 'SEGUROS', 'AGROPECUARIO', 'DESARROLLO AMBIENTAL', 'TRABAJO', 'SERVICIO DE LA DEUDA PÚBLICA', 'DESARROLLO TECNOLOGICO']"
+            },
+            {
+                "name": "grupo_fuente_finan",
+                "type": "integer",
+                "format": "default",
+                "description": "funding source group Options: [0.0, 3.0, 7.0, None, 4.0, 6.0, 1.0, 2.0, 5.0]",
+                "description_es": "grupo de fuente de financiamiento Opciones: [0.0, 3.0, 7.0, None, 4.0, 6.0, 1.0, 2.0, 5.0]"
+            },
+            {
+                "name": "desc_grupo_fuente_finan",
+                "type": "string",
+                "format": "default",
+                "description": "funding source group name Options: ['INGRESOS CORRIENTES', 'CREDITO EXTERNO', 'FIDEICOMISOS', None, 'DONACIONES', 'FONDO FIDUCUARIO', 'RECURSOS DEL PATRIMONIO', 'CREDITO INTERNO', 'TRANSFERENCIA DE CAPITAL']",
+                "description_es": "nombre del grupo de fuente de financiamiento Opciones: ['INGRESOS CORRIENTES', 'CREDITO EXTERNO', 'FIDEICOMISOS', None, 'DONACIONES', 'FONDO FIDUCUARIO', 'RECURSOS DEL PATRIMONIO', 'CREDITO INTERNO', 'TRANSFERENCIA DE CAPITAL']"
+            },
+            {
+                "name": "Copy of ga",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            }
+        ],
+        "title_es": "Presupuesto General del Estado",
+        "description_es": "El Presupuesto General del Estado es una previsión de los gastos e ingresos del Estado para un ejercicio económico. Esta previsión de gastos e ingresos quedará recogida en un documento que se tramitará como ley en la Asamblea Nacional de Diputados."
+    }
+}

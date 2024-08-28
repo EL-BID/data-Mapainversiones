@@ -1,0 +1,620 @@
+{
+    "_id": {
+      "$oid": "64a1b299e9965a961efabc3d"
+    },
+    "version": "1.1",
+    "uri": "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023",
+    "packages": [
+      "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.0667546c-0ce8-4459-aab5-3e04abb270a7",
+      "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.2023-07-01T16:01:49.890949_baa5e",
+      "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.0ff96cd6-3a0c-4629-b70b-62dbfcc2f78d",
+      "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.83636ae7-ace5-4f82-8aac-6c53b86a3f97"
+    ],
+    "publisher": {
+      "name": "b2gov",
+      "uri": "https://b2gov.net/"
+    },
+    "publishedDate": {
+      "$date": "2023-11-15T08:41:16.643Z"
+    },
+    "records": [
+      {
+        "ocid": "ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023",
+        "releases": [
+          {
+            "id": "2023-07-01T16:01:49.890949_baa5e",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.2023-07-01T16:01:49.890949_baa5e",
+            "date": {
+              "$date": "2023-07-01T16:01:49.891Z"
+            },
+            "tag": [
+              "tender"
+            ]
+          },
+          {
+            "id": "0667546c-0ce8-4459-aab5-3e04abb270a7",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.0667546c-0ce8-4459-aab5-3e04abb270a7",
+            "date": {
+              "$date": "2023-07-15T21:46:07.629Z"
+            },
+            "tag": [
+              "tenderUpdate",
+              "award"
+            ]
+          },
+          {
+            "id": "83636ae7-ace5-4f82-8aac-6c53b86a3f97",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.83636ae7-ace5-4f82-8aac-6c53b86a3f97",
+            "date": {
+              "$date": "2023-07-30T08:44:07.664Z"
+            },
+            "tag": [
+              "tenderUpdate"
+            ]
+          },
+          {
+            "id": "0ff96cd6-3a0c-4629-b70b-62dbfcc2f78d",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023.0ff96cd6-3a0c-4629-b70b-62dbfcc2f78d",
+            "date": {
+              "$date": "2023-08-13T20:18:56.511Z"
+            },
+            "tag": [
+              "tenderUpdate"
+            ]
+          }
+        ],
+        "compiledRelease": {
+          "ocid": "ocds-d6a7a6-IA-79-ZI2-920042950-N-5-2023",
+          "id": "0ff96cd6-3a0c-4629-b70b-62dbfcc2f78d",
+          "date": {
+            "$date": "2023-08-13T20:18:56.511Z"
+          },
+          "buyer": {
+            "id": "079ZI2",
+            "name": "SERVICIOS DE SALUD DE OAXACA"
+          },
+          "parties": [
+            {
+              "id": "920042950",
+              "name": "UNIDAD DE RECURSOS MATERIALES Y SERVICIOS GENERALES",
+              "contactPoint": {
+                "name": "JULIO MOISES RAMOS LOPEZ",
+                "email": "sso_adquisiciones@hotmail.com"
+              },
+              "roles": [
+                "procuringEntity"
+              ]
+            },
+            {
+              "id": "079ZI2",
+              "name": "SERVICIOS DE SALUD DE OAXACA",
+              "roles": [
+                "buyer"
+              ]
+            },
+            {
+              "id": "KARINA IVETT VELASCO KAUFFMANN",
+              "name": "KARINA IVETT VELASCO KAUFFMANN",
+              "roles": [
+                "tenderer",
+                "supplier"
+              ]
+            }
+          ],
+          "tender": {
+            "id": "IA-79-ZI2-920042950-N-5-2023",
+            "title": "IMPRESIONES DE DOCUMENTOS OFICIALES",
+            "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS.",
+            "status": "complete",
+            "statusDetails": "ADJUDICADO",
+            "procuringEntity": {
+              "id": "920042950",
+              "name": "UNIDAD DE RECURSOS MATERIALES Y SERVICIOS GENERALES"
+            },
+            "mainProcurementCategory": "goods",
+            "submissionMethodDetails": "EN LA SALA DE JUNTAS DEL DEPARTAMENTO DE ADQUISICIONES DE LOS SERVICIOS DE SALUD DE OAXACA",
+            "items": [
+              {
+                "id": "1",
+                "description": "RECETARIO MÉDICO TAMAÑO MEDIA CARTA, PAPEL GRAMAJE DE 75 GRS, IMPRESO A COLOR, EL ORIGINAL Y DOS COPIAS IMPRESAS A UNA TINTA (NEGRO) EN PAPEL AUTOCOPIANTE VERDE Y AMARILLO, CON FOLIO EN TINTA ROJA EN LOS TRES TANTOS, TERMINADO EN BLOCKS DE 50 JUEGOS CADA UNO.- (RECETAS DE SEGUNDO NIVEL, INICIANDO CON FOLIO A-00001) (UNIDAD BLOCK)",
+                "quantity": 40000,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "33603-0002",
+                  "description": "SERVICIO DE IMPRESION DE DOCUMENTOS OFICIALES PARA LA PRESTACION DE SERV. PUB."
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "33603",
+                    "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS"
+                  }
+                ]
+              },
+              {
+                "id": "2",
+                "description": "RECETARIO MÉDICO TAMAÑO MEDIA CARTA, PAPEL GRAMAJE DE 75 GRS, IMPRESO A COLOR, EL ORIGINAL Y DOS COPIAS IMPRESAS A UNA TINTA (NEGRO) EN PAPEL AUTOCOPIANTE VERDE Y AMARILLO, CON FOLIO EN TINTA ROJA EN LOS TRES TANTOS, TERMINADO EN BLOCKS DE 50 JUEGOS CADA UNO.-  (RECETAS DE PRIMER NIVEL, INICIANDO CON FOLIO A-00001) (UNIDAD BLOCK)",
+                "quantity": 60000,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "33603-0002",
+                  "description": "SERVICIO DE IMPRESION DE DOCUMENTOS OFICIALES PARA LA PRESTACION DE SERV. PUB."
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "33603",
+                    "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS"
+                  }
+                ]
+              }
+            ],
+            "tenderPeriod": {
+              "startDate": {
+                "$date": "2023-06-29T13:19:31.000Z"
+              },
+              "endDate": {
+                "$date": "2023-07-03T09:00:00.000Z"
+              },
+              "durationInDays": 3
+            },
+            "enquiryPeriod": {
+              "startDate": {
+                "$date": "2023-06-29T13:19:31.000Z"
+              },
+              "endDate": {
+                "$date": "2023-06-29T14:00:00.000Z"
+              },
+              "durationInDays": 0
+            },
+            "awardPeriod": {
+              "startDate": {
+                "$date": "2023-07-05T00:00:00.000Z"
+              }
+            },
+            "documents": [
+              {
+                "id": "1",
+                "documentType": "INVITACIÓN",
+                "title": "ba00523.pdf",
+                "description": "INVITACIÓN",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=31963f8e-8aae-4f7e-8ee1-b39ac575ed4f&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-29T13:05:11.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-29T13:19:31.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "2",
+                "documentType": "ANEXO TÉCNICO",
+                "title": "ba00523 - anexos.pdf",
+                "description": "ANEXO TÉCNICO",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=82fd6c9d-a757-41d8-89eb-d26e89ba7431&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-29T13:05:11.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-29T13:19:31.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "3",
+                "documentType": "MODELO DE CONTRATO",
+                "title": "ba00523 - contrato.pdf",
+                "description": "MODELO DE CONTRATO",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=1326668c-11bd-420c-860a-ac68a9aa079e&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-29T13:05:11.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-29T13:19:31.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "4",
+                "documentType": "ACTA JUNTA DE ACLARACIONES",
+                "title": "Acta de Junta de Aclaraciones E5 2023.pdf",
+                "description": "ACTA JUNTA DE ACLARACIONES",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=b4ba8ef2-1637-4b33-a3e8-76f14d31904c&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-07-03T15:12:28.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-07-03T15:12:28.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "5",
+                "documentType": "ACTA DE APERTURA DE PROPOSICIONES",
+                "title": "Acta de Apertura E5 2023.pdf",
+                "description": "ACTA DE APERTURA DE PROPOSICIONES",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=36993cb7-a1f0-47d8-8767-d1daa9cd4ce9&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-07-06T13:28:44.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-07-06T13:28:44.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "6",
+                "documentType": "ACTA DE FALLO",
+                "title": "Acta de FAllo E5 2023.pdf",
+                "description": "ACTA DE FALLO",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=78a6f3ce-0259-473b-a9b9-0fed9fee3bed&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-07-07T19:27:20.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-07-07T19:27:20.000Z"
+                },
+                "language": "es"
+              }
+            ],
+            "value": {
+              "currency": "MXN"
+            },
+            "procurementMethod": "open",
+            "procurementMethodDetails": "INVITACIÓN A CUANDO MENOS TRES PERSONAS"
+          },
+          "initiationType": "tender",
+          "language": "es",
+          "tag": [
+            "tenderUpdate"
+          ],
+          "metadata": {
+            "insertedDate": {
+              "$date": "2023-08-13T20:18:56.512Z"
+            },
+            "country": "mx",
+            "dataOrigin": "compranet_upcp",
+            "typeOfParse": "build_ocds",
+            "urlSource": "https://upcp-compranet.hacienda.gob.mx/sitiopublico/#/sitiopublico/detalle/c08f091742ff4510a1b4547a830288f6/procedimiento"
+          },
+          "awards": [
+            {
+              "id": "82/2023",
+              "title": "IMPRESIONES DE DOCUMENTOS OFICIALES",
+              "status": "active",
+              "date": {
+                "$date": "2023-07-05T00:00:00.000Z"
+              },
+              "value": {
+                "amount": 8708120,
+                "currency": "MXN",
+                "exchangeRates": [
+                  {
+                    "currency": "USD",
+                    "rate": 0.058377,
+                    "date": {
+                      "$date": "2023-07-03T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "EUR",
+                    "rate": 0.053527,
+                    "date": {
+                      "$date": "2023-07-03T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "MXN",
+                    "rate": 1,
+                    "date": {
+                      "$date": "2023-07-03T00:00:00.000Z"
+                    },
+                    "source": "application"
+                  }
+                ],
+                "amount_USD": 508353.92124,
+                "amount_EUR": 466119.53924,
+                "amount_LOCAL": 8708120,
+                "currency_LOCAL": "MXN"
+              },
+              "suppliers": [
+                {
+                  "id": "KARINA IVETT VELASCO KAUFFMANN",
+                  "name": "KARINA IVETT VELASCO KAUFFMANN"
+                }
+              ],
+              "contractPeriod": {
+                "startDate": {
+                  "$date": "2023-07-05T00:00:00.000Z"
+                },
+                "endDate": {
+                  "$date": "2023-08-06T00:00:00.000Z"
+                },
+                "durationInDays": 32
+              },
+              "items": [
+                {
+                  "id": "1.1",
+                  "description": "RECETARIO MÉDICO TAMAÑO MEDIA CARTA, PAPEL GRAMAJE DE 75 GRS, IMPRESO A COLOR, EL ORIGINAL Y DOS COPIAS IMPRESAS A UNA TINTA (NEGRO) EN PAPEL AUTOCOPIANTE VERDE Y AMARILLO, CON FOLIO EN TINTA ROJA EN LOS TRES TANTOS, TERMINADO EN BLOCKS DE 50 JUEGOS CADA UNO.- (RECETAS DE SEGUNDO NIVEL, INICIANDO CON FOLIO A-00001) (UNIDAD BLOCK)",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "33603-0002",
+                    "description": "SERVICIO DE IMPRESION DE DOCUMENTOS OFICIALES PARA LA PRESTACION DE SERV. PUB."
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "33603",
+                      "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS"
+                    }
+                  ],
+                  "quantity": 40000,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 87.0812,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058377,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.053527,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 5.0835392124,
+                      "amount_EUR": 4.6611953924,
+                      "amount_LOCAL": 87.0812,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.2",
+                  "description": "RECETARIO MÉDICO TAMAÑO MEDIA CARTA, PAPEL GRAMAJE DE 75 GRS, IMPRESO A COLOR, EL ORIGINAL Y DOS COPIAS IMPRESAS A UNA TINTA (NEGRO) EN PAPEL AUTOCOPIANTE VERDE Y AMARILLO, CON FOLIO EN TINTA ROJA EN LOS TRES TANTOS, TERMINADO EN BLOCKS DE 50 JUEGOS CADA UNO.-  (RECETAS DE PRIMER NIVEL, INICIANDO CON FOLIO A-00001) (UNIDAD BLOCK)",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "33603-0002",
+                    "description": "SERVICIO DE IMPRESION DE DOCUMENTOS OFICIALES PARA LA PRESTACION DE SERV. PUB."
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "33603",
+                      "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS"
+                    }
+                  ],
+                  "quantity": 60000,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 87.0812,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058377,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.053527,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 5.0835392124,
+                      "amount_EUR": 4.6611953924,
+                      "amount_LOCAL": 87.0812,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "contracts": [
+            {
+              "id": "82/2023",
+              "awardID": "82/2023",
+              "title": "IMPRESIONES DE DOCUMENTOS OFICIALES",
+              "status": "terminated",
+              "period": {
+                "startDate": {
+                  "$date": "2023-07-05T00:00:00.000Z"
+                },
+                "endDate": {
+                  "$date": "2023-08-06T00:00:00.000Z"
+                },
+                "durationInDays": 32
+              },
+              "value": {
+                "amount": 8708120,
+                "currency": "MXN",
+                "exchangeRates": [
+                  {
+                    "currency": "USD",
+                    "rate": 0.058377,
+                    "date": {
+                      "$date": "2023-07-03T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "EUR",
+                    "rate": 0.053527,
+                    "date": {
+                      "$date": "2023-07-03T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "MXN",
+                    "rate": 1,
+                    "date": {
+                      "$date": "2023-07-03T00:00:00.000Z"
+                    },
+                    "source": "application"
+                  }
+                ],
+                "amount_USD": 508353.92124,
+                "amount_EUR": 466119.53924,
+                "amount_LOCAL": 8708120,
+                "currency_LOCAL": "MXN"
+              },
+              "items": [
+                {
+                  "id": "1.1",
+                  "description": "RECETARIO MÉDICO TAMAÑO MEDIA CARTA, PAPEL GRAMAJE DE 75 GRS, IMPRESO A COLOR, EL ORIGINAL Y DOS COPIAS IMPRESAS A UNA TINTA (NEGRO) EN PAPEL AUTOCOPIANTE VERDE Y AMARILLO, CON FOLIO EN TINTA ROJA EN LOS TRES TANTOS, TERMINADO EN BLOCKS DE 50 JUEGOS CADA UNO.- (RECETAS DE SEGUNDO NIVEL, INICIANDO CON FOLIO A-00001) (UNIDAD BLOCK)",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "33603-0002",
+                    "description": "SERVICIO DE IMPRESION DE DOCUMENTOS OFICIALES PARA LA PRESTACION DE SERV. PUB."
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "33603",
+                      "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS"
+                    }
+                  ],
+                  "quantity": 40000,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 87.0812,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058377,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.053527,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 5.0835392124,
+                      "amount_EUR": 4.6611953924,
+                      "amount_LOCAL": 87.0812,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.2",
+                  "description": "RECETARIO MÉDICO TAMAÑO MEDIA CARTA, PAPEL GRAMAJE DE 75 GRS, IMPRESO A COLOR, EL ORIGINAL Y DOS COPIAS IMPRESAS A UNA TINTA (NEGRO) EN PAPEL AUTOCOPIANTE VERDE Y AMARILLO, CON FOLIO EN TINTA ROJA EN LOS TRES TANTOS, TERMINADO EN BLOCKS DE 50 JUEGOS CADA UNO.-  (RECETAS DE PRIMER NIVEL, INICIANDO CON FOLIO A-00001) (UNIDAD BLOCK)",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "33603-0002",
+                    "description": "SERVICIO DE IMPRESION DE DOCUMENTOS OFICIALES PARA LA PRESTACION DE SERV. PUB."
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "33603",
+                      "description": "IMPRESIONES DE DOCUMENTOS OFICIALES PARA LA PRESTACIÓN DE SERVICIOS PÚBLICOS, IDENTIFICACIÓN, FORMATOS ADMINISTRATIVOS Y FISCALES, FORMAS VALORADAS, CERTIFICADOS Y TÍTULOS"
+                    }
+                  ],
+                  "quantity": 60000,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 87.0812,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058377,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.053527,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-03T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 5.0835392124,
+                      "amount_EUR": 4.6611953924,
+                      "amount_LOCAL": 87.0812,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }

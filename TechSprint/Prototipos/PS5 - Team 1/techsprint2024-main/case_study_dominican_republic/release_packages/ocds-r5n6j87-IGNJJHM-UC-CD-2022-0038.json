@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-UC-CD-2022-0038",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:50Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-UC-CD-2022-0038",
+            "id": "b5a59a63-8f94-4a39-968e-288a8e4a6a30",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 150000.0,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-UC-CD-2022-0038",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5,000 Y 1:25,000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Adquisici\u00f3n de Tickets de Combustible para trabajo de campo en el levantamiento de la cartograf\u00eda base Regi\u00f3n Norte",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Compras por Debajo del Umbral"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

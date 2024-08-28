@@ -1,0 +1,178 @@
+{
+    "investmentProjectsJamInvestmentProjects": {
+        "title": "Public Investment Projects of the Government of Jamaica",
+        "description": "Contains information on investment projects of the Government of Jamaica.",
+        "fields": [
+            {
+                "name": "IdProject",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique identifier of the project in MapaInversiones",
+                "description_es": "Identificador unico del proyecto en MapaInversiones"
+            },
+            {
+                "name": "CodeProject",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique Project Identifier in the Jamaican public investment system",
+                "description_es": "Identificador Único del Proyecto en el sistema de Inversion publica de Jamaica"
+            },
+            {
+                "name": "StatusProject",
+                "type": "string",
+                "format": "default",
+                "description": "Project status Options: ['Ongoing']",
+                "description_es": "Estado del Proyecto Opciones: ['Ongoing']"
+            },
+            {
+                "name": "IdSector",
+                "type": "integer",
+                "format": "default",
+                "description": "Sector Identifier",
+                "description_es": "Identificador del Sector"
+            },
+            {
+                "name": "Sector",
+                "type": "string",
+                "format": "default",
+                "description": "Secotres associated according to the scope of Economic Activity",
+                "description_es": "Secotres asociado de acuerdo al ámbito de Actividad Económica"
+            },
+            {
+                "name": "StartDate",
+                "type": "string",
+                "format": "default",
+                "description": "Estimated Project Start Date",
+                "description_es": "Fecha estimada de Inicio del Proyecto"
+            },
+            {
+                "name": "FinishDate",
+                "type": "string",
+                "format": "default",
+                "description": "Estimated Project Completion Date",
+                "description_es": "Fecha estimada de Finalización del Proyecto"
+            },
+            {
+                "name": "ExtensionDate",
+                "type": "string",
+                "format": "default",
+                "description": "Project Extension Date (This date applies when extensions are requested at the end of the project",
+                "description_es": "Fecha Extension del Proyecto (Esta fecha aplica cuando se solicitan extensiones en la finalizacion del proyecto"
+            },
+            {
+                "name": "ProjectName",
+                "type": "string",
+                "format": "default",
+                "description": "Project's name ",
+                "description_es": "Nombre del Proyecto "
+            },
+            {
+                "name": "ProjectEstimateCost",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated Project Cost in Jamaican dollars in thousands",
+                "description_es": "Costo Estimado del Proyecto en dolares de jamaica in thousands"
+            },
+            {
+                "name": "FinancialPogress",
+                "type": "number",
+                "format": "default",
+                "description": "Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project in economic progress",
+                "description_es": "Avance o Asignación Financiera (en porcentaje) para medir el cumplimiento del Proyecto en avance economico"
+            },
+            {
+                "name": "ProjectOverview",
+                "type": "string",
+                "format": "default",
+                "description": "General Summary of the Project, Explains in general terms the characteristics of the project",
+                "description_es": "General Resumen del Proyecto, Explica de forma general las caracteristicas del proyecto"
+            },
+            {
+                "name": "GeneralObjective",
+                "type": "string",
+                "format": "default",
+                "description": "General objective of the Project. Explain the general scope of the project",
+                "description_es": "Objetivo general del Proyecto. Explica el alcance general del proyecto"
+            },
+            {
+                "name": "SpecificObjectives",
+                "type": "string",
+                "format": "default",
+                "description": "Specific objectives of the Project. List the specific objectives and specific scope of the project",
+                "description_es": "Objetivos especificos del Proyecto. Lista los objetivos especificos y alcances especifico del proyecto"
+            },
+            {
+                "name": "IdExecutingAgency",
+                "type": "integer",
+                "format": "default",
+                "description": "Code and identifier of the Project Executing Entity Options: [12001, 96, 99, 62, 48, 73, 68, 61, 138, 130, 4]",
+                "description_es": "Codigo e identificador de la Entidad Ejecutora del Proyecto Opciones: [12001, 96, 99, 62, 48, 73, 68, 61, 138, 130, 4]"
+            },
+            {
+                "name": "ExecutingAgency",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['Government of Jamaica', 'European Development Fund', 'Multiple Agencies', 'International Bank for Reconstruction & Development', 'United Nations Children´s Fund', 'China EXIM Bank', 'Inter-American Development Bank', 'Green Climate Fund', 'Japan International Cooperation Agency', 'Ministry of National Security']",
+                "description_es": "Entidad o Agencia encargada de la ejecucion del proyecto Opciones: ['Government of Jamaica', 'European Development Fund', 'Multiple Agencies', 'International Bank for Reconstruction & Development', 'United Nations Children´s Fund', 'China EXIM Bank', 'Inter-American Development Bank', 'Green Climate Fund', 'Japan International Cooperation Agency', 'Ministry of National Security']"
+            },
+            {
+                "name": "IdFundingAgency",
+                "type": "integer",
+                "format": "default",
+                "description": " Options: [99, 96, 48, 73, 62, 63, 61, 138, 4, 3, 161]",
+                "description_es": "Codigo e Identificador de la Agencia o Entidad encargada de la financiacion del proyecto Opciones: [99, 96, 48, 73, 62, 63, 61, 138, 4, 3, 161]"
+            },
+            {
+                "name": "FundingAgency",
+                "type": "string",
+                "format": "default",
+                "description": "Agency or Entity in charge of financing the project. When there are several entities or agencies, it will be established as multiple agencies. Options: ['Multiple Agencies', 'European Development Fund', 'Government of Jamaica', 'United Nations Children´s Fund', 'International Bank for Reconstruction & Development', 'Caribbean Development Bank', 'Inter-American Development Bank', 'Green Climate Fund', 'Ministry of National Security', 'Ministry of Health & Wellness', 'Government of France']",
+                "description_es": "Agencia o Entidad encargada de la financiacion del proyecto. Cuando son varias las entidades o agencias se establecera como multiples agencias  Opciones: ['Multiple Agencies', 'European Development Fund', 'Government of Jamaica', 'United Nations Children´s Fund', 'International Bank for Reconstruction & Development', 'Caribbean Development Bank', 'Inter-American Development Bank', 'Green Climate Fund', 'Ministry of National Security', 'Ministry of Health & Wellness', 'Government of France']"
+            },
+            {
+                "name": "IdCounty",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier of the administrative territorial county division for Jamaica Options: [1, 2, 3, 0]",
+                "description_es": "Identificador del county division territorial administrativa para jamaica Opciones: [1, 2, 3, 0]"
+            },
+            {
+                "name": "County",
+                "type": "string",
+                "format": "default",
+                "description": "Name of county administrative territorial division for Jamaica Options: ['CORNWALL', 'SURREY', 'MIDDLESEX', 'ISLAND-WIDE']",
+                "description_es": "Nombre de county division territorial administrativa para jamaica Opciones: ['CORNWALL', 'SURREY', 'MIDDLESEX', 'ISLAND-WIDE']"
+            },
+            {
+                "name": "IdParish",
+                "type": "integer",
+                "format": "default",
+                "description": "Parish identifier of the administrative territorial sub-division for Jamaica Options: [113, 212, 301, 304, 307, 308, 311, 0, 114, 206, 102, 109, 203, 110, 205]",
+                "description_es": "Identificador del Parish de la sub- division territorial administrativa para jamaica Opciones: [113, 212, 301, 304, 307, 308, 311, 0, 114, 206, 102, 109, 203, 110, 205]"
+            },
+            {
+                "name": "Parish",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Parish of the administrative territorial sub-division for Jamaica Options: ['TRELAWNY', 'ST. THOMAS', 'CLARENDON', 'MANCHESTER', 'ST. ANN', 'ST. CATHERINE', 'ST. MARY', 'ISLAND-WIDE', 'WESTMORELAND', 'ST. ANDREW', 'HANOVER', 'ST. ELIZABETH', 'KINGSTON', 'ST. JAMES', 'PORTLAND']",
+                "description_es": "Nombre del Parish de la sub-division territorial administrativa para jamaica Opciones: ['TRELAWNY', 'ST. THOMAS', 'CLARENDON', 'MANCHESTER', 'ST. ANN', 'ST. CATHERINE', 'ST. MARY', 'ISLAND-WIDE', 'WESTMORELAND', 'ST. ANDREW', 'HANOVER', 'ST. ELIZABETH', 'KINGSTON', 'ST. JAMES', 'PORTLAND']"
+            },
+            {
+                "name": "UpdateDateData",
+                "type": "string",
+                "format": "default",
+                "description": "Registry Update Date in MapaInversiones Options: ['2024-06-27 23:00:58.120000000']",
+                "description_es": "Fecha de Actualizacion del Registro en MapaInversiones Opciones: ['2024-06-27 23:00:58.120000000']"
+            },
+            {
+                "name": "DataSource",
+                "type": "string",
+                "format": "default",
+                "description": "Source of information Options: ['Project Bank - Jamaica - Ministry of Finance & the Public Service Jamaica']",
+                "description_es": "Fuente de la Informacion  Opciones: ['Project Bank - Jamaica - Ministry of Finance & the Public Service Jamaica']"
+            }
+        ],
+        "title_es": "Proyectos de Inversión Publica del Gobierno de Jamaica",
+        "description_es": "Contiene informacion de los proyectos de inversion del Gobierno de Jamaica"
+    }
+}

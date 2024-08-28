@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-UC-CD-2022-0034",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:49Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-UC-CD-2022-0034",
+            "id": "09443127-5b4f-4c55-b60a-dedb274c9aa9",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 142000.0,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-UC-CD-2022-0034",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5,000 Y 1:25,000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Adquisici\u00f3n de equipos y accesorios tecnol\u00f3gicos para optimizar el rendimiento de los equipos a utilizar en el Levantamiento de la cartograf\u00eda base Regi\u00f3n Norte, destinado a MIPYME",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Compras por Debajo del Umbral"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

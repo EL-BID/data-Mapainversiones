@@ -1,0 +1,72 @@
+include head.pug
++head("Gobernantes.info - Candidatos en Argentina, Colombia y México")
+
+div.wrapper
+    div.infobanner_gob
+        div.infobanner_info
+            h1 #{country} La información de candidatos y funcionarios es fundamental para la democracia
+
+    div.hometext#razon
+        p Recopilamos y publicamos datos
+
+    div.cardbox
+        div.card#buscador1
+            div.icon
+                img(src="/static/img/icon-contratos.png" width="80")
+            h2.cardTitle Candidatos
+            p Escribe un texto para buscar en los contratos.
+            form(action="/buscador")
+                fieldset
+                    // label(for="keyword") Término:
+                    input(type="text", name="keyword", id="keyword")
+                p(align="center")
+                    button(type="submit").actionButton Buscar
+                input(type="hidden", name="type", value="person")
+                input(type="hidden", name="country", value=country)
+
+        div.card#buscador2
+            div.icon
+                img(src="/static/img/icon-proveedores.png" width="80")
+            h2.cardTitle Elecciones
+            p Escribe una palabra para ver empresas y personas relacionadas.
+            form(action="/buscador")
+                fieldset
+                    // label(for="keyword") Término:
+                    input(type="text", name="keyword", id="keyword")
+                p(align="center")
+                    button(type="submit").actionButton Buscar
+                input(type="hidden", name="type", value="area")
+                input(type="hidden", name="country", value=country)
+
+        div.card#buscador3
+            div.icon
+                img(src="/static/img/icon-entidades.png" width="80")
+            h2.cardTitle Partidos
+            p Escribe un texto para buscar en las entidades compradoras.
+            form(action="/buscador")
+                fieldset
+                    // label(for="keyword") Término:
+                    input(type="text", name="keyword", id="keyword")
+                p(align="center")
+                    button(type="submit").actionButton Buscar
+                input(type="hidden", name="type", value="party")
+                input(type="hidden", name="country", value=country)
+
+    div.estadisticas
+        h2.cardTitle Estadísticas
+
+        div.statWrapper
+            div.stat
+                div.statNumber #{num(stats.contract_count)}
+                div.statText contratos disponibles
+            div.stat
+                div.statNumber #{num(stats.supplier_count)}
+                div.statText proveedores disponibles
+            div.stat
+                div.statNumber #{num(stats.buyer_count)}
+                div.statText entidades estatales disponibles
+
+        div.bottomStat Los datos fueron actualizados por última vez en&nbsp;
+            strong #{fechaFormateada(stats.last_update)}
+
++footer()

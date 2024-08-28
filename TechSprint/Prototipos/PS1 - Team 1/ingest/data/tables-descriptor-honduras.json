@@ -1,0 +1,467 @@
+{
+    "investmentProjectsHndPublicInvestment": {
+        "title": "Public investment",
+        "description": "Public investment projects, understood as the use of taxes by the government, to invest with the objective of benefiting the population through infrastructure works, services, development of productive projects, incentives in the creation and development of companies, promotion of commercial activities, generation of employment, protection of fundamental rights (health, education, social protection, etc.), and improvement of the quality of life.",
+        "fields": [
+            {
+                "name": "IdProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Project identifier code within MapaInversiones.",
+                "description_es": "Código identificador del proyecto dentro de MapaInversiones."
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Full name of the investment project in the public investment system (SNIP).",
+                "description_es": "Nombre completo del proyecto de inversión en el sistema de inversión pública (SNIP)."
+            },
+            {
+                "name": "FechaInicioProyecto",
+                "type": "date",
+                "format": "%Y-%m-%d",
+                "description": "Project start date.",
+                "description_es": "Fecha de inicio del proyecto."
+            },
+            {
+                "name": "FechaFinProyecto",
+                "type": "date",
+                "format": "%Y-%m-%d",
+                "description": "Project end date.",
+                "description_es": "Fecha final del proyecto."
+            },
+            {
+                "name": "costo_estimado_lempiras",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated cost of the project in lempiras.",
+                "description_es": "Costo estimado del proyecto en lempiras."
+            },
+            {
+                "name": "costo_estimado_usd",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated cost of the project in USD.",
+                "description_es": "Costo estimado del proyecto en USD."
+            },
+            {
+                "name": "NombreSector",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the sector to which the investment project belongs. Eg. Education, Health, Transportation. Options: ['CONDUCCIÓN Y REGULACIÓN ECONÓMICA', 'DESARROLLO ECONÓMICO', 'GOBERNABILIDAD\\xa0Y DESCENTRALIZACIÓN', 'DESARROLLO E INCLUSIÓN SOCIAL', 'CONDUCCIÓN ESTRATÉGICA', 'INFRAESTRUCTURA PRODUCTIVA', 'DEFENSA Y SEGURIDAD', 'ENTES SIN ADSCRIPCION A UN GABINETE', 'GABINETE DE INFRAESTRUCTURA, SERVICIOS Y EMPRESAS PÚBLICAS', 'PROMOCION Y PROTECCION HUMANA']",
+                "description_es": "Nombre del sector al que pertenece el proyecto de inversión. Ej. Educación, Salud, Transporte. Opciones: ['CONDUCCIÓN Y REGULACIÓN ECONÓMICA', 'DESARROLLO ECONÓMICO', 'GOBERNABILIDAD\\xa0Y DESCENTRALIZACIÓN', 'DESARROLLO E INCLUSIÓN SOCIAL', 'CONDUCCIÓN ESTRATÉGICA', 'INFRAESTRUCTURA PRODUCTIVA', 'DEFENSA Y SEGURIDAD', 'ENTES SIN ADSCRIPCION A UN GABINETE', 'GABINETE DE INFRAESTRUCTURA, SERVICIOS Y EMPRESAS PÚBLICAS', 'PROMOCION Y PROTECCION HUMANA']"
+            },
+            {
+                "name": "EntidadEjecutora",
+                "type": "string",
+                "format": "default",
+                "description": "Corresponds to the primary executor of the project.",
+                "description_es": "Corresponde al ejecutor primario del proyecto."
+            },
+            {
+                "name": "DuracionProyecto",
+                "type": "number",
+                "format": "default",
+                "description": "Duration in years of the project. Options: [3.0, 8.0, 4.0, 12.0, 6.0, 2.0, 5.0, 11.0, 10.0, 7.0, 9.0, 1.0, 0.0]",
+                "description_es": "Duración en años del proyecto. Opciones: [3.0, 8.0, 4.0, 12.0, 6.0, 2.0, 5.0, 11.0, 10.0, 7.0, 9.0, 1.0, 0.0]"
+            },
+            {
+                "name": "TipoProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Type of project scope. E.g. National, Departmental or Municipal. Options: ['MUNICIPAL', 'DEPARTAMENTAL', 'NACIONAL']",
+                "description_es": "Tipo de alcance del proyecto. Ej. Nacional, Departamental o Municipal. Opciones: ['MUNICIPAL', 'DEPARTAMENTAL', 'NACIONAL']"
+            },
+            {
+                "name": "CodigoSNIP",
+                "type": "integer",
+                "format": "default",
+                "description": "Project identifier code within the project bank is the unique identifier of the investment project in (SNIP System).",
+                "description_es": "Código identificador del proyecto dentro del banco de proyectos es el identificador único del proyecto de inversión en (Sistema SNIP)."
+            },
+            {
+                "name": "NumeroBeneficiariosHombres",
+                "type": "number",
+                "format": "default",
+                "description": "Number of male beneficiaries of the project",
+                "description_es": "Número de beneficiarios hombres del proyecto"
+            },
+            {
+                "name": "NumeroBeneficiariosMujeres",
+                "type": "number",
+                "format": "default",
+                "description": "Number of female beneficiaries of the project.",
+                "description_es": "Número de beneficiarios mujeres del proyecto."
+            },
+            {
+                "name": "NombreDepartamento",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the department where the project is located. Options: ['FRANCISCO MORAZÁN', 'ATLÁNTIDA', 'CHOLUTECA', 'COLÓN', 'COMAYAGUA', 'COPÁN', 'CORTÉS', 'EL PARAÍSO', 'INTIBUCÁ', 'LA PAZ', 'LEMPIRA', 'OCOTEPEQUE', 'SANTA BÁRBARA', 'OLANCHO', 'YORO', 'VALLE', 'GRACIAS A DIOS', 'PROYECTOS NACIONALES', 'ISLAS DE LA BAHÍA']",
+                "description_es": "Nombre del departamento donde se encuentra localizado el proyecto. Opciones: ['FRANCISCO MORAZÁN', 'ATLÁNTIDA', 'CHOLUTECA', 'COLÓN', 'COMAYAGUA', 'COPÁN', 'CORTÉS', 'EL PARAÍSO', 'INTIBUCÁ', 'LA PAZ', 'LEMPIRA', 'OCOTEPEQUE', 'SANTA BÁRBARA', 'OLANCHO', 'YORO', 'VALLE', 'GRACIAS A DIOS', 'PROYECTOS NACIONALES', 'ISLAS DE LA BAHÍA']"
+            },
+            {
+                "name": "NombreMunicipio",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the municipality where the project is located.",
+                "description_es": "Nombre del municipio donde se encuentra localizado el proyecto."
+            },
+            {
+                "name": "nombreestado",
+                "type": "string",
+                "format": "default",
+                "description": "Current stage the project is in. Execution, Programming. Options: ['EJECUCIÓN', 'FORMULACIÓN']",
+                "description_es": "Etapa actual en la que se encuentra el proyecto. Ej. Ejecución, Programación. Opciones: ['EJECUCIÓN', 'FORMULACIÓN']"
+            }
+        ],
+        "title_es": "Inversión Pública",
+        "description_es": "Proyectos de inversión pública, entendiendo la misma como la utilización de los impuestos por parte del gobierno, para invertirlo con el objetivo de beneficiar a la población mediante obras de infraestructura, servicios, desarrollo de proyectos productivos, incentivo en la creación y desarrollo de empresas, promoción de las actividades comerciales, generación de empleo, protección de derechos fundamentales (salud, educación, protección social, etc.), y mejoramiento de la calidad de vida."
+    },
+    "investmentProjectsHndGeneralBudget": {
+        "title": "General Budget of the Republic",
+        "description": "It is the expression of the annual operating plan in terms of income, expenses and financing under a budget methodology that facilitates the analysis, discussion, approval and public knowledge of the financial management of State entities.",
+        "fields": [
+            {
+                "name": "Gestion",
+                "type": "integer",
+                "format": "default",
+                "description": "Year in which the budget operation is being carried out. Options: ['Gestion']",
+                "description_es": "Año en el que se está realizando la operación presupuestaria. Opciones: ['Gestion']"
+            },
+            {
+                "name": "Mes",
+                "type": "integer",
+                "format": "default",
+                "description": "Month in which the budget operation is being carried out. Options: [0]",
+                "description_es": "Mes en el que se está realizando la operación presupuestaria. Opciones: [0]"
+            },
+            {
+                "name": "Nivel_de_Administracion",
+                "type": "string",
+                "format": "default",
+                "description": "It is the level of administration, which can be CENTRAL ADMINISTRATION OR DECENTRALIZED INSTITUTIONS Options: ['Nivel_de_Administracion']",
+                "description_es": "Es el nivel de administración, pudiendo ser «ADMINISTRACION CENTRAL» O «INSTITUCIONES DESCENTRALIZADAS» Opciones: ['Nivel_de_Administracion']"
+            },
+            {
+                "name": "Institucion",
+                "type": "string",
+                "format": "default",
+                "description": "Higher level grouping that contains the accounting group or the executing Institution. Options: ['Institucion']",
+                "description_es": "Agrupación de nivel superior que contiene el grupo contable o la Institución ejecutora. Opciones: ['Institucion']"
+            },
+            {
+                "name": "Gerencia Administrativa",
+                "type": "string",
+                "format": "default",
+                "description": "Area responsible for administration within the institution.",
+                "description_es": "Área responsable de la administración dentro de la institución."
+            },
+            {
+                "name": "Unidad Ejecutora",
+                "type": "string",
+                "format": "default",
+                "description": "Entity in charge of the execution of projects and activities.",
+                "description_es": "Entidad encargada de la ejecución de proyectos y actividades."
+            },
+            {
+                "name": "Programa",
+                "type": "string",
+                "format": "default",
+                "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories.",
+                "description_es": "Es la categoría programática de mayor nivel, produce bienes y servicios finales que la institución entrega a la población. Un Programa contiene los subprogramas, las actividades, los proyectos y las obras, que son las categorías de menor nivel."
+            },
+            {
+                "name": "Subprograma",
+                "type": "string",
+                "format": "default",
+                "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program.",
+                "description_es": "En un Sub-programa se realizan productos finales parciales, y en un programa deben existir 2 o más subprogramas y sus productos deben sumarse para tener los productos finales del programa."
+            },
+            {
+                "name": "Proyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent. Options: ['Proyecto']",
+                "description_es": "Generalmente los proyectos generan una inversión o un bien y satisfacen una necesidad de la población al finalizar su elaboración. Un proyecto tiene un tiempo de finalización al contrario de un programa que puede ser permanente. Opciones: ['Proyecto']"
+            },
+            {
+                "name": "Actividad u Obra",
+                "type": "string",
+                "format": "default",
+                "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located.",
+                "description_es": "Es donde se realizan las labores, acciones con las cuales se generaran los productos finales; en esta categoría de menor nivel, es donde se ubican los insumos como los recursos financieros, recursos humanos y materiales."
+            },
+            {
+                "name": "Organismo",
+                "type": "string",
+                "format": "default",
+                "description": "Entity or body that participates in the execution of the budget.",
+                "description_es": "Entidad u organismo que participa en la ejecución del presupuesto."
+            },
+            {
+                "name": "Fuente de Financiamiento",
+                "type": "string",
+                "format": "default",
+                "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs. Options: ['11 - Tesoro Nacional', '12 - Recursos Propios', '21 - Crédito Externo', '22 - Donaciones Externas', '23 - Apoyo Presupuestario', '14 - Donaciones Internas', '26 - MDRI', '27 - Alivio de la Deuda - Club de Paris', '13 - Crédito Interno']",
+                "description_es": "Esta clasificación del gasto consiste en presentar los gastos según los tipos genéricos de recursos empleados para su financiamiento. Este tipo de clasificación permite al gobierno identificar la fuente de origen de los ingresos, así como la orientación de los mismos hacia la atención de las necesidades públicas. Opciones: ['11 - Tesoro Nacional', '12 - Recursos Propios', '21 - Crédito Externo', '22 - Donaciones Externas', '23 - Apoyo Presupuestario', '14 - Donaciones Internas', '26 - MDRI', '27 - Alivio de la Deuda - Club de Paris', '13 - Crédito Interno']"
+            },
+            {
+                "name": "BIP",
+                "type": "string",
+                "format": "default",
+                "description": "Project identification number within the budget.",
+                "description_es": "Número de identificación del proyecto dentro del presupuesto."
+            },
+            {
+                "name": "Finalidad",
+                "type": "string",
+                "format": "default",
+                "description": "Main objective of the expense or investment made. Options: ['01 - SERVICIOS PUBLICOS GENERALES', '02 - DEFENSA Y SEGURIDAD', '08 - PROTECCION SOCIAL', '05 - VIVIENDA Y SERVICIOS COMUNITARIOS', '03 - ASUNTOS ECONOMICOS', '04 - PROTECCION DEL MEDIO AMBIENTE', '07 - EDUCACION, INVESTIGACION, CULTURA Y ACTIVIDADES RECREATIVAS', '06 - SERVICIOS DE SALUD']",
+                "description_es": "Objetivo principal del gasto o inversión realizada. Opciones: ['01 - SERVICIOS PUBLICOS GENERALES', '02 - DEFENSA Y SEGURIDAD', '08 - PROTECCION SOCIAL', '05 - VIVIENDA Y SERVICIOS COMUNITARIOS', '03 - ASUNTOS ECONOMICOS', '04 - PROTECCION DEL MEDIO AMBIENTE', '07 - EDUCACION, INVESTIGACION, CULTURA Y ACTIVIDADES RECREATIVAS', '06 - SERVICIOS DE SALUD']"
+            },
+            {
+                "name": "Funcion",
+                "type": "string",
+                "format": "default",
+                "description": "Area of ​​performance or responsibility within the public administration. Options: ['Funcion']",
+                "description_es": "Área de desempeño o responsabilidad dentro de la administración pública. Opciones: ['Funcion']"
+            },
+            {
+                "name": "Grupo de Objeto",
+                "type": "string",
+                "format": "default",
+                "description": "Grouper of expense objects (Expense_Object). Options: ['90000 - OTROS GASTOS', '10000 - SERVICIOS PERSONALES', '20000 - SERVICIOS NO PERSONALES', '30000 - MATERIALES Y SUMINISTROS', '50000 - TRANSFERENCIAS Y DONACIONES', '40000 - BIENES CAPITALIZABLES', '60000 - ACTIVOS FINANCIEROS', '70000 - SERVICIO DE LA DEUDA PUBLICA']",
+                "description_es": "Agrupador de objetos de gasto (Objeto_de_Gasto). Opciones: ['90000 - OTROS GASTOS', '10000 - SERVICIOS PERSONALES', '20000 - SERVICIOS NO PERSONALES', '30000 - MATERIALES Y SUMINISTROS', '50000 - TRANSFERENCIAS Y DONACIONES', '40000 - BIENES CAPITALIZABLES', '60000 - ACTIVOS FINANCIEROS', '70000 - SERVICIO DE LA DEUDA PUBLICA']"
+            },
+            {
+                "name": "Objeto del Gasto",
+                "type": "string",
+                "format": "default",
+                "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management.",
+                "description_es": "Este clasificador comprende a la ordenación sistemática y homogénea de los bienes, servicios y las transferencias que el Sector Público aplica en el desarrollo de su gestión."
+            },
+            {
+                "name": "Beneficiario de Transferencia",
+                "type": "string",
+                "format": "default",
+                "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents.",
+                "description_es": "Es la clasificación que identifica a los beneficiarios de la operación. Se registra únicamente en las erogaciones o transferencias sin contraprestación que realizan los entes públicos destinadas a financiar la formación bruta de capital o gastos corrientes por parte de los diferentes agentes económicos públicos, privados o externos."
+            },
+            {
+                "name": "Aprobado Ministro",
+                "type": "string",
+                "format": "default",
+                "description": "Approved minister, it is the first step of approval.",
+                "description_es": "Aprobado ministro, es el primer paso de aprobación."
+            },
+            {
+                "name": "Aprobado",
+                "type": "string",
+                "format": "default",
+                "description": "It is the budget approved by the National Congress annually, which will present information on the net transactions that said Public Sector will carry out with the rest of the economy and will contain, at a minimum, the consolidation of income, expenses and financing, the expected economic and financial results. and its presentation in institutional aggregates useful for economic analysis.",
+                "description_es": "Es el presupuesto aprobado por el Congreso Nacional anualmente, el cual presentará información sobre las transacciones netas que realizará dicho Sector Público con el resto de la economía y contendrá, como mínimo la consolidación de los ingresos, gastos y financiamiento, los resultados económicos y financieros previstos y su presentación en agregados institucionales útiles para el análisis económico."
+            },
+            {
+                "name": "Vigente",
+                "type": "string",
+                "format": "default",
+                "description": "It includes budget modifications (increase, decrease and transfers) of the estimate of resources and budgetary credits authorized by the Legislative Branch in the General Budget of Income and Expenditures of the Republic, once its execution has begun for a fiscal period.",
+                "description_es": "Comprende las modificaciones presupuestarias (ampliación, disminución y traslados) de la estimación de los recursos y de los créditos presupuestarios autorizados por el Poder Legislativo en el Presupuesto General de Ingresos y Egresos de la República, una vez iniciada la ejecución del mismo para un período fiscal"
+            },
+            {
+                "name": "EjecuciÃ³n al mes",
+                "type": "number",
+                "format": "default",
+                "description": "Refers to the Monthly Accrued/Executed. Options: ['EjecuciÃ³n al mes']",
+                "description_es": "Refiere al Devengado/Ejecutado Mensual. Opciones: ['EjecuciÃ³n al mes']"
+            },
+            {
+                "name": "EjecuciÃ³n Acumulada",
+                "type": "string",
+                "format": "default",
+                "description": "Refers to Accrual/Executed: It is the accounting basis by which transactions and other events are recognized when they occur and not when they are collected or paid in cash or its equivalent. Its registration reflects the moment in which the economic value is created, transformed, exchanged, transferred or extinguished. The moment of “accrual” of income will be recognized as occurring when, in accordance with current legislation, the right to collection in favor of the State and, correlatively, a payment obligation borne by a natural or legal person arises. duly individualized and for a certain amount. Likewise, the moment of “accrual” of expenses will be recognized when the conforming receipt of the goods and services duly contracted or the legal and/or administrative requirements established by the current regulations for expenses without consideration occur; implies the definitive impact of the budget allocation and may generate an immediate or deferred payment obligation. Options: ['EjecuciÃ³n Acumulada']",
+                "description_es": "Refiere al Devengado/Ejecutado: Es la base contable por la cual las transacciones y otros hechos son reconocidos cuando ocurren y no cuando se efectúa su cobro o su pago en efectivo o su equivalente. Su registro, refleja el momento en que el valor económico se crea, transforma, intercambia, transfiere o extingue. Se reconocerá como momento del “devengado” de los ingresos el que ocurre cuando, de acuerdo con la legislación vigente, se origina jurídicamente el derecho de cobro a favor del Estado y, correlativamente, una obligación de pago a cargo de una persona natural o jurídica debidamente individualizada y por un monto cierto. Asimismo, se reconocerá como momento del “devengado” de los gastos cuando ocurre la recepción de conformidad de los bienes y servicios oportunamente contratados o cumplidos los requisitos legales y/o administrativos establecidos por las normas vigentes para gastos sin contraprestación; implica la afectación definitiva de la asignación presupuestaria y puede generar una obligación de pago en forma inmediata o diferida. Opciones: ['EjecuciÃ³n Acumulada']"
+            },
+            {
+                "name": "Disponible",
+                "type": "string",
+                "format": "default",
+                "description": "It is the result of the Budgeted in the Current column minus the Executed_Accumulated column.",
+                "description_es": "Es el resultado de lo Presupuestado en la columna Vigente menos la columna Ejecutado_Acumulado."
+            },
+            {
+                "name": "% de Ejecucion",
+                "type": "string",
+                "format": "default",
+                "description": "It is the Cumulative Executed Percentage Options: ['% de Ejecucion']",
+                "description_es": "Es el Porcentaje Ejecutado Acumulado Opciones: ['% de Ejecucion']"
+            }
+        ],
+        "title_es": "Presupuesto General de la República",
+        "description_es": "Es la expresión del plan operativo anual en términos de ingresos, gastos y financiamiento bajo una metodología presupuestaria que facilita el análisis, la discusión, la aprobación y el conocimiento público de la gestión financiera de las entidades del Estado"
+    },
+    "investmentProjectsHndThematicBudgets": {
+        "title": "Thematic Budgets (Gender Perspective)",
+        "description": "The Budget with a Gender Perspective (PPG), a public policy tool that allows identifying the State investment that is allocated through the General Budget of the Republic to reduce and eliminate gaps between men and women, promoting greater autonomy in the economic sphere. , physical, decision-making and the interrelation of these.",
+        "fields": [
+            {
+                "name": "Gestión",
+                "type": "integer",
+                "format": "default",
+                "description": "Year in which the budget operation is being carried out. Options: [2024]",
+                "description_es": "Año en el que se está realizando la operación presupuestaria. Opciones: [2024]"
+            },
+            {
+                "name": "mes",
+                "type": "integer",
+                "format": "default",
+                "description": "Month in which the budget operation is being carried out. Options: [0]",
+                "description_es": "Mes en el que se está realizando la operación presupuestaria. Opciones: [0]"
+            },
+            {
+                "name": "Area",
+                "type": "integer",
+                "format": "default",
+                "description": "General category that groups related activities or topics, in this case focused on gender marking. Options: [10]",
+                "description_es": "Categoría general que agrupa actividades o temas relacionados, en este caso enfocados en el marcaje de género. Opciones: [10]"
+            },
+            {
+                "name": "Sub-Area",
+                "type": "string",
+                "format": "default",
+                "description": "Subcategory within an area that specifies a particular focus or additional detail related to the main area. Options: ['Autonomía económica', 'Autonomía en la toma de decisiones', 'Autonomía física', 'Interrelación de las autonomías']",
+                "description_es": "Subcategoría dentro de un área que especifica un enfoque particular o detalle adicional relacionado con el área principal. Opciones: ['Autonomía económica', 'Autonomía en la toma de decisiones', 'Autonomía física', 'Interrelación de las autonomías']"
+            },
+            {
+                "name": "Nivel_de_Administración",
+                "type": "string",
+                "format": "default",
+                "description": "It is the level of administration, which can be CENTRAL ADMINISTRATION OR DECENTRALIZED INSTITUTIONS Options: ['Administración Central', 'Administración Descentralizada']",
+                "description_es": "Es el nivel de administración, pudiendo ser «ADMINISTRACION CENTRAL» O «INSTITUCIONES DESCENTRALIZADAS» Opciones: ['Administración Central', 'Administración Descentralizada']"
+            },
+            {
+                "name": "Institución",
+                "type": "string",
+                "format": "default",
+                "description": "Higher level grouping that contains the accounting group or the executing Institution.",
+                "description_es": "Agrupación de nivel superior que contiene el grupo contable o la Institución ejecutora."
+            },
+            {
+                "name": "Gerencia_Administrativa",
+                "type": "string",
+                "format": "default",
+                "description": "Area responsible for administration within the institution. Options: ['1 - GERENCIA CENTRAL', '2 - UNIDAD ADMINISTRADORA DE PROYECTOS DEL PROGRAMA CIUDAD MUJER', '1 - GERENCIA_CENTRAL', '1 - GERENCIA ADMINISTRATIVA DE PARQUES Y RECREACION', '1 - GERENCIA ADMINISTRATIVA CENTRAL', '3 - UNIDAD DE PROYECTOS ESTRATÉGICOS', '56 - GERENCIA ADMINISTRATIVA  PROYECTO GESALUD']",
+                "description_es": "Área responsable de la administración dentro de la institución. Opciones: ['1 - GERENCIA CENTRAL', '2 - UNIDAD ADMINISTRADORA DE PROYECTOS DEL PROGRAMA CIUDAD MUJER', '1 - GERENCIA_CENTRAL', '1 - GERENCIA ADMINISTRATIVA DE PARQUES Y RECREACION', '1 - GERENCIA ADMINISTRATIVA CENTRAL', '3 - UNIDAD DE PROYECTOS ESTRATÉGICOS', '56 - GERENCIA ADMINISTRATIVA  PROYECTO GESALUD']"
+            },
+            {
+                "name": "Unidad_Ejecutora",
+                "type": "string",
+                "format": "default",
+                "description": "Entity in charge of the execution of projects and activities.",
+                "description_es": "Entidad encargada de la ejecución de proyectos y actividades."
+            },
+            {
+                "name": "Programa",
+                "type": "string",
+                "format": "default",
+                "description": "It is the highest level programmatic category, it produces final goods and services that the institution delivers to the population. A Program contains subprograms, activities, projects and works, which are the lowest level categories.",
+                "description_es": "Es la categoría programática de mayor nivel, produce bienes y servicios finales que la institución entrega a la población. Un Programa contiene los subprogramas, las actividades, los proyectos y las obras, que son las categorías de menor nivel."
+            },
+            {
+                "name": "Subprograma",
+                "type": "string",
+                "format": "default",
+                "description": "In a Sub-program, partial final products are made, and in a program there must be 2 or more sub-programs and their products must be added to have the final products of the program. Options: ['0 - -']",
+                "description_es": "En un Sub-programa se realizan productos finales parciales, y en un programa deben existir 2 o más subprogramas y sus productos deben sumarse para tener los productos finales del programa. Opciones: ['0 - -']"
+            },
+            {
+                "name": "Proyecto_",
+                "type": "string",
+                "format": "default",
+                "description": "Generally, projects generate an investment or a good and satisfy a need of the population at the end of their development. A project has a completion time unlike a program which can be permanent. Options: ['0 - -', '3 - SERVICIOS DE DESARROLLO EMPRESARIAL Y UN ENTORNO FAVORABLE PARA LAS EMPRESARIAS DE HONDURAS', '3 - PROYECTO DE MEJORA DE LA GESTION Y CALIDAD DE LOS SERVICIOS DE SALUD MATERNO-NEONATAL', '28 - APOYO AL SISTEMA INTEGRAL DE PROTECCIÓN SOCIAL 5008/BL-HO']",
+                "description_es": "Generalmente los proyectos generan una inversión o un bien y satisfacen una necesidad de la población al finalizar su elaboración. Un proyecto tiene un tiempo de finalización al contrario de un programa que puede ser permanente. Opciones: ['0 - -', '3 - SERVICIOS DE DESARROLLO EMPRESARIAL Y UN ENTORNO FAVORABLE PARA LAS EMPRESARIAS DE HONDURAS', '3 - PROYECTO DE MEJORA DE LA GESTION Y CALIDAD DE LOS SERVICIOS DE SALUD MATERNO-NEONATAL', '28 - APOYO AL SISTEMA INTEGRAL DE PROTECCIÓN SOCIAL 5008/BL-HO']"
+            },
+            {
+                "name": "Actividad_u_Obra",
+                "type": "string",
+                "format": "default",
+                "description": "It is where the work is carried out, actions with which the final products will be generated; In this lower level category, is where inputs such as financial resources, human resources and materials are located.",
+                "description_es": "Es donde se realizan las labores, acciones con las cuales se generaran los productos finales; en esta categoría de menor nivel, es donde se ubican los insumos como los recursos financieros, recursos humanos y materiales."
+            },
+            {
+                "name": "Organismo",
+                "type": "integer",
+                "format": "default",
+                "description": "Entity or body that participates in the execution of the budget. Options: [1, 99, 173, 172, 11, 701]",
+                "description_es": "Entidad u organismo que participa en la ejecución del presupuesto. Opciones: [1, 99, 173, 172, 11, 701]"
+            },
+            {
+                "name": "Fuente_de_Financiamiento",
+                "type": "integer",
+                "format": "default",
+                "description": "This classification of expenses consists of presenting expenses according to the generic types of resources used for their financing. This type of classification allows the government to identify the source of income, as well as its orientation towards meeting public needs. Options: [111, 112, 222, 221]",
+                "description_es": "Esta clasificación del gasto consiste en presentar los gastos según los tipos genéricos de recursos empleados para su financiamiento. Este tipo de clasificación permite al gobierno identificar la fuente de origen de los ingresos, así como la orientación de los mismos hacia la atención de las necesidades públicas. Opciones: [111, 112, 222, 221]"
+            },
+            {
+                "name": "BIP",
+                "type": "integer",
+                "format": "default",
+                "description": "Project identification number within the budget. Options: [0, 24011]",
+                "description_es": "Número de identificación del proyecto dentro del presupuesto. Opciones: [0, 24011]"
+            },
+            {
+                "name": "Finalidad",
+                "type": "string",
+                "format": "default",
+                "description": "Main objective of the expense or investment made. Options: ['08 - PROTECCION SOCIAL', '03 - ASUNTOS ECONOMICOS', '01 - SERVICIOS PUBLICOS GENERALES', '07 - EDUCACION INVESTIGACION CULTURA Y ACTIVIDADES RECREATIVAS', '02 - DEFENSA Y SEGURIDAD', '06 - SERVICIOS DE SALUD', '04 - PROTECCION DEL MEDIO AMBIENTE']",
+                "description_es": "Objetivo principal del gasto o inversión realizada. Opciones: ['08 - PROTECCION SOCIAL', '03 - ASUNTOS ECONOMICOS', '01 - SERVICIOS PUBLICOS GENERALES', '07 - EDUCACION INVESTIGACION CULTURA Y ACTIVIDADES RECREATIVAS', '02 - DEFENSA Y SEGURIDAD', '06 - SERVICIOS DE SALUD', '04 - PROTECCION DEL MEDIO AMBIENTE']"
+            },
+            {
+                "name": "Función",
+                "type": "string",
+                "format": "default",
+                "description": "Area of ​​performance or responsibility within the public administration.",
+                "description_es": "Área de desempeño o responsabilidad dentro de la administración pública."
+            },
+            {
+                "name": "Grupo_de_Objeto",
+                "type": "string",
+                "format": "default",
+                "description": "Grouper of expense objects (Expense_Object). Options: ['10000 - SERVICIOS PERSONALES', '20000 - SERVICIOS NO PERSONALES', '30000 - MATERIALES Y SUMINISTROS', '40000 - BIENES CAPITALIZABLES', '60000 - ACTIVOS FINANCIEROS', '90000 - OTROS GASTOS', '50000 - TRANSFERENCIAS Y DONACIONES']",
+                "description_es": "Agrupador de objetos de gasto (Objeto_de_Gasto). Opciones: ['10000 - SERVICIOS PERSONALES', '20000 - SERVICIOS NO PERSONALES', '30000 - MATERIALES Y SUMINISTROS', '40000 - BIENES CAPITALIZABLES', '60000 - ACTIVOS FINANCIEROS', '90000 - OTROS GASTOS', '50000 - TRANSFERENCIAS Y DONACIONES']"
+            },
+            {
+                "name": "Objeto_del_Gasto",
+                "type": "string",
+                "format": "default",
+                "description": "This classifier includes the systematic and homogeneous organization of goods, services and transfers that the Public Sector applies in the development of its management.",
+                "description_es": "Este clasificador comprende a la ordenación sistemática y homogénea de los bienes, servicios y las transferencias que el Sector Público aplica en el desarrollo de su gestión."
+            },
+            {
+                "name": "Beneficiario_de_Transferencia",
+                "type": "integer",
+                "format": "default",
+                "description": "It is the classification that identifies the beneficiaries of the operation. It is recorded only in the disbursements or transfers without compensation made by public entities intended to finance the gross formation of capital or current expenses by the different public, private or external economic agents. Options: [0, 5258, 5271, 4618, 4788, 5015]",
+                "description_es": "Es la clasificación que identifica a los beneficiarios de la operación. Se registra únicamente en las erogaciones o transferencias sin contraprestación que realizan los entes públicos destinadas a financiar la formación bruta de capital o gastos corrientes por parte de los diferentes agentes económicos públicos, privados o externos. Opciones: [0, 5258, 5271, 4618, 4788, 5015]"
+            },
+            {
+                "name": "Aprobado_Ministro",
+                "type": "integer",
+                "format": "default",
+                "description": "Approved minister, it is the first step of approval.",
+                "description_es": "Aprobado ministro, es el primer paso de aprobación."
+            },
+            {
+                "name": "Aprobado",
+                "type": "integer",
+                "format": "default",
+                "description": "Refers to the Monthly Accrued/Executed. Options: [0]",
+                "description_es": " Opciones: [0]"
+            }
+        ],
+        "title_es": "Presupuestos Temáticos (Perspectiva de Género)",
+        "description_es": "El Presupuesto con Perspectiva de Género (PPG) una herramienta de política pública que permite identificar la inversión del Estado que se destina a través del Presupuesto General de la República para disminuir y eliminar las brechas entre hombres y mujeres promoviendo una mayor autonomía en el ámbito económico, físico, de toma de decisiones y la interrelación de estas."
+    }
+}

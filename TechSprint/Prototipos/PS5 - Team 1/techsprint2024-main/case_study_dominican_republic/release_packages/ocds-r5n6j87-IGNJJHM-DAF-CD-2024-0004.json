@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-DAF-CD-2024-0004",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:46Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-DAF-CD-2024-0004",
+            "id": "a7c0654d-404e-4f6c-bd66-056409ac4d9a",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 78717.8,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-DAF-CD-2024-0004",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5,000 Y 1:25,000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Contrataci\u00f3n de servicio de c\u00e1terin para  reuniones t\u00e9cnicas del IGNJJHM.",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Compras por Debajo del Umbral"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

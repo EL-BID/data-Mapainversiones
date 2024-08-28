@@ -1,0 +1,67 @@
+include head.pug
+
+mixin field(id,title,value,link)
+    if value
+        tr.field
+            td.fieldTitle #{title}:
+            td.fieldValue
+                if (link)
+                    a(href="/proveedor/"+link) #{value}
+                else
+                    | !{value}
+
++head("Sociedad.info - Elección") 
+//-- de "+contracts[0]._source.entidad_compradora)
+div.wrapper
+    p !{jp(item)}
+
+    //- h1 Contrato de #{contracts[0]._source.entidad_compradora}
+
+
+    //- div.contracts
+    //-     p.field.fechas  Contrato publicado el día #{fechaFormateada(contracts[0]._source.fecha_publicacion)} por #{contracts[0]._source.unidad_compradora} con NOG #{contracts[0]._source.nog_concurso}
+    //-     table
+    //-         +field("nog","NOG",contracts[0]._source.nog_concurso)
+    //-         +field("estatus_concurso","Estatus del concurso",contracts[0]._source.estatus_concurso)
+
+
+    //-     h2 Datos adicionales
+    //-     table
+    //-         +field("sub_modalidad","Submodalidad de compra",contracts[0]._source.sub_modalidad)
+
+    //-     hr
+    //-     h2 Adjudicaciones
+    //-     each contract,i in contracts
+    //-         div.adjudicaciones
+    //-             h4 Adjudicación número #{i+1}
+    //-             table
+    //-                 +field("nit","NIT del proveedor",contract._source.nit,contract._source.nit)
+
+    //-     h2 Enlaces
+    //-     p
+    //-         a(href="https://www.guatecompras.gt/concursos/consultaConcurso.aspx?o=4&nog="+contracts[0]._source.nog_concurso) Ver contrato en Guatecompras
+
+
+//- "city":"SAN MIGUEL DE ALLENDE,
+//-  APASEO EL GRANDE",
+//- "country":"MX",
+//- "district_type":"REGIONAL_LEGISLATIVE",
+//- "name": "en_US":"Diputación del Distrito Local 9 GUANAJUATO",
+//- "state":"GUA"
+
+    //-Multiple
+    //- Partidos?
+    //- "abbreviation": "es_AR":"CAMBIA JUJUY"
+    //- "colors":["Pink"], 
+    //- name "en_US":"CAMBIA JUJUY",
+
+    //- MULTIPLE
+    //- "chamber":
+    //- "name": "en_US":"Presidencia del municipio de CHETUMAL"
+
+    //- MULTIPLE
+    //- "contest":
+    //- "end_date":"2021-06-02",
+    //- "title": "en_US":"Diputación del Distrito Federal 11 de PUEBLA"
+
++footer()

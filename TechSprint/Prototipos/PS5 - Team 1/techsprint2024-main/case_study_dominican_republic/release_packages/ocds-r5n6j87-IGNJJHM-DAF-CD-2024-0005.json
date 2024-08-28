@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-DAF-CD-2024-0005",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:47Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-DAF-CD-2024-0005",
+            "id": "1ffc3f5a-df0a-43b3-b752-f3df7fb46c4c",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 190676.52,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-DAF-CD-2024-0005",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5,000 Y 1:25,000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Adquisici\u00f3n de discos de estados s\u00f3lidos para Desktop y Servidores del IGNJJHM",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Compras por Debajo del Umbral"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

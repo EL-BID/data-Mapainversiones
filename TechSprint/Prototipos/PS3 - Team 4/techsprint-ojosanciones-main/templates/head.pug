@@ -1,0 +1,157 @@
+mixin head(title)
+    doctype html
+    html(lang="es")
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            link(rel="stylesheet", href="/static/css/main.css")
+            link(rel="shortcut icon", href="/static/img/favicon-96.png", type="image/x-icon")
+            <link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicon-96.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon-96.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="/static/img/favicon-96.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-96.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-96.png">
+            <link rel="manifest" href="/static/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="/static/img/favicon-96.png">
+            <meta name="theme-color" content="#ffffff">               
+            title #{title}
+
+            script(async,src="https://www.googletagmanager.com/gtag/js?id=G-1NVCF83HZR")
+            script
+                | window.dataLayer = window.dataLayer || [];
+                | function gtag(){dataLayer.push(arguments);}
+                | gtag('js', new Date());
+
+                | gtag('config', 'G-1NVCF83HZR');
+
+            //- Hotjar Tracking Code for ojosanciones
+            script
+                | (function(h,o,t,j,a,r){
+                |     h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                |     h._hjSettings={hjid:4938623,hjsv:6};
+                |     a=o.getElementsByTagName('head')[0];
+                |     r=o.createElement('script');r.async=1;
+                |     r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                |     a.appendChild(r);
+                | })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+        body
+            link(rel="stylesheet", href="/static/css/flaticons/css/brands/all.css")
+            link(rel="stylesheet", href="/static/css/flaticons/css/regular/all.css")
+            div.header
+                a(href="/")
+                    img(src="/static/img/ojosanciones-logo.png", alt="Ojo a las sanciones").logo
+                div.poweredBy
+                    p con la tecnología de
+                    a(href="https://www.sociedad.info")
+                        img(src="/static/img/sociedadinfo-gris.png", alt="sociedad.info").logo
+                div.menu#mainMenu
+                    a.headerButton(href=baseurl) Inicio
+                    a.headerButton(href=baseurl+"buscador") Búsqueda
+                    a.headerButton(href=baseurl+"acerca-de") Acerca de
+                    a.headerButton(href="https://donate.stripe.com/00g6pH9nn5OpgkU3cd", target="_blank") Donar
+                div.menu#mainMenuHandle
+                    a.headerButton(title="Menú")
+                        i.fi.fi-rr-menu-burger
+            div.banner
+                div.iconButton
+                    i.fi.fi-rr-triangle-warning
+                div.text
+                    p IMPORTANTE: Esta es una web en proceso de desarollo. 
+            script 
+                | function checkWidth() {
+                |    if (window.innerWidth < 1080) { 
+                |       document.getElementById("mainMenu").style.display = "none"; 
+                |       document.getElementById("mainMenuHandle").style.display = "block"; 
+                |   } 
+                |   else {
+                |       document.getElementById("mainMenu").style.display = "block"; 
+                |       document.getElementById("mainMenuHandle").style.display = "none"; 
+                |   }
+                | }
+                | function showMenu() {
+                |       document.getElementById("mainMenu").style.display = "block"; 
+                |       document.getElementById("mainMenuHandle").style.display = "none"; 
+                | }
+                | function hideMenu() {
+                |       document.getElementById("mainMenu").style.display = "none"; 
+                |       document.getElementById("mainMenuHandle").style.display = "block"; 
+                | }
+                | function toggleMenu() {
+                |       document.getElementById("mainMenu").style.display = (document.getElementById("mainMenu").style.display == "none" ? "block" : "none"); 
+                |       document.getElementById("mainMenuHandle").classList.toggle("open")
+                | }
+                | window.addEventListener("resize",checkWidth);
+                | checkWidth();
+                | document.getElementById("mainMenuHandle").addEventListener("click",toggleMenu);
+            if block
+                block
+
+mixin footer()
+    div.contact
+        p Contacto:&nbsp;
+            a(href="mailto:ojosancionesmx@gmail.com") ojosancionesmx@gmail.com
+    div.footer
+        div.footersocial
+            a.iconButton(href="https://twitter.com/ojosancionesmx", target="_blank")
+                i.fi.fi-brands-twitter
+        div.footerlogo
+            p Ojo a las sanciones es un proyecto creado por
+                a(href="https://bit.ly/38AB3Zl")
+                    img(src="/static/img/+integridad-blanco.png" height="50")
+                | y
+                a(href="https://abrimos.info/")
+                    img(src="/static/img/logo-abrimos-blanco.svg" height="75")
+
+
+mixin buscador
+    div.buscador
+        form(action="/buscador")
+            fieldset
+                each filter,id in filters
+                    case filter.type
+                        
+                        when "exact-string"
+                        when "text"
+                            div(style="display: inline-block")
+                                label(for=id) !{filter.label}
+                                i.fi.fi-rr-search
+                                input(type="text", name=id, id=id, value=filter.value, placeholder=filter.prompt)
+                        when "select"
+                            div(style="display: inline-block")
+                                label(for=id) !{filter.label}
+                                select(name=id, title=filter.prompt)
+                                    for option in filter.options
+                                        if (option.label)
+                                            if (filter.value==option.value)
+                                                option(selected="selected",value=option.value) !{option.label}
+                                            else
+                                                option(value=option.value) !{option.label}
+                button(type="submit").primaryButtonLarge Buscar
+
+
+mixin actionBar(id)
+    div.actionBar
+        h2 Acciones
+        ul
+            li 
+                a.secondaryButtonLarge(href="whatsapp://send?text="+enc("Por favor revisa estas sanciones https://ojosanciones.sociedad.info/mx/empresa/" + id + "")) 
+                    i.fi.fi-brands-whatsapp
+                    span Compartir
+            li 
+                a.secondaryButtonLarge(href="https://t.me/share/url?url="+enc("Por favor revisa estas sanciones https://ojosanciones.sociedad.info/mx/empresa/" + id + ""))
+                    i.fi.fi-brands-telegram
+                    span Compartir
+            li 
+                a.secondaryButtonLarge(href="/datos")
+                    i.fi.fi-rr-download
+                    span Descargar

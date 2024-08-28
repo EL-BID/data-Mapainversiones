@@ -1,0 +1,540 @@
+{
+    "_id": {
+      "$oid": "65962846431a3fab3790c7b8"
+    },
+    "version": "1.1",
+    "uri": "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023",
+    "packages": [
+      "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.338c60d3-afaf-4aaf-ab1c-aaed2b3f1ce4",
+      "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.2024-01-04T03:35:20.121772_b1228",
+      "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.5eb6382a-4e57-4381-8595-456fd3f15501",
+      "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.259b4ef4-f5e4-4abb-9359-bc86ef0dca32"
+    ],
+    "publisher": {
+      "name": "b2gov",
+      "uri": "https://b2gov.net/"
+    },
+    "publishedDate": {
+      "$date": "2024-07-28T22:55:27.730Z"
+    },
+    "records": [
+      {
+        "ocid": "ocds-d6a7a6-IO-84-H39-825001997-N-7-2023",
+        "releases": [
+          {
+            "id": "2024-01-04T03:35:20.121772_b1228",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.2024-01-04T03:35:20.121772_b1228",
+            "date": {
+              "$date": "2024-01-04T03:35:20.121Z"
+            },
+            "tag": [
+              "tender"
+            ]
+          },
+          {
+            "id": "338c60d3-afaf-4aaf-ab1c-aaed2b3f1ce4",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.338c60d3-afaf-4aaf-ab1c-aaed2b3f1ce4",
+            "date": {
+              "$date": "2024-01-04T19:42:16.866Z"
+            },
+            "tag": [
+              "tenderUpdate"
+            ]
+          },
+          {
+            "id": "5eb6382a-4e57-4381-8595-456fd3f15501",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.5eb6382a-4e57-4381-8595-456fd3f15501",
+            "date": {
+              "$date": "2024-01-16T22:49:29.791Z"
+            },
+            "tag": [
+              "tenderUpdate"
+            ]
+          },
+          {
+            "id": "259b4ef4-f5e4-4abb-9359-bc86ef0dca32",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IO-84-H39-825001997-N-7-2023.259b4ef4-f5e4-4abb-9359-bc86ef0dca32",
+            "date": {
+              "$date": "2024-07-28T22:54:06.280Z"
+            },
+            "tag": [
+              "tenderUpdate",
+              "award"
+            ]
+          }
+        ],
+        "compiledRelease": {
+          "ocid": "ocds-d6a7a6-IO-84-H39-825001997-N-7-2023",
+          "id": "259b4ef4-f5e4-4abb-9359-bc86ef0dca32",
+          "date": {
+            "$date": "2024-07-28T22:54:06.280Z"
+          },
+          "buyer": {
+            "id": "084H39",
+            "name": "AHOME"
+          },
+          "parties": [
+            {
+              "id": "825001997",
+              "name": "JUNTA DE AGUA POTABLE Y ALCANTARILLADO",
+              "contactPoint": {
+                "name": "EDGAR EMMANUEL PEREZ ACOSTA",
+                "email": "controldeobra@japamadigital.gob.mx"
+              },
+              "roles": [
+                "procuringEntity"
+              ]
+            },
+            {
+              "id": "084H39",
+              "name": "AHOME",
+              "roles": [
+                "buyer"
+              ]
+            },
+            {
+              "id": "REYNALDO ARCE OCHOA",
+              "name": "REYNALDO ARCE OCHOA",
+              "roles": [
+                "tenderer",
+                "supplier"
+              ]
+            }
+          ],
+          "tender": {
+            "id": "IO-84-H39-825001997-N-7-2023",
+            "title": "REHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOM",
+            "description": "REHABILITADA\nEQUIPAMIENTO  ;  EQUIPAMIENTO DE INFRAESTRUCTURA ; \nREHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOME, SINALOA. LA OBRA CONSISTE EN: ACOMETIDA ELECTRICA TRIFASICA CON POSTE DE CONCRETO Y ACCESORIOS, SUMINISTRO Y COLOCACION DE SUBESTACION MEDIANTE TRANSFORMADOR 3F 45KVA 13200-220/127 V, GABINETE METALICO DE 200X80X60 CMS EN CENTRO DE CONTROL DE MOTORES CON INTERRUPTOR PRINCIPAL E INTERRUPTORES DERIVADORES, CIRCUITOS DERIVADOS Y TRES LUMINAIRAS COMPLETAS DE 100 WATTS EN POSTE PIRAMIDAL.",
+            "status": "complete",
+            "statusDetails": "ADJUDICADO",
+            "procuringEntity": {
+              "id": "825001997",
+              "name": "JUNTA DE AGUA POTABLE Y ALCANTARILLADO"
+            },
+            "procurementMethod": "open",
+            "procurementMethodDetails": "INVITACIÓN A CUANDO MENOS TRES PERSONAS",
+            "mainProcurementCategory": "works",
+            "submissionMethodDetails": "SALA AUDIOVISUAL DE LA PLANTA POTABILIZADORA “COMISIÓN DEL RÍO FUERTE”, CITA AL PIE DEL CERRO DE LA MEMORIA, EN ESTA CIUDAD DE LOS MOCHIS, SINALOA, CÓDIGO POSTAL 81223",
+            "items": [
+              {
+                "id": "1",
+                "description": "REHABILITADA\nEQUIPAMIENTO  ;  EQUIPAMIENTO DE INFRAESTRUCTURA ; \nREHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOME, SINALOA. LA OBRA CONSISTE EN: ACOMETIDA ELECTRICA TRIFASICA CON POSTE DE CONCRETO Y ACCESORIOS, SUMINISTRO Y COLOCACION DE SUBESTACION MEDIANTE TRANSFORMADOR 3F 45KVA 13200-220/127 V, GABINETE METALICO DE 200X80X60 CMS EN CENTRO DE CONTROL DE MOTORES CON INTERRUPTOR PRINCIPAL E INTERRUPTORES DERIVADORES, CIRCUITOS DERIVADOS Y TRES LUMINAIRAS COMPLETAS DE 100 WATTS EN POSTE PIRAMIDAL.",
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "31301-0001",
+                  "description": "SERVICIO DE AGUA"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "31301",
+                    "description": "SERVICIO DE AGUA"
+                  }
+                ]
+              }
+            ],
+            "tenderPeriod": {
+              "startDate": {
+                "$date": "2024-01-03T13:17:56.000Z"
+              },
+              "endDate": {
+                "$date": "2024-01-11T10:00:00.000Z"
+              },
+              "durationInDays": 7
+            },
+            "enquiryPeriod": {
+              "startDate": {
+                "$date": "2024-01-03T13:17:56.000Z"
+              },
+              "endDate": {
+                "$date": "2024-01-03T12:00:00.000Z"
+              },
+              "durationInDays": -1
+            },
+            "awardPeriod": {
+              "startDate": {
+                "$date": "2024-01-16T00:00:00.000Z"
+              }
+            },
+            "documents": [
+              {
+                "id": "1",
+                "documentType": "INVITACIÓN",
+                "title": "Invitacion 24-06.pdf",
+                "description": "INVITACIÓN",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=1f1ee928-3b66-4233-bb62-60df48b7f9e6&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-03T12:48:38.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-03T13:17:56.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "2",
+                "documentType": "ANEXO TÉCNICO",
+                "title": "ANEXOS TECNICOS LICITACION.docx",
+                "description": "ANEXO TÉCNICO",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=7f4f0ea7-ea68-487f-91a4-db1711b9df73&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-03T12:48:38.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-03T13:17:56.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "3",
+                "documentType": "MODELO DE CONTRATO",
+                "title": "MODELO OBRA DE CONTRATO FEDERAL.docx",
+                "description": "MODELO DE CONTRATO",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=509c3993-d831-40ed-88aa-69ab675a9a82&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-03T12:48:38.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-03T13:17:56.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "4",
+                "documentType": "AVISO",
+                "title": "Acta de Visita 24-06.pdf",
+                "description": "VISITA DE OBRA",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=e899d045-0ea1-4289-b52e-135db580b718&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:43:17.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:43:17.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "5",
+                "documentType": "AVISO",
+                "title": "220816 POT EL COLORADO ELE VISTA PLANTA.dwg",
+                "description": "PLANO 1",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=c6e9b1cf-f812-4761-8f02-30ddfdf885b8&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:44:06.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:44:06.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "6",
+                "documentType": "AVISO",
+                "title": "230816 D.U.POT EL COLORADO.dwg",
+                "description": "PLANO 2",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=2d4c4a0d-410c-4eba-b4b7-10f8a54b08a7&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:44:39.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:44:39.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "7",
+                "documentType": "AVISO",
+                "title": "230915 Especificaciones AP-A23695 EL COLORADO.doc",
+                "description": "ESPECIFICACIONES",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=1d55ee60-acaf-4fca-b333-6773cccea4c7&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:45:09.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:45:09.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "8",
+                "documentType": "AVISO",
+                "title": "A23695-PLANOS.pdf",
+                "description": "PLANOS",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=5c391a8a-1f5d-430e-b7c6-da96bcd34098&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:45:53.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:45:53.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "9",
+                "documentType": "AVISO",
+                "title": "ANEXOS ECONOMICOS LICITACION.docx",
+                "description": "ANEXOS ECONOMICOS",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=4e2a1bda-d72c-49bc-9449-b78e11231a63&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:46:31.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:46:31.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "10",
+                "documentType": "AVISO",
+                "title": "BASES 24-06.docx",
+                "description": "BASES",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=1d9375ad-69d9-4f60-a4ed-8dcca6091b86&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:47:33.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:47:33.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "11",
+                "documentType": "AVISO",
+                "title": "CATALOGO 24-06.xls",
+                "description": "CATALOGO",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=016b193b-9b18-43c4-8e5d-9d71f1d2d8e5&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:48:08.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:48:08.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "12",
+                "documentType": "ACTA JUNTA DE ACLARACIONES",
+                "title": "Acta de Junta de Aclaraciones 24-06.pdf",
+                "description": "ACTA JUNTA DE ACLARACIONES",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=0a2ea0ea-7c40-4017-9f77-6dece23598af&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-07T07:48:32.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-07T07:48:32.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "13",
+                "documentType": "ACTA DE APERTURA DE PROPOSICIONES",
+                "title": "ACTA APERTURA PROPUESTAS  24-06.pdf",
+                "description": "ACTA DE APERTURA DE PROPOSICIONES",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=588cf36d-7b16-42de-b432-4a72690e8ff9&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-29T22:46:17.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-29T22:46:17.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "14",
+                "documentType": "ACTA DE FALLO",
+                "title": "Acta de Fallo 24-06.pdf",
+                "description": "ACTA DE FALLO",
+                "url": "https://sitiopublico-cnet.us-e1.cloudhub.io/documentos/recursos/ulck?id_documento=b9ec3587-deab-4801-be10-db9bffb7b963&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2024-01-30T12:40:56.000Z"
+                },
+                "dateModified": {
+                  "$date": "2024-01-30T12:40:56.000Z"
+                },
+                "language": "es"
+              }
+            ],
+            "value": {
+              "currency": "MXN"
+            }
+          },
+          "initiationType": "tender",
+          "language": "es",
+          "tag": [
+            "tenderUpdate",
+            "award"
+          ],
+          "metadata": {
+            "insertedDate": {
+              "$date": "2024-07-28T22:54:06.281Z"
+            },
+            "country": "mx",
+            "dataOrigin": "compranet_upcp",
+            "typeOfParse": "build_ocds",
+            "urlSource": "https://upcp-compranet.hacienda.gob.mx/sitiopublico/#/sitiopublico/detalle/89bc0f2b7a6c471a86c1ee8e1ecf0f99/procedimiento"
+          },
+          "awards": [
+            {
+              "id": "JAP-PRODDER-APO-CTP-24-06",
+              "title": "REHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOM",
+              "status": "active",
+              "date": {
+                "$date": "2024-01-16T00:00:00.000Z"
+              },
+              "value": {
+                "amount": 2180970.89,
+                "currency": "MXN",
+                "includedTaxPercent": 0.15999999936175224,
+                "exchangeRates": [
+                  {
+                    "currency": "USD",
+                    "rate": 0.059157,
+                    "date": {
+                      "$date": "2024-01-11T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "EUR",
+                    "rate": 0.053871,
+                    "date": {
+                      "$date": "2024-01-11T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "MXN",
+                    "rate": 1,
+                    "date": {
+                      "$date": "2024-01-11T00:00:00.000Z"
+                    },
+                    "source": "application"
+                  }
+                ],
+                "amount_USD": 129019.69493973,
+                "amount_EUR": 117491.08281519,
+                "amount_LOCAL": 2180970.89,
+                "currency_LOCAL": "MXN"
+              },
+              "suppliers": [
+                {
+                  "id": "REYNALDO ARCE OCHOA",
+                  "name": "REYNALDO ARCE OCHOA"
+                }
+              ],
+              "contractPeriod": {
+                "startDate": {
+                  "$date": "2024-01-16T00:00:00.000Z"
+                },
+                "endDate": {
+                  "$date": "2024-03-25T00:00:00.000Z"
+                },
+                "durationInDays": 69
+              },
+              "items": [
+                {
+                  "id": "1",
+                  "description": "REHABILITADA\nEQUIPAMIENTO  ;  EQUIPAMIENTO DE INFRAESTRUCTURA ; \nREHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOME, SINALOA. LA OBRA CONSISTE EN: ACOMETIDA ELECTRICA TRIFASICA CON POSTE DE CONCRETO Y ACCESORIOS, SUMINISTRO Y COLOCACION DE SUBESTACION MEDIANTE TRANSFORMADOR 3F 45KVA 13200-220/127 V, GABINETE METALICO DE 200X80X60 CMS EN CENTRO DE CONTROL DE MOTORES CON INTERRUPTOR PRINCIPAL E INTERRUPTORES DERIVADORES, CIRCUITOS DERIVADOS Y TRES LUMINAIRAS COMPLETAS DE 100 WATTS EN POSTE PIRAMIDAL.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "31301-0001",
+                    "description": "SERVICIO DE AGUA"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "31301",
+                      "description": "SERVICIO DE AGUA"
+                    }
+                  ],
+                  "unit": {
+                    "value": {
+                      "currency": "MXN",
+                      "includedTaxPercent": 0.15999999936175224
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "contracts": [
+            {
+              "id": "JAP-PRODDER-APO-CTP-24-06",
+              "awardID": "JAP-PRODDER-APO-CTP-24-06",
+              "title": "REHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOM",
+              "status": "terminated",
+              "period": {
+                "startDate": {
+                  "$date": "2024-01-16T00:00:00.000Z"
+                },
+                "endDate": {
+                  "$date": "2024-03-25T00:00:00.000Z"
+                },
+                "durationInDays": 69
+              },
+              "value": {
+                "amount": 2180970.89,
+                "currency": "MXN",
+                "includedTaxPercent": 0.15999999936175224,
+                "exchangeRates": [
+                  {
+                    "currency": "USD",
+                    "rate": 0.059157,
+                    "date": {
+                      "$date": "2024-01-11T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "EUR",
+                    "rate": 0.053871,
+                    "date": {
+                      "$date": "2024-01-11T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "MXN",
+                    "rate": 1,
+                    "date": {
+                      "$date": "2024-01-11T00:00:00.000Z"
+                    },
+                    "source": "application"
+                  }
+                ],
+                "amount_USD": 129019.69493973,
+                "amount_EUR": 117491.08281519,
+                "amount_LOCAL": 2180970.89,
+                "currency_LOCAL": "MXN"
+              },
+              "items": [
+                {
+                  "id": "1",
+                  "description": "REHABILITADA\nEQUIPAMIENTO  ;  EQUIPAMIENTO DE INFRAESTRUCTURA ; \nREHABILITACION ELECTRICA DE PLANTA POTABILIZADORA EL COLORADO, MUNICIPIO DE AHOME, SINALOA. LA OBRA CONSISTE EN: ACOMETIDA ELECTRICA TRIFASICA CON POSTE DE CONCRETO Y ACCESORIOS, SUMINISTRO Y COLOCACION DE SUBESTACION MEDIANTE TRANSFORMADOR 3F 45KVA 13200-220/127 V, GABINETE METALICO DE 200X80X60 CMS EN CENTRO DE CONTROL DE MOTORES CON INTERRUPTOR PRINCIPAL E INTERRUPTORES DERIVADORES, CIRCUITOS DERIVADOS Y TRES LUMINAIRAS COMPLETAS DE 100 WATTS EN POSTE PIRAMIDAL.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "31301-0001",
+                    "description": "SERVICIO DE AGUA"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "31301",
+                      "description": "SERVICIO DE AGUA"
+                    }
+                  ],
+                  "unit": {
+                    "value": {
+                      "currency": "MXN",
+                      "includedTaxPercent": 0.15999999936175224
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }

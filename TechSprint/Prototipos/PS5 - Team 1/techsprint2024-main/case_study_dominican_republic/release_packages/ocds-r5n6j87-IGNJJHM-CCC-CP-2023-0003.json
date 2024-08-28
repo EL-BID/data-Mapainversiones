@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-CCC-CP-2023-0003",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:53Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-CCC-CP-2023-0003",
+            "id": "bca8f9ac-176b-48b5-b373-875464907c29",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 2500000.0,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-CCC-CP-2023-0003",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5000 Y 1:25000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Adquisici\u00f3n de Camioneta 4x4 doble cabina para uso de la Direcci\u00f3n de Geodesia del IGNJJHM",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "selective",
+                "procurementMethodDetails": "Comparaci\u00f3n de Precios"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

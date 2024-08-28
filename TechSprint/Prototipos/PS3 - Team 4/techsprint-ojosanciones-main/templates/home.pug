@@ -1,0 +1,55 @@
+include head.pug
++head("Ojo a las sanciones")
+
+    div.wrapper
+        div.infobanner_gob
+            div.infobanner_info
+                h1 Encuentra rápidamente si la empresa que vas a contratar está en alguna base de datos de sanciones.
+
+
+
+        div.cardbox
+            div.cardFull#buscador1(style="text-align: center")
+                div.icon
+                h2.cardTitle Busca por nombre de persona física o moral 
+                form(action=baseurl+"buscador")
+                    input(name="nombre_o_rfc", placeholder="Escribe nombre o RFC...")
+                    button(type="submit").actionButton Buscar
+
+
+        div.estadisticas
+            h2.cardTitle Bases de datos incluidas en el buscador:
+
+
+            div.statWrapper
+                div.stat
+                    div.statNumber #{num(stats.sat_efos_count)}
+                    div.statText Contribuyentes con operaciones presuntamente inexistentes según el SAT.
+                div.stat
+                    div.statNumber #{num(stats.sfp_count)}
+                    div.statText Proveedores sancionados por la Secretaría de la Función Pública (SFP).
+                div.stat
+                    div.statNumber #{num(stats.ofac_count)}
+                    div.statText Empresas y personas en la lista OFAC de EUA. 
+                        i.fi.fi-rr-info(title="Las condiciones de la categoría otorgada por la OFAC no reflejan la jurisprudencia en otros países.")
+
+        div.hometext#razon
+            p Ojo a las Sanciones es un mecanismo de datos abiertos que permite buscar si una empresa se encuentra inhabilitada, ha sido identificada como empresa con actividades irregulares por el SAT  (Empresas que Facturan Operaciones Simuladas o “EFOS”). o si se encuentra en la lista OFAC del Departamento del Tesoro de EUA. 
+            a(href="/acerca-de") Más información
+
+        //- div.estadisticas
+        //-     h2.cardTitle Mapas con análisis de datos
+        //-     h3 Porcentaje total por cada categoría de sanción
+        //-     img(src="https://www.lifeder.com/wp-content/uploads/2021/06/Mapa-de-Mexico-5-1024x712.jpg", alt="", srcset="")
+        //-     h3 Montos máximos asignados por dependencia por categoría de sanción
+        //-     img(src="https://www.lifeder.com/wp-content/uploads/2021/06/Mapa-de-Mexico-5-1024x712.jpg", alt="", srcset="")
+        //-     h3 Prevalencia de sanciones por estado
+        //-     img(src="https://www.lifeder.com/wp-content/uploads/2021/06/Mapa-de-Mexico-5-1024x712.jpg", alt="", srcset="")
+
+        //-     h3 Montos máximos asignados por Estado
+        //-     img(src="https://www.lifeder.com/wp-content/uploads/2021/06/Mapa-de-Mexico-5-1024x712.jpg", alt="", srcset="")
+
+        //-     div.bottomStat Los datos fueron actualizados por última vez en&nbsp;
+        //-         strong #{fechaFormateada(stats.last_update)}
+
+    +footer()

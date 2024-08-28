@@ -1,0 +1,21 @@
+include head.pug
++head("Gobernantes.info - Estadísticas")
+
+div.wrapper
+    div.infobanner
+        div.infobanner_info
+            h1 Estadísticas de solicitudes de acceso
+
+
+    h2 Dependencias con más solicitudes por estado
+    div.organos
+        each elem,i in organos
+            div.organo
+                p #{elem.key}  #{elem.doc_count}  #{fechaFormateada(elem.desde.value_as_string)}
+                each dep,i in elem.dependencia.buckets
+                    div.organo
+                        p #{dep.key}  #{dep.doc_count}  #{fechaFormateada(dep.desde.value_as_string)}
+                        a(href="/buscador?dependencia="+dep.key) Ver últimas solicitudes > 
+
+            hr
++footer()

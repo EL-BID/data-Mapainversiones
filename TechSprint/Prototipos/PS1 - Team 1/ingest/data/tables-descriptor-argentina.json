@@ -1,0 +1,625 @@
+{
+    "investmentProjectsAndWorksArgSpatialDataWorks": {
+        "title": "",
+        "description": "",
+        "fields": [
+            {
+                "name": "idproyecto",
+                "type": "integer",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "numeroobra",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "codigobapin",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "fechainicioanio",
+                "type": "integer",
+                "format": "default",
+                "description": " Options: [2019, 2022, 2021, 2023, 2020, 2016, 2018, 2014, 2017, 2013, 2015, 2012, 2008, 2009, 2010, 2011, 2024]",
+                "options": [
+                    2019,
+                    2022,
+                    2021,
+                    2023,
+                    2020,
+                    2016,
+                    2018,
+                    2014,
+                    2017,
+                    2013,
+                    2015,
+                    2012,
+                    2008,
+                    2009,
+                    2010,
+                    2011,
+                    2024
+                ]
+            },
+            {
+                "name": "fechafinanio",
+                "type": "integer",
+                "format": "default",
+                "description": " Options: [2020, 2021, 2023, 2022, 2024, 2025, 2026, 2029, 2028, 2027]",
+                "options": [
+                    2020,
+                    2021,
+                    2023,
+                    2022,
+                    2024,
+                    2025,
+                    2026,
+                    2029,
+                    2028,
+                    2027
+                ]
+            },
+            {
+                "name": "nombreobra",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "descripicionfisica",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "montototal",
+                "type": "real",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "sectornombre",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['AGUA Y CLOACA', 'OBRAS VIALES', 'OTROS', 'SALUD', 'ARQUITECTURA', 'EDUCACIÓN', 'EQUIPAMIENTO URBANO', 'VIVIENDA / HÁBITAT', 'RECURSOS HIDRICOS']",
+                "options": [
+                    "AGUA Y CLOACA",
+                    "OBRAS VIALES",
+                    "OTROS",
+                    "SALUD",
+                    "ARQUITECTURA",
+                    "EDUCACIÓN",
+                    "EQUIPAMIENTO URBANO",
+                    "VIVIENDA / HÁBITAT",
+                    "RECURSOS HIDRICOS"
+                ]
+            },
+            {
+                "name": "avancefinanciero",
+                "type": "real",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "avancefisico",
+                "type": "real",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "entidadejecutoranombre",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['AGUA Y SANEAMIENTOS ARGENTINOS', 'DIRECCIÓN NACIONAL DE VIALIDAD', 'DIRECCIÓN NACIONAL DE GESTIÓN DE OBRAS', 'ESCUELAS Y UNIVERSIDADES', 'MUNICIPIOS', 'SUBSECRETARÍA DE EJECUCIÓN DE OBRAS PÚBLICAS', 'DIRECCIÓN NACIONAL DE GESTIÓN DE INFRAESTRUCTURAS DEL TRANSPORTE', 'ENTE NACIONAL DE OBRAS HÍDRICAS DE SANEAMIENTO', 'PLAN BELGRANO - NORTE GRANDE', 'SECRETARÍA DE INFRAESTRUCTURA Y POLÍTICA HÍDRICA', 'COMISIÓN REGIONAL DEL RÍO BERMEJO', 'SUBSECRETARÍA DE PLANIFICACIÓN Y COORDINACIÓN TERRITORIAL DE LA OBRA PÚBLICA', 'OFICINA DE LAS NACIONES UNIDAS DE SERVICIOS PARA PROYECTOS', 'CORREDORES VIALES SOCIEDAD ANÓNIMA', 'DIRECCIÓN NACIONAL DE AGUA POTABLE Y SANEAMIENTO', 'AUTORIDAD DE LA CUENCA MATANZA RIACHUELO']",
+                "options": [
+                    "AGUA Y SANEAMIENTOS ARGENTINOS",
+                    "DIRECCIÓN NACIONAL DE VIALIDAD",
+                    "DIRECCIÓN NACIONAL DE GESTIÓN DE OBRAS",
+                    "ESCUELAS Y UNIVERSIDADES",
+                    "MUNICIPIOS",
+                    "SUBSECRETARÍA DE EJECUCIÓN DE OBRAS PÚBLICAS",
+                    "DIRECCIÓN NACIONAL DE GESTIÓN DE INFRAESTRUCTURAS DEL TRANSPORTE",
+                    "ENTE NACIONAL DE OBRAS HÍDRICAS DE SANEAMIENTO",
+                    "PLAN BELGRANO - NORTE GRANDE",
+                    "SECRETARÍA DE INFRAESTRUCTURA Y POLÍTICA HÍDRICA",
+                    "COMISIÓN REGIONAL DEL RÍO BERMEJO",
+                    "SUBSECRETARÍA DE PLANIFICACIÓN Y COORDINACIÓN TERRITORIAL DE LA OBRA PÚBLICA",
+                    "OFICINA DE LAS NACIONES UNIDAS DE SERVICIOS PARA PROYECTOS",
+                    "CORREDORES VIALES SOCIEDAD ANÓNIMA",
+                    "DIRECCIÓN NACIONAL DE AGUA POTABLE Y SANEAMIENTO",
+                    "AUTORIDAD DE LA CUENCA MATANZA RIACHUELO"
+                ]
+            },
+            {
+                "name": "duracionobrasdias",
+                "type": "integer",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "objetivogeneral",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "tipoproyecto",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "nombredepto",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "nombreprovincia",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "codigo_bahra",
+                "type": "real",
+                "format": "default",
+                "description": " Options: [58035070.0, 66380638040015.0, 141821680170000.0, 180210021020000.0, 181260318000043.0, 180630119010000.0, 820422728250000.0, 140420266010000.0, 301130490080000.0, 64080408010002.0, 300700259080000.0, 300280112070000.0, 820210042310000.0, 820140028050000.0, 820840203210000.0, 820632952020000.0, 60350035010002.0, 900840014010000.0, 66580658010002.0, 901198644000005.0]",
+                "options": [
+                    58035070.0,
+                    66380638040015.0,
+                    141821680170000.0,
+                    180210021020000.0,
+                    181260318000043.0,
+                    180630119010000.0,
+                    820422728250000.0,
+                    140420266010000.0,
+                    301130490080000.0,
+                    64080408010002.0,
+                    300700259080000.0,
+                    300280112070000.0,
+                    820210042310000.0,
+                    820140028050000.0,
+                    820840203210000.0,
+                    820632952020000.0,
+                    60350035010002.0,
+                    900840014010000.0,
+                    66580658010002.0,
+                    901198644000005.0
+                ]
+            },
+            {
+                "name": "etapaobra",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['FINALIZADAS', 'EN EJECUCIÓN', 'OTRAS']",
+                "options": [
+                    "FINALIZADAS",
+                    "EN EJECUCIÓN",
+                    "OTRAS"
+                ]
+            },
+            {
+                "name": "tipomoneda",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['pesos argentinos', 'dolares estadounidenses']",
+                "options": [
+                    "pesos argentinos",
+                    "dolares estadounidenses"
+                ]
+            },
+            {
+                "name": "url_perfil_obra",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "programa_infraestructura",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['SIN PROGRAMA', 'COVID19', 'Otras obras de infraestructura del cuidado', 'Centros territoriales de políticas de Género y Diversidad', 'Centros de Desarrollo Infantil (CDI)']",
+                "options": [
+                    "SIN PROGRAMA",
+                    "COVID19",
+                    "Otras obras de infraestructura del cuidado",
+                    "Centros territoriales de políticas de Género y Diversidad",
+                    "Centros de Desarrollo Infantil (CDI)"
+                ]
+            },
+            {
+                "name": "organismo_financiador_1",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['-', 'BID', 'CAF', 'BIRF', 'FONPLATA', 'BCIE']",
+                "options": [
+                    "-",
+                    "BID",
+                    "CAF",
+                    "BIRF",
+                    "FONPLATA",
+                    "BCIE"
+                ]
+            },
+            {
+                "name": "organismo_financiador_2",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['BID', 'AFD']",
+                "options": [
+                    "BID",
+                    "AFD"
+                ]
+            },
+            {
+                "name": "organismo_financiador_prestamo",
+                "type": "real",
+                "format": "default",
+                "description": " Options: [2940.0, 2929.0, 8945.0, 3451.0, 8640.0, 2776.0, 8032.0, 2415.0, 8028.0, 4312.0, 9710.0, 2716.0, 5285.0, 1004014312.0, 4312100401.0, 2280.0, 5621.0, 11553.0, 11746.0]",
+                "options": [
+                    2940.0,
+                    2929.0,
+                    8945.0,
+                    3451.0,
+                    8640.0,
+                    2776.0,
+                    8032.0,
+                    2415.0,
+                    8028.0,
+                    4312.0,
+                    9710.0,
+                    2716.0,
+                    5285.0,
+                    1004014312.0,
+                    4312100401.0,
+                    2280.0,
+                    5621.0,
+                    11553.0,
+                    11746.0
+                ]
+            },
+            {
+                "name": "contraparte_key",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['-', 'contratista', 'Jurisdicción Beneficiaria']",
+                "options": [
+                    "-",
+                    "contratista",
+                    "Jurisdicción Beneficiaria"
+                ]
+            },
+            {
+                "name": "contraparte_val",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['-', 'JUAN M. LAVIGNE Y CIA S.A.', 'DYCASA S.A.', 'BENITO ROGGIO E HIJOS S.A. - ROVELLA CARRANZA S.A. - UTE', 'BENITO ROGGIO E HIJOS S.A.', 'ELECTROINGENIERIA S.A. - BOETTO Y BUTTIGLIENGO S.A. - UTE', 'SACDE S.A.', 'CPC S.A. - CONTRERAS HERMANOS S.A.I.C.I.F.A.G. Y M - UTE', 'CINCOVIAL S.A.', 'ALMIRANTE BROWN', 'JCR S.A.', 'LEMIRO PABLO PIETROBONI S.A. - PANEDILE ARGENTINA S.A. - LUIS LOSI S.A. - UTE', 'JOSE CARTELLONE CONST. CIVILES S.A.', 'CPC S.A. - ROVELLA CARRANZA S.A. - UTE', 'EQUIMAC S.A.', 'CAMINOS DEL PARANA S.A.', 'CPC S.A. - INMAC S.A. - RIGEL S.R.L. - UTE', 'VIAL AGRO S.A. - C.N. SAPAG S.A. CCFIIE Y M - RN22SII - UTE', 'CPC S.A. - C.N. SAPAG S.A. CCFIIE Y M - UTE', 'HOMAQ S.A.']",
+                "options": [
+                    "-",
+                    "JUAN M. LAVIGNE Y CIA S.A.",
+                    "DYCASA S.A.",
+                    "BENITO ROGGIO E HIJOS S.A. - ROVELLA CARRANZA S.A. - UTE",
+                    "BENITO ROGGIO E HIJOS S.A.",
+                    "ELECTROINGENIERIA S.A. - BOETTO Y BUTTIGLIENGO S.A. - UTE",
+                    "SACDE S.A.",
+                    "CPC S.A. - CONTRERAS HERMANOS S.A.I.C.I.F.A.G. Y M - UTE",
+                    "CINCOVIAL S.A.",
+                    "ALMIRANTE BROWN",
+                    "JCR S.A.",
+                    "LEMIRO PABLO PIETROBONI S.A. - PANEDILE ARGENTINA S.A. - LUIS LOSI S.A. - UTE",
+                    "JOSE CARTELLONE CONST. CIVILES S.A.",
+                    "CPC S.A. - ROVELLA CARRANZA S.A. - UTE",
+                    "EQUIMAC S.A.",
+                    "CAMINOS DEL PARANA S.A.",
+                    "CPC S.A. - INMAC S.A. - RIGEL S.R.L. - UTE",
+                    "VIAL AGRO S.A. - C.N. SAPAG S.A. CCFIIE Y M - RN22SII - UTE",
+                    "CPC S.A. - C.N. SAPAG S.A. CCFIIE Y M - UTE",
+                    "HOMAQ S.A."
+                ]
+            },
+            {
+                "name": "contraparte_cuit",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "contraparte_modalidad",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['A+T', 'C+T', 'CONTRATO', '-', 'A+T / CONTRATO', 'C+T / CONTRATO', 'CONVENIO']",
+                "options": [
+                    "A+T",
+                    "C+T",
+                    "CONTRATO",
+                    "-",
+                    "A+T / CONTRATO",
+                    "C+T / CONTRATO",
+                    "CONVENIO"
+                ]
+            },
+            {
+                "name": "tag_accionclimatica",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['Adaptación', '-', 'Mitigación', 'Adaptación|Mitigación']",
+                "options": [
+                    "Adaptación",
+                    "-",
+                    "Mitigación",
+                    "Adaptación|Mitigación"
+                ]
+            },
+            {
+                "name": "tag_ods_incidencia",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['ODS 6 DIRECTA', 'ODS 11 INDIRECTA|ODS 9 DIRECTA', '-', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 5 INDIRECTA|ODS 9 DIRECTA', 'ODS 13 INDIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 9 DIRECTA', 'ODS 13 INDIRECTA|ODS 4 INDIRECTA|ODS 9 DIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 6 DIRECTA', 'ODS 13 INDIRECTA|ODS 6 DIRECTA', 'ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 6 DIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 4 INDIRECTA|ODS 5 INDIRECTA|ODS 9 DIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 6 DIRECTA|ODS 9 DIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 9 DIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA', 'ODS 11 INDIRECTA|ODS 3 INDIRECTA|ODS 5 INDIRECTA|ODS 9 DIRECTA', 'ODS 13 INDIRECTA|ODS 6 DIRECTA|ODS 9 DIRECTA', 'ODS 13 INDIRECTA|ODS 9 DIRECTA', 'ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 4 INDIRECTA|ODS 9 DIRECTA']",
+                "options": [
+                    "ODS 6 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 9 DIRECTA",
+                    "-",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 5 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 13 INDIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 13 INDIRECTA|ODS 4 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 6 DIRECTA",
+                    "ODS 13 INDIRECTA|ODS 6 DIRECTA",
+                    "ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 6 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 4 INDIRECTA|ODS 5 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 6 DIRECTA|ODS 9 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 3 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA",
+                    "ODS 11 INDIRECTA|ODS 3 INDIRECTA|ODS 5 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 13 INDIRECTA|ODS 6 DIRECTA|ODS 9 DIRECTA",
+                    "ODS 13 INDIRECTA|ODS 9 DIRECTA",
+                    "ODS 11 INDIRECTA|ODS 13 INDIRECTA|ODS 4 INDIRECTA|ODS 9 DIRECTA"
+                ]
+            }
+        ]
+    },
+    "investmentProjectsAndWorksArgInvestmentProjects": {
+        "title": "",
+        "description": "",
+        "fields": [
+            {
+                "name": "IdProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "CodigoBapin",
+                "type": "integer",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "Sector",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['RECURSOS HIDRICOS', 'ARQUITECTURA', 'OBRAS VIALES', 'AGUA Y CLOACA', 'EQUIPAMIENTO URBANO', 'SALUD', 'EDUCACIÓN', 'VIVIENDA / HÁBITAT', 'OTROS']",
+                "options": [
+                    "RECURSOS HIDRICOS",
+                    "ARQUITECTURA",
+                    "OBRAS VIALES",
+                    "AGUA Y CLOACA",
+                    "EQUIPAMIENTO URBANO",
+                    "SALUD",
+                    "EDUCACIÓN",
+                    "VIVIENDA / HÁBITAT",
+                    "OTROS"
+                ]
+            },
+            {
+                "name": "Subsector",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "Tipo",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "CostoEstimado",
+                "type": "real",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "FechaEstimacion",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "Responsable",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['DIRECCIÓN DE PROYECTOS HIDRÁULICOS', 'MUNICIPIOS', 'DIRECCIÓN NACIONAL DE ARQUITECTURA', 'ENOHSA', 'DIRECCIÓN NACIONAL DE INFRAESTRUCTURA DEL TRANSPORTE', 'PROFESA', 'COMISIÓN REGIONAL DEL RÍO BERMEJO', 'CORREDORES VIALES SOCIEDAD ANÓNIMA', 'OFICINA DE LAS NACIONES UNIDAS DE SERVICIOS PARA PROYECTOS', 'ESCUELAS Y UNIVERSIDADES', 'PLAN BELGRANO - NORTE GRANDE', 'DIRECCIÓN NACIONAL DE VIALIDAD', 'SECRETARÍA DE INFRAESTRUCTURA Y POLÍTICA HÍDRICA', 'DIRECCIÓN DE SISTEMAS DE MONITOREO DE RECURSOS HÍDRICOS']",
+                "options": [
+                    "DIRECCIÓN DE PROYECTOS HIDRÁULICOS",
+                    "MUNICIPIOS",
+                    "DIRECCIÓN NACIONAL DE ARQUITECTURA",
+                    "ENOHSA",
+                    "DIRECCIÓN NACIONAL DE INFRAESTRUCTURA DEL TRANSPORTE",
+                    "PROFESA",
+                    "COMISIÓN REGIONAL DEL RÍO BERMEJO",
+                    "CORREDORES VIALES SOCIEDAD ANÓNIMA",
+                    "OFICINA DE LAS NACIONES UNIDAS DE SERVICIOS PARA PROYECTOS",
+                    "ESCUELAS Y UNIVERSIDADES",
+                    "PLAN BELGRANO - NORTE GRANDE",
+                    "DIRECCIÓN NACIONAL DE VIALIDAD",
+                    "SECRETARÍA DE INFRAESTRUCTURA Y POLÍTICA HÍDRICA",
+                    "DIRECCIÓN DE SISTEMAS DE MONITOREO DE RECURSOS HÍDRICOS"
+                ]
+            },
+            {
+                "name": "Plan",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['-', 'PLAN ARGENTINA HACE', 'PLAN ARGENTINA HACE - ETAPA 2']",
+                "options": [
+                    "-",
+                    "PLAN ARGENTINA HACE",
+                    "PLAN ARGENTINA HACE - ETAPA 2"
+                ]
+            },
+            {
+                "name": "Objetivo",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['El Plan Director plantea acciones inmediatas, a mediano y a largo plazo, comprendiendo intervenciones estructurales, acciones y normativas que integran un plan de sistematización integral de la cuenca.', 'El objetivo consiste en poder concentrar todas las funcionen que atañen a la administración pública en un sólo edificio, incorporando a su vez el desarrollo de las nuevas actividades y funciones que promueven instancias de articulación institucional y ciudadana. Este edificio contará con un carácter institucional notorio que logrará poder identificar una imagen cívica representativa en el mismo.', 'Para una mejora definitiva a nuestra red vial, estamos proponiendo la intervención de 39 cuadras.- En este caso utilizaríamos Hormigón H-30 y H-25 con un espesor que varía entre 15,00 cm. y 20,00 cm. según el sector y tránsito vehicular permitido. Se ha adoptado esta solución debido a que  esta alternativa es la más ventajosa por su gran vida útil (50 años o más) y el mínimo mantenimiento que requiere durante este período, que lo hace la solución más ventajosa económicamente Además, la ejecución de obras complementarias que lograrán una integralidad del proyecto.-', 'Diseño de una cubierta para la protección frente a la intemperie del sitio arqueológico, preservándolo.', 'El objetivo principal es el de consolidar el pie del talud que se encuentra sujeto a un proceso erosivo por parte del río Paraná.', 'Cumplimentar la cobertura de servicios básico de Agua potable al 100% y Desagües Cloacales al 80% hacia el año 2030 bajo el Plan Director de Agua Potable y Saneamiento de la Provincia de Córdoba.  Acciones Estratégicas para un Desarrollo Sostenible Gestión 2020-2023.', 'La Obra permitira sacar de servicio el colector tajamar existente el cual se encuentra deteriorado y sobrepasado en su capacidad de transporte, generando desbordes en el area central de la ciudad. Se preve ademas optimizar el funcionamiento del sistema de desagues cloacales, brindando factibilidad de servicio a nuevas urbanizaciones dando  respuestas al crecimiento poblacional del area central y Norte de la Ciudad', 'Ampliar la capacidad de captacion de agua, para poder ampliar el radio de servicio a los loteos recientemente proyectados por la comision de fomento local.', 'Conexiones de nuevos usuarios a la Red de agua Potable, para mejorar la calidad de vida de los vecinos.', 'El objetivo de las obras proyectadas es dotar a la localidad de  Rancul de un sistema de recolección y tratamiento de líquidos cloacales. Las obras de saneamiento proyectadas se componen básicamente de una red de colectoras cloacales y cañerías subsidiarias, una estación de bombeo, cañería de impulsión a planta, planta de tratamiento biológico mediante lagunas de estabilización y desagüe final a área arbolada. El proyecto se elabora teniendo en cuenta la totalidad de la localidad anexándose además seis manzanas aún no urbanizadas, esto es a los efectos de tener en cuenta altimétricamente los tramos involucrados a futuro.', 'Esta etapa del Proyecto permitirá solucionar un importante aspecto sanitario de la ciudad, logrando la provisión y distribución de agua de buena calidad. Construyendo acueductos destinados a optimizar el suministro de agua potable de la ciudad de la Paz, focalizados principalmente en aquellos sectores identificados como conflictivos. También prevé la  readecuación de la Red de Distribución.', 'El objetivo es aumentar la producción de agua en los Municipios de Tafi Viejo, la comuna de Villa Carmela y zona oeste de San Miguel de Tucuman. ZOna de expansión poblacional, hacia el norte de la ciudad de San Miguel de Tucuman.', 'Asegurar el óptimo funcionamiento del sistema eléctrico de la sala de tableros de encendido de las 14 bombas que conforman el sistema de bombeo, y compuertas de cierre y apertura según los niveles de los ríos mencionados. El objetivo de la obra consiste en readecuar y acondicionar el edificio eléctrico, detallándose a continuación para esta obra las tareas principales a ejecutar 1.- Demolición de la Sala de Celdas y del sector de Transformadores y del pavimento articulado del sector indicado en los planos 2.- Fundación sobre pilotes, vigas y losas en la Sala de Celdas y Transformadores 3.- Reconstrucción del pavimento articulado. 4.- Adecuación del sistema de drenaje superficial. 5.- Readecuación de la Sala de Celda de MT y la playa del sector de transformadores, de las dimensiones originales del proyecto. 6.- Acondicionamiento y readecuación del sistema eléctrico de entrada a la Sala de Celda – Transformadores para su ingreso a los Equipos Eléctricos y su funcionamiento.', 'El objeto del presente trabajo es la realización de obras de reemplazo de redes en el casco céntrico para la mejora del servicio de provisión de agua a la zona afectada. Esta obra se enmarca en el plan integral de cambio de redes distribuidora en el micro y macro centro de la ciudad de Salta.', 'La finalidad de la obra es renovar la cañería existente que se encuentra en malas condiciones y con reiterados problemas de rotura.', 'Se trabaja permanentemente en la mejora y repotenciación del alumbrado publico a través del recambio de luminarias con sistema LED. esta obras permiten generar un cambo positivo en las ciudades del Partido. Ahorro energético, seguridad en la comunidad y mayor uso de espacios publicos en horarios nocturnos, apostando la mejora de nuestra zona turistica en crecimiento', 'Evitar los daños derivados de los anegamientos de calles y de viviendas verificados en varios sectores críticos de esta zona Oeste, que abarca un área aproximada de 500\\xa0ha. Estos anegamientos se han vuelto más frecuentes en los últimos años con el aumento de tormentas intensas y con el gran desarrollo de viviendas en este sector.', 'Mejorar el acceso a agua segura en cantidad y calidad para la zona teniendo un fuerte impacto en la salud de la población general provocando cambios fundamentales en la calidad de vida de los habitantes', 'El Objetivo Específico del Proyecto es mejorar la crisis del sector, pavimentando con H° toda la Av. Solano Peña y la calle Vicente Gallo, proveyendo la pendiente necesaria para la correcta evacuación pluvial, revalorizando los Espacios Verdes, asignándole nuevas funciones: pista de salud y bicisenda. Mejorar el Sistema Vial. Mejorar el Sistema de Iluminación, determinando su densidad y ubicación en base a curvas Isolux. Por último, el saneamiento de las aguas de lluvias a través del revestimiento del canal paralelo a la Vicente Gallo.', 'En dicha zona se demanda iluminación sobre zona vial que permita reducir vandalismo e inseguridad, como así también garantice condiciones adecuadas de circulación en horas nocturnas.']",
+                "options": [
+                    "El Plan Director plantea acciones inmediatas, a mediano y a largo plazo, comprendiendo intervenciones estructurales, acciones y normativas que integran un plan de sistematización integral de la cuenca.",
+                    "El objetivo consiste en poder concentrar todas las funcionen que atañen a la administración pública en un sólo edificio, incorporando a su vez el desarrollo de las nuevas actividades y funciones que promueven instancias de articulación institucional y ciudadana. Este edificio contará con un carácter institucional notorio que logrará poder identificar una imagen cívica representativa en el mismo.",
+                    "Para una mejora definitiva a nuestra red vial, estamos proponiendo la intervención de 39 cuadras.- En este caso utilizaríamos Hormigón H-30 y H-25 con un espesor que varía entre 15,00 cm. y 20,00 cm. según el sector y tránsito vehicular permitido. Se ha adoptado esta solución debido a que  esta alternativa es la más ventajosa por su gran vida útil (50 años o más) y el mínimo mantenimiento que requiere durante este período, que lo hace la solución más ventajosa económicamente Además, la ejecución de obras complementarias que lograrán una integralidad del proyecto.-",
+                    "Diseño de una cubierta para la protección frente a la intemperie del sitio arqueológico, preservándolo.",
+                    "El objetivo principal es el de consolidar el pie del talud que se encuentra sujeto a un proceso erosivo por parte del río Paraná.",
+                    "Cumplimentar la cobertura de servicios básico de Agua potable al 100% y Desagües Cloacales al 80% hacia el año 2030 bajo el Plan Director de Agua Potable y Saneamiento de la Provincia de Córdoba.  Acciones Estratégicas para un Desarrollo Sostenible Gestión 2020-2023.",
+                    "La Obra permitira sacar de servicio el colector tajamar existente el cual se encuentra deteriorado y sobrepasado en su capacidad de transporte, generando desbordes en el area central de la ciudad. Se preve ademas optimizar el funcionamiento del sistema de desagues cloacales, brindando factibilidad de servicio a nuevas urbanizaciones dando  respuestas al crecimiento poblacional del area central y Norte de la Ciudad",
+                    "Ampliar la capacidad de captacion de agua, para poder ampliar el radio de servicio a los loteos recientemente proyectados por la comision de fomento local.",
+                    "Conexiones de nuevos usuarios a la Red de agua Potable, para mejorar la calidad de vida de los vecinos.",
+                    "El objetivo de las obras proyectadas es dotar a la localidad de  Rancul de un sistema de recolección y tratamiento de líquidos cloacales. Las obras de saneamiento proyectadas se componen básicamente de una red de colectoras cloacales y cañerías subsidiarias, una estación de bombeo, cañería de impulsión a planta, planta de tratamiento biológico mediante lagunas de estabilización y desagüe final a área arbolada. El proyecto se elabora teniendo en cuenta la totalidad de la localidad anexándose además seis manzanas aún no urbanizadas, esto es a los efectos de tener en cuenta altimétricamente los tramos involucrados a futuro.",
+                    "Esta etapa del Proyecto permitirá solucionar un importante aspecto sanitario de la ciudad, logrando la provisión y distribución de agua de buena calidad. Construyendo acueductos destinados a optimizar el suministro de agua potable de la ciudad de la Paz, focalizados principalmente en aquellos sectores identificados como conflictivos. También prevé la  readecuación de la Red de Distribución.",
+                    "El objetivo es aumentar la producción de agua en los Municipios de Tafi Viejo, la comuna de Villa Carmela y zona oeste de San Miguel de Tucuman. ZOna de expansión poblacional, hacia el norte de la ciudad de San Miguel de Tucuman.",
+                    "Asegurar el óptimo funcionamiento del sistema eléctrico de la sala de tableros de encendido de las 14 bombas que conforman el sistema de bombeo, y compuertas de cierre y apertura según los niveles de los ríos mencionados. El objetivo de la obra consiste en readecuar y acondicionar el edificio eléctrico, detallándose a continuación para esta obra las tareas principales a ejecutar 1.- Demolición de la Sala de Celdas y del sector de Transformadores y del pavimento articulado del sector indicado en los planos 2.- Fundación sobre pilotes, vigas y losas en la Sala de Celdas y Transformadores 3.- Reconstrucción del pavimento articulado. 4.- Adecuación del sistema de drenaje superficial. 5.- Readecuación de la Sala de Celda de MT y la playa del sector de transformadores, de las dimensiones originales del proyecto. 6.- Acondicionamiento y readecuación del sistema eléctrico de entrada a la Sala de Celda – Transformadores para su ingreso a los Equipos Eléctricos y su funcionamiento.",
+                    "El objeto del presente trabajo es la realización de obras de reemplazo de redes en el casco céntrico para la mejora del servicio de provisión de agua a la zona afectada. Esta obra se enmarca en el plan integral de cambio de redes distribuidora en el micro y macro centro de la ciudad de Salta.",
+                    "La finalidad de la obra es renovar la cañería existente que se encuentra en malas condiciones y con reiterados problemas de rotura.",
+                    "Se trabaja permanentemente en la mejora y repotenciación del alumbrado publico a través del recambio de luminarias con sistema LED. esta obras permiten generar un cambo positivo en las ciudades del Partido. Ahorro energético, seguridad en la comunidad y mayor uso de espacios publicos en horarios nocturnos, apostando la mejora de nuestra zona turistica en crecimiento",
+                    "Evitar los daños derivados de los anegamientos de calles y de viviendas verificados en varios sectores críticos de esta zona Oeste, que abarca un área aproximada de 500 ha. Estos anegamientos se han vuelto más frecuentes en los últimos años con el aumento de tormentas intensas y con el gran desarrollo de viviendas en este sector.",
+                    "Mejorar el acceso a agua segura en cantidad y calidad para la zona teniendo un fuerte impacto en la salud de la población general provocando cambios fundamentales en la calidad de vida de los habitantes",
+                    "El Objetivo Específico del Proyecto es mejorar la crisis del sector, pavimentando con H° toda la Av. Solano Peña y la calle Vicente Gallo, proveyendo la pendiente necesaria para la correcta evacuación pluvial, revalorizando los Espacios Verdes, asignándole nuevas funciones: pista de salud y bicisenda. Mejorar el Sistema Vial. Mejorar el Sistema de Iluminación, determinando su densidad y ubicación en base a curvas Isolux. Por último, el saneamiento de las aguas de lluvias a través del revestimiento del canal paralelo a la Vicente Gallo.",
+                    "En dicha zona se demanda iluminación sobre zona vial que permita reducir vandalismo e inseguridad, como así también garantice condiciones adecuadas de circulación en horas nocturnas."
+                ]
+            },
+            {
+                "name": "Descripcion",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "NombreProvincia",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "NombreDepartamento",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "FechaCargueArchivo",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['2024-05-21']",
+                "options": [
+                    "2024-05-21"
+                ]
+            },
+            {
+                "name": "FuenteDatos",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['Ministerio de Obras Públicas']",
+                "options": [
+                    "Ministerio de Obras Públicas"
+                ]
+            },
+            {
+                "name": "url_perfil_obra",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            }
+        ]
+    },
+    "investmentProjectsAndWorksArgDatosEspaciales": {
+        "title": "",
+        "description": "",
+        "fields": [
+            {
+                "name": "IdVisorMapas",
+                "type": "integer",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "IdProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "CodigoBPIN",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "JSON",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "Descripcion",
+                "type": "real",
+                "format": "default",
+                "description": " Options: []",
+                "options": []
+            },
+            {
+                "name": "Fecha",
+                "type": "text",
+                "format": "default",
+                "description": ""
+            },
+            {
+                "name": "FechaUltimaModificacion",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['2024-05-20 16:55:56.820']",
+                "options": [
+                    "2024-05-20 16:55:56.820"
+                ]
+            },
+            {
+                "name": "ConsecutivoCarga",
+                "type": "integer",
+                "format": "default",
+                "description": " Options: [1]",
+                "options": [
+                    1
+                ]
+            },
+            {
+                "name": "Modificadopor",
+                "type": "text",
+                "format": "default",
+                "description": " Options: ['MapaInvDatosSS2\\\\sqlAdmin']",
+                "options": [
+                    "MapaInvDatosSS2\\sqlAdmin"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "ojosanciones-web-front",
+  "version": "1.0.0",
+  "description": "Front de ojosanciones.sociedad.info.",
+  "main": "gobernantes-web-front.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/anticoding/ojosanciones.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/anticoding/ojosanciones/issues"
+  },
+  "homepage": "https://ojosanciones.sociedad.info",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.10.0",
+    "@flaticon/flaticon-uicons": "^3.1.0",
+    "@wix/data": "^1.0.53",
+    "@wix/members": "^1.0.38",
+    "@wix/sdk": "^1.5.5",
+    "command-line-args": "^5.2.1",
+    "email-templates": "^11.1.1",
+    "nodemailer": "^6.9.6",
+    "pug": "^3.0.2"
+  }
+}

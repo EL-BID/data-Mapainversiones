@@ -1,0 +1,14 @@
+streamlit
+pandas
+requests
+langchain
+openai
+python-dotenv
+langchain-openai
+langchain-community
+tabulate
+fastapi
+uvicorn
+pydantic
+gdown
+google-cloud-translate

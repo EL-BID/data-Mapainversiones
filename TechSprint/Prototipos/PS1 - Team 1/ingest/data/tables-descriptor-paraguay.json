@@ -1,0 +1,1141 @@
+{
+    "nationalDevelopmentPlanPryBudgetByEntity": {
+        "title": "Budget by Entity associated with the National Development Plan of Paraguay",
+        "description": "Contains information on the budget of the entities and projects that contribute to the PND (National Development Plan 2030 of Paraguay)",
+        "fields": [
+            {
+                "name": "codEjeEstrategico",
+                "type": "integer",
+                "format": "default",
+                "description": "Code of the strategic axis of the National Development Plan 2030 Options: [1, 2, 3, 4]",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "name": "nombreEjeEstrategico",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the strategic axis of the National Development Plan 2030 Options: ['Reducción de pobreza y desarrollo social', 'Crecimiento económico inclusivo', 'Proyección de paraguay en el mundo', 'Fortalecimiento político institucional']",
+                "options": [
+                    "Reducción de pobreza y desarrollo social",
+                    "Crecimiento económico inclusivo",
+                    "Proyección de paraguay en el mundo",
+                    "Fortalecimiento político institucional"
+                ]
+            },
+            {
+                "name": "codObjetivoEstrategico",
+                "type": "integer",
+                "format": "default",
+                "description": "Code of the strategic objective corresponding to the axis of the National Development Plan 2030 Options: [1, 2, 3, 4]",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "name": "nombreObjetivoEstrategico",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the strategic objective corresponding to the axis of the National Development Plan 2030 Options: ['Lograr un desarrollo social equitativo', 'Brindar servicios sociales de calidad', 'Alcanzar un desarrollo local participativo', 'Desarrollar un hábitat adecuado y sostenible', 'Promover el empleo y la seguridad social', 'Propiciar la competitividad y la innovación', 'Ampliar la regionalización y la diversificación productiva', 'Valorizar el capital ambiental', 'Garantizar igualdad de oportunidades en un mundo globalizado', 'Impulsar atracción de inversiones, comercio exterior e imagen país', 'Fortalecer integración económica regional', 'Contribuir a la sostenibilidad del hábitat global', 'Garantizar el acceso a los derechos humanos, mejorar la justicia y la seguridad', 'Modernizar la administración pública', 'Avanzar hacia la descentralización efectiva', 'Proteger y defender el medio ambiente y los recursos naturales']",
+                "options": [
+                    "Lograr un desarrollo social equitativo",
+                    "Brindar servicios sociales de calidad",
+                    "Alcanzar un desarrollo local participativo",
+                    "Desarrollar un hábitat adecuado y sostenible",
+                    "Promover el empleo y la seguridad social",
+                    "Propiciar la competitividad y la innovación",
+                    "Ampliar la regionalización y la diversificación productiva",
+                    "Valorizar el capital ambiental",
+                    "Garantizar igualdad de oportunidades en un mundo globalizado",
+                    "Impulsar atracción de inversiones, comercio exterior e imagen país",
+                    "Fortalecer integración económica regional",
+                    "Contribuir a la sostenibilidad del hábitat global",
+                    "Garantizar el acceso a los derechos humanos, mejorar la justicia y la seguridad",
+                    "Modernizar la administración pública",
+                    "Avanzar hacia la descentralización efectiva",
+                    "Proteger y defender el medio ambiente y los recursos naturales"
+                ]
+            },
+            {
+                "name": "codObjetivoEspecifico",
+                "type": "integer",
+                "format": "default",
+                "description": "Specific Objective Code corresponding to each strategic objective of the National Development Plan 2030 Options: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                ]
+            },
+            {
+                "name": "nombreObjetivoEspecifico",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the specific objective corresponding to each strategic objective of the National Development Plan 2030"
+            },
+            {
+                "name": "codODS",
+                "type": "integer",
+                "format": "default",
+                "description": "Linked Sustainable Development Goal (SDG) code Options: [16, 1, 10, 4, 2, 3, 11, 0, 9, 8, 17, 7, 12, 13, 6]",
+                "options": [
+                    16,
+                    1,
+                    10,
+                    4,
+                    2,
+                    3,
+                    11,
+                    0,
+                    9,
+                    8,
+                    17,
+                    7,
+                    12,
+                    13,
+                    6
+                ]
+            },
+            {
+                "name": "nombreODS",
+                "type": "string",
+                "format": "default",
+                "description": "name of the objective Sustainable Development Goals Options: ['Paz, justicia e instituciones sólidas', 'Fin de la pobreza', 'Reducción de las desigualdades', 'Educación de calidad', 'Hambre cero', 'Salud y bienestar', 'Ciudadanes y comunidades sostenibles', 'sin ODS', 'Industria, innovación e infraestructura', 'Trabajo decente y crecimiento económico', 'Alianzas para lograr los objetivos', 'Energía asequible y no contaminante', 'Producción y consumo responsables', 'Acción por el clima', 'Agua limpia y saneamiento']",
+                "options": [
+                    "Paz, justicia e instituciones sólidas",
+                    "Fin de la pobreza",
+                    "Reducción de las desigualdades",
+                    "Educación de calidad",
+                    "Hambre cero",
+                    "Salud y bienestar",
+                    "Ciudadanes y comunidades sostenibles",
+                    "sin ODS",
+                    "Industria, innovación e infraestructura",
+                    "Trabajo decente y crecimiento económico",
+                    "Alianzas para lograr los objetivos",
+                    "Energía asequible y no contaminante",
+                    "Producción y consumo responsables",
+                    "Acción por el clima",
+                    "Agua limpia y saneamiento"
+                ]
+            },
+            {
+                "name": "descripcionODS",
+                "type": "string",
+                "format": "default",
+                "description": "Description of Sustainable Development Goal (SDG) Options: ['Promover sociedades pacíficas e inclusivas para el desarrollo sostenible, facilitar el acceso a la justicia para todos y construir a todos los niveles instituciones eficaces e inclusivas que rindan cuentas', 'Poner fin a la pobreza en todas sus formas y en todo el mundo', 'Reducir la desigualdad en los países y entre ellos', 'Garantizar una educación inclusiva y equitativa de calidad y promover oportunidades de aprendizaje permanente para todos', 'Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible', 'Garantizar una vida sana y promover el bienestar de todos a todas las edades', 'Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles', 'sin ODS', 'Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación', 'Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos', 'Fortalecer los medios de implementación y revitalizar la Alianza Mundial para el Desarrollo Sostenible', 'Garantizar el acceso a una energía asequible, fiable, sostenible y moderna para todos', 'Garantizar modalidades de consumo y producción sostenibles', 'Adoptar medidas urgentes para combatir el cambio climático y sus efectos (b)', 'Garantizar la disponibilidad y la gestión sostenible del agua y el saneamiento para todos']",
+                "options": [
+                    "Promover sociedades pacíficas e inclusivas para el desarrollo sostenible, facilitar el acceso a la justicia para todos y construir a todos los niveles instituciones eficaces e inclusivas que rindan cuentas",
+                    "Poner fin a la pobreza en todas sus formas y en todo el mundo",
+                    "Reducir la desigualdad en los países y entre ellos",
+                    "Garantizar una educación inclusiva y equitativa de calidad y promover oportunidades de aprendizaje permanente para todos",
+                    "Poner fin al hambre, lograr la seguridad alimentaria y la mejora de la nutrición y promover la agricultura sostenible",
+                    "Garantizar una vida sana y promover el bienestar de todos a todas las edades",
+                    "Lograr que las ciudades y los asentamientos humanos sean inclusivos, seguros, resilientes y sostenibles",
+                    "sin ODS",
+                    "Construir infraestructuras resilientes, promover la industrialización inclusiva y sostenible y fomentar la innovación",
+                    "Promover el crecimiento económico sostenido, inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos",
+                    "Fortalecer los medios de implementación y revitalizar la Alianza Mundial para el Desarrollo Sostenible",
+                    "Garantizar el acceso a una energía asequible, fiable, sostenible y moderna para todos",
+                    "Garantizar modalidades de consumo y producción sostenibles",
+                    "Adoptar medidas urgentes para combatir el cambio climático y sus efectos (b)",
+                    "Garantizar la disponibilidad y la gestión sostenible del agua y el saneamiento para todos"
+                ]
+            },
+            {
+                "name": "codNivelEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Level and entity code that contributes to the indicator and objectives of the National Development Plan 2030"
+            },
+            {
+                "name": "entidad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the entity that contributes to the indicator and objectives of the National Development Plan 2030"
+            },
+            {
+                "name": "siglaEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Abbreviated acronym of the name of the entity"
+            },
+            {
+                "name": "IdNegocioProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Project/Activity identifier code"
+            },
+            {
+                "name": "nombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Project/Activity associated with the National Development Plan"
+            },
+            {
+                "name": "aportePresupuestalAlObjetivo",
+                "type": "string",
+                "format": "default",
+                "description": "Budget that the entity contributes to the specific objective of the National Development Plan 2030"
+            },
+            {
+                "name": "AnioPresupuesto",
+                "type": "integer",
+                "format": "default",
+                "description": "Budget year Options: [2022]",
+                "options": [
+                    2022
+                ]
+            },
+            {
+                "name": "version",
+                "type": "integer",
+                "format": "default",
+                "description": "Version of the bill Options: [2]",
+                "options": [
+                    2
+                ]
+            },
+            {
+                "name": "fuente",
+                "type": "string",
+                "format": "default",
+                "description": "source of information for budget information National Development Plan Options: ['Secretaría Técnica de Planificación - STP']",
+                "options": [
+                    "Secretaría Técnica de Planificación - STP"
+                ]
+            },
+            {
+                "name": "fechaActualizacion",
+                "type": "date",
+                "format": "%Y-%m-%d",
+                "description": "date of last data update"
+            }
+        ],
+        "title_es": "Presupuesto por Entidad asociado al Plan Nacional de Desarrollo de Paraguay",
+        "description_es": "Contiene información del presupuesto de las entidades y proyectos que aportan al PND (Plan Nacional de Desarrollo 2030 de Paraguay)"
+    },
+    "nationalDevelopmentPlanPryIndicators": {
+        "title": "Indicators associated with the National Development Plan of Paraguay",
+        "description": "Contains information on the indicators of the National Development Plan 2030 of Paraguay",
+        "fields": [
+            {
+                "name": "codEjeEstrategico",
+                "type": "integer",
+                "format": "default",
+                "description": "Code of the strategic axis of the National Development Plan (PND) 2030 Options: [1, 2, 3, 4]",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "name": "nombreEjeEstrategico",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the strategic axis of the National Development Plan (PND) 2030 Options: ['Reducción de pobreza y desarrollo social', 'Crecimiento económico inclusivo', 'Proyección de paraguay en el mundo', 'Fortalecimiento politico institucional']",
+                "options": [
+                    "Reducción de pobreza y desarrollo social",
+                    "Crecimiento económico inclusivo",
+                    "Proyección de paraguay en el mundo",
+                    "Fortalecimiento politico institucional"
+                ]
+            },
+            {
+                "name": "codObjetivoEstrategico",
+                "type": "integer",
+                "format": "default",
+                "description": "Code of the strategic objective corresponding to the axis of the National Development Plan (PND) 2030 Options: [1, 2, 3, 4]",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4
+                ]
+            },
+            {
+                "name": "nombreObjetivoEstrategico",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the strategic objective corresponding to the axis of the National Development Plan (PND) 2030 Options: ['1.1 Lograr un desarrollo social equitativo', '1.2. Brindar servicios sociales de calidad', '1.3. Alcanzar un desarrollo local participativo', '1.4. Desarrollar un hábitat adecuado y sostenible', '2.1. Promover el empleo y la seguridad social', '2.2. Propiciar la competitividad y la innovación', '2.3 Ampliar la regionalización y la diversificación productiva', '2.4. Valorizar el capital ambiental', '3.1. Garantizar igualdad de oportunidades en un mundo globalizado.', '3.2. Impulsar la atracción de inversiones, comercio exterior, turismo e imagen país', '3.3. Fortalecer la integración económica regional', '3.4. Contribuir en la sostenibilidad del hábitat global', '4.1 Garantizar el acceso a los Derechos Humanos, mejorar la justicia y la seguridad', '4.2. Modernizar la Administración Pública', '4.3 Avanzar hacia la desentralización efectiva', '4.4 Proteger y defender el medio ambiente y los recursos naturales']",
+                "options": [
+                    "1.1 Lograr un desarrollo social equitativo",
+                    "1.2. Brindar servicios sociales de calidad",
+                    "1.3. Alcanzar un desarrollo local participativo",
+                    "1.4. Desarrollar un hábitat adecuado y sostenible",
+                    "2.1. Promover el empleo y la seguridad social",
+                    "2.2. Propiciar la competitividad y la innovación",
+                    "2.3 Ampliar la regionalización y la diversificación productiva",
+                    "2.4. Valorizar el capital ambiental",
+                    "3.1. Garantizar igualdad de oportunidades en un mundo globalizado.",
+                    "3.2. Impulsar la atracción de inversiones, comercio exterior, turismo e imagen país",
+                    "3.3. Fortalecer la integración económica regional",
+                    "3.4. Contribuir en la sostenibilidad del hábitat global",
+                    "4.1 Garantizar el acceso a los Derechos Humanos, mejorar la justicia y la seguridad",
+                    "4.2. Modernizar la Administración Pública",
+                    "4.3 Avanzar hacia la desentralización efectiva",
+                    "4.4 Proteger y defender el medio ambiente y los recursos naturales"
+                ]
+            },
+            {
+                "name": "codObjetivoEspecifico",
+                "type": "integer",
+                "format": "default",
+                "description": "Specific Objective code corresponding to each strategic objective of the National Development Plan (PND) 2030 Options: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]",
+                "options": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19
+                ]
+            },
+            {
+                "name": "nombreObjetivoEspecifico",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the specific objective corresponding to each strategic objective of the National Development Plan (PND) 2030"
+            },
+            {
+                "name": "indicador",
+                "type": "string",
+                "format": "default",
+                "description": "Indicator Name"
+            },
+            {
+                "name": "Unidad/Escala",
+                "type": "string",
+                "format": "default",
+                "description": "Unit or scale in which the indicator is measured"
+            },
+            {
+                "name": "añoBaseIndicador",
+                "type": "integer",
+                "format": "default",
+                "description": "Year in which the indicator was included Options: ['añoBaseIndicador']",
+                "options": [
+                    "añoBaseIndicador"
+                ]
+            },
+            {
+                "name": "Meta 2023",
+                "type": "integer",
+                "format": "default",
+                "description": "Intermediate goal of the indicator Options: [2020, 2017, 2019, 0, 2021, 2018]",
+                "options": [
+                    2020,
+                    2017,
+                    2019,
+                    0,
+                    2021,
+                    2018
+                ]
+            },
+            {
+                "name": "Meta 2030",
+                "type": "integer",
+                "format": "default",
+                "description": "Final goal of the indicator"
+            },
+            {
+                "name": "avance",
+                "type": "string",
+                "format": "default",
+                "description": "current progress of the indicator"
+            },
+            {
+                "name": "codNivelEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Level and entity code that contributes to the indicator and objectives of the National Development Plan (PND) 2030"
+            },
+            {
+                "name": "nombreEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the entity that contributes to the indicator and objectives of the National Development Plan (PND) 2030"
+            },
+            {
+                "name": "entidadReporta",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the entity that reports information Options: [None]"
+            },
+            {
+                "name": "fuente",
+                "type": "string",
+                "format": "default",
+                "description": "Source of information Options: ['Secretaría Técnica de Planificación - STP']",
+                "options": [
+                    "Secretaría Técnica de Planificación - STP"
+                ]
+            },
+            {
+                "name": "fechaActualizacion",
+                "type": "date",
+                "format": "%Y-%m-%d",
+                "description": "Date of the last update of indicator information"
+            }
+        ],
+        "title_es": "Indicadores asociados al Plan Nacional de Desarrollo de Paraguay",
+        "description_es": "Contiene información de los indicadores del Plan Nacional de Desarrollo 2030 de Paraguay"
+    },
+    "investmentProjectsPryParaguayInvestmentProjects": {
+        "title": "Paraguay Investment Projects",
+        "description": "This data set provides general information on public investment projects in Paraguay. It includes relevant information about each project, such as its value, current status, regional classifications, among others.",
+        "fields": [
+            {
+                "name": "CodigoSNIP",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique Project Identifier in the SNIP system"
+            },
+            {
+                "name": "Estado",
+                "type": "string",
+                "format": "default",
+                "description": "Project status Options: ['Aprobado', 'En ejecución', 'En estudio']",
+                "options": [
+                    "Aprobado",
+                    "En ejecución",
+                    "En estudio"
+                ]
+            },
+            {
+                "name": "IdSector",
+                "type": "integer",
+                "format": "default",
+                "description": "Sector Identifier Options: [9, 7, 1, 2, 12, 11, 4, 13, 6, 5, 10, 8, 3]",
+                "options": [
+                    9,
+                    7,
+                    1,
+                    2,
+                    12,
+                    11,
+                    4,
+                    13,
+                    6,
+                    5,
+                    10,
+                    8,
+                    3
+                ]
+            },
+            {
+                "name": "NombreSector",
+                "type": "string",
+                "format": "default",
+                "description": "Denomination of the type of sector according to the scope of Economic Activity Options: ['Multisectorial', 'Industria  Comercio  Finanzas y Turismo', 'Agua Potable y Alcantarillado', 'Agricultura y Ganadería', 'Transporte', 'Seguridad Nacional', 'Educación y Cultura', 'Vivienda  Urbanismo y Servicios Comunitarios', 'Energía', 'Ecología y Medio Ambiente', 'Salud', 'Justicia', 'Comunicaciones']",
+                "options": [
+                    "Multisectorial",
+                    "Industria  Comercio  Finanzas y Turismo",
+                    "Agua Potable y Alcantarillado",
+                    "Agricultura y Ganadería",
+                    "Transporte",
+                    "Seguridad Nacional",
+                    "Educación y Cultura",
+                    "Vivienda  Urbanismo y Servicios Comunitarios",
+                    "Energía",
+                    "Ecología y Medio Ambiente",
+                    "Salud",
+                    "Justicia",
+                    "Comunicaciones"
+                ]
+            },
+            {
+                "name": "FechaInicioProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Estimated Project Start Date Options: ['2013-01-01 00:00:00.0000000', '2014-01-01 00:00:00.0000000', '2015-01-01 00:00:00.0000000', '2011-01-01 00:00:00.0000000', '2012-01-01 00:00:00.0000000', '2000-01-01 00:00:00.0000000', '2028-01-01 00:00:00.0000000', '2029-01-01 00:00:00.0000000', '2016-01-01 00:00:00.0000000', '2030-01-01 00:00:00.0000000', '2018-01-01 00:00:00.0000000', '2017-01-01 00:00:00.0000000', '2019-01-01 00:00:00.0000000', '2020-01-01 00:00:00.0000000', '2021-01-01 00:00:00.0000000', '2022-01-01 00:00:00.0000000', '2023-01-01 00:00:00.0000000']",
+                "options": [
+                    "2013-01-01 00:00:00.0000000",
+                    "2014-01-01 00:00:00.0000000",
+                    "2015-01-01 00:00:00.0000000",
+                    "2011-01-01 00:00:00.0000000",
+                    "2012-01-01 00:00:00.0000000",
+                    "2000-01-01 00:00:00.0000000",
+                    "2028-01-01 00:00:00.0000000",
+                    "2029-01-01 00:00:00.0000000",
+                    "2016-01-01 00:00:00.0000000",
+                    "2030-01-01 00:00:00.0000000",
+                    "2018-01-01 00:00:00.0000000",
+                    "2017-01-01 00:00:00.0000000",
+                    "2019-01-01 00:00:00.0000000",
+                    "2020-01-01 00:00:00.0000000",
+                    "2021-01-01 00:00:00.0000000",
+                    "2022-01-01 00:00:00.0000000",
+                    "2023-01-01 00:00:00.0000000"
+                ]
+            },
+            {
+                "name": "FechaFinProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Estimated Project Completion Date"
+            },
+            {
+                "name": "EjecutorPrimario",
+                "type": "string",
+                "format": "default",
+                "description": "Primary Executing Entity"
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Project Name"
+            },
+            {
+                "name": "CostoEstimadoProyecto",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated Project Cost"
+            },
+            {
+                "name": "AvanceFinanciero",
+                "type": "number",
+                "format": "default",
+                "description": "Progress or Financial Allocation (in percentage) to measure the fulfillment of the Project"
+            },
+            {
+                "name": "AvanceFisico",
+                "type": "number",
+                "format": "default",
+                "description": "Progress or Physical Allocation (in percentage) to measure Project compliance"
+            },
+            {
+                "name": "IdEntidadEjecutora",
+                "type": "integer",
+                "format": "default",
+                "description": "Structural organization based on the formation, grouping and cataloging of State Agencies and Entities in the PGN"
+            },
+            {
+                "name": "EntidadEjecutora",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Entity"
+            },
+            {
+                "name": "DuracionProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Duration (in years) of the project Options: [1, 0, 4, 3, 2, 5, 7, 6, 29, 9, 19, 13, 24, 35, 11, 17, 34]",
+                "options": [
+                    1,
+                    0,
+                    4,
+                    3,
+                    2,
+                    5,
+                    7,
+                    6,
+                    29,
+                    9,
+                    19,
+                    13,
+                    24,
+                    35,
+                    11,
+                    17,
+                    34
+                ]
+            },
+            {
+                "name": "TipoProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Project Type Options: ['NACIONAL', 'DEPARTAMENTAL', 'MUNICIPAL']",
+                "options": [
+                    "NACIONAL",
+                    "DEPARTAMENTAL",
+                    "MUNICIPAL"
+                ]
+            },
+            {
+                "name": "InformeAvance",
+                "type": "string",
+                "format": "default",
+                "description": "Project Progress Description"
+            },
+            {
+                "name": "IdDepartamentoLocalizacion",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier code of the department associated with the investment project - Regional Data"
+            },
+            {
+                "name": "DepartamentoLocalizacion",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the department associated with the investment project - Regional Data"
+            },
+            {
+                "name": "IdMunicipioLocalizacion",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier code of the municipality associated with the investment project - Regional Data"
+            },
+            {
+                "name": "NombreMunicipioLocalizacion",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the municipality associated with the investment project - Regional Data"
+            },
+            {
+                "name": "FechaCargueArchivo",
+                "type": "string",
+                "format": "default",
+                "description": "Date of last upload of project information in MapaInversiones Options: ['2024-05-17 20:33:59.3200000', 'Banco de Proyectos SNIP  Ministerio de Hacienda']",
+                "options": [
+                    "2024-05-17 20:33:59.3200000",
+                    "Banco de Proyectos SNIP  Ministerio de Hacienda"
+                ]
+            },
+            {
+                "name": "FuenteDatos",
+                "type": "string",
+                "format": "default",
+                "description": "Project information source for MapaInversiones Options: ['Banco de Proyectos SNIP  Ministerio de Hacienda', '2024-06-19 19:35:06.8900000']",
+                "options": [
+                    "Banco de Proyectos SNIP  Ministerio de Hacienda",
+                    "2024-06-19 19:35:06.8900000"
+                ]
+            },
+            {
+                "name": "FechaCarga",
+                "type": "string",
+                "format": "default",
+                "description": "Datalake Upload Date - This field is optional, some datasets may not have it Options: ['2024-06-19 19:35:06.8900000', None]",
+                "options": [
+                    "2024-06-19 19:35:06.8900000"
+                ]
+            }
+        ],
+        "title_es": "Proyectos de Inversión de Paraguay",
+        "description_es": "Este conjunto de datos proporciona informacion general de los proyectos de inversión pública en Paraguay Incluye información relevante sobre cada proyecto, como su valor, estado actual, clasificaciones regionales entre otros."
+    },
+    "investmentProjectsPryInvestmentProjectsBudgetExecution": {
+        "title": "Investment Projects Budget Execution of Paraguay",
+        "description": "This data set provides information on budget execution by financing agency of public investment projects.",
+        "fields": [
+            {
+                "name": "CodigoSNIP",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique Project Identifier in the SNIP system (Project Bank)"
+            },
+            {
+                "name": "IdOrganismoFinanciador",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier code of the Financing Agency associated with the investment project Options: [2]",
+                "options": [
+                    2
+                ]
+            },
+            {
+                "name": "OrganismoFinanciador",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the Financing Organization associated with the investment project"
+            },
+            {
+                "name": "IdFuenteFinanciacion",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier code of the Financing Source associated with the project Options: [20, 10, 30]",
+                "options": [
+                    20,
+                    10,
+                    30
+                ]
+            },
+            {
+                "name": "FuenteFinanciacion",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the Financing Source associated with the project Ex: Treasury Resources, Public Credit Resources and Institutional Resources Options: ['RECURSOS DEL CREDITO PUBLICO', 'RECURSOS DEL TESORO', 'RECURSOS INSTITUCIONALES']",
+                "options": [
+                    "RECURSOS DEL CREDITO PUBLICO",
+                    "RECURSOS DEL TESORO",
+                    "RECURSOS INSTITUCIONALES"
+                ]
+            },
+            {
+                "name": "Vigencia",
+                "type": "integer",
+                "format": "default",
+                "description": "Validity year of the budgeted amount for the associated project Options: [2015, 2016, 2017, 2013, 2014, 2018, 2012, 2020, 2019, 2021, 2022, 2023, 2024]",
+                "options": [
+                    2015,
+                    2016,
+                    2017,
+                    2013,
+                    2014,
+                    2018,
+                    2012,
+                    2020,
+                    2019,
+                    2021,
+                    2022,
+                    2023,
+                    2024
+                ]
+            },
+            {
+                "name": "Presupuestado",
+                "type": "number",
+                "format": "default",
+                "description": "Current budget amount associated with the investment project"
+            },
+            {
+                "name": "Ejecutado",
+                "type": "number",
+                "format": "default",
+                "description": "Amount of the executed budget associated with the investment project"
+            },
+            {
+                "name": "FechaCargueArchivo",
+                "type": "string",
+                "format": "default",
+                "description": "File Upload Date Options: ['2024-05-17 20:33:59.3200000']",
+                "options": [
+                    "2024-05-17 20:33:59.3200000"
+                ]
+            },
+            {
+                "name": "FuenteDatos",
+                "type": "string",
+                "format": "default",
+                "description": "Government institution from which the data is obtained Options: ['Banco de Proyectos SNIP  Ministerio de Hacienda']",
+                "options": [
+                    "Banco de Proyectos SNIP  Ministerio de Hacienda"
+                ]
+            },
+            {
+                "name": "FechaCarga",
+                "type": "string",
+                "format": "default",
+                "description": "Datalake Upload Date - This field is optional, some datasets may not have it Options: ['2024-06-20 07:00:39.3070000']",
+                "options": [
+                    "2024-06-20 07:00:39.3070000"
+                ]
+            }
+        ],
+        "title_es": "Proyectos de Inversión Ejecucion Presupuestaria de Paraguay",
+        "description_es": "Este conjunto de datos proporciona contiene informacion de la ejecución presupuestaria por organismo financiador de los proyectos de inversión pública"
+    },
+    "investmentProjectsPryInvestmentProjectsComponents": {
+        "title": "Investment Projects Components of Paraguay",
+        "description": "This data set provides contains information on the components and activities of the public investment project",
+        "fields": [
+            {
+                "name": "CodigoSNIP",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique Project Identifier in the SNIP system (Project Bank)"
+            },
+            {
+                "name": "codigoComponente",
+                "type": "string",
+                "format": "default",
+                "description": "Identifier code of the component associated with the investment project. Options: ['C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', \"C1'\", \"C1''\", \"C1'''\", 'C9', 'C10', 'C11', \"C2'\", \"C2''\"]",
+                "options": [
+                    "C1",
+                    "C2",
+                    "C3",
+                    "C4",
+                    "C5",
+                    "C6",
+                    "C7",
+                    "C8",
+                    "C1'",
+                    "C1''",
+                    "C1'''",
+                    "C9",
+                    "C10",
+                    "C11",
+                    "C2'",
+                    "C2''"
+                ]
+            },
+            {
+                "name": "descripcionComponente",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the component associated with the investment project"
+            },
+            {
+                "name": "codigoActividad",
+                "type": "string",
+                "format": "default",
+                "description": "Identification code of the activity related to the component and investment project"
+            },
+            {
+                "name": "descripcionActividad",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the activity related to the component and investment project"
+            },
+            {
+                "name": "FechaCargueArchivo",
+                "type": "string",
+                "format": "default",
+                "description": "File Upload Date Options: ['2024-05-17 20:33:59.3200000', '2024-06-19 07:00:51.7070000']",
+                "options": [
+                    "2024-05-17 20:33:59.3200000",
+                    "2024-06-19 07:00:51.7070000"
+                ]
+            },
+            {
+                "name": "FuenteDatos",
+                "type": "string",
+                "format": "default",
+                "description": "Project information source for MapaInversiones Options: ['Banco de Proyectos SNIP - Ministerio de Hacienda', None]",
+                "options": [
+                    "Banco de Proyectos SNIP - Ministerio de Hacienda"
+                ]
+            },
+            {
+                "name": "FechaCarga",
+                "type": "string",
+                "format": "default",
+                "description": "Datalake Upload Date - This field is optional, some datasets may not have it Options: ['2024-06-19 07:00:51.7070000', None]",
+                "options": [
+                    "2024-06-19 07:00:51.7070000"
+                ]
+            }
+        ],
+        "title_es": "Proyectos de Inversión Componentes de Paraguay",
+        "description_es": "Este conjunto de datos proporciona contiene información de los componentes y actividades del proyecto de inversión pública"
+    },
+    "generalBudgetPryGeneralBudget": {
+        "title": "General Budget of the Nation of Paraguay",
+        "description": "Contains budget information for entities and projects in Paraguay",
+        "fields": [
+            {
+                "name": "AnioPresupuesto",
+                "type": "integer",
+                "format": "default",
+                "description": "Year to which the budget line is assigned. The budget line is the structure that the government manages within the General State Budget in a plan that the government carries out with the purpose of defining the resources that it will need, with the objective of providing citizens with the services they need. This is composed of several components and/or classifications Entity, Program, Function, Expenditure Object, among others. Options: [2020, 2021, 2022]",
+                "options": [
+                    2020,
+                    2021,
+                    2022
+                ]
+            },
+            {
+                "name": "codNivelEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Code and level of the entity associated with the budget"
+            },
+            {
+                "name": "NombreEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the entity to which the budget is assigned"
+            },
+            {
+                "name": "sectores",
+                "type": "string",
+                "format": "default",
+                "description": "Sector to which the entity/project belongs Options: ['04- Infraestructura y asuntos económicos', '06 - Vivienda y servicios comunitarios', '11 - Empleo y seguridad social', '13- Financiero', '14 - Otros', '10 - Social', '12- Productivo', '07- Salud', '05 - Protección del medio ambiente', '01 - Servicios públicos generales', '03 - Orden público y seguridad', '09- Educación', '02 - Defensa', 'Sin Sector']",
+                "options": [
+                    "04- Infraestructura y asuntos económicos",
+                    "06 - Vivienda y servicios comunitarios",
+                    "11 - Empleo y seguridad social",
+                    "13- Financiero",
+                    "14 - Otros",
+                    "10 - Social",
+                    "12- Productivo",
+                    "07- Salud",
+                    "05 - Protección del medio ambiente",
+                    "01 - Servicios públicos generales",
+                    "03 - Orden público y seguridad",
+                    "09- Educación",
+                    "02 - Defensa",
+                    "Sin Sector"
+                ]
+            },
+            {
+                "name": "ClasePrograma",
+                "type": "string",
+                "format": "default",
+                "description": "Program class Options: ['Central', 'Sustantivo', 'No Asignable']",
+                "options": [
+                    "Central",
+                    "Sustantivo",
+                    "No Asignable"
+                ]
+            },
+            {
+                "name": "NombrePrograma",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the program to which the budget line is assigned"
+            },
+            {
+                "name": "IdNegocioProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Sequence of codes that identify the bill"
+            },
+            {
+                "name": "NombreProyectoActividad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Project or activity associated with the program and budget line"
+            },
+            {
+                "name": "PryClasificacion",
+                "type": "string",
+                "format": "default",
+                "description": "Classification of the project or activity associated with the program Options: ['Actividad Misional', 'Proyecto', 'Actividad Administrativa', 'Actividad Sustantiva']",
+                "options": [
+                    "Actividad Misional",
+                    "Proyecto",
+                    "Actividad Administrativa",
+                    "Actividad Sustantiva"
+                ]
+            },
+            {
+                "name": "NombreVersion",
+                "type": "integer",
+                "format": "default",
+                "description": "Name of the version associated with the budget line Options: ['Ley', 'Poder Ejecutivo']",
+                "options": [
+                    "Ley",
+                    "Poder Ejecutivo"
+                ]
+            },
+            {
+                "name": "descripcionGrupo",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the expense object grouper Options: ['200-Servicios no Personales', '900-Otros Gastos', '500-Inversión Física', '400-Bienes de Cambio', '300-Bienes de Consumo e Insumos', '800-Transferencias', '600-Inversión Financiera', '100-Servicios Personales', '700-Servicio de la Deuda Pública', '1000-Otros']",
+                "options": [
+                    "200-Servicios no Personales",
+                    "900-Otros Gastos",
+                    "500-Inversión Física",
+                    "400-Bienes de Cambio",
+                    "300-Bienes de Consumo e Insumos",
+                    "800-Transferencias",
+                    "600-Inversión Financiera",
+                    "100-Servicios Personales",
+                    "700-Servicio de la Deuda Pública",
+                    "1000-Otros"
+                ]
+            },
+            {
+                "name": "NombreObjetoGasto",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the expense object associated with the group and the budget line"
+            },
+            {
+                "name": "PresupuestoVigente",
+                "type": "integer",
+                "format": "default",
+                "description": "Budget assigned to the project/activity"
+            },
+            {
+                "name": "PresupuestoDisponible",
+                "type": "integer",
+                "format": "default",
+                "description": "Approved/Initial Budget + modifications made to the project/activity"
+            },
+            {
+                "name": "PresupuestoAvance",
+                "type": "integer",
+                "format": "default",
+                "description": "Executed budget of the project/activity"
+            }
+        ],
+        "title_es": "Presupuesto General de la  Nacion de Paraguay",
+        "description_es": "Contiene información del presupuesto de las entidades y proyectos de Paraguay"
+    },
+    "generalBudgetPryGeneralBudgetIndicators": {
+        "title": "Indicators associated with the General Budget of the Nation of Paraguay",
+        "description": "Contains information on the indicators of the National General Budget",
+        "fields": [
+            {
+                "name": "AnioPresupuesto",
+                "type": "integer",
+                "format": "default",
+                "description": "Year of allocation of the budget line. The budget line is the structure that the government manages within the General State Budget in a plan that the government carries out with the purpose of defining the resources that it will need, with the objective of providing citizens with the services they need.  Options: ['AnioPresupuesto']",
+                "options": [
+                    "AnioPresupuesto"
+                ]
+            },
+            {
+                "name": "CodigoIndicador",
+                "type": "integer",
+                "format": "default",
+                "description": "Identifier code of the indicator associated with the budget line Options: ['CodigoIndicador']",
+                "options": [
+                    "CodigoIndicador"
+                ]
+            },
+            {
+                "name": "NombreIndicador",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the indicator associated with the budget line Options: ['NombreIndicador']",
+                "options": [
+                    "NombreIndicador"
+                ]
+            },
+            {
+                "name": "DescripcionIndicador",
+                "type": "string",
+                "format": "default",
+                "description": "Complete description of the indicator associated with the budget line Options: ['DescripcionIndicador']",
+                "options": [
+                    "DescripcionIndicador"
+                ]
+            },
+            {
+                "name": "IndicadorFrecuencia",
+                "type": "string",
+                "format": "default",
+                "description": "Time interval with which the indicator is measured/updated Options: ['IndicadorFrecuencia']",
+                "options": [
+                    "IndicadorFrecuencia"
+                ]
+            },
+            {
+                "name": "AñoBasePresupuesto",
+                "type": "integer",
+                "format": "default",
+                "description": "Base year of the indicator associated with the budget line Options: ['AñoBasePresupuesto']",
+                "options": [
+                    "AñoBasePresupuesto"
+                ]
+            },
+            {
+                "name": "Avance",
+                "type": "number",
+                "format": "default",
+                "description": "Advance of the indicator associated with the budget line Options: ['Avance']",
+                "options": [
+                    "Avance"
+                ]
+            },
+            {
+                "name": "Meta",
+                "type": "number",
+                "format": "default",
+                "description": "Goal of the indicator associated with the budget line Options: ['Meta']",
+                "options": [
+                    "Meta"
+                ]
+            },
+            {
+                "name": "UnidadMedidaTotal",
+                "type": "string",
+                "format": "default",
+                "description": "Unit of measure for the indicator Options: ['UnidadMedidaTotal']",
+                "options": [
+                    "UnidadMedidaTotal"
+                ]
+            },
+            {
+                "name": "MetodoCalculo",
+                "type": "string",
+                "format": "default",
+                "description": "Method to calculate the indicator in its unit of measurement Options: ['MetodoCalculo']",
+                "options": [
+                    "MetodoCalculo"
+                ]
+            },
+            {
+                "name": "DescripcionPoblacion",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the population that measures the indicator Options: ['DescripcionPoblacion']",
+                "options": [
+                    "DescripcionPoblacion"
+                ]
+            },
+            {
+                "name": "CodigoNivelEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Level and entity code that contributes to the indicator and objectives of the PND 2030 Options: ['CodigoNivelEntidad']",
+                "options": [
+                    "CodigoNivelEntidad"
+                ]
+            },
+            {
+                "name": "NombreEntidad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the entity that contributes to the indicator and objectives of the PND 2030 Options: ['NombreEntidad']",
+                "options": [
+                    "NombreEntidad"
+                ]
+            },
+            {
+                "name": "IdNegocioProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Sequence of codes that identify the bill Options: ['IdNegocioProyecto']",
+                "options": [
+                    "IdNegocioProyecto"
+                ]
+            },
+            {
+                "name": "NombreProyectoActividad",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the bill Options: ['NombreProyectoActividad']",
+                "options": [
+                    "NombreProyectoActividad"
+                ]
+            }
+        ],
+        "title_es": "Indicadores asociados al Presupuesto General de la Nacion de Paraguay",
+        "description_es": "Contiene información de los indicadores del Presupuesto general de la Nacional"
+    }
+}

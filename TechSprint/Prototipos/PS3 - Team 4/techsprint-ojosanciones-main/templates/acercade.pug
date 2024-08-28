@@ -1,0 +1,80 @@
+include head.pug
++head("Ojo a las sanciones - Acerca de")
+
+div.wrapper
+    h1 Acerca de Ojo a las sanciones
+    p Ojo a las sanciones es un mecanismo de datos abiertos que permite buscar si una empresa se encuentra inhabilitada, ha sido identificada como empresa con actividades irregulares por el SAT (“fantasma o “EFOS”) o si se encuentra en la lista OFAC del Departamento del Tesoro de EUA.
+
+    p La intención de esta herramienta es que la información de diversas fuentes públicas, principalmente del gobierno mexicano, se encuentre unificada en un solo sitio, en un formato libre y accesible para facilitar la búsqueda sobre si una empresa es elegible o confiable para participar en un proceso de contratación pública, y así prevenir posibles contrataciones deshonestas que puedan derivar en actos de corrupción.
+
+    p La información recopilada puede ser utilizada tanto por personas públicas como privadas, como una herramienta de prevención de riesgos para conocer a la empresa con la que se desea celebrar un contrato.
+
+    p Ojo a las Sanciones es un proyecto del colectivo 
+        a(href="https://bit.ly/38AB3Zl") +integridad
+        |  y uno de los ganadores del 
+        a(href="https://hackcorruption.org/") “HackCorruption 2023”
+        |  realizado en Colombia, por lo que se recibió apoyo y  un fondo semilla de 
+        a(href="https://accountabilitylab.org/") Accountability Lab
+        | , 
+        a(href="https://developmentgateway.org/") Development Gateway
+        | , CIPE, USAID y otros actores ocupados en el combate a la corrupción en diferentes países.
+    p Aprovechando la experiencia y profesionalismo del equipo de 
+        a(href="https://abrimos.info/") Abrimos.info
+        | , realizamos una alianza estratégica para poder desarrollar e implementar la plataforma.
+    p Buscamos complementar la plataforma mediante la inclusión de información con bases de datos públicas a nivel federal y estatal, además de otras listas a nivel internacional, por lo que nos encontramos en búsqueda permanente de financiamiento. Se pueden realizar 
+        a(href="https://donate.stripe.com/00g6pH9nn5OpgkU3cd?locale=es&__embed_source=buy_btn_1Of4oUJ92zWRXSIZuaZeWXx2") donativos aquí
+        |  para contribuir a nuestro proyecto.
+
+
+    h2 Fuentes usadas
+
+    ul(style="display: flex; list-style: none; padding: 1em; justify-content: stretch")
+        li(style="padding: 1em; width: 100%")
+            h4 Proveedores inhabilitados por la SFP: 
+            | Directorio de Licitantes, Proveedores y Contratistas sancionados por la Secretaría de la Función Pública con el impedimento para presentar propuestas o celebrar contratos con las dependencias, entidades de la Administración Pública Federal y de los Gobiernos de los Estados. 
+            p ➡️ 
+                a(href="https://directoriosancionados.apps.funcionpublica.gob.mx/SanFicTec/jsp/Ficha_Tecnica/SancionadosN.htm") Fuente original SFP
+        li(style="padding: 1em; width: 120%") 
+            h4 Contribuyentes con operaciones presuntamente inexistentes según el SAT: 
+            | La popularmente conocida cómo “lista de empresas fantasma deriva del Artículo 69-B  del Código Fiscal de la Federación que inicia: “Cuando la autoridad fiscal detecte que un contribuyente ha estado emitiendo comprobantes sin contar con los activos, personal, infraestructura o capacidad material, directa o indirectamente, para prestar los servicios o producir, comercializar o entregar los bienes que amparan tales comprobantes, o bien, que dichos contribuyentes se encuentren no localizados, se presumirá la inexistencia de las operaciones amparadas en tales comprobantes. En este supuesto, procederá a notificar a los contribuyentes que se encuentren en dicha situación [...]”. 
+            p ➡️ 
+                a(href="http://omawww.sat.gob.mx/cifras_sat/Paginas/datos/vinculo.html?page=ListCompleta69B.html") Fuente original SAT
+        li(style="padding: 1em; width: 100%") 
+            h4 Empresas y personas en la lista OFAC de EUA: 
+            | Listado que contiende la Lista de Nacionales Especialmente Designados y Personas Bloqueadas ("Lista SDN") y todas las demás listas de sanciones administradas por la OFAC, incluidas la Lista de evasores de sanciones extranjeras, la Lista no SDN de la Ley de Sanciones contra Irán, la Lista de identificaciones de sanciones sectoriales, la Lista de instituciones financieras extranjeras sujetas a sanciones de cuentas corresponsales o cuentas de pago garantizado y la Lista no SDN del Consejo Legislativo Palestino. 
+            strong IMPORTANTE: Las condiciones de la categoría otorgada por la OFAC no reflejan la jurisprudencia en otros países.
+            p ➡️ 
+                a(href="https://sanctionssearch.ofac.treas.gov/") Fuente original OFAC
+
+
+    h2 Preguntas frecuentes
+    p A continuación se muestran respuestas a algunas preguntas frecuentes que pueden ser de ayuda a los usuarios.
+
+    dl
+        dt ¿Ojo a las sanciones es un servicio gratuito?
+        dd Sí, es completamente gratuito, no existen limitaciones al respecto del número de consultas que se pueden realizar.
+
+        dt ¿Quién financia el proyecto Ojo a las sanciones?
+        dd Ojo a las sanciones nace gracias al premio otorgado en el hackaton HackCorruption organizado por Accountability Lab, Development Gateway, CIPE, USAID y otros actores ocupados en el combate a la corrupción en diferentes países. Sin embargo seguimos en búsqueda de financiamiento para hacer crecer el proyecto e incluir más fuentes de información, tanto nacionales como extranjeras.
+
+        dt ¿Quién creó Ojo a las sanciones?
+        dd Es una creación del equipo de +integridad pero se materializa y mantiene gracias a la alianza estratégica con el equipo de Abrimos.info.
+
+        dt ¿Qué significa que mi empresa salga listada como resultado de una búsqueda?
+        dd Significa que bien bajo el marco legal mexicano ha sido listada como una empresa irregular dentro de las listas del SAT o de la SFP, o bien, que aparece en algunas de las listas OFAC del Departamento del Tesoro de EUA bajo sus estándares y leyes aplicables en aquél país.
+
+    h1 Contacto
+
+    p Para cualquier duda o comentario pueden escribirnos a ojosancionesmx@gmail.com y trataremos de responder a la brevedad posible.
+
+    h2 Redes sociales:
+    p Twitter: 
+        a(href="https://twitter.com/Ojosancionesmx") @Ojosancionesmx
+
+
+    div
+        p UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
+
+
+
++footer()

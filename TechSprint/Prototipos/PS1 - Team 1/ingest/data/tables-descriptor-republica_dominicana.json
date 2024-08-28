@@ -1,0 +1,2211 @@
+{
+    "generalBudgetInformationOnInvestmentDomPresupuestoDeInversion": {
+        "title": "General Budget Information on Investment",
+        "description": "This set contains information on the general budget of the nation focused on investment.",
+        "fields": [
+            {
+                "name": "Año",
+                "type": "integer",
+                "format": "default",
+                "description": "The year to which the information recorded in the database corresponds. Options: [2023, 2024]",
+                "description_es": "El año al que corresponde la información registrada en la base de datos. Opciones: [2023, 2024]"
+            },
+            {
+                "name": "CodigoInstitucion",
+                "type": "string",
+                "format": "default",
+                "description": "The unique code that identifies an institution within the system or set of institutions.",
+                "description_es": "El código único que identifica a una institución dentro del sistema o conjunto de instituciones."
+            },
+            {
+                "name": "Institucion",
+                "type": "string",
+                "format": "default",
+                "description": "Name or identification of the institution to which the registered information belongs.",
+                "description_es": "Nombre o identificación de la institución a la que pertenece la información registrada."
+            },
+            {
+                "name": "TipoGasto",
+                "type": "string",
+                "format": "default",
+                "description": "Category that classifies the expense according to its nature or purpose. Options: ['Inversion']",
+                "description_es": "Categoría que clasifica el gasto según su naturaleza o propósito. Opciones: ['Inversion']"
+            },
+            {
+                "name": "CodigoFuenteDeFinanciamiento",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies the source of financing the expense. Options: [10, 60, 70, 20, 50]",
+                "description_es": "Código que identifica la fuente de financiamiento del gasto. Opciones: [10, 60, 70, 20, 50]"
+            },
+            {
+                "name": "FuenteDeFinanciamiento",
+                "type": "string",
+                "format": "default",
+                "description": "Description or identification of the source of financing the expense. Options: ['FONDO GENERAL', 'CREDITO EXTERNO', 'DONACION EXTERNA', 'FONDOS CON DESTINO ESPECÍFICO', 'CRÉDITO INTERNO']",
+                "description_es": "Descripción o identificación de la fuente de financiamiento del gasto. Opciones: ['FONDO GENERAL', 'CREDITO EXTERNO', 'DONACION EXTERNA', 'FONDOS CON DESTINO ESPECÍFICO', 'CRÉDITO INTERNO']"
+            },
+            {
+                "name": "CodigoFuenteEspecifica",
+                "type": "integer",
+                "format": "default",
+                "description": "Specific code that identifies the detailed financing source.",
+                "description_es": "Código específico que identifica la fuente de financiamiento detallada."
+            },
+            {
+                "name": "FuenteEspecifica",
+                "type": "string",
+                "format": "default",
+                "description": "Detailed description or specific identification of the funding source.",
+                "description_es": "Descripción detallada o identificación específica de la fuente de financiamiento."
+            },
+            {
+                "name": "CodigoOrganismoFinanciador",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies the organization that provides the financing.",
+                "description_es": "Código que identifica al organismo que proporciona el financiamiento."
+            },
+            {
+                "name": "OrganismoFinanciador",
+                "type": "string",
+                "format": "default",
+                "description": "Name or identification of the organization providing the financing.",
+                "description_es": "Nombre o identificación del organismo que proporciona el financiamiento."
+            },
+            {
+                "name": "CodigoPrograma",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies a specific program. Options: [22, 26, 12, 11, 18, 19, 1, 17, 14, 23, 25, 42, 21, 3, 13, 15, 16, 20, 2]",
+                "description_es": "Código que identifica un programa específico. Opciones: [22, 26, 12, 11, 18, 19, 1, 17, 14, 23, 25, 42, 21, 3, 13, 15, 16, 20, 2]"
+            },
+            {
+                "name": "Programa",
+                "type": "string",
+                "format": "default",
+                "description": "Name or description of the program to which the expense is assigned.",
+                "description_es": "Nombre o descripción del programa al que se asigna el gasto."
+            },
+            {
+                "name": "CodigoSubPrograma",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies an applet within a program. Options: [0, 3, 4, 1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20]",
+                "description_es": "Código que identifica un subprograma dentro de un programa. Opciones: [0, 3, 4, 1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20]"
+            },
+            {
+                "name": "SubPrograma",
+                "type": "string",
+                "format": "default",
+                "description": "Name or description of the subprogram to which the expense is assigned.",
+                "description_es": "Nombre o descripción del subprograma al que se asigna el gasto."
+            },
+            {
+                "name": "CodigoSnip",
+                "type": "integer",
+                "format": "default",
+                "description": "Code assigned by the National Public Investment System (SNIP) to identify a project.",
+                "description_es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto."
+            },
+            {
+                "name": "CodigoProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies a specific project.",
+                "description_es": "Código que identifica un proyecto específico."
+            },
+            {
+                "name": "Proyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Name or description of the project to which the expense is assigned.",
+                "description_es": "Nombre o descripción del proyecto al que se asigna el gasto."
+            },
+            {
+                "name": "CodigoActividadObra",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies an activity or work within a project.",
+                "description_es": "Código que identifica una actividad u obra dentro de un proyecto."
+            },
+            {
+                "name": "ActividadObra",
+                "type": "string",
+                "format": "default",
+                "description": "Name or description of the activity or work to which the expense is assigned.",
+                "description_es": "Nombre o descripción de la actividad u obra al que se asigna el gasto."
+            },
+            {
+                "name": "CodigoGrupoDeGasto",
+                "type": "string",
+                "format": "default",
+                "description": "Code that classifies spending into predefined groups.",
+                "description_es": "Código que clasifica el gasto en grupos predefinidos."
+            },
+            {
+                "name": "Grupodegasto",
+                "type": "string",
+                "format": "default",
+                "description": "Description or name of the group to which the expense belongs.",
+                "description_es": "Descripción o nombre del grupo al que pertenece el gasto."
+            },
+            {
+                "name": "CodigoFinalidad",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies the purpose of the expense. Options: [4, 1, 2, 3]",
+                "description_es": "Código que identifica la finalidad del gasto. Opciones: [4, 1, 2, 3]"
+            },
+            {
+                "name": "Finalidad",
+                "type": "string",
+                "format": "default",
+                "description": "Description or name of the purpose for which the expense is intended. Options: ['SERVICIOS SOCIALES', 'SERVICIOS  GENERALES', 'SERVICIOS ECONÓMICOS', 'PROTECCIÓN DEL MEDIO AMBIENTE']",
+                "description_es": "Descripción o nombre de la finalidad a la que se destina el gasto. Opciones: ['SERVICIOS SOCIALES', 'SERVICIOS  GENERALES', 'SERVICIOS ECONÓMICOS', 'PROTECCIÓN DEL MEDIO AMBIENTE']"
+            },
+            {
+                "name": "CodigoObjetoDeGasto",
+                "type": "string",
+                "format": "default",
+                "description": "Code that identifies the specific object for which the expense is intended.",
+                "description_es": "Código que identifica el objeto específico para el cual se destina el gasto."
+            },
+            {
+                "name": "ObjetoDeGasto",
+                "type": "string",
+                "format": "default",
+                "description": "Description or name of the object for which the expense is intended.",
+                "description_es": "Descripción o nombre del objeto para el cual se destina el gasto."
+            },
+            {
+                "name": "Sector",
+                "type": "string",
+                "format": "default",
+                "description": "Sector to which the activity or work associated with the expense belongs. Options: ['Vivienda y Servicios Comunitarios', 'Justicia, Orden Público y Seguridad', 'Educación', 'Actividades deportivas, recreativas, culturales y religiosas', 'Salud', 'Protección social', 'Minería, manufactura y construcción', 'Transporte', 'Protección de la biodiversidad y ordenación de desechos', 'Administración General', 'Defensa Nacional', 'Equidad de género', 'Agropecuaria, caza, pesca y silvicultura', 'Otros servicios económicos', 'Asuntos económicos, comerciales y laborales', 'Energía y combustible', 'Protección del aire, agua y suelo', 'Riego', 'Comunicaciones']",
+                "description_es": "Sector al que pertenece la actividad u obra asociada al gasto. Opciones: ['Vivienda y Servicios Comunitarios', 'Justicia, Orden Público y Seguridad', 'Educación', 'Actividades deportivas, recreativas, culturales y religiosas', 'Salud', 'Protección social', 'Minería, manufactura y construcción', 'Transporte', 'Protección de la biodiversidad y ordenación de desechos', 'Administración General', 'Defensa Nacional', 'Equidad de género', 'Agropecuaria, caza, pesca y silvicultura', 'Otros servicios económicos', 'Asuntos económicos, comerciales y laborales', 'Energía y combustible', 'Protección del aire, agua y suelo', 'Riego', 'Comunicaciones']"
+            },
+            {
+                "name": "CodigoSubFuncion",
+                "type": "string",
+                "format": "default",
+                "description": "Code that identifies a subfunction within a function.",
+                "description_es": "Código que identifica una subfunción dentro de una función. "
+            },
+            {
+                "name": "SubFuncion",
+                "type": "string",
+                "format": "default",
+                "description": "Description or name of the subfunction associated with the expense.",
+                "description_es": "Descripción o nombre de la subfunción asociada al gasto."
+            },
+            {
+                "name": "ValorAprobado",
+                "type": "integer",
+                "format": "default",
+                "description": "Amount or value approved for the expense in the budget item.",
+                "description_es": "Monto o valor aprobado para el gasto en la partida presupuestaria."
+            },
+            {
+                "name": "ValorVigente",
+                "type": "number",
+                "format": "default",
+                "description": "Amount or value currently in force for the expense in the budget item.",
+                "description_es": "Monto o valor actualmente vigente para el gasto en la partida presupuestaria."
+            },
+            {
+                "name": "ValorEjecutado",
+                "type": "number",
+                "format": "default",
+                "description": "Amount or value executed so far for the expense in the budget item.",
+                "description_es": "Monto o valor ejecutado hasta el momento para el gasto en la partida presupuestaria."
+            },
+            {
+                "name": "FechaActualizacionFuente",
+                "type": "string",
+                "format": "default",
+                "description": "Date the information in the data source was updated Options: ['3/8/2024']",
+                "description_es": "Fecha en la que se actualizó la información en la fuente de datos Opciones: ['3/8/2024']"
+            }
+        ],
+        "title_es": "Información del Presupuesto General en Inversión",
+        "description_es": "Este conjunto contiene la informacion del presupuesto general de la nacion enfocado en inversion"
+    },
+    "generalBudgetInformationOnInvestmentDomProcesosDeCompras": {
+        "title": "Information on Processes related to the General Investment Budget and public investment projects",
+        "description": "Information on Processes related to the General Investment Budget and public investment projects",
+        "fields": [
+            {
+                "name": "CodigoSnip",
+                "type": "integer",
+                "format": "default",
+                "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project.",
+                "description_es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto específico."
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Name or title of the project to which the contract refers.",
+                "description_es": "Nombre o título del proyecto asociado al proceso de compra."
+            },
+            {
+                "name": "CodigoProceso",
+                "type": "string",
+                "format": "default",
+                "description": "Code that identifies a specific process associated with the contract.",
+                "description_es": "Código que identifica un proceso específico asociado al contrato."
+            },
+            {
+                "name": "DescripcionProceso",
+                "type": "string",
+                "format": "default",
+                "description": "Detailed description of the contracting process, including its terms, conditions and scope.",
+                "description_es": "Descripción detallada del proceso de contratación, incluyendo los términos, condiciones y alcances del mismo."
+            },
+            {
+                "name": "Caratula",
+                "type": "string",
+                "format": "default",
+                "description": "Document that contains summary information about the contracting process, including relevant details such as the type of contract, the parties involved, etc.",
+                "description_es": "Documento que contiene información resumida sobre el proceso de contratación, incluyendo detalles relevantes como el tipo de proceso, las partes involucradas, etc."
+            },
+            {
+                "name": "EstadoProceso",
+                "type": "string",
+                "format": "default",
+                "description": "Current status of the contracting process, for example: pending, in progress, awarded, canceled, etc. Options: ['Proceso adjudicado y celebrado', 'Proceso desierto', 'Sobres abiertos o aperturados', 'Proceso con etapa cerrada', 'No Definido', 'Cancelado', '2224486.44']",
+                "description_es": "Estado actual del proceso de contratación, por ejemplo: pendiente, en curso, adjudicado, cancelado, etc. Opciones: ['Proceso adjudicado y celebrado', 'Proceso desierto', 'Sobres abiertos o aperturados', 'Proceso con etapa cerrada', 'No Definido', 'Cancelado', '2224486.44']"
+            },
+            {
+                "name": "MontoEstimado",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated amount or value for the contracting process.",
+                "description_es": "Monto o valor estimado para el proceso de contratación."
+            },
+            {
+                "name": "Modalidad",
+                "type": "string",
+                "format": "default",
+                "description": "Modality under which the contracting process is carried out, for example: public bidding, price competition, direct contracting, etc. Options: ['Comparación de Precios', 'Compras Menores', 'Compras por Debajo del Umbral', 'Licitación Pública Nacional', 'Procesos de Excepción', 'Subasta Inversa', 'https://comunidad.comprasdominicana.gob.do//Public/Tendering/OpportunityDetail/Index?noticeUID=DO1.NTC.1367534', 'Licitación Restringida', 'Sorteo de Obras']",
+                "description_es": "Modalidad bajo la cual se realiza el proceso de contratación, por ejemplo: licitación pública, concurso de precios, contratación directa, etc. Opciones: ['Comparación de Precios', 'Compras Menores', 'Compras por Debajo del Umbral', 'Licitación Pública Nacional', 'Procesos de Excepción', 'Subasta Inversa', 'https://comunidad.comprasdominicana.gob.do//Public/Tendering/OpportunityDetail/Index?noticeUID=DO1.NTC.1367534', 'Licitación Restringida', 'Sorteo de Obras']"
+            },
+            {
+                "name": "UrlProceso",
+                "type": "string",
+                "format": "default",
+                "description": "URL or link that directs to the location of the online contracting process or its corresponding documentation",
+                "description_es": "URL o enlace que dirige a la ubicación del proceso de contratación en línea o a su documentación correspondiente"
+            },
+            {
+                "name": "Fuente",
+                "type": "string",
+                "format": "default",
+                "description": "Source from which the information about the hiring process was obtained. Options: ['MH y DGCP', '3/8/2024']",
+                "description_es": "Fuente de donde se obtuvo la información sobre el proceso de contratación. Opciones: ['MH y DGCP', '3/8/2024']"
+            },
+            {
+                "name": "FechaActualizacionFuenteMH",
+                "type": "string",
+                "format": "default",
+                "description": "Date on which the information on the contracting process was updated according to the data source of the Ministry of Finance Options: ['3/8/2024', '2/21/2024']",
+                "description_es": "Fecha en la que se actualizó la información sobre el proceso de contratación según la fuente de datos de Ministerio de Hacienda Opciones: ['3/8/2024', '2/21/2024']"
+            },
+            {
+                "name": "FechaActualizacionFuenteDGCP",
+                "type": "string",
+                "format": "default",
+                "description": "Date on which the information on the contracting process was updated according to the data source of the Public Procurement System (DGCP) Options: ['2/21/2024', None]",
+                "description_es": "Fecha en la que se actualizó la información sobre el proceso de contratación según la fuente de datos del Sistema de Contrataciones Públicas (DGCP) Opciones: ['2/21/2024', None]"
+            }
+        ],
+        "title_es": "Información de Procesos relacionados al Presupuesto General en Inversion y los proyectos de inversión pública",
+        "description_es": "Este  conjunto de datos proporciona informacion de los Procesos que han sido relacionados con el presupuesto enfocado a inversison y los proyectos de inversion pública a traves de los formularios de gastos preventivos"
+    },
+    "generalBudgetInformationOnInvestmentDomContratosDeCompras": {
+        "title": "Information on Contracts related to the General Investment Budget and public investment projects",
+        "description": "This data set provides information on contracts that have been related to the investment-focused budget and public investment projects through the committed expenditure forms.",
+        "fields": [
+            {
+                "name": "CodigoSnip",
+                "type": "integer",
+                "format": "default",
+                "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project.",
+                "description_es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto específico."
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Name or title of the project to which the contract refers.",
+                "description_es": "Nombre o título del proyecto al cual está relacionado el contrato"
+            },
+            {
+                "name": "CodigoProceso",
+                "type": "string",
+                "format": "default",
+                "description": "Code that identifies a specific process associated with the contract.",
+                "description_es": "Código que identifica un proceso específico asociado al contrato."
+            },
+            {
+                "name": "CodigoContrato",
+                "type": "string",
+                "format": "default",
+                "description": "Unique code that identifies the contract within the system or set of contracts.",
+                "description_es": "Código único que identifica el contrato dentro del sistema o conjunto de contratos."
+            },
+            {
+                "name": "DescripcionContrato",
+                "type": "string",
+                "format": "default",
+                "description": "Detailed description of the contract, including relevant terms and conditions.",
+                "description_es": "Descripción detallada del contrato, incluyendo términos y condiciones relevantes."
+            },
+            {
+                "name": "EstadoContrato",
+                "type": "string",
+                "format": "default",
+                "description": "Current status of the contract, for example: pending, in progress, completed, etc. Options: ['Cerrado', 'Rescindido', 'Activo', 'Modificado', 'En edición', 'Flujo en aprobación', 'No Definido', 'Flujo aprobado', None, 'DOP']",
+                "description_es": "Estado actual del contrato, por ejemplo: pendiente, en curso, finalizado, etc. Opciones: ['Cerrado', 'Rescindido', 'Activo', 'Modificado', 'En edición', 'Flujo en aprobación', 'No Definido', 'Flujo aprobado', None, 'DOP']"
+            },
+            {
+                "name": "MonedaContrato",
+                "type": "string",
+                "format": "default",
+                "description": "Type of currency used to express contract values. Options: ['DOP', None, '27288644.49']",
+                "description_es": "Tipo de moneda utilizada para expresar los valores del contrato. Opciones: ['DOP', None, '27288644.49']"
+            },
+            {
+                "name": "ValorContrato",
+                "type": "number",
+                "format": "default",
+                "description": "Amount or total value of the contract.",
+                "description_es": "Monto o valor total del contrato."
+            },
+            {
+                "name": "CodigoProveedor",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique code that identifies the supplier associated with the contract.",
+                "description_es": "Código único que identifica al proveedor asociado al contrato."
+            },
+            {
+                "name": "Proveedor",
+                "type": "string",
+                "format": "default",
+                "description": "Name or identification of the supplier with whom the contract was established.",
+                "description_es": "Nombre o identificación del proveedor con el que se estableció el contrato."
+            },
+            {
+                "name": "UrlContrato",
+                "type": "string",
+                "format": "default",
+                "description": "URL or link that directs to the location of the online contract or its corresponding documentation.",
+                "description_es": "URL o enlace que dirige a la ubicación del contrato en línea o a su documentación correspondiente."
+            },
+            {
+                "name": "Fuente",
+                "type": "string",
+                "format": "default",
+                "description": "Source from which the information about the contract was obtained. Options: ['MH y DGCP', None, '3/8/2024']",
+                "description_es": "Fuente de donde se obtuvo la información sobre el contrato. Opciones: ['MH y DGCP', None, '3/8/2024']"
+            },
+            {
+                "name": "FechaActualizacionFuenteMH",
+                "type": "string",
+                "format": "default",
+                "description": "Date on which the information about the contract was updated according to the data source of the Ministry of Finance. Options: ['3/8/2024', None, '3/28/2024']",
+                "description_es": "Fecha en la que se actualizó la información sobre el contrato según la fuente de datos de Ministerio de Hacienda. Opciones: ['3/8/2024', None, '3/28/2024']"
+            },
+            {
+                "name": "FechaActualizacionFuenteDGCP",
+                "type": "string",
+                "format": "default",
+                "description": "Date on which information about the contract was updated according to the data source of the Public Procurement System (DGCP) Options: ['3/28/2024', None]",
+                "description_es": "Fecha en la que se actualizó la información sobre el contrato según la fuente de datos del Sistema de Contrataciones Públicas (DGCP) Opciones: ['3/28/2024', None]"
+            }
+        ],
+        "title_es": "Información de Contratos relacionados al Presupuesto General en Inversion y los proyectos de inversión pública",
+        "description_es": "Este  conjunto de datos proporciona informacion de los contratos que han sido relacionados con el presupuesto enfocado a inversison y los proyectos de inversion pública a traves de los formularios de gastos comprometidos"
+    },
+    "generalBudgetInformationOnInvestmentDomPresupuestoRelacionadoAProyectosDeInversion": {
+        "title": "Information on the General Budget on Investment and Related Public Investment Projects",
+        "description": "This data set provides information on the general budget of the Dominican Republic focused on Investment and relates public investment projects.",
+        "fields": [
+            {
+                "name": "AnioPresupuesto",
+                "type": "integer",
+                "format": "default",
+                "description": "Year to which the budget or recorded budget information corresponds. Options: [2023.0, 2024.0, None]",
+                "description_es": "Año al que corresponde el presupuesto o la información presupuestaria registrada. Opciones: [2023.0, 2024.0, None]"
+            },
+            {
+                "name": "CodigoInstitucion",
+                "type": "string",
+                "format": "default",
+                "description": "Unique code that identifies an institution within the system or set of institutions.",
+                "description_es": "Código único que identifica a una institución dentro del sistema o conjunto de instituciones."
+            },
+            {
+                "name": "Institucion",
+                "type": "string",
+                "format": "default",
+                "description": "Name or identification of the institution to which the recorded budget information belongs.",
+                "description_es": "Nombre o identificación de la institución a la que pertenece la información presupuestaria registrada."
+            },
+            {
+                "name": "CodigoFuente_de_Financiamiento",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies the source of financing for the project. Options: [10.0, 60.0, 70.0, 20.0, 50.0, None]",
+                "description_es": "Código que identifica la fuente de financiamiento del proyecto. Opciones: [10.0, 60.0, 70.0, 20.0, 50.0, None]"
+            },
+            {
+                "name": "Fuente_de_Financiamiento",
+                "type": "string",
+                "format": "default",
+                "description": "Description or identification of the source of financing for the project. Options: ['FONDO GENERAL', 'CREDITO EXTERNO', 'DONACION EXTERNA', 'FONDOS CON DESTINO ESPECÍFICO', 'CRÉDITO INTERNO', None]",
+                "description_es": "Descripción o identificación de la fuente de financiamiento del proyecto. Opciones: ['FONDO GENERAL', 'CREDITO EXTERNO', 'DONACION EXTERNA', 'FONDOS CON DESTINO ESPECÍFICO', 'CRÉDITO INTERNO', None]"
+            },
+            {
+                "name": "CodigoFuenteEspecifica",
+                "type": "integer",
+                "format": "default",
+                "description": "Specific code that identifies the detailed financing source.",
+                "description_es": "Código específico que identifica la fuente de financiamiento detallada."
+            },
+            {
+                "name": "FuenteEspecifica",
+                "type": "string",
+                "format": "default",
+                "description": "Detailed description or specific identification of the funding source.",
+                "description_es": "Descripción detallada o identificación específica de la fuente de financiamiento."
+            },
+            {
+                "name": "CodigoOrganismoFinanciador",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies the organization that provides financing for the project.",
+                "description_es": "Código que identifica al organismo que proporciona el financiamiento del proyecto."
+            },
+            {
+                "name": "OrganismoFinanciador",
+                "type": "string",
+                "format": "default",
+                "description": "Name or identification of the agency providing financing for the project.",
+                "description_es": "Nombre o identificación del organismo que proporciona el financiamiento del proyecto."
+            },
+            {
+                "name": "CodigoFinalidad",
+                "type": "integer",
+                "format": "default",
+                "description": "Code that identifies the purpose of the project. Options: [1.0, 2.0, 4.0, 3.0, None]",
+                "description_es": "Código que identifica la finalidad del proyecto. Opciones: [1.0, 2.0, 4.0, 3.0, None]"
+            },
+            {
+                "name": "Finalidad",
+                "type": "string",
+                "format": "default",
+                "description": "Description or name of the purpose for which the project is intended. Options: ['SERVICIOS  GENERALES', 'SERVICIOS ECONÓMICOS', 'SERVICIOS SOCIALES', 'PROTECCIÓN DEL MEDIO AMBIENTE', None]",
+                "description_es": "Descripción o nombre de la finalidad a la que se destina el proyecto. Opciones: ['SERVICIOS  GENERALES', 'SERVICIOS ECONÓMICOS', 'SERVICIOS SOCIALES', 'PROTECCIÓN DEL MEDIO AMBIENTE', None]"
+            },
+            {
+                "name": "IdSector",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique identification of the sector to which the project belongs. Options: [1400.0, 2500.0, 2600.0, 4100.0, 4200.0, 4300.0, 4400.0, 4500.0, 3200.0, 1100.0, 1300.0, 4600.0, 2200.0, 2900.0, 2100.0, 2400.0, 3100.0, 2300.0, 2700.0, None]",
+                "description_es": "Identificación única del sector al que pertenece el proyecto. Opciones: [1400.0, 2500.0, 2600.0, 4100.0, 4200.0, 4300.0, 4400.0, 4500.0, 3200.0, 1100.0, 1300.0, 4600.0, 2200.0, 2900.0, 2100.0, 2400.0, 3100.0, 2300.0, 2700.0, None]"
+            },
+            {
+                "name": "NombreSector",
+                "type": "string",
+                "format": "default",
+                "description": "Name or description of the sector to which the project belongs. Options: ['Justicia, Orden Público y Seguridad', 'Minería, manufactura y construcción', 'Transporte', 'Vivienda y Servicios Comunitarios', 'Salud', 'Actividades deportivas, recreativas, culturales y religiosas', 'Educación', 'Protección social', 'Protección de la biodiversidad y ordenación de desechos', 'Administración General', 'Defensa Nacional', 'Equidad de género', 'Agropecuaria, caza, pesca y silvicultura', 'Otros servicios económicos', 'Asuntos económicos, comerciales y laborales', 'Energía y combustible', 'Protección del aire, agua y suelo', 'Riego', 'Comunicaciones', None]",
+                "description_es": "Nombre o descripción del sector al que pertenece el proyecto. Opciones: ['Justicia, Orden Público y Seguridad', 'Minería, manufactura y construcción', 'Transporte', 'Vivienda y Servicios Comunitarios', 'Salud', 'Actividades deportivas, recreativas, culturales y religiosas', 'Educación', 'Protección social', 'Protección de la biodiversidad y ordenación de desechos', 'Administración General', 'Defensa Nacional', 'Equidad de género', 'Agropecuaria, caza, pesca y silvicultura', 'Otros servicios económicos', 'Asuntos económicos, comerciales y laborales', 'Energía y combustible', 'Protección del aire, agua y suelo', 'Riego', 'Comunicaciones', None]"
+            },
+            {
+                "name": "CodigoSubFuncion",
+                "type": "string",
+                "format": "default",
+                "description": "Code that identifies a subfunction within a function.",
+                "description_es": "Código que identifica una subfunción dentro de una función."
+            },
+            {
+                "name": "SubFuncion",
+                "type": "string",
+                "format": "default",
+                "description": "Description or name of the subfunction associated with the project.",
+                "description_es": "Descripción o nombre de la subfunción asociada al proyecto."
+            },
+            {
+                "name": "CodigoSnip",
+                "type": "integer",
+                "format": "default",
+                "description": "Code assigned by the National Public Investment System (SNIP) to identify a specific project.",
+                "description_es": "Código asignado por el Sistema Nacional de Inversión Pública (SNIP) para identificar un proyecto específico."
+            },
+            {
+                "name": "nombreproyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Name or title of the project.",
+                "description_es": "Nombre o título del proyecto."
+            },
+            {
+                "name": "objetivogeneral",
+                "type": "string",
+                "format": "default",
+                "description": "General description of the project objective.",
+                "description_es": "Descripción general del objetivo del proyecto."
+            },
+            {
+                "name": "avancefinanciero",
+                "type": "number",
+                "format": "default",
+                "description": "Status or financial progress of the project.",
+                "description_es": "Estado o progreso financiero del proyecto."
+            },
+            {
+                "name": "IdEstado",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique identification of the current status of the project. Options: [1.0, 2.0, 0.0, 3.0, None]",
+                "description_es": "Identificación única del estado actual del proyecto. Opciones: [1.0, 2.0, 0.0, 3.0, None]"
+            },
+            {
+                "name": "NombreEstado",
+                "type": "string",
+                "format": "default",
+                "description": "Name or description of the current status of the project. Options: ['EJECUCIÓN', 'PARALIZADO', 'DESCONOCIDO', 'REEVALUACION', None]",
+                "description_es": "Nombre o descripción del estado actual del proyecto. Opciones: ['EJECUCIÓN', 'PARALIZADO', 'DESCONOCIDO', 'REEVALUACION', None]"
+            },
+            {
+                "name": "IdProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Unique project identification.",
+                "description_es": "Identificación única del proyecto."
+            },
+            {
+                "name": "ValorProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Total amount or value of the project.",
+                "description_es": "Monto o valor total del proyecto."
+            },
+            {
+                "name": "ValorFinanciado",
+                "type": "number",
+                "format": "default",
+                "description": "Amount or value financed for the project.",
+                "description_es": "Monto o valor financiado para el proyecto."
+            },
+            {
+                "name": "ValorEjecutado",
+                "type": "number",
+                "format": "default",
+                "description": "Amount or value executed so far for the project.",
+                "description_es": "Monto o valor ejecutado hasta el momento para el proyecto."
+            },
+            {
+                "name": "URLProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "URL or link that directs to the online project location or its corresponding documentation.",
+                "description_es": "URL o enlace que dirige a la ubicación del proyecto en línea o a su documentación correspondiente."
+            },
+            {
+                "name": "Fuente",
+                "type": "string",
+                "format": "default",
+                "description": "Source from which information about the project was obtained. Options: ['MH y MEPyD', None]",
+                "description_es": "Fuente de donde se obtuvo la información sobre el proyecto. Opciones: ['MH y MEPyD', None]"
+            },
+            {
+                "name": "FechaActualizacionFuenteMH",
+                "type": "string",
+                "format": "default",
+                "description": "Date on which information about the project was updated according to the data source of the Ministry of Finance. Options: ['3/8/2024', None]",
+                "description_es": "Fecha en la que se actualizó la información sobre el proyecto según la fuente de datos de Ministerio de Hacienda. Opciones: ['3/8/2024', None]"
+            },
+            {
+                "name": "FechaActualizacionFuenteMEPyD",
+                "type": "string",
+                "format": "default",
+                "description": "Date on which information about the project was updated according to the data source of the Ministry of Economy, Planning and Development. Options: ['3/28/2024', None]",
+                "description_es": "Fecha en la que se actualizó la información sobre el proyecto según la fuente de datos del Ministerio de Economía, Planificación y Desarrollo. Opciones: ['3/28/2024', None]"
+            }
+        ],
+        "title_es": "Información del Presupuesto General en Inversión y Los Proyectos de Inversión Pública relacionados ",
+        "description_es": "Este  conjunto de datos proporciona informacion del presupuesto general de republica dominicana enfocado en Inversion y relaciona los proyectos de inversion publica"
+    },
+    "emergencyProcessesAndContractsAndBudgetDomProcurementProcess": {
+        "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+        "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+        "fields": [
+            {
+                "name": "Id",
+                "type": "integer",
+                "format": "default",
+                "description": "Internal record ID",
+                "description_es": "ID interno del registro"
+            },
+            {
+                "name": "ID_PUBLICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Post ID",
+                "description_es": "ID de publicacion"
+            },
+            {
+                "name": "CODIGO_UNIDAD_COMPRA",
+                "type": "number",
+                "format": "default",
+                "description": "Purchase Unit Code",
+                "description_es": "Codigo de la Unidad de Compra"
+            },
+            {
+                "name": "UNIDAD_COMPRA",
+                "type": "string",
+                "format": "default",
+                "description": "Purchasing Unit Name",
+                "description_es": "Nombre de la Unidad de Compra"
+            },
+            {
+                "name": "CODIGO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Purchase process code",
+                "description_es": "Codigo del proceso de compra"
+            },
+            {
+                "name": "MODALIDAD",
+                "type": "string",
+                "format": "default",
+                "description": "Modality of the purchasing process Options: ['Procesos de Excepción']",
+                "description_es": "Modalidad del proceso de compra Opciones: ['Procesos de Excepción']"
+            },
+            {
+                "name": "TIPO_EXCEPCION",
+                "type": "string",
+                "format": "default",
+                "description": "Type of Exception (In this case they are all of the \"emergency\" type) Options: ['emergencia']",
+                "description_es": "Tipo de Excepcion ( En este caso todos son de tipo \"emergencia\") Opciones: ['emergencia']"
+            },
+            {
+                "name": "CARATULA",
+                "type": "string",
+                "format": "default",
+                "description": "Cover of the purchasing process",
+                "description_es": "Carátula del proceso de compra"
+            },
+            {
+                "name": "DESCRIPCION",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the purchasing process",
+                "description_es": "Descripción del proceso de compra"
+            },
+            {
+                "name": "ESTADO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Purchase process status Options: ['Proceso con etapa cerrada', 'Proceso adjudicado y celebrado', 'Sobres abiertos o aperturados', 'Cancelado', 'Proceso desierto']",
+                "description_es": "Estado del proceso de compra Opciones: ['Proceso con etapa cerrada', 'Proceso adjudicado y celebrado', 'Sobres abiertos o aperturados', 'Cancelado', 'Proceso desierto']"
+            },
+            {
+                "name": "FASE_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Purchase process phase Options: ['Fase del Pliego de Condiciones Específicas']",
+                "description_es": "Fase del proceso de compra Opciones: ['Fase del Pliego de Condiciones Específicas']"
+            },
+            {
+                "name": "MONEDA",
+                "type": "string",
+                "format": "default",
+                "description": "Checkout Currency Options: ['DOP']",
+                "description_es": "Moneda del proceso de compra Opciones: ['DOP']"
+            },
+            {
+                "name": "MONTO_ESTIMADO",
+                "type": "number",
+                "format": "default",
+                "description": "Purchase process amount",
+                "description_es": "Monto del proceso de compra"
+            },
+            {
+                "name": "FECHA_PUBLICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Publication date",
+                "description_es": "Fecha de Publicación"
+            },
+            {
+                "name": "FECHA_ENMIENDA",
+                "type": "string",
+                "format": "default",
+                "description": "Amendment Date",
+                "description_es": "Fecha de Enmienda"
+            },
+            {
+                "name": "FECHA_FIN_RECEPCION_OFERTAS",
+                "type": "string",
+                "format": "default",
+                "description": "End Date of Reception of Offers",
+                "description_es": "Fecha de Fin de Recepcion de Ofertas"
+            },
+            {
+                "name": "FECHA_APERTURA_OFERTAS",
+                "type": "string",
+                "format": "default",
+                "description": "Bid Opening Date",
+                "description_es": "Fecha de Apertura de Ofertas"
+            },
+            {
+                "name": "FECHA_ESTIMADA_ADJUDICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Estimated Award Date",
+                "description_es": "Fecha estimada de Adjudicación"
+            },
+            {
+                "name": "FECHA_SUSCRIPCION",
+                "type": "string",
+                "format": "default",
+                "description": "Subscription Date",
+                "description_es": "Fecha de Suscripción"
+            },
+            {
+                "name": "FECHA_HABILITACION_OFERENTE",
+                "type": "string",
+                "format": "default",
+                "description": "Bidder Qualification Date",
+                "description_es": "Fecha de Habilitación del Oferente"
+            },
+            {
+                "name": "DIRIGIDO_MIPYMES",
+                "type": "string",
+                "format": "default",
+                "description": "Aimed at Micro, Small and Medium Enterprises (YES / NO) Options: ['No', 'Si']",
+                "description_es": "Dirigido a Micro, Pequeña y Medianas Empresas (SI / NO) Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "DIRIGIDO_MIPYMES_MUJERES",
+                "type": "string",
+                "format": "default",
+                "description": "Aimed at Micro, Small and Medium Enterprises for women (YES / NO) Options: ['No']",
+                "description_es": "Dirigido a Micro, Pequeña y Medianas Empresas para mujeres (SI / NO) Opciones: ['No']"
+            },
+            {
+                "name": "PROCESO_LOTIFICADO",
+                "type": "string",
+                "format": "default",
+                "description": "Batch process (YES / NO) Options: ['No', 'Si']",
+                "description_es": "Proceso lotificado (SI / NO) Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "ADQUISICION_PLANEADA",
+                "type": "string",
+                "format": "default",
+                "description": "Planned acquisition (YES / NO) Options: ['No', 'Si']",
+                "description_es": "Adquisición planeada (SI / NO) Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "JUSTIFICACION_NO_PACC",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "OBJETO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Purpose of the process Options: ['Bienes', 'Obras', 'Servicios']",
+                "description_es": "Objeto del proceso Opciones: ['Bienes', 'Obras', 'Servicios']"
+            },
+            {
+                "name": "SUBOBJETO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "SubObject of the process Options: [None, 'Servicios']",
+                "description_es": "SubObjeto del proceso Opciones: [None, 'Servicios']"
+            },
+            {
+                "name": "DECRETO_PRESIDENCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Presidential Decree (YES / NO) Options: ['Si', 'No']",
+                "description_es": "Decreto Presidencial (SI / NO) Opciones: ['Si', 'No']"
+            },
+            {
+                "name": "RESOLUCION_MAXIMA_AUTORIDAD",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['No', 'Si']",
+                "description_es": " Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "ORGANISMO_FINANCIERO_EXTERNO",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['No']",
+                "description_es": " Opciones: ['No']"
+            },
+            {
+                "name": "COMPRA_VERDE",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['No']",
+                "description_es": " Opciones: ['No']"
+            },
+            {
+                "name": "COMPRA_CONJUNTA",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['No']",
+                "description_es": " Opciones: ['No']"
+            },
+            {
+                "name": "FECHA_ULTIMA_MODIFICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Last Modification Date Options: ['2024-03-19 22:23:00', '2024-03-19 22:38:00', '2024-03-19 23:02:00', '2024-03-19 22:52:00', '2024-03-27 20:02:00', '2024-03-19 23:21:00', '2024-03-19 23:11:00', '2024-03-18 00:28:00', '2024-04-17 20:02:00', '2024-05-03 12:23:00', '2024-05-09 20:04:00']",
+                "description_es": "Fecha de Ultima Modificación Opciones: ['2024-03-19 22:23:00', '2024-03-19 22:38:00', '2024-03-19 23:02:00', '2024-03-19 22:52:00', '2024-03-27 20:02:00', '2024-03-19 23:21:00', '2024-03-19 23:11:00', '2024-03-18 00:28:00', '2024-04-17 20:02:00', '2024-05-03 12:23:00', '2024-05-09 20:04:00']"
+            },
+            {
+                "name": "URL",
+                "type": "string",
+                "format": "default",
+                "description": "Process URL",
+                "description_es": "URL del proceso"
+            },
+            {
+                "name": "CODIGO_MODALIDAD",
+                "type": "string",
+                "format": "default",
+                "description": "Modality Code Options: ['PEEN']",
+                "description_es": "Codigo de la Modalidad Opciones: ['PEEN']"
+            },
+            {
+                "name": "CancelComment",
+                "type": "string",
+                "format": "default",
+                "description": "Cancellation comment Options: [None]",
+                "description_es": "Comentario de cancelacion Opciones: [None]"
+            },
+            {
+                "name": "DECRETO",
+                "type": "string",
+                "format": "default",
+                "description": "Decree Code Options: ['Decreto 318-22', 'Decreto 537-22', 'Decreto 638-22', 'Decreto 32-23', 'Decreto 375-23', 'Decreto 398-23', 'Decreto 585-23']",
+                "description_es": "Codigo del Decreto Opciones: ['Decreto 318-22', 'Decreto 537-22', 'Decreto 638-22', 'Decreto 32-23', 'Decreto 375-23', 'Decreto 398-23', 'Decreto 585-23']"
+            },
+            {
+                "name": "FECHA_ACTUALIZACION",
+                "type": "string",
+                "format": "default",
+                "description": "Update date Options: ['2024-06-24 06:25:11.559550']",
+                "description_es": "Fecha de Actualización Opciones: ['2024-06-24 06:25:11.559550']"
+            }
+        ],
+        "title_es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22",
+        "description_es": "Este conjunto de datos proporciona información detallada sobre el presupuesto general y el presupuesto asociado a cada emergencia. Con esto es posible visualizar el total presupuestado y el total ejecutado en base a los distintos clasificadores que contiene el conjunto de datos."
+    },
+    "emergencyProcessesAndContractsAndBudgetDomProcurementProcessItemLevel": {
+        "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - item level",
+        "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+        "fields": [
+            {
+                "name": "CODIGO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Hiring process identifier code",
+                "description_es": "Código identificador del proceso de contratación"
+            },
+            {
+                "name": "ESTADO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "State of the process Options: ['Proceso adjudicado y celebrado', 'Proceso desierto', 'Cancelado', 'Proceso con etapa cerrada', 'Sobres abiertos o aperturados']",
+                "description_es": "Estado del Proceso Opciones: ['Proceso adjudicado y celebrado', 'Proceso desierto', 'Cancelado', 'Proceso con etapa cerrada', 'Sobres abiertos o aperturados']"
+            },
+            {
+                "name": "ID_ARTICULO",
+                "type": "integer",
+                "format": "default",
+                "description": "Item identifier in the item catalog",
+                "description_es": "Identificador del articulo en el catalogo de articulos"
+            },
+            {
+                "name": "SUBCLASE_UNSPSC",
+                "type": "integer",
+                "format": "default",
+                "description": "Subclass identifier in the UNSPSC catalog",
+                "description_es": "Identificador de la subclase en el catálogo de la UNSPSC"
+            },
+            {
+                "name": "DESCRIPCION_ARTICULO",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the article",
+                "description_es": "Descripción del articulo"
+            },
+            {
+                "name": "CUENTA_PRESUPUESTARIA",
+                "type": "string",
+                "format": "default",
+                "description": "budget account code",
+                "description_es": "Código de cuenta presupuestaria"
+            },
+            {
+                "name": "CODIGO_UNIDAD_MEDIDA",
+                "type": "string",
+                "format": "default",
+                "description": "Abbreviation of the item's unit of measure Options: ['UD', 'M', 'KM', 'CAJ', 'PAQ', 'LB', 'Q', 'FT', 'M3', 'GAL', 'L', 'KG', 'YD', 'MIL']",
+                "description_es": "Abreviatura de la unidad de medida del articulo Opciones: ['UD', 'M', 'KM', 'CAJ', 'PAQ', 'LB', 'Q', 'FT', 'M3', 'GAL', 'L', 'KG', 'YD', 'MIL']"
+            },
+            {
+                "name": "DESCRIPCION_UNIDAD_MEDIDA",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the item's unit of measure Options: ['Unidad', 'Metro', 'Kilómetro', 'Caja', 'Paquete', 'Libra', 'Quintal', 'Pie', 'Metro cúbico', 'Galón', 'Litro', 'Kilogramo', 'Yarda', 'Millar']",
+                "description_es": "Descripción de la unidad de medida del articulo Opciones: ['Unidad', 'Metro', 'Kilómetro', 'Caja', 'Paquete', 'Libra', 'Quintal', 'Pie', 'Metro cúbico', 'Galón', 'Litro', 'Kilogramo', 'Yarda', 'Millar']"
+            },
+            {
+                "name": "DESCRIPCION_USUARIO",
+                "type": "string",
+                "format": "default",
+                "description": "Product description",
+                "description_es": "Descripcion del producto"
+            },
+            {
+                "name": "CANTIDAD",
+                "type": "number",
+                "format": "default",
+                "description": "Number of articles associated with the contracting process",
+                "description_es": "Cantidad de articulos asociados al proceso de contratación"
+            },
+            {
+                "name": "PRECIO_UNITARIO_ESTIMADO",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated unit price value of the item",
+                "description_es": "Valor de precio unitario estimado del articulo"
+            },
+            {
+                "name": "PRECIO_TOTAL_ESTIMADO",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated total price value of the item",
+                "description_es": "Valor de precio total estimado del articulo"
+            },
+            {
+                "name": "FECHA_ACTUALIZACION",
+                "type": "string",
+                "format": "default",
+                "description": "Update date Options: ['2024-06-23 20:04:15.257253']",
+                "description_es": "Fecha de Actualización Opciones: ['2024-06-23 20:04:15.257253']"
+            }
+        ],
+        "title_es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - nivel de objeto",
+        "description_es": "Estos conjuntos de datos contienen el detalle de procesos de compras y contratos realizados para las emergencias Lluvias 2023 y Huracán Fiona. En ambos casos, la información se presenta a nivel general de cada proceso como tambien a nivel de los articulos que componen cada uno de estos, lo mismo ocurreo con los contratos. El dataset de Proveedores permite tener un mayor detalle de cada proveedor y se relaciona con el dataset de los contratos a través del RPE"
+    },
+    "emergencyProcessesAndContractsAndBudgetDomContract": {
+        "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - Contracts",
+        "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+        "fields": [
+            {
+                "name": "CODIGO_UNIDAD_COMPRA",
+                "type": "number",
+                "format": "default",
+                "description": "Purchasing unit identification code",
+                "description_es": "Código identificador de la unidad de compra"
+            },
+            {
+                "name": "UNIDAD_COMPRA",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Institution or Purchasing Unit",
+                "description_es": "Nombre de la Institución o Unidad de compra"
+            },
+            {
+                "name": "CODIGO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Hiring process identifier code",
+                "description_es": "Código identificador del proceso de contratación"
+            },
+            {
+                "name": "ID_ADJUDICACION",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "ID_OFERTA",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "ID_EVALUACION_OFERTA",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "CODIGO_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract identifier code",
+                "description_es": "Código identificador del contrato"
+            },
+            {
+                "name": "RPE",
+                "type": "number",
+                "format": "default",
+                "description": "RPE number",
+                "description_es": "Número de RPE"
+            },
+            {
+                "name": "RAZON_SOCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Company name of the supplier of the items",
+                "description_es": "Razón social del proveedor de los articulos"
+            },
+            {
+                "name": "OBJETO_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contracting classification (Ex: Works, Goods, Services) Options: ['Bienes', 'Servicios', 'Obras', None]",
+                "description_es": "Clasificación de la contratación (Ej: Obras, Bienes, Servicios) Opciones: ['Bienes', 'Servicios', 'Obras', None]"
+            },
+            {
+                "name": "CARATULA",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the purpose of the contract",
+                "description_es": "Descripción del objeto de la contratación"
+            },
+            {
+                "name": "ESTADO_ADJUDICACION",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['Confirmada y enviada', 'Confirmada']",
+                "description_es": " Opciones: ['Confirmada y enviada', 'Confirmada']"
+            },
+            {
+                "name": "ESTADO_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract Status Description Options: ['Cerrado', 'Activo', 'Rescindido', 'En edición', 'Modificado', 'Flujo aprobado']",
+                "description_es": "Descripción del estado del contrato Opciones: ['Cerrado', 'Activo', 'Rescindido', 'En edición', 'Modificado', 'Flujo aprobado']"
+            },
+            {
+                "name": "FECHA_ADJUDICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Contract award date",
+                "description_es": "Fecha de adjudicación del contrato"
+            },
+            {
+                "name": "FECHA_CONFIRMACION_ADJUDICACION",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "FECHA_APROBACION",
+                "type": "string",
+                "format": "default",
+                "description": "Contract approval date Options: [None]",
+                "description_es": "Fecha de aprobación del contrato Opciones: [None]"
+            },
+            {
+                "name": "FECHA_NOTIFICACION_PROVEEDOR",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "FECHA_FIRMA_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "FECHA_INICIO_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract start date",
+                "description_es": "Fecha de inicio del contrato"
+            },
+            {
+                "name": "FECHA_FIN_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract End Date",
+                "description_es": "Fecha de finalización del contrato"
+            },
+            {
+                "name": "FECHA_INICIO_ENTREGA",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "FECHA_FIN_ENTREGA",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "MONEDA",
+                "type": "string",
+                "format": "default",
+                "description": "Currency symbol in which the contract is concluded (Ex: DOP, USD) Options: ['DOP']",
+                "description_es": "Simbolo de moneda en la que se celabra el contrato (Ej: DOP, USD) Opciones: ['DOP']"
+            },
+            {
+                "name": "VALOR_CONTRATADO",
+                "type": "number",
+                "format": "default",
+                "description": "Contracted value",
+                "description_es": "Valor contratado"
+            },
+            {
+                "name": "METODO_PAGO",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the contract payment method Options: ['Transferencia', 'Cheque', None]",
+                "description_es": "Descripción del método de pago del contrato Opciones: ['Transferencia', 'Cheque', None]"
+            },
+            {
+                "name": "PLAZO_PAGO_FACTURA",
+                "type": "string",
+                "format": "default",
+                "description": "Billing payment term description Options: ['60 días', '30 días', '120 días', '90 días', None, '15 días']",
+                "description_es": "Descripción del plazo de pago de la facturación Opciones: ['60 días', '30 días', '120 días', '90 días', None, '15 días']"
+            },
+            {
+                "name": "FECHA_ULTIMA_MODIFICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Date of last modification of contract information",
+                "description_es": "Fecha de la ultima modificación de la información del contrato"
+            },
+            {
+                "name": "URL_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract URL on the public procurement page",
+                "description_es": "URL del contrato en la página de contratación pública"
+            },
+            {
+                "name": "ESTADO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the status of the hiring process Options: ['Proceso adjudicado y celebrado']",
+                "description_es": "Descripción del estado del proceso de contratación Opciones: ['Proceso adjudicado y celebrado']"
+            },
+            {
+                "name": "CODIGO_MODALIDAD",
+                "type": "string",
+                "format": "default",
+                "description": "Coding of the contracting modality Options: ['PEEN']",
+                "description_es": "Códificación de la modalidad de contratación Opciones: ['PEEN']"
+            },
+            {
+                "name": "MODALIDAD",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the contracting modality (Example: Exception Processes) Options: ['Procesos de Excepción']",
+                "description_es": "Descripción de la modalidad de contratación (Ejemplo: Procesos de Excepción) Opciones: ['Procesos de Excepción']"
+            },
+            {
+                "name": "TIPO_EXCEPCION",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['emergencia']",
+                "description_es": " Opciones: ['emergencia']"
+            },
+            {
+                "name": "URL",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "RAZON_SOCIAL_RPE",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "NUMERO_DOCUMENTO",
+                "type": "integer",
+                "format": "default",
+                "description": "Supplier identification document number",
+                "description_es": "Número de documento de identificación del proveedor"
+            },
+            {
+                "name": "TIPO_DOCUMENTO",
+                "type": "string",
+                "format": "default",
+                "description": "Supplier ID type Options: ['RNC', 'Cédula']",
+                "description_es": "Tipo de documento de identidad del proveedor Opciones: ['RNC', 'Cédula']"
+            },
+            {
+                "name": "GENERO",
+                "type": "string",
+                "format": "default",
+                "description": "Provider gender identity Options: ['Masculino', 'Femenino']",
+                "description_es": "Identidad de género del proveedor Opciones: ['Masculino', 'Femenino']"
+            },
+            {
+                "name": "TIPO_PERSONA",
+                "type": "string",
+                "format": "default",
+                "description": "Type of person (Example: Natural or Legal) Options: ['Persona Jurídica', 'Persona Natural']",
+                "description_es": "Tipo de persona (Ejemplo: Natural o Jurídica) Opciones: ['Persona Jurídica', 'Persona Natural']"
+            },
+            {
+                "name": "FORMA_JURIDICA",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['Sociedades Comerciales', 'Persona Física', 'Consorcio', 'Asociación Sin Fines de Lucro']",
+                "description_es": " Opciones: ['Sociedades Comerciales', 'Persona Física', 'Consorcio', 'Asociación Sin Fines de Lucro']"
+            },
+            {
+                "name": "ES_MIPYME",
+                "type": "string",
+                "format": "default",
+                "description": "Identifier if it is an MSME (Yes or No) Options: ['No', 'Si']",
+                "description_es": "Identificador si es MIPYME (Si o No) Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "CERTIFICACION_MICM",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['No', 'Si']",
+                "description_es": " Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "CLASIFICACION_EMPRESARIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Level 1 Business Classification Options: ['No clasificada', 'Pequeña Empresa', 'Micro Empresa', 'Mediana Empresa', 'Gran empresa']",
+                "description_es": "Clasificación empresarial de nivel 1 Opciones: ['No clasificada', 'Pequeña Empresa', 'Micro Empresa', 'Mediana Empresa', 'Gran empresa']"
+            },
+            {
+                "name": "CLASIFICACION_EMPRESARIAL_2",
+                "type": "string",
+                "format": "default",
+                "description": "Level 2 Business Classification Options: ['Empresa no acogida a la Ley 187-17', 'MIPYME Certificada', 'Gran empresa', 'Persona física']",
+                "description_es": "Clasificación empresarial de nivel 2 Opciones: ['Empresa no acogida a la Ley 187-17', 'MIPYME Certificada', 'Gran empresa', 'Persona física']"
+            },
+            {
+                "name": "MUNICIPIO",
+                "type": "string",
+                "format": "default",
+                "description": "Municipality name",
+                "description_es": "Nombre del municipio"
+            },
+            {
+                "name": "PROVINCIA",
+                "type": "string",
+                "format": "default",
+                "description": "Province name Options: ['SANTO DOMINGO', 'No Especificada', 'SAN CRISTÓBAL', 'DISTRITO NACIONAL', 'SANTIAGO', 'SÁNCHEZ RAMÍREZ', 'DUARTE', 'CONCEPCIÓN DE LA VEGA', 'PERAVIA', 'ESPAILLAT', 'HERMANAS MIRABAL', 'MARÍA TRINIDAD SÁNCHEZ', 'BARAHONA', 'SAN PEDRO DE MACORÍS', 'LA ALTAGRACIA', 'PUERTO PLATA', 'LA ROMANA', 'EL SEIBO', 'AZUA']",
+                "description_es": "Nombre de la provincia Opciones: ['SANTO DOMINGO', 'No Especificada', 'SAN CRISTÓBAL', 'DISTRITO NACIONAL', 'SANTIAGO', 'SÁNCHEZ RAMÍREZ', 'DUARTE', 'CONCEPCIÓN DE LA VEGA', 'PERAVIA', 'ESPAILLAT', 'HERMANAS MIRABAL', 'MARÍA TRINIDAD SÁNCHEZ', 'BARAHONA', 'SAN PEDRO DE MACORÍS', 'LA ALTAGRACIA', 'PUERTO PLATA', 'LA ROMANA', 'EL SEIBO', 'AZUA']"
+            },
+            {
+                "name": "REGION",
+                "type": "string",
+                "format": "default",
+                "description": "Region name Options: ['OZAMA O METROPOLITANA', 'No Especificada', 'VALDESIA', 'CIBAO NORTE', 'CIBAO SUR', 'CIBAO NORDESTE', 'ENRIQUILLO', 'HIGUAMO', 'YUMA']",
+                "description_es": "Nombre de la región Opciones: ['OZAMA O METROPOLITANA', 'No Especificada', 'VALDESIA', 'CIBAO NORTE', 'CIBAO SUR', 'CIBAO NORDESTE', 'ENRIQUILLO', 'HIGUAMO', 'YUMA']"
+            },
+            {
+                "name": "MACROREGION",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Macroregion Options: ['SURESTE', 'No Especificada', 'SUROESTE', 'NORTE']",
+                "description_es": "Nombre de la Macroregión Opciones: ['SURESTE', 'No Especificada', 'SUROESTE', 'NORTE']"
+            },
+            {
+                "name": "PAIS",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['REPÚBLICA DOMINICANA', None]",
+                "description_es": " Opciones: ['REPÚBLICA DOMINICANA', None]"
+            },
+            {
+                "name": "CLASIFICACION_RPE",
+                "type": "string",
+                "format": "default",
+                "description": "MICM classification description Options: ['No clasificada', 'Pequeña empresa', 'Micro empresa', 'Mediana empresa', None, 'Gran empresa', 'MIPYME Mujer - Micro empresa', 'MIPYME Mujer - Mediana empresa', 'MIPYME Mujer - Pequeña empresa']",
+                "description_es": "Descripción de clasificación MICM Opciones: ['No clasificada', 'Pequeña empresa', 'Micro empresa', 'Mediana empresa', None, 'Gran empresa', 'MIPYME Mujer - Micro empresa', 'MIPYME Mujer - Mediana empresa', 'MIPYME Mujer - Pequeña empresa']"
+            },
+            {
+                "name": "DETALLE_EXCEPCION",
+                "type": "string",
+                "format": "default",
+                "description": "Exception Detail Description Options: ['emergencia']",
+                "description_es": "Descripción del detalle de la excepción Opciones: ['emergencia']"
+            },
+            {
+                "name": "CONTRATO_MIPYME",
+                "type": "boolean",
+                "format": "default",
+                "description": " Options: [0, 1]",
+                "description_es": " Opciones: [0, 1]"
+            },
+            {
+                "name": "FECHA_ACTUALIZACION",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['2024-06-24 06:25:11.559550']",
+                "description_es": " Opciones: ['2024-06-24 06:25:11.559550']"
+            }
+        ],
+        "title_es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - Contratos",
+        "description_es": "Estos conjuntos de datos contienen el detalle de procesos de compras y contratos realizados para las emergencias Lluvias 2023 y Huracán Fiona. En ambos casos, la información se presenta a nivel general de cada proceso como tambien a nivel de los articulos que componen cada uno de estos, lo mismo ocurreo con los contratos. El dataset de Proveedores permite tener un mayor detalle de cada proveedor y se relaciona con el dataset de los contratos a través del RPE"
+    },
+    "emergencyProcessesAndContractsAndBudgetDomContractItemLevel": {
+        "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - Contracts item level",
+        "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+        "fields": [
+            {
+                "name": "CODIGO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Hiring process identifier code",
+                "description_es": "Código identificador del proceso de contratación"
+            },
+            {
+                "name": "CODIGO_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract identifier code",
+                "description_es": "Código identificador del contrato"
+            },
+            {
+                "name": "MODALIDAD",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the contracting modality (Example: Exception Processes) Options: ['Procesos de Excepción']",
+                "description_es": "Descripción de la modalidad de contratación (Ejemplo: Procesos de Excepción) Opciones: ['Procesos de Excepción']"
+            },
+            {
+                "name": "ESTADO_PROCESO",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the status of the hiring process Options: ['Proceso adjudicado y celebrado']",
+                "description_es": "Descripción del estado del proceso de contratación Opciones: ['Proceso adjudicado y celebrado']"
+            },
+            {
+                "name": "ESTADO_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract Status Description Options: ['Cerrado', 'Activo', 'Modificado', 'Rescindido', 'En edición', 'Flujo aprobado']",
+                "description_es": "Descripción del estado del contrato Opciones: ['Cerrado', 'Activo', 'Modificado', 'Rescindido', 'En edición', 'Flujo aprobado']"
+            },
+            {
+                "name": "RPE",
+                "type": "integer",
+                "format": "default",
+                "description": "RPE",
+                "description_es": "RPE"
+            },
+            {
+                "name": "RAZON_SOCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Company name of the supplier of the items",
+                "description_es": "Razón social del proveedor de los articulos"
+            },
+            {
+                "name": "TIPO_DOCUMENTO",
+                "type": "string",
+                "format": "default",
+                "description": "Supplier ID type Options: ['RNC', 'Cédula']",
+                "description_es": "Tipo de documento de identidad del proveedor Opciones: ['RNC', 'Cédula']"
+            },
+            {
+                "name": "NUMERO_DOCUMENTO",
+                "type": "integer",
+                "format": "default",
+                "description": "Supplier identification document number",
+                "description_es": "Número de documento de identificación del proveedor"
+            },
+            {
+                "name": "FECHA_FIRMA_CONTRATO",
+                "type": "string",
+                "format": "default",
+                "description": "Contract Signing Date",
+                "description_es": "Fecha de Firma del Contrato"
+            },
+            {
+                "name": "ID_BUSINESS_ITEM",
+                "type": "integer",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "ID_BUSINESS_ITEM_LINE",
+                "type": "integer",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "ID_ARTICULO",
+                "type": "integer",
+                "format": "default",
+                "description": "Item identifier in the item catalog",
+                "description_es": "Identificador del articulo en el catalogo de articulos"
+            },
+            {
+                "name": "SUBCLASE_UNSPSC",
+                "type": "integer",
+                "format": "default",
+                "description": "Subclass identifier in the UNSPSC catalog",
+                "description_es": "Identificador de la subclase en el catálogo de la UNSPSC"
+            },
+            {
+                "name": "DESCRIPCION_SUBCLASE",
+                "type": "string",
+                "format": "default",
+                "description": "Subclass description in the UNSPSC catalog",
+                "description_es": "Descripción de la subclase en el catálogo de la UNSPSC"
+            },
+            {
+                "name": "DESCRIPCION_ARTICULO",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the article",
+                "description_es": "Descripción del articulo"
+            },
+            {
+                "name": "CUENTA_PRESUPUESTARIA",
+                "type": "string",
+                "format": "default",
+                "description": "budget account code",
+                "description_es": "Código de cuenta presupuestaria"
+            },
+            {
+                "name": "CANTIDAD",
+                "type": "number",
+                "format": "default",
+                "description": "Number of items associated with the contract",
+                "description_es": "Cantidad de articulos asociados al contrato"
+            },
+            {
+                "name": "ABR_UNIDAD_MEDIDA",
+                "type": "string",
+                "format": "default",
+                "description": "Abbreviation of the item's unit of measure Options: ['UD', 'M', 'CAJ', 'LB', 'M3', 'FT', 'Q', 'PAQ', 'L', 'GAL', 'KG', 'MIL', 'YD']",
+                "description_es": "Abreviatura de la unidad de medida del articulo Opciones: ['UD', 'M', 'CAJ', 'LB', 'M3', 'FT', 'Q', 'PAQ', 'L', 'GAL', 'KG', 'MIL', 'YD']"
+            },
+            {
+                "name": "DESCRIPCION_UNIDAD_MEDIDA",
+                "type": "string",
+                "format": "default",
+                "description": "Description of the item's unit of measure Options: ['Unidad', 'Metro', 'Caja', 'Libra', 'Metro cúbico', 'Pie', 'Quintal', 'Paquete', 'Litro', 'Galón', 'Kilogramo', 'Millar', 'Yarda']",
+                "description_es": "Descripción de la unidad de medida del articulo Opciones: ['Unidad', 'Metro', 'Caja', 'Libra', 'Metro cúbico', 'Pie', 'Quintal', 'Paquete', 'Litro', 'Galón', 'Kilogramo', 'Millar', 'Yarda']"
+            },
+            {
+                "name": "PRECIO_UNITARIO_ESTIMADO",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated unit price value of the item",
+                "description_es": "Valor de precio unitario estimado del articulo"
+            },
+            {
+                "name": "PRECIO_UNITARIO",
+                "type": "number",
+                "format": "default",
+                "description": "Unit price value of the item",
+                "description_es": "Valor de precio unitario del articulo"
+            },
+            {
+                "name": "ITBIS",
+                "type": "number",
+                "format": "default",
+                "description": "ITBIS",
+                "description_es": "ITBIS"
+            },
+            {
+                "name": "OTROS_IMPUESTOS",
+                "type": "number",
+                "format": "default",
+                "description": "Other taxes defined for the item",
+                "description_es": "Otros impuestos definidos para el articulo"
+            },
+            {
+                "name": "DESCUENTO",
+                "type": "number",
+                "format": "default",
+                "description": "Discounts associated with the item Options: [0.0, 59940.0]",
+                "description_es": "Descuentos asociados al articulo Opciones: [0.0, 59940.0]"
+            },
+            {
+                "name": "MONTO_TOTAL",
+                "type": "number",
+                "format": "default",
+                "description": "Corresponds to the number of items times the estimated price of the item plus the ITBIS",
+                "description_es": "Corresponde a la cantidad de articulos por el precio estimado del articulo mas el ITBIS"
+            },
+            {
+                "name": "FECHA_ACTUALIZACION",
+                "type": "string",
+                "format": "default",
+                "description": "Update date Options: ['2024-06-20 20:16:01.617647']",
+                "description_es": "Fecha de Actualización Opciones: ['2024-06-20 20:16:01.617647']"
+            }
+        ],
+        "title_es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - Nivel de elemento de contratos",
+        "description_es": "Estos conjuntos de datos contienen el detalle de procesos de compras y contratos realizados para las emergencias Lluvias 2023 y Huracán Fiona. En ambos casos, la información se presenta a nivel general de cada proceso como tambien a nivel de los articulos que componen cada uno de estos, lo mismo ocurreo con los contratos. El dataset de Proveedores permite tener un mayor detalle de cada proveedor y se relaciona con el dataset de los contratos a través del RPE"
+    },
+    "emergencyProcessesAndContractsAndBudgetDomSuppliers": {
+        "title": "Information on Emergency Processes and Contracts - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22 - Suppliers",
+        "description": "These data sets contain details of purchasing processes and contracts carried out for the Lluvias 2023 and Hurricane Fiona emergencies. In both cases, the information is presented at the general level of each process as well as at the level of the articles that make up each of these, the same occurs with contracts. The Suppliers dataset allows for greater detail on each supplier and is related to the contracts dataset through the RPE.",
+        "fields": [
+            {
+                "name": "CODE",
+                "type": "integer",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "ID",
+                "type": "integer",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "RPE",
+                "type": "integer",
+                "format": "default",
+                "description": "RPE",
+                "description_es": "RPE"
+            },
+            {
+                "name": "RAZON_SOCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Company name of the supplier of the items",
+                "description_es": "Razón social del proveedor de los articulos"
+            },
+            {
+                "name": "NUMERO_DOCUMENTO",
+                "type": "integer",
+                "format": "default",
+                "description": "Supplier identification document number",
+                "description_es": "Número de documento de identificación del proveedor"
+            },
+            {
+                "name": "TIPO_DOCUMENTO",
+                "type": "string",
+                "format": "default",
+                "description": "Supplier ID type Options: ['Clave Tributaria País Extranjero', 'Cédula', 'RNC', 'Pasaporte']",
+                "description_es": "Tipo de documento de identidad del proveedor Opciones: ['Clave Tributaria País Extranjero', 'Cédula', 'RNC', 'Pasaporte']"
+            },
+            {
+                "name": "ESTADO_RPE",
+                "type": "string",
+                "format": "default",
+                "description": "Description of RPE status Options: ['Activo', 'Desactualizado', 'Suspendido', 'Inhabilitado', 'Cancelado', 'Inactivo']",
+                "description_es": "Descripción del estado del RPE Opciones: ['Activo', 'Desactualizado', 'Suspendido', 'Inhabilitado', 'Cancelado', 'Inactivo']"
+            },
+            {
+                "name": "GENERO",
+                "type": "string",
+                "format": "default",
+                "description": "Provider gender identity Options: ['Femenino', 'Masculino', 'No Especificado']",
+                "description_es": "Identidad de género del proveedor Opciones: ['Femenino', 'Masculino', 'No Especificado']"
+            },
+            {
+                "name": "TIPO_PERSONA",
+                "type": "string",
+                "format": "default",
+                "description": "Type of person (Example: Natural or Legal) Options: ['Persona Jurídica', 'Persona Natural', None]",
+                "description_es": "Tipo de persona (Ejempo: Natural o Jurídica) Opciones: ['Persona Jurídica', 'Persona Natural', None]"
+            },
+            {
+                "name": "FORMA_JURIDICA",
+                "type": "string",
+                "format": "default",
+                "description": "Legal form Options: ['Sociedades Comerciales', 'Persona Física', 'Cooperativa', 'Asociación Sin Fines de Lucro', 'Consorcio', 'Entidad Gubernamental', 'Otras personalidades jurídicas']",
+                "description_es": "Forma Juridica Opciones: ['Sociedades Comerciales', 'Persona Física', 'Cooperativa', 'Asociación Sin Fines de Lucro', 'Consorcio', 'Entidad Gubernamental', 'Otras personalidades jurídicas']"
+            },
+            {
+                "name": "FECHA_CREACION",
+                "type": "string",
+                "format": "default",
+                "description": "Creation date",
+                "description_es": "Fecha de Creación"
+            },
+            {
+                "name": "FECHA_REGISTRO",
+                "type": "string",
+                "format": "default",
+                "description": "Supplier registration date in the supplier catalog",
+                "description_es": "Fecha de registro del proveedor en el catálogo de proveedores"
+            },
+            {
+                "name": "NUMERO_REGISTRO_MERCANTIL",
+                "type": "string",
+                "format": "default",
+                "description": "Commercial Registry Number",
+                "description_es": "Numero de Registro Mercantil"
+            },
+            {
+                "name": "FECHA_REGISTRO_MERCANTIL",
+                "type": "string",
+                "format": "default",
+                "description": "Commercial registration date of the supplier",
+                "description_es": "Fecha de registro mercantil del proveedor"
+            },
+            {
+                "name": "CERTIFICACION_MICM",
+                "type": "string",
+                "format": "default",
+                "description": " Options: ['No', 'Si']",
+                "description_es": " Opciones: ['No', 'Si']"
+            },
+            {
+                "name": "FECHA_VENCIMIENTO_CERTIFICACION_MICM",
+                "type": "string",
+                "format": "default",
+                "description": "Certification Expiration Date",
+                "description_es": "Fecha de Vencimiento de la certificación"
+            },
+            {
+                "name": "CLASIFICACION_RPE",
+                "type": "string",
+                "format": "default",
+                "description": "MICM classification description Options: ['No clasificada', 'Micro empresa', 'Pequeña empresa', None, 'Mediana empresa', 'MIPYME Mujer - Micro empresa', 'Gran empresa', 'MIPYME Mujer - Pequeña empresa', 'MIPYME Mujer - Mediana empresa']",
+                "description_es": "Descripción de clasificación MICM Opciones: ['No clasificada', 'Micro empresa', 'Pequeña empresa', None, 'Mediana empresa', 'MIPYME Mujer - Micro empresa', 'Gran empresa', 'MIPYME Mujer - Pequeña empresa', 'MIPYME Mujer - Mediana empresa']"
+            },
+            {
+                "name": "PRODUCTOR_NACIONAL",
+                "type": "string",
+                "format": "default",
+                "description": "Is it a national producer? Options: ['No', 'No Especificado', 'Si']",
+                "description_es": "Es productor Nacional? Opciones: ['No', 'No Especificado', 'Si']"
+            },
+            {
+                "name": "REGISTRO_INDUSTRIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Industrial Registration Options: [None]",
+                "description_es": "Registro Industrial Opciones: [None]"
+            },
+            {
+                "name": "OCUPACION",
+                "type": "string",
+                "format": "default",
+                "description": "Provider Occupation Description",
+                "description_es": "Descripción de la ocupación del proveedor"
+            },
+            {
+                "name": "TELEFONO_COMERCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Supplier contact telephone number",
+                "description_es": "Número telefónico de contacto del proveedor"
+            },
+            {
+                "name": "CELULAR_COMERCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Business Telephone Number",
+                "description_es": "Numero de Teléfono comercial"
+            },
+            {
+                "name": "CORREO_COMERCIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Business Email",
+                "description_es": "Correo electrónico comercial"
+            },
+            {
+                "name": "CORREO_NOTIFICACIONES",
+                "type": "string",
+                "format": "default",
+                "description": "Email for notifications",
+                "description_es": "Correo electrónico para notificaciones"
+            },
+            {
+                "name": "DIRECCION",
+                "type": "string",
+                "format": "default",
+                "description": "Supplier address",
+                "description_es": "Dirección del proveedor"
+            },
+            {
+                "name": "PAIS",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the country of origin of the supplier Options: [None, 'REPÚBLICA DOMINICANA', 'COLOMBIA', 'ESTADOS UNIDOS DE AMERICA', 'ESPAÑA', 'ARGENTINA', 'Islas Virgenes', 'PANAMA', 'MEXICO', 'EL SALVADOR', 'BELGICA', 'CHILE', 'PUERTO RICO', 'URUGUAY', 'BRASIL', 'HONDURAS']",
+                "description_es": "Nombre del Pais de origen del proveedor Opciones: [None, 'REPÚBLICA DOMINICANA', 'COLOMBIA', 'ESTADOS UNIDOS DE AMERICA', 'ESPAÑA', 'ARGENTINA', 'Islas Virgenes', 'PANAMA', 'MEXICO', 'EL SALVADOR', 'BELGICA', 'CHILE', 'PUERTO RICO', 'URUGUAY', 'BRASIL', 'HONDURAS']"
+            },
+            {
+                "name": "REGION",
+                "type": "string",
+                "format": "default",
+                "description": "Region name",
+                "description_es": "Nombre de la región"
+            },
+            {
+                "name": "PROVINCIA",
+                "type": "string",
+                "format": "default",
+                "description": "Province name",
+                "description_es": "Nombre de la provincia"
+            },
+            {
+                "name": "MUNICIPIO",
+                "type": "string",
+                "format": "default",
+                "description": "Municipality name",
+                "description_es": "Nombre del municipio"
+            },
+            {
+                "name": "DISTRITO_MUNICIPAL",
+                "type": "string",
+                "format": "default",
+                "description": "Municipal District Options: [None]",
+                "description_es": "Distrito Municipal Opciones: [None]"
+            },
+            {
+                "name": "PROVEE",
+                "type": "string",
+                "format": "default",
+                "description": "Product or service provider?",
+                "description_es": "Proveedor de productos o servicios?"
+            },
+            {
+                "name": "CELULAR_CONTACTO",
+                "type": "string",
+                "format": "default",
+                "description": "Contact Telephone Number",
+                "description_es": "Número de Teléfono de contacto"
+            },
+            {
+                "name": "URL_CERTIFICACION_RPE",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "CLASIFICACION_EMPRESARIAL",
+                "type": "string",
+                "format": "default",
+                "description": "Level 1 Business Classification Options: ['No clasificada', 'Micro Empresa', 'Pequeña Empresa', 'Mediana Empresa', 'Gran empresa', 'Micro empresa', 'Pequeña empresa', 'Mediana empresa']",
+                "description_es": "Clasificación empresarial de nivel 1 Opciones: ['No clasificada', 'Micro Empresa', 'Pequeña Empresa', 'Mediana Empresa', 'Gran empresa', 'Micro empresa', 'Pequeña empresa', 'Mediana empresa']"
+            },
+            {
+                "name": "CLASIFICACION_EMPRESARIAL_2",
+                "type": "string",
+                "format": "default",
+                "description": "Level 2 Business Classification Options: ['Empresa no acogida a la Ley 187-17', 'MIPYME Certificada', 'Persona física', 'Gran empresa']",
+                "description_es": "Clasificación empresarial de nivel 2 Opciones: ['Empresa no acogida a la Ley 187-17', 'MIPYME Certificada', 'Persona física', 'Gran empresa']"
+            },
+            {
+                "name": "ESTADO_COMENTARIO",
+                "type": "string",
+                "format": "default",
+                "description": "",
+                "description_es": ""
+            },
+            {
+                "name": "FECHA_ULTIMA_MODIFICACION",
+                "type": "string",
+                "format": "default",
+                "description": "Last modified date",
+                "description_es": "Fecha de última modificación"
+            },
+            {
+                "name": "MACROREGION",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the Macroregion Options: ['No Especificada', 'SURESTE', 'NORTE', 'SUROESTE']",
+                "description_es": "Nombre de la Macroregión Opciones: ['No Especificada', 'SURESTE', 'NORTE', 'SUROESTE']"
+            },
+            {
+                "name": "FECHA_ACTUALIZACION",
+                "type": "string",
+                "format": "default",
+                "description": "Update date Options: ['2024-06-25 07:52:29.857606']",
+                "description_es": "Fecha de Actualización Opciones: ['2024-06-25 07:52:29.857606']"
+            }
+        ],
+        "title_es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22 - Proveedoras",
+        "description_es": "Contiene informacion de los proyectos de inversion del Gobierno de Jamaica"
+    },
+    "emergencyProcessesAndContractsAndBudgetDomBudget": {
+        "title": "Information on the General Emergency Budget - Rains 2023 - Decree 585-23 and Hurricane Fiona - Decree 537-22",
+        "description": "This data set provides detailed information on the overall budget and the budget associated with each emergency. With this it is possible to view the budgeted total and the executed total based on the different classifiers contained in the data set.",
+        "fields": [
+            {
+                "name": "Origen",
+                "type": "string",
+                "format": "default",
+                "description": "emergency name Options: ['Presupuesto Global Emergencias', 'Hurac·n Fiona', 'Lluvias', 'Lluvias 2023']",
+                "description_es": "nombre de la emergencia Opciones: ['Presupuesto Global Emergencias', 'Hurac·n Fiona', 'Lluvias', 'Lluvias 2023']"
+            },
+            {
+                "name": "Capitulo",
+                "type": "string",
+                "format": "default",
+                "description": "chapter name (Institution) Options: ['PRESIDENCIA DE LA REP⁄BLICA', 'INSTITUTO NACIONAL DE RECURSOS HIDRA⁄LICOS (INDRHI)', 'CORPORACI”N DEL ACUEDUCTO Y ALCANTARILLADO DE SANTO DOMINGO', 'INSTITUTO DE ESTABILIZACI”N DE PRECIOS', 'MINISTERIO DE AGRICULTURA', 'MINISTERIO DE OBRAS P⁄BLICAS Y COMUNICACIONES', 'MINISTERIO DE LA VIVIENDA, HABITAT Y EDIFICACIONES (MIVHED)', 'MINISTERIO DE SALUD P⁄BLICA Y ASISTENCIA SOCIAL', 'MINISTERIO DE  INTERIOR Y POLICÕA', 'DEFENSA CIVIL', 'INSTITUTO NACIONAL DE AGUAS POTABLES Y ALCANTARILLADOS', 'UNIVERSIDAD AUT”NOMA DE SANTO DOMINGO', 'INSTITUTO DOMINICANO DEL CAF…', 'CONSEJO NACIONAL PARA LA NI—EZ Y LA ADOLESCENCIA', 'CONSEJO DOMINICANO DE PESCA Y ACUICULTURA', 'DIRECCION CENTRAL DEL SERVICIO NACIONAL DE SALUD', 'MINISTERIO DE DEPORTES Y RECREACI”N', 'MINISTERIO DE MEDIO AMBIENTE Y RECURSOS NATURALES']",
+                "description_es": "nombre del capítulo (Institución) Opciones: ['PRESIDENCIA DE LA REP⁄BLICA', 'INSTITUTO NACIONAL DE RECURSOS HIDRA⁄LICOS (INDRHI)', 'CORPORACI”N DEL ACUEDUCTO Y ALCANTARILLADO DE SANTO DOMINGO', 'INSTITUTO DE ESTABILIZACI”N DE PRECIOS', 'MINISTERIO DE AGRICULTURA', 'MINISTERIO DE OBRAS P⁄BLICAS Y COMUNICACIONES', 'MINISTERIO DE LA VIVIENDA, HABITAT Y EDIFICACIONES (MIVHED)', 'MINISTERIO DE SALUD P⁄BLICA Y ASISTENCIA SOCIAL', 'MINISTERIO DE  INTERIOR Y POLICÕA', 'DEFENSA CIVIL', 'INSTITUTO NACIONAL DE AGUAS POTABLES Y ALCANTARILLADOS', 'UNIVERSIDAD AUT”NOMA DE SANTO DOMINGO', 'INSTITUTO DOMINICANO DEL CAF…', 'CONSEJO NACIONAL PARA LA NI—EZ Y LA ADOLESCENCIA', 'CONSEJO DOMINICANO DE PESCA Y ACUICULTURA', 'DIRECCION CENTRAL DEL SERVICIO NACIONAL DE SALUD', 'MINISTERIO DE DEPORTES Y RECREACI”N', 'MINISTERIO DE MEDIO AMBIENTE Y RECURSOS NATURALES']"
+            },
+            {
+                "name": "SubCapitulo",
+                "type": "string",
+                "format": "default",
+                "description": "subchapter name (Institution) Options: ['MINISTERIO ADMINISTRATIVO DE LA PRESIDENCIA', 'INSTITUTO NACIONAL DE RECURSOS HIDRAULICOS -INDRHI-', 'CORPORACI”N DEL ACUEDUCTO Y ALCANTARILLADO DE SANTO DOMINGO', 'INSTITUTO DE ESTABILIZACI”N DE PRECIOS', 'GABINETE DE LA POLÕTICA SOCIAL', 'MINISTERIO DE AGRICULTURA', 'MINISTERIO DE OBRAS PUBLICAS Y COMUNICACIONES', 'MINISTERIO DE LA VIVIENDA, HABITAT Y EDIFICACIONES (MIVHED)', 'MINISTERIO DE SALUD PUBLICA Y ASISTENCIA SOCIAL', 'MINISTERIO DE INTERIOR Y POLICIA', 'DEFENSA CIVIL', 'INSTITUTO NACIONAL DE AGUAS POTABLES Y ALCANTARILLADOS', 'UNIVERSIDAD AUTONOMA DE SANTO DOMINGO', 'INSTITUTO DOMINICANO DEL CAF…', 'CONSEJO NACIONAL PARA LA NI—EZ Y LA ADOLESCENCIA', 'CONSEJO DOMINICANO DE PESCA Y ACUICULTURA', 'DIRECCION CENTRAL DEL SERVICIO NACIONAL DE SALUD', 'MINISTERIO DE LA PRESIDENCIA', 'MINISTERIO DE DEPORTES Y RECREACI”N', 'MINISTERIO DE MEDIO AMBIENTE Y REC. NAT.']",
+                "description_es": "nombre del subcapítulo (Institución) Opciones: ['MINISTERIO ADMINISTRATIVO DE LA PRESIDENCIA', 'INSTITUTO NACIONAL DE RECURSOS HIDRAULICOS -INDRHI-', 'CORPORACI”N DEL ACUEDUCTO Y ALCANTARILLADO DE SANTO DOMINGO', 'INSTITUTO DE ESTABILIZACI”N DE PRECIOS', 'GABINETE DE LA POLÕTICA SOCIAL', 'MINISTERIO DE AGRICULTURA', 'MINISTERIO DE OBRAS PUBLICAS Y COMUNICACIONES', 'MINISTERIO DE LA VIVIENDA, HABITAT Y EDIFICACIONES (MIVHED)', 'MINISTERIO DE SALUD PUBLICA Y ASISTENCIA SOCIAL', 'MINISTERIO DE INTERIOR Y POLICIA', 'DEFENSA CIVIL', 'INSTITUTO NACIONAL DE AGUAS POTABLES Y ALCANTARILLADOS', 'UNIVERSIDAD AUTONOMA DE SANTO DOMINGO', 'INSTITUTO DOMINICANO DEL CAF…', 'CONSEJO NACIONAL PARA LA NI—EZ Y LA ADOLESCENCIA', 'CONSEJO DOMINICANO DE PESCA Y ACUICULTURA', 'DIRECCION CENTRAL DEL SERVICIO NACIONAL DE SALUD', 'MINISTERIO DE LA PRESIDENCIA', 'MINISTERIO DE DEPORTES Y RECREACI”N', 'MINISTERIO DE MEDIO AMBIENTE Y REC. NAT.']"
+            },
+            {
+                "name": "UnidadEjecutora",
+                "type": "string",
+                "format": "default",
+                "description": "name of the executing executing unit (executing institution)",
+                "description_es": "nombre de la unidad ejecutora ejecutora (Institución ejecutora)"
+            },
+            {
+                "name": "SubCuenta",
+                "type": "string",
+                "format": "default",
+                "description": "budget subaccount name",
+                "description_es": "nombre de la subcuenta presupuestaria"
+            },
+            {
+                "name": "Concepto",
+                "type": "string",
+                "format": "default",
+                "description": "budget concept name Options: ['TRANSFERENCIAS DE CAPITAL', 'TRANSFERENCIAS CORRIENTES', 'CONTRATACI”N DE SERVICIOS', 'OBRAS', 'REMUNERACIONES Y CONTRIBUCIONES', 'MATERIALES Y SUMINISTROS', 'BIENES MUEBLES, INMUEBLES E INTANGIBLES']",
+                "description_es": "nombre del concepto presupuestario Opciones: ['TRANSFERENCIAS DE CAPITAL', 'TRANSFERENCIAS CORRIENTES', 'CONTRATACI”N DE SERVICIOS', 'OBRAS', 'REMUNERACIONES Y CONTRIBUCIONES', 'MATERIALES Y SUMINISTROS', 'BIENES MUEBLES, INMUEBLES E INTANGIBLES']"
+            },
+            {
+                "name": "Auxiliar",
+                "type": "string",
+                "format": "default",
+                "description": "name of budget assistant",
+                "description_es": "nombre del auxiliar presupuestario"
+            },
+            {
+                "name": "Cuenta",
+                "type": "string",
+                "format": "default",
+                "description": "budget account name",
+                "description_es": "nombre de la cuenta presupuestaria"
+            },
+            {
+                "name": "Seccion",
+                "type": "string",
+                "format": "default",
+                "description": "budget section name Options: ['AdministraciÛn central', 'Instituciones p˙blicas descentralizadas y autÛnomas no financieras', 'Empresas p˙blicas no financieras']",
+                "description_es": "nombre de la seccion presupuestaria Opciones: ['AdministraciÛn central', 'Instituciones p˙blicas descentralizadas y autÛnomas no financieras', 'Empresas p˙blicas no financieras']"
+            },
+            {
+                "name": "Periodo",
+                "type": "integer",
+                "format": "default",
+                "description": "budget year Options: [2022, 2023, 2024]",
+                "description_es": "año de presupuesto Opciones: [2022, 2023, 2024]"
+            },
+            {
+                "name": "Programa",
+                "type": "string",
+                "format": "default",
+                "description": "budget program name",
+                "description_es": "nombre del programa presupuestario"
+            },
+            {
+                "name": "Finalidad",
+                "type": "string",
+                "format": "default",
+                "description": "budget purpose name Options: ['SERVICIOS  GENERALES', 'SERVICIOS SOCIALES', 'SERVICIOS ECON”MICOS', 'PROTECCI”N DEL MEDIO AMBIENTE']",
+                "description_es": "nombre de la finalidad presupuestaria Opciones: ['SERVICIOS  GENERALES', 'SERVICIOS SOCIALES', 'SERVICIOS ECON”MICOS', 'PROTECCI”N DEL MEDIO AMBIENTE']"
+            },
+            {
+                "name": "OrganismoFinanciador",
+                "type": "string",
+                "format": "default",
+                "description": "name of funding body Options: ['APOYO PRESUPUESTARIO CREDITO INTERNO (EMISION DE BONOS)', 'SALDOS DISPONIBLES DE A—OS ANTERIORES POR CREDITO INTERNOS PARA EMERGENCIAS Y CALAMIDADES', 'SALDOS DE RECURSOS PARA EMERGENCIAS Y CALAMIDADES DISPONIBLES DE A—OS ANTERIORES', 'SALDOS DISPONIBLES DE PERIODOS ANTERIORES']",
+                "description_es": "nombre del organismo financiador Opciones: ['APOYO PRESUPUESTARIO CREDITO INTERNO (EMISION DE BONOS)', 'SALDOS DISPONIBLES DE A—OS ANTERIORES POR CREDITO INTERNOS PARA EMERGENCIAS Y CALAMIDADES', 'SALDOS DE RECURSOS PARA EMERGENCIAS Y CALAMIDADES DISPONIBLES DE A—OS ANTERIORES', 'SALDOS DISPONIBLES DE PERIODOS ANTERIORES']"
+            },
+            {
+                "name": "Funcion",
+                "type": "string",
+                "format": "default",
+                "description": "function or sector of the government to which the budgeted resources are directed Options: ['AdministraciÛn general', 'Defensa nacional', 'EducaciÛn', 'Riego', 'ProtecciÛn del aire, agua y suelo', 'Agropecuaria, caza, pesca y silvicultura', 'ProtecciÛn social', 'Transporte', 'Salud', 'Vivienda y servicios comunitarios', 'Cambio Clim·tico', 'Actividades deportivas, recreativas, culturales y religiosas']",
+                "description_es": "función o sector del gobierno al que van dirigidos los recursos presupuestados Opciones: ['AdministraciÛn general', 'Defensa nacional', 'EducaciÛn', 'Riego', 'ProtecciÛn del aire, agua y suelo', 'Agropecuaria, caza, pesca y silvicultura', 'ProtecciÛn social', 'Transporte', 'Salud', 'Vivienda y servicios comunitarios', 'Cambio Clim·tico', 'Actividades deportivas, recreativas, culturales y religiosas']"
+            },
+            {
+                "name": "SubFuncion",
+                "type": "string",
+                "format": "default",
+                "description": "budget subfunction name Options: ['Transferencias a instituciones p˙blicas incluidos los gobiernos locales', 'Defensa civil y gestiÛn de riesgos de desastres', 'EducaciÛn superior', 'Riego', 'OrdenaciÛn de aguas residuales, drenaje y alcantarillado', 'Agropecuaria', 'GestiÛn administrativa, financiera, fiscal, econÛmica y planificaciÛn', 'Asistencia social', 'PlanificaciÛn, gestiÛn y supervisiÛn del transporte', 'Transporte por carretera', 'Vivienda social', 'PlanificaciÛn, gestiÛn y supervisiÛn de la salud', 'Abastecimiento de agua potable', 'PlanificaciÛn, gestiÛn y supervisiÛn agropecuaria, caza, pesca y silvicultura', 'Mixtos', 'Familia e hijos', 'Caza y pesca', 'PlanificaciÛn, gestiÛn y supervisiÛn de las actividades deportivas, recreativas, culturales y religiosas', 'Servicios religiosos y otros servicios comunitarios religiosos']",
+                "description_es": "nombre de la subfunción presupuestaria Opciones: ['Transferencias a instituciones p˙blicas incluidos los gobiernos locales', 'Defensa civil y gestiÛn de riesgos de desastres', 'EducaciÛn superior', 'Riego', 'OrdenaciÛn de aguas residuales, drenaje y alcantarillado', 'Agropecuaria', 'GestiÛn administrativa, financiera, fiscal, econÛmica y planificaciÛn', 'Asistencia social', 'PlanificaciÛn, gestiÛn y supervisiÛn del transporte', 'Transporte por carretera', 'Vivienda social', 'PlanificaciÛn, gestiÛn y supervisiÛn de la salud', 'Abastecimiento de agua potable', 'PlanificaciÛn, gestiÛn y supervisiÛn agropecuaria, caza, pesca y silvicultura', 'Mixtos', 'Familia e hijos', 'Caza y pesca', 'PlanificaciÛn, gestiÛn y supervisiÛn de las actividades deportivas, recreativas, culturales y religiosas', 'Servicios religiosos y otros servicios comunitarios religiosos']"
+            },
+            {
+                "name": "InstitucionReceptora",
+                "type": "string",
+                "format": "default",
+                "description": "name of receiving institution Options: ['NO APLICA']",
+                "description_es": "nombre de la institución receptora Opciones: ['NO APLICA']"
+            },
+            {
+                "name": "Fuente",
+                "type": "string",
+                "format": "default",
+                "description": "name of funding source Options: ['CR…DITO INTERNO']",
+                "description_es": "nombre de la fuente de financiamiento Opciones: ['CR…DITO INTERNO']"
+            },
+            {
+                "name": "GrupoFuente",
+                "type": "string",
+                "format": "default",
+                "description": "funding source group name Options: ['NO APLICA']",
+                "description_es": "nombre del grupo de fuente de financiamiento Opciones: ['NO APLICA']"
+            },
+            {
+                "name": "ValorPresupuestado",
+                "type": "number",
+                "format": "default",
+                "description": "current budget total value",
+                "description_es": "valor total presupuesto vigente"
+            },
+            {
+                "name": "ValorEjecutado",
+                "type": "integer",
+                "format": "default",
+                "description": "total accrued value",
+                "description_es": "valor total devengado"
+            }
+        ],
+        "title_es": "Información del Presupuesto General de Emergencias - Lluvias 2023 - Decreto 585-23 y Huracán Fiona - Decreto 537-22",
+        "description_es": "Este conjunto de datos proporciona información detallada sobre el presupuesto general y el presupuesto asociado a cada emergencia. Con esto es posible visualizar el total presupuestado y el total ejecutado en base a los distintos clasificadores que contiene el conjunto de datos."
+    },
+    "investmentProjectsDomInvestmentProjects": {
+        "title": "Dominican Republic Investment Projects",
+        "description": "This data set provides a detailed overview of investment projects in the Dominican Republic. Includes relevant information about each project, such as its value, current status, regional classifications, among others. These data have been compiled with the purpose of offering a comprehensive vision of the development of investment in the country and facilitating analysis and decision-making in public and private policies.",
+        "fields": [
+            {
+                "name": "IdProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Project identification code within MapaInversiones",
+                "description_es": "Código identificador del proyecto dentro de MapaInversiones"
+            },
+            {
+                "name": "codigosnip",
+                "type": "integer",
+                "format": "default",
+                "description": "Project identifier code in the government institution",
+                "description_es": "Código identificador del proyecto dentro del banco de proyectos es el identificador único del proyecto de Inversión en ( Sistema SNIP )"
+            },
+            {
+                "name": "AnioInicioProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Project start year",
+                "description_es": "Año de inicio del proyecto"
+            },
+            {
+                "name": "AnioFinProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Final year of the project Options: [2021, 2022, 2020, 2023, 2024, 2026, 2019, 2025, 2029, 2027, 2028]",
+                "description_es": "Año Final del proyecto Opciones: [2021, 2022, 2020, 2023, 2024, 2026, 2019, 2025, 2029, 2027, 2028]"
+            },
+            {
+                "name": "NombreProyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Project name",
+                "description_es": "Nombre completo del proyecto de inversión en el sistema de inversión pública (SNIP)"
+            },
+            {
+                "name": "DuracionEstimadaProyecto",
+                "type": "integer",
+                "format": "default",
+                "description": "Project duration in years",
+                "description_es": "Duración en años del proyecto"
+            },
+            {
+                "name": "EtapaActual",
+                "type": "string",
+                "format": "default",
+                "description": "Current stage of the project Options: ['REEVALUACION', 'PARALIZADO', 'EJECUCIÓN', 'APROBADO']",
+                "description_es": "Etapa actual en la que se encuentra el proyecto. Ej. Ejecución, Programación Opciones: ['REEVALUACION', 'PARALIZADO', 'EJECUCIÓN', 'APROBADO']"
+            },
+            {
+                "name": "CostoEstimadoProyecto",
+                "type": "number",
+                "format": "default",
+                "description": "Estimated cost of the project in RD$",
+                "description_es": "Costo estimado del proyecto en $RD"
+            },
+            {
+                "name": "tipoproyecto",
+                "type": "string",
+                "format": "default",
+                "description": "Type of project scope. For example, National or Departmental Options: ['NACIONAL', 'DEPARTAMENTAL O MUNICIPAL']",
+                "description_es": "Tipo de alcance del proyecto. Ej. Nacional, Departamental o Municipal Opciones: ['NACIONAL', 'DEPARTAMENTAL O MUNICIPAL']"
+            },
+            {
+                "name": "Sector",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the sector to which the investment project belongs. Ex. Education, Health, Transportation Options: ['Agropecuaria  caza  pesca y silvicultura', 'Vivienda y Servicios Comunitarios', 'Transporte', 'Educación', 'Administración General', 'Protección del aire  agua y suelo', 'Salud', 'Energía y combustible', 'Protección social', 'Actividades deportivas  recreativas  culturales y religiosas', 'Justicia  Orden Público y Seguridad', 'Minería  manufactura y construcción', 'Protección de la biodiversidad y ordenación de desechos', 'Otros servicios económicos', 'Riego', 'Asuntos económicos  comerciales y laborales', 'Defensa Nacional', 'Comunicaciones']",
+                "description_es": "Nombre del sector al que pertenece el proyecto de inversión. Ej. Educación, Salud, Transporte, Los sectores en republica dominicana son equivalentes a las funciones  Opciones: ['Agropecuaria  caza  pesca y silvicultura', 'Vivienda y Servicios Comunitarios', 'Transporte', 'Educación', 'Administración General', 'Protección del aire  agua y suelo', 'Salud', 'Energía y combustible', 'Protección social', 'Actividades deportivas  recreativas  culturales y religiosas', 'Justicia  Orden Público y Seguridad', 'Minería  manufactura y construcción', 'Protección de la biodiversidad y ordenación de desechos', 'Otros servicios económicos', 'Riego', 'Asuntos económicos  comerciales y laborales', 'Defensa Nacional', 'Comunicaciones']"
+            },
+            {
+                "name": "avancefinanciero",
+                "type": "number",
+                "format": "default",
+                "description": "Percentage of financial progress of the project",
+                "description_es": "Porcentaje de avance financiero del proyecto"
+            },
+            {
+                "name": "nombreproducto",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the product associated with the project",
+                "description_es": "Nombre del producto asociado al proyecto"
+            },
+            {
+                "name": "meta",
+                "type": "integer",
+                "format": "default",
+                "description": "Product goal associated with the project",
+                "description_es": "Meta del producto asociado al proyecto"
+            },
+            {
+                "name": "ejecutado",
+                "type": "integer",
+                "format": "default",
+                "description": "Executed value of the product associated with the project",
+                "description_es": "Valor ejecutado del producto asociado al proyecto"
+            },
+            {
+                "name": "UnidaddelProducto",
+                "type": "string",
+                "format": "default",
+                "description": "Unit of measurement of the product associated with the project Options: ['Instituciones', 'Metros Cúbicos', 'Metros lineales', 'Unidades ', 'Kilómetros Lineales', 'Productores', 'Metros Cuadrados', 'Aulas', 'Mega Vatios', 'Personas', 'Kilovatios', 'Hectareas', 'Mujeres', 'kilómetros Cuadrados', 'Municipios', 'Módulos de Venta']",
+                "description_es": "Unidad de medida del producto asociado al proyecto Opciones: ['Instituciones', 'Metros Cúbicos', 'Metros lineales', 'Unidades ', 'Kilómetros Lineales', 'Productores', 'Metros Cuadrados', 'Aulas', 'Mega Vatios', 'Personas', 'Kilovatios', 'Hectareas', 'Mujeres', 'kilómetros Cuadrados', 'Municipios', 'Módulos de Venta']"
+            },
+            {
+                "name": "nombrefase",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the phase in which the project is located (Ex: Pre-investment, Investment) Options: ['Inversión', 'Pre-Inversión']",
+                "description_es": "Nombre de la fase en la que se encuentra en proyecto (Ej: Preinversión, Inversión) Opciones: ['Inversión', 'Pre-Inversión']"
+            },
+            {
+                "name": "entidadejecutora",
+                "type": "string",
+                "format": "default",
+                "description": "Primary project executor",
+                "description_es": "Corresponde al ejecutor primario del proyecto"
+            },
+            {
+                "name": "fuentefinanciacion",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the project financing source",
+                "description_es": "Nombre de la fuente de financiamiento del proyecto "
+            },
+            {
+                "name": "organismofinanciador",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the project financing organization",
+                "description_es": "Nombre del organismo financiador del proyecto"
+            },
+            {
+                "name": "valorprogramado",
+                "type": "number",
+                "format": "default",
+                "description": "Current value of the financing source associated with the project",
+                "description_es": "Valor programado de la fuente de financiamiento asociada al proyecto"
+            },
+            {
+                "name": "valorejecutado",
+                "type": "number",
+                "format": "default",
+                "description": "Executed value of the financing source associated with the project",
+                "description_es": "Valor ejecutado de la fuente de financiamiento asociada al proyecto"
+            },
+            {
+                "name": "AnioEjecucionPptal",
+                "type": "integer",
+                "format": "default",
+                "description": "Budget execution year Options: [2017.0, 2016.0, 2018.0, 2019.0, 2021.0, 2020.0, 2022.0, 2023.0, 2024.0, None]",
+                "description_es": "Año de ejecución del proyecto Opciones: [2017.0, 2016.0, 2018.0, 2019.0, 2021.0, 2020.0, 2022.0, 2023.0, 2024.0, None]"
+            },
+            {
+                "name": "nombreregion",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the region where the project is located Options: ['NACIONALES', 'REGION EL VALLE', 'REGION CIBAO NOROESTE', 'REGION YUMA', 'REGION HIGUAMO', 'REGION CIBAO NORDESTE', 'REGION CIBAO NORTE', 'REGION CIBAO SUR', 'REGION VALDESIA', 'REGION ENRIQUILLO', 'REGION OZAMA O METROPOLITANA']",
+                "description_es": "Nombre de la región en donde se encuentra localizado el proyecto Opciones: ['NACIONALES', 'REGION EL VALLE', 'REGION CIBAO NOROESTE', 'REGION YUMA', 'REGION HIGUAMO', 'REGION CIBAO NORDESTE', 'REGION CIBAO NORTE', 'REGION CIBAO SUR', 'REGION VALDESIA', 'REGION ENRIQUILLO', 'REGION OZAMA O METROPOLITANA']"
+            },
+            {
+                "name": "nombreprovincia",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the province where the project is located",
+                "description_es": "Nombre de la provincia en donde se encuentra localizado el proyecto"
+            },
+            {
+                "name": "nombremunicipio",
+                "type": "string",
+                "format": "default",
+                "description": "Name of the municipality where the project is located",
+                "description_es": "Nombre del municipio en donde se encuentra localizado el proyecto"
+            },
+            {
+                "name": "fechacarguearchivo",
+                "type": "string",
+                "format": "default",
+                "description": "Date of last upload of project information in MapaInversiones Options: ['Jun 18 2024 11:00PM']",
+                "description_es": "Fecha de ultimo cargue de información del proyecto en MapaInversiones Opciones: ['Jun 18 2024 11:00PM']"
+            },
+            {
+                "name": "fuentedatos",
+                "type": "string",
+                "format": "default",
+                "description": "Project data source Options: ['SNIP']",
+                "description_es": "Fuente de información de proyectos para MapaInversiones Opciones: ['SNIP']"
+            }
+        ],
+        "title_es": "Proyectos de Inversión de República Dominicana",
+        "description_es": "Este conjunto de datos proporciona un detallado panorama de los proyectos de inversión en la República Dominicana. Incluye información relevante sobre cada proyecto, como su valor, estado actual, clasificaciones regionales entre otros. Estos datos han sido recopilados con el propósito de ofrecer una visión integral del desarrollo de la inversión en el país y facilitar el análisis y la toma de decisiones en políticas públicas y privadas."
+    }
+}

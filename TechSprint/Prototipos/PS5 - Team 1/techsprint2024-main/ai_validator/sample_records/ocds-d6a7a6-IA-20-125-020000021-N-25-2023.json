@@ -1,0 +1,1668 @@
+{
+    "_id": {
+      "$oid": "64a1b366e9965a961efaf2c8"
+    },
+    "version": "1.1",
+    "uri": "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023",
+    "packages": [
+      "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.03d1d7ce-b30a-433e-9ee0-6cadf7dc7ea8",
+      "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.2023-07-01T16:29:18.364305_b624f",
+      "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.fe340303-1fd2-4de6-8925-559485238ca7",
+      "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.906d9969-86d0-4b89-ac3e-8d14531f585a"
+    ],
+    "publisher": {
+      "name": "b2gov",
+      "uri": "https://b2gov.net/"
+    },
+    "publishedDate": {
+      "$date": "2023-11-15T09:24:59.859Z"
+    },
+    "records": [
+      {
+        "ocid": "ocds-d6a7a6-IA-20-125-020000021-N-25-2023",
+        "releases": [
+          {
+            "id": "2023-07-01T16:29:18.364305_b624f",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.2023-07-01T16:29:18.364305_b624f",
+            "date": {
+              "$date": "2023-07-01T16:29:18.364Z"
+            },
+            "tag": [
+              "tender"
+            ]
+          },
+          {
+            "id": "fe340303-1fd2-4de6-8925-559485238ca7",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.fe340303-1fd2-4de6-8925-559485238ca7",
+            "date": {
+              "$date": "2023-07-26T19:44:58.515Z"
+            },
+            "tag": [
+              "tenderUpdate",
+              "award"
+            ]
+          },
+          {
+            "id": "906d9969-86d0-4b89-ac3e-8d14531f585a",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.906d9969-86d0-4b89-ac3e-8d14531f585a",
+            "date": {
+              "$date": "2023-08-12T21:18:41.525Z"
+            },
+            "tag": [
+              "tenderUpdate"
+            ]
+          },
+          {
+            "id": "03d1d7ce-b30a-433e-9ee0-6cadf7dc7ea8",
+            "url": "mx.compranet_upcp.ocds-d6a7a6-IA-20-125-020000021-N-25-2023.03d1d7ce-b30a-433e-9ee0-6cadf7dc7ea8",
+            "date": {
+              "$date": "2023-08-19T17:35:17.376Z"
+            },
+            "tag": [
+              "tenderUpdate"
+            ]
+          }
+        ],
+        "compiledRelease": {
+          "ocid": "ocds-d6a7a6-IA-20-125-020000021-N-25-2023",
+          "id": "03d1d7ce-b30a-433e-9ee0-6cadf7dc7ea8",
+          "date": {
+            "$date": "2023-08-19T17:35:17.376Z"
+          },
+          "buyer": {
+            "id": "020000",
+            "name": "SECRETARIA DE BIENESTAR"
+          },
+          "parties": [
+            {
+              "id": "020000021",
+              "name": "DELEGACION COAHUILA",
+              "contactPoint": {
+                "name": "CLAUDIA GARZA DEL TORO",
+                "email": "claudia.garza@bienestar.gob.mx"
+              },
+              "roles": [
+                "procuringEntity"
+              ]
+            },
+            {
+              "id": "020000",
+              "name": "SECRETARIA DE BIENESTAR",
+              "roles": [
+                "buyer"
+              ]
+            },
+            {
+              "id": "JOSE GERARDO MARTINEZ LOPEZ",
+              "name": "JOSE GERARDO MARTINEZ LOPEZ",
+              "roles": [
+                "tenderer",
+                "supplier"
+              ]
+            }
+          ],
+          "tender": {
+            "id": "IA-20-125-020000021-N-25-2023",
+            "title": "ARRENDAMIENTO DE MOBILIARIO PARA LA CIUDAD DE TORREON",
+            "description": "ARRENDAMIENTO DE MOBILIARIO PARA LOS OPERATIVOS EN LA CIUDAD DE TORREON.",
+            "status": "complete",
+            "statusDetails": "ADJUDICADO",
+            "procuringEntity": {
+              "id": "020000021",
+              "name": "DELEGACION COAHUILA"
+            },
+            "mainProcurementCategory": "goods",
+            "submissionMethodDetails": "SECRETARIA DE BIENESTAR DELEGACIÓN COAHUILA BLVD. LOS FUNDADORES KM 6.5 CARRETERA CENTRAL S/N COL. MAGISTERIO C.P 25290 SALTILLO, COAHUILA.",
+            "items": [
+              {
+                "id": "1",
+                "description": "SILLAS DE ALUMINIO NEGRAS.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0005",
+                  "description": "ARRENDAMIENTO DE SILLA"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "2",
+                "description": "MANTEL DE TELA BLANCA RECTANGULAR DE POLIÉSTER Y/O ALGODÓN",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "3",
+                "description": "TABLONES DE PLÁSTICO Y/O TABLÓN DE MADERA CON ORILLA DE ALUMINIO BLANCAS BANQUETERAS.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "4",
+                "description": "TOLDO DE 3 X 3, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "5",
+                "description": "TOLDO DE 6 X 6, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "6",
+                "description": "MESA BAQUETEAR RECTANGULAR BLANCA.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0007",
+                  "description": "ARRENDAMIENTO DE MESA"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "7",
+                "description": "TOLDO DE 6 X 12, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "8",
+                "description": "TOLDO DE 6 X 3, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "9",
+                "description": "EQUIPO DE SONIDO CON UNA PERSONA PARA SU MANEJO",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              },
+              {
+                "id": "10",
+                "description": "VALLA METÁLICA PARA DELIMITACIÓN DE ÁREAS.",
+                "quantity": 1,
+                "classification": {
+                  "scheme": "CUCoP+",
+                  "id": "32302-0002",
+                  "description": "ARRENDAMIENTO DE MOBILIARIO"
+                },
+                "additionalClassifications": [
+                  {
+                    "id": "32302",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  }
+                ],
+                "unit": {
+                  "name": "PIEZA"
+                }
+              }
+            ],
+            "tenderPeriod": {
+              "startDate": {
+                "$date": "2023-06-28T16:47:47.000Z"
+              },
+              "endDate": {
+                "$date": "2023-07-06T10:00:00.000Z"
+              },
+              "durationInDays": 7
+            },
+            "enquiryPeriod": {
+              "startDate": {
+                "$date": "2023-06-28T16:47:47.000Z"
+              }
+            },
+            "awardPeriod": {
+              "startDate": {
+                "$date": "2023-07-07T00:00:00.000Z"
+              }
+            },
+            "documents": [
+              {
+                "id": "1",
+                "documentType": "ANEXO TÉCNICO",
+                "title": "Anexo TÃ©cnico de la IA3 Arrendamiento de Mob en Torreon.docx",
+                "description": "ANEXO TÉCNICO",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=63fd80e6-5a8b-460b-ba16-cf55bef1aaec&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-28T16:03:17.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-28T16:47:47.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "2",
+                "documentType": "MODELO DE CONTRATO",
+                "title": "08_LAASSP_ARRENDAMIENTO_V4_VF.docx",
+                "description": "MODELO DE CONTRATO",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=94c58282-5bdf-46fd-aebe-6d6b867d2527&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-28T16:03:17.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-28T16:47:47.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "3",
+                "documentType": "ANEXO DE INVITACIÓN",
+                "title": "propuesta economica del arrendamiento Torreon.docx",
+                "description": "formato de propuesta economica",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=ac7c6ee2-f8fd-4f79-8011-7c18862bc6fb&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-28T16:28:41.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-28T16:47:47.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "4",
+                "documentType": "INVITACIÓN",
+                "title": "arrendamiento Torreon.docx",
+                "description": "INVITACIÓN",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=3411744f-17ba-4ec0-ab70-68d95f3ec69f&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-06-28T16:47:47.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-06-28T16:47:47.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "5",
+                "documentType": "RESPUESTA A SOLICITUDES DE ACLARACIÓN",
+                "title": "Untitled_20230706_130435.PDF",
+                "description": "RESPUESTA A SOLICITUDES DE ACLARACIÓN",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=15ae12b4-18c5-4272-bb49-c9cafbc93b9f&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-07-06T10:32:25.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-07-06T10:32:25.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "6",
+                "documentType": "ACTA DE APERTURA DE PROPOSICIONES",
+                "title": "APERTURA DE PROPOSICIONES.PDF",
+                "description": "ACTA DE APERTURA DE PROPOSICIONES",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=ee750d73-cff6-4807-8c4e-07ea6d46f1a1&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-07-06T15:31:18.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-07-06T15:31:18.000Z"
+                },
+                "language": "es"
+              },
+              {
+                "id": "7",
+                "documentType": "ACTA DE FALLO",
+                "title": "ACTA DE FALLO.PDF",
+                "description": "ACTA DE FALLO",
+                "url": "https://upcp-cnetservicios.hacienda.gob.mx/documentos/recursos/ulck?id_documento=3d6d0660-04d9-4934-8552-4ed0552bc785&user=sitiopublico",
+                "datePublished": {
+                  "$date": "2023-07-06T15:37:12.000Z"
+                },
+                "dateModified": {
+                  "$date": "2023-07-06T15:37:12.000Z"
+                },
+                "language": "es"
+              }
+            ],
+            "value": {
+              "currency": "MXN"
+            },
+            "procurementMethod": "open",
+            "procurementMethodDetails": "INVITACIÓN A CUANDO MENOS TRES PERSONAS"
+          },
+          "initiationType": "tender",
+          "language": "es",
+          "tag": [
+            "tenderUpdate"
+          ],
+          "metadata": {
+            "insertedDate": {
+              "$date": "2023-08-19T17:35:17.377Z"
+            },
+            "country": "mx",
+            "dataOrigin": "compranet_upcp",
+            "typeOfParse": "build_ocds",
+            "urlSource": "https://upcp-compranet.hacienda.gob.mx/sitiopublico/#/sitiopublico/detalle/c00f51f133654cdeab27542f76dabd60/procedimiento"
+          },
+          "awards": [
+            {
+              "id": "NUM. IA/BIEN/SA/COAH/015/2023",
+              "title": "ARRENDAMIENTO DE MOBILIARIO PARA LA CIUDAD DE TORREON",
+              "status": "active",
+              "date": {
+                "$date": "2023-07-07T00:00:00.000Z"
+              },
+              "value": {
+                "amount": 853760,
+                "currency": "MXN",
+                "exchangeRates": [
+                  {
+                    "currency": "USD",
+                    "rate": 0.058819,
+                    "date": {
+                      "$date": "2023-07-06T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "EUR",
+                    "rate": 0.054213,
+                    "date": {
+                      "$date": "2023-07-06T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "MXN",
+                    "rate": 1,
+                    "date": {
+                      "$date": "2023-07-06T00:00:00.000Z"
+                    },
+                    "source": "application"
+                  }
+                ],
+                "amount_USD": 50217.309440000005,
+                "amount_EUR": 46284.89088,
+                "amount_LOCAL": 853760,
+                "currency_LOCAL": "MXN"
+              },
+              "suppliers": [
+                {
+                  "id": "JOSE GERARDO MARTINEZ LOPEZ",
+                  "name": "JOSE GERARDO MARTINEZ LOPEZ"
+                }
+              ],
+              "contractPeriod": {
+                "startDate": {
+                  "$date": "2023-07-07T00:00:00.000Z"
+                },
+                "endDate": {
+                  "$date": "2023-09-30T00:00:00.000Z"
+                },
+                "durationInDays": 85
+              },
+              "items": [
+                {
+                  "id": "1.1",
+                  "description": "SILLAS DE ALUMINIO NEGRAS.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0005",
+                    "description": "ARRENDAMIENTO DE SILLA"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 69600,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 4093.8024,
+                      "amount_EUR": 3773.2248,
+                      "amount_LOCAL": 69600,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.2",
+                  "description": "MANTEL DE TELA BLANCA RECTANGULAR DE POLIÉSTER Y/O ALGODÓN",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 17400,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 1023.4506,
+                      "amount_EUR": 943.3062,
+                      "amount_LOCAL": 17400,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.3",
+                  "description": "TABLONES DE PLÁSTICO Y/O TABLÓN DE MADERA CON ORILLA DE ALUMINIO BLANCAS BANQUETERAS.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 13920,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 818.76048,
+                      "amount_EUR": 754.64496,
+                      "amount_LOCAL": 13920,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.4",
+                  "description": "TOLDO DE 3 X 3, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 46400,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 2729.2016000000003,
+                      "amount_EUR": 2515.4831999999997,
+                      "amount_LOCAL": 46400,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.5",
+                  "description": "TOLDO DE 6 X 6, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 63800,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 3752.6522,
+                      "amount_EUR": 3458.7893999999997,
+                      "amount_LOCAL": 63800,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.6",
+                  "description": "MESA BAQUETEAR RECTANGULAR BLANCA.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0007",
+                    "description": "ARRENDAMIENTO DE MESA"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 13920,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 818.76048,
+                      "amount_EUR": 754.64496,
+                      "amount_LOCAL": 13920,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.7",
+                  "description": "TOLDO DE 6 X 12, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 440800,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 25927.415200000003,
+                      "amount_EUR": 23897.090399999997,
+                      "amount_LOCAL": 440800,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.8",
+                  "description": "TOLDO DE 6 X 3, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 46400,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 2729.2016000000003,
+                      "amount_EUR": 2515.4831999999997,
+                      "amount_LOCAL": 46400,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.9",
+                  "description": "EQUIPO DE SONIDO CON UNA PERSONA PARA SU MANEJO",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 99760,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 5867.78344,
+                      "amount_EUR": 5408.28888,
+                      "amount_LOCAL": 99760,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.10",
+                  "description": "VALLA METÁLICA PARA DELIMITACIÓN DE ÁREAS.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 41760,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 2456.28144,
+                      "amount_EUR": 2263.93488,
+                      "amount_LOCAL": 41760,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "contracts": [
+            {
+              "id": "NUM. IA/BIEN/SA/COAH/015/2023",
+              "awardID": "NUM. IA/BIEN/SA/COAH/015/2023",
+              "title": "ARRENDAMIENTO DE MOBILIARIO PARA LA CIUDAD DE TORREON",
+              "status": "active",
+              "period": {
+                "startDate": {
+                  "$date": "2023-07-07T00:00:00.000Z"
+                },
+                "endDate": {
+                  "$date": "2023-09-30T00:00:00.000Z"
+                },
+                "durationInDays": 85
+              },
+              "value": {
+                "amount": 853760,
+                "currency": "MXN",
+                "exchangeRates": [
+                  {
+                    "currency": "USD",
+                    "rate": 0.058819,
+                    "date": {
+                      "$date": "2023-07-06T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "EUR",
+                    "rate": 0.054213,
+                    "date": {
+                      "$date": "2023-07-06T00:00:00.000Z"
+                    },
+                    "source": "market",
+                    "market": "fixer"
+                  },
+                  {
+                    "currency": "MXN",
+                    "rate": 1,
+                    "date": {
+                      "$date": "2023-07-06T00:00:00.000Z"
+                    },
+                    "source": "application"
+                  }
+                ],
+                "amount_USD": 50217.309440000005,
+                "amount_EUR": 46284.89088,
+                "amount_LOCAL": 853760,
+                "currency_LOCAL": "MXN"
+              },
+              "items": [
+                {
+                  "id": "1.1",
+                  "description": "SILLAS DE ALUMINIO NEGRAS.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0005",
+                    "description": "ARRENDAMIENTO DE SILLA"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 69600,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 4093.8024,
+                      "amount_EUR": 3773.2248,
+                      "amount_LOCAL": 69600,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.2",
+                  "description": "MANTEL DE TELA BLANCA RECTANGULAR DE POLIÉSTER Y/O ALGODÓN",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 17400,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 1023.4506,
+                      "amount_EUR": 943.3062,
+                      "amount_LOCAL": 17400,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.3",
+                  "description": "TABLONES DE PLÁSTICO Y/O TABLÓN DE MADERA CON ORILLA DE ALUMINIO BLANCAS BANQUETERAS.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 13920,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 818.76048,
+                      "amount_EUR": 754.64496,
+                      "amount_LOCAL": 13920,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.4",
+                  "description": "TOLDO DE 3 X 3, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 46400,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 2729.2016000000003,
+                      "amount_EUR": 2515.4831999999997,
+                      "amount_LOCAL": 46400,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.5",
+                  "description": "TOLDO DE 6 X 6, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 63800,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 3752.6522,
+                      "amount_EUR": 3458.7893999999997,
+                      "amount_LOCAL": 63800,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.6",
+                  "description": "MESA BAQUETEAR RECTANGULAR BLANCA.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0007",
+                    "description": "ARRENDAMIENTO DE MESA"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 13920,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 818.76048,
+                      "amount_EUR": 754.64496,
+                      "amount_LOCAL": 13920,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.7",
+                  "description": "TOLDO DE 6 X 12, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 440800,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 25927.415200000003,
+                      "amount_EUR": 23897.090399999997,
+                      "amount_LOCAL": 440800,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.8",
+                  "description": "TOLDO DE 6 X 3, ESTRUCTURA DE ACERO, CON LONA BLANCA IMPERMEABLE SIN LOGO.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 46400,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 2729.2016000000003,
+                      "amount_EUR": 2515.4831999999997,
+                      "amount_LOCAL": 46400,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.9",
+                  "description": "EQUIPO DE SONIDO CON UNA PERSONA PARA SU MANEJO",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 99760,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 5867.78344,
+                      "amount_EUR": 5408.28888,
+                      "amount_LOCAL": 99760,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                },
+                {
+                  "id": "1.10",
+                  "description": "VALLA METÁLICA PARA DELIMITACIÓN DE ÁREAS.",
+                  "classification": {
+                    "scheme": "CUCoP+",
+                    "id": "32302-0002",
+                    "description": "ARRENDAMIENTO DE MOBILIARIO"
+                  },
+                  "additionalClassifications": [
+                    {
+                      "id": "32302",
+                      "description": "ARRENDAMIENTO DE MOBILIARIO"
+                    }
+                  ],
+                  "quantity": 1,
+                  "unit": {
+                    "name": "PIEZA",
+                    "value": {
+                      "amount": 41760,
+                      "currency": "MXN",
+                      "exchangeRates": [
+                        {
+                          "currency": "USD",
+                          "rate": 0.058819,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "EUR",
+                          "rate": 0.054213,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "market",
+                          "market": "fixer"
+                        },
+                        {
+                          "currency": "MXN",
+                          "rate": 1,
+                          "date": {
+                            "$date": "2023-07-06T00:00:00.000Z"
+                          },
+                          "source": "application"
+                        }
+                      ],
+                      "amount_USD": 2456.28144,
+                      "amount_EUR": 2263.93488,
+                      "amount_LOCAL": 41760,
+                      "currency_LOCAL": "MXN"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }

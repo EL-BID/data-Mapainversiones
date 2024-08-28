@@ -1,0 +1,79 @@
+include head.pug
++head("Ojo a las sanciones - Buscador")
+
+    div.wrapper
+        +buscador(filters)
+
+
+        div.pageTitle
+            h1 Resultados
+            h4(style="font-family: PoppinsRegular") #{num(result_count)} #{getOptionLabel(filters.type)}
+                each filter in filters
+                    if (filter.value && filter.type != "hidden")
+                        |  con #{filter.label.toLowerCase()} 
+                        if (filter.type=="select")
+                            strong(style="font-family: PoppinsBold") "#{getOptionLabel(filter)}"
+                        else
+                            strong(style="font-family: PoppinsBold") "#{filter.value}"
+                | , ordenadas por #{getOptionLabel(filters.sort)}.
+
+        div.results
+            each elem,i in results
+                div.result
+                    case filters.type.value
+                        when "sancion"
+                            //- pre #{jp(elem)}
+                            
+                            a(href="/mx/empresa/"+elem._source.id) #{elem._source.nombre_razon_social}
+                            if (elem._source.rfc)
+                                span.rfc   (RFC: #{elem._source.rfc})
+                            a(href="/mx/empresa/"+elem._source.id,  style="float: right").detailsButton Detalles
+                            p #{elem._source.sanciones.length}
+                                if (elem._source.sanciones.length > 1)
+                                    span  sanciones.    
+                                else 
+                                    span  sanción.
+                                span  Última sanción: #{fechaFormateada(elem._source.sanciones.sort((a,b)=>a.fecha_sancion<b.fecha_sancion)[0].fecha_sancion)}
+
+
+                            //- span  (Cantidad total de contratos: #{num(elem.doc_count)})
+
+                hr
+
+        if (result_count> pageSize)
+            div.pagesContainer(style="text-align: center")
+                - var maxPages = 6;
+                if(currentPage == 1)
+                    - var page = 0;
+                    if(maxPages < pages)
+                        - var endPage = maxPages;
+                    else
+                        - var endPage = pages;
+                else
+                    if(currentPage > (maxPages/2))
+                        if(currentPage > (pages-maxPages))
+                            - var page = pages - maxPages;
+                        else
+                            - var page = currentPage - (maxPages/2);
+                        if(currentPage + (maxPages/2) < pages)
+                            - var endPage = currentPage + (maxPages/2);
+                        else
+                            - var endPage = pages;
+                    else
+                        - var page = 0;
+                        if(maxPages < pages)
+                            - var endPage = maxPages;
+                        else
+                            - var endPage = pages;
+
+                a(href=modifySearchParams(searchParams,"page",1)).page &laquo;
+                while (page<endPage)
+                    - page++
+                    if (currentPage == page)
+                        a(href=modifySearchParams(searchParams,"page",page)).page.current #{num(page)}
+                    else
+                        a(href=modifySearchParams(searchParams,"page",page)).page #{num(page)}
+                a(href=modifySearchParams(searchParams,"page",pages)).page &raquo;
+            div.pagesContainer(style="text-align: center")
+                p Página #{num(currentPage)} de #{num(pages)}
+    +footer()

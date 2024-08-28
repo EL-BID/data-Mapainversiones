@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-UC-CD-2022-0039",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:52Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-UC-CD-2022-0039",
+            "id": "05e612ef-eca3-421f-9b31-3dcc260da592",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 51920.0,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-UC-CD-2022-0039",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5,000 Y 1:25,000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Adquisici\u00f3n de art\u00edculos mobiliario para el \u00e1rea t\u00e9cnica del IGNJJHM",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Compras por Debajo del Umbral"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

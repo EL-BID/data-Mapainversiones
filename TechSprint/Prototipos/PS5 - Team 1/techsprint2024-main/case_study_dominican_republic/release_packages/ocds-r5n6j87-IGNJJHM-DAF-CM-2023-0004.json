@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-DAF-CM-2023-0004",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:54Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-DAF-CM-2023-0004",
+            "id": "743e45d5-1a14-4ea8-a9d9-9446f0bdf5b6",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 719000.0,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-DAF-CM-2023-0004",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5000 Y 1:25000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Adquisici\u00f3n de Equipos Inform\u00e1ticos y Accesorios para uso del Instituto Geogr\u00e1fico Nacional Jos\u00e9 Joaqu\u00edn Hungr\u00eda Morell",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": null,
+                "procurementMethodDetails": "Compras Menores"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}

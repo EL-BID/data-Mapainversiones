@@ -1,0 +1,36 @@
+{
+    "uri": "do.dgcprd.ocds-r5n6j87-IGNJJHM-CCC-LPN-2023-0001",
+    "version": "1.1",
+    "publishedDate": "2024-08-25T22:23:45Z",
+    "releases": [
+        {
+            "ocid": "ocds-r5n6j87-IGNJJHM-CCC-LPN-2023-0001",
+            "id": "81600ac2-7f11-47e8-b8b1-1e04cfab3f0e",
+            "date": "2024-08-25T22:23:44Z",
+            "tag": [
+                "tender"
+            ],
+            "initiationType": "tender",
+            "planning": {
+                "budget": {
+                    "amount": {
+                        "amount": 160000000.0,
+                        "currency": "DOP"
+                    }
+                }
+            },
+            "tender": {
+                "id": "IGNJJHM-CCC-LPN-2023-0001",
+                "title": "LEVANTAMIENTO DE LA BASE CARTOGR\u00c1FICA 1:5,000 Y 1:25,000 DE LA REP\u00daBLICA DOMINICANA",
+                "description": "Contrataci\u00f3n de los servicios para el Levantamiento de la Cartograf\u00eda Base a Escalas 1:5000 y 1: 25000 de la regi\u00f3n Suroeste de la Rep\u00fablica Dominicana incluyendo la provincia Santo Domingo y el Distrito Nacional a Escala 1: 25000.",
+                "status": "complete",
+                "statusDetails": "Proceso adjudicado y celebrado",
+                "procurementMethod": "open",
+                "procurementMethodDetails": "Licitaci\u00f3n P\u00fablica Nacional"
+            }
+        }
+    ],
+    "publisher": {
+        "name": "Dominican Republic"
+    }
+}
